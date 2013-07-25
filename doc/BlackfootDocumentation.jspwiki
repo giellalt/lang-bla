@@ -1,0 +1,18 @@
+[What is this?|WhatIsThis.html]
+
+
+!!! Dynamic documentation
+
+* [Links to generated source file documentation|Links.html]
+* Source files: [stems|https://victorio.uit.no/langtech/trunk/langs/bla/src/morphology/stems/]   
+  / [affixes|https://victorio.uit.no/langtech/trunk/langs/bla/src/morphology/affixes/] 
+  / [twolc|https://victorio.uit.no/langtech/trunk/langs/bla/src/phonology/bla-phon.twolc]   
+  / [yaml|https://victorio.uit.no/langtech/trunk/langs/bla/test/src/morphology/]
+
+!!! Grammatical issues
+
+* [The tags that are in use|https://victorio.uit.no/langtech/trunk/langs/bla/src/morphology/root.lexc]   
+* [A list of morphological tags|../common/MorphologicalTags.html]
+
+
+
