@@ -6,6 +6,7 @@
 * [Links to generated source file documentation|Links.html]
 * Source files: [stems|https://victorio.uit.no/langtech/trunk/langs/bla/src/morphology/stems/]   
   / [affixes|https://victorio.uit.no/langtech/trunk/langs/bla/src/morphology/affixes/] 
+  / [syntax|https://victorio.uit.no/langtech/trunk/langs/bla/src/syntax/] 
   / [twolc|https://victorio.uit.no/langtech/trunk/langs/bla/src/phonology/bla-phon.twolc]   
   / [yaml|https://victorio.uit.no/langtech/trunk/langs/bla/test/src/morphology/]
 
