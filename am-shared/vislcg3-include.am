@@ -18,10 +18,12 @@
 ####### Build rules: ########
 
 .cg3.bin:
-	$(AM_V_GEN)$(VISLCG3_COMP) $< $@
+	$(AM_V_CGCOMP)$(VISLCG3_COMP) $< $@
 
 ####### Other targets: ###########
 clean-local:
 	-rm -f *.bin
+
+include $(top_srcdir)/am-shared/silent_build-include.am
 
 # vim: set ft=automake:

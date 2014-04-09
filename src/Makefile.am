@@ -17,14 +17,6 @@ GT_TRANSFORMERS_HFST=transcriptor-clock2text-desc.hfst \
 					 transcriptor-text2date-desc.hfst \
 					 transcriptor-text2numbers-desc.hfst
 
-if WANT_APERTIUM
-# This is just a generic analyser. You need to add pair-specific analysers to
-# the language-specific part further down.
-APERTIUM_ANALYSERS_HFST=analyser-mt-gt-desc.hfst
-APERTIUM_GENERATORS_HFST=generator-mt-gt-norm.hfst \
-						generator-mt-apertium-norm.hfst \
-						generator-mt-apertium-norm.att.gz
-endif # WANT_APERTIUM
 endif # CAN_HFST
 
 if CAN_XFST
@@ -39,18 +31,18 @@ GT_TRANSFORMERS_XFST=transcriptor-clock2text-desc.xfst \
 
 if WANT_DICTIONARIES
 GT_ANALYSERS_XFST+=analyser-dict-gt-desc.xfst \
-					analyser-dict-gt-norm.xfst
-GT_GENERATORS_XFST+=generator-dict-gt-norm.xfst \
-					generator-dict-gt-desc.xfst
+				   analyser-dict-gt-desc-mobile.xfst
+GT_GENERATORS_XFST+=generator-dict-gt-norm.xfst
+
 endif # WANT_DICTIONARIES
 endif # CAN_XFST
 
 if WANT_OAHPA
 if CAN_HFST
-GT_GENERATORS_HFST+=generator-oahpa-gt-norm.hfst
+GT_GENERATORS_HFST+=generator-oahpa-gt-norm.hfst $(DIALECT_TARGETS_HFST)
 endif # CAN_HFST
 if CAN_XFST
-GT_GENERATORS_XFST+=generator-oahpa-gt-norm.xfst
+GT_GENERATORS_XFST+=generator-oahpa-gt-norm.xfst $(DIALECT_TARGETS_XFST)
 endif # CAN_XFST
 endif # WANT_OAHPA
 
@@ -93,21 +85,10 @@ endif
 if CAN_HFST
 GT_ANALYSERS_HFST+=
 GT_GENERATORS_HFST+=
-if WANT_APERTIUM
-APERTIUM_ANALYSERS_HFST+=analyser-mt-apertium-desc.und.hfst \
-						 analyser-mt-apertium-desc.und.att.gz
-APERTIUM_GENERATORS_HFST+=
-
-endif
 endif
 
 #################################################
 #### Add language-specific build rules here: ####
-
-# Apertium-related language-specific targets - modify to suit each language:
-analyser-mt-%.und.hfst: analyser-mt-%.tmp.hfst
-	$(AM_V_GEN)$(HFST_INVERT) $< \
-		| $(HFST_FST2FST) $(HFST_FLAGS) -t -o $@
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
@@ -126,6 +107,6 @@ generator%.hfst: generator%.tmp.hfst
 
 #### Xerox transducer fallback target:
 %.xfst: %.tmp.xfst
-	$(AM_V_GEN)cp -f $< $@
+	$(AM_V_CP)cp -f $< $@
 
-include $(top_srcdir)/am-shared/topdir-include.am
+include $(top_srcdir)/am-shared/src-dir-include.am
