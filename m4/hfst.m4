@@ -76,16 +76,24 @@ AC_PATH_PROG(HFST_TXT2FST,           hfst-txt2fst,           false, $PATH$PATH_S
 AC_PATH_PROG(HFST_XFST,              hfst-xfst,              false, $PATH$PATH_SEPARATOR$with_hfst)
 AC_PATH_PROG(HFST_XFST2FST,          hfst-xfst2fst,          false, $PATH$PATH_SEPARATOR$with_hfst)
 
+# hfst-ospell is a separate package:
+AC_PATH_PROG(HFST_OSPELL,            hfst-ospell,            false, $PATH$PATH_SEPARATOR$with_hfst)
+
 AS_IF([test x$with_hfst != xno], [
-_gt_hfst_min_version=m4_default([$1], [3.5.1])
-AC_MSG_CHECKING([hfst is at least $_gt_hfst_min_version])
+_gtd_hfst_min_version=m4_default([$1], [3.5.1])
+AC_MSG_CHECKING([whether hfst is at least $_gtd_hfst_min_version])
 if test x$HFST_INFO != xfalse; then
-    if $HFST_INFO --require-feature=foma --atleast-version=$_gt_hfst_min_version ; then
-        gt_prog_hfst=yes
-        AC_MSG_RESULT([yes])
+    if $HFST_INFO --atleast-version=$_gtd_hfst_min_version ; then
+        if test x$HFST_FOMA != "xfalse" -o x$HFST_XFST != "xfalse"; then
+            gt_prog_hfst=yes
+            AC_MSG_RESULT([yes])
+        else
+            AC_MSG_RESULT([yes, but...])
+            AC_MSG_WARN([Neither hfst-foma nor hfst-xfst found, one of them is needed])
+            gt_prog_hfst=no
+        fi
     else
-        gt_prog_hfst=no
-        AC_MSG_RESULT([no])
+        AC_MSG_ERROR([You requested --with-hfst, but your hfst is broken. Bailing out.])
     fi
 else
     AC_MSG_RESULT([no])
@@ -93,7 +101,9 @@ else
     gt_prog_hfst=no
 fi
 ], [gt_prog_hfst=no])
-AM_CONDITIONAL([CAN_HFST], [test "x$gt_prog_hfst" = xyes])
+AM_CONDITIONAL([CAN_HFST],      [test "x$gt_prog_hfst" = "xyes"])
+AM_CONDITIONAL([CAN_HFST_FOMA], [test "x$HFST_FOMA" != "xfalse"])
+AM_CONDITIONAL([CAN_HFST_XFST], [test "x$HFST_XFST" != "xfalse"])
 ]) # gt_PROG_HFST_PATH
 
 # vim: set ft=config:

@@ -25,15 +25,15 @@
 # macros. It is the same as gettext and probably others, but I expect no
 # collisions really.
 
-
+################################################################################
+# Define functions for setting up paths and checking the GTD core environment:
+################################################################################
 AC_DEFUN([gt_PROG_SCRIPTS_PATHS],
          [
 AC_ARG_VAR([GTMAINTAINER], [define if you are maintaining the infra to get additional complaining about infra integrity])
 AM_CONDITIONAL([WANT_MAINTAIN], [test x"$GTMAINTAINER" != x])
-AC_PATH_PROG([GTVERSION], [gt-version.sh], [false],
-             [$GTCORE/scripts/$PATH_SEPARATOR$GTHOME/gtcore/scripts/$PATH_SEPARATOR$PATH])
 AC_PATH_PROG([GTCORESH], [gt-core.sh], [false],
-             [$GTCORE/scripts/$PATH_SEPARATOR$GTHOME/gtcore/scripts/$PATH_SEPARATOR$PATH])
+             [$GTCORE/scripts$PATH_SEPARATOR$GTHOME/gtcore/scripts$PATH_SEPARATOR$PATH])
 
 AC_MSG_CHECKING([whether GTCORE is found])
 AS_IF([test "x$GTCORE"    = x -a \
@@ -42,7 +42,8 @@ AS_IF([test "x$GTCORE"    = x -a \
 	  [test "x$GTCORE" != x], [AC_MSG_RESULT([yes - via environment])],
       [AC_MSG_RESULT([no])])
 
-AC_ARG_VAR([GTCORE], [directory for giellatekno core data])
+# GTCORE env. variable is required by the infrastructure to find scripts:
+AC_ARG_VAR([GTCORE], [directory for giellatekno/divvun core data; gtcore path should always be declared by gtsetup.sh])
 
 AS_IF([test "x$GTCORE" = x], 
       [cat<<EOT
@@ -65,8 +66,105 @@ Could not set GTCORE and thus not find required scripts in:
 
 EOT
        AC_MSG_ERROR([GTCORE could not be set])])
+
+##### Check the version of the gtd-core, and stop with error message if too old:
+# This is the error message:
+gtd_core_too_old_message="
+
+The gtd-core is too old, we require at least $_gtd_core_min_version. Please do:
+
+cd $GTCORE
+svn up
+./autogen.sh # required only the first time
+./configure  # required only the first time
+make
+sudo make install # optional, not needed if not installed
+                  # earlier, or not on a server.
+"
+
+# Identify the version of gtd-core:
+AC_MSG_CHECKING([the version of the GTD Core])
+AC_PATH_PROG([GTD_VERSION], [gt-version.sh], [no],
+    [$GTCORE/scripts$PATH_SEPARATOR$GTHOME/gtcore/scripts$PATH_SEPARATOR$PATH])
+AS_IF([test "x${GTD_VERSION}" != xno],
+        [_gtd_version=$( ${GTD_VERSION} )],
+        [AC_MSG_ERROR([$gtd_core_too_old_message])
+    ])
+AC_MSG_RESULT([$_gtd_version])
+
+AC_MSG_CHECKING([whether the GTD Core version is at least $_gtd_core_min_version])
+# Compare it to the required version, and error out if too old:
+AX_COMPARE_VERSION([$_gtd_version], [ge], [$_gtd_core_min_version],
+                   [gtd_version_ok=yes], [gtd_version_ok=no])
+AS_IF([test "x${gtd_version_ok}" != xno], [AC_MSG_RESULT([$gtd_version_ok])],
+[AC_MSG_ERROR([$gtd_core_too_old_message])])
+
+################################
+### Some software that we either depend on or we need for certain functionality: 
+################
+
+################ YAML-based testing ################
+AC_ARG_ENABLE([yamltests],
+              [AS_HELP_STRING([--enable-yamltests],
+                              [enable yaml tests @<:@default=check@:>@])],
+              [enable_yamltests=$enableval],
+              [enable_yamltests=check])
+
+AS_IF([test "x$enable_yamltests" = "xcheck"], 
+     [AM_PATH_PYTHON([3.1],, [:])
+     AX_PYTHON_MODULE(yaml)
+     AC_MSG_CHECKING([whether to enable yaml-based test])
+     AS_IF([test "$PYTHON" = ":"],
+           [enable_yamltests=no
+            AC_MSG_RESULT([no, python is missing or old])
+            ],
+           [AS_IF([test "x$HAVE_PYMOD_YAML" != "xyes"],
+                  [enable_yamltests=no
+                   AC_MSG_RESULT([no, yaml is missing])
+                   ],
+                  [enable_yamltests=yes
+                   AC_MSG_RESULT([yes])])])])
+
+AM_CONDITIONAL([CAN_YAML_TEST], [test "x$enable_yamltests" != xno])
+
+################ Generated documentation ################
+# Check for awk with required feature:
+AC_CACHE_CHECK([for awk that supports gensub], [ac_cv_path_AWK],
+  [AC_PATH_PROGS_FEATURE_CHECK([AWK], [awk gawk],
+    [[awkout=`$ac_path_AWK 'BEGIN{gensub(/a/,"b","g");}'`
+      test "x$awkout" = x0 \
+      && ac_cv_path_AWK=$ac_path_AWK ac_path_AWK_found=:]],
+    [AC_MSG_WARN([could not find awk that supports gensub])])])
+AC_SUBST([AWK], [$ac_cv_path_AWK])
+
+# Check for Forrest:
+AC_PATH_PROG([FORREST], [forrest], [], [$PATH$PATH_SEPARATOR$with_forrest])
+AC_MSG_CHECKING([whether we can enable in-source documentation building])
+AS_IF([test "x$AWK" != x], [
+    AS_IF([test "x$JV" != xfalse], [
+    	AS_IF([test "x$FORREST" != x], [gt_prog_docc=yes], [gt_prog_docc=no])
+    ],[gt_prog_docc=no])
+],[gt_prog_docc=no])
+AC_MSG_RESULT([$gt_prog_docc])
+AM_CONDITIONAL([CAN_DOCC], [test "x$gt_prog_docc" != xno])
+
+################ can rsync oxt template? ################
+AC_PATH_PROG([RSYNC], [rsync], [no], [$PATH$PATH_SEPARATOR$with_rsync])
+AC_MSG_CHECKING([whether we can rsync LO-voikko oxt template locally])
+AS_IF([test "x$GTHOME" != "x" -a \
+            "x$RSYNC"  != "x" -a \
+          -d "${GTHOME}/prooftools/toollibs/LibreOffice-voikko" ],
+      [can_local_sync=yes], [can_local_sync=no])
+AC_MSG_RESULT([$can_local_sync])
+AM_CONDITIONAL([CAN_LOCALSYNC], [test "x$can_local_sync" != xno ])
+
+AC_PATH_PROG([WGET],  [wget],  [no], [$PATH$PATH_SEPARATOR$with_wget])
+
 ]) # gt_PROG_SCRIPTS_PATHS
 
+################################################################################
+# Define functions for checking the availability of the Xerox tools:
+################################################################################
 AC_DEFUN([gt_PROG_XFST],
 [AC_ARG_WITH([xfst],
             [AS_HELP_STRING([--with-xfst=DIRECTORY],
@@ -78,30 +176,51 @@ AC_PATH_PROG([XFST], [xfst], [false], [$PATH$PATH_SEPARATOR$with_xfst])
 AC_PATH_PROG([TWOLC], [twolc], [false], [$PATH$PATH_SEPARATOR$with_xfst])
 AC_PATH_PROG([LEXC], [lexc], [false], [$PATH$PATH_SEPARATOR$with_xfst])
 AC_PATH_PROG([LOOKUP], [lookup], [false], [$PATH$PATH_SEPARATOR$with_xfst])
-AC_MSG_CHECKING([whether we can enable xfst building])
+AC_MSG_CHECKING([whether to enable xfst building])
 AS_IF([test x$with_xfst != xno], [
-    AS_IF([test "x$XFST" != xfalse], [gt_prog_xfst=yes],
+    AS_IF([test "x$XFST"   != xfalse -a \
+                "x$TWOLC"  != xfalse -a \
+                "x$LEXC"   != xfalse -a \
+                "x$LOOKUP" != xfalse  ], [gt_prog_xfst=yes],
           [gt_prog_xfst=no])
 ], [gt_prog_xfst=no])
-AC_MSG_RESULT([gt_prog_xfst])
+AC_MSG_RESULT([$gt_prog_xfst])
 AM_CONDITIONAL([CAN_XFST], [test "x$gt_prog_xfst" != xno])
 ]) # gt_PROG_XFST
 
+################################################################################
+# Define functions for checking the availability of the VISLCG3 tools:
+################################################################################
 AC_DEFUN([gt_PROG_VISLCG3],
 [AC_ARG_WITH([vislcg3],
             [AS_HELP_STRING([--with-vislcg3=DIRECTORY],
                             [search vislcg3 in DIRECTORY @<:@default=PATH@:>@])],
             [with_vislcg3=$withval],
             [with_vislcg3=check])
+AC_PATH_PROG([VISLCG3], [vislcg3], [no], [$PATH$PATH_SEPARATOR$with_vislcg3])
 AC_PATH_PROG([VISLCG3_COMP], [cg-comp], [no], [$PATH$PATH_SEPARATOR$with_vislcg3])
-AC_MSG_CHECKING([whether we can enable vislcg3 building])
-AS_IF([test "x$VISLCG3" != xno], [AC_MSG_RESULT([yes])],
+
+AS_IF([test "x$VISLCG3" != xno], [
+_gtd_vislcg3_min_version=m4_default([$1], [0.9.8.9406])
+AC_MSG_CHECKING([whether vislcg3 is at least $_gtd_vislcg3_min_version])
+_vislcg3_version=$( ${VISLCG3} --version 2>&1 | grep -Eo '@<:@0-9@:>@+\.@<:@0-9.@:>@+' )
+AX_COMPARE_VERSION([$_vislcg3_version], [ge], [$_gtd_vislcg3_min_version],
+                   [gt_prog_vislcg3=yes
+                    AC_MSG_RESULT([yes - $_vislcg3_version])
+                   ], [gt_prog_vislcg3=no
+                    AC_MSG_RESULT([no - $_vislcg3_version])
+                   ])
+],
+[gt_prog_vislcg3=no])
+AC_MSG_CHECKING([whether we can enable vislcg3 targets])
+AS_IF([test "x$gt_prog_vislcg3" != xno], [AC_MSG_RESULT([yes])],
       [AC_MSG_RESULT([no])])
-AS_IF([test "x$VISLCG3" != xno], [gt_prog_vislcg3=yes],
-      [gt_prog_vislcg3=no])
-AM_CONDITIONAL([CAN_VISLCG], [test "x$VISLCG3_COMP" != xno])
+AM_CONDITIONAL([CAN_VISLCG], [test "x$gt_prog_vislcg3" != xno])
 ]) # gt_PROG_VISLCG3
 
+################################################################################
+# Define functions for checking the availability of Saxon:
+################################################################################
 AC_DEFUN([gt_PROG_SAXON],
 [AC_ARG_WITH([saxon],
              [AS_HELP_STRING([--with-saxon=DIRECTORY],
@@ -132,6 +251,9 @@ AM_CONDITIONAL([CAN_SAXON], [test "x$gt_prog_saxon" != xno])
 AM_CONDITIONAL([CAN_JAVA], [test "x$gt_prog_java" != xno -a "x$saxonjar" != xno]) 
 ]) # gt_PROG_SAXON
 
+################################################################################
+# Define functions for configuration of the build targets:
+################################################################################
 AC_DEFUN([gt_ENABLE_TARGETS],
 [
 # Enable morphological analysers - default is 'yes'
@@ -166,6 +288,16 @@ AC_ARG_ENABLE([spellerautomat],
               [enable_spellerautomat=yes])
 AS_IF([test "x$enable_spellers" = xno], [enable_spellerautomat=no])
 AM_CONDITIONAL([WANT_SPELLERAUTOMAT], [test "x$enable_spellerautomat" != xno])
+
+# Disable minimised speller fst by default:
+AC_ARG_ENABLE([minimised-spellers],
+              [AS_HELP_STRING([--enable-minimised-spellers],
+                              [minimise hfst spellers @<:@default=no@:>@])],
+              [enable_minimised_spellers=$enableval],
+              [enable_minimised_spellers=no])
+AS_IF([test "x$enable_minimised_spellers" = "xno"],
+      [AC_SUBST([HFST_MINIMIZE_SPELLER], $ac_cv_path_HFST_REMOVE_EPSILONS)],
+      [AC_SUBST([HFST_MINIMIZE_SPELLER], $ac_cv_path_HFST_MINIMIZE)])
 
 # Enable voikko - default is 'yes', but only if the speller automate is enabled
 AC_ARG_ENABLE([voikko],
@@ -206,9 +338,9 @@ AC_ARG_ENABLE([grammarchecker],
                               [enable grammar checker @<:@default=no@:>@])],
               [enable_grammarchecker=$enableval],
               [enable_grammarchecker=no])
-AS_IF([test "x$enable_grammarchecker" = "xyes" -a "x$VISLCG3_COMP" = "x"], 
+AS_IF([test "x$enable_grammarchecker" = "xyes" -a "x$gt_prog_vislcg3" = "xno"], 
       [enable_grammarchecker=no
-       AC_MSG_WARN([vislcg3 missing, grammar checker disabled])])
+       AC_MSG_WARN([vislcg3 missing or too old, grammar checker disabled])])
 AM_CONDITIONAL([WANT_GRAMCHECK], [test "x$enable_grammarchecker" != xno])
 
 # Enable dictionary transducers - default is 'no'
@@ -250,6 +382,9 @@ AM_CONDITIONAL([WANT_APERTIUM], [test "x$enable_apertium" != xno])
 
 ]) # gt_ENABLE_TARGETS
 
+################################################################################
+# Define function to print the configure footer
+################################################################################
 AC_DEFUN([gt_PRINT_FOOTER],
 [
 cat<<EOF
@@ -257,17 +392,18 @@ cat<<EOF
 -- Building $PACKAGE_STRING:
 
   -- basic package (on by default except hfst): --
-  * build with Xerox: $gt_prog_xfst
-  * build with HFST: $gt_prog_hfst
+  * build Xerox fst's: $gt_prog_xfst
+  * build HFST fst's: $gt_prog_hfst
   * analysers enabled: $enable_morphology
   * generators enabled: $enable_generation
-  * syntactic processing enabled: $gt_prog_vislcg3
+  * vislcg3 tools enabled: $gt_prog_vislcg3
   * yaml tests enabled: $enable_yamltests
   * generated documentation enabled: $gt_prog_docc
 
   -- proofing tools (off by default): --
   * spellers enabled: $enable_spellers
     * hfst speller fst's enabled: $enable_spellerautomat
+      * enable minimised speller (time&mem consuming): $enable_minimised_spellers
     * voikko speller enabled: $enable_voikko
     * foma speller enabled: $enable_fomaspeller
   * grammar checker enabled: $enable_grammarchecker
@@ -288,11 +424,22 @@ EOF
 AS_IF([test x$gt_prog_xfst = xno -a x$gt_prog_hfst = xno],
       [AC_MSG_WARN([Both XFST and HFST are disabled: no automata will be built])])
 AS_IF([test x$gt_prog_xslt = xno -a \
-      "$(find ./src/morphology/stems -name "*.xml" | head -n 1)" != "" ],
+      "$(find ${srcdir}/src/morphology/stems -name "*.xml" | head -n 1)" != "" ],
       [AC_MSG_WARN([You have XML source files, but XML transformation to LexC is
 disabled. Please check the output of configure to locate any problems.
 ])])
 AS_IF([test x$gt_prog_docc = xno],
       [AC_MSG_WARN([Could not find gawk, java or forrest. In-source documentation will not be extracted and validated. Please install the required tools.])])
+
+dnl stick important warnings to bottom
+dnl YAML test warning:
+AS_IF([test "x$enable_yamltests" == "xno"],
+      [AC_MSG_WARN([YAML testing could not be automatically enabled. To enable it, on MacOSX please do:
+
+sudo port install python32
+sudo port install py-yaml subport=py32-yaml
+
+On other systems, install python 3.1+ and the corresponding py-yaml using suitable tools for those systems.])])
+
 ]) # gt_PRINT_FOOTER
 # vim: set ft=config: 
