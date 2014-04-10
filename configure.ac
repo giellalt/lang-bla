@@ -90,22 +90,6 @@ case "${host}" in
 esac
 AC_SUBST(CYGWINJAVAPATH)
 
-# Following Giellatekno specific variables are used to make external software
-# work; HFST analysers, spell-checkers and so on. These also control
-# some temporary file names etc.
-
-# GTLANG is the language code used to identify this project; it should be same
-# as the directory name in gtsvn and same as ISO 639 three-letter code for the
-# language if possible
-AC_SUBST([GTLANG], [bla])
-# GTLANG2 is the shortest unambiguous language code for this project; it
-# should be the ISO 639-1 two-letter code if possible, otherwise usually same
-# as above
-AC_SUBST([GTLANG2], [bla])
-
-# GTCORE env. variable is required by the 
-AC_ARG_VAR([GTCORE], [gtcore path should always be declared by gtsetup.sh])
-
 # Tests and sets up giellatekno directories and scripts
 gt_PROG_SCRIPTS_PATHS
 
