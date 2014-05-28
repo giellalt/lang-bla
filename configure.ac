@@ -24,7 +24,7 @@
 # third is email address for bug reports
 # fourth is name of packages made by make dist, excluding .tar.gz
 # fifth is the project web address
-AC_INIT([gtlangs-bla], [20110617], [feedback@divvun.no], [gtlangs-bla],
+AC_INIT([giella-bla], [20110617], [feedback@divvun.no], [giella-bla],
         [http://divvun.no])
 # AC_REVISION is used to get SVN revision into bug reports
 AC_REVISION([$Revision$])
@@ -33,7 +33,7 @@ AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([m4])
 # AM_INIT_AUTOMAKE sets up make conventions
 AM_INIT_AUTOMAKE(
-  1.11 -Wall -Werror
+  1.11.6 -Wall -Werror
   foreign -Wno-portability
   dnl Automake versions before 1.13 (when the serial-tests option was
   dnl still the default) still defined the badly obsolete macro
@@ -48,7 +48,7 @@ m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
 ### This is the version of the GTD core that we require. Update as needed.
 ### It is possible to specify also subversion revision: 0.1.2-12345
-_gtd_core_min_version=0.2.7
+_gtd_core_min_version=0.2.13
 
 ### Earliest LibreOffice version that supports the language in question.
 ### Used for building the LO-voikko oxt package for the language.
@@ -115,6 +115,7 @@ gt_ENABLE_TARGETS
 
 # List all non-script files processed by Autoconf.
 AC_CONFIG_FILES([Makefile \
+                 giella-bla.pc \
                  src/Makefile \
                  src/filters/Makefile \
                  src/hyphenation/Makefile \
@@ -139,6 +140,8 @@ AC_CONFIG_FILES([Makefile \
                  tools/grammarcheckers/Makefile \
                  tools/mt/Makefile \
                  tools/mt/apertium/Makefile \
+                 tools/mt/apertium/filters/Makefile \
+                 tools/mt/apertium/tagsets/Makefile \
                  tools/preprocess/Makefile \
                  tools/shellscripts/Makefile \
                  tools/spellcheckers/Makefile \

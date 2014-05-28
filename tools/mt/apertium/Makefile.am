@@ -2,6 +2,9 @@
 ## Copyright: Sámediggi/Divvun/UiT
 ## Licence: GPL v3+
 
+# Process subdirs first:
+SUBDIRS = filters tagsets .
+
 ##################################################################
 #### BEGIN: Add local processing instructions BELOW this line ####
 ##################################################################
@@ -16,6 +19,6 @@
 
 # cleaning
 clean-local:
-	-rm -f *.hfst *.gz
+	-rm -f *.hfst *.gz *.cg3 *.bin
 
 include $(top_srcdir)/am-shared/tools-mt-apertium-dir-include.am

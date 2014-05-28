@@ -35,7 +35,7 @@ EXTRA_DIST=$(GT_CG_SRCS) $(GT_CG_LOCAL_SRCS)
 #! @var GT_CG_LOCAL_INST_TARGETS local cg files to build and install
 #! @var GT_CG_LOCAL_NOINST_TARGETS local cg files to build but NOT install
 if CAN_VISLCG
-gtddatadir=$(datadir)/hfst/$(GTLANG)
+gtddatadir=$(datadir)/giella/$(GTLANG)
 gtddata_DATA=$(GT_CG_TARGETS) $(GT_CG_LOCAL_INST_TARGETS)
 
 noinst_DATA=$(GT_CG_LOCAL_NOINST_TARGETS)
@@ -44,5 +44,6 @@ endif
 ####### Build rules via include: ########
 
 include $(top_srcdir)/am-shared/vislcg3-include.am
+include $(top_srcdir)/am-shared/silent_build-include.am
 
 # vim: set ft=automake:

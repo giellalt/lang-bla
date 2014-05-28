@@ -256,21 +256,33 @@ AM_CONDITIONAL([CAN_JAVA], [test "x$gt_prog_java" != xno -a "x$saxonjar" != xno]
 ################################################################################
 AC_DEFUN([gt_ENABLE_TARGETS],
 [
+# Foma-speller requires gzip, Voikko requires zip:
+AC_PATH_PROG([ZIP],  [zip],  [false], [$PATH$PATH_SEPARATOR$with_zip])
+AC_PATH_PROG([GZIP], [gzip], [false], [$PATH$PATH_SEPARATOR$with_gzip])
+
 # Enable morphological analysers - default is 'yes'
-AC_ARG_ENABLE([morphology],
-              [AS_HELP_STRING([--enable-morphology],
+AC_ARG_ENABLE([analysers],
+              [AS_HELP_STRING([--enable-analysers],
                               [build morphological analysers @<:@default=yes@:>@])],
-              [enable_morphology=$enableval],
-              [enable_morphology=yes])
-AM_CONDITIONAL([WANT_MORPHOLOGY], [test "x$enable_morphology" != xno])
+              [enable_analysers=$enableval],
+              [enable_analysers=yes])
+AM_CONDITIONAL([WANT_MORPHOLOGY], [test "x$enable_analysers" != xno])
 
 # Enable morphological generators - default is 'yes'
-AC_ARG_ENABLE([generation],
-              [AS_HELP_STRING([--enable-generation],
+AC_ARG_ENABLE([generators],
+              [AS_HELP_STRING([--enable-generators],
                               [build morphological generators @<:@default=yes@:>@])],
-              [enable_generation=$enableval],
-              [enable_generation=yes])
-AM_CONDITIONAL([WANT_GENERATION], [test "x$enable_generation" != xno])
+              [enable_generators=$enableval],
+              [enable_generators=yes])
+AM_CONDITIONAL([WANT_GENERATION], [test "x$enable_generators" != xno])
+
+# Enable text transcriptors - default is 'yes'
+AC_ARG_ENABLE([transcriptors],
+              [AS_HELP_STRING([--enable-transcriptors],
+                              [build text transcriptors @<:@default=yes@:>@])],
+              [enable_transcriptors=$enableval],
+              [enable_transcriptors=yes])
+AM_CONDITIONAL([WANT_TRANSCRIPTORS], [test "x$enable_transcriptors" != xno])
 
 # Enable all spellers - default is 'no'
 AC_ARG_ENABLE([spellers],
@@ -305,12 +317,11 @@ AC_ARG_ENABLE([voikko],
                               [build voikko speller (dependent on --enable-spellers) @<:@default=yes@:>@])],
               [enable_voikko=$enableval],
               [enable_voikko=yes])
-AS_IF([test "x$enable_spellerautomat" = xno], [enable_voikko=no])
+AS_IF([test "x$enable_spellerautomat" = xno], [enable_voikko=no], 
+      [AS_IF([test "x$enable_spellerautomat" = xyes -a "x$ZIP" = "xfalse"],
+             [enable_voikko=no
+              AC_MSG_WARN([zip missing, voikko spellers disabled])])])
 AM_CONDITIONAL([WANT_VOIKKO], [test "x$enable_voikko" != xno ])
-
-# Foma-speller requires gzip, Voikko requires zip:
-AC_PATH_PROG([ZIP],  [zip],  [false], [$PATH$PATH_SEPARATOR$with_zip])
-AC_PATH_PROG([GZIP], [gzip], [false], [$PATH$PATH_SEPARATOR$with_gzip])
 
 # Enable Foma-based spellers, requires gzip - default is no
 AC_ARG_ENABLE([fomaspeller],
@@ -324,13 +335,21 @@ AS_IF([test "x$enable_fomaspeller" = "xyes" -a "x$gt_prog_hfst" != xno],
               AC_MSG_WARN([gzip missing, foma spellers disabled])])])
 AM_CONDITIONAL([CAN_FOMA_SPELLER], [test "x$enable_fomaspeller" != xno])
 
-# Enable Hunspell production - default is 'no'
+# Disable Hunspell production by default:
 AC_ARG_ENABLE([hunspell],
               [AS_HELP_STRING([--enable-hunspell],
                               [enable hunspell building @<:@default=no@:>@])],
               [enable_hunspell=$enableval],
               [enable_hunspell=no])
 AM_CONDITIONAL([WANT_HUNSPELL], [test "x$enable_hunspell" != xno])
+
+# Enable fst hyphenator - default is 'no'
+AC_ARG_ENABLE([fst-hyphenator],
+              [AS_HELP_STRING([--enable-fst-hyphenator],
+                              [build fst-based hyphenator @<:@default=no@:>@])],
+              [enable_fst_hyphenator=$enableval],
+              [enable_fst_hyphenator=no])
+AM_CONDITIONAL([WANT_FST_HYPHENATOR], [test "x$enable_fst_hyphenator" != xno])
 
 # Enable grammar checkers - default is 'no'
 AC_ARG_ENABLE([grammarchecker],
@@ -350,11 +369,6 @@ AC_ARG_ENABLE([dicts],
               [enable_dicts=$enableval],
               [enable_dicts=no])
 AM_CONDITIONAL([WANT_DICTIONARIES], [test "x$enable_dicts" != xno])
-
-AS_IF([test "x$enable_voikko" = "xyes" -a "x$gt_prog_hfst" != xno], 
-      [AS_IF([test "x$ZIP" = "xfalse"],
-             [enable_voikko=no
-              AC_MSG_WARN([zip missing, voikko spellers disabled])])])
 
 # Enable Oahpa transducers - default is 'no'
 AC_ARG_ENABLE([oahpa],
@@ -394,8 +408,9 @@ cat<<EOF
   -- basic package (on by default except hfst): --
   * build Xerox fst's: $gt_prog_xfst
   * build HFST fst's: $gt_prog_hfst
-  * analysers enabled: $enable_morphology
-  * generators enabled: $enable_generation
+  * analysers enabled: $enable_analysers
+  * generators enabled: $enable_generators
+  * transcriptors enabled: $enable_transcriptors
   * vislcg3 tools enabled: $gt_prog_vislcg3
   * yaml tests enabled: $enable_yamltests
   * generated documentation enabled: $gt_prog_docc
@@ -406,6 +421,8 @@ cat<<EOF
       * enable minimised speller (time&mem consuming): $enable_minimised_spellers
     * voikko speller enabled: $enable_voikko
     * foma speller enabled: $enable_fomaspeller
+  * hyphenators:
+    * fst hyphenator enabled: $enable_fst_hyphenator
   * grammar checker enabled: $enable_grammarchecker
 
   -- specialised fst's (off by default): --
