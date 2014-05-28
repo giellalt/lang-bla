@@ -18,6 +18,9 @@
 # List any local additions here:
 GT_FILTER_SRCS=
 
+# DIALECT_TARGETS_HFST is constructed dynamically based on the dialects
+# specified in configure.ac.
+
 # The common filter targets (don't change locally):
 GT_FILTER_TARGETS=
 if CAN_HFST
@@ -54,6 +57,8 @@ GT_FILTER_TARGETS+=\
 				   remove-PUNCT-strings.hfst              \
 				   remove-UseCirc-strings.hfst            \
 				   remove-variant-strings.hfst            \
+				   reorder-semantic-tags.hfst             \
+				   reorder-subpos-tags.hfst               \
 				   $(DIALECT_TARGETS_HFST)
 endif
 
@@ -91,10 +96,15 @@ GT_FILTER_TARGETS+=\
 				   remove-PUNCT-strings.xfst              \
 				   remove-UseCirc-strings.xfst            \
 				   remove-variant-strings.xfst            \
+				   reorder-semantic-tags.xfst             \
+				   reorder-subpos-tags.xfst               \
 				   $(DIALECT_TARGETS_XFST)
 endif
 
 GENERATED_REGEXES=remove-semantic-tags.regex \
+                  remove-dialect-tags.regex \
+                  remove-derivation-strings.regex \
+                  reorder-semantic-tags.regex \
                   make-optional-semantic-tags.regex \
                   $(DIALECT_REGEXES)
 
