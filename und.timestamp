@@ -1,4 +1,55 @@
-$Rev: 94834 $
+$Rev: 98043 $
+Properly clean src/morphology/.
+
+r98034:
+Encapsulated most shell variable names in {} to handle hyphens etc in the
+variable names (after merge/update substitution of the __UND__ string).
+
+r98024:
+Added a dir src/morphology/generated_files/ containing files generated during
+the build process. This is done to make a clear separation between files to be
+edited and files to be ignored. Also added a directory src/morphology/incoming/
+to hold incoming lexical resources used to build the lexc or xml source files.
+Both dirs have a 00README.txt file explaining their use.
+
+r97047:
+Added WANT_OAHPA option for analysers for all languages (until now only
+generator)
+
+r97041:
+Added oahpa analyser as target (oahpa here meaning L2 transducer)
+
+r96645:
+Fixed a bug in sigma extraction on certain Linux systems.
+
+r96604:
+Better/more generalised handling of tag modifications.
+
+r96280:
+Added removal of lines marked '#RemoveFromApertium' from the apertium cg3 files.
+
+r96100:
+Removed temporarily the downcasing of derived proper nouns from the hfst
+transducers - it causes them to become malfunctioning.
+
+r96043:
+Fixed bug introduced yesterday that broke compilation of certain xfscript files.
+
+r95955:
+Forgot two files in the previous commit.
+
+r95954:
+Added support for testing the fst for initial upper casing of strings. This also
+includes yaml test support for non-analysing/-genereting fst's.
+
+r95796:
+Properly handle downcasing of derived proper nouns as well as optional initial
+upper case. The optional initial upper-casing doesn't work for derived proper
+nouns when using Hfst because of an unimplemented featuare in hfst-xfst. It is
+reported to the hfst team. Increased gtd core version number due to new scripts
+and possible dependencies in the gtd core.
+
+r94834:
 Extracting flag diacritics, to build regexes that can ignore them in certain
 cases (like optional initial upper case). Requires new version of the gtd core.
 At the same time split tag extraction in two - the first step extracts the whole
