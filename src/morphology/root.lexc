@@ -134,7 +134,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
  @U.Cap.Opt@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
 
 LEXICON Root
-!! The word forms in UNDEFINED language start from the lexeme roots of basic
+!! The word forms in Siksika language start from the lexeme roots of basic
 !! word classes, or optionally from prefixes:
 0   Nouns       ;
 0   Verbs       ;
@@ -142,5 +142,7 @@ LEXICON Root
 0   Pronouns    ;
 0   Numerals    ;
 0   Prefixes    ;
+    Punctuation ;
+    Symbols     ;
 
 ! vim: set ft=xfst-lexc:
