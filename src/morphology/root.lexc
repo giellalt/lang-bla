@@ -137,13 +137,14 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 LEXICON Root
 !! The word forms in Siksika language start from the lexeme roots of basic
 !! word classes, or optionally from prefixes:
-0   Nouns       ;
-0   Verbs       ;
-0   Adjectives  ;
-0   Pronouns    ;
-0   Numerals    ;
-0   Prefixes    ;
-    Punctuation ;
-    Symbols     ;
+Rattlesnakes ;
+! 0   Nouns       ;
+! 0   Verbs       ;
+! 0   Adjectives  ;
+! 0   Pronouns    ;
+! 0   Numerals    ;
+! 0   Prefixes    ;
+!     Punctuation ;
+!     Symbols     ;
 
 ! vim: set ft=xfst-lexc:
