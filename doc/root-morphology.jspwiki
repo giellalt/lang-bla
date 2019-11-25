@@ -25,6 +25,7 @@ Verb moods are:
 Verb personal forms are:
 Other verb forms are
 
+ * +Symbol = independent symbols in the text stream, like £, €, ©
 Special symbols are classified with:
 The verbs are syntactically split according to transitivity:
 Special multiword units are analysed with:
@@ -74,6 +75,6 @@ given the proper use of these flags.
  | @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
  | @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
 
-The word forms in UNDEFINED language start from the lexeme roots of basic
+The word forms in Siksika language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
 
