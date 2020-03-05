@@ -15,7 +15,7 @@
 ! ========================================================================== !
 !!            !!!Siksika morphological analyser                      !
 ! ========================================================================== !
-!! INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Siksika LANGUAGE.
+!! INTRODUCTION TO MORPHOLOGICAL ANALYSER OF THE SIKSIKA (BLACKFOOT) LANGUAGE.
  
 
 Multichar_Symbols  !!≈ !!!Definitions for @CODE@
@@ -27,19 +27,25 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! (It is highly suggested to follow existing standards when adding new tags).
 
 !! The parts-of-speech are:
- +N +A +Adv +V                                 !!≈
- +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle +Num !!≈
+ +N +Adv +V                                 !!≈
+
+!! These tags 
++Anim +Inan 
+
+!! The nominals are inflected in the following Number
+ +Sg  +Pl
+
+!! These are tags used for other languages.
+ +A +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle +Num !!≈
 
 !! The parts of speech are further split up into:
- +Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef
+ +Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef + Du
 
 !! The Usage extents are marked using following tags:
  +Err/Orth   
  +Use/-Spell 
 
-!! The nominals are inflected in the following Case and Number
- +Sg +Du +Pl
- +Ess +Nom +Gen +Acc +Ill +Loc +Com +Com/Sh
+
 
 !! The possession is marked as such:
  +PxSg1 +PxSg2 +PxSg3 +PxDu1 +PxDu2 +PxDu3 +PxPl1 +PxPl2 +PxPl3
@@ -138,7 +144,7 @@ LEXICON Root
 !! The word forms in Siksika language start from the lexeme roots of basic
 !! word classes, or optionally from prefixes:
 Rattlesnakes ;
-! 0   Nouns       ;
+ 0   Nouns       ;
 ! 0   Verbs       ;
 ! 0   Adjectives  ;
 ! 0   Pronouns    ;
