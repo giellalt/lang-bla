@@ -2,14 +2,14 @@
 !  ---------------
 !! The Siksika language nouns inflect in cases.
 
-LEXICON Cases
-+N+sg+nom:0     #   ;
-+N+pl+nom:i     #   ;
-+N+sg+loc:as    #   ;
-+N+pl+loc:ias   #   ;
-+N+sg+acc:at    #   ;
-+N+pl+acc:iat   #   ;
-#:0   Nouns   ;
+LEXICON anim
++N+Anim+Sg:%>wa # ;
++N+Anim+Pl:%>iksi # ;
+
+LEXICON inanim
++N+Inan+Sg:%>yi # ;
++N+Inan+Pl:%>ists # ;
+
 
 ! vim: set ft=xfst-lexc:
 
