@@ -1,0 +1,3 @@
+# Add complete words here as misspelling:correct followed by a TAB and the
+# weight:
+ki:kii		0.0

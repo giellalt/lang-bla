@@ -1,0 +1,72 @@
+## Exclusions:
+~$
+~%
+~'
+~*
+~+
+~,
+~/
+~0
+~1
+~2
+~3
+~4
+~5
+~6
+~7
+~8
+~9
+~<
+~>
+~_
+~§
+~²
+~³
+~´
+~¹
+~¼
+~½
+~¾
+~‒
+~–
+~—
+~―
+~’
+~€
+
+## Inclusions: this is the real alphabet definition:
+a
+h
+i
+k
+m
+n
+o
+p
+s
+t
+w
+y
+á
+í
+ó
+'
+
+## Transition pairs + weight - section separator:
+@@
+
+## Transition pair specifications + weight:
+a	á	1
+o	ó	1
+i	í	1
+e	i	1
+b	p	1
+d	t	1
+g	k	1
+
+## Swaps. NB! Please note that these depend on the variable
+## USE_SWAPS in Makefile.am in this directory. Also note that
+## enabling swaps is computationally expensive. See note in
+## Makefile.am.
+## Change dh into hd with the weight 0.5:
+d,h	h,d	0.5
