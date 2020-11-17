@@ -182,7 +182,7 @@ define GlideLossRule [ Gx -> 0 || [.#. | Cx ] (Bx) _ ] ;
 
 ! Semivowel reduction G > 0 / _ + G
 
-define GlideReductRule [ Gx -> 0 || (Bx) _ Gx ] ;
+define GlideReductRule [ Gx -> 0 ||  _ (Bx) Gx ] ;
 
 !!€ kitanistawawaaw>yináyi
 !!€ kitanistawawaayináyi
@@ -218,7 +218,7 @@ define GlotLossRule [ 7 -> 0 || Vshort Bx Vlong (Bx) _ (Bx) Consonant ] ;
 !!€ káta7<ookaawaatsi
 !!€ kátaookaawaatsi
 
-! Glottal assimilation V' > V: / _ (s) C: 
+! Glottal assimilation V' > V: / _ (s) C: (C not s) #fix
 
 define GlotAssRule [ a 7 -> aa || _ (Bx) (s) (Bx) Clong ,, i 7 -> ii || _ (Bx) (s) (Bx) Clong ,, o 7 -> oo || _ (Bx) (s) (Bx) Clong ] ;
 
