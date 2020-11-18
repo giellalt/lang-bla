@@ -22,6 +22,8 @@ define Gx [ w | y ] ;
 
 !! Rules
 
+!! Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of Toronto Press. Appendix B.
+
 !! 1. Gemination C1 > C2 / _ + C2
 
 define Ck2kkRule [ Consonant %> k -> %> kk ] ;
