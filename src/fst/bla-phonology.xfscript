@@ -22,7 +22,7 @@ define Gx [ w | y ] ;
 
 !! Rules
 
-!! Gemination C1 > C2 / _ + C2
+!! 1. Gemination C1 > C2 / _ + C2
 
 define Ck2kkRule [ Consonant %> k -> %> kk ] ;
 
@@ -41,7 +41,7 @@ define CC2GemRule [ Ck2kkRule .o. Cp2ppRule .o. Ct2ttRule .o. Cs2ssRule .o. Cm2m
 !!€ nitáni2t>k>wa
 !!€ nitánikka 
 
-! s-Insertion 0 > s / I _ t 
+! 2. s-Insertion 0 > s / I _ t 
 
 define sInsRule [ i2 t -> i2 s t ] ;
 
@@ -55,14 +55,14 @@ define h2ssRule [ h -> ss || i2 _ ] ;
 !!€ ann>yi2hka
 !!€ annisska
 
-! s-Connection A 0 > s / C+_s
+! 4a. s-Connection A 0 > s / C+_s
 
 define sConnRuleA [ Consonant Bx s -> Consonant Bx ss ,, Consonant Bx ss -> Consonant Bx s ss ] ;
 
 !!€ nit<siksipawa
 !!€ nitssiksipawa
 
-! s-Connection B 0 > s / V(')+_s
+! 4b. s-Connection B 0 > s / V(')+_s
 
 define sConnRuleB [ Vowel (7) %< s -> Vowel (7) %< i s ] ;
 
@@ -72,14 +72,14 @@ define sConnRuleB [ Vowel (7) %< s -> Vowel (7) %< i s ] ;
 !!€ káta7<simiwa
 !!€ kátai'simiwa
 
-! o-Replacement o > a / _+a
+! 5. o-Replacement o > a / _+a
 
 define oReplaceRule [ o -> a || _ Bx a ] ;
 
 !!€ áakoto<apinniiwa
 !!€ áakotaapinniiwa
 
-! Coalescence wi(:) > o
+! 6. Coalescence wi(:) > o
 
 define wi2oRuleA [ w %< [ i | ii ] -> o ] ;
 
@@ -91,14 +91,14 @@ define wi2oRuleB [ w %< [ í | íi ] -> ó %<] ;
 !!€ w<ínni
 !!€ ónni
 
-! Breaking k > ks / _i2
+! 7. Breaking k > ks / _i2
 
 define k2ksRule [ k -> ks || _ (Bx) i2 ] ;
 
 !!€ áak<i2piima
 !!€ áaksipiima
 
-! Desyllabification i > y, o > w / V + _ V
+! 9. Desyllabification i > y, o > w / V + _ V
 
 define i2yRule [ i -> y || Vowel Bx _ Vowel ] ;
 define o2wRule [ o -> w || Vowel Bx _ Vowel ] ;
@@ -107,7 +107,7 @@ define Vowel2GlideRule [ i2yRule .o. o2wRule ] ;
 !!€ á<i2o7kaa>wa
 !!€ áyo'kaawa
 
-! Vowel shortening V: > V / _ + V
+! 10. Vowel shortening V: > V / _ + V
 
 define ii2iRule [ ii -> i || _ Bx Vowel ,, íi -> í || _ Bx Vowel ] ;
 define aa2aRule [ aa -> a || _ Bx Vowel ,, áa -> á || _ Bx Vowel ] ;
@@ -117,14 +117,14 @@ define VV2VRule [ ii2iRule .o. aa2aRule .o. oo2oRule ] ;
 !!€ áyo7kaa>o7pa
 !!€ áyo'kao'pa
 
-! i-Loss i > 0 / Vy _ {a,o})
+! 11. i-Loss i > 0 / Vy _ {a,o})
 
 define iLossRule [ i -> 0 || Vowel (Bx) y _ (Bx) [ a | aa | o | oo ] ] ;
 
 !!€ áyo7kaa>yi>aawa
 !!€ áyo'kaayaawa
 
-! i-Absorption i > 0 / s _ {a,o})
+! 12. i-Absorption i > 0 / s _ {a,o})
 
 define iAbsorbRule [ i -> 0 || s (Bx) _ (Bx) [ a | aa | o | oo ] ] ;
 
@@ -134,7 +134,7 @@ define iAbsorbRule [ i -> 0 || s (Bx) _ (Bx) [ a | aa | o | oo ] ] ;
 !!€ nit<i2oyi
 !!€ nitsoyi
 
-! t-Affrication t > ts / _ i
+! 19. t-Affrication t > ts / _ i
 
 define tAffricRule [ t -> ts || _ (Bx) i ] ;
 
@@ -144,14 +144,14 @@ define tAffricRule [ t -> ts || _ (Bx) i ] ;
 !!€ nit<i2oyi
 !!€ nitsoyi
 
-! ih-Loss ih > 0 / s _ s
+! 13. ih-Loss ih > 0 / s _ s
 
 define ihLossRule [ i (Bx) h -> 0 || s (Bx) _ (Bx) s ] ;
 
 !!€ otokska7si>hsi
 !!€ otokska'ssi
 
-! Presibilation ihs > ss, iihs > iss
+! 14. Presibilation ihs > ss, iihs > iss
 
 define ihs2ssRule [ i (Bx) h (Bx) s -> ss ] ;
 define iihs2issRule [ ii (Bx) h (Bx) s -> iss ] ;
@@ -163,9 +163,9 @@ define PresibRule [ ihs2ssRule .o. iihs2issRule ] ;
 !!€ pii<hsini
 !!€ pissini
 
-! Semivowel loss G > 0 / {#,C} _ (C not ')
+! 15. Semivowel loss G > 0 / {#,C} _ (C not ')
 
-define GlideLossRule [ Gx -> 0 || [.#. | Cx ] (Bx) _ ] ;
+define GlideLossRule [ Gx -> 0 || [.#. | [ Consonant - 7 ] ] (Bx) _ ] ;
 
 !!€ yaatóót
 !!€ aatóót
@@ -180,28 +180,28 @@ define GlideLossRule [ Gx -> 0 || [.#. | Cx ] (Bx) _ ] ;
 !!€ kikáta7<waaniihpa
 !!€ kikáta'waaniihpa
 
-! Semivowel reduction G > 0 / _ + G
+! 16. Semivowel reduction G > 0 / _ + G
 
 define GlideReductRule [ Gx -> 0 ||  _ (Bx) Gx ] ;
 
 !!€ kitanistawawaaw>yináyi
 !!€ kitanistawawaayináyi
 
-! y-Reduction iyi > ii / C _ y
+! 17. y-Reduction iyi > ii / C _ y
 
 define iyiReductRule [ i y i -> ii || Consonant (Bx) _ (Bx) y ] ;
 
 !!€ áíhpiyi>yináyi
 !!€ áíhpiiyináyi
 
-! Post-sibilation ih > s / s _
+! 18. Post-sibilation ih > s / s _
 
 define PostsibRule [ i (Bx) h -> s || s (Bx) _ ] ;
 
 !!€ nitáókska7si>hpinnan
 !!€ nitáókska'sspinnan
 
-! Glottal metathesis 'V > V' / V _ C
+! 20. Glottal metathesis 'V > V' / V _ C
 
 define GlotMetaRule [ 7 (Bx) o -> o 7 || Vowel (Bx) _ (Bx) Consonant ,, 7 (Bx) a -> a 7 || Vowel (Bx) _ (Bx) Consonant ,, 7 (Bx) i -> i 7 || Vowel (Bx) _ (Bx) Consonant ,, 7 (Bx) oo -> oo 7 || Vowel (Bx) _ (Bx) Consonant ,, 7 (Bx) aa -> aa 7 || Vowel (Bx) _ (Bx) Consonant ,, 7 (Bx) ii -> ii 7 || Vowel (Bx) _ (Bx) Consonant] ;
 
@@ -211,7 +211,7 @@ define GlotMetaRule [ 7 (Bx) o -> o 7 || Vowel (Bx) _ (Bx) Consonant ,, 7 (Bx) a
 !!€ káta7<sspitaawa
 !!€ kátaisspitaawa
 
-! Glottal loss ' > 0 / V V: _ C ##fix
+! 21. Glottal loss ' > 0 / V V: _ C ##fix
 
 define GlotLossRule [ 7 -> 0 || Vshort Bx Vlong (Bx) _ (Bx) Consonant ] ;
 
@@ -225,14 +225,14 @@ define GlotAssRule [ a 7 -> aa || _ (Bx) (s) (Bx) [ Clong - ss ] ,, i 7 -> ii ||
 !!€ káta7<ottakiwaasti
 !!€ kátaoottakiwaasti
 
-! Glottal reduction ' > 0 / _  
+! 23. Glottal reduction ' > 0 / _  
 
 define GlotReductRule [ 7 -> 0 || _ (Bx) 7 ] ;
 
 !!€ á7<o7tooyiniki
 !!€ áó'tooyiniki
 
-! Vowel epenthesis 0 > V / V ' _ h  
+! 24. Vowel epenthesis 0 > V / V ' _ h  
 
 define aEpenRule [ a 7 h -> a 7 a h ,, aa 7 h -> aa 7 aa h ] ;
 define iEpenRule [ i 7 h -> i 7 i h ,, ii 7 h -> ii 7 ii h ] ;
@@ -242,14 +242,14 @@ define VowelEpenRule [ aEpenRule .o. iEpenRule .o. oEpenRule ] ;
 !!€ káta7<ohto7toowa
 !!€ kátao'ohto'toowa
 
-! sss-Shortening sss > ss  
+! 25. sss-Shortening sss > ss  
 
 define sss2ssRule [ [ s (Bx) ss | ss (Bx) s ] -> ss || _ Consonant ] ;
 
 !!€ nit<ssksinoawa
 !!€ nitssksinoawa
 
-! Accent spread V > +accent / V+accent + _
+! 26. Accent spread V > +accent / V+accent + _
 
 define aAccentRule [ a -> á || Vacc Bx _ ,, aa -> áa || Vacc Bx _ ] ;
 define iAccentRule [ i -> í || Vacc Bx _ ,, ii -> íi || Vacc Bx _ ] ;
