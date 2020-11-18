@@ -24,7 +24,7 @@ define Gx [ w | y ] ;
 
 !! Gemination C1 > C2 / _ + C2
 
-define Ck2kkRule [ Consonant %> k ->  %> kk ] ;
+define Ck2kkRule [ Consonant %> k -> %> kk ] ;
 
 define Cp2ppRule [ Consonant %> p -> %> pp ] ;
 
@@ -218,9 +218,9 @@ define GlotLossRule [ 7 -> 0 || Vshort Bx Vlong (Bx) _ (Bx) Consonant ] ;
 !!€ káta7<ookaawaatsi
 !!€ kátaookaawaatsi
 
-! Glottal assimilation V' > V: / _ (s) C: (C not s) #fix
+! 22. Glottal assimilation V' > V: / _ (s) C: (C not s) #fix
 
-define GlotAssRule [ a 7 -> aa || _ (Bx) (s) (Bx) Clong ,, i 7 -> ii || _ (Bx) (s) (Bx) Clong ,, o 7 -> oo || _ (Bx) (s) (Bx) Clong ] ;
+define GlotAssRule [ a 7 -> aa || _ (Bx) (s) (Bx) [ Clong - ss ] ,, i 7 -> ii || _ (Bx) (s) (Bx) [ Clong - ss ] ,, o 7 -> oo || _ (Bx) (s) (Bx) [ Clong - ss ] ] ;
 
 !!€ káta7<ottakiwaasti
 !!€ kátaoottakiwaasti
@@ -261,6 +261,8 @@ define AccentRule [ aAccentRule .o. iAccentRule .o. oAccentRule ] ;
 
 !!€ atsikí>istsi
 !!€ atsikíístsi
+
+! 8. I-neutralization I > i
 
 define i2NeutRule [ i2 -> i ,, ii2 -> ii ] ;
 
