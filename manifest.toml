@@ -5,8 +5,7 @@ version = "0.1.1"
 system_pkg_id = "no.divvun.MacDivvun.bla"
 
 [windows]
-system_product_code = "{2713EE91-DABF-48CA-878A-0D0A3D5EA623
-}_is1"
+system_product_code = "{2713EE91-DABF-48CA-878A-0D0A3D5EA623}_is1"
 legacy_product_codes = [
     { value = "F2FDE58F-F454-4013-B4C4-1D3A1C48C9CF", kind = "nsis" },
     { value = "3E236262-98AA-4AC1-AB2B-AB82D0F9ED5D", kind = "nsis" }
