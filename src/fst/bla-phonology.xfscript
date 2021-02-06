@@ -2,21 +2,25 @@
 
 define Bx [ %> | %< ] ;
   
-define Ix [ i | i2 | ii2 ] ;
+define Ix [ i | i2 ] ;
   
-define Vowel [ a | aa | á | áa | i | ii | í | íi | o | oo | ó | óo | ai | áí | ao | áó | oi | óí | i2 ] ;
+#define Vowel [ a | aa | á | áa | i | ii | í | íi | o | oo | ó | óo | ai | áí | ao | áó | oi | óí | i2 ] ;
 
 define Vshort [ a | á | i | í | o | ó | i2 ] ;
 
-define Vlong [ aa | áa | ii | íi | oo | óo | ai | áí | ao | áó | oi | óí ] ;
+define Vlong [ [a a] | [á a] | [i i] | [í i] | [o o] | [ó o] | [a i] | [á í] | [a o] | [á ó] | [o i] | [ó í] ] ;
 
-define Vacc [ á | áa | í | íi | ó | óo | áí | áó | óí ] ;
+define Vowel [ Vshort | Vlong ] ;
 
-define Consonant [ ts | ks | h | k | m | n | p | s | t | w | y | 7 | pp | tt | kk | ss | mm | nn ] ;
+define Vacc [ á | [á a] | í | [í i] | ó | [ó o] | [á í] | [á ó] | [ó í] ] ;
 
-define Cx [ ts | ks | h | k | m | n | p | s | t | w | y | pp | tt | kk | ss | mm | nn ] ;
+define Cshort [ k | m | n | p | s | t | w | y | 7 ] ;
 
-define Clong [ pp | tt | kk | ss | mm | nn ] ;
+!!define Cx [ ts | ks | h | k | m | n | p | s | t | w | y | pp | tt | kk | ss | mm | nn ] ;
+
+define Clong [ [p p] | [t t] | [k k] | [s s] | [m m] | [n n] | [k s] | [t s] | ] ;
+
+define Consonant [ Cshort | Clong | h ] ;
   
 define Gx [ w | y ] ;
 
@@ -26,17 +30,17 @@ define Gx [ w | y ] ;
 
 !! 1. Gemination C1 > C2 / _ + C2
 
-define Ck2kkRule [ Consonant %> k -> %> kk ] ;
+define Ck2kkRule [ Cshort %> -> k %> || _ k ] ;
 
-define Cp2ppRule [ Consonant %> p -> %> pp ] ;
+define Cp2ppRule [ Cshort %> -> p %> || _ p ] ;
 
-define Ct2ttRule [ Consonant %> t -> %> tt ] ;
+define Ct2ttRule [ Cshort %> -> t %> || _ t ] ;
 
-define Cs2ssRule [ Consonant %> s -> %> ss ] ;
+define Cs2ssRule [ Cshort %> -> s %> || _ s ] ;
 
-define Cm2mmRule [ Consonant %> m -> %> mm ] ;
+define Cm2mmRule [ Cshort %> -> m %> || _ m ] ;
 
-define Cn2nnRule [ Consonant %> n -> %> nn ] ;
+define Cn2nnRule [ Cshort %> -> n %> || _ n ] ;
 
 define CC2GemRule [ Ck2kkRule .o. Cp2ppRule .o. Ct2ttRule .o. Cs2ssRule .o. Cm2mmRule .o. Cn2nnRule ] ;
 
@@ -52,21 +56,23 @@ define sInsRule [ i2 t -> i2 s t ] ;
 
 ! x-Sibilation h > ss / i2 _
 
-define h2ssRule [ h -> ss || i2 _ ] ;
+define h2ssRule [ h -> s s || i2 _ ] ;
 
 !!€ ann>yi2hka
 !!€ annisska
 
 ! 4a. s-Connection A 0 > s / C+_s
 
-define sConnRuleA [ Consonant Bx s -> Consonant Bx ss ,, Consonant Bx ss -> Consonant Bx s ss ] ;
+!define sConnRuleA [ Consonant Bx s -> Consonant Bx s s ,, Consonant Bx s s -> Consonant Bx s s s ] ;
+define sConnRuleA [ s -> s s  || Consonant Bx _ ,, s -> s s  || Consonant Bx _ s ] ;
 
 !!€ nit<siksipawa
 !!€ nitssiksipawa
 
 ! 4b. s-Connection B 0 > s / V(')+_s
 
-define sConnRuleB [ Vowel (7) %< s -> Vowel (7) %< i s ] ;
+!define sConnRuleB [ Vowel (7) %< s -> Vowel (7) %< i s ] ;
+define sConnRuleB [ s -> i s || Vowel (7) %< _ ] ;
 
 !!€ á<sínaakiwa
 !!€ áísínaakiwa
@@ -83,19 +89,20 @@ define oReplaceRule [ o -> a || _ Bx a ] ;
 
 ! 6. Coalescence wi(:) > o
 
-define wi2oRuleA [ w %< [ i | ii ] -> o ] ;
+define wi2oRuleA1 [ w %< [i i] -> o ] ;
+define wi2oRuleA2 [w %< i -> o ] ;
 
 !!€ w<iihsíssi
 !!€ ohsíssi
 
-define wi2oRuleB [ w %< [ í | íi ] -> ó %<] ;
+define wi2oRuleB [ w %< [ í | [íi] ] -> ó %<] ;
 
 !!€ w<ínni
 !!€ ónni
 
 ! 7. Breaking k > ks / _i2
 
-define k2ksRule [ k -> ks || _ (Bx) i2 ] ;
+define k2ksRule [ k -> k s || _ (Bx) i2 ] ;
 
 !!€ áak<i2piima
 !!€ áaksipiima
@@ -111,9 +118,9 @@ define Vowel2GlideRule [ i2yRule .o. o2wRule ] ;
 
 ! 10. Vowel shortening V: > V / _ + V
 
-define ii2iRule [ ii -> i || _ Bx Vowel ,, íi -> í || _ Bx Vowel ] ;
-define aa2aRule [ aa -> a || _ Bx Vowel ,, áa -> á || _ Bx Vowel ] ;
-define oo2oRule [ oo -> o || _ Bx Vowel ,, óo -> ó || _ Bx Vowel ] ;
+define ii2iRule [ [i i] -> i || _ Bx Vowel ,, [í i] -> í || _ Bx Vowel ] ;
+define aa2aRule [ [a a] -> a || _ Bx Vowel ,, [á a] -> á || _ Bx Vowel ] ;
+define oo2oRule [ [o o] -> o || _ Bx Vowel ,, [ó o] -> ó || _ Bx Vowel ] ;
 define VV2VRule [ ii2iRule .o. aa2aRule .o. oo2oRule ] ;
 
 !!€ áyo7kaa>o7pa
@@ -121,14 +128,14 @@ define VV2VRule [ ii2iRule .o. aa2aRule .o. oo2oRule ] ;
 
 ! 11. i-Loss i > 0 / Vy _ {a,o})
 
-define iLossRule [ i -> 0 || Vowel (Bx) y _ (Bx) [ a | aa | o | oo ] ] ;
+define iLossRule [ i -> 0 || Vowel (Bx) y _ (Bx) [ a | [a a] | o | [o o] ] ] ;
 
 !!€ áyo7kaa>yi>aawa
 !!€ áyo'kaayaawa
 
 ! 12. i-Absorption i > 0 / s _ {a,o})
 
-define iAbsorbRule [ i -> 0 || s (Bx) _ (Bx) [ a | aa | o | oo ] ] ;
+define iAbsorbRule [ i -> 0 || s (Bx) _ (Bx) [ a | [a a] | o | [o o] ] ] ;
 
 !!€ áókska7si>o7pa
 !!€ áókska'so'pa
@@ -138,7 +145,7 @@ define iAbsorbRule [ i -> 0 || s (Bx) _ (Bx) [ a | aa | o | oo ] ] ;
 
 ! 19. t-Affrication t > ts / _ i
 
-define tAffricRule [ t -> ts || _ (Bx) i ] ;
+define tAffricRule [ t -> t s || _ (Bx) i ] ;
 
 !!€ nit<it<itsiniki
 !!€ nitsitsitsiniki
@@ -155,11 +162,11 @@ define ihLossRule [ i (Bx) h -> 0 || s (Bx) _ (Bx) s ] ;
 
 ! 14. Presibilation ihs > ss, iihs > iss
 
-define ihs2ssRule [ i (Bx) h (Bx) s -> ss ] ;
-define iihs2issRule [ ii (Bx) h (Bx) s -> iss ] ;
+define ihs2ssRule [ i (Bx) h (Bx) s -> s s ] ;
+define iihs2issRule [ [i i] (Bx) h (Bx) s -> i s s ] ;
 define PresibRule [ ihs2ssRule .o. iihs2issRule ] ;
 
-!!€ otá7po7taki>hsi
+!!€ otá7po7taki>hsi 
 !!€ otá'po'takssi
 
 !!€ pii<hsini
@@ -191,7 +198,7 @@ define GlideReductRule [ Gx -> 0 ||  _ (Bx) Gx ] ;
 
 ! 17. y-Reduction iyi > ii / C _ y
 
-define iyiReductRule [ i y i -> ii || Consonant (Bx) _ (Bx) y ] ;
+define iyiReductRule [ i y i -> [i i] || Consonant (Bx) _ (Bx) y ] ;
 
 !!€ áíhpiyi>yináyi
 !!€ áíhpiiyináyi
@@ -205,15 +212,21 @@ define PostsibRule [ i (Bx) h -> s || s (Bx) _ ] ;
 
 ! 20. Glottal metathesis 'V > V' / V _ C
 
-define GlotMetaRule [ 7 (Bx) o -> o 7 || Vowel (Bx) _ (Bx) Consonant ,, 7 (Bx) a -> a 7 || Vowel (Bx) _ (Bx) Consonant ,, 7 (Bx) i -> i 7 || Vowel (Bx) _ (Bx) Consonant ,, 7 (Bx) oo -> oo 7 || Vowel (Bx) _ (Bx) Consonant ,, 7 (Bx) aa -> aa 7 || Vowel (Bx) _ (Bx) Consonant ,, 7 (Bx) ii -> ii 7 || Vowel (Bx) _ (Bx) Consonant] ;
+define GlotMetaRule [ 7 (Bx) o -> o 7 || Vowel (Bx) _ (Bx) Consonant ,, 
+7 %< a -> %< a 7 || Vowel (Bx) _ (Bx) Consonant ,, 
+7 %< i -> %< i 7 || Vowel (Bx) _ (Bx) Consonant ,, 
+7 %< o -> %< o 7 || Vowel (Bx) _ (Bx) Consonant ,, 
+7 %< [o o] -> %< [o o] 7 || Vowel (Bx) _ (Bx) Consonant ,, 
+7 %< [a a] -> %< [a a] 7 || Vowel (Bx) _ (Bx) Consonant ,, 
+7 %< [i i] -> %< [i i] 7 || Vowel (Bx) _ (Bx) Consonant ] ;
 
-!!€ á7<omai7takiwa
+!!€ á7<omai7takiwa 
 !!€ áó'mai'takiwa
 
 !!€ káta7<sspitaawa
-!!€ kátaisspitaawa
+!!€ kátai'sspitaawa
 
-! 21. Glottal loss ' > 0 / V V: _ C ##fix
+! 21. Glottal loss ' > 0 / V V: _ C 
 
 define GlotLossRule [ 7 -> 0 || Vshort Bx Vlong (Bx) _ (Bx) Consonant ] ;
 
@@ -222,10 +235,19 @@ define GlotLossRule [ 7 -> 0 || Vshort Bx Vlong (Bx) _ (Bx) Consonant ] ;
 
 ! 22. Glottal assimilation V' > V: / _ (s) C: (C not s) #fix
 
-define GlotAssRule [ a 7 -> aa || _ (Bx) (s) (Bx) [ Clong - ss ] ,, i 7 -> ii || _ (Bx) (s) (Bx) [ Clong - ss ] ,, o 7 -> oo || _ (Bx) (s) (Bx) [ Clong - ss ] ] ;
+!define GlotAssRule [ a 7 -> [ a a ] || _ (Bx) (s) (Bx) [ Clong - [ s s ] ] ,, i 7 -> [ i i ] || _ (Bx) (s) (Bx) [ Clong - [ s s ] ] ,, o 7 -> [ o o ] || _ (Bx) (s) (Bx) [ Clong - [ s s ] ] ] ;
+
+!define GlotAssRule [ 7 -> a || a _ (s) [ Clong - [ s s ] ] ,, 7 -> i || i _ (s) [ Clong - [ s s ] ] ,, 7 -> o || Bx o _ Clong ] ;
+
+define Glot2aRule [ a 7 -> [ a a ] || _ (s) Clong ] ;
+define Glot2oRule [ %< o 7 -> %< [ o o ] || _ (s) Clong ] ;
+define GlotAssRule [Glot2aRule .o. Glot2oRule ] ;
 
 !!€ káta7<ottakiwaasti
 !!€ kátaoottakiwaasti
+
+!!€ á7<isttohkohpiy7ssi
+!!€ áí'sttohkohpiy'ssi
 
 ! 23. Glottal reduction ' > 0 / _  
 
@@ -253,9 +275,9 @@ define sss2ssRule [ [ s (Bx) ss | ss (Bx) s ] -> ss || _ Consonant ] ;
 
 ! 26. Accent spread V > +accent / V+accent + _
 
-define aAccentRule [ a -> á || Vacc Bx _ ,, aa -> áa || Vacc Bx _ ] ;
-define iAccentRule [ i -> í || Vacc Bx _ ,, ii -> íi || Vacc Bx _ ] ;
-define oAccentRule [ o -> ó || Vacc Bx _ ,, oo -> óo || Vacc Bx _ ] ;
+define aAccentRule [ a -> á || Vacc Bx _ ,, [ a a ] -> [ á a ] || Vacc Bx _ ] ;
+define iAccentRule [ i -> í || Vacc Bx _ ,, [ i i ] -> [ í i ] || Vacc Bx _ ] ;
+define oAccentRule [ o -> ó || Vacc Bx _ ,, [ o o ] -> [ ó o ] || Vacc Bx _ ] ;
 define AccentRule [ aAccentRule .o. iAccentRule .o. oAccentRule ] ;
 
 !!€ á<okska7siwa
@@ -270,6 +292,35 @@ define i2NeutRule [ i2 -> i ,, ii2 -> ii ] ;
 
 define deep2surfRule [ 7 -> ' ,, Bx -> 0 ] ;
 
-read regex [ sConnRuleB .o. sConnRuleA .o. CC2GemRule .o. sInsRule .o. h2ssRule .o. oReplaceRule .o. wi2oRuleA .o. wi2oRuleB .o. k2ksRule .o. i2NeutRule .o. Vowel2GlideRule .o. VV2VRule .o. iLossRule .o. tAffricRule .o. iAbsorbRule .o. ihLossRule .o. PresibRule .o. GlideLossRule .o. GlideReductRule .o. iyiReductRule .o. PostsibRule .o. GlotMetaRule .o. GlotLossRule .o. GlotAssRule .o. GlotReductRule .o. VowelEpenRule .o. sss2ssRule .o. AccentRule .o. deep2surfRule ] ;
+read regex [ sConnRuleB 
+.o. sConnRuleA 
+.o. CC2GemRule 
+.o. sInsRule 
+.o. h2ssRule 
+.o. oReplaceRule 
+.o. wi2oRuleA1 
+.o. wi2oRuleA2 
+.o. wi2oRuleB 
+.o. k2ksRule 
+.o. i2NeutRule 
+.o. Vowel2GlideRule 
+.o. VV2VRule 
+.o. iLossRule 
+.o. tAffricRule 
+.o. iAbsorbRule 
+.o. ihLossRule 
+.o. PresibRule 
+.o. GlideReductRule 
+.o. GlideLossRule 
+.o. iyiReductRule 
+.o. PostsibRule 
+.o. GlotMetaRule 
+.o. GlotLossRule 
+.o. GlotAssRule 
+.o. GlotReductRule 
+.o. VowelEpenRule 
+.o. sss2ssRule 
+.o. AccentRule 
+.o. deep2surfRule ] ;
 
 !!!!! END !!!!!
