@@ -1,15 +1,9 @@
 [What is this?|WhatIsThis.html]
 
 
-!!! Dynamic documentation
 
-* [Links to generated source file documentation|Links.html]
-* Source files: [stems|https://gtsvn.uit.no/langtech/trunk/startup-langs/bla/src/fst/stems/]   
-  / [affixes|https://gtsvn.uit.no/langtech/trunk/startup-langs/bla/src/fst/affixes/] 
-  / [syntax|https://gtsvn.uit.no/langtech/trunk/startup-langs/bla/src/syntax/] 
-  / [twolc|https://gtsvn.uit.no/langtech/trunk/startup-langs/bla/src/phonology/bla-phon.twolc]   
-  / [yaml|https://gtsvn.uit.no/langtech/trunk/startup-langs/bla/test/src/fst/]
 
+ 
 !!! Grammatical issues
 
 * [The tags that are in use|https://gtsvn.uit.no/langtech/trunk/startup-langs/bla/src/fst/root.lexc]   
