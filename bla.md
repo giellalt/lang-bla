@@ -1,31 +1,29 @@
-Noun inflection
-The Siksika language nouns inflect in cases.
+Nouns
+These words are also in rattlesnakes.lexc
+Morphology according to Wikipedia.
 
 
 
 
-
-Proper noun inflection
-The Siksika language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
+Numerals
+Numerals in the Siksika language are numbers.
 
 
+Verbs
+Verbs in the Siksika language are actions.
 
 
-# Symbol affixes
-
-
-
-
-
-Adjective inflection
-The Siksika language adjectives compare.
+Prefixes
+Prefixes in the Siksika language are bound to beginning of other words.
 
 
 
-Verb inflection
-The Siksika language verbs inflect in persons.
+Adjectives
+Adjectives in the Siksika language describe things.
 
+
+Pronouns
+Pronouns in the Siksika language are references to things.
 
 
 =================================== !
@@ -51,6 +49,36 @@ The Siksika morphophonological/twolc rules file !
 * examples:*
 
 * examples:*
+
+# Symbol affixes
+
+
+
+
+
+Noun inflection
+The Siksika language nouns inflect in cases.
+
+
+
+
+
+Proper noun inflection
+The Siksika language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
+
+
+
+Verb inflection
+The Siksika language verbs inflect in persons.
+
+
+
+Adjective inflection
+The Siksika language adjectives compare.
+
+
+
 
 # Siksika morphological analyser                      !
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF THE SIKSIKA (BLACKFOOT) LANGUAGE.
@@ -137,32 +165,20 @@ given the proper use of these flags.
 The word forms in Siksika language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
 
-Nouns
-These words are also in rattlesnakes.lexc
-Morphology according to Wikipedia.
 
 
 
+We describe here how abbreviations are in Siksika are read out, e.g.
+for text-to-speech systems.
 
-Prefixes
-Prefixes in the Siksika language are bound to beginning of other words.
+For example:
 
-
-
-Pronouns
-Pronouns in the Siksika language are references to things.
-
-
-Adjectives
-Adjectives in the Siksika language describe things.
-
-
-Verbs
-Verbs in the Siksika language are actions.
-
-
-Numerals
-Numerals in the Siksika language are numbers.
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
 
 
 
@@ -218,20 +234,4 @@ Numerals in the Siksika language are numbers.
 % kolon% :%:     Root ;
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
-
-
-
-
-We describe here how abbreviations are in Siksika are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
 
