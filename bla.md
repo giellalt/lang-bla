@@ -605,32 +605,34 @@ These were the set types.
 
 
 
-Nouns
-These words are also in rattlesnakes.lexc
-Morphology according to Wikipedia.
+Verb inflection
+The Siksika language verbs inflect in persons.
+
+
+
+Proper noun inflection
+The Siksika language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
+
+
+
+Adjective inflection
+The Siksika language adjectives compare.
+
+
+
+Noun inflection
+The Siksika language nouns inflect in cases.
 
 
 
 
-Numerals
-Numerals in the Siksika language are numbers.
 
 
-Verbs
-Verbs in the Siksika language are actions.
-
-
-Prefixes
-Prefixes in the Siksika language are bound to beginning of other words.
+# Symbol affixes
 
 
 
-Adjectives
-Adjectives in the Siksika language describe things.
-
-
-Pronouns
-Pronouns in the Siksika language are references to things.
 
 
 =================================== !
@@ -656,33 +658,31 @@ The Siksika morphophonological/twolc rules file !
 * examples:*
 
 * examples:*
-
-# Symbol affixes
-
-
+Verbs
+Verbs in the Siksika language are actions.
 
 
-
-Noun inflection
-The Siksika language nouns inflect in cases.
-
+Pronouns
+Pronouns in the Siksika language are references to things.
 
 
+Numerals
+Numerals in the Siksika language are numbers.
 
 
-Proper noun inflection
-The Siksika language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
+Adjectives
+Adjectives in the Siksika language describe things.
 
 
-
-Verb inflection
-The Siksika language verbs inflect in persons.
+Prefixes
+Prefixes in the Siksika language are bound to beginning of other words.
 
 
 
-Adjective inflection
-The Siksika language adjectives compare.
+Nouns
+These words are also in rattlesnakes.lexc
+Morphology according to Wikipedia.
+
 
 
 
@@ -775,22 +775,6 @@ word classes, or optionally from prefixes:
 
 
 
-We describe here how abbreviations are in Siksika are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
-
-
-
-
 
 
 
@@ -841,6 +825,22 @@ For example:
 % kolon% :%:     Root ;
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
+
+
+
+
+We describe here how abbreviations are in Siksika are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
+
 
 
       [ L A N G U A G E ]  G R A M M A R   C H E C K E R
