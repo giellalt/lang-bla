@@ -606,65 +606,7 @@ These were the set types.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-bla/blob/main/../src/cg3/functions.cg3)</small>=================================== !
-The Siksika morphophonological/twolc rules file !
-=================================== !
-
-
-
-
-
-
-
-
-* *primus%>s*
-* *primus00*
-
-
-* examples:*
-
-* examples:*
-
-
-* examples:*
-
-* examples:*
-* * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-bla/blob/main/../src/fst/phonology.twolc)</small>Nouns
-These words are also in rattlesnakes.lexc
-Morphology according to Wikipedia.
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-bla/blob/main/../src/fst/stems/nouns.lexc)</small>Numerals
-Numerals in the Siksika language are numbers.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-bla/blob/main/../src/fst/stems/numerals.lexc)</small>Adjectives
-Adjectives in the Siksika language describe things.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-bla/blob/main/../src/fst/stems/adjectives.lexc)</small>Prefixes
-Prefixes in the Siksika language are bound to beginning of other words.
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/prefixes.lexc](http://github.com/giellalt/lang-bla/blob/main/../src/fst/stems/prefixes.lexc)</small>Pronouns
-Pronouns in the Siksika language are references to things.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-bla/blob/main/../src/fst/stems/pronouns.lexc)</small>Verbs
-Verbs in the Siksika language are actions.
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-bla/blob/main/../src/fst/stems/verbs.lexc)</small>
+<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-bla/blob/main/../src/cg3/functions.cg3)</small>
 # Siksika morphological analyser                      !
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF THE SIKSIKA (BLACKFOOT) LANGUAGE.
 
@@ -786,7 +728,65 @@ nouns, but with a colon (':') as separator.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-bla/blob/main/../src/fst/affixes/propernouns.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-bla/blob/main/../src/fst/affixes/propernouns.lexc)</small>=================================== !
+The Siksika morphophonological/twolc rules file !
+=================================== !
+
+
+
+
+
+
+
+
+* *primus%>s*
+* *primus00*
+
+
+* examples:*
+
+* examples:*
+
+
+* examples:*
+
+* examples:*
+* * *
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-bla/blob/main/../src/fst/phonology.twolc)</small>Prefixes
+Prefixes in the Siksika language are bound to beginning of other words.
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/prefixes.lexc](http://github.com/giellalt/lang-bla/blob/main/../src/fst/stems/prefixes.lexc)</small>Nouns
+These words are also in rattlesnakes.lexc
+Morphology according to Wikipedia.
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-bla/blob/main/../src/fst/stems/nouns.lexc)</small>Adjectives
+Adjectives in the Siksika language describe things.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-bla/blob/main/../src/fst/stems/adjectives.lexc)</small>Pronouns
+Pronouns in the Siksika language are references to things.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-bla/blob/main/../src/fst/stems/pronouns.lexc)</small>Verbs
+Verbs in the Siksika language are actions.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-bla/blob/main/../src/fst/stems/verbs.lexc)</small>Numerals
+Numerals in the Siksika language are numbers.
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-bla/blob/main/../src/fst/stems/numerals.lexc)</small>
 
 
 We describe here how abbreviations are in Siksika are read out, e.g.
