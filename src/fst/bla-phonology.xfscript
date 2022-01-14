@@ -14,13 +14,13 @@ define Vowel [ Vshort | Vlong ] ;
 
 define Vacc [ á | [á a] | í | [í i] | ó | [ó o] | [á í] | [á ó] | [ó í] ] ;
 
-define Cshort [ k | m | n | p | s | t | w | y | 7 ] ;
+define Cshort [ k | m | n | p | s | t | w | y | 7 | h ] ;
 
-!!define Cx [ ts | ks | h | k | m | n | p | s | t | w | y | pp | tt | kk | ss | mm | nn ] ;
+#define Cx [ ts | ks | h | k | m | n | p | s | t | w | y | pp | tt | kk | ss | mm | nn ] ;
 
-define Clong [ [p p] | [t t] | [k k] | [s s] | [m m] | [n n] | [k s] | [t s] | ] ;
+define Clong [ [p p] | [t t] | [k k] | [s s] | [m m] | [n n] | [k s] | [t s] ] ;
 
-define Consonant [ Cshort | Clong | h ] ;
+define Consonant [ Cshort | Clong ] ;
   
 define Gx [ w | y ] ;
 
@@ -29,18 +29,19 @@ define Gx [ w | y ] ;
 !! Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of Toronto Press. Appendix B.
 
 !! 1. Gemination C1 > C2 / _ + C2
+#check glottal stop
 
-define Ck2kkRule [ Cshort %> -> k %> || _ k ] ;
+define Ck2kkRule [ Cshort -> k || _ %> k ] ;
 
-define Cp2ppRule [ Cshort %> -> p %> || _ p ] ;
+define Cp2ppRule [ Cshort -> p || _ %> p ] ;
 
-define Ct2ttRule [ Cshort %> -> t %> || _ t ] ;
+define Ct2ttRule [ Cshort -> t || _ %> t ] ;
 
-define Cs2ssRule [ Cshort %> -> s %> || _ s ] ;
+define Cs2ssRule [ Cshort -> s || _ %> s ] ;
 
-define Cm2mmRule [ Cshort %> -> m %> || _ m ] ;
+define Cm2mmRule [ Cshort -> m || _ %> m ] ;
 
-define Cn2nnRule [ Cshort %> -> n %> || _ n ] ;
+define Cn2nnRule [ Cshort -> n || _ %> n ] ;
 
 define CC2GemRule [ Ck2kkRule .o. Cp2ppRule .o. Ct2ttRule .o. Cs2ssRule .o. Cm2mmRule .o. Cn2nnRule ] ;
 
@@ -89,13 +90,14 @@ define oReplaceRule [ o -> a || _ Bx a ] ;
 
 ! 6. Coalescence wi(:) > o
 
-define wi2oRuleA1 [ w %< [i i] -> o ] ;
-define wi2oRuleA2 [w %< i -> o ] ;
+define wi2oRuleA1 [ w %< [i i] -> o %< ] ;
+define wi2oRuleA2 [w %< i -> o %< ] ;
 
 !!€ w<iihsíssi
 !!€ ohsíssi
 
-define wi2oRuleB [ w %< [ í | [íi] ] -> ó %<] ;
+define wi2oRuleB1 [ w %< [í i] -> ó %< ] ;
+define wi2oRuleB2 [ w %< í -> ó %< ] ;
 
 !!€ w<ínni
 !!€ ónni
@@ -233,21 +235,21 @@ define GlotLossRule [ 7 -> 0 || Vshort Bx Vlong (Bx) _ (Bx) Consonant ] ;
 !!€ káta7<ookaawaatsi
 !!€ kátaookaawaatsi
 
-! 22. Glottal assimilation V' > V: / _ (s) C: (C not s) #fix
+! 22. Glottal assimilation V' > V: / _ (s) C: (C not s) #expand (for all cons (why Clong doesn't work?))
 
 !define GlotAssRule [ a 7 -> [ a a ] || _ (Bx) (s) (Bx) [ Clong - [ s s ] ] ,, i 7 -> [ i i ] || _ (Bx) (s) (Bx) [ Clong - [ s s ] ] ,, o 7 -> [ o o ] || _ (Bx) (s) (Bx) [ Clong - [ s s ] ] ] ;
 
 !define GlotAssRule [ 7 -> a || a _ (s) [ Clong - [ s s ] ] ,, 7 -> i || i _ (s) [ Clong - [ s s ] ] ,, 7 -> o || Bx o _ Clong ] ;
 
-define Glot2aRule [ a 7 -> [ a a ] || _ (s) Clong ] ;
-define Glot2oRule [ %< o 7 -> %< [ o o ] || _ (s) Clong ] ;
+define Glot2aRule [ a 7 -> a a || _ (s) t t ] ;
+define Glot2oRule [ o 7 -> o o || _ (s) t t ] ;
 define GlotAssRule [Glot2aRule .o. Glot2oRule ] ;
 
-!!€ káta7<ottakiwaasti
-!!€ kátaoottakiwaasti
+!!€ káta7<ottakiwaatsi
+!!€ kátaoottakiwaatsi
 
 !!€ á7<isttohkohpiy7ssi
-!!€ áí'sttohkohpiy'ssi
+!!€ áísttohkohpiy'ssi
 
 ! 23. Glottal reduction ' > 0 / _  
 
@@ -300,7 +302,8 @@ read regex [ sConnRuleB
 .o. oReplaceRule 
 .o. wi2oRuleA1 
 .o. wi2oRuleA2 
-.o. wi2oRuleB 
+.o. wi2oRuleB1 
+.o. wi2oRuleB2 
 .o. k2ksRule 
 .o. i2NeutRule 
 .o. Vowel2GlideRule 
