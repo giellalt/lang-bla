@@ -1,0 +1,28 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - imitaawa - ok : # -m anate noun, sock AEW NA1
+     imitaawa+NA+Sg: imitaawa
+     imitaawa+NA+Pl: imitaaiksi
+     imitaawa+NA+Obv: imitaayi
+     
+     imitaawa+NA+Px1Sg+Sg: nitomitaawa
+     imitaawa+NA+Px1Sg+Pl: nitomitaaiksi
+     imitaawa+NA+Px1Sg+Obv: nitomitaayi
+     
+     imitaawa+NA+Px2Sg+Sg: kitomitaawa
+     imitaawa+NA+Px2Sg+Pl: kitomitaaiksi
+     imitaawa+NA+Px2Sg+Obv: kitomitaayi
+     
+     imitaawa+NA+Px3Sg+Obv: otomitaayi
+
+     imitaawa+NA+Px1Sg+Sg: nitomitaawa
+
