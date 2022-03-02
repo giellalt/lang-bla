@@ -1,0 +1,43 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - aaápani - ok : # -m inanimate noun, blood AEW NA1
+     aaápani+NI+Sg: aaápani
+     aaápani+NI+Pl: aaápanistsi
+     aaápani+NI+Non: aaápani
+
+     aaápani+NI+Px1Sg+Sg: nitsáápani
+     aaápani+NI+Px1Sg+Pl: nitsáápanistsi
+     aaápani+NI+Px1Sg+Non: nitsáápani
+
+     aaápani+NI+Px1Pl+Sg: nitsáápaninnaani
+     aaápani+NI+Px1Pl+Pl: nitsáápaninnaanistsi
+     aaápani+NI+Px1Pl+Non: nitsáápaninnaani
+
+     aaápani+NI+Px21Sg+Sg: kitsáápaninnooni
+     aaápani+NI+Px21Sg+Pl: kitsáápaninnoonistsi
+     aaápani+NI+Px21Sg+Non: kitsáápaninnooni
+
+     aaápani+NI+Px2Sg+Sg: kitsáápani
+     aaápani+NI+Px2Sg+Pl: kitsáápanistsi
+     aaápani+NI+Px2Sg+Non: kitsáápani
+
+     aaápani+NI+Px2Sg+Sg: kitsáápanoaawayi
+     aaápani+NI+Px2Sg+Pl: kitsáápanoaawaistsi
+     aaápani+NI+Px2Sg+Non: kitsáápanoaawai
+
+     aaápani+NI+Px3Sg+Sg: otsáápani
+     aaápani+NI+Px3Sg+Pl: otsáápanistsi
+     aaápani+NI+Px3Sg+Non: otsáápani
+
+     aaápani+NI+Px3Sg+Sg: otsáápanoaawayi
+     aaápani+NI+Px3Sg+Pl: otsáápanoaawaistsi
+     aaápani+NI+Px3Sg+Non: otsáápanoaawai

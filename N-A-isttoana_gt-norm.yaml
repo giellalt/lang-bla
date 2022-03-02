@@ -1,0 +1,49 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - isttoána - ok : # -m animate noun, knife AEW NA1
+     isttoána+NA+Sg: isttoána
+     isttoána+NA+Pl: isttoániksi
+     isttoána+NA+Obv: isttoáni
+     isttoána+NA+Non: isttoáni
+     
+     isttoána+NA+Px1Sg+Sg: nottoána
+     isttoána+NA+Px1Sg+Pl: nottoániksi
+     isttoána+NA+Px1Sg+Obv: nottoáni
+     isttoána+NA+Px1Sg+Non: nottoáni
+
+     isttoána+NA+Px1Pl+Sg: nottoáninnaana
+     isttoána+NA+Px1Pl+Pl: nottoáninnaaniksi
+     isttoána+NA+Px1Pl+Obv: nottoáninnaani
+     isttoána+NA+Px1Pl+Non: nottoáninnaani
+
+     isttoána+NA+Px21Pl+Sg: kottoáninnoona
+     isttoána+NA+Px21Pl+Pl: kottoáninnooniksi
+     isttoána+NA+Px21Pl+Obv: kottoáninnooni
+     isttoána+NA+Px21Pl+Non: kottoáninnooni
+
+     isttoána+NA+Px2Sg+Sg: kottoána
+     isttoána+NA+Px2Sg+Pl: kottoániksi
+     isttoána+NA+Px2Sg+Obv: kottoáni
+     isttoána+NA+Px2Sg+Non: kottoáni
+
+     isttoána+NA+Px2Pl+Sg: kottoánoaawa
+     isttoána+NA+Px2Pl+Pl: kottoánoaawaiksi
+     isttoána+NA+Px2Pl+Obv: kottoánoaawayi
+     isttoána+NA+Px2Pl+Non: kottoánoaawai
+
+     isttoána+NA+Px3Sg+Obv: ottoáni
+     isttoána+NA+Px3Sg+Non: ottoáni
+
+     isttoána+NA+Px3Pl+Obv: ottoánoaawayi
+     isttoána+NA+Px3Pl+Non: ottoánoaawai
+
+     

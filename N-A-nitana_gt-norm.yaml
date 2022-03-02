@@ -1,0 +1,44 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - nitána - ok : # -m animate noun, my daughter AEW NA1
+     nitána+NAD+Px1Sg+Sg: nitána
+     nitána+NAD+Px1Sg+Pl: nitániksi
+     nitána+NAD+Px1Sg+Obv: nitáni
+     nitána+NAD+Px1Sg+Non: nitáni
+     
+     nitána+NAD+Px1Pl+Sg: nitáninnaana
+     nitána+NAD+Px1Pl+Pl: nitáninnaaniksi
+     nitána+NAD+Px1Pl+Obv: nitáninnaani
+     nitána+NAD+Px1Pl+Non: nitáninnaani
+
+     nitána+NAD+Px21Pl+Sg: kitáninnoona
+     nitána+NAD+Px21Pl+Pl: kitáninnooniksi
+     nitána+NAD+Px21Pl+Obv: kitáninnooni
+     nitána+NAD+Px21Pl+Non: kitáninnooni
+
+     nitána+NAD+Px2Sg+Sg: kitána
+     nitána+NAD+Px2Sg+Pl: kitániksi
+     nitána+NAD+Px2Sg+Obv: kitáni
+     nitána+NAD+Px2Sg+Non: kitáni
+
+     nitána+NAD+Px2Pl+Sg: kitánoaawa
+     nitána+NAD+Px2Pl+Pl: kitánoaawaiksi
+     nitána+NAD+Px2Pl+Obv: kitánoaawayi
+     nitána+NAD+Px2Pl+Non: kitánoaawai
+
+     nitána+NAD+Px3Sg+Obv: otáni
+     nitána+NAD+Px3Sg+Non: otáni
+
+     nitána+NAD+Px3Pl+Obv: otánoaawayi
+     nitána+NAD+Px3Pl+Non: otánoaawai
+
+    
