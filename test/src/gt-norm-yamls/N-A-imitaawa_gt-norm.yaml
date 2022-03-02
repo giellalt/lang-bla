@@ -9,20 +9,43 @@ Config:
 
 Tests:
   
-  Noun - imitaawa - ok : # -m anate noun, sock AEW NA1
-     imitaawa+NA+Sg: imitaawa
-     imitaawa+NA+Pl: imitaaiksi
-     imitaawa+NA+Obv: imitaayi
+  Noun - imitááwa - ok : # -m animate noun, dog AEW NA1
+     imitááwa+NA+Sg: imitááwa
+     imitááwa+NA+Pl: imitááiksi
+     imitááwa+NA+Obv: imitááyi
+     imitááwa+NA+Non: imitáái
      
-     imitaawa+NA+Px1Sg+Sg: nitomitaawa
-     imitaawa+NA+Px1Sg+Pl: nitomitaaiksi
-     imitaawa+NA+Px1Sg+Obv: nitomitaayi
+     imitááwa+NA+Px1Sg+Sg: nitomitááma
+     imitááwa+NA+Px1Sg+Pl: nitomitáámiksi
+     imitááwa+NA+Px1Sg+Obv: nitomitáámi
+     imitááwa+NA+Px1Sg+Non: nitomitáámi
      
-     imitaawa+NA+Px2Sg+Sg: kitomitaawa
-     imitaawa+NA+Px2Sg+Pl: kitomitaaiksi
-     imitaawa+NA+Px2Sg+Obv: kitomitaayi
-     
-     imitaawa+NA+Px3Sg+Obv: otomitaayi
+     imitááwa+NA+Px1Pl+Sg: nitomitááminnaana
+     imitááwa+NA+Px1Pl+Pl: nitomitááminnaaniksi
+     imitááwa+NA+Px1Pl+Obv: nitomitááminnaani
+     imitááwa+NA+Px1Pl+Non: nitomitááminnaani
 
-     imitaawa+NA+Px1Sg+Sg: nitomitaawa
+     imitááwa+NA+Px21Pl+Sg: kitomitááminnoona
+     imitááwa+NA+Px21Pl+Pl: kitomitááminnooniksi
+     imitááwa+NA+Px21Pl+Obv: kitomitááminnooni
+     imitááwa+NA+Px21Pl+Non: kitomitááminnooni
 
+     imitááwa+NA+Px2Sg+Sg: kitomitááma
+     imitááwa+NA+Px2Sg+Pl: kitomitáámiksi
+     imitááwa+NA+Px2Sg+Obv: kitomitáámi
+     imitááwa+NA+Px2Sg+Non: kitomitáámi
+
+     imitááwa+NA+Px2Pl+Sg: kitomitáámoaawa
+     imitááwa+NA+Px2Pl+Pl: kitomitáámoaawaiksi
+     imitááwa+NA+Px2Pl+Obv: kitomitáámoaawayi
+     imitááwa+NA+Px2Pl+Non: kitomitáámoaawai
+
+     imitááwa+NA+Px3Sg+Sg: otomitááma
+     imitááwa+NA+Px3Sg+Pl: otomitáámiksi
+     imitááwa+NA+Px3Sg+Obv: otomitáámi
+     imitááwa+NA+Px3Sg+Non: otomitáámi
+
+     imitááwa+NA+Px3Pl+Sg: otomitáámoaawa
+     imitááwa+NA+Px3Pl+Pl: otomitáámoaawaiksi
+     imitááwa+NA+Px3Pl+Obv: otomitáámoaawayi
+     imitááwa+NA+Px3Pl+Non: otomitáámoaawai
