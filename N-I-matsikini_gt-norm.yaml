@@ -1,0 +1,43 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - matsikíni - ok : # -m inanimate noun, shoe AEW NA1
+     matsikíni+NI+Sg: matsikíni
+     matsikíni+NI+Pl: matsikínistsi
+     matsikíni+NI+Non: matsikíni
+
+     matsikíni+NI+Px1Sg+Sg: natsikíni
+     matsikíni+NI+Px1Sg+Pl: natsikínistsi
+     matsikíni+NI+Px1Sg+Non: natsikíni
+
+     matsikíni+NI+Px1Pl+Sg: natsikínnaani
+     matsikíni+NI+Px1Pl+Pl: natsikínnaanistsi
+     matsikíni+NI+Px1Pl+Non: natsikínnaani
+
+     matsikíni+NI+Px21Pl+Sg: katsikínnooni
+     matsikíni+NI+Px21Pl+Pl: katsikínnoonistsi
+     matsikíni+NI+Px21Pl+Non: katsikínnooni
+
+     matsikíni+NI+Px2Sg+Sg: katsikíni
+     matsikíni+NI+Px2Sg+Pl: katsikínistsi
+     matsikíni+NI+Px2Sg+Non: katsikíni
+
+     matsikíni+NI+Px2Pl+Sg: katsikínoaawayi
+     matsikíni+NI+Px2Pl+Pl: katsikínoaawaistsi
+     matsikíni+NI+Px2Pl+Non: katsikínoaawai
+
+     matsikíni+NI+Px3Sg+Sg: matsikíniaayi
+     matsikíni+NI+Px3Sg+Pl: matsikíístsi
+     matsikíni+NI+Px3Sg+Non: matsikíni
+
+     matsikíni+NI+Px3Sg+Sg: matsikínoaawayi
+     matsikíni+NI+Px3Sg+Pl: matsikínoaawaistsi
+     matsikíni+NI+Px3Sg+Non: matsikínoaawai
