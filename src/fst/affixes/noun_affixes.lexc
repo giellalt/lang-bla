@@ -1,0 +1,178 @@
+! Blackfoot Regular Noun Inflectional Morphology
+
+LEXICON NOUN_PREFIXES
+NOUN_INDEP_PREFIXES ;
+NOUN_SHORT_PREFIXES ;
+
+LEXICON NOUN_INDEP_PREFIXES
+@P.person.NI@:@P.person.NI@nit%<    PRE_INDEP_NA_STEMS ;
+@P.person.KI@:@P.person.KI@kit%<    PRE_INDEP_NA_STEMS ;
+@P.person.OT@:@P.person.OT@ot%<     PRE_INDEP_NA_STEMS ;
+@P.person.NULL@0                     NON_INDEP_NA_STEMS ;
+@P.person.NI@:@P.person.NI@nit%<    PRE_INDEP_NI_STEMS ;
+@P.person.KI@:@P.person.KI@kit%<    PRE_INDEP_NI_STEMS ;
+@P.person.OT@:@P.person.OT@ot%<     PRE_INDEP_NI_STEMS ;
+@P.person.NULL@0                     NON_INDEP_NI_STEMS ;
+
+LEXICON NOUN_SHORT_PREFIXES
+@P.person.NI@:@P.person.NI@n%<    DEP_NA_STEMS ;
+@P.person.KI@:@P.person.KI@k%<    DEP_NA_STEMS ;
+@P.person.OT@:@P.person.OT@w%<    DEP_NA_STEMS ;
+@P.person.NI@:@P.person.NI@n%<    DEP_NI_STEMS ;
+@P.person.KI@:@P.person.KI@k%<    DEP_NI_STEMS ;
+@P.person.OT@:@P.person.OT@w%<    DEP_NI_STEMS ;
+@P.person.NI@:@P.person.NI@n%<    SHORT_PRE_NA_STEMS ;
+@P.person.KI@:@P.person.KI@k%<    SHORT_PRE_NA_STEMS ;
+@P.person.OT@:@P.person.OT@w%<    SHORT_PRE_NA_STEMS ;
+@P.person.NULL@0                   SHORT_NON_NA_STEMS ;
+@P.person.NI@:@P.person.NI@n%<    SHORT_PRE_NI_STEMS ;
+@P.person.KI@:@P.person.KI@k%<    SHORT_PRE_NI_STEMS ;
+@P.person.OT@:@P.person.OT@w%<    SHORT_PRE_NI_STEMS ;
+@P.person.NULL@0                   SHORT_NON_NI_STEMS ;
+
+! I will now define the Stems. They are organized as prefixed and non-prefixed forms 
+LEXICON INDEP_STEMS
+@U.stem.PRE@ PRE_INDEP_NA_STEMS ;
+@U.stem.NON@ NON_INDEP_NA_STEMS ;
+@U.stem.PRE@ PRE_INDEP_NI_STEMS ;
+@U.stem.NON@ NON_INDEP_NI_STEMS ;
+
+!!!!! After this, we collect the stems !!!!!
+
+LEXICON NA
++NA:0  NA_POSS_NUM ;
+
+LEXICON NA_SG
+@P.number.SG@+NA:@P.number.SG@  NA_POSS_NUM ;
+
+LEXICON NA_PL
+@P.number.PL@+NA:@P.number.PL@  NA_POSS_NUM ;
+
+LEXICON NA_IM
+@P.im.IM@+NA:@P.im.IM@  NA_POSS_NUM ;
+
+LEXICON NA_SG_IM
+@P.number.SG@@P.im.IM@+NA:@P.number.SG@@P.im.IM@  NA_POSS_NUM ;
+
+LEXICON NA_PL_IM
+@P.number.PL@@P.im.IM@+NA:@P.number.PL@@P.im.IM@  NA_POSS_NUM ;
+
+LEXICON NI
++NI:0  NI_POSS_NUM ;
+
+LEXICON NI_SG
+@P.number.SG@+NI:@P.number.SG@  NI_POSS_NUM ;
+
+LEXICON NI_PL
+@P.number.PL@+NI:@P.number.PL@  NI_POSS_NUM ;
+
+LEXICON NI_IM
+@P.im.IM@+NI:@P.im.IM@  NI_POSS_NUM ;
+
+LEXICON NI_SG_IM
+@P.number.SG@@P.im.IM@+NI:@P.number.SG@@P.im.IM@  NI_POSS_NUM ;
+
+LEXICON NI_PL_IM
+@P.number.PL@@P.im.IM@+NI:@P.number.PL@@P.im.IM@  NI_POSS_NUM ;
+
+LEXICON NAD
++NAD:0  NA_POSS_NUM ;
+
+LEXICON NAD_SG
+@P.number.SG@+NAD:@P.number.SG@  NA_POSS_NUM ;
+
+LEXICON NAD_PL
+@P.number.PL@+NAD:@P.number.PL@  NA_POSS_NUM ;
+
+LEXICON NAD_IM
+@P.im.IM@+NAD:@P.im.IM@  NA_POSS_NUM ;
+
+LEXICON NAD_SG_IM
+@P.number.SG@@P.im.IM@+NAD:@P.number.SG@@P.im.IM@  NA_POSS_NUM ;
+
+LEXICON NAD_PL_IM
+@P.number.PL@@P.im.IM@+NAD:@P.number.PL@@P.im.IM@  NA_POSS_NUM ;
+
+LEXICON NID
++NID:0  NI_POSS_NUM ;
+
+LEXICON NID_SG
+@P.number.SG@+NID:@P.number.SG@  NI_POSS_NUM ;
+
+LEXICON NID_PL
+@P.number.PL@+NID:@P.number.PL@  NI_POSS_NUM ;
+
+LEXICON NID_IM
+@P.im.IM@+NID:@P.im.IM@  NI_POSS_NUM ;
+
+LEXICON NID_SG_IM
+@P.number.SG@@P.im.IM@+NID:@P.number.SG@@P.im.IM@  NI_POSS_NUM ;
+
+LEXICON NID_PL_IM
+@P.number.PL@@P.im.IM@+NID:@P.number.PL@@P.im.IM@  NI_POSS_NUM ;
+
+! Below is the combinatorial PARADIGM for the possessive circumfixes
+
+! POSS+stem+POSS+NUM
+! POSS+stem+POSS+OBV
+! stem+NUM
+! stem+OBV
+
+LEXICON NA_POSS_NUM
+! Singular possessors
+@U.person.NI@+Px1Sg:@U.person.NI@0   NA_NUMBER_OBV_SUFFIXES ;
+@U.person.KI@+Px2Sg:@U.person.KI@0   NA_NUMBER_OBV_SUFFIXES ;
+@U.person.OT@+Px3Sg:@U.person.OT@0   NA_NUMBER_OBV_SUFFIXES ;
+@U.person.NULL@:@U.person.NULL@      NA_NUMBER_OBV_SUFFIXES ;
+! Plural possessors
+@U.person.NI@+Px1Pl:@U.person.NI@%>innaan  NA_NUMBER_OBV_SUFFIXES ;
+@U.person.KI@+Px21Pl:@U.person.KI@%>innoon NA_NUMBER_OBV_SUFFIXES ;
+@U.person.KI@+Px2Pl:@U.person.KI@%>oaawa   NA_NUMBER_OBV_SUFFIXES ;
+@U.person.OT@+Px3Pl:@U.person.OT@%>oaawa   NA_NUMBER_OBV_SUFFIXES ;
+
+LEXICON NA_POSS_IM_NUM
+! Singular possessors
+@U.person.NI@+Px1Sg:@U.person.NI@%>im   NA_NUMBER_OBV_SUFFIXES ;
+@U.person.KI@+Px2Sg:@U.person.KI@%>im   NA_NUMBER_OBV_SUFFIXES ;
+@U.person.OT@+Px3Sg:@U.person.OT@%>im   NA_NUMBER_OBV_SUFFIXES ;
+@U.person.NULL@:@U.person.NULL@         NA_NUMBER_OBV_SUFFIXES ;
+! Plural possessors
+@U.person.NI@+Px1Pl:@U.person.NI@%>iminnaan  NA_NUMBER_OBV_SUFFIXES ;
+@U.person.KI@+Px21Pl:@U.person.KI@%>iminnoon NA_NUMBER_OBV_SUFFIXES ;
+@U.person.KI@+Px2Pl:@U.person.KI@%>imoaawa  NA_NUMBER_OBV_SUFFIXES ;
+@U.person.OT@+Px3Pl:@U.person.OT@%>imoaawa   NA_NUMBER_OBV_SUFFIXES ;
+
+
+LEXICON NA_NUMBER_OBV_SUFFIXES
+! Singular
+@D.number.PL@ NA_NUMBER_SUFFIXES_SG ;
+! Obviative
+@R.person.NULL@+Obv:@R.person.NULL@%>yi # ; ! Optional obviative with non-possessed form
+@D.person.NULL@@U.person.OT@+Obv:@D.person.NULL@@U.person.OT@%>yi # ; ! Obligatory obviative with 3rd person possessor
+@D.person.NULL@@D.person.OT@+Obv:@D.person.NULL@@D.person.OT@%>yi # ; ! Optional obviative with non-3rd possessor
+! Plural
+@D.number.SG@@D.person.OT@+Pl:@D.number.SG@@D.person.OT@%>iksi # ; ! Optional plural for non-3rd possessor and non-possessed
+! Non-Referring
+@D.number.SG@@D.number.PL@+Non:@D.number.SG@@D.number.PL@%>i # ; ! Optional non-referring suffix, number unrestricted
+
+LEXICON NA_NUMBER_SUFFIXES_SG
+@D.person.OT@@D.number.PL@+Sg:@D.person.OT@@D.number.PL@%>wa # ; ! Optional singular for non-3rd person possessed, non-plural only
+
+LEXICON NI_POSS_NUM
+! Singular possessors
+@U.person.NI@+Px1Sg:@U.person.NI@0 NI_NUMBER_SUFFIXES ;
+@U.person.KI@+Px2Sg:@U.person.KI@0 NI_NUMBER_SUFFIXES ;
+@U.person.OT@+Px3Sg:@U.person.OT@0   NI_NUMBER_SUFFIXES ;
+@U.person.NULL@:@U.person.NULL@                NI_NUMBER_SUFFIXES ;
+! Plural possessors
+@U.person.NI@+Px1Pl:@U.person.NI@%>innaan  NI_NUMBER_SUFFIXES ;
+@U.person.KI@+Px21Pl:@U.person.KI@%>innoon NI_NUMBER_SUFFIXES ;
+@U.person.KI@+Px2Pl:@U.person.KI@%>oaawa  NI_NUMBER_SUFFIXES ;
+@U.person.OT@+Px3Pl:@U.person.OT@%>oaawa   NI_NUMBER_SUFFIXES ;
+
+LEXICON NI_NUMBER_SUFFIXES
+@D.number.PL@+Sg:@D.number.SG@%>yi # ; 
+@D.number.SG@+Pl:@D.number.SG@%>istsi # ;
+@D.number.SG@@D.number.PL@+Non:@D.number.SG@@D.number.PL@%>i # ;
+
+! End Code

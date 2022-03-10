@@ -27,8 +27,8 @@ GT_LEXC_ROOT=$(srcdir)/root.lexc
 GT_LEXC_SRCS_L1_L2=\
 			 stems/rattlesnakes.lexc \
 			 affixes/symbols.lexc \
-			 stems/nouns.lexc \
-			 affixes/nouns.lexc
+			 stems/noun_stems.lexc \
+			 affixes/noun_affixes.lexc
 #			 stems/adjectives.lexc \
 #			 stems/numerals.lexc \
 #			 stems/prefixes.lexc \
