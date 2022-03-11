@@ -19,6 +19,17 @@ Multichar_Symbols
 +Px3Pl
 +Px4Sg/Pl
 
+! Other tags
++CLB
++Err/Orth
++LEFT
++N
++Nom
++PUNCT
++RIGHT
++Symbol
+
+
 ! Flag diacritics to be used
 @U.person.NI@
 @U.person.KI@
