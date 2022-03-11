@@ -10,7 +10,6 @@
             * [symbols.lexc](src-fst-affixes-symbols.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/affixes/symbols.lexc))
             * [verbs.lexc](src-fst-affixes-verbs.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/affixes/verbs.lexc))
         * [bla-phonology.xfscript](src-fst-bla-phonology.xfscript.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/bla-phonology.xfscript))
-        * [phonology.twolc](src-fst-phonology.twolc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/phonology.twolc))
         * [phonology.xfscript](src-fst-phonology.xfscript.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/phonology.xfscript))
         * `stems/`
             * [adjectives.lexc](src-fst-stems-adjectives.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/stems/adjectives.lexc))
