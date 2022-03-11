@@ -179,6 +179,14 @@ The Siksika language adjectives compare.
 
 ---
 
+
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/affixes/noun_affixes.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/affixes/noun_affixes.lexc)</small>
+
+---
+
 Noun inflection
 The Siksika language nouns inflect in cases.
 
@@ -362,89 +370,128 @@ The Siksika morphophonological/twolc rules file !
 
 ---
 
+Definitions
 
-# Siksika morphological analyser                      !
-INTRODUCTION TO MORPHOLOGICAL ANALYSER OF THE SIKSIKA (BLACKFOOT) LANGUAGE.
+Rules
 
-# Definitions for Multichar_Symbols
+Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of Toronto Press. Appendix B.
 
-## Analysis symbols
-The morphological analyses of wordforms for the Siksika
-language are presented in this system in terms of the following symbols.
-(It is highly suggested to follow existing standards when adding new tags).
+1. Gemination C1 > C2 / _ + C2
 
-The parts-of-speech are:
+* *nitáni2t>k>wa*
+* *nitánikka* ``
 
-These tags 
+* *nitáni2t>awa*
+* *nitánistawa* ``
 
-The nominals are inflected in the following Number
+* *ann>yi2hka*
+* *annisska*
 
-These are tags used for other languages.
+* *nit<siksipawa*
+* *nitssiksipawa*
 
-The parts of speech are further split up into:
+* *á<sínaakiwa*
+* *áísínaakiwa*
 
-The Usage extents are marked using following tags:
+* *káta7<simiwa*
+* *kátai'simiwa*
 
-The possession is marked as such:
-The comparative forms are:
-Numerals are classified under:
-Verb moods are:
-Verb personal forms are:
-Other verb forms are
+* *áakoto<apinniiwa*
+* *áakotaapinniiwa*
 
-* +Symbol = independent symbols in the text stream, like £, €, ©
-Special symbols are classified with:
-The verbs are syntactically split according to transitivity:
-Special multiword units are analysed with:
-Non-dictionary words can be recognised with:
+* *w<iihsíssi*
+* *ohsíssi*
 
-Question and Focus particles:
+* *w<ínni*
+* *ónni*
 
-Semantics are classified with
+* *áak<i2piima*
+* *áaksipiima*
 
-Derivations are classified under the morphophonetic form of the suffix, the
-source and target part-of-speech.
+* *á<i2o7kaa>wa*
+* *áyo'kaawa*
 
-Morphophonology
-To represent phonologic variations in word forms we use the following
-symbols in the lexicon files:
+* *áyo7kaa>o7pa*
+* *áyo'kao'pa*
 
-And following triggers to control variation
+* *áyo7kaa>yi>aawa*
+* *áyo'kaayaawa*
 
-## Flag diacritics
-We have manually optimised the structure of our lexicon using following
-flag diacritics to restrict morhpological combinatorics - only allow compounds
-with verbs if the verb is further derived into a noun again:
-|  @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
-|  @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
-|  @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
+* *áókska7si>o7pa*
+* *áókska'so'pa*
 
-For languages that allow compounding, the following flag diacritics are needed
-to control position-based compounding restrictions for nominals. Their use is
-handled automatically if combined with +CmpN/xxx tags. If not used, they will
-do no harm.
-|  @P.CmpFrst.FALSE@ | Require that words tagged as such only appear first
-|  @D.CmpPref.TRUE@ | Block such words from entering ENDLEX
-|  @P.CmpPref.FALSE@ | Block these words from making further compounds
-|  @D.CmpLast.TRUE@ | Block such words from entering R
-|  @D.CmpNone.TRUE@ | Combines with the next tag to prohibit compounding
-|  @U.CmpNone.FALSE@ | Combines with the prev tag to prohibit compounding
-|  @P.CmpOnly.TRUE@ | Sets a flag to indicate that the word has passed R
-|  @D.CmpOnly.FALSE@ | Disallow words coming directly from root.
+* *nit<i2oyi*
+* *nitsoyi*
 
-Use the following flag diacritics to control downcasing of derived proper
-nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
-these flags. There exists a ready-made regex that will do the actual down-casing
-given the proper use of these flags.
-|  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
-|  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
+* *nit<it<itsiniki*
+* *nitsitsitsiniki*
 
-The word forms in Siksika language start from the lexeme roots of basic
-word classes, or optionally from prefixes:
+* *nit<i2oyi*
+* *nitsoyi*
+
+* *otokska7si>hsi*
+* *otokska'ssi*
+
+* *otá7po7taki>hsi* ``
+* *otá'po'takssi*
+
+* *pii<hsini*
+* *pissini*
+
+* *yaatóót*
+* *aatóót*
+
+* *waaníít*
+* *aaníít*
+
+* *w<óko7si*
+* *óko'si*
+
+* *kikáta7<waaniihpa*
+* *kikáta'waaniihpa*
+
+* *kitanistawawaaw>yináyi*
+* *kitanistawawaayináyi*
+
+* *áíhpiyi>yináyi*
+* *áíhpiiyináyi*
+
+* *nitáókska7si>hpinnan*
+* *nitáókska'sspinnan*
+
+* *á7<omai7takiwa* ``
+* *áó'mai'takiwa*
+
+* *káta7<sspitaawa*
+* *kátai'sspitaawa*
+
+* *káta7<ookaawaatsi*
+* *kátaookaawaatsi*
+
+* *káta7<ottakiwaatsi*
+* *kátaoottakiwaatsi*
+
+* *á7<isttohkohpiy7ssi*
+* *áísttohkohpiy'ssi*
+
+* *á7<o7tooyiniki*
+* *áó'tooyiniki*
+
+* *káta7<ohto7toowa*
+* *kátao'ohto'toowa*
+
+* *nit<ssksinoawa*
+* *nitssksinoawa*
+
+* *á<okska7siwa*
+* *áókska'siwa*
+
+* *atsikí>istsi*
+* *atsikíístsi*
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/root.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/phonology.xfscript](https://github.com/giellalt/lang-bla/blob/main/src/fst/phonology.xfscript)</small>
 
 ---
 

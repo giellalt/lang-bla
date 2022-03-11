@@ -4,13 +4,14 @@
     * `fst/`
         * `affixes/`
             * [adjectives.lexc](src-fst-affixes-adjectives.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/affixes/adjectives.lexc))
+            * [noun_affixes.lexc](src-fst-affixes-noun_affixes.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/affixes/noun_affixes.lexc))
             * [nouns.lexc](src-fst-affixes-nouns.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/affixes/nouns.lexc))
             * [propernouns.lexc](src-fst-affixes-propernouns.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/affixes/propernouns.lexc))
             * [symbols.lexc](src-fst-affixes-symbols.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/affixes/symbols.lexc))
             * [verbs.lexc](src-fst-affixes-verbs.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/affixes/verbs.lexc))
         * [bla-phonology.xfscript](src-fst-bla-phonology.xfscript.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/bla-phonology.xfscript))
         * [phonology.twolc](src-fst-phonology.twolc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/phonology.twolc))
-        * [root.lexc](src-fst-root.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/root.lexc))
+        * [phonology.xfscript](src-fst-phonology.xfscript.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/phonology.xfscript))
         * `stems/`
             * [adjectives.lexc](src-fst-stems-adjectives.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/stems/adjectives.lexc))
             * [nouns.lexc](src-fst-stems-nouns.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/stems/nouns.lexc))
