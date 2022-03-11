@@ -40,22 +40,22 @@ LEXICON INDEP_STEMS
 !!!!! After this, we collect the stems !!!!!
 
 LEXICON NA
-+NA:0  NA_POSS_NUM ;
++NA:0  NA_0_IM ;
 
 LEXICON NA_SG
-@P.number.SG@+NA:@P.number.SG@  NA_POSS_NUM ;
+@P.number.SG@+NA:@P.number.SG@  NA_0_IM ;
 
 LEXICON NA_PL
-@P.number.PL@+NA:@P.number.PL@  NA_POSS_NUM ;
+@P.number.PL@+NA:@P.number.PL@  NA_0_IM ;
 
 LEXICON NA_IM
-@P.im.IM@+NA:@P.im.IM@  NA_POSS_NUM ;
+@P.im.IM@+NA:@P.im.IM@  NA_0_IM ;
 
 LEXICON NA_SG_IM
-@P.number.SG@@P.im.IM@+NA:@P.number.SG@@P.im.IM@  NA_POSS_NUM ;
+@P.number.SG@@P.im.IM@+NA:@P.number.SG@@P.im.IM@  NA_0_IM ;
 
 LEXICON NA_PL_IM
-@P.number.PL@@P.im.IM@+NA:@P.number.PL@@P.im.IM@  NA_POSS_NUM ;
+@P.number.PL@@P.im.IM@+NA:@P.number.PL@@P.im.IM@  NA_0_IM ;
 
 LEXICON NI
 +NI:0  NI_POSS_NUM ;
@@ -76,22 +76,22 @@ LEXICON NI_PL_IM
 @P.number.PL@@P.im.IM@+NI:@P.number.PL@@P.im.IM@  NI_POSS_NUM ;
 
 LEXICON NAD
-+NAD:0  NA_POSS_NUM ;
++NAD:0  NA_0_IM ;
 
 LEXICON NAD_SG
-@P.number.SG@+NAD:@P.number.SG@  NA_POSS_NUM ;
+@P.number.SG@+NAD:@P.number.SG@  NA_0_IM ;
 
 LEXICON NAD_PL
-@P.number.PL@+NAD:@P.number.PL@  NA_POSS_NUM ;
+@P.number.PL@+NAD:@P.number.PL@  NA_0_IM ;
 
 LEXICON NAD_IM
-@P.im.IM@+NAD:@P.im.IM@  NA_POSS_NUM ;
+@P.im.IM@+NAD:@P.im.IM@  NA_0_IM ;
 
 LEXICON NAD_SG_IM
-@P.number.SG@@P.im.IM@+NAD:@P.number.SG@@P.im.IM@  NA_POSS_NUM ;
+@P.number.SG@@P.im.IM@+NAD:@P.number.SG@@P.im.IM@  NA_0_IM ;
 
 LEXICON NAD_PL_IM
-@P.number.PL@@P.im.IM@+NAD:@P.number.PL@@P.im.IM@  NA_POSS_NUM ;
+@P.number.PL@@P.im.IM@+NAD:@P.number.PL@@P.im.IM@  NA_0_IM ;
 
 LEXICON NID
 +NID:0  NI_POSS_NUM ;
@@ -118,7 +118,12 @@ LEXICON NID_PL_IM
 ! stem+NUM
 ! stem+OBV
 
-LEXICON NA_POSS_NUM
+LEXICON NA_0_IM
+@D.person.NULL@@R.im.IM@:@D.person.NULL@@R.im.IM@%>im NA_POSS ;
+@D.person.NULL@@D.im.IM@                              NA_POSS ;
+@R.person.NULL@                                       NA_POSS ;
+
+LEXICON NA_POSS
 ! Singular possessors
 @U.person.NI@+Px1Sg:@U.person.NI@0   NA_NUMBER_OBV_SUFFIXES ;
 @U.person.KI@+Px2Sg:@U.person.KI@0   NA_NUMBER_OBV_SUFFIXES ;
@@ -130,17 +135,17 @@ LEXICON NA_POSS_NUM
 @U.person.KI@+Px2Pl:@U.person.KI@%>oaawa   NA_NUMBER_OBV_SUFFIXES ;
 @U.person.OT@+Px3Pl:@U.person.OT@%>oaawa   NA_NUMBER_OBV_SUFFIXES ;
 
-LEXICON NA_POSS_IM_NUM
+! ! LEXICON NA_POSS_NUM
 ! Singular possessors
-@U.person.NI@+Px1Sg:@U.person.NI@%>im   NA_NUMBER_OBV_SUFFIXES ;
-@U.person.KI@+Px2Sg:@U.person.KI@%>im   NA_NUMBER_OBV_SUFFIXES ;
-@U.person.OT@+Px3Sg:@U.person.OT@%>im   NA_NUMBER_OBV_SUFFIXES ;
-@U.person.NULL@:@U.person.NULL@         NA_NUMBER_OBV_SUFFIXES ;
-! Plural possessors
-@U.person.NI@+Px1Pl:@U.person.NI@%>iminnaan  NA_NUMBER_OBV_SUFFIXES ;
-@U.person.KI@+Px21Pl:@U.person.KI@%>iminnoon NA_NUMBER_OBV_SUFFIXES ;
-@U.person.KI@+Px2Pl:@U.person.KI@%>imoaawa  NA_NUMBER_OBV_SUFFIXES ;
-@U.person.OT@+Px3Pl:@U.person.OT@%>imoaawa   NA_NUMBER_OBV_SUFFIXES ;
+! @U.person.NI@+Px1Sg:@U.person.NI@%>im   NA_NUMBER_OBV_SUFFIXES ;
+! @U.person.KI@+Px2Sg:@U.person.KI@%>im   NA_NUMBER_OBV_SUFFIXES ;
+! @U.person.OT@+Px3Sg:@U.person.OT@%>im   NA_NUMBER_OBV_SUFFIXES ;
+! @U.person.NULL@:@U.person.NULL@         NA_NUMBER_OBV_SUFFIXES ;
+! ! Plural possessors
+! @U.person.NI@+Px1Pl:@U.person.NI@%>iminnaan  NA_NUMBER_OBV_SUFFIXES ;
+! @U.person.KI@+Px21Pl:@U.person.KI@%>iminnoon NA_NUMBER_OBV_SUFFIXES ;
+! @U.person.KI@+Px2Pl:@U.person.KI@%>imoaawa  NA_NUMBER_OBV_SUFFIXES ;
+! @U.person.OT@+Px3Pl:@U.person.OT@%>imoaawa   NA_NUMBER_OBV_SUFFIXES ;
 
 
 LEXICON NA_NUMBER_OBV_SUFFIXES
