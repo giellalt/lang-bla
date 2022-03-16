@@ -11,11 +11,11 @@ Tests:
   
   Noun - matsikíni - ok : # -m inanimate noun, shoe AEW NA1
      matsikíni+NI+Sg: matsikíni
-     matsikíni+NI+Pl: matsikínistsi
+     matsikíni+NI+Pl: matsikíístsi
      matsikíni+NI+Non: matsikíni
 
      matsikíni+NI+Px1Sg+Sg: natsikíni
-     matsikíni+NI+Px1Sg+Pl: natsikínistsi
+     matsikíni+NI+Px1Sg+Pl: natsikíístsi
      matsikíni+NI+Px1Sg+Non: natsikíni
 
      matsikíni+NI+Px1Pl+Sg: natsikínnaani
@@ -27,7 +27,7 @@ Tests:
      matsikíni+NI+Px21Pl+Non: katsikínnooni
 
      matsikíni+NI+Px2Sg+Sg: katsikíni
-     matsikíni+NI+Px2Sg+Pl: katsikínistsi
+     matsikíni+NI+Px2Sg+Pl: katsikíístsi
      matsikíni+NI+Px2Sg+Non: katsikíni
 
      matsikíni+NI+Px2Pl+Sg: katsikínoaawayi

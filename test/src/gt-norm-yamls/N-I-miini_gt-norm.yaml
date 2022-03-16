@@ -1,0 +1,43 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - mííni - ok : # -m inanimate noun, berry AEW NA1
+     mííni+NI+Sg: mííni
+     mííni+NI+Pl: míínistsi
+     mííni+NI+Non: mííni
+
+     mííni+NI+Px1Sg+Sg: nitsííni
+     mííni+NI+Px1Sg+Pl: nitsíínistsi
+     mííni+NI+Px1Sg+Non: nitsííni
+
+     mííni+NI+Px1Pl+Sg: nitsíínnaani
+     mííni+NI+Px1Pl+Pl: nitsíínnaanistsi
+     mííni+NI+Px1Pl+Non: nitsíínnaani
+
+     mííni+NI+Px21Pl+Sg: kitsíínnooni
+     mííni+NI+Px21Pl+Pl: kitsíínnoonistsi
+     mííni+NI+Px21Pl+Non: kitsíínnooni
+
+     mííni+NI+Px2Sg+Sg: kitsííni
+     mííni+NI+Px2Sg+Pl: kitsíínistsi
+     mííni+NI+Px2Sg+Non: kitsííni
+
+     mííni+NI+Px2Pl+Sg: kitsíínoaawayi
+     mííni+NI+Px2Pl+Pl: kitsíínoaawaistsi
+     mííni+NI+Px2Pl+Non: kitsíínoaawai
+
+     mííni+NI+Px3Sg+Sg: otsííni
+     mííni+NI+Px3Sg+Pl: otsíínistsi
+     mííni+NI+Px3Sg+Non: otsííni
+
+     mííni+NI+Px3Pl+Sg: otsíínoaawayi
+     mííni+NI+Px3Pl+Pl: otsíínoaawaistsi
+     mííni+NI+Px3Pl+Non: otsíínoaawai

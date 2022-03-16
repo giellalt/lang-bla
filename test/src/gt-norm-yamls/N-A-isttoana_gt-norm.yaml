@@ -11,38 +11,40 @@ Tests:
   
   Noun - isttoána - ok : # -m animate noun, knife AEW NA1
      isttoána+NA+Sg: isttoána
-     isttoána+NA+Pl: isttoániksi
-     isttoána+NA+Obv: isttoáni
-     isttoána+NA+Non: isttoáni
+     isttoána+NA+Pl: isttoáíksi
+     isttoána+NA+Obv: isttoáyi
+     isttoána+NA+Non: isttoáí
      
      isttoána+NA+Px1Sg+Sg: nottoána
-     isttoána+NA+Px1Sg+Pl: nottoániksi
-     isttoána+NA+Px1Sg+Obv: nottoáni
-     isttoána+NA+Px1Sg+Non: nottoáni
+     isttoána+NA+Px1Sg+Pl: nottoáíksi
+     isttoána+NA+Px1Sg+Obv: nottoáyi
+     isttoána+NA+Px1Sg+Non: nottoáí
 
-     isttoána+NA+Px1Pl+Sg: nottoáninnaana
-     isttoána+NA+Px1Pl+Pl: nottoáninnaaniksi
-     isttoána+NA+Px1Pl+Obv: nottoáninnaani
-     isttoána+NA+Px1Pl+Non: nottoáninnaani
+     isttoána+NA+Px1Pl+Sg: nottoánnaana
+     isttoána+NA+Px1Pl+Pl: nottoánnaaniksi
+     isttoána+NA+Px1Pl+Obv: nottoánnaani
+     isttoána+NA+Px1Pl+Non: nottoánnaani
 
-     isttoána+NA+Px21Pl+Sg: kottoáninnoona
-     isttoána+NA+Px21Pl+Pl: kottoáninnooniksi
-     isttoána+NA+Px21Pl+Obv: kottoáninnooni
-     isttoána+NA+Px21Pl+Non: kottoáninnooni
+     isttoána+NA+Px21Pl+Sg: kottoánnoona
+     isttoána+NA+Px21Pl+Pl: kottoánnooniksi
+     isttoána+NA+Px21Pl+Obv: kottoánnooni
+     isttoána+NA+Px21Pl+Non: kottoánnooni
 
      isttoána+NA+Px2Sg+Sg: kottoána
-     isttoána+NA+Px2Sg+Pl: kottoániksi
-     isttoána+NA+Px2Sg+Obv: kottoáni
-     isttoána+NA+Px2Sg+Non: kottoáni
+     isttoána+NA+Px2Sg+Pl: kottoáíksi
+     isttoána+NA+Px2Sg+Obv: kottoáyi
+     isttoána+NA+Px2Sg+Non: kottoáí
 
      isttoána+NA+Px2Pl+Sg: kottoánoaawa
      isttoána+NA+Px2Pl+Pl: kottoánoaawaiksi
      isttoána+NA+Px2Pl+Obv: kottoánoaawayi
      isttoána+NA+Px2Pl+Non: kottoánoaawai
 
-     isttoána+NA+Px3Sg+Obv: ottoáni
-     isttoána+NA+Px3Sg+Non: ottoáni
+     isttoána+NA+Px3Sg+Pl: ottoáíksi
+     isttoána+NA+Px3Sg+Obv: ottoáyi
+     isttoána+NA+Px3Sg+Non: ottoáí
 
+     isttoána+NA+Px3Pl+Pl: ottoánoaawaiksi
      isttoána+NA+Px3Pl+Obv: ottoánoaawayi
      isttoána+NA+Px3Pl+Non: ottoánoaawai
 

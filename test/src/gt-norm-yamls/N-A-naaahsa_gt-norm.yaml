@@ -1,0 +1,41 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - naaáhsa - ok : # -m animate noun, my grandparent/elder AEW NA1
+     naaáhsa+NAD+Px1Sg+Sg: naaáhsa
+     naaáhsa+NAD+Px1Sg+Pl: naaáhsiksi
+     naaáhsa+NAD+Px1Sg+Obv: naaáhsi
+     naaáhsa+NAD+Px1Sg+Non: naaáhsi
+     
+     naaáhsa+NAD+Px1Pl+Sg: naaáhsinnaana
+     naaáhsa+NAD+Px1Pl+Pl: naaáhsinnaaniksi
+     naaáhsa+NAD+Px1Pl+Obv: naaáhsinnaani
+     naaáhsa+NAD+Px1Pl+Non: naaáhsinnaani
+
+     naaáhsa+NAD+Px21Pl+Sg: kaaáhsinnoona
+     naaáhsa+NAD+Px21Pl+Pl: kaaáhsinnooniksi
+     naaáhsa+NAD+Px21Pl+Obv: kaaáhsinnooni
+     naaáhsa+NAD+Px21Pl+Non: kaaáhsinnooni
+
+     naaáhsa+NAD+Px2Sg+Sg: kaaáhsa
+     naaáhsa+NAD+Px2Sg+Pl: kaaáhsiksi
+     naaáhsa+NAD+Px2Sg+Obv: kaaáhsi
+     naaáhsa+NAD+Px2Sg+Non: kaaáhsi
+
+     naaáhsa+NAD+Px3Sg+Pl: maaáhsiksi
+     naaáhsa+NAD+Px3Sg+Obv: maaáhsi
+     naaáhsa+NAD+Px3Sg+Non: maaáhsi
+
+     naaáhsa+NAD+Px3Pl+Pl: maaáhsoaawaiksi
+     naaáhsa+NAD+Px3Pl+Obv: maaáhsoaawayi
+     naaáhsa+NAD+Px3Pl+Non: maaáhsoaawai
+
+    

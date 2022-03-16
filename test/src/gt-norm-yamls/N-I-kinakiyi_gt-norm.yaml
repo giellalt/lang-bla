@@ -1,0 +1,43 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - kinakíyi - ok : # -m inanimate noun, liver AEW NA1
+     kinakíyi+NI+Sg: kinakíni
+     kinakíyi+NI+Pl: kinakíístsi
+     kinakíyi+NI+Non: kinakíní
+
+     kinakíyi+NI+Px1Sg+Sg: nohkinákini
+     kinakíyi+NI+Px1Sg+Pl: nohkinákiistsi
+     kinakíyi+NI+Px1Sg+Non: nohkinákini
+
+     kinakíyi+NI+Px1Sg+Sg: nohkinákinnaani
+     kinakíyi+NI+Px1Sg+Pl: nohkinákinnaanistsi
+     kinakíyi+NI+Px1Sg+Non: nohkinákinnaani
+
+     kinakíyi+NI+Px21Pl+Sg: kohkinákinnooni
+     kinakíyi+NI+Px21Pl+Pl: kohkinákinnoonistsi
+     kinakíyi+NI+Px21Pl+Non: kohkinákinnooni
+
+     kinakíyi+NI+Px2Sg+Sg: kohkinákini
+     kinakíyi+NI+Px2Sg+Pl: kohkinákiistsi
+     kinakíyi+NI+Px2Sg+Non: kohkinákini
+
+     kinakíyi+NI+Px2Pl+Sg: kohkinákinoaawayi
+     kinakíyi+NI+Px2Pl+Pl: kohkinákinoaawaistsi
+     kinakíyi+NI+Px2Pl+Non: kohkinákinoaawai
+
+     kinakíyi+NI+Px3Sg+Sg: ohkinákini
+     kinakíyi+NI+Px3Sg+Pl: ohkinákiistsi
+     kinakíyi+NI+Px3Sg+Non: ohkinákini
+
+     kinakíyi+NI+Px3Pl+Sg: ohkinákinoaawayi
+     kinakíyi+NI+Px3Pl+Pl: ohkinákinoaawaistsi
+     kinakíyi+NI+Px3Pl+Sg: ohkinákinoaawai  
