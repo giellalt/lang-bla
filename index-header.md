@@ -3,7 +3,7 @@
 [![Maturity: Experiment](https://img.shields.io/badge/Maturity-Experiment-black.svg)](https://giellalt.github.io/MaturityClassification.html)
 [![License](https://img.shields.io/github/license/giellalt/lang-bla)](https://github.com/giellalt/lang-bla/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-bla)](https://github.com/giellalt/lang-bla/issues)
-[![Build status](https://github.com/giellalt/lang-bla/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-bla/actions)
+[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-bla/main/badge.svg)](https://github.com/giellalt/lang-bla/actions)
 
 This page documents the work on the [Siksika language model](https://github.com/giellalt/lang-bla). 
 
