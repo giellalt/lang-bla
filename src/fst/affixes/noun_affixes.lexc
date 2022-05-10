@@ -5,14 +5,16 @@ NOUN_INDEP_PREFIXES ;
 NOUN_SHORT_PREFIXES ;
 
 LEXICON NOUN_INDEP_PREFIXES
-@P.person.NI@:@P.person.NI@nit%<    PRE_INDEP_NA_STEMS ;
-@P.person.KI@:@P.person.KI@kit%<    PRE_INDEP_NA_STEMS ;
-@P.person.OT@:@P.person.OT@ot%<     PRE_INDEP_NA_STEMS ;
-@P.person.NULL@0                     NON_INDEP_NA_STEMS ;
-@P.person.NI@:@P.person.NI@nit%<    PRE_INDEP_NI_STEMS ;
-@P.person.KI@:@P.person.KI@kit%<    PRE_INDEP_NI_STEMS ;
-@P.person.OT@:@P.person.OT@ot%<     PRE_INDEP_NI_STEMS ;
-@P.person.NULL@0                     NON_INDEP_NI_STEMS ;
+@P.person.NI@:@P.person.NI@nit%<    PRE_INDEP_FLAG ;
+@P.person.KI@:@P.person.KI@kit%<    PRE_INDEP_FLAG ;
+@P.person.OT@:@P.person.OT@ot%<     PRE_INDEP_FLAG ;
+@P.person.NULL@0                    NON_INDEP_FLAG ;
+
+LEXICON PRE_INDEP_FLAG
+@P.noun.PRE@      PRENOUNS ;
+
+LEXICON NON_INDEP_FLAG
+@P.noun.NON@      PRENOUNS ;
 
 LEXICON NOUN_SHORT_PREFIXES
 @P.person.NI@:@P.person.NI@n%<    DEP_NA_STEMS ;
@@ -32,10 +34,34 @@ LEXICON NOUN_SHORT_PREFIXES
 
 ! I will now define the Stems. They are organized as prefixed and non-prefixed forms 
 LEXICON INDEP_STEMS
-@U.stem.PRE@ PRE_INDEP_NA_STEMS ;
-@U.stem.NON@ NON_INDEP_NA_STEMS ;
-@U.stem.PRE@ PRE_INDEP_NI_STEMS ;
-@U.stem.NON@ NON_INDEP_NI_STEMS ;
+@U.stem.PRE@	PRE_INDEP_NA_STEMS ;
+@U.stem.NON@	NON_INDEP_NA_STEMS ;
+@U.stem.PRE@	PRE_INDEP_NI_STEMS ;
+@U.stem.NON@	NON_INDEP_NI_STEMS ;
+@U.stem.PRE@	SHORT_PRE_NA_STEMS ;
+@U.stem.NON@	SHORT_NON_NA_STEMS ;
+@U.stem.PRE@	SHORT_PRE_NI_STEMS ;
+@U.stem.NON@	SHORT_NON_NI_STEMS ;
+
+! Prefixed prenouns
+
+LEXICON PRENOUNS
+0				NOUN_STEMS ;
+PN/ómahk+:ómahk			PRENOUNS_BOUND ;
+PN/i’nák+:i’nák			PRENOUNS_BOUND ;
+PN/ohpok+:ohpok			PRENOUNS_BOUND ;
+PN/niit+:niit			PRENOUNS_BOUND ;
+PN/sik+:sik			PRENOUNS_BOUND ;
+PN/máóhk+:máóhk			PRENOUNS_BOUND ;
+PN/otahko+:otahko		PRENOUNS_BOUND ;
+PN/ótssko+:ótssko		PRENOUNS_BOUND ;
+PN/apoyi+:apoyi			PRENOUNS_BOUND ;
+PN/ksikk+:ksikk			PRENOUNS_BOUND ;
+PN/áápi+:áápi			PRENOUNS_BOUND ;
+PN/aatoyi+:aatoyi		PRENOUNS_BOUND ;
+
+LEXICON PRENOUNS_BOUND
+0:%< PRENOUNS ;
 
 !!!!! After this, we collect the stems !!!!!
 
