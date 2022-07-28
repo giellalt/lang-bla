@@ -18,6 +18,19 @@ Multichar_Symbols
 +Px2Pl
 +Px3Pl
 +Px4Sg/Pl
+! Prenoun tags
+PN/Ûmahk+
+PN/iín·k+
+PN/ohpok+
+PN/niit+
+PN/sik+
+PN/m·Ûhk+
+PN/otahko+
+PN/Ûtssko+
+PN/apoyi+		
+PN/ksikk+		
+PN/··pi+			
+PN/aatoyi+	
 
 ! Other tags
 +CLB
@@ -27,8 +40,7 @@ Multichar_Symbols
 +Nom
 +PUNCT
 +RIGHT
-+Symbol
-
++Symbol	
 
 ! Flag diacritics to be used
 @U.person.NI@
@@ -54,10 +66,18 @@ Multichar_Symbols
 @P.number.PL@
 @D.number.SG@
 @D.number.PL@
+@P.noun.PRE@
+@P.noun.NON@
+@R.noun.PRE@
+@R.noun.NON@
 
 ! Special_characters
 i2
+i3
+Ì2
+Ì3
 n2
+X
 %<
 %>
 
@@ -68,3 +88,5 @@ n2
 
 LEXICON Root
 NOUN_PREFIXES ;
+
+! END CODE

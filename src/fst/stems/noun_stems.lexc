@@ -3,62 +3,38 @@
 ! Below are the regular INDEPENDENT noun stems and their allomorphic forms. 
 ! They are organized as prefixed and non-prefixed forms 
 
-LEXICON PRE_INDEP_NA_STEMS
-imitááwa:omitáá               NA_IM ;
-i7nokáá7tsiwa:i27nokáá7tsis      NA ;
-póósa:ohpóós                 NA_IM ;
-áákiiwa:áákii                    NA ;
-nínaawa:ínaa                     NA ;
-ohkíímaana:ohkíímaan            NA ;
-miistsísa:iistsís               NA ;
-pónna:ohpónn                      NA ;
+LEXICON NOUN_STEMS
+INDEP_NA_STEMS ;
+INDEP_NI_STEMS ;
 
-LEXICON NON_INDEP_NA_STEMS
-imitááwa:imitáá               NA_IM ;
+! When working with the lexicon, be sure to know the following lexical information:
+! 1. Does it take the /-im/ suffix when possessed? If so, use NA_IM or NI_IM
+! 2. Does the word take a short person prefix? If so, put X at the beginning of the stem
+! 3. What allomorphy does the stem undergo? If it takes /oh-/, put /h/ at the beginning of the stem. If /i/ -> /o/, use /i3/ 
+! 4. Everything else should be accounted for in the phonology
+
+LEXICON INDEP_NA_STEMS
+imitááwa:i3mitáá               NA_IM ;
 i7nokáá7tsiwa:i27nokáá7tsis      NA ;
-póósa:póós                    NA_IM ;
+póósa:hpóós                    NA_IM ;   
 áákiiwa:aakíí                    NA ;
 nínaawa:nínaa                     NA ;
 ohkíímaana:ohkíímaan            NA ;
 miistsísa:miistsís               NA ;
-pónna:pónn                      NA ;
+pónna:hpónn                      NA ;
+isttoána:Xi2ttoán         NA ;
+moksísa:Xmoksís           NA ;    
+ísska:Xí2ssk               NA ; ! Prefixed form is óóhka
 
-LEXICON PRE_INDEP_NI_STEMS
-aaápani:sáápan                    NI ;
-ááhkioohsa7tsisi:ááhkioohsa7tsi   NI ;
-mííni:íín                         NI ;
-ninihkssíni:inihkssín             NI ;
-sináákia7tsisi:sínaakia’tsis       NI ;
-
-LEXICON NON_INDEP_NI_STEMS
+LEXICON INDEP_NI_STEMS
 aaápani:aaápan                   NI ;
-ááhkioohsa7tsisi:ááhkioohsa’tsis NI ;
+ááhkioohsa7tsisi:ááhkioohsa7tsis NI ;
 mííni:míín                       NI ;
 ninihkssíni:ninihkssín           NI ;
 sináákia7tsisi:sináákia7tsis      NI ;
-
-! Below are the regular INDEPENDENT noun stems which take short prefixes and their allomorphic forms
-
-LEXICON SHORT_NON_NA_STEMS 
-isttoána:isttoán         NA ;
-moksísa:moksís           NA ;
-ísska:íssk               NA ;
-
-LEXICON SHORT_PRE_NA_STEMS 
-isttoána:ottoán         NA ;
-moksísa:oksís           NA ;
-ísska:óóhk               NA ;
-
-LEXICON SHORT_NON_NI_STEMS
-matsikíni:matsikín            NI ;
-kinakíyi:kinákin2            NI ;
-mo7tokááni:mo7tokáán         NI ;
-
-LEXICON SHORT_PRE_NI_STEMS
-matsikíni:atsikín            NI ;
-kinakíyi:ohkinakín2            NI ;
-mo7tokááni:o7tokáán         NI ;
-
+matsikíni:Xmatsikín            NI ;
+kinakíyi:Xkinákin2            NI ;
+mo7tokááni:Xmo7tokáán         NI ;
 
 ! Below are the regular DEPENDENT noun stems
 
@@ -67,10 +43,12 @@ LEXICON DEP_STEMS
 @U.stem.DEP@ DEP_NI_STEMS ;
 
 LEXICON DEP_NA_STEMS
-ohkówa:ohkó                NAD ;
-aaáhsa:maaáhs              NAD ;
-itána:itán                 NAD ;
-iksíssta:iksísst           NAD ;
+nohkówa:ohkó                NAD ;
+naaáhsa:maaáhs              NAD ;
+nitána:itán                 NAD ;
+niksíssta:iksísst           NAD ;
 
 LEXICON DEP_NI_STEMS
-ookóówawa+NID:ookóówan2            NI_POSS_NUM ;
+ookóówayi+NID:ookóówan2     NI_POSS_NUM ;
+
+! END CODE
