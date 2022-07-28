@@ -2,17 +2,17 @@
 
 define Bx [ %> | %< ] ;
   
-define Ix [ i | i2 ] ;
+define Ix [ i | i2 | i3] ;
   
-#define Vowel [ a | aa | á | áa | i | ii | í | íi | o | oo | ó | óo | ai | áí | ao | áó | oi | óí | i2 ] ;
+#define Vowel [ a | aa | á | áa | i | ii | í | íi | o | oo | ó | óo | ai | áí | ao | áó | oi | óí | i2 | í2 | i3 | í3 ] ;
 
-define Vshort [ a | á | i | í | o | ó | i2 ] ;
+define Vshort [ a | á | i | í | o | ó | i2 | í2 | i3 | í3 ] ;
 
 define Vlong [ [a a] | [á a] | [i i] | [í i] | [o o] | [ó o] | [a i] | [á í] | [a o] | [á ó] | [o i] | [ó í] | [ á á ] ] ;
 
 define Vowel [ Vshort | Vlong ] ;
 
-define Vacc [ á | [á a] | í | [í i] | ó | [ó o] | [á í] | [á ó] | [ó í] | [ á á ] ] ;
+define Vacc [ á | [á a] | í | [í i] | ó | [ó o] | [á í] | [á ó] | [ó í] | [ á á ] | [ó ó] ];
 
 define Cshort [ k | m | n | p | s | t | w | y | 7 | h | n2 ] ;
 
@@ -25,6 +25,17 @@ define Consonant [ Cshort | Clong ] ;
 define Gx [ w | y ] ;
 
 !! Rules
+
+! The following code is for the highest level of morpho-phonological initial allomorphy (specific to nouns)
+
+define shortPrefix [ n i t -> n ,, k i t -> k ,, o t -> o || _ %< X ] ;
+define i2oRule  [ X i2 -> o || %< _ ] ;
+define cleanup  [ X -> 0 ] ;
+define ohPrefix [ %< h -> %< o h ] ;
+define noPrefix [ h -> 0 || _ .#. ] ;
+define iReplace [ i3 -> o || %< _ ] ;
+define NasalDel [ m | n -> 0 || %< _ ] ;
+
 
 !! Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of Toronto Press. Appendix B.
 
@@ -45,7 +56,7 @@ define Cn2nnRule [ Cshort -> n || _ %> n ] ;
 
 define CC2GemRule [ Ck2kkRule .o. Cp2ppRule .o. Ct2ttRule .o. Cs2ssRule .o. Cm2mmRule .o. Cn2nnRule ] ;
 
-! The following code is specific to nouns
+! The following code is the morpho-phonology of the inflectional suffix boundary
 
 define imRule [ i | í -> 0 || Vlong Bx _ m ] ;
 define finalNrule [ n Bx i n -> n n ] ;
@@ -53,13 +64,15 @@ define fixN [ n n (Bx) n n -> (Bx) n n ] ;
 define fixN2 [ n (Bx) n n -> (Bx) n n ] ;
 define sisRule [ s -> 0 || s [ i | í ] _ Bx i Consonant ] ;
 define oaawaRule [ o a a w a (Bx) w a -> o a a w a (Bx) ] ;
+define pastPrefix [ Vx -> 0 || %< i i %< _ ] ;
+define pastPrefixSik [ Vx -> 0 || %< n a %< _ ] ;
 
 !!€ nitáni2t>k>wa
 !!€ nitánikka 
 
 ! 2. s-Insertion 0 > s / I _ t 
 
-! define sInsRule [ i2 t -> i2 s t ] ;
+define sInsRule2 [ i2 t -> i2 s t ] ;
 define sInsRule [ [..] -> s || t _ i | i2 | í ] ;
 define BreakSRule [ [..] -> s || k _ i2 ] ;
 
@@ -303,14 +316,19 @@ define AccentRule [ aAccentRule .o. iAccentRule .o. oAccentRule ] ;
 
 define i2NeutRule [ i2 -> i ,, ii2 -> ii ] ;
 
-define deep2surfRule [ 7 -> ' ,, Bx -> 0 ,, n2 -> n ] ;
+define deep2surfRule [ Bx -> 0 ,, 7 -> ' ,, n2 -> n ] ;   
 
 ! Dominik made some extra rules to make it work with the morphosyntax model
 
 define DelNasal [ m -> 0 || Consonant _ ] ;
 
-
-read regex [ sConnRuleB 
+read regex [ shortPrefix
+.o. i2oRule
+.o. cleanup
+.o. ohPrefix
+.o. iReplace
+.o. NasalDel
+.o. sConnRuleB 
 .o. sConnRuleA 
 .o. CC2GemRule
 .o. imRule
