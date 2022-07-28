@@ -1,0 +1,32 @@
+! This file contains the Blackfoot verb stems. They are organized by their inflectional class.
+
+LEXICON VAI_STEMS
+! ooyiwa:ooyi                      	VAI ;
+waahkayiwa:waahkayi              	VAI ;
+! sokímmohsiwa:sokímmohsi			VAI ;
+! okská7siwa:okská7si               VAI ;
+! á7piksíkka7yiwa:á7piksíkka7yi		VAI ;
+! á7po7takiwa:á7pao7taki			VAI ;
+! a7poowa:a7poo						VAI ;
+! ipoyipoyi:ipoyipoyi				VAI ;
+! apii:apii							VAI ;
+
+LEXICON VII_STEMS
+aakawoowa:aakawoo					VII ;
+
+LEXICON VTI_STEMS
+! a7pistotsima:a7pistotsi		VTI ;
+! ikai7tsima:ikai7tsi			VTI ;
+! inima:ini						VTI ;
+! ma7tsima:ma7tsi				VTI ;
+! oowatooma:oowatoo				VTI ;
+ohpommatooma:ohpommatoo			VTI ;
+
+LEXICON VTA_STEMS
+! inoyiiwa:ino					VTA ;
+akomimmiiwa:akomimm				VTA ;
+! ssksinoyiiwa:ssksino			VTA ;
+! sspommoyiiwa:sspommo			VTA ;
+! oowatiiwa:oowat				VTA ;
+
+! END CODE

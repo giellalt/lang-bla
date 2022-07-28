@@ -1,0 +1,432 @@
+LEXICON PREFIX_SETS
+@P.class.VAI@	BASIC_PREFIXES ;
+@P.class.VII@	BASIC_PREFIXES ;
+@P.class.VTI@	BASIC_PREFIXES ;
+@P.class.VTA@	BASIC_PREFIXES ;
+
+LEXICON BASIC_PREFIXES
+@P.mode.IND@	BASIC_IND_PREFIXES ;
+@P.mode.CON@	BASIC_CNJ_PREFIXES ;
+@P.mode.SUB@	BASIC_SBJ_PREFIXES ;
+@P.mode.IRR@	BASIC_IRR_PREFIXES ;
+@P.mode.IMP@	BASIC_IMP_PREFIXES ;
+
+LEXICON BASIC_IND_PREFIXES
+@P.person.NI@:@P.person.NI@nit%< NEG ;
+@P.person.KI@:@P.person.KI@kit%< NEG ;
+@P.person.OT@:@P.person.OT@kit%< NEG ;
+@P.person.NULL@:@P.person.NULL@0 NEG ;
+
+LEXICON BASIC_CNJ_PREFIXES
+@P.person.NI@:@P.person.NI@nit%<    TENSE ;
+@P.person.KI@:@P.person.KI@kit%<    TENSE ;
+@P.person.OT@:@P.person.OT@ot%<     TENSE ;
+@P.person.NULL@:@P.person.NULL@0    TENSE ;
+
+LEXICON BASIC_SBJ_PREFIXES
+@P.person.NULL@:@P.person.NULL@0	TENSE ;
+
+LEXICON BASIC_IRR_PREFIXES
+@P.person.NI@:@P.person.NI@nit%<    TENSE ;
+@P.person.KI@:@P.person.KI@kit%<    TENSE ;
+@P.person.NULL@:@P.person.NULL@0    TENSE ;
+
+LEXICON BASIC_IMP_PREFIXES
+@P.person.IMP@:@P.person.IMP@0    NEG_IMP ;
+
+LEXICON NEG
+@R.mode.IND@ Neg+:@R.mode.IND@máát%< 			TENSE ;
+0:0												TENSE ;
+
+LEXICON NEG_IMP
+@R.mode.IMP@ Neg+:@R.mode.IMP@miin%< 			TENSE ;
+@R.mode.IMP@ Neg+:@R.mode.IMP@piin%< 			TENSE ;
+0:0												TENSE ;
+
+! MIIN-/PIIN- used for imperative paradigm
+
+LEXICON TENSE
+0:0						OTHER_NEG ;
+Dur+:á%<				TENSE_BOUND ;
+Fut+:yáak%<				TENSE_BOUND ;
+Prox+:ayáak%<			TENSE_BOUND ;
+Perf+:akaa%<			TENSE_BOUND ;
+
+LEXICON TENSE_BOUND
+0:%< NEG_CONJ_SUBJ ;
+
+LEXICON OTHER_NEG
+NEG_CONJ_SUBJ ;
+NEG_IRR ;
+
+LEXICON NEG_CONJ_SUBJ
+@R.mode.CON@ Neg+:@R.mode.CON@saw%<		PAST ;
+@R.mode.SUB@ Neg+:@R.mode.SUB@saw%<		PAST ;
+@R.mode.CON@ Nonaff+Neg+:@R.mode.CON@áákssta7%<		PAST ;
+@R.mode.CON@ Nonaff+Neg+:@R.mode.CON@ááhkssta7%<		PAST ;
+0:0														PAST ;
+
+LEXICON NEG_IRR
+@R.mode.IRR@ Neg+:@R.mode.IRR@kátá7%<	PAST ;
+0:0										PAST ;
+
+LEXICON PAST
+Past+:ii%<	VERB_STEMS ;
+Past+:na%<	VERB_STEMS ;
+0:0			VERB_STEMS ;
+
+! Blackfoot Regular VAI Stems
+
+! Below are the regular VAI stems and their past tense forms. 
+! They are organized as prefixed and non-prefixed forms 
+
+LEXICON VERB_STEMS
+@R.class.VAI@	VAI_STEMS ;
+@R.class.VII@	VII_STEMS ;
+@R.class.VTI@	VTI_STEMS ;
+@R.class.VTA@	VTA_STEMS ;
+
+!!! Now we collect the verb stems !!!
+
+LEXICON VAI
++VAI:0		VAI_SUFFIXES ;
+
+LEXICON VII
++VII:0		VII_SUFFIXES ;
+
+LEXICON VTI
++VTI:0		VTI_SUFFIXES ;
+
+LEXICON VTA
++VTA:0		VTA_SUFFIXES ;
+
+! BELOW ARE THE VAI SUFFIXES ;
+
+LEXICON VAI_SUFFIXES
+@R.mode.IND@+Ind:@R.mode.IND@ INDEP_VAI_SUFFIXES ;
+@R.mode.CON@+Cnj:@R.mode.CON@ CONJ_VAI_SUFFIXES ;
+@R.mode.SUB@+Sbj:@R.mode.SUB@ SUBJ_VAI_SUFFIXES ;
+@R.mode.IRR@+Irr:@R.mode.IRR@ UNREAL_VAI_SUFFIXES ;
+@R.mode.IMP@+Imp:@R.mode.IMP@	IMP_VAI_SUFFIXES ;
+
+LEXICON INDEP_VAI_SUFFIXES
+! Singular INDEPENDENT
+@R.person.NI@+1Sg:@R.person.NI@0   		# ;	
+@R.person.KI@+2Sg:@R.person.KI@0   		# ;
+@R.person.NULL@+3Sg:@R.person.NULL@%>wa		# ;
+@R.person.NULL@+4Sg:@R.person.NULL@%>yini   	# ;
+! Plural INDEPENDENT
+@R.person.NI@+1Pl:@R.person.NI@%>hpinnaan  # ;	
+@R.person.NULL@+21Pl:@R.person.NULL@%>o'pa	 # ;	
+@R.person.KI@+2Pl:@R.person.KI@%>hpoaawa	 # ;  	
+@R.person.NULL@+3Pl:@R.person.NULL@%>yi		# ;
+@R.person.NULL@+4Pl:@R.person.NULL@%>yi   	# ;
+
+LEXICON CONJ_VAI_SUFFIXES
+! Singular CONJUNCTIVE
+@R.person.NI@+1Sg:@R.person.NI@%>hsi   	# ; 
+@R.person.KI@+2Sg:@R.person.KI@%>hsi  	# ;
+@R.person.OT@+3Sg:@R.person.OT@%>hsi 		# ;
+@R.person.NULL@+4Sg:@R.person.NULL@%>hsi   	# ;
+! Plural CONJUNCTIVE
+@R.person.NI@+1Pl:@R.person.NI@%>hsinnaan  # ;
+@R.person.NULL@+21Pl:@R.person.NULL@%>hsi 	 # ;
+@R.person.KI@+2Pl:@R.person.KI@%>hsoaayi	 # ;  
+@R.person.OT@+3Pl:@R.person.OT@%>hsi	# ;	
+@R.person.NULL@+4Pl:@R.person.NULL@%>hsi	# ;
+
+LEXICON SUBJ_VAI_SUFFIXES
+! Singular SUBJUNCTIVE
+@R.person.NULL@+1Sg:@R.person.NULL@%>iniki   	# ;
+@R.person.NULL@+2Sg:@R.person.NULL@%>iniki   	# ;
+@R.person.NULL@+3Sg:@R.person.NULL@%>si   	# ;
+@R.person.NULL@+4Sg:@R.person.NULL@%>si   	# ;
+! Plural SUBJUNCTIVE
+@R.person.NULL@+1Pl:@R.person.NULL@%>innaaniki  # ;
+@R.person.NULL@+21Pl:@R.person.NULL@%>inoainiki # ;	
+@R.person.NULL@+2Pl:@R.person.NULL@%>o'ki 		# ;
+@R.person.NULL@+3Pl:@R.person.NULL@%>si			# ;
+@R.person.NULL@+4Pl:@R.person.NULL@%>si			# ;
+
+LEXICON UNREAL_VAI_SUFFIXES
+! Singular UNREAL
+@R.person.NI@+1Sg:@R.person.NI@%>htopi   	# ;
+@R.person.KI@+2Sg:@R.person.KI@%>htopi   	# ;
+@R.person.NULL@+3Sg:@R.person.NULL@%>wahtopi	# ;
+@R.person.NULL@+4Sg:@R.person.NULL@%>wahtopini   # ;	
+! Plural UNREAL
+@R.person.NI@+1Pl:@R.person.NI@%>hpinnaanopi  # ;
+@R.person.NULL@+21Pl:@R.person.NULL@%>hpoaawopi 	# ;	
+@R.person.KI@+2Pl:@R.person.KI@%>wahtopiyi	# ;   
+@R.person.NULL@+3Pl:@R.person.NULL@%>wahtopiyi	# ;
+@R.person.NULL@+4Pl:@R.person.NULL@%>wahtopiyini    # ;
+
+LEXICON IMP_VAI_SUFFIXES
+! Singular IMPERATIVE
+@R.person.IMP@+Sg:@R.person.IMP@%>t	# ;
+! Plural IMPERATIVE
+@R.person.IMP@+Pl:@R.person.IMP@%>k	# ;
+
+! BELOW ARE THE VII SUFFIXES
+
+LEXICON VII_SUFFIXES
+@R.mode.IND@+Ind:@R.mode.IND@ INDEP_VII_SUFFIXES ;
+@R.mode.CON@+Cnj:@R.mode.CON@ CONJ_VII_SUFFIXES ;
+@R.mode.SUB@+Sbj:@R.mode.SUB@ SUBJ_VII_SUFFIXES ;
+@R.mode.IRR@+Irr:@R.mode.IRR@ UNREAL_VII_SUFFIXES ;
+
+LEXICON INDEP_VII_SUFFIXES
+! Singular INDEPENDENT
+@R.person.NULL@+0Sg:@R.person.NULL@%>wa		# ;
+! Plural INDEPENDENT
+@R.person.NULL@+0Pl:@R.person.NULL@%>yi		# ;
+
+LEXICON CONJ_VII_SUFFIXES
+! Singular CONJUNCTIVE
+@R.person.OT@+0Sg:@R.person.OT@%>hsi 		# ;
+! Plural CONJUNCTIVE
+@R.person.OT@+0Pl:@R.person.OT@%>hsi	# ;	
+
+LEXICON SUBJ_VII_SUFFIXES
+! Singular SUBJUNCTIVE
+@R.person.NULL@+0Sg:@R.person.NULL@%>si   	# ;
+! Plural SUBJUNCTIVE
+@R.person.NULL@+0Pl:@R.person.NULL@%>si			# ;
+
+LEXICON UNREAL_VII_SUFFIXES
+! Singular UNREAL
+@R.person.NULL@+3Sg:@R.person.NULL@%>wahtopi	# ;
+! Plural UNREAL  
+@R.person.NULL@+0Pl:@R.person.NULL@%>wahtopiyi	# ;
+
+! BELOW ARE THE VTI SUFFIXES 
+
+LEXICON VTI_SUFFIXES
+@R.mode.IND@+Ind:@R.mode.IND@	INDEP_VTI_SUFFIXES ;
+@R.mode.CON@+Cnj:@R.mode.CON@	CONJ_VTI_SUFFIXES ;
+@R.mode.SUB@+Sbj:@R.mode.SUB@	SUBJ_VTI_SUFFIXES ;
+@R.mode.IRR@+Irr:@R.mode.IRR@	UNREAL_VTI_SUFFIXES ;
+@R.mode.IMP@+Imp:@R.mode.IMP@	IMP_VTI_SUFFIXES ;
+
+! Objects are included because Frantz says that -wa and -yi suffixes are only added to 1 and 2 forms in the independent.
+
+LEXICON INDEP_VTI_SUFFIXES
+! Singular INDEPENDENT
+@R.person.NI@+1Sg+0Sg:@R.person.NI@%>hpa   		# ;	
+@R.person.KI@+2Sg+0Sg:@R.person.KI@%>hpa   		# ;
+@R.person.NI@+1Sg+0Pl:@R.person.NI@%>hpi   		# ;	
+@R.person.KI@+2Sg+0Pl:@R.person.KI@%>hpi   		# ;
+@R.person.NULL@+3Sg+0Sg/Pl:@R.person.NULL@%>ma		# ;
+@R.person.NULL@+4Sg+0Sg/Pl:@R.person.NULL@%>mini   	# ;
+! Plural INDEPENDENT
+@R.person.NI@+1Pl+0Sg:@R.person.NI@%>hpinnaana  # ;	
+@R.person.NULL@+21Pl+0Sg:@R.person.NULL@%>'pa	 # ;
+@R.person.NI@+1Pl+0Pl:@R.person.NI@%>hpinnaani  # ;	
+@R.person.NULL@+21Pl+0Pl:@R.person.NULL@%>'pi	 # ;
+@R.person.KI@+2Pl+0Sg:@R.person.KI@%>hpoaawa	 # ;
+@R.person.KI@+2Pl+0Pl:@R.person.KI@%>hpoaayi	 # ; 
+@R.person.NULL@+3Pl+0Sg/Pl:@R.person.NULL@%>mi		# ;
+@R.person.NULL@+4Pl+0Sg/Pl:@R.person.NULL@%>mi   	# ;
+
+LEXICON CONJ_VTI_SUFFIXES
+! Singular CONJUNCTIVE
+@R.person.NI@+1Sg+0Sg/Pl:@R.person.NI@%>hsi   	# ; 
+@R.person.KI@+2Sg+0Sg/Pl:@R.person.KI@%>hsi  	# ;
+@R.person.OT@+3Sg+0Sg/Pl:@R.person.OT@%>hsi 		# ;
+@R.person.NULL@+4Sg+0Sg/Pl:@R.person.NULL@%>hsi   	# ;
+! Plural CONJUNCTIVE
+@R.person.NI@+1Pl+0Sg/Pl:@R.person.NI@%>hsinnaani  # ;
+@R.person.NULL@+21Pl+0Sg/Pl:@R.person.NULL@%>hsi 	 # ;
+@R.person.KI@+2Pl+0Sg/Pl:@R.person.KI@%>hsoaayi	 # ;  
+@R.person.OT@+3Pl+0Sg/Pl:@R.person.OT@%>hsi	# ;	
+@R.person.YI@+4Pl+0Sg/Pl:@R.person.YI@%>hsi	# ;
+
+LEXICON SUBJ_VTI_SUFFIXES
+! Singular SUBJUNCTIVE
+@R.person.NULL@+1Sg+0Sg/Pl:@R.person.NULL@%>mmiiniki   	# ;
+@R.person.NULL@+2Sg+0Sg/Pl:@R.person.NULL@%>mmiiniki   	# ;
+@R.person.NULL@+3Sg+0Sg/Pl:@R.person.NULL@%>isi   	# ;
+@R.person.NULL@+4Sg+0Sg/Pl:@R.person.NULL@%>isi   	# ;
+! Plural SUBJUNCTIVE
+@R.person.NULL@+1Pl+0Sg/Pl:@R.person.NULL@%>mmiiinnainiki  # ;
+@R.person.NULL@+21Pl+0Sg/Pl:@R.person.NULL@%>mmiinoainiki # ;	
+@R.person.NULL@+2Pl+0Sg/Pl:@R.person.NULL@%>i'ki 		# ;
+@R.person.NULL@+3Pl+0Sg/Pl:@R.person.NULL@%>isi			# ;
+@R.person.NULL@+4Pl+0Sg/Pl:@R.person.NULL@%>isi			# ;
+
+LEXICON UNREAL_VTI_SUFFIXES
+! Singular UNREAL
+@R.person.NI@+1Sg+0Sg/Pl:@R.person.NI@%>htopi   	# ;
+@R.person.KI@+2Sg+0Sg/Pl:@R.person.KI@%>htopi   	# ;
+@R.person.NULL@+3Sg+0Sg/Pl:@R.person.NULL@%>mahtopi	# ;
+@R.person.NULL@+4Sg+0Sg/Pl:@R.person.NULL@%>mahtopiyini   # ;	
+! Plural UNREAL
+@R.person.NI@+1Pl+0Sg/Pl:@R.person.NI@%>hpinnaanopi  # ;
+@R.person.NULL@+21Pl+0Sg/Pl:@R.person.NULL@%>'pohtopi 	# ;	
+@R.person.KI@+2Pl+0Sg/Pl:@R.person.KI@%>mahtopiyi	# ;   
+@R.person.NULL@+3Pl+0Sg/Pl:@R.person.NULL@%>mahtopiyi	# ;
+@R.person.NULL@+4Pl+0Sg/Pl:@R.person.NULL@%>mahtopiyini    # ;
+
+LEXICON IMP_VTI_SUFFIXES
+! Singular IMPERATIVE
+@R.person.IMP@+2Sg+0Sg:@R.person.IMP@%>ta	# ;
+@R.person.IMP@+2Sg+0Pl:@R.person.IMP@%>ti	# ;
+! Plural IMPERATIVE
+@R.person.IMP@+2Pl+0Sg:@R.person.IMP@%>ka	# ;
+@R.person.IMP@+2Pl+0Pl:@R.person.IMP@%>ki	# ;
+
+! BELOW ARE THE VTA VERBS
+
+LEXICON VTA_SUFFIXES
+@R.mode.IND@+Ind:@R.mode.IND@	INDEP_VTA_SUFFIXES ;
+@R.mode.CON@+Cnj:@R.mode.CON@	CONJ_VTA_SUFFIXES ;
+@R.mode.SUB@+Sbj:@R.mode.SUB@	SUBJ_VTA_SUFFIXES ;
+@R.mode.IMP@+Imp:@R.mode.IMP@	IMP_VTA_SUFFIXES ;
+
+! I will first list the DIRECT paradigms
+!!!! THIS IS NOT DONE !!!!
+
+LEXICON INDEP_VTA_SUFFIXES
+! Direct, Singular Subject and Object, INDEPENDENT
+@R.person.KI@+1Sg+2Sg:@R.person.KI@%>o   		# ;	
+@R.person.NI@+1Sg+3Sg:@R.person.NI@%>aawa   	# ;
+@R.person.NI@+1Sg+4Sg:@R.person.NI@%>aayini   		# ;	
+@R.person.KI@+2Sg+3Sg:@R.person.KI@%>aawa   		# ;
+@R.person.KI@+2Sg+4Sg/Pl:@R.person.KI@%>aayini		# ;
+@R.person.NULL@+3Sg/21Pl+4Sg/Pl:@R.person.NULL@%>yiiwa   	# ;
+@R.person.NULL@+3Sg/21Pl+Unspec/3Sg:@R.person.NULL@%>aawa   	# ;
+@R.person.NULL@+4Sg+5Sg/Pl:@R.person.NULL@%>yiiyina   	# ;
+! Direct, Plural Subject, Singular Object, INDEPENDENT
+@R.person.KI@+1Pl+2Sg/Pl:@R.person.KI@%>ohpinnaan  		# ;	
+@R.person.NI@+1Pl+3Sg:@R.person.NI@%>annanna   	# ;
+@R.person.NI@+1Pl+4Sg:@R.person.NI@%>annaanina   		# ;	
+@R.person.KI@+2Pl+3Sg:@R.person.KI@%>awaawa   		# ;
+@R.person.KI@+2Sg+4Sg/Pl:@R.person.KI@%>awaayini		# ;
+@R.person.NULL@+3/4Pl+4/5Sg/Pl:@R.person.NULL@%>yiiyi   	# ;
+! Direct, Plural Subject and Object, INDEPENDENT
+@R.person.NI@+1Pl+3/4Pl:@R.person.NI@%>annaani  # ;	
+@R.person.KI@+2Pl+3/4Pl:@R.person.KI@%>awaayi	 # ;
+@R.person.NULL@+21Pl+3/4Pl:@R.person.NULL@%>aayi  # ;	
+! Direct, Plural Object, Singular Subject
+@R.person.KI@+1Sg+2Pl:@R.person.KI@%>ohpoaawa  		# ;	
+@R.person.NI@+1Sg+3/4Pl:@R.person.NI@%>aayi   	# ;
+@R.person.KI@+2Sg+3/4Pl:@R.person.KI@%>aayi   		# ;	
+@R.person.NULL@+4Sg+5:@R.person.NULL@%>yiiyini   	# ;
+! Indirect, Singular Subject and Object, INDEPENDENT
+@R.person.KI@+2/3/4Sg+1Sg/2Pl:@R.person.KI@%>oki   		# ;	
+@R.person.KI@+3Sg+2Sg:@R.person.KI@%>oka   	# ;
+@R.person.KI@+3Sg+1Sg:@R.person.NI@%>oka  		# ;	
+@R.person.OT@+4Sg+3Sg:@R.person.OT@%>oka   		# ;
+@R.person.KI@+4Sg+2Sg:@R.person.KI@%>okini   	# ;
+@R.person.NI@+4Sg+1Sg:@R.person.NI@%>okini   	# ;
+@R.person.OT@+5+4Sg:@R.person.OT@%>okini   	# ;
+! Indirect, Plural Subject, Singular Object, INDEPENDENT
+@R.person.KI@+2Pl+1Sg:@R.person.KI@%>okihpoaawa  		# ;	
+@R.person.NI@+3Pl+2Sg:@R.person.NI@%>oki   	# ;
+@R.person.OT@+4Pl/Sg+3Sg:@R.person.OT@%>oka   		# ;
+@R.person.NI@+4Pl+1Sg:@R.person.NI@%>oki   	# ;
+! Indirect, Plural Subject and Object, INDEPENDENT
+@R.person.KI@+2Pl/Sg+1Pl:@R.person.KI@%>okihpinnana  # ;
+@R.person.NULL@+3/4Pl+21Pl:@R.person.NULL@%>okiyi	 # ;
+@R.person.NI@+3Pl+1Pl:@R.person.NI@%>okinnaani  # ;
+@R.person.OT@+4Pl/Sg+3Pl:@R.person.OT@%>okoaayi  # ;
+@R.person.KI@+4/3Pl+2Pl:@R.person.KI@%>okoaayi  # ;
+@R.person.NULL@+4Pl+21Pl:@R.person.NULL@%>okiyi  # ;
+@R.person.NI@+4/3Pl+1Pl:@R.person.NI@%>okinnani  # ;
+@R.person.OT@+5+4Pl:@R.person.OT@%>okoaayini  # ;
+! Indirect, Plural Object, Singular Subject, INDEPENDENT
+@R.person.KI@+3Sg+2Pl:@R.person.KI@%>okoaawa   	# ;
+@R.person.NI@+3Sg+1Pl:@R.person.NI@%>okinnaani 		# ;	
+@R.person.OT@+4Sg+3Pl:@R.person.OT@%>okoaayi   	# ;
+@R.person.KI@+4Sg+2Pl:@R.person.KI@%>okini   	# ;
+@R.person.NULL@+4Sg+21Pl:@R.person.NULL@%>okiyini   	# ;
+@R.person.NI@+4Sg+1Pl:@R.person.NI@%>okini   	# ;
+! Unspecified INDEPENDENT
+@R.person.NI@Unspec+1Sg:@R.person.NI@%>okoo   	# ;
+@R.person.NI@Unspec+1Pl:@R.person.NI@%>otsspinnaan   	# ;
+@R.person.KI@Unspec+2Sg:@R.person.KI@%>okoo   	# ;
+@R.person.KI@Unspec+2Sg:@R.person.KI@%>otsspoaawa   	# ;
+@R.person.NULL@Unspec+21Pl:@R.person.NULL@%>okiwa  	# ;
+
+LEXICON CONJ_VTA_SUFFIXES
+! Direct, Singular Subject and Object, CONJUNCTIVE
+@R.person.KI@+1Sg+2Sg:@R.person.KI@%>ohsi   	# ;	
+@R.person.NI@+1Sg+3Sg/3/4Pl:@R.person.NI@%>ahsi   	# ;
+@R.person.KI@+2Sg+3Sg/3/4Pl:@R.person.KI@%>ahsi   		# ;
+@R.person.OT@+3Sg/Pl+4Sg/Pl:@R.person.OT@%>ahsi   		# ;
+! Direct, Plural Subject, Singular Object, CONJUNCTIVE
+@R.person.KI@+1Pl+2Sg/Pl:@R.person.KI@%>ohsinnaani   		# ;
+@R.person.NI@+1Pl+3Sg/Pl/4Pl:@R.person.NI@%>ahsinnaani   		# ;
+@R.person.NI@+1Pl+4Sg:@R.person.NI@%>ahsinnaanini   		# ;
+@R.person.NULL@+21Pl/Unspec+3Sg/Pl/4Pl:@R.person.NULL@%>ahsi   		# ;
+@R.person.NULL@+21Pl/Unspec+4Sg:@R.person.NULL@%>ahsini   		# ;
+@R.person.KI@+2Pl+3Sg/Pl/4Pl:@R.person.KI@%>ahsoaayi   		# ;
+@R.person.KI@+2Pl+4Sg:@R.person.KI@%>ahsoaayini   		# ;
+! Direct, Plural Subject and Object, CONJUNCTIVE
+! Nothing to be done here. These are covered by the ambiguity of the forms above
+! Direct, Singular Subject, Plural Object, CONJUNCTIVE
+@R.person.KI@+1Sg+2Pl:@R.person.KI@%>ohsoaayi   		# ;
+! Inverse, Singular Subject and Object, CONJUNCTIVE
+@R.person.KI@+2Sg+1Sg:@R.person.KI@%>okssi   	# ;	
+@R.person.KI@+3Sg/Pl+2Sg:@R.person.KI@%>yssi   	# ;
+@R.person.NI@+3Sg+1Sg:@R.person.NI@%>yssi   		# ;
+@R.person.OT@+4Sg/Pl+3Sg/4Pl:@R.person.OT@%>yssi   		# ;
+! Inverse, Plural Subject and Singular Object, CONJUNCTIVE
+@R.person.KI@+2Pl+1Sg:@R.person.KI@%>okssoaayi   	# ;	
+@R.person.NI@+3Pl+1Sg:@R.person.NI@%>yssinnaani   		# ;
+! Inverse, Plural Subject and Object, CONJUNCTIVE
+@R.person.KI@+2Pl/Sg+1Pl:@R.person.KI@%>okssinnaani   	# ;	
+@R.person.KI@+3Pl+2Pl:@R.person.KI@%>yssoaayi   	# ;
+@R.person.NI@+3Pl+21Pl:@R.person.NI@%>okssi   		# ;
+@R.person.NI@+3Pl+1Pl:@R.person.NI@%>yssinnaani   		# ;
+! Inverse, Singular Subject and Plural Object, CONJUNCTIVE
+! These are all covered in the above paradigms
+! Unspecified Subject, Conjunctive
+@R.person.NI@+Unspec+1Sg:@R.person.NI@%>okoohsi   	# ;	
+@R.person.NI@+Unspec+1Pl:@R.person.NI@%>otssinnaani   	# ;
+@R.person.KI@+Unspec+2Sg:@R.person.KI@%>okoohsi   	# ;
+@R.person.KI@+Unspec+2Pl:@R.person.KI@%>otssoaayi   	# ;
+@R.person.NULL@+Unspec+21Pl:@R.person.NULL@%>otssi   	# ;
+
+LEXICON SUBJ_VTA_SUFFIXES
+! Direct, Singular Subject and Object, SUBJUNCTIVE
+@R.person.NULL@+1Sg+2Sg:@R.person.NULL@%>iniki   	# ;	
+@R.person.NULL@+1/2Sg+3Sg:@R.person.NULL@%>aniki   	# ;
+@R.person.NULL@+3Sg/Pl+4Sg/Pl:@R.person.NULL@%>asi   	# ;	
+! Direct, Plural Subject, Singular Object, SUBJUNCTIVE
+@R.person.NULL@+1Pl+2Sg/Pl:@R.person.NULL@%>innaaniki   	# ;
+@R.person.NULL@+1Pl+3Sg/Pl:@R.person.NULL@%>ainnaaniki   	# ;
+@R.person.NULL@+2Pl+3Sg/Pl:@R.person.NULL@%>ainainiki   	# ;
+@R.person.NULL@+21Pl/Unspec+3Sg/Pl:@R.person.NULL@%>ahki   	# ;
+! Direct, Plural Subject and Object, SUBJUNCTIVE
+! Nothing to be done here. These are covered by the ambiguity of the forms above
+! Direct, Singular Subject, Plural Object, SUBJUNCTIVE
+@R.person.NULL@+1Sg+2Pl:@R.person.NULL@%>inoainiki   	# ;
+! Inverse, Singular Subject and Object, SUBJUNCTIVE
+@R.person.NULL@+2Sg+1Sg:@R.person.NULL@%>okiiniki   	# ;	
+@R.person.NULL@+3Sg/Pl/4Sg/Pl+2/1Sg:@R.person.NULL@%>otsiiniki   	# ;
+! Inverse, Plural Subject and Singular Object, SUBJUNCTIVE
+@R.person.NULL@+2Pl+1Sg:@R.person.NULL@%>okiinoainiki   	# ;
+! Inverse, Plural Subject and Object, SUBJUNCTIVE
+@R.person.NULL@+2Sg/Pl+1Pl:@R.person.NULL@%>okinnaaniki   	# ;	
+@R.person.NULL@+3Sg/Pl/4Sg/Pl+2/3Pl:@R.person.NULL@%>otsiinoainiki   	# ;
+@R.person.NULL@+3Sg/Pl+1Pl:@R.person.NULL@%>otsiinnaaniki   	# ;
+@R.person.NULL@+3Sg/Pl+21Pl:@R.person.NULL@%>okisi   	# ;
+! Inverse, Singular Subject and Plural Object, CONJUNCTIVE
+! These are all covered in the above paradigms
+! Unspecified Subject, SUBJUNCTIVE
+@R.person.NULL@+Unspec+1/2Sg:@R.person.NULL@%>okoiniki   	# ;	
+@R.person.NULL@+Unspec+1Pl:@R.person.NULL@%>okoinnaaniki   	# ;
+@R.person.NULL@+Unspec+2Pl:@R.person.NULL@%>okoinoainiki		# ;
+@R.person.NULL@+Unspec+21Pl:@R.person.NULL@%>otsski   	# ;
+
+LEXICON IMP_VTA_SUFFIXES
+! Singular IMPERATIVE
+@R.person.IMP@+2Sg+1Sg:@R.person.IMP@%>okit	# ;
+@R.person.IMP@+2Sg/Pl+1Pl:@R.person.IMP@%>okinnaan	# ;
+@R.person.IMP@+2Sg+3Sg/Pl:@R.person.IMP@%>is	# ;
+! Plural IMPERATIVE
+@R.person.IMP@+2Pl+1Sg:@R.person.IMP@%>okik	# ;
+@R.person.IMP@+2Pl+3Sg/Pl:@R.person.IMP@%>ok	# ;
+
+! END CODE
