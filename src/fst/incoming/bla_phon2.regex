@@ -1,0 +1,931 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! A Phonology of Blackfoot, as an FST, based on Frantz (1991)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! This file is a foma regular expression rewrite rule script that can be used
+! to generate a FST that implements the phonology of Blackfoot, as described in
+! Frantz (1991), i.e., the Blackfoot Grammar. Basically, it implements the 
+! phonological rules of Appendix B (Frantz 1991, pp. 152--155), the lexical
+! phonological transformations of Chapter 15: Allomorphy (Frantz 1991, pp.
+! 78--83), and other lexical transformations described in that text.
+!
+! Some things to note.
+!
+! 1. This phonology assumes that lexical items have the representations given
+! in Frantz & Russell (1995), i.e., the Blackfoot Dictionary of Stems, Roots,
+! and Affixes. Specifically, breaking /I/ is not used, nor are the
+! non-permanent consonants indicated by means of capital <N>, <M>, or <S>.
+! Straying from the dictionary, this phonology assumes that the period . is
+! NOT used to indicate underspecified semivowels at the ends of certain
+! suffixes (cf. Frantz (1991, pp. 82--83). In short, it expects that only the
+! characters ptkmnsywh7aioáíó are used. This means that some rules (i.e.,
+! breaking, s-insertion, and neutralization) are modified or not implemented.
+! Of course, a phonology (that perhaps performs better) could be built (maybe
+! using this one as a starting point) that assumes a different lexicon; however,
+! it seemed practical, for present purposes, to keep the lexicon as it is
+! represented in the Dictionary and to encode lexical exceptions and
+! allomorphy stuff in the phonology.
+!
+! 2. The phonology herein does not attempt to predict default (i.e.,
+! non-lexical) prominence. This is an area that needs (and is currently
+! receiving) more research. A revised version of this phonology will attempt
+! to predict default prominence location, but that feat requires information
+! about morphological domains (i.e., verbal prominence differs from nominal)
+! and therefore requires a richer morphological representation as input to
+! the phonology component during generation.
+!
+! 3. Frantz (1991) does not provide an explicit ordering the rules provided. 
+! The FST named phonology is an ordered list of composed FSTs, each of which
+! implements a phonological rule. This ordered composition is functionally
+! equivalent to an ordering of rewrite rules. It is an ordering that accords
+! with Frantz (1991, p. 155)s ordering generalization and which gets the data
+! right. See the Tests section below for a list of UR/SR pairs that this
+! phonology correctly encodes.
+!
+! 4. This phonology MASSIVELY OVERGENERATES. This means that during generation
+! it will produce orthographic (surface) representations that include the
+! correct one(s) but will also produce some incorrect ones. This means that
+! it may not be ideal for use in producing a list of all possible Blackfoot
+! words. When parsing, there will be even more ambiguity. However, this should
+! not be an issue since the phonology should be composed with a morphology FST
+! which encodes the lexicon of Frantz & Russell (1995) and the morphotactic
+! possibilities of the language (cf. Beesley and Karttunen (2003)). Once such
+! a morphology is in place, the entire morphophonology FST should produce one
+! (or zero or a handful, but not a large or infinite set) of possible parses 
+! for any given orthographic transcription input.
+!
+!
+! How to use this file
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! 1. Get foma: https://code.google.com/p/foma/ 
+! 2. start foma at the command line terminal and run the following commands:
+! 
+!    foma[0]: source /path/to/this/file
+!    foma[0]: regex phonology ;
+!
+! 3. Generate an orthographic representation of /nit-ihpiyi/ (should return
+!    <nitsspiyi>, and possibly others):
+!
+!    foma[1]: down nit-ihpiyi
+!
+! 4. Parse an orthographically transcribed word:
+!
+!    foma[1]: up nitsspiyi
+!
+!
+! How to understand this file
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! - This is a foma FST script. See https://code.google.com/p/foma/ for details.
+!   See also Beesley and Karttunen (2003).
+!
+! TODOs
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! NOTE: variable-length vowel allomorphy should take care of the vowel shortening
+! in the second-to-last vowel of nitssiksipawa.
+!
+! ssikópii has no lexical prominence in its dictionary entry. If this is accurate,
+! then the morphological prominence rules must somehow account for it.
+!
+! ikáá is not listed in Frantz & Russell 1995 with lexical prominence ...
+!
+! The word kitsí7powataawaawa is actually transcribed as kitsí7powatawaawa in 
+! Frantz (1991). However, this requires shortening of the variable-length a:
+! direct suffix ... So I have changed the orthographic representation ...
+! The following exhibits the same issue: nit-ssksino-aa-wa -> nitssksinoawa.
+! Actually, the transcription is predicted by the phonology. It happens because
+! vowel-shortening applies before desyllabification. The variable-length thing
+! is irrelevant here.
+!
+! In the test nit<Ioyi -> nitsoyi, the result, according to the grammar, has
+! prominence in syllable 1: nítsoyi. However, the current phonology cannot account
+! for this. Also, how do we account for the behaviour of ooyi/Ioyi? I.e., why
+! is it áóyi when á- is prefixed and ííyi in a past perfective meaning?
+!
+! The pii-hsini -> pissini test assumes there is a verb with /pii/ as its shape.
+! However, this is not the case. This is the 0~i alternation thingy ...
+!
+! test nit<waanii -> nitaanii The result should be nitáánii but there are no default
+! prominence rules ...
+!
+! ``The pronoun in these examples (e.g., ápao7takiyináyi) is evidently áyi,
+! and if the segment preceding this pronoun is a vowel, that vowel is
+! deleted (Frantz 1991, p. 48). This means we need a special áyi rule ...
+!
+!
+! The final a of >hpinnaana and >o7pa is a predictable addition after an otherwise
+! word-final consonant, rather than part of these morphemes per se. ... (Frantz 1991, p. 22, fn. 17)
+!
+! A sequence like y>ihs will become y7ihs (cf. Frantz (1991, p. 18)) and then
+! y7ss (presibilation). This explains data like ihpiyi<hsin>yi -> ihpiy7ssini 
+! It almost explains á7<isttohkohpi7yi>hsi -> áíisttohkohpiy7ssi but not
+! quite since áíisttohkohpi7y7ssi is predicted ... The supplemental material on
+! p. 6 of the grammar discusses something similar wrt <o7yss> sequences.
+!
+! In order for á7-o7too-yiniki -> áó7tooyiniki to work, we need to assume
+! that 2sg.subj is yiniki, not iniki. Are there undesirable consequences that
+! arise from assuming this? ...
+!
+! Non-permanent consonants are not indicated in the dictionary: atsikíN-istsi -> atsikíístsi
+!
+!
+!
+! Tests
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! A line that begins with "!test" signifies a test.  After "!test" there should
+! be a string of characters followed by "->" followed by another string of
+! characters.  The first string is the underlying representation and the second
+! is the anticipated surface representation. This convention facilitates creating
+! a "test-driven" phonology. That is, you create the phonology, run the tests,
+! and then alter the phonology, and keep repeating until all tests pass. Of 
+! course, this requires a script which makes it easy to run the tests. The Online
+! Linguistic Database (http://www.onlinelinguisticdatabase.org) implements such
+! functionality.
+!
+! This phonology passes all of the tests listed below. These are all of the
+! examples listed in Appendix B of the grammar and a representative subset of
+! the examples from Chapter 15: Allomorphy. Some of the tests/examples have been
+! modified to be more morphologically accurate, or to remove "I", "N", etc., or
+! to neutralize accent/prominence effects that the phonology does not attempt to
+! account for. Even so, there are still a lot of UR/SR pairs in the Grammar and
+! Dictionary that this phonology cannot account for, but I leave that for
+! future work.
+! Tests from Phonological Rules Appendix B of the Frantz Grammar
+!-------------------------------------------------------------------------------
+!
+!test nit<waanist>ok>wa -> nitaanikka
+!test nit<waanist>aa>wa -> nitaanistaawa
+!test nit<siksip>aa>wa -> nitssiksipaawa
+!test nit<siksip>aa>wa -> nitssiksipawa
+!test nit<áak>yo7kaa -> nitáakso7kaa
+!test nit<ssikópii -> nitsssikópii
+!test á<sínaaki>wa -> áísínaakiwa
+!test n<ikáá>ssikópii -> nikáíssikópii
+!test káta7<simi>wa -> kátai7simiwa
+!test áak<oto<apinnii>wa -> áakotaapinniiwa
+!test áak<oto<apinnii>wa -> áakotapinniiwa
+!test w<ínni -> ónni
+!test w<iihsíssi -> ohsíssi
+!test áak<ipiima -> áaksipiima
+!test kit<í7powat>aa>oaawa -> kitsí7powatawaawa
+!test á<yo7kaa>wa -> áyo7kaawa
+!test yaatóó>t -> aatóót
+!test waaníí>t -> aaníít
+!test w<óko7si -> óko7si
+!test á<yo7kaa>o7pa -> áyo7kao7pa
+!test imitáá>iksi -> imitáíksi
+!test á<yo7kaa>yi>aawa -> áyo7kaayaawa
+!test á<ihpiyi>o7pa -> áíhpiyo7pa
+!test á<okstaki>yi>aawa -> áókstakiiyaawa
+!test á<okstaki>yi>aawa -> áókstakiyaawa
+!test á<okska7si>o7pa -> áókska7so7pa
+!test nit<ooyi -> nitsoyi
+!test ot<okska7si>hsi -> otokska7ssi
+!test ot<á7po7taki>hsi -> otá7po7takssi
+!test pii<hsini -> pissini
+!test áak<yaatoo>wa -> áakaatoowa
+!test nit<waanii -> nitaanii
+!test k<ikáta7>waanii>hpa -> kikáta7waaniihpa
+!test á<ihpiyi>yini>áyi -> áíhpiiyináyi
+!test á<ihpiyi>yini>áyi -> áíhpiyiyináyi
+!test á<okska7si>hpinnaan -> áókska7sspinnaan
+!test nit<it<itsiniki -> nitsitsitsiniki
+!test á7<omai7taki>wa -> áó7mai7takiwa
+!test káta7<ookaa>waatsi -> kátaookaawaatsi
+!test káta7<ottaki>waatsi -> kátaoottakiwaatsi
+!test á7<isttohkohpi7yi>hsi -> áíisttohkohpi7yssi
+!test á7<o7too>yiniki -> áó7tooyiniki
+!test káta7<oht>o7too>wa -> kátao7ohto7toowa
+!test káta7<oht>o7too>wa -> kátaohto7toowa
+!test nit<ssksino>aa>wa -> nitssksinoawa
+!test á<okska7si>wa -> áókska7siwa
+!test atsikín>istsi -> atsikíístsi
+!test kakkóó>iksi -> kakkóíksi
+!
+!
+! Tests from Allomorphy Chapter 15 of the Frantz Grammar
+!-------------------------------------------------------------------------------
+!
+!test omahk<piitaa -> omahksipiitaa
+!test ksikk<piitaa -> ksikkohpiitaa
+!test i7nak<pookaa>wa -> i7naksipookaawa
+!test sahk<náámayi -> sahksináámayi
+!test omahk<pi7kssii>wa -> omahksipi7kssiiwa
+!test áak<ipii>wa -> áaksipiimma
+!test ipii-t -> piit
+!test á<ipasskaa>yi>aawa -> áípasskaayaawa
+!test ipasskaa>t -> passkaat
+!test ihpiyi>t -> ihpiyit
+!test sik<kiááyo>wa -> sikohkiááyowa
+!test omahk<poos>wa -> omahkohpoosa
+!test i7nak<kitsim>yi -> i7nakohkitsimi
+!test ohpo7kioo>t -> po7kioot
+!test ohkot<oki>t -> kokkit
+!test iik<pok<itapi>wa -> iikohpokitapiwa
+!test otoomsoohkomi>t -> matoomsoohkomit
+!test yáápii7poyi>t -> náápii7poyit
+!test ipóísoyaawani>t -> niipóísoyaawanit
+!test ipowáóo>t -> niipowáóot
+!test yamaakioko7si-t -> namaakioko7sit
+!test ipaitapiiyi>t -> nipaitapiiyit
+!test yaamaahkiaaki>t -> namaahkiaakit
+!test inihki>wa -> inihkiwa
+!test inihki<hsin>yi -> ninihkssini
+!test istsikapoisínaii>t -> naatsikapoisínaiit
+!test istsikapóóyinni>t -> naatsikapóóyinnit
+!test sik<imitáá>wa -> sikomitááwa
+!test ksikk<mamíí>wa -> ksikkomííwa
+!test isttsik<manistsí>yi -> isttsikonistsíyi
+!test okstaki>t -> akstakit
+!test okaa<n>yi -> akaani
+!test n<isttoán>wa -> nottoána
+!test áto7ahsim>wa -> áto7ahsima
+!test áto7ahsim>iksi -> áto7ahsiiksi
+!test máíipssim>yi -> máíipssimi
+!test máíipssim>istsi -> máíipssiistsi
+!test pokón>wa -> pokóna
+!test pokón>iksi -> pokóíksi
+!test mo7tsís>yi -> mo7tsísi
+!test mo7tsís>istsi -> mo7tsíístsi
+!test waanii>wa -> aaniiwa
+!test nit<waanii -> nitanii
+!test ika<inni>t -> kayinnit
+!test ika<ai7piksi>t -> kawai7piksit
+!test itsi<inamma -> itsiyinamma
+!test iik<itsi<a7pssiwa -> iikitsiwa7pssiwa
+!test itapoo>o7pa -> itapaoo7pa
+!test itapoo>wa -> itapoowa
+!test it<á<opii>o7pa -> itáópaoo7pa
+!test it<á<opii>wa -> itáópiiwa
+!test áak<omáópii>o7pa -> áakomáópaoo7pa
+!test áak<omáópii>yi>aawa -> áakomáópiiyaawa
+!test ipiksi>o7pa -> ipiksao7pa
+!test ipiksi>wa -> ipiksiwa
+!test innisi7yi>wa innisi7yiwa
+!test á<otsi>wa -> áótsimma
+!test á<otsi>o7pa -> áótso7pa
+!test áak<ipii>yini>áyi -> áaksipiimmináyi
+!test yáak<ohpommatoo>m>wa>aistsi -> áakohpommatoomaistsi
+!test ksikksinattsi>yi>aistsi -> ksikksinattsiyaistsi
+!test á<yo7kaa>yi>aiksi -> áyo7kaayaiksi
+!test á7pistotsi>m>yini>aistsi -> á7pistotsiminaistsi
+!test kit<áak>ipii -> kitáaksipii
+!test nit<okskoihtsi>ok>wa -> nitokskoihtsooka
+!test ni<waawayáki>ok>wa -> nitaawayákiooka
+!test it<opii>t -> istopiit
+!
+! Miscellaneous tests
+!-------------------------------------------------------------------------------
+!
+!test nit<ihpiyi -> nitsspiyi
+!test sa<oht>yi -> saohtsi
+!test nit<yo7kaa -> nitso7kaa
+!test nit<áak<yo7kaa -> nitáakso7kaa
+!test nit<áak>ooyi -> nitáaksoyi
+!test nit<ooyi -> nitsoyi
+!test ooyi -> iiyi
+!test nit<yoohto>aa>wa -> nitsiiyoohtoaawa
+!test nit<yáapi -> nitsáapi
+!test w<iksísst>yi -> oksísstsi
+!test n<iksísst>wa -> niksíssta
+!test w<mo7tsís>oaawa>istsi -> o7tsoaawaistsi
+!
+!
+!
+! Reusable Regexes
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+define Bx [ %> | %< ] ;
+define phonemes [ p | t | k | m | n | s | w | y | h | 7 | a | i | o | á | í | ó ] ;
+define vowels [ a | i | o | á | í | ó ] ;
+define accentedVowels [ á | í | ó ] ;
+define strongNasals [ n2 | m2 ] ;
+define LongVowels [ [a a] | [i i] | [o o] ] ;
+define consonants [ p | t | k | m | n | s | w | y ] ;
+define obstruents [ p | t | k | m | n | s ] ;
+define stops [ p | t | k | m | n ] ;
+define plosives [ p | t | k ] ;
+define glides [ w | y ] ;
+define Cgem [ [m m] | [n n] | [s s] | [k k] | [t t] ] ;
+! This is an orthophonological issue, but ts does not appear at the beginning of words
+! so it usually is representing nits or kits. This rule fixes that right away.
+
+! define tsRule [ [ n i t | k i t ] -> t || _ Bx ] ;
+
+! Allomorphic Transformations (cf. Frantz 1991, pp. 78--83)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Many of the transformations listed here are quite ad hoc and contain lots of
+! tedious environments based on lexical conditions. Putting so much lexical
+! information into the phonology is perhaps not elegant, but it works. In
+! fact, to make this phonology better, more lexical detail should be included
+! here.
+!
+! A. Initial Vowel Elision in Imperatives: ipii-t -> piit (Frantz 1991, pp. 78--79)
+! Note that forms like ihpiyi-t are ihpiyit, hence the consonants regex below.
+! Note that this elision might be more general; i.e., it might occur with
+! nominalizations too.
+! Note that the first FST in the composition below transforms i(i)t- to ist- in
+! imperatives (cf. Frantz 1991, p. 96, fn. 120). Note also that the rather
+! complex conditions on i-elision (i.e., the second compositum) are needed in
+! order to allow for i(i)t- -> ist- to occur without it becoming st-.
+define imperativeInitialVowelElision [
+    [ [..] -> s || .#. (i) i _
+        t Bx [ phonemes | Bx ]+ Bx t .#. ] .o.
+    [ i -> 0 || .#. _
+        [ consonants - s ] [ [ phonemes | Bx ] - s ]
+        phonemes [ phonemes | Bx ]* Bx t .#. ] .o.
+    [ o h -> 0 || .#. _
+        consonants [ phonemes | Bx ]+ Bx t .#. ] ] ;
+
+! B. Stop-stop Epenthesis: sik<kiááyo -> sikohkiááyo (Frantz 1991, pp. 78--79)
+define stopStopEpenthesis [
+    [..] -> [ i | o h ] || plosives Bx _ [ plosives | n á á m a y i ] ] ;
+
+! C. Coda-fication: sik<ponoká -> siksinnoka (Frantz 1991, p. 79)
+define codafication [
+    p o n -> i n n || stops Bx _ o k á [ Bx | .#. ] .o.
+    k i i p -> i p p || stops Bx _ ó [ Bx | .#. ] .o.
+    k i p -> i p p || stops Bx _ i t a [ Bx | .#. ] ] ;
+
+! D. Nasal Loss: omahk<natáyo>wa -> omahkatayowa (Frantz 1991, p. 80)
+define nasalLoss [ [ m | n ] -> 0 || consonants Bx _ ] ;
+
+! E. Word-initial nasals
+! Some verbs that appear to start with vowels, actually begin with a nasal
+! word-initially, or, more accurately, in imperative or nominalization
+! constructions. There seems to be some quite ad hoc lexical/phonological
+! alternations here that are just begging for a more unified explanataion.
+! This type of data might be evidence that the third person past tense forms
+! do actually involve prefixation because such an analysis would allow us to
+! group together the imperatives and nominalization constructions as truly
+! having the stem at the left edge. Note: there are several other verbs that
+! begin with a nasal (m or n) when in word-initial position. I don't have
+! time to write them all into a rule right now. Searching the OLD for ^[mn].*t!$
+! as a regexp in the orthographic transcription and excluding results that
+! match the regexp (^| )(máát|miin) in the orthographic transcription will
+! get them.
+define impNomSfx [ Bx [ t | n | h s i n ] [ Bx | .#. ] ] ;
+define nasalInitialVerbs [
+    [ y a (a) -> n a || .#. _ m a a [ h k i a a k i | k i o k o 7 s i ] impNomSfx ] .o.
+    [ y -> n         || .#. _ á á p i i 7 p o y i impNomSfx ] .o.
+    [ [..] (->) n    || .#. _ [ i n i h k i | i p a i t a p i i y i ] impNomSfx ] .o.
+    [ [..] -> n      || .#. _ i i t s i 7 p o y i impNomSfx ] .o.
+    [ [..] -> n i    || .#. _ i p [ ó í s o y a a w a n i | o w á ó o ] impNomSfx ] .o.
+    [ i s -> n a a   || .#. _ t s i k a p ó ó y i n n i impNomSfx ] .o.
+    [ i s -> n a a   || .#. _ t s i k a p o i s í n a i i impNomSfx ] .o.
+    [ o -> m a       || .#. _ t o o m [ phonemes | Bx ]+ impNomSfx ] ] ;
+
+! F. Word-initial nominal segments become o elsewhere (Frantz 1991, p. 80)
+! Note: this is probably a more common phenomenon than is captured by this
+! rule! I just don't have time to sort through all of the lexical items where
+! this occurs.
+define becomeO [
+    [ i -> o   || plosives Bx _ m i t á á ] .o.
+    [ m a -> o || plosives Bx _ [ m í í | n i s t s í ] ] .o.
+    [ i s (->) o || Bx _ t t o á n ] ] ;
+
+! G. Word-initial verbal o becomes a elsewhere (Frantz 1991, p. 80)
+! Optionally happens with okstaki and okaa (and maybe others ...)
+define becomeA [ o (->) a || .#. _ k [ a a | s t a k i ] impNomSfx ] ;
+
+! I. Variable-length vowels (Frantz 1991, pp. 80--81)
+! Certain long vowels in certain morphemes are actually variable in length.
+! These vowels are only long in certain environments, are variably long
+! in one specific environment and are short elsewhere. Writing rewrite rules
+! to account for this would be too time-consuming for me right now. Therefore
+! I am going to create a rule that optionally shortens these vowels.
+! The complex context in the following rules is meant to capture the fact that
+! the first vowels in the following morphemes are variably long: wa:nii `say' (vai)
+! a: `DIR', wa:wahkaa `play' (vai), wa:wayáki `hit' (vta), wa:yáki `hit' (vta),
+! wa:sai'ni `cry' (vai), wa:hkayi `go home' (vai), sa:ksi `exit' (vai),
+! a:nist `manner' (adt), wa:wakaa `walk' (vai), a:ki `vai-producing suffix' (fin),
+! and wa:mi `be' (vai).
+! Here is the generalization. Variable-length vowels are always long if any of
+! the following are true: i) they are in the first syllable of a word, ii) they
+! are preceded by a semivowel in the same morpheme that is not deleted by
+! semivowel loss, or iii) they are preceded by i underlyingly, i.e., even if the
+! i is deleted by i-Loss or i-Absorption. Variable-length vowels are variably
+! long or short when preceded by one of the person prefixes nit-, kit- or ot-. In
+! all other environments, these vowels are short. Note that many of the vowels
+! from the agreement paradigms are like this (cf. around p. 149 of the Grammar).
+! However, these seem to be really just portmanteau morphemes built upon the
+! direct suffixes a: and o: ...
+! WARNING: I think there is a much wider application of this rule than is specified
+! here; i.e., there are many more morphemes that begin with variable-length vowels.
+! THIS NEEDS WORK!
+define variableLengthVowels [
+    [ a a (->) a || [ .#. | Bx ] w _ [ n i i | n i s t | n i s t o o |
+                                        w a h k a a |
+                                        w a y á k i |
+                                        y á k i |
+                                        s a i 7 n i |
+                                        h k a y i | 
+                                        w a k a a |
+                                        m i ] [ .#. | Bx ] ,
+                    Bx _ Bx ,
+                    [ .#. | Bx ] s _ k s i [ .#. | Bx ],
+                    [ .#. | Bx ] _ [ n i s t | k i ] [ .#. | Bx ] ] .o.
+    [ o o (->) o || Bx _ Bx ] .o.
+    [ o (->) o o || Bx _ k ( [ o o | i ] ) Bx ] ] ;
+! J. Non-permanent consonants (Frantz 1991, p. 81--82, 9)
+! These consonants disappear before vowels. Since the dictionary does not
+! employ the capitalization convention for these consonants, I posit an optional
+! elision rule for morpheme-final /n/ and /s/ before vowels and a regular
+! elision rule for morpheme-final /m/ in áto'ahsim `sock', máíipssim `belt',
+! and asóka'sim `dress'.
+! Note: the optionality-based implementation will cause yini-áyi to become
+! correctly yin-áyi but also incorrectly yi-áyi !
+! Note: the rule that is faithful to the N/M/S phonemes of the grammar is given
+! below:
+! define nonPermanentConsonants [
+!     [ [ N | M | S ] -> 0 || _ Bx vowels ] .o.
+!     [ N -> n , M -> m , S -> s || _ [ 7 | .#. ] ] ] ;
+define nonPermanentConsonants [
+    [ [ n | s ] (->) 0 || _ Bx vowels ] .o.
+    [ m -> 0 || [
+        á t o 7 a h s i |
+        m á í i p s s i |
+        a s ó k a 7 s i ] _
+        Bx vowels ] ] ;
+
+! K. 3mm (Frantz 1991, p. 82)
+! Certain intransitive verbs have mm suffixed when a consonant-initial 
+! morpheme follows. These verbs have been identified and are listed in
+! the lexical phonological rule given below. Note that ikaissi has -mm
+! suffixed optionally.
+define 3mm [
+    [ [..] -> m m || [ .#. | Bx ] [
+        i k o ' p o |
+        i k s i s á í i k i |
+        i k s i s t o ' s i |
+        i m i |
+        i n á á m m |
+        i n n o 7 s i |
+        i p a h k s i m i |
+        p á p i s a |
+        i p a p o |
+        i p i i |
+        i p o i n a o h k o y i |
+        i p o n i n a |
+        i s t t s í í k i n a k i |
+        i t s i k s i n a |
+        i t s a 7 t a |
+        i 7 n á k s t s s i |
+        i 7 t s o y i |
+        k s i k k s i n a a |
+        m a o h k s i n a a |
+        m i 7 k s i n a a |
+        n i i s i t o y i |
+        n i 7 t ó k s k a a |
+        o h k o y i |
+        o h k s s s a a n i i n a a |
+        ó k o h k o y i |
+        o k a 7 p i h t s i m i |
+        o k s i k i n a k i |
+        o k s i n a |
+        o m a h k s i |
+        o t a i m i |
+        o t s i |
+        o 7 k s t s i k s i n a a t t s i |
+        o 7 k s t s í k s i n a a |
+        o 7 t s s o p o k i i y i |
+        s a a h k s s t s s i |
+        s a t s i k o h t a a |
+        s a y í n a k o y i |
+        s s k í i n a a |
+        s s k a a |
+        s s t o 7 s i |
+        w a a k a y i |
+        w a a p i s o y i i n a |
+        y a a h s s i |
+        y o o h s i n i i n a ] _ Bx [ w a | y i | y i n i ] [ Bx | .#. ] ] .o.
+    [ [..] (->) m m || [ .#. | Bx ] i k a i s s i _ Bx [ w a | y i | y i n i ] [ Bx | .#. ] ] ] ;
+        !y o o h s i n i i n a ] _ Bx [ consonants Bx t ] ] .o.
+    ![ [..] (->) m m || [ .#. | Bx ] i k a i s s i _ Bx [ consonants Bx t ] ] ] ;
+
+
+! L. Semivowel alternation (Frantz 1991, pp. 82--83)
+! Note: the root oo `eat' arguably exhibits this too (cf. oo-i -> ooyi and
+! oo-at -> oowat, Frantz 1991, p. 100, fn. 126)
+define SVAltMorphs [
+    i h t a |
+    i h t s o o h k i t s i |
+    i k a |
+    i k k i a 7 |
+    i k s i s s t o |
+    i n s s t a |
+    i s a k o o |
+    i t s i |
+    m a t s i |
+    n a a t o |
+    o h p i i |
+    o h t o |
+    s o p o |
+    w a a h k o |
+    w a a k o o 7 |
+    w a a w o ] ;
+define semivowelAlternation [
+    [ [..] -> y || [ .#. | Bx ] SVAltMorphs _ Bx [ i | í ] ] .o.
+    [ [..] -> w || [ .#. | Bx ] SVAltMorphs _ Bx [ o | ó | a | á ] ] ] ;
+
+! M. Diphthongization
+! This phenomenon involves stems that end in oo, ii or i and which change
+! this final vowel to ao, ao, and a (respectively) before the 21 suffixes
+! -o'p, -o's, and -o'k (Frantz 1991, p. 83). Note: I'm not sure how accent
+! marking is affected by this rule or what exactly áóo is supposed to represent
+! phonetically in itapáóo'pa (Frantz 1991, p. 83).
+! Note: I think there are more stems that behave like this. I may need to
+! make this into an optional rule in order to account for this ...
+! Note 2: the <o> in the replacement is here made optional since sometimes this
+! is transcribed as <aoo> and sometimes just <ao>. In fact, I am not sure what,
+! exactly Frantz means by sequences like <aoo> and <aii>.
+define 21Sfxs Bx o 7 [ p (a) | [ s | k ] (i) ] [ Bx | .#. ] ;
+define diphthongization [
+    [ o o -> a (o) || [ .#. | Bx ] [
+        i h t s i s |
+        k i 7 t s i i k s o w |
+        i s t t s s |
+        i t a p |
+        o h t s s a p |
+        o p a s |
+        s i s t s i k |
+        s s k |
+        w a a w a a t t s i s o w |
+        y i i s t a p ] _ 21Sfxs ,
+        [ .#. | Bx ] _ 21Sfxs ] .o.
+    [ ó o -> a (o) || [ .#. | Bx ] s o w _ 21Sfxs ] .o.
+    [ i i -> a (o) || [ o | ó ] p _ 21Sfxs ] .o.
+    [ i -> a (o)   || [ .#. | Bx ] [ i s t a w a 7 s | i p i k s ] _ 21Sfxs ] ] ;
+
+! N. Initial Change -ay- (Frantz 1991, p. 36)
+! A small subset of stems beginning with sV or ICV (where C and V stand for any
+! consonant and vowel), replacement of this initial sequence by sayV or CayV,
+! respectively. This is possible only in word-initial position. Initial change
+! is also found in some imperative forms and a few nominalized verbs.
+! Note: this is REALLY UGLY! There has to be some better way of capturing this ...
+define initialChangeAY [
+    [ i k -> k a y || .#. _ [
+        i i |
+        i p p |
+        i 7 t a w a a t o o |
+        i 7 t a y i s s k s i m m a a ] [ .#. | "-" ] ] .o.
+    [ i k s -> k a y || .#. _ i s s t a 7 p s s i [ .#. | Bx ] ] .o.
+    [ i p -> p a y || .#. _ i p o 7 t a m i a p i k s s a t t s i i y i [ .#. | Bx ] ] .o.
+    [ i p (->) p a y || .#. _ i p o t t a a [ .#. | Bx ] ] .o.
+    [ k s (->) k a y || .#. _ i k k [ .#. | Bx ] ] .o.
+    [ s -> s a y || .#. _ [ a 7 k a p | a t t s i k s s k a a ] [ .#. | Bx ] ] .o.
+    [ s (->) s a y || .#. _ o o t a a [ .#. | Bx ] ] .o.
+    [ i k s í í -> k s í í y i || .#. _ k s k a a a t [ .#. | Bx ] ] .o.
+    [ i k a -> k á á || .#. _ y i h t s i [ .#. | Bx ] ] .o.
+    [ i k a -> [ k a a | i i k á ] || .#. _ y i n n i [ .#. | Bx ] ] ] ;
+
+! N.a. Initial Change ii- (Frantz 1991, p. 36)
+! This is the ii-prefixation/ change-left-edge-vowels-to-ii initial
+! change that the Grammar discusses. Since almost all verbs begin with
+! a vowel, a semivowel, or <s> (given the conventions of the dictionary) we
+! can use this fact to reduce the massive overgeneralization (i.e., to non-verbs)
+! that this rule would otherwise bring about. Still, it's not pretty ...
+! WARNING TODO !!!: VERB STEMS THAT ARE FUTURE OR IMPERFECTIVE SHOULD NOT UNDERGO INITIAL CHANGE LIKE THIS! THIS RULE CURRENTLY INCORRECTLY DOES THAT
+define initialChangeII [
+    [ [..] (->) i i    || [ .#. | .#. [ n i t | k i t | o t ] Bx ] _ [ s | w | y ] ] .o.
+    [ vowels+ (->) i i || [ .#. | .#. [ n i t | k i t | o t ] Bx ] _ [ consonants | 7 | h ] ] ] ;
+
+! O. yi-Loss
+! Certain verb stems lose a final /yi/ when third person suffixes are added
+! (Frantz & Russell 1995, p. xvii). Note: I assume that this only happens
+! after -wa, -yi, and -yini, although maybe the third person suffixes of
+! different moods have this effect also. Note also that this rule may be
+! optional or speaker-conditioned (cf. the parenthesized yi-s in the
+! dictionary).
+define yiLoss [
+    y i -> 0 || [ .#. | Bx] [
+        i k k a n i k s o o h p i 7 |
+        i n n i s i 7 |
+        i p a i t a p i i |
+        i t á 7 p a o h p i 7 |
+        i t a p i i |
+        i 7 t o m i k á ó h p a i 7 p i |
+        o h p i 7 |
+        o 7 t s s o p o k i i |
+        s a a p o h p i 7 |
+        s o y o o h p i 7 |
+        s s k s s p o h p i 7 |
+        w á á p a t s i i 7 |
+        w a a t a p o k a 7 ]
+        _
+        [ y i | w a | y i n i ]
+        [ .#. | Bx ] ] ;
+
+! P. áyi DTP vowel elision
+! According to Frantz (1991, p. 48) vowels are deleted before the DTP suffixes -áyi, -aistsi, and -aiksi
+define DTPVowelElision [ vowels -> 0 ||
+    _ Bx [ á y i | a i [ s t s i | k s i ] ] [ .#. | Bx ] ] ;
+
+! Q. Irregular (lexical) breaking
+! Certain verbs break (i.e., assibilate) preceding /t/ and /k/ even though
+! they do not ostensible begin with a high front vowel. Examples are ooyi 'eat'
+! (and its cousins), yo'kaa 'sleep', and yáapi 'see'. The first two of these
+! are sometimes transcribed in the grammar as Ioyi and Io'kaa, respectively. Here I create
+! an ad hoc, lexically sensitive rule ! to deal with these. Of course, there
+! are probably other verbs that behave ! in this way.
+! N.b. I replace the delimiter here to prevent the subsequent application of
+! s-connection a which would undesirably lengthen the <s>.
+define irregularBreaking [
+    Bx -> s || [ t | k ] _ [
+        o o [ y i | w a t ( o o ) ] |
+        y o ' k a a ] [ .#. | Bx ] ] ; 
+
+define irregularBreaking [
+    [ o -> i || [ t | k ] Bx _ o [ y i | w a t ( o o ) ] [ .#. | Bx ] ] .o.
+    [ y -> i || [ t | k ] Bx _ [ o 7 k a a | á a p i ] [ .#. | Bx ] ] ] ;
+
+! R. Inverse Clipping
+! The <o> of the inverse suffixes (-ok, -okoo, -oki) disappears before verbs
+! that end in <t> (Frantz 1991, pp. 57--58).
+! Note: the lengthening of this same <o> in different contexts is handled by
+! the variable-length vowels rule.
+define inverseClipping o -> 0 || t Bx _ k ( [ o o | i ] ) Bx ;
+
+
+! Phonological Rules (cf. Frantz 1991, pp. 152--155)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! 1.    C1-C2     ->     C2C2
+! Gemination Original
+! Note that this rule is actually quite contrived since it requires that the
+! adjacent plosives be MADE adjacent by a previously applying rule. If they
+! were underlyingly adjacent, then the so-called ``stop-stop epenthesis'' rule
+! would insert /oh/ or /i/ between them. Note: geminationGeneral is not being
+! used.
+define geminationGeneral [
+    [ plosives Bx -> p || _ p ] .o.
+    [ plosives Bx -> t || _ t ] .o.
+    [ plosives Bx -> k || _ k ] ] ;
+define gemination [
+    [ a n i s t -> a n i k || _ Bx k ] .o.
+    [ t -> k || _ Bx k ] ] ;
+
+! 2.    It    ->    Ist
+! s-Insertion (assumes that "breaking I" is a phoneme)
+! Note: since the dictionary does not use /I/, this rule is not being used.
+! Instead it is assumed that words like waanIt 'say to' are represented
+! phonemically as /waanist/ and there are special lexical rules to deal with
+! /waanist-ok/ -> [waanikk], etc. (see above).
+define sInsertion [..] -> s || I _ t ;
+
+! 3.    C-s -> Css, V(')-s -> V(')-is
+! s-Connection
+! condition on s-Connection "B": the 's' is not part of a suffix;
+! present implementation: transformation is optional.
+define sConnection [
+    [ Bx -> s || stops _ s ] .o.
+    [ [..] (->) i || vowels (7) Bx _ s ] ] ;
+
+! 4.    o-a    ->    aa
+! o-Replacement
+! note: for some speakers the o is deleted
+! condition: where 'a' is not part of a suffix
+! present implementation: rule is optional
+define oReplacement [
+    [ o (->) [ a | 0 ] , ó (->) [ á | 0 ] || _ Bx a ] .o.
+    [ [ o | ó ] (->) [ á | 0 ] || _ Bx á ] ] ;
+
+! 5.    w-i(i)    ->    o
+! Coalescence
+define coalescence [
+    w Bx i (i) -> o ,
+    w Bx í (í) -> ó ||
+    _ [ consonants | h | 7 ] ] ;
+
+! 5b.   i -> o / C_w{a,o}
+! Coalescence 2 (Frantz 1991, p. 70, fn. 79)
+! TODO: implement this rule! Test based on examples on p. 69 of grammar
+
+! 6.    k-I    ->    ksi
+! Breaking
+! Note: the commented-out rule is what it should be. However, since
+! the lexical items of the dictionary lack /I/, I use an optional 
+! breaking transformation with /i/.
+!define breaking Bx -> s || k _ I ;
+define breaking Bx (->) s || k _ [ i | í ] ;
+
+! 7.    I -> i
+! Neutralization
+! Again, since the dictionary does not use /I/, this rule is superfluous.
+define neutralization I -> i ;
+
+! 8. Desyllabification
+define desyllabification [
+    [ Bx i -> y || vowels _ [ a | á | o | ó ] ] .o.
+    [ Bx o -> w || vowels _ [ a | á | i | í | ó ] ] ] ;
+
+! 9.    !G    ->    0
+! Semivowel Drop
+define semivowelDrop glides -> 0 || .#. _ ;
+
+! 10.    V1V1-V    ->    V1V
+! Vowel Shortening
+define vowelShortening [
+    [ [ a | á ] -> 0 || [ a | á ] _ Bx vowels ] .o.
+    [ [ i | í ] -> 0 || [ i | í ] _ Bx vowels ] .o.
+    [ [ o | ó ] -> 0 || [ o | ó ] _ Bx vowels ] ] ;
+
+! 11.    Vyi-{a,o}    ->    Vy{a,o}
+! i-Loss 
+define iLoss [
+    [ [ i | í ] -> 0 || [ a | á | o | ó ] y _ [ a | á | o | ó ] ] .o.
+    [ i y [ i | í ] -> i (i) y ,
+      í y [ i | í ] -> í (í) y || _ [ a | á | o | ó ] ] ] ;
+
+! 12.    si{a,o}    ->    s{a,o}
+! i-Absorption
+! ISSUE: the prominence on the deleted /i/ in this rule may persist;
+! consider /w-mo7tsís-oaawa-istsi/ -> <o7tsóaawaistsi> from Frantz (1991, p. 69).
+define iAbsorption [ i | í ] (Bx) -> 0 || s _ [ a | á | o | ó ] ;
+
+! 13.    sihs    ->    ss
+! ih-Loss
+define ihLoss [ i | í ] Bx h -> 0 || s _ s ;
+
+! 14.    ihs    ->    ss
+! Presibilation
+! While Frantz (1991, fn. 167) points out speaker- and dialect-level variation
+! in this rule, this is not captured by the current implementation.
+define presibilation [ i | í ] Bx h -> s || _ s ;
+
+! 15.    CG    ->    C    , where C ne 7
+! Semivowel Loss
+define semivowelLoss glides -> 0 || obstruents Bx _ ;
+
+! 16.    Ciyiy    ->    Ciiy
+! y-Reduction (optional)
+define yReduction [ y (->) 0 ||
+    [ obstruents | 7 ] [ i | í ] _ [ i | í ] (Bx) y ] ;
+
+! 17.    sih    ->    ss
+! Postsibilation
+define postsibilation [ i | í ] (Bx) h -> s || s _ ;
+
+! 18.    ti    ->    tsi
+! t-Affrication
+define tAffrication Bx -> s || t _ [ i | í ] ;
+
+! 19.    V7VC    ->    VV7C
+! Glottal Metathesis
+define glottalMetathesis [
+    7 Bx a -> Bx a 7 ,
+    7 Bx á -> Bx á 7 ,
+    7 Bx a a -> Bx a a 7 ,
+    7 Bx á á -> Bx á á 7 ,
+    7 Bx i -> Bx i 7 ,
+    7 Bx í -> Bx í 7 ,
+    7 Bx i i -> Bx i i 7 ,
+    7 Bx í í -> Bx í í 7 ,
+    7 Bx o -> Bx o 7 ,
+    7 Bx ó -> Bx ó 7 ,
+    7 Bx o o -> Bx o o 7 ,
+    7 Bx ó ó -> Bx ó ó 7 || vowels _ [ consonants | 7 | h ] ] ;
+
+
+! 20.    VV1V17C    ->    VV1V1C
+! Glottal Loss
+! Note that glottal loss does not occur when the long vowel is a variable
+! length one (Frantz 1991, p. 154). This is an unresolved issue that will
+! probably cause problems. Future work should reconcile this generalization
+! with the definition of variableLengthVowels above.
+define glottalLoss [
+    a a 7 -> a a ,
+    á á 7 -> á á ,
+    i i 7 -> i i ,
+    í í 7 -> í í ,
+    o o 7 -> o o ,
+    ó ó 7 -> ó ó || vowels (Bx) _ consonants ] ;
+
+! 21.    V7(s)CC    ->    VV(s)CC    , where C ne s
+! Glottal Assimilation
+define glottalAssimilation [
+    a 7 -> a a ,
+    á 7 -> á á ,
+    i 7 -> i i ,
+    í 7 -> í í ,
+    o 7 -> o o ,
+    ó 7 -> ó ó || _ (s) [ p p | t t | k k | m m | n n ] ] ;
+
+! 22.    77    ->    7
+! Glottal Reduction
+define glottalReduction 7 7 -> 7 ;
+
+! 23.    V17h    ->    V17V1h
+! Vowel Epenthesis
+! note: In place of this rule, some speakers have the following rule:
+! 7 -> 0 / _ h
+define vowelEpenthesis [ 
+    a 7 -> [ a 7 a | a ] ,
+    á 7 -> [ á 7 á | á ] ,
+    i 7 -> [ i 7 i | i ] ,
+    í 7 -> [ í 7 í | í ] ,
+    o 7 -> [ o 7 o | o ] ,
+    ó 7 -> [ ó 7 ó | ó ] || _ h ] ;
+
+! 24.    sssC    ->    ssC
+! sss-Shortening
+define sssShortening s -> 0 || _ s s [ stops | glides ] ;
+
+! 25.
+! Accent Spread
+define accentSpread [
+    a -> á ,
+    i -> í ,
+    o -> ó || accentedVowels Bx _ ] ;
+
+! Needed to ADD a simple rule which allows for either a shortening of vowels (or not) after long consonants
+! REMEMBER THISSS
+
+define vowelOption [ vowels -> 0 || Cgem Bx _ Vowel ] ;
+
+! 26.    - -> 0
+! Break-Delete
+! Remove the morpheme delimiter symbol. Note that \"-" is the term
+! complement of "-", i.e., the set of single-symbol strings that does
+! not contain the hyphen. This formulation is superior to "-" -> 0 since
+! it does not introduce so much ambiguity during parsing.
+!define breakDelete Bx -> 0 || [ .!. | \Bx ] _ \Bx ;
+!define breakDelete Bx -> 0 ;
+define deep2surfRule [ Bx -> 0 ,, 7 -> ' ,, n2 -> n ,, m2 -> m ] ; 
+
+! define Raccent [
+  !  á -> a,
+   ! í -> i,
+   ! ó -> o,
+   ! a -> á,
+   ! í -> i,
+   ! ó -> o
+! ] ;
+
+
+
+! The relaxer series is a set of rules which allow for the phonological model to accomodate for some common 
+! spelling variations present in the corpus. This is meant to assist with morpheme segmentation. 
+
+
+! Phonology FST: ordered rewrite rules = ordered composition of FSTs
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! Rules apply for maximal ``feeding'' and minimal ``bleeding'' except that
+! coalescence bleeds desyllabification, presibilation, and semivowel loss;
+! i-absorption bleeds desyllabification, and gemination bleeds s-insertion.
+! Desyllabification bleeds accent spread, but does not bleed nor feed any other
+! rules (Frantz 1991, p. 155).
+
+define phonology [ ! lexical phonological rules
+    irregularBreaking .o.
+    semivowelAlternation .o.
+    nasalInitialVerbs .o.
+    imperativeInitialVowelElision .o.
+    codafication .o.
+    stopStopEpenthesis .o.
+    becomeO .o.
+    becomeA .o.
+    nasalLoss .o.
+    variableLengthVowels .o.
+    3mm .o.
+    DTPVowelElision .o.
+    nonPermanentConsonants .o.
+    diphthongization .o.
+    initialChangeAY .o.
+    initialChangeII .o.
+    yiLoss .o.
+    inverseClipping .o.
+    vowelOption .o.
+    
+
+    ! (general) phonological rules
+    coalescence .o. 
+    semivowelLoss .o. 
+    gemination .o. 
+    sConnection .o. 
+    yReduction .o. 
+    breaking .o. 
+    oReplacement .o. 
+    ihLoss .o. 
+    presibilation .o. 
+    sssShortening .o. 
+    semivowelDrop .o. 
+    vowelShortening .o. 
+    tAffrication .o. 
+    postsibilation .o. 
+    iAbsorption .o.
+    desyllabification .o. 
+    glottalMetathesis .o. 
+    vowelEpenthesis .o. 
+    glottalReduction .o. 
+    glottalLoss .o. 
+    glottalAssimilation .o. 
+    accentSpread .o. 
+    deep2surfRule .o.
+    iLoss
+   
+    ] ;
