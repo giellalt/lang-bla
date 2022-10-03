@@ -4483,6 +4483,7 @@ R.person.NULL@+21Pl+3Pl:@R.person.NULL@%>ahki   	# ;
 @R.person.NULL@+3Pl+4Pl:@R.person.NULL@%>asi   	# ;	
 ! Direct, Singular Subject, Plural Object, SUBJUNCTIVE
 @R.person.NULL@+1Sg+2Pl:@R.person.NULL@%>inoainiki   	# ;
+@R.person.NULL@+2Sg+3Pl:@R.person.NULL@%>ainiki   	# ;
 @R.person.NULL@+3Sg+4Pl:@R.person.NULL@%>asi   	# ;	
 ! Inverse, Singular Subject and Object, SUBJUNCTIVE
 @R.person.NULL@+2Sg+1Sg:@R.person.NULL@%>okiiniki   	# ;	
