@@ -21,17 +21,15 @@ Nonaff+
 +Sbj
 +Irr
 +Pre
-+
-! Associative+
-! Instrumental+
-! Replace+
-! Sublative+
-! ToSpeaker+
-! There+
-! Locative+
-! Superessive+
-! Ablative+
-+Der/Benef
+! +1Sg/2Pl
+! +2/3/4Sg
+! +3Sg/Pl
++5
++Der/Caus
++Der/Rcpr
++Der/Rflx
++Der/Bnf
++Unspec ! +X
 +Accomp
 +0Sg
 +0Pl
@@ -138,16 +136,16 @@ LEXICON BASIC_IMP_PREFIXES
 @P.person.IMP@:@P.person.IMP@0    PREFIXES ;
 
 LEXICON PREFIXES
-0                                       VERB_STEMS ;
-@R.mode.IND@Neg+:@R.mode.IND@máát	PREFIXES ;
-@R.mode.IMP@Neg+:@R.mode.IMP@miin	PREFIXES ;
-@R.mode.IMP@Neg+:@R.mode.IMP@piin	PREFIXES ;
-@P.assoc.A@:@P.assoc.A@Xohpok	BOUND ;
-@R.mode.CON@:@R.mode.CON@saw	BOUND ;
-@R.mode.SUB@:@R.mode.SUB@saw	BOUND ;
-@R.mode.CON@:@R.mode.CON@áákssta7	BOUND ;
-@R.mode.CON@:@R.mode.CON@ááhkssta7	BOUND ;
-@R.mode.IRR@:@R.mode.IRR@kátá7	BOUND ;
+0                                     VERB_STEMS ;
+@R.mode.IND@Neg+:@R.mode.IND@máát%<   PREFIXES ;
+@R.mode.IMP@Neg+:@R.mode.IMP@miin%<   PREFIXES ;
+@R.mode.IMP@Neg+:@R.mode.IMP@piin%<   PREFIXES ;
+@P.assoc.A@:@P.assoc.A@Xohpok%<       BOUND ;
+@R.mode.CON@:@R.mode.CON@saw%<        BOUND ;
+@R.mode.SUB@:@R.mode.SUB@saw%<        BOUND ;
+@R.mode.CON@:@R.mode.CON@áákssta7%<   BOUND ;
+@R.mode.CON@:@R.mode.CON@ááhkssta7%<  BOUND ;
+@R.mode.IRR@:@R.mode.IRR@kátá7%<      BOUND ;
 wayák:wayák	BOUND ;
 yáak:yáak	BOUND ;
 ayáak:ayáak	BOUND ;
@@ -4069,31 +4067,31 @@ yootsipistoto:yootsipistoto	VTA ;
 ! The relfexive changes VTA verbs into VAI verbs and takes VAI suffixes. The same is true of the reciprocal.
 
 LEXICON VAI
-+VAI:0                                          VAI_SUFFIXES ;
-+VAI+Cause:%>áttsi                              VAI_SUFFIXES ;
-+VAI+Cause:%>pi                                 VAI_SUFFIXES ;
-@P.class.VTA@+VAI+Der/Benef:@P.class.VTA@%>mo   VTA ;
-@P.class.VTA@+VAI+Der/Benef:@P.class.VTA@%>omo  VTA ;
-@P.class.VTA@+VAI+Der/Benef:@P.class.VTA@%>o    VTA ;
-@R.accomp.A@+VAI+Accomp:@R.accomp.A@%>m	        VAI_SUFFIXES ;
++VAI:0                                        VAI_SUFFIXES ;
++VAI+Der/Caus:%>áttsi                         VTA ;
++VAI+Der/Caus:%>pi                            VTA ;
+@P.class.VTA@+VAI+Der/Bnf:@P.class.VTA@%>mo   VTA ;
+@P.class.VTA@+VAI+Der/Bnf:@P.class.VTA@%>omo  VTA ;
+@P.class.VTA@+VAI+Der/Bnf:@P.class.VTA@%>o    VTA ;
+@R.accomp.A@+VAI+Accomp:@R.accomp.A@%>m	      VAI_SUFFIXES ; ! -> VTA?
 
 LEXICON VII
 +VII:0		VII_SUFFIXES ;
 
 LEXICON VTI
-+VTI:0                                          VTI_SUFFIXES ;
-@P.class.VTA@+VTI+Der/Benef:@P.class.VTA@%>mo   VTA ;
-@P.class.VTA@+VTI+Der/Benef:@P.class.VTA@%>omo	VTA ;
-@P.class.VTA@+VTI+Der/Benef:@P.class.VTA@%>o    VTA ;
++VTI:0                                        VTI_SUFFIXES ;
+@P.class.VTA@+VTI+Der/Bnf:@P.class.VTA@%>mo   VTA ;
+@P.class.VTA@+VTI+Der/Bnf:@P.class.VTA@%>omo  VTA ;
+@P.class.VTA@+VTI+Der/Bnf:@P.class.VTA@%>o    VTA ;
 
 LEXICON VTA
-+VTA:0			VTA_SUFFIXES ;
-+VTA+Der/Benef:%>mo		VTA_SUFFIXES ;
-+VTA+Der/Benef:%>omo	VTA_SUFFIXES ;
-+VTA+Der/Benef:%>o		VTA_SUFFIXES ;
-+VAI+Reflex:%>ohsi	VAI_SUFFIXES ;
-+VAI+Recipr:%>otsiiyi	VAI_SUFFIXES ;
-+VAI+Recipr:%>tsiiyi	VAI_SUFFIXES ;
++VTA:0                        VTA_SUFFIXES ;
++VTA+Der/Bnf+VTA:%>mo         VTA_SUFFIXES ;
++VTA+Der/Bnf+VTA:%>omo        VTA_SUFFIXES ;
++VTA+Der/Bnf+VTA:%>o          VTA_SUFFIXES ;
++VTA+Der/Rflx+VAI:%>ohsi      VAI_SUFFIXES ;
++VTA+Der/Rcpr+VAI:%>otsiiyi   VAI_SUFFIXES ;
++VTA+Der/Rcpr+VAI:%>tsiiyi    VAI_SUFFIXES ;
 
 ! BELOW ARE THE VAI SUFFIXES ;
 
@@ -4102,7 +4100,7 @@ LEXICON VAI_SUFFIXES
 @R.mode.CON@+Cnj:@R.mode.CON@ CONJ_VAI_SUFFIXES ;
 @R.mode.SUB@+Sbj:@R.mode.SUB@ SUBJ_VAI_SUFFIXES ;
 @R.mode.IRR@+Irr:@R.mode.IRR@ UNREAL_VAI_SUFFIXES ;
-@R.mode.IMP@+Imp:@R.mode.IMP@	IMP_VAI_SUFFIXES ;
+@R.mode.IMP@+Imp:@R.mode.IMP@ IMP_VAI_SUFFIXES ;
 
 LEXICON INDEP_VAI_SUFFIXES
 ! Singular INDEPENDENT
