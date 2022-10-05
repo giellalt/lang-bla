@@ -4350,8 +4350,8 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.KI@+2Sg+4Pl:@R.person.KI@%>aayi   		# ;
 @R.person.NULL@+3Sg+4Pl:@R.person.NULL@%>yiiwa   	# ;
 @R.person.NULL@+4Sg+5:@R.person.NULL@%>yiiyini   	# ;
-! Indirect, Singular Subject and Object, INDEPENDENT
-@R.person.KI@+2/3/4Sg+1Sg/2Pl:@R.person.KI@%>oki   		# ;	
+! Inverse, Singular Subject and Object, INDEPENDENT
+@R.person.KI@+2Sg+1Sg:@R.person.KI@%>oki   		# ;	
 @R.person.KI@+3Sg+2Sg:@R.person.KI@%>oka   	# ;
 @R.person.NI@+3Sg+1Sg:@R.person.NI@%>oka  		# ;	
 @R.person.OT@+4Sg+3Sg:@R.person.OT@%>oka   		# ;
@@ -4359,12 +4359,15 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NI@+4Sg+1Sg:@R.person.NI@%>okini   	# ;
 @R.person.OT@+4Sg+3Sg:@R.person.OT@%>oka   		# ;
 @R.person.OT@+5+4Sg:@R.person.OT@%>okini   	# ;
-! Indirect, Plural Subject, Singular Object, INDEPENDENT
-@R.person.KI@+2Pl+1Sg:@R.person.KI@%>okihpoaawa  		# ;	
-@R.person.NI@+3Pl+2Sg:@R.person.NI@%>oki   	# ;
-@R.person.OT@+4Pl+3Sg:@R.person.OT@%>oka   		# ;
+! Inverse, Plural Subject, Singular Object, INDEPENDENT
+@R.person.KI@+2Pl+1Sg:@R.person.KI@%>okihpoaawa  		# ;
+@R.person.NI@+3Pl+1Sg:@R.person.NI@%>oki   	# ;
+@R.person.KI@+3Pl+2Sg:@R.person.KI@%>oki   	# ;
 @R.person.NI@+4Pl+1Sg:@R.person.NI@%>oki   	# ;
-! Indirect, Plural Subject and Object, INDEPENDENT
+@R.person.KI@+4Pl+2Sg:@R.person.KI@%>oki   	# ;
+@R.person.OT@+4Pl+3Sg:@R.person.OT@%>oka   		# ;
+@R.person.NULL@+4Pl+5:@R.person.NULL@%>yiiyini   		# ;
+! Inverse, Plural Subject and Object, INDEPENDENT
 @R.person.KI@+2Pl+1Pl:@R.person.KI@%>okihpinnana  # ;
 @R.person.NULL@+3Pl+21Pl:@R.person.NULL@%>okiyi	 # ;
 @R.person.NI@+3Pl+1Pl:@R.person.NI@%>okinnaani  # ;
@@ -4374,14 +4377,12 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NULL@+4Pl+21Pl:@R.person.NULL@%>okiyi  # ;
 @R.person.NI@+4Pl+1Pl:@R.person.NI@%>okinnani  # ;
 @R.person.OT@+5+4Pl:@R.person.OT@%>okoaayini  # ;
-! Indirect, Plural Object, Singular Subject, INDEPENDENT
-@R.person.KI@+2Sg+1Pl:@R.person.KI@%>okihpinnana  # ;
+! Inverse, Plural Object, Singular Subject, INDEPENDENT
+@R.person.KI@+2Sg+1Pl:@R.person.KI@%>okihpinnana  # ; 
 @R.person.KI@+3Sg+2Pl:@R.person.KI@%>okoaawa   	# ;
-@R.person.KI@+3Sg+2Pl:@R.person.KI@%>okoaaw   	# ;
 @R.person.NI@+3Sg+1Pl:@R.person.NI@%>okinnaani 		# ;	
 @R.person.NI@+3Sg+1Pl:@R.person.NI@%>okinnaan 		# ;	
 @R.person.OT@+4Sg+3Pl:@R.person.OT@%>okoaayi   	# ;
-@R.person.OT@+4Sg+3Pl:@R.person.OT@%>okoaay   	# ;
 @R.person.KI@+4Sg+2Pl:@R.person.KI@%>okini   	# ;
 @R.person.NULL@+4Sg+21Pl:@R.person.NULL@%>okiyini   	# ;
 @R.person.NI@+4Sg+1Pl:@R.person.NI@%>okini   	# ;
@@ -4497,10 +4498,11 @@ R.person.NULL@+21Pl+3Pl:@R.person.NULL@%>ahki   	# ;
 @R.person.NULL@+3Pl+2Pl:@R.person.NULL@%>otsiinoainiki   	# ;
 @R.person.NULL@+3Pl+1Pl:@R.person.NULL@%>otsiinoainiki   	# ;
 @R.person.NULL@+3Pl+1Pl:@R.person.NULL@%>otsiinnaaniki   	# ;
-@R.person.NULL@+3Sg/Pl+21Pl:@R.person.NULL@%>okisi   	# ;
+@R.person.NULL@+3Pl+21Pl:@R.person.NULL@%>okisi   	# ;
 ! Inverse, Singular Subject and Plural Object, CONJUNCTIVE
 @R.person.NULL@+3Sg+1Pl:@R.person.NULL@%>okinnaaniki   	# ;	
 @R.person.NULL@+3Sg+2Pl:@R.person.NULL@%>okinnaaniki   	# ;
+@R.person.NULL@+3Sg+21Pl:@R.person.NULL@%>okisi   	# ;
 ! Unspecified Subject, SUBJUNCTIVE
 @R.person.NULL@+Unspec+1Sg:@R.person.NULL@%>okoiniki   	# ;	
 @R.person.NULL@+Unspec+1Pl:@R.person.NULL@%>okoinnaaniki   	# ;
