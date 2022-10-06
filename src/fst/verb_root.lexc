@@ -20,6 +20,14 @@ Nonaff+
 +Cnj
 +Sbj
 +Irr
++Pre
++5
++Der/Caus
++Der/Rcpr
++Der/Rflx
++Der/Bnf
++Unspec ! +X
++Accomp
 +0Sg
 +0Pl
 +1Sg
@@ -33,6 +41,7 @@ Nonaff+
 +4Pl
 
 ! Flag diacritics to be used
+@R.accomp.A@
 @R.person.NI@
 @R.person.KI@
 @R.person.KII@
@@ -67,10 +76,15 @@ Nonaff+
 @R.class.VII@
 @R.class.VTI@
 @R.class.VTA@
+@P.assoc.A@
+@R.assoc.A@
 
 ! Special_characters
+i3
 i2
 n2
+m2
+X
 %<
 %>
 
