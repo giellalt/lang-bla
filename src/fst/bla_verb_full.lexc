@@ -716,6 +716,7 @@ i2
 i3
 í2
 í3
+m2
 n2
 X
 %<
@@ -780,7 +781,7 @@ LEXICON BASIC_IRR_PREFIXES
 LEXICON BASIC_IMP_PREFIXES
 @P.person.IMP@:@P.person.IMP@0    PREFIXES ;
 
-LEXICON PREFIXES
+LEXICON PREFIXES2
 0												VERB_STEMS ;
 @R.mode.IND@Neg+:@R.mode.IND@máát				BOUND ;
 @R.mode.IMP@Neg+:@R.mode.IMP@miin				BOUND ;
@@ -1105,7 +1106,8 @@ LEXICON BOUND
 ! Below are the regular VAI stems and their past tense forms. 
 ! They are organized as prefixed and non-prefixed forms 
 
-LEXICON VERB_STEMS
+! LEXICON VERB_STEMS
+LEXICON PREFIXES
 @R.class.VAI@	VAI_STEMS ;
 @R.class.VII@	VII_STEMS ;
 @R.class.VTI@	VTI_STEMS ;
@@ -5030,11 +5032,11 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NULL@+4Sg+21Pl:@R.person.NULL@%>okiyini   	# ;
 @R.person.NI@+4Sg+1Pl:@R.person.NI@%>okini   	# ;
 ! Unspecified INDEPENDENT
-@R.person.NI@Unspec+1Sg:@R.person.NI@%>okoo   	# ;
-@R.person.NI@Unspec+1Pl:@R.person.NI@%>otsspinnaana   	# ;
-@R.person.KI@Unspec+2Sg:@R.person.KI@%>okoo   	# ;
-@R.person.KI@Unspec+2Sg:@R.person.KI@%>otsspoaawa   	# ;
-@R.person.NULL@Unspec+21Pl:@R.person.NULL@%>okiwa  	# ;
+@R.person.NI@+Unspec+1Sg:@R.person.NI@%>okoo   	# ;
+@R.person.NI@+Unspec+1Pl:@R.person.NI@%>otsspinnaana   	# ;
+@R.person.KI@+Unspec+2Sg:@R.person.KI@%>okoo   	# ;
+@R.person.KI@+Unspec+2Sg:@R.person.KI@%>otsspoaawa   	# ;
+@R.person.NULL@+Unspec+21Pl:@R.person.NULL@%>okiwa  	# ;
 @R.person.NULL@+Unspec+3Sg:@R.person.NULL@%>aawa   	# ;
 @R.person.NULL@+Unspec+3Pl:@R.person.NULL@%>aayi   	# ;
 @R.person.NULL@+Unspec+4Sg:@R.person.NULL@%>aayini   	# ;
@@ -5121,7 +5123,7 @@ LEXICON SUBJ_VTA_SUFFIXES
 @R.person.NULL@+1Pl+2Pl:@R.person.NULL@%>innaaniki   	# ;
 @R.person.NULL@+1Pl+3Pl:@R.person.NULL@%>ainnaaniki   	# ;
 @R.person.NULL@+2Pl+3Pl:@R.person.NULL@%>ainainiki   	# ;
-R.person.NULL@+21Pl+3Pl:@R.person.NULL@%>ahki   	# ;
+@R.person.NULL@+21Pl+3Pl:@R.person.NULL@%>ahki   	# ;
 @R.person.NULL@+3Pl+4Pl:@R.person.NULL@%>asi   	# ;	
 ! Direct, Singular Subject, Plural Object, SUBJUNCTIVE
 @R.person.NULL@+1Sg+2Pl:@R.person.NULL@%>inoainiki   	# ;
