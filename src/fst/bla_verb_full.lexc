@@ -1088,10 +1088,7 @@ PV/yook+:yook	BOUND ;
 LEXICON BOUND
 :%< PREFIXES ;
 
-! Blackfoot Regular VAI Stems
-
-! Below are the regular VAI stems and their past tense forms. 
-! They are organized as prefixed and non-prefixed forms 
+!! This file contains the Blackfoot verb stems. They are organized by their inflectional class.
 
 ! LEXICON VERB_STEMS
 LEXICON PREFIXES
@@ -1099,10 +1096,6 @@ LEXICON PREFIXES
 @R.class.VII@	VII_STEMS ;
 @R.class.VTI@	VTI_STEMS ;
 @R.class.VTA@	VTA_STEMS ;
-
-!! Now we collect the verb stems !!
-
-! This file contains the Blackfoot verb stems. They are organized by their inflectional class.
 
 LEXICON VAI_STEMS
 ! a’painahkimaa:a’painahkimaa	VAI ;
