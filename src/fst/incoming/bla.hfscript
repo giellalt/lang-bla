@@ -1,0 +1,23 @@
+! Script for composing Blackfoot verbal morphological model
+
+read lexc bla_verb_full.lexc
+
+define Morph
+
+source phonology.xfscript
+
+define Phon
+
+set flag-is-epsilon ON
+
+regex [ Morph .o. Phon ];
+
+save stack bla-generator.hfst
+
+print upper-words > bla.upper
+
+print lower-words > bla.lower
+
+invert net
+
+save stack bla-analyzer.hfst
