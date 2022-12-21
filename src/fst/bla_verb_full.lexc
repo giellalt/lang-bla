@@ -390,8 +390,8 @@ PV/oto+
 PV/ohkott+
 PV/ssáak+
 PV/ohko+
-PV/á:á+
-PV/a:a+
+PV/á+
+PV/a+
 PV/á’+
 PV/a’kooh+
 PV/á’p+
@@ -408,7 +408,7 @@ PV/áísooka+
 PV/aisskahs+
 PV/áka+
 PV/ákáá+
-PV/akisspí:+
+PV/akisspí+
 PV/akk+
 PV/akoksska+
 PV/ákstam+
@@ -722,20 +722,7 @@ X
 %<
 %>
 
-! Desired input-output
-! Input: @U.person.NI@ 0
-! Output: @U.person.NI@ nit 
-! -> LEXC: @U.person.NI@0: @U.person.NI@ nit
-
-! Desired input-output
-! Input: @U.person.NI@ 0
-! Output: @U.person.NI@ nit 
-! -> LEXC: @U.person.NI@0:@U.person.NI@ nit
-
-LEXICON Root
-PREFIX_SETS ;
-
-! Blackfoot Regular Verb Morphology
+!! Blackfoot Regular Verb Morphology
 
 ! Desired input-output
 ! Input: @U.person.NI@ 0
