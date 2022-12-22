@@ -4689,26 +4689,26 @@ yookowat:yookowat	VTA ;
 
 ! I am including the concrete verb finals (see Frantz 2017 chapter 18.)
 ! The reason being that this is the best place to control them considering the four verb classes
-! The relfexive changes VTA verbs into VAI verbs and takes VAI suffixes. The same is true of the reciprocal. 
-! The benfactive changes Intransitive to Transitive verbs.
+! The reflexive changes VTA verbs into VAI verbs and takes VAI suffixes. The same is true of the reciprocal. 
+! The benefactive changes Intransitive to Transitive verbs.
 
 LEXICON VAI
-+VAI:0                                        VAI_SUFFIXES ;
-+VAI+Der/Caus:%>áttsi                         VTA ;
-+VAI+Der/Caus:%>pi                            VTA ;
-@P.class.VTA@+VAI+Der/Bnf:@P.class.VTA@%>mo   VTA ;
-@P.class.VTA@+VAI+Der/Bnf:@P.class.VTA@%>omo  VTA ;
-@P.class.VTA@+VAI+Der/Bnf:@P.class.VTA@%>o    VTA ;
-@R.accomp.A@+VAI+Accomp:@R.accomp.A@%>m	      VAI_SUFFIXES ; ! -> VTA?
++VAI:0                                           VAI_SUFFIXES ;
++VAI+Der/Caus:%>áttsi                            VTA ;
++VAI+Der/Caus:%>pi                               VTA ;
+@P.class.VTA@+VAI+Der/Bnf+VTA:@P.class.VTA@%>mo  VTA_SUFFIXES ;
+@P.class.VTA@+VAI+Der/Bnf+VTA:@P.class.VTA@%>omo VTA_SUFFIXES ;
+@P.class.VTA@+VAI+Der/Bnf+VTA:@P.class.VTA@%>o   VTA_SUFFIXES ;
+@R.accomp.A@+VAI+Accomp:@R.accomp.A@%>m	         VAI_SUFFIXES ; ! -> VTA?
 
 LEXICON VII
 +VII:0		VII_SUFFIXES ;
 
 LEXICON VTI
-+VTI:0                                        VTI_SUFFIXES ;
-@P.class.VTA@+VTI+Der/Bnf:@P.class.VTA@%>mo   VTA ;
-@P.class.VTA@+VTI+Der/Bnf:@P.class.VTA@%>omo  VTA ;
-@P.class.VTA@+VTI+Der/Bnf:@P.class.VTA@%>o    VTA ;
++VTI:0                                           VTI_SUFFIXES ;
+@P.class.VTA@+VTI+Der/Bnf+VTA:@P.class.VTA@%>mo  VTA_SUFFIXES ;
+@P.class.VTA@+VTI+Der/Bnf+VTA:@P.class.VTA@%>omo VTA_SUFFIXES ;
+@P.class.VTA@+VTI+Der/Bnf+VTA:@P.class.VTA@%>o   VTA_SUFFIXES ;
 
 LEXICON VTA
 +VTA:0                        VTA_SUFFIXES ;
