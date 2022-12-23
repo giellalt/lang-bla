@@ -21,3 +21,5 @@ print lower-words > bla.lower
 invert net
 
 save stack bla-analyzer.hfst
+
+invert net
