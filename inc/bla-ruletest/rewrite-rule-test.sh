@@ -1,76 +1,215 @@
 #!/bin/sh
 
-# rewrite-rule-test.sh 1: XFSCRIPT rule file (path)
+# rewrite-rule-test.sh 1: XFSCRIPT rule file (path) 2: REPORT 3: FSTTYPE
 
 # LEXC forms from standard input, so multiple words can be processed
 # Input must have one LEXC form per line to be processed,
 # as well as an optional second space-separated form representing the
 # final outcome.
 
-gawk -v XFSCRIPT=$1 -v REPORT=$2 'BEGIN { xfscript=XFSCRIPT;
-report=REPORT;
+gawk -v XFSCRIPT=$1 -v REPORT=$2 -v FSTTYPE=$3 'BEGIN { xfscript=XFSCRIPT;
+report=REPORT; fsttype=FSTTYPE; FS="\t";
+
+  if(fsttype!="foma" && fsttype!="hfst" && fsttype!="hfstol")
+    {
+      if(fsttype=="")
+        {
+          fsttype="foma";
+          print "Setting FST type as \"foma\" by default" > "/dev/stderr";
+        }
+      else
+        {
+          print "Aborting <- specify FST type for phonological rule(s) among the following: 1) foma; 2) hfst; or 3) hfstol";
+          exit;
+        }
+    }
+
   while((getline < xfscript)!=0)
-  { if(index($0,"regex")!=0)
+  {
+    sub("[ \t]*!.*$","",$0);
+    if(index($0,"regex")!=0)
       { rx=1; regex=""; }
     if(rx)
       regex=regex" "$0;
     if(index($0,";")!=0)
       rx=0;
-  sub("^[ ]*(read )regex.*\\[[ ]*","",regex);
-  sub("[ ]*\\].*;.*$","",regex);
-  n=split(regex,rule,"[ ]*\\.o\\.[ ]*");
   }
-}
-{ input=$1; lexc=$1;
-  gsub("0","",input);
-  if($2!="")
-    { target=$2;
-      gsub("0","",target);
+
+  sub("^[ \t]*(read )?regex.*\\[[ ]*", "", regex);
+  sub("[ ]*\\].*;.*$", "", regex);
+  n=split(regex,rule,"[ ]*\\.o\\.[ ]*");
+  for(i=1; i<=n; i++)
+     if(length(rule[i])>maxrulelen)
+       maxrulelen=length(rule[i]);
+  maxixlen=length(n);
+
+  for(i=1; i<=n; i++)
+     {
+       fst=rule[i] "." fsttype;
+       "if [ -f \"" fst "\" ]\nthen\n echo 1\nelse\necho 0\nfi" | getline exit_status;
+       if(exit_status!=1)
+         missing_fst=missing_fst fst " ";
+     }
+  if(missing_fst!="")
+    {
+      printf "Aborting <- FST(s) (in %s format) for rules is/are missing:\n %s\n", toupper(fsttype), missing_fst;
+      exit;
     }
+}
+{
+  input=$1; lexc=$1; ntarget=0;
+  gsub("0","",input);
+  if(NF>=2)
+    for(i=2; i<=NF; i++)
+       if($i!="")
+         {
+           gsub("0","",$i);
+           target[$i]=$i;
+           ntarget++;
+         }
   gsub("\\.o\\.","->",regex);
   if(report=="long")
-    { print "REWRITE RULE SEQUENCE:";
+    {
+      print "REWRITE RULE SEQUENCE:";
       print regex;
       print "";
       print "0 - "input;
       print "---";
     }
-    for(i=1; i<=n; i++)
-       { flookup="flookup -q -b -i "rule[i]".foma";
-         print input |& flookup;
-         fflush(); close(flookup, "to");
-         flookup |& getline;
-         fflush(); close(flookup, "from");
-         if($1==$2)
-           diff="-";
+    
+  for(i=1; i<=n; i++)
+     {
+       flookup_cmd="flookup -b -i"; fomabin=rule[i]".foma";
+       hfstol_lookup_cmd="hfst-optimized-lookup -q"; hfst=rule[i]".hfstol";
+       hfst_lookup_cmd="hfst-lookup -q"; hfstol=rule[i]".hfst";
+
+       if(fsttype=="foma")
+         { lookup_cmd=flookup_cmd; rulefst=fomabin; }
+       if(fsttype=="hfst")
+         { lookup_cmd=hfst_cmd; rulefst=hfst; }
+       if(fsttype=="hfstol")
+         { lookup_cmd=hfstol_cmd; rulefst=hfstol; }
+
+       output=""; delete diff; ndiff=0;
+       ninput=split(input, input2, "\n");
+
+       for(j=1; j<=ninput; j++)
+          {
+            fst_result=lookup(lookup_cmd, rulefst, input2[j]);
+            output=output sprintf("%s\n", fst_result);
+
+            noutput=split(fst_result, output2, "\n");
+            for(k=1; k<=noutput; k++)
+               {
+                 if(input2[j]==output2[k])
+                   d="| ";
+                 else
+                   d="->";
+                 diff[++ndiff]=d;
+               }
+          }
+       sub("\n$","",output);
+       input=output;
+
+       noutput=split(output, output2, "\n");
+       if(report=="long")
+         {
+           printf "%"maxixlen"i : %-"maxrulelen"s ", i, rule[i];
+           for(k=1; k<=noutput; k++)
+              printf " %s %s", diff[k], output2[k];
+           printf "\n";
+         }
+     }
+
+  if(report=="long")
+    print "---";
+
+  outcome=output;
+  gsub("\n", "\t", outcome);
+  gsub("[<>]", "", outcome);
+  noutcome=split(outcome, outcome2, "\t");
+
+  delete success; nlocsuccess=0; nlocmiss=0;
+  for(i=1; i<=noutcome; i++)
+     {
+       if(outcome2[i] in target)
+         {
+           success[i]="(=)";
+           nlocsuccess++;
+           target[outcome2[i]]="";
+         }
+       else
+         if(noutcome==1)
+           success[i]="(<> " outcome2[i] ")";
          else
-           diff="|";
-         if(report=="long")
-           print i" "diff" "$2" - "rule[i];
-       # print i" "diff" "rule[i]": "$1" -> "$2;
-         input=$2;
+           success[i]="(<>)";
+     }
+
+  printf "%i: 1-%i: %s ->", NR, n, lexc; 
+  for(i=1; i<=noutcome; i++)
+     {
+       if(noutcome>=2 && i<noutcome)
+         sep=" /";
+       else
+         sep="";
+       printf " %s %s%s", outcome2[i], success[i], sep;
+     }
+  for(t in target)
+     if(target[t]!="")
+       {
+         nlocmiss++;
+         printf " | -/-> %s", t;
        }
-     if(report=="long")
-       print "---";
-  output=$2;
-  gsub("[<>]","",output);
-  if(target!="")
-    if(output==target)
-      { success="(=)";
-        n_success++;
-      }
-    else
-      { success="(<> "target")";
-        n_fail++;
-      }
+  printf "\n";
+
+  if(nlocsuccess==noutcome && nlocmiss==0)
+    n_success++;
   else
-      { success="";
-        n_other++;
-      }
-  print NR": 1-"n": "lexc" -> "$2" "success;
+    if(nlocsuccess>0)
+      n_mixed++;
+    else
+      n_fail++;
+
+  printf "%i: Results - Correct: %i/%i - Wrong: %i/%i - Missed: %i/%i\n", NR, nlocsuccess, noutcome, noutcome-nlocsuccess, noutcome, nlocmiss, ntarget;
   if(report=="long")
     print "";
 }
-END { printf "SUMMARY - SUCCESS: %i/%i - FAIL: %i/%i - OTHER: %i/%i\n", n_success, NR, n_fail, NR, n_other, NR;
+
+END { if(NR>=1) printf "SUMMARY - SUCCESS: %i/%i - FAIL: %i/%i - PARTIAL: %i/%i\n", n_success, NR, n_fail, NR, n_mixed, NR;
+}
+
+function lookup(cmd, fst, input,     fst_output, inp, out, i, nr, nf, rs, fs)
+{
+  rs=RS; fs=FS;
+  cmd_fst=cmd " " fst;
+
+  # print input |& cmd_fst;
+  # fflush(); close(cmd_fst, "to");
+  # while((cmd_fst |& getline)!=0)
+  #    {
+  #      fst_output[++nr]=$0;
+  #    }
+  # fflush(); close(cmd_fst, "from");
+
+  RS=""; FS="\n";
+  print input |& cmd_fst;
+  fflush(); close(cmd_fst, "to");
+  cmd_fst |& getline inp;
+  fflush(); close(cmd_fst, "from");
+  RS=rs; FS=fs;
+
+  nr=split(inp,fst_output,"\n");
+  for(i=1; i<=nr; i++)
+     {
+       nf=split(fst_output[i],f,"\t");
+       if(nf!=0)
+         if(match(fst_output[i],"\\+\\?[\t$]")==0)
+           out=out f[2] "\n";
+         else
+           out=out "+?" "\n";
+     }
+  sub("\n$","",out);
+  
+  return out;
 }'
 
