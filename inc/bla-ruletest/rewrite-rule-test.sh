@@ -80,15 +80,15 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
   for(i=1; i<=n; i++)
      {
        flookup_cmd="flookup -b -i"; fomabin=rule[i]".foma";
-       hfstol_lookup_cmd="hfst-optimized-lookup -q"; hfst=rule[i]".hfstol";
-       hfst_lookup_cmd="hfst-lookup -q"; hfstol=rule[i]".hfst";
+       hfst_lookup_cmd="hfst-lookup -q"; hfst=rule[i]".hfst";
+       hfstol_lookup_cmd="hfst-optimized-lookup -q"; hfstol=rule[i]".hfstol";
 
        if(fsttype=="foma")
          { lookup_cmd=flookup_cmd; rulefst=fomabin; }
        if(fsttype=="hfst")
-         { lookup_cmd=hfst_cmd; rulefst=hfst; }
+         { lookup_cmd=hfst_lookup_cmd; rulefst=hfst; }
        if(fsttype=="hfstol")
-         { lookup_cmd=hfstol_cmd; rulefst=hfstol; }
+         { lookup_cmd=hfstol_lookup_cmd; rulefst=hfstol; }
 
        output=""; delete diff; ndiff=0;
        ninput=split(input, input2, "\n");
