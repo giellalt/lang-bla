@@ -173,7 +173,7 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
     else
       n_fail++;
 
-  printf "%i: Results - Correct: %i/%i - Wrong: %i/%i - Missed: %i/%i\n", NR, nlocsuccess, noutcome, noutcome-nlocsuccess, noutcome, nlocmiss, ntarget;
+  printf "%"length(NR)+1"s STATS: Correct: %i/%i - Wrong: %i/%i - Missed: %i/%i\n", "", nlocsuccess, noutcome, noutcome-nlocsuccess, noutcome, nlocmiss, ntarget;
   if(report=="long")
     print "";
 }
