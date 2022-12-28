@@ -37,21 +37,27 @@ sub("[ ]*\\].*;.*$","",regex);
 n=split(regex,rule,"[ ]*\\.o\\.[ ]*");
 cmd="-e \"source "xfscript"\"";
 for(i=1; i<=n; i++)
-   cmd=cmd" -e \"clear stack\" -e \"push "rule[i]"\" -e \"save stack "rule[i]"."fsttype"\"";
+   cmd=cmd" -e \"clear stack\" -e \"push "rule[i]"\" -e \"save stack "fsttype"/"rule[i]"."fsttype"\"";
 }
 
 END {
 if(fsttype=="foma")
-  system("foma "cmd" -e \"quit\"");
+  {
+    system("mkdir foma");
+    system("foma "cmd" -e \"quit\"");
+  }
 if(fsttype=="hfst" || fsttype=="hfstol")
-  system("hfst-xfst "cmd" -e \"quit\"");
+  {
+    system("mkdir hfst");
+    system("hfst-xfst "cmd" -e \"quit\"");
+  }
 # The following conversion works in principle, but the resultant HFSTOL FSTs do now work
 if(fsttype=="hfstol")
   {
     for(i=1; i<=n; i++)
        {
-         hfst=rule[i]".hfst";
-         hfstol=rule[i]".hfstol";
+         hfst="hfst/" rule[i] ".hfst";
+         hfstol=fsttype "/" rule[i] ".hfstol";
          system("hfst-fst2fst -O -i " hfst " -o " hfstol ";");
        }
   }

@@ -10,7 +10,8 @@
 gawk -v XFSCRIPT=$1 -v REPORT=$2 -v FSTTYPE=$3 'BEGIN { xfscript=XFSCRIPT;
 report=REPORT; fsttype=FSTTYPE; FS="\t";
 
-  if(fsttype!="foma" && fsttype!="hfst" && fsttype!="hfstol")
+#   if(fsttype!="foma" && fsttype!="hfst" && fsttype!="hfstol")
+  if(fsttype!="foma" && fsttype!="hfst")
     {
       if(fsttype=="")
         {
@@ -19,7 +20,8 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
         }
       else
         {
-          print "Aborting <- specify FST type for phonological rule(s) among the following: 1) foma; 2) hfst; or 3) hfstol";
+#          print "Aborting <- specify FST type for phonological rule(s) among the following: 1) foma; 2) hfst; or 3) hfstol";
+          print "Aborting <- specify FST type for phonological rule(s) among the following: 1) foma; or 2) hfst";
           exit;
         }
     }
@@ -45,14 +47,14 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
 
   for(i=1; i<=n; i++)
      {
-       fst=rule[i] "." fsttype;
+       fst=fsttype "/" rule[i] "." fsttype;
        "if [ -f \"" fst "\" ]\nthen\n echo 1\nelse\necho 0\nfi" | getline exit_status;
        if(exit_status!=1)
          missing_fst=missing_fst fst " ";
      }
   if(missing_fst!="")
     {
-      printf "Aborting <- FST(s) (in %s format) for rules is/are missing:\n %s\n", toupper(fsttype), missing_fst;
+      printf "Aborting <- FST(s) (in %s format) for rules is/are missing in: %s/\n %s\n", toupper(fsttype), fsttype, missing_fst;
       exit;
     }
 }
@@ -79,14 +81,15 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
     
   for(i=1; i<=n; i++)
      {
-       flookup_cmd="flookup -b -i"; fomabin=rule[i]".foma";
-       hfst_lookup_cmd="hfst-lookup -q"; hfst=rule[i]".hfst";
-       hfstol_lookup_cmd="hfst-optimized-lookup -q"; hfstol=rule[i]".hfstol";
+       flookup_cmd="flookup -b -i"; fomabin=fsttype "/" rule[i] ".foma";
+       hfst_lookup_cmd="hfst-lookup -q"; hfst=fsttype "/" rule[i] ".hfst";
+       hfstol_lookup_cmd="hfst-optimized-lookup -q"; hfstol=fsttype "/" rule[i] ".hfstol";
 
        if(fsttype=="foma")
          { lookup_cmd=flookup_cmd; rulefst=fomabin; }
        if(fsttype=="hfst")
          { lookup_cmd=hfst_lookup_cmd; rulefst=hfst; }
+       # HFSTOL FSTs can be created, but look-ups do not work currently
        if(fsttype=="hfstol")
          { lookup_cmd=hfstol_lookup_cmd; rulefst=hfstol; }
 
