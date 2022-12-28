@@ -75,8 +75,8 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
       print "REWRITE RULE SEQUENCE:";
       print regex;
       print "";
-      print "0 - "input;
-      print "---";
+      printf "%"maxixlen"i: %-"maxrulelen"s    %s\n", 0, "LEXC", input;
+      s=sprintf("%"maxixlen+maxrulelen+4"s|%"length(input)+2"s", "", ""); gsub(" ","-",s); printf "%s\n", s;
     }
     
   for(i=1; i<=n; i++)
@@ -125,7 +125,11 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
      }
 
   if(report=="long")
-    print "---";
+    { 
+      s=sprintf("%"maxixlen+maxrulelen+4"s|%"length(lexc)+2"s", "", "");
+      gsub(" ","-",s); printf "%s\n", s;
+    }
+    # print "---";
 
   outcome=output;
   gsub("\n", "\t", outcome);
