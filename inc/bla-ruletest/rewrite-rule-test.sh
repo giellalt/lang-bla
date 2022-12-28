@@ -102,9 +102,9 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
             for(k=1; k<=noutput; k++)
                {
                  if(input2[j]==output2[k])
-                   d="| ";
+                   d="|";
                  else
-                   d="->";
+                   d="+";
                  diff[++ndiff]=d;
                }
           }
@@ -114,7 +114,7 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
        noutput=split(output, output2, "\n");
        if(report=="long")
          {
-           printf "%"maxixlen"i : %-"maxrulelen"s ", i, rule[i];
+           printf "%"maxixlen"i: %-"maxrulelen"s ", i, rule[i];
            for(k=1; k<=noutput; k++)
               printf " %s %s", diff[k], output2[k];
            printf "\n";
