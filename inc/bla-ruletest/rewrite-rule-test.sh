@@ -71,7 +71,7 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
     }
 }
 {
-  input=$1; lexc=$1; ntarget=0;
+  input=$1; lexc=$1; delete target; ntarget=0;
   gsub("0","",input);
   if(NF>=2)
     for(i=2; i<=NF; i++)
