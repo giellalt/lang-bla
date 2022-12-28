@@ -10,6 +10,18 @@
 gawk -v XFSCRIPT=$1 -v REPORT=$2 -v FSTTYPE=$3 'BEGIN { xfscript=XFSCRIPT;
 report=REPORT; fsttype=FSTTYPE; FS="\t";
 
+  if(report=="full")
+    report="long";
+
+  if(report=="")
+    print "Setting REPORT type as \"short\" by default" > "/dev/stderr";
+
+  if(report!="long" && report!="diff" && report!="short" && report!="")
+    {
+      print "Exiting <- specify REPORT type among the following: 1) long / full; 2) diff; or 3) short";
+      exit;
+    }
+
 #   if(fsttype!="foma" && fsttype!="hfst" && fsttype!="hfstol")
   if(fsttype!="foma" && fsttype!="hfst")
     {
@@ -20,8 +32,8 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
         }
       else
         {
-#          print "Aborting <- specify FST type for phonological rule(s) among the following: 1) foma; 2) hfst; or 3) hfstol";
-          print "Aborting <- specify FST type for phonological rule(s) among the following: 1) foma; or 2) hfst";
+#          print "Exiting <- specify FST type for phonological rule(s) among the following: 1) foma; 2) hfst; or 3) hfstol";
+          print "Exiting <- specify FST type for phonological rule(s) among the following: 1) foma; or 2) hfst";
           exit;
         }
     }
@@ -69,8 +81,9 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
            target[$i]=$i;
            ntarget++;
          }
+
   gsub("\\.o\\.","->",regex);
-  if(report=="long")
+  if(report=="long" || report=="diff")
     {
       print "REWRITE RULE SEQUENCE:";
       print regex;
@@ -93,7 +106,7 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
        if(fsttype=="hfstol")
          { lookup_cmd=hfstol_lookup_cmd; rulefst=hfstol; }
 
-       output=""; delete diff; ndiff=0;
+       output=""; delete diff; ndiff=0; anydiff=0;
        ninput=split(input, input2, "\n");
 
        for(j=1; j<=ninput; j++)
@@ -107,7 +120,10 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
                  if(input2[j]==output2[k])
                    d="|";
                  else
-                   d="+";
+                   {
+                     d="+";
+                     anydiff=1;                     
+                   }
                  diff[++ndiff]=d;
                }
           }
@@ -115,7 +131,7 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
        input=output;
 
        noutput=split(output, output2, "\n");
-       if(report=="long")
+       if(report=="long" || (report=="diff" && anydiff))
          {
            printf "%"maxixlen"i: %-"maxrulelen"s ", i, rule[i];
            for(k=1; k<=noutput; k++)
@@ -124,12 +140,11 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
          }
      }
 
-  if(report=="long")
+  if(report=="long" || report=="diff")
     { 
       s=sprintf("%"maxixlen+maxrulelen+4"s|%"length(lexc)+2"s", "", "");
       gsub(" ","-",s); printf "%s\n", s;
     }
-    # print "---";
 
   outcome=output;
   gsub("\n", "\t", outcome);
@@ -146,10 +161,10 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
            target[outcome2[i]]="";
          }
        else
-         if(noutcome==1)
+         if(noutcome==1 && ntarget==1)
            success[i]="(<> " outcome2[i] ")";
          else
-           success[i]="(<>)";
+           success[i]="(<> ?)";
      }
 
   printf "%i: 1-%i: %s ->", NR, n, lexc; 
@@ -169,20 +184,24 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
        }
   printf "\n";
 
-  if(nlocsuccess==noutcome && nlocmiss==0)
-    n_success++;
-  else
-    if(nlocsuccess>0)
-      n_mixed++;
+  if(ntarget>0)
+    if(nlocsuccess==noutcome && nlocmiss==0)
+      n_success++;
     else
-      n_fail++;
+      if(nlocsuccess>0)
+        n_mixed++;
+      else
+        n_fail++;
+  else
+    n_other++;
 
+if(ntarget>0)
   printf "%"length(NR)+1"s STATS: Correct: %i/%i - Wrong: %i/%i - Missed: %i/%i\n", "", nlocsuccess, noutcome, noutcome-nlocsuccess, noutcome, nlocmiss, ntarget;
-  if(report=="long")
+  if(report=="long" || report=="diff")
     print "";
 }
 
-END { if(NR>=1) printf "SUMMARY - SUCCESS: %i/%i - FAIL: %i/%i - PARTIAL: %i/%i\n", n_success, NR, n_fail, NR, n_mixed, NR;
+END { if(NR>=1) printf "SUMMARY - SUCCESS: %i/%i - FAIL: %i/%i - PARTIAL: %i/%i - OTHER: %i/%i\n", n_success, NR, n_fail, NR, n_mixed, NR, n_other, NR;
 }
 
 function lookup(cmd, fst, input,     fst_output, inp, out, i, nr, nf, rs, fs)
