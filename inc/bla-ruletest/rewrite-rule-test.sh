@@ -10,6 +10,11 @@
 gawk -v XFSCRIPT=$1 -v REPORT=$2 -v FSTTYPE=$3 'BEGIN { xfscript=XFSCRIPT;
 report=REPORT; fsttype=FSTTYPE; FS="\t";
 
+# Checking REPORT argument:
+# If no REPORT argument provided, revert to "short" form of report.
+# If argument provided but does not match supported ones ("long"/"full", "diff",
+# or "short"), exit.
+
   if(report=="full")
     report="long";
 
@@ -21,6 +26,10 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
       print "Exiting <- specify REPORT type among the following: 1) long / full; 2) diff; or 3) short";
       exit;
     }
+
+# Checking FSTTYPE argument:
+# If no FSTTYPE argument provided, use "foma".
+# If argument provided but does not match supported ones ("foma" and "hfst"), exit.
 
 #   if(fsttype!="foma" && fsttype!="hfst" && fsttype!="hfstol")
   if(fsttype!="foma" && fsttype!="hfst")
@@ -38,6 +47,8 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
         }
     }
 
+# Scan XFSCRIPT for REGEX specification. If multiple REGEX specs, use the final one.
+
   while((getline < xfscript)!=0)
   {
     sub("[ \t]*!.*$","",$0);
@@ -49,6 +60,9 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
       rx=0;
   }
 
+# Turn REGEX into a dynamic array with rule-names.
+# Figure out the longest rule-name (for later print formatting).
+
   sub("^[ \t]*(read )?regex.*\\[[ ]*", "", regex);
   sub("[ ]*\\].*;.*$", "", regex);
   n=split(regex,rule,"[ ]*\\.o\\.[ ]*");
@@ -57,6 +71,10 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
        maxrulelen=length(rule[i]);
   maxixlen=length(n);
 
+# Check that for each rule in XFSCRIPT a matching FST (according to FSTTYPE format) exists
+# in the appropriate subdirectory (foma/ or hfst/).
+# If not, exit and list missing FSTs.
+ 
   for(i=1; i<=n; i++)
      {
        fst=fsttype "/" rule[i] "." fsttype;
@@ -70,6 +88,10 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
       exit;
     }
 }
+
+# Go through input of underlying forms (from LEXC source) and associated one or more target forms.
+# Assign target form(s) to a dynamic array.
+
 {
   input=$1; lexc=$1; delete target; ntarget=0;
   gsub("0","",input);
@@ -82,6 +104,8 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
            ntarget++;
          }
 
+# Write out rewrite rule sequence for reference.
+
   gsub("\\.o\\.","->",regex);
   if(report=="long" || report=="diff")
     {
@@ -91,9 +115,14 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
       printf "%"maxixlen"i: %-"maxrulelen"s    %s\n", 0, "LEXC", input;
       s=sprintf("%"maxixlen+maxrulelen+4"s|%"length(input)+2"s", "", ""); gsub(" ","-",s); printf "%s\n", s;
     }
-    
+
+# Pass source word-form through in sequence through each FST corresponding to a rewrite rule.
+
   for(i=1; i<=n; i++)
      {
+
+# Specify alternative lookup commands and FST names.
+
        flookup_cmd="flookup -b -i"; fomabin=fsttype "/" rule[i] ".foma";
        hfst_lookup_cmd="hfst-lookup -q"; hfst=fsttype "/" rule[i] ".hfst";
        hfstol_lookup_cmd="hfst-optimized-lookup -q"; hfstol=fsttype "/" rule[i] ".hfstol";
@@ -106,13 +135,26 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
        if(fsttype=="hfstol")
          { lookup_cmd=hfstol_lookup_cmd; rulefst=hfstol; }
 
+# Reset variables concerning output forms.
+# If multiple input forms, split these to a dynamic array.
+# This may arise from some FST outputting more than one possible form.
+
        output=""; delete diff; ndiff=0; anydiff=0;
        ninput=split(input, input2, "\n");
+
+# Process each input form at a time, through the appropriate FST..
+# Concatenate all output forms into a single variable.
 
        for(j=1; j<=ninput; j++)
           {
             fst_result=lookup(lookup_cmd, rulefst, input2[j]);
             output=output sprintf("%s\n", fst_result);
+
+# For each input form, Process each output form one at a time,
+# comparing each against their original input form.
+# This is repeated for each input form.
+# The "anydiff" variable indicates that the rule in question
+# fired at least for one of the input/output pairings.
 
             noutput=split(fst_result, output2, "\n");
             for(k=1; k<=noutput; k++)
@@ -128,7 +170,19 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
                }
           }
        sub("\n$","",output);
+
+# Assign all output forms (at this step) as input forms for next step.
+
        input=output;
+
+# Depending on report type, print out rule name for the step in question and all
+# produced output forms, indicating whether they represent a change wrt their
+# corresponding input form.
+# If "full" or "long" REPORT format is selected, print all steps
+# If "diff" REPORT format is selected, print only steps for which the output form
+# differs from the corresponding input form.
+# If no or "short" REPORT format is selected, show only the original input and
+# final outcome forms, and their analysis.
 
        noutput=split(output, output2, "\n");
        if(report=="long" || (report=="diff" && anydiff))
@@ -140,18 +194,29 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
          }
      }
 
+# Print delimiter only in the case of "long" or "diff" REPORT formats.
+
   if(report=="long" || report=="diff")
     { 
       s=sprintf("%"maxixlen+maxrulelen+4"s|%"length(lexc)+2"s", "", "");
       gsub(" ","-",s); printf "%s\n", s;
     }
 
+# Calculate the various case-specific statistics, which will be aggregated
+# into the overall statistics.
+
+# Set finally output form(s) as the final outcome(s).
+# Remove any morpheme boundary markers from these outcome.
+
   outcome=output;
   gsub("\n", "\t", outcome);
   gsub("[<>]", "", outcome);
   noutcome=split(outcome, outcome2, "\t");
 
-  delete success; nlocsuccess=0; nlocmiss=0;
+# Calculate the number of, and identify the finally outfput forms that DID match
+# the originally provided target form(s).
+
+  delete success; nlocsuccess=0;
   for(i=1; i<=noutcome; i++)
      {
        if(outcome2[i] in target)
@@ -167,6 +232,8 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
            success[i]="(<> ?)";
      }
 
+# Print finally output forms that did match the initially provided target form(s).
+
   printf "%i: 1-%i: %s ->", NR, n, lexc; 
   for(i=1; i<=noutcome; i++)
      {
@@ -176,6 +243,11 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
          sep="";
        printf " %s %s%s", outcome2[i], success[i], sep;
      }
+
+# Deduce how many, and which, target forms were not output in the end,
+# and print these missed forms.
+
+  nlocmiss=0;
   for(t in target)
      if(target[t]!="")
        {
@@ -183,6 +255,8 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
          printf " | -/-> %s", t;
        }
   printf "\n";
+
+# Interpret case-specific results as part of the overall summary statistics.
 
   if(ntarget>0)
     if(nlocsuccess==noutcome && nlocmiss==0)
@@ -195,14 +269,36 @@ report=REPORT; fsttype=FSTTYPE; FS="\t";
   else
     n_other++;
 
+# Printing case-specific performance stats, if one or more target word-forms have been provided.
+# 1. Correct: number of final output forms that match the target forms.
+# 2. Wrong: number of final output forms that do NOT match any of the target form().
+# 3. Missed: number of target forms that were not among the output forms.
+
 if(ntarget>0)
   printf "%"length(NR)+1"s STATS: Correct: %i/%i - Wrong: %i/%i - Missed: %i/%i\n", "", nlocsuccess, noutcome, noutcome-nlocsuccess, noutcome, nlocmiss, ntarget;
+
+# When printing the non-short steps, output an empty line between each case.
+
   if(report=="long" || report=="diff")
     print "";
 }
 
+# Print summary of performance of the rules for all input-output / source-target sets
+# 1. SUCCESS indicates cases where all targets were output correctly.
+# 2. FAIL indicates cases where none of the targets were output correctly.
+# 3. PARTIAL indicates cases where one or more but not all of the targets were produced,
+# where some of the output forms might also be incorrect.
+# 4. OTHER indicates cases where no target(s) was/were provided, so no performance validation
+# can be undertaken.
+
+# The initial condition (NR>1) is required to skip this END statement, when the script is aborted
+# in the beginning due to incorrect arguments or missing rule FSTs.
+
 END { if(NR>=1) printf "SUMMARY - SUCCESS: %i/%i - FAIL: %i/%i - PARTIAL: %i/%i - OTHER: %i/%i\n", n_success, NR, n_fail, NR, n_mixed, NR, n_other, NR;
 }
+
+# Function for generating, with a specified FST, word-form outputs, based on a single input.
+# There may be more than one output word-form.
 
 function lookup(cmd, fst, input,     fst_output, inp, out, i, nr, nf, rs, fs)
 {
