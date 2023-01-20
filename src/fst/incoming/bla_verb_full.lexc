@@ -727,6 +727,19 @@ PV/yook+
 @P.assoc.A@
 @R.assoc.A@
 
+! Constraining preverb recycling
+@D.pvcount@
+@P.pvcount.1@
+@P.pvcount.2@
+@P.pvcount.3@
+@P.pvcount.4@
+@P.pvcount.5@
+@R.pvcount.1@
+@R.pvcount.2@
+@R.pvcount.3@
+@R.pvcount.4@
+@R.pvcount.5@
+
 ! Special_characters
 i2
 i3
@@ -1099,8 +1112,16 @@ PV/akaa+:akaa BOUND ;
 ! PV/yook+:yook	BOUND ;
 
 LEXICON BOUND
-! :%< PREFIXES ;
-0:%<	VERB_STEMS ;
+! 0:%< PREFIXES ;
+! 0:%<	VERB_STEMS ;
+0:%< PV_COUNTER ;
+
+LEXICON PV_COUNTER
+@D.pvcount@@P.pvcount.1@ PREFIXES ;
+@R.pvcount.1@@P.pvcount.2@ PREFIXES ;
+@R.pvcount.2@@P.pvcount.3@ PREFIXES ;
+@R.pvcount.3@@P.pvcount.4@ PREFIXES ;
+@R.pvcount.4@@P.pvcount.5@ PREFIXES ;
 
 !! This file contains the Blackfoot verb stems. They are organized by their inflectional class.
 
