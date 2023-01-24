@@ -96,4 +96,6 @@ if(wtype!="log" && wtype!="abs")
   if(match($0,"^[^!]*LEXICON ")==0 && CLEX!="") 
     CLEX = CLEX "\n" $0;
 }
-END { print CLEX; }'
+END { print CLEX; }' |
+
+egrep -v '^LEXICON @ENDLEXICON@$'
