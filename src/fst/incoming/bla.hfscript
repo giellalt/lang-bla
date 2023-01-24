@@ -1,8 +1,8 @@
 ! Script for composing Blackfoot verbal morphological model
 
-! cat verb_affixes.lexc verb_stems.lexc > verbs.lexc
+! cat verb_affixes_w.lexc verb_stems.lexc > verbs_w.lexc
 
-read lexc verbs.lexc
+read lexc verbs_w.lexc
 
 define Morph
 
