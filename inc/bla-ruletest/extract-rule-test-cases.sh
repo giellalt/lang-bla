@@ -33,4 +33,6 @@ gawk -v PHONOLOGY=$1 -v MARKER=$2 'BEGIN { marker=MARKER; phonology=PHONOLOGY;
           test="";
         }
     }
+  if(test!="")
+    print test;
 }'
