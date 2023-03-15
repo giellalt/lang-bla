@@ -325,6 +325,7 @@ read regex [ shortPrefix
 .o. i2oRule
 .o. cleanup
 .o. ohPrefix
+.o. noPrefix
 .o. iReplace
 .o. NasalDel
 .o. sConnRuleB 

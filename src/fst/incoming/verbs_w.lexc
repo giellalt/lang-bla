@@ -1,0 +1,5435 @@
+! Flags, tags, and special characters for regular Blackfoot noun and verb morphology 
+
+Multichar_Symbols
+! Noun tags
++NI
++NA
++NAD
++NID
++Adj
++Pl
++Sg
++Obv
++Non ! used to mark the non-referring suffix
++Px1Sg
++Px2Sg
++Px3Sg
++Px1Pl
++Px21Pl
++Px2Pl
++Px3Pl
++Px4Sg/Pl
+! Verb tags
++VAI
++VII
++VTI
++VTA
+Adv+
+Neg+
+Perf+
+Dur+
+Fut+
+Prox+
+Past+
+Nonaff+
++Pl
++Sg
++Imp
++Ind
++Cnj
++Sbj
++Irr
++Pre
++Der/Caus
++Der/Rcpr
++Der/Rflx
++Der/Bnf
++Accomp
+! Subject/Actor tags
++Unspec ! +X
++%0Sg
++%0Pl
++%0Sg/Pl
++1Sg
++2Sg
++3Sg
++1Pl
++21Pl
++2Pl
++3Pl
++4Sg
++4Pl
++5Sg/Pl
+! Object/Goal tags
++%0SgO
++%0PlO
++%0Sg/PlO
++1SgO
++2SgO
++3SgO
++1PlO
++21PlO
++2PlO
++3PlO
++4SgO
++4PlO
++5Sg/PlO
+! Prenoun tags
+PN/a’s+
+PN/aahs+
+PN/aaká+
+PN/aamsskááp+
+PN/aapám+
+PN/aapát+
+PN/áápi+
+PN/aatow+
+PN/ahkiaap+
+PN/aiist+
+PN/aká+
+PN/akim+
+PN/akkaw+
+PN/anao’k+
+PN/apak+
+PN/apoyi+
+PN/atso’t+
+PN/áwatt+
+PN/ayaam+
+PN/i’nák+
+PN/i’táám+
+PN/i’táám+
+PN/i’tsin+
+PN/i’tsk+
+PN/i’tsk+
+PN/ihtsis+
+PN/iinohk+
+PN/iitaam+
+PN/iitaam+
+PN/iitoom+
+PN/ííyik+
+PN/ikaw+
+PN/ikaw+
+PN/ikaaw+
+PN/ikakk+
+PN/ikako+
+PN/iki’ta+
+PN/ikim+
+PN/ikkahs+
+PN/ikkak+
+PN/ikksk+
+PN/ikkst+
+PN/ikotsk+
+PN/iksi’s+
+PN/iksiw+
+PN/iksiiksk+
+PN/iksikk+
+PN/iksim+
+PN/iksimat+
+PN/iksisap+
+PN/iksissta’p+
+PN/iksisto+
+PN/iksow+
+PN/imi+
+PN/immak+
+PN/inap+
+PN/inn+
+PN/innaap+
+PN/innis+
+PN/inno+
+PN/inok+
+PN/insstaw+
+PN/ipahk+
+PN/ipahp+
+PN/ipahs+
+PN/ipaht+
+PN/ipahtsi+
+PN/ipi’k+
+PN/ipiiw+
+PN/ipiihk+
+PN/ipisat+
+PN/ipíttsik+
+PN/ipo(w/y)+
+PN/ipoohsap+
+PN/ippat+
+PN/ippom+
+PN/ippot+
+PN/ipsst+
+PN/isakoow+
+PN/isam+
+PN/isap+
+PN/iso+
+PN/iss+
+PN/issk+
+PN/isskihta’+
+PN/isspí+
+PN/isspik+
+PN/istaaht+
+PN/istot+
+PN/isttani+
+PN/isttohk+
+PN/isttsi+
+PN/isttsik+
+PN/isttsip+
+PN/itapiksst+
+PN/itsiw+
+PN/itsiiy+
+PN/itsik+
+PN/itsin+
+PN/iyoomok+
+PN/ki’taw+
+PN/ki’tsi+
+PN/kiihtsip+
+PN/komono+
+PN/ksiw+
+PN/ksikk+
+PN/ksis+
+PN/ma’k+
+PN/maan+
+PN/maká+
+PN/máóhk+
+PN/matóóm+
+PN/matsiw+
+PN/mattsi+
+PN/mi’ki+
+PN/mii+
+PN/miinohk+
+PN/míístap+
+PN/mikksk+
+PN/misam+
+PN/mokamo’t+
+PN/naam+
+PN/náám+
+PN/naatow+
+PN/naatsa+
+PN/naaw+
+PN/ni’tóóhk+
+PN/niit+
+PN/nimm+
+PN/noohkíít+
+PN/o’k+
+PN/o’kstsik+
+PN/o’t+
+PN/o’tak+
+PN/o’tami+
+PN/o’topi+
+PN/o’totam+
+PN/o’tsat+
+PN/o’tsitsk+
+PN/o’tssat+
+PN/ohkit+
+PN/ohko+
+PN/ohkom+
+PN/ohkon+
+PN/ohpo+
+PN/ohpok+
+PN/ohsi+
+PN/ohso’kap+
+PN/ohsohkat+
+PN/ohtow+
+PN/ohtssap+
+PN/ok+
+PN/okaki+
+PN/okamo’t+
+PN/ómahk+
+PN/omat+
+PN/omatap+
+PN/omia’nist+
+PN/omow+
+PN/onnat+
+PN/oohsi+
+PN/oomok+
+PN/ooto+
+PN/opam+
+PN/opi+
+PN/opott+
+PN/otahko+
+PN/otam+
+PN/otats+
+PN/otoom+
+PN/otsik+
+PN/otsistap+
+PN/ótssko+
+PN/ottapit+
+PN/pa’ksik+
+PN/paahk+
+PN/paahksíst+
+PN/paaht+
+PN/paahtsi+
+PN/pi’k+
+PN/pinááp+
+PN/pisát+
+PN/pisst+
+PN/poohsap+
+PN/sa+
+PN/sa’kap+
+PN/saahk+
+PN/saat+
+PN/saayippom+
+PN/sahp+
+PN/saikima’+
+PN/saiksistt+
+PN/sainnis+
+PN/sainskaka’p+
+PN/saip+
+PN/sakak+
+PN/sako+
+PN/saoki+
+PN/sap+
+PN/sapa’kot+
+PN/sata+
+PN/satt+
+PN/sawommit+
+PN/sawotsistap+
+PN/sayippom+
+PN/si’k+
+PN/sik+
+PN/sikaapi+
+PN/sikim+
+PN/sikotahko+
+PN/sisákk+
+PN/sisik+
+PN/sistsik+
+PN/sitok+
+PN/sitsip+
+PN/sow+
+PN/sohk+
+PN/sok+
+PN/sok+
+PN/soohk+
+PN/sopo(w/y)+
+PN/sopok+
+PN/sopoya’p+
+PN/ssik+
+PN/ssk+
+PN/sski+
+PN/sskihta+
+PN/sskohto+
+PN/sskonát+
+PN/sso+
+PN/ssp+
+PN/sspi+
+PN/sspik+
+PN/sspom+
+PN/sstsaap+
+PN/sstsim+
+PN/wa’kot+
+PN/wa’s+
+PN/wa’sok+
+PN/waahkiááp+
+PN/waaist+
+PN/waaká+
+PN/waami’t+
+PN/waamis+
+PN/waamohs+
+PN/waamsskaap+
+PN/waanao’k+
+PN/waanat+
+PN/waaniit+
+PN/waapat+
+PN/waapatohs+
+PN/waapi+
+PN/waapo’k+
+PN/waatow+
+PN/waattsi+
+PN/waawatt+
+PN/waawow+
+PN/waist+
+PN/wattsi+
+PN/wayam+
+PN/yááhs+
+PN/yaam+
+PN/yaam+
+PN/yaam+
+PN/yaam+
+PN/yiistap+
+PN/yiss+
+PN/yissk+
+PN/yoohk+
+PN/yoohkiit+
+PN/yootsip+
+! Preverb tags
+PV/ohpok+
+PV/saw+
+PV/áákssta7+
+PV/ááhkssta7+
+PV/kátá7+
+PV/wayák+
+PV/yáak+
+PV/ayáak+
+PV/ayáakak+
+PV/akaa+
+PV/Xomohp+
+PV/Xomoht+
+PV/Xohtatsiwa+
+PV/itap+
+PV/poohsap+
+PV/i2poohsap+
+PV/it+
+PV/ist+
+PV/ípssit+
+PV/ohkit+
+PV/miistap+
+PV/yi2i2stap+
+PV/saaki+
+PV/omá+
+PV/iimá+
+PV/á7+
+PV/á+
+PV/ááhk+
+PV/iiht+
+PV/oht+
+PV/omoht+
+PV/á7+
+PV/á7+
+PV/ikkam+
+PV/Xoohk+
+PV/Xipp+
+PV/iik+
+PV/sska7+
+PV/sstónnat+
+PV/i2kkam+
+PV/iitsiksist+
+PV/ii+
+PV/na+
+PV/hkana+
+PV/i2kkina+
+PV/iiyik+
+PV/i2poina+
+PV/poína+
+PV/sok+
+PV/niit+
+PV/anist+
+PV/ohs+
+PV/yaahs+
+PV/i2ksistt+
+PV/mato+
+PV/oto+
+PV/ohkott+
+PV/ssáak+
+PV/ohko+
+PV/á+
+PV/a+
+PV/á’+
+PV/a’kooh+
+PV/á’p+
+PV/ááhk+
+PV/ááhkamá’p+
+PV/aahksikkam+
+PV/ááhksikkama’p+
+PV/aahs+
+PV/áák+
+PV/aaksta7+
+PV/aanist+
+PV/ai’tamáak+
+PV/áísooka+
+PV/aisskahs+
+PV/áka+
+PV/ákáá+
+PV/akisspí+
+PV/akk+
+PV/akoksska+
+PV/ákstam+
+PV/ama+
+PV/amo’tap+
+PV/ana+
+PV/anaw+
+PV/ano+
+PV/anow+
+PV/anow+
+PV/anootap+
+PV/ao’tamáak+
+PV/apa’p+
+PV/aso+
+PV/assaak+
+PV/att+
+PV/awa’+
+PV/ayaak+
+PV/ayak+
+PV/i’ssk+
+PV/i’tsk+
+PV/iámoohk+
+PV/ihta+
+PV/iihk+
+PV/iihtsitok+
+PV/iihtsitssitak+
+PV/iik+
+PV/iikska’+
+PV/iima+
+PV/iimaa+
+PV/iimat+
+PV/iin+
+PV/iina+
+PV/iinao’k+
+PV/iinatt+
+PV/iini+
+PV/iinik+
+PV/iitaisap+
+PV/iitsiksist+
+PV/iitskimaan+
+PV/iiyik+
+PV/íka+
+PV/ika’+
+PV/ika’to+
+PV/ikaap+
+PV/ikaiksist+
+PV/ikak+
+PV/ikamo’t+
+PV/ikapo+
+PV/ikayiss+
+PV/ikia’ya+
+PV/ikihkiht+
+PV/ikimm+
+PV/ikimmat+
+PV/ikipp+
+PV/ikippa’+
+PV/ikíppoa+
+PV/ikkam+
+PV/ikkam+
+PV/ikkan+
+PV/ikkia’+
+PV/ikkihkini+
+PV/ikkina+
+PV/iksissto+
+PV/iksissto+
+PV/iksist+
+PV/iksksowa’+
+PV/ikssto+
+PV/ikstsina’+
+PV/imaat+
+PV/imak+
+PV/immoyi+
+PV/inai’t+
+PV/inikk+
+PV/innaahkoot+
+PV/ipahkitap+
+PV/ipahtsik+
+PV/ipákkssa+
+PV/ipakska+
+PV/ipana+
+PV/ipann+
+PV/ipapa+
+PV/ipiitsiiyóóhk+
+PV/ipiitsiw+
+PV/ipo’t+
+PV/ipoina+
+PV/ipp+
+PV/ippita+
+PV/ippoa+
+PV/ippssa’kapp+
+PV/ipsstsík+
+PV/ipsstsikatt+
+PV/isimi+
+PV/isinap+
+PV/isitsip+
+PV/isk+
+PV/iss+
+PV/isska’+
+PV/isstohkana+
+PV/ista’+
+PV/istohk+
+PV/istohkana+
+PV/istsa’+
+PV/istto’t+
+PV/isttsikohpo+
+PV/isttsitsa+
+PV/isttssi+
+PV/itáak+
+PV/ito’t+
+PV/iton+
+PV/itsisa+
+PV/itsk+
+PV/itsst+
+PV/káák+
+PV/kaat+
+PV/káátsisto+
+PV/káátsisto+
+PV/kakanott+
+PV/kam+
+PV/kan+
+PV/káta’+
+PV/kínnak+
+PV/kipita+
+PV/kipp+
+PV/kotski+
+PV/ksisttoyi+
+PV/maak+
+PV/máak+
+PV/maam+
+PV/maat+
+PV/máát+
+PV/máátaommita’p+
+PV/mak+
+PV/máo’k+
+PV/mato+
+PV/matsowá’p+
+PV/matt+
+PV/mátt+
+PV/mattsistá’+
+PV/máttsit+
+PV/mi’kotsi+
+PV/miiksist+
+PV/miin+
+PV/min+
+PV/missk+
+PV/misst+
+PV/mo’tóí+
+PV/naat+
+PV/nai’t+
+PV/niistsikáp+
+PV/niit+
+PV/niit+
+PV/niitá’p+
+PV/níítaak+
+PV/niitsi+
+PV/niitsskimaan+
+PV/noohk+
+PV/noohkátt+
+PV/o’kia’p+
+PV/o’kio+
+PV/o’tap+
+PV/o’to+
+PV/ohk+
+PV/ohkan+
+PV/ohkana+
+PV/ohko+
+PV/ohkott+
+PV/ohpii+
+PV/ohpiistap+
+PV/ohpo’kii+
+PV/ohpok+
+PV/oka’p+
+PV/oma+
+PV/omaa+
+PV/omahka+
+PV/omanista+
+PV/omat+
+PV/omi+
+PV/omiiksis+
+PV/omo’tap+
+PV/on+
+PV/ona’+
+PV/onai’t+
+PV/onaki+
+PV/oohk+
+PV/oohkanistta+
+PV/oohkatt+
+PV/opaksikssto+
+PV/otam+
+PV/oto+
+PV/otomohk+
+PV/piin	+
+PV/piitsiyoohk+
+PV/pin+
+PV/po’kí+
+PV/poina+
+PV/sa+
+PV/sa+
+PV/saa+
+PV/saaki+
+PV/saapo’kit+
+PV/saipa’+
+PV/sáótat+
+PV/sipi+
+PV/sook+
+PV/sootam+
+PV/sotám+
+PV/soyi+
+PV/ssáak+
+PV/ssap+
+PV/sska’+
+PV/sspi+
+PV/sstahpik+
+PV/sstok+
+PV/sstonnat+
+PV/sstsina’+
+PV/stam+
+PV/tatsiki+
+PV/waahki+
+PV/waahko+
+PV/waahto+
+PV/waahtsam+
+PV/waahtso+
+PV/waako’tsi+
+PV/waaksisto+
+PV/waanaoyit+
+PV/waanook+
+PV/waapiiwaan+
+PV/wáyák+
+PV/wayákiit+
+PV/yáak+
+PV/yámoohk+
+PV/yoisstsikina+
+PV/yook+
+
+! New list of preverb tags
+PV/a'kooht+
+PV/a+
+PV/aahksikkam+
+PV/aahs+
+PV/aaksta'+
+PV/aanist+
+PV/ai'tamáak+
+PV/aisskahs+
+PV/akaa+
+PV/akisspí+
+PV/akk+
+PV/akoksska+
+PV/ama+
+PV/amo'tap+
+PV/ana+
+PV/anaw+
+PV/anist+
+PV/ano+
+PV/anootap+
+PV/anow+
+PV/ao'tamáak+
+PV/apa'p+
+PV/aso+
+PV/assaak+
+PV/att+
+PV/awa'+
+PV/ayaak+
+PV/ayak+
+PV/ayáak+
+PV/hkana+
+PV/i'sskaan+
+PV/i'tsk+
+PV/i2kkam+
+PV/i2kkina+
+PV/i2ksistt+
+PV/i2poina+
+PV/i2poohsap+
+PV/ihta+
+PV/ii+
+PV/iihk+
+PV/iiht+
+PV/iihtsitok+
+PV/iihtsitssitak+
+PV/iik+
+PV/iikska'+
+PV/iima+
+PV/iimaa+
+PV/iimat+
+PV/iimá+
+PV/iin+
+PV/iina+
+PV/iinao'k+
+PV/iinatt+
+PV/iini+
+PV/iinik+
+PV/iitaisap+
+PV/iitsiksist+
+PV/iitskimaan+
+PV/iiyik+
+PV/ika'+
+PV/ika'to+
+PV/ikaap+
+PV/ikaiksist+
+PV/ikak+
+PV/ikamo't+
+PV/ikapo+
+PV/ikayiss+
+PV/ikia'ya+
+PV/ikihkiht+
+PV/ikimm+
+PV/ikimmat+
+PV/ikipp+
+PV/ikippa'+
+PV/ikkam+
+PV/ikkan+
+PV/ikkia'+
+PV/ikkihkini+
+PV/ikkina+
+PV/iksissto+
+PV/iksist+
+PV/iksksowa'+
+PV/ikssto+
+PV/ikstsina'+
+PV/ikíppoa+
+PV/imaat+
+PV/imak+
+PV/immoyi+
+PV/inai't+
+PV/inikk+
+PV/innaahkoot+
+PV/ipahkitap+
+PV/ipahtsik+
+PV/ipakska+
+PV/ipana+
+PV/ipann+
+PV/ipapa+
+PV/ipiitsiiyóóhk+
+PV/ipiitsiw+
+PV/ipo't+
+PV/ipoina+
+PV/ipp+
+PV/ipp+
+PV/ippita+
+PV/ippoa+
+PV/ippssa'kapp+
+PV/ipsstsikatt+
+PV/ipsstsík+
+PV/ipákkssa+
+PV/isimi+
+PV/isinap+
+PV/isitsip+
+PV/isk+
+PV/iss+
+PV/isska'+
+PV/isstohkana+
+PV/ist+
+PV/ista'+
+PV/istohk+
+PV/istohkana+
+PV/istsa'+
+PV/istto't+
+PV/isttsikohpo+
+PV/isttsitsa+
+PV/isttssi+
+PV/it+
+PV/itap+
+PV/ito't+
+PV/iton+
+PV/itsisa+
+PV/itsst+
+PV/itáak+
+PV/iámoohk+
+PV/kaat+
+PV/kakanott+
+PV/kam+
+PV/kan+
+PV/kipita+
+PV/kipp+
+PV/kotski+
+PV/ksisttoyi+
+PV/káta'+
+PV/káák+
+PV/káátsisto+
+PV/kínnak+
+PV/m2aat+
+PV/m2att+
+PV/m2attsistá'+
+PV/m2átt+
+PV/m2áttsit+
+PV/m2áát+
+PV/m2áátaommita'p+
+PV/maak+
+PV/maam+
+PV/mak+
+PV/mato+
+PV/matsowá'p+
+PV/mi'kotsi+
+PV/miiksist+
+PV/miin+
+PV/miistap+
+PV/min+
+PV/missk+
+PV/misst+
+PV/mo'tóí+
+PV/máak+
+PV/máo'k+
+PV/na+
+PV/naat+
+PV/nai't+
+PV/niistsikáp+
+PV/niit+
+PV/niitsi+
+PV/niitsskimaan+
+PV/niitá'p+
+PV/noohk+
+PV/noohkátt+
+PV/níítaak+
+PV/o'kia'p+
+PV/o'kio+
+PV/o'tap+
+PV/ohk+
+PV/ohkan+
+PV/ohkana+
+PV/ohkit+
+PV/ohko+
+PV/ohkott+
+PV/ohpii+
+PV/ohpiistap+
+PV/ohpo'kii+
+PV/ohpok+
+PV/ohs+
+PV/oht+
+PV/ohtatsiwa+
+PV/oka'p+
+PV/oma+
+PV/omaa+
+PV/omahka+
+PV/omanista+
+PV/omat+
+PV/omi+
+PV/omiiksist+
+PV/omo'tap+
+PV/omohp+
+PV/omoht+
+PV/omoht+
+PV/omá+
+PV/on+
+PV/ona'+
+PV/onai't+
+PV/onaki+
+PV/oohk+
+PV/oohk+
+PV/oohkanistta+
+PV/oohkatt+
+PV/opaksikssto+
+PV/otam+
+PV/oto+
+PV/otomohk+
+PV/piin+
+PV/piitsiyoohk+
+PV/pin+
+PV/po'kí+
+PV/poina+
+PV/poohsap+
+PV/poína+
+PV/sa+
+PV/saa+
+PV/saaki+
+PV/saapo'kit+
+PV/saipa'+
+PV/saw+
+PV/sipi+
+PV/sok+
+PV/sook+
+PV/sootam+
+PV/sotám+
+PV/soyi+
+PV/ssap+
+PV/sska'+
+PV/sska7+
+PV/sspi+
+PV/sstahpik+
+PV/sstok+
+PV/sstonnat+
+PV/sstsina'+
+PV/sstónnat+
+PV/ssáak+
+PV/stam+
+PV/sáótat+
+PV/tatsiki+
+PV/waahki+
+PV/waahko+
+PV/waahto+
+PV/waahtsam+
+PV/waahtso+
+PV/waako'tsi+
+PV/waaksisto+
+PV/waanaoyit+
+PV/waanook+
+PV/waapiiwaan+
+PV/wayák+
+PV/wayákiit+
+PV/wáyák+
+PV/yaahs+
+PV/yi2i2stap+
+PV/yoisstsikina+
+PV/yook+
+PV/yáak+
+PV/yámoohk+
+PV/á'p+
+PV/á+
+PV/á7+
+PV/áka+
+PV/ákstam+
+PV/ákáá+
+PV/ááhk+
+PV/ááhkamá'p+
+PV/ááhksikkama'p+
+PV/áák+
+PV/áísooka+
+PV/íka+
+PV/ípssit+
+
+! Flag diacritics to be used
+@U.person.NI@
+@U.person.KI@
+@U.person.OT@
+@U.person.NULL@
+@U.stem.PRE@
+@U.stem.NON@
+@U.stem.DEP@
+@U.stem.SHORT@
+@P.person.NI@
+@P.person.KI@
+@P.person.OT@
+@P.person.NULL@
+@R.person.NULL@
+@R.person.OT@
+@D.person.NULL@
+@D.person.OT@
+@P.im.IM@
+@R.im.IM@
+@D.im.IM@
+@P.number.SG@
+@P.number.PL@
+@D.number.SG@
+@D.number.PL@
+@P.noun.PRE@
+@P.noun.NON@
+@R.noun.PRE@
+@R.noun.NON@
+! Verb flags
+@R.accomp.A@
+@R.person.NI@
+@R.person.KI@
+@R.person.KII@
+@R.person.OT@
+@R.person.YI@
+@R.person.IMP@
+@R.person.NULL@
+@P.person.NI@
+@P.person.KI@
+@P.person.KII@
+@P.person.OT@
+@P.person.YI@
+@P.person.IMP@
+@P.person.NULL@
+@R.mode.IND@
+@R.mode.CON@
+@R.mode.SUB@
+@R.mode.IRR@
+@R.mode.IMP@
+@P.mode.IND@
+@P.mode.CON@
+@P.mode.SUB@
+@P.mode.IRR@
+@P.mode.IMP@
+@D.person.NULL@
+@D.person.OT@
+@P.class.VAI@
+@P.class.VII@
+@P.class.VTI@
+@P.class.VTA@
+@R.class.VAI@
+@R.class.VII@
+@R.class.VTI@
+@R.class.VTA@
+@P.assoc.A@
+@R.assoc.A@
+
+! Constraining preverb recycling
+@D.pvcount@
+@P.pvcount.1@
+@P.pvcount.2@
+@P.pvcount.3@
+@P.pvcount.4@
+@P.pvcount.5@
+@R.pvcount.1@
+@R.pvcount.2@
+@R.pvcount.3@
+@R.pvcount.4@
+@R.pvcount.5@
+
+! Special_characters
+i2
+i3
+í2
+í3
+m2
+n2
+%^SP
+%<
+%>
+
+!! Blackfoot Regular Verb Morphology
+
+! Desired input-output
+! Input: @U.person.NI@ 0
+! Output: @U.person.NI@ nit 
+! -> LEXC: @U.person.NI@0:@U.person.NI@ nit
+
+LEXICON Root
+PREFIX_SETS ;
+
+LEXICON PREFIX_SETS
+@P.class.VAI@	BASIC_PREFIXES ;
+@P.class.VII@	BASIC_PREFIXES ;
+@P.class.VTI@	BASIC_PREFIXES ;
+@P.class.VTA@	BASIC_PREFIXES ;
+
+LEXICON BASIC_PREFIXES
+@P.mode.IND@	BASIC_IND_PREFIXES ;
+@P.mode.CON@	BASIC_CNJ_PREFIXES ;
+@P.mode.SUB@	BASIC_SBJ_PREFIXES ;
+@P.mode.IRR@	BASIC_IRR_PREFIXES ;
+@P.mode.IMP@	PREFIXES ;
+
+LEXICON BASIC_IND_PREFIXES
+@P.person.NI@:@P.person.NI@nit%< PREFIXES  ;
+@P.person.KI@:@P.person.KI@kit%< PREFIXES  ;
+@P.person.OT@:@P.person.OT@kit%< PREFIXES  ;
+@P.person.NULL@:@P.person.NULL@0 PREFIXES  ;
+
+LEXICON BASIC_CNJ_PREFIXES
+@P.person.NI@:@P.person.NI@nit%<    PREFIXES  ;
+@P.person.KI@:@P.person.KI@kit%<    PREFIXES  ;
+@P.person.OT@:@P.person.OT@ot%<     PREFIXES  ;
+@P.person.NULL@:@P.person.NULL@0    PREFIXES  ;
+
+LEXICON BASIC_SBJ_PREFIXES
+@P.person.NULL@:@P.person.NULL@0	PREFIXES  ;
+
+LEXICON BASIC_IRR_PREFIXES
+@P.person.NI@:@P.person.NI@nit%<    PREFIXES  ;
+@P.person.KI@:@P.person.KI@kit%<    PREFIXES  ;
+@P.person.NULL@:@P.person.NULL@0    PREFIXES  ;
+
+LEXICON PREFIXES
+0 VERB_STEMS ;
+@R.mode.IND@Neg+:@R.mode.IND@%^SPmáát BOUND "weight: 15.0652" ;
+@R.mode.IMP@Neg+:@R.mode.IMP@%^SPmiin BOUND "weight: 15.0652" ;
+@R.mode.IMP@Neg+:@R.mode.IMP@%^SPpiin BOUND "weight: 15.0652" ;
+! @P.assoc.A@PV/ohpok+:@P.assoc.A@%^SPohpok BOUND ;
+PV/saw+:saw BOUND "weight: 15.0652" ;
+! @R.mode.CON@PV/áákssta7+:@R.mode.CON@áákssta7	BOUND ;
+! @R.mode.CON@PV/ááhkssta7+:@R.mode.CON@ááhkssta7 BOUND ;
+! @R.mode.IRR@PV/kátá7+:@R.mode.IRR@kátá7 BOUND ;
+!! New list of preverbs
+PV/a'kooht+:a'kooht BOUND "weight: 15.0652" ;
+PV/a+:a BOUND "weight: 1.70662" ;
+PV/aahksikkam+:aahksikkam BOUND "weight: 15.0652" ;
+PV/aahs+:aahs BOUND "weight: 6.14633" ;
+PV/aaksta'+:aaksta' BOUND "weight: 15.0652" ;
+PV/aanist+:aanist BOUND "weight: 4.76003" ;
+PV/ai'tamáak+:ai'tamáak BOUND "weight: 15.0652" ;
+PV/aisskahs+:aisskahs BOUND "weight: 15.0652" ;
+PV/akaa+:akaa BOUND "weight: 15.0652" ;
+PV/akisspí+:akisspí BOUND "weight: 15.0652" ;
+PV/akk+:akk BOUND "weight: 15.0652" ;
+PV/akoksska+:akoksska BOUND "weight: 15.0652" ;
+PV/ama+:ama BOUND "weight: 15.0652" ;
+PV/amo'tap+:amo'tap BOUND "weight: 15.0652" ;
+PV/ana+:ana BOUND "weight: 15.0652" ;
+PV/anaw+:anaw BOUND "weight: 15.0652" ;
+PV/anist+:anist BOUND "weight: 4.89357" ;
+PV/ano+:ano BOUND "weight: 15.0652" ;
+PV/anootap+:anootap BOUND "weight: 15.0652" ;
+PV/anow+:anow BOUND "weight: 15.0652" ;
+PV/ao'tamáak+:ao'tamáak BOUND "weight: 15.0652" ;
+PV/apa'p+:apa'p BOUND "weight: 15.0652" ;
+PV/aso+:aso BOUND "weight: 15.0652" ;
+PV/assaak+:assaak BOUND "weight: 15.0652" ;
+PV/att+:att BOUND "weight: 3.77142" ;
+PV/awa'+:awa' BOUND "weight: 15.0652" ;
+PV/ayaak+:ayaak BOUND "weight: 15.0652" ;
+PV/ayak+:ayak BOUND "weight: 15.0652" ;
+PV/ayáak+:ayáak BOUND "weight: 15.0652" ;
+PV/hkana+:hkana BOUND "weight: 15.0652" ;
+PV/i'sskaan+:i'sskaan BOUND "weight: 15.0652" ;
+PV/i'tsk+:i'tsk BOUND "weight: 15.0652" ;
+PV/i2kkam+:i2kkam BOUND "weight: 15.0652" ;
+PV/i2kkina+:i2kkina BOUND "weight: 15.0652" ;
+PV/i2ksistt+:i2ksistt BOUND "weight: 15.0652" ;
+PV/i2poina+:i2poina BOUND "weight: 15.0652" ;
+PV/i2poohsap+:i2poohsap BOUND "weight: 15.0652" ;
+PV/ihta+:ihta BOUND "weight: 2.46372" ;
+PV/ii+:ii BOUND "weight: 15.0652" ;
+PV/iihk+:iihk BOUND "weight: 15.0652" ;
+PV/iiht+:iiht BOUND "weight: 15.0652" ;
+PV/iihtsitok+:iihtsitok BOUND "weight: 15.0652" ;
+PV/iihtsitssitak+:iihtsitssitak BOUND "weight: 15.0652" ;
+PV/iik+:iik BOUND "weight: 15.0652" ;
+PV/iikska'+:iikska' BOUND "weight: 15.0652" ;
+PV/iima+:iima BOUND "weight: 15.0652" ;
+PV/iimaa+:iimaa BOUND "weight: 15.0652" ;
+PV/iimat+:iimat BOUND "weight: 15.0652" ;
+PV/iimá+:iimá BOUND "weight: 15.0652" ;
+PV/iin+:iin BOUND "weight: 3.50727" ;
+PV/iina+:iina BOUND "weight: 15.0652" ;
+PV/iinao'k+:iinao'k BOUND "weight: 15.0652" ;
+PV/iinatt+:iinatt BOUND "weight: 15.0652" ;
+PV/iini+:iini BOUND "weight: 15.0652" ;
+PV/iinik+:iinik BOUND "weight: 15.0652" ;
+PV/iitaisap+:iitaisap BOUND "weight: 15.0652" ;
+PV/iitsiksist+:iitsiksist BOUND "weight: 15.0652" ;
+PV/iitskimaan+:iitskimaan BOUND "weight: 15.0652" ;
+PV/iiyik+:iiyik BOUND "weight: 6.14633" ;
+PV/ika'+:ika' BOUND "weight: 15.0652" ;
+PV/ika'to+:ika'to BOUND "weight: 15.0652" ;
+PV/ikaap+:ikaap BOUND "weight: 15.0652" ;
+PV/ikaiksist+:ikaiksist BOUND "weight: 15.0652" ;
+PV/ikak+:ikak BOUND "weight: 6.43401" ;
+PV/ikamo't+:ikamo't BOUND "weight: 15.0652" ;
+PV/ikapo+:ikapo BOUND "weight: 15.0652" ;
+PV/ikayiss+:ikayiss BOUND "weight: 5.74086" ;
+PV/ikia'ya+:ikia'ya BOUND "weight: 15.0652" ;
+PV/ikihkiht+:ikihkiht BOUND "weight: 15.0652" ;
+PV/ikimm+:ikimm BOUND "weight: 15.0652" ;
+PV/ikimmat+:ikimmat BOUND "weight: 15.0652" ;
+PV/ikipp+:ikipp BOUND "weight: 15.0652" ;
+PV/ikippa'+:ikippa' BOUND "weight: 15.0652" ;
+PV/ikkam+:ikkam BOUND "weight: 15.0652" ;
+PV/ikkan+:ikkan BOUND "weight: 15.0652" ;
+PV/ikkia'+:ikkia' BOUND "weight: 15.0652" ;
+PV/ikkihkini+:ikkihkini BOUND "weight: 15.0652" ;
+PV/ikkina+:ikkina BOUND "weight: 15.0652" ;
+PV/iksissto+:iksissto BOUND "weight: 5.23004" ;
+PV/iksist+:iksist BOUND "weight: 15.0652" ;
+PV/iksksowa'+:iksksowa' BOUND "weight: 15.0652" ;
+PV/ikssto+:ikssto BOUND "weight: 15.0652" ;
+PV/ikstsina'+:ikstsina' BOUND "weight: 15.0652" ;
+PV/ikíppoa+:ikíppoa BOUND "weight: 15.0652" ;
+PV/imaat+:imaat BOUND "weight: 15.0652" ;
+PV/imak+:imak BOUND "weight: 15.0652" ;
+PV/immoyi+:immoyi BOUND "weight: 15.0652" ;
+PV/inai't+:inai't BOUND "weight: 15.0652" ;
+PV/inikk+:inikk BOUND "weight: 6.83948" ;
+PV/innaahkoot+:innaahkoot BOUND "weight: 15.0652" ;
+PV/ipahkitap+:ipahkitap BOUND "weight: 15.0652" ;
+PV/ipahtsik+:ipahtsik BOUND "weight: 15.0652" ;
+PV/ipakska+:ipakska BOUND "weight: 15.0652" ;
+PV/ipana+:ipana BOUND "weight: 15.0652" ;
+PV/ipann+:ipann BOUND "weight: 15.0652" ;
+PV/ipapa+:ipapa BOUND "weight: 15.0652" ;
+PV/ipiitsiiyóóhk+:ipiitsiiyóóhk BOUND "weight: 15.0652" ;
+PV/ipiitsiw+:ipiitsiw BOUND "weight: 15.0652" ;
+PV/ipo't+:ipo't BOUND "weight: 15.0652" ;
+PV/ipoina+:ipoina BOUND "weight: 15.0652" ;
+PV/ipp+:%^SPipp BOUND "weight: 15.0652" ;
+PV/ipp+:ipp BOUND "weight: 15.0652" ;
+PV/ippita+:ippita BOUND "weight: 15.0652" ;
+PV/ippoa+:ippoa BOUND "weight: 15.0652" ;
+PV/ippssa'kapp+:ippssa'kapp BOUND "weight: 15.0652" ;
+PV/ipsstsikatt+:ipsstsikatt BOUND "weight: 15.0652" ;
+PV/ipsstsík+:ipsstsík BOUND "weight: 15.0652" ;
+PV/ipákkssa+:ipákkssa BOUND "weight: 15.0652" ;
+PV/isimi+:isimi BOUND "weight: 15.0652" ;
+PV/isinap+:isinap BOUND "weight: 15.0652" ;
+PV/isitsip+:isitsip BOUND "weight: 6.83948" ;
+PV/isk+:isk BOUND "weight: 15.0652" ;
+PV/iss+:iss BOUND "weight: 5.13473" ;
+PV/isska'+:isska' BOUND "weight: 15.0652" ;
+PV/isstohkana+:isstohkana BOUND "weight: 15.0652" ;
+PV/ist+:ist BOUND "weight: 3.18882" ;
+PV/ista'+:ista' BOUND "weight: 15.0652" ;
+PV/istohk+:istohk BOUND "weight: 15.0652" ;
+PV/istohkana+:istohkana BOUND "weight: 15.0652" ;
+PV/istsa'+:istsa' BOUND "weight: 15.0652" ;
+PV/istto't+:istto't BOUND "weight: 15.0652" ;
+PV/isttsikohpo+:isttsikohpo BOUND "weight: 15.0652" ;
+PV/isttsitsa+:isttsitsa BOUND "weight: 15.0652" ;
+PV/isttssi+:isttssi BOUND "weight: 15.0652" ;
+PV/it+:it BOUND "weight: 2.77045" ;
+PV/itap+:itap BOUND "weight: 4.53689" ;
+PV/ito't+:ito't BOUND "weight: 15.0652" ;
+PV/iton+:iton BOUND "weight: 4.89357" ;
+PV/itsisa+:itsisa BOUND "weight: 15.0652" ;
+PV/itsst+:itsst BOUND "weight: 15.0652" ;
+PV/itáak+:itáak BOUND "weight: 15.0652" ;
+PV/iámoohk+:iámoohk BOUND "weight: 15.0652" ;
+PV/kaat+:kaat BOUND "weight: 15.0652" ;
+PV/kakanott+:kakanott BOUND "weight: 15.0652" ;
+PV/kam+:kam BOUND "weight: 15.0652" ;
+PV/kan+:kan BOUND "weight: 3.56233" ;
+PV/kipita+:kipita BOUND "weight: 15.0652" ;
+PV/kipp+:kipp BOUND "weight: 15.0652" ;
+PV/kotski+:kotski BOUND "weight: 15.0652" ;
+PV/ksisttoyi+:ksisttoyi BOUND "weight: 15.0652" ;
+PV/káta'+:káta' BOUND "weight: 15.0652" ;
+PV/káák+:káák BOUND "weight: 15.0652" ;
+PV/káátsisto+:káátsisto BOUND "weight: 15.0652" ;
+PV/kínnak+:kínnak BOUND "weight: 15.0652" ;
+PV/m2aat+:m2aat BOUND "weight: 15.0652" ;
+PV/m2att+:m2att BOUND "weight: 15.0652" ;
+PV/m2attsistá'+:m2attsistá' BOUND "weight: 15.0652" ;
+PV/m2átt+:m2átt BOUND "weight: 15.0652" ;
+PV/m2áttsit+:m2áttsit BOUND "weight: 15.0652" ;
+PV/m2áát+:m2áát BOUND "weight: 15.0652" ;
+PV/m2áátaommita'p+:m2áátaommita'p BOUND "weight: 15.0652" ;
+PV/maak+:maak BOUND "weight: 5.45318" ;
+PV/maam+:maam BOUND "weight: 6.43401" ;
+PV/mak+:mak BOUND "weight: 2.35084" ;
+PV/mato+:mato BOUND "weight: 15.0652" ;
+PV/matsowá'p+:matsowá'p BOUND "weight: 15.0652" ;
+PV/mi'kotsi+:mi'kotsi BOUND "weight: 15.0652" ;
+PV/miiksist+:miiksist BOUND "weight: 15.0652" ;
+PV/miin+:miin BOUND "weight: 15.0652" ;
+PV/miistap+:miistap BOUND "weight: 3.21514" ;
+PV/min+:min BOUND "weight: 3.26994" ;
+PV/missk+:missk BOUND "weight: 3.66142" ;
+PV/misst+:misst BOUND "weight: 6.83948" ;
+PV/mo'tóí+:mo'tóí BOUND "weight: 15.0652" ;
+PV/máak+:máak BOUND "weight: 3.31312" ;
+PV/máo'k+:máo'k BOUND "weight: 15.0652" ;
+PV/na+:na BOUND "weight: 15.0652" ;
+PV/naat+:naat BOUND "weight: 15.0652" ;
+PV/nai't+:nai't BOUND "weight: 15.0652" ;
+PV/niistsikáp+:niistsikáp BOUND "weight: 15.0652" ;
+PV/niit+:niit BOUND "weight: 6.14633" ;
+PV/niitsi+:niitsi BOUND "weight: 15.0652" ;
+PV/niitsskimaan+:niitsskimaan BOUND "weight: 15.0652" ;
+PV/niitá'p+:niitá'p BOUND "weight: 15.0652" ;
+PV/noohk+:noohk BOUND "weight: 5.04772" ;
+PV/noohkátt+:noohkátt BOUND "weight: 15.0652" ;
+PV/níítaak+:níítaak BOUND "weight: 15.0652" ;
+PV/o'kia'p+:o'kia'p BOUND "weight: 15.0652" ;
+PV/o'kio+:o'kio BOUND "weight: 15.0652" ;
+PV/o'tap+:o'tap BOUND "weight: 15.0652" ;
+PV/ohk+:ohk BOUND "weight: 2.12995" ;
+PV/ohkan+:ohkan BOUND "weight: 4.4881" ;
+PV/ohkana+:ohkana BOUND "weight: 15.0652" ;
+PV/ohkit+:ohkit BOUND "weight: 5.13473" ;
+PV/ohko+:ohko BOUND "weight: 3.43828" ;
+PV/ohkott+:ohkott BOUND "weight: 15.0652" ;
+PV/ohpii+:ohpii BOUND "weight: 6.43401" ;
+PV/ohpiistap+:ohpiistap BOUND "weight: 15.0652" ;
+PV/ohpo'kii+:ohpo'kii BOUND "weight: 15.0652" ;
+PV/ohpok+:ohpok BOUND "weight: 15.0652" ;
+PV/ohs+:ohs BOUND "weight: 5.58671" ;
+PV/oht+:oht BOUND "weight: 2.90765" ;
+PV/ohtatsiwa+:%^SPohtatsiwa BOUND "weight: 15.0652" ;
+PV/oka'p+:oka'p BOUND "weight: 15.0652" ;
+PV/oma+:oma BOUND "weight: 6.43401" ;
+PV/omaa+:omaa BOUND "weight: 5.74086" ;
+PV/omahka+:omahka BOUND "weight: 15.0652" ;
+PV/omanista+:omanista BOUND "weight: 15.0652" ;
+PV/omat+:omat BOUND "weight: 5.74086" ;
+PV/omi+:omi BOUND "weight: 15.0652" ;
+PV/omiiksist+:omiiksist BOUND "weight: 15.0652" ;
+PV/omo'tap+:omo'tap BOUND "weight: 15.0652" ;
+PV/omohp+:%^SPomohp BOUND "weight: 15.0652" ;
+PV/omoht+:%^SPomoht BOUND "weight: 15.0652" ;
+PV/omoht+:omoht BOUND "weight: 15.0652" ;
+PV/omá+:omá BOUND "weight: 15.0652" ;
+PV/on+:on BOUND "weight: 0.854282" ;
+PV/ona'+:ona' BOUND "weight: 15.0652" ;
+PV/onai't+:onai't BOUND "weight: 15.0652" ;
+PV/onaki+:onaki BOUND "weight: 15.0652" ;
+PV/oohk+:%^SPoohk BOUND "weight: 4.76003" ;
+PV/oohk+:oohk BOUND "weight: 4.76003" ;
+PV/oohkanistta+:oohkanistta BOUND "weight: 15.0652" ;
+PV/oohkatt+:oohkatt BOUND "weight: 15.0652" ;
+PV/opaksikssto+:opaksikssto BOUND "weight: 15.0652" ;
+PV/otam+:otam BOUND "weight: 15.0652" ;
+PV/oto+:oto BOUND "weight: 5.3354" ;
+PV/otomohk+:otomohk BOUND "weight: 15.0652" ;
+PV/piin+:piin BOUND "weight: 3.31312" ;
+PV/piitsiyoohk+:piitsiyoohk BOUND "weight: 15.0652" ;
+PV/pin+:pin BOUND "weight: 3.31312" ;
+PV/po'kí+:po'kí BOUND "weight: 15.0652" ;
+PV/poina+:poina BOUND "weight: 15.0652" ;
+PV/poohsap+:poohsap BOUND "weight: 7.53262" ;
+PV/poína+:poína BOUND "weight: 15.0652" ;
+PV/sa+:sa BOUND "weight: 5.92319" ;
+PV/saa+:saa BOUND "weight: 5.74086" ;
+PV/saaki+:saaki BOUND "weight: 15.0652" ;
+PV/saapo'kit+:saapo'kit BOUND "weight: 15.0652" ;
+PV/saipa'+:saipa' BOUND "weight: 15.0652" ;
+PV/sipi+:sipi BOUND "weight: 15.0652" ;
+PV/sok+:sok BOUND "weight: 15.0652" ;
+PV/sook+:sook BOUND "weight: 15.0652" ;
+PV/sootam+:sootam BOUND "weight: 15.0652" ;
+PV/sotám+:sotám BOUND "weight: 15.0652" ;
+PV/soyi+:soyi BOUND "weight: 15.0652" ;
+PV/ssap+:ssap BOUND "weight: 15.0652" ;
+PV/sska'+:sska' BOUND "weight: 15.0652" ;
+PV/sska7+:sska7 BOUND "weight: 15.0652" ;
+PV/sspi+:sspi BOUND "weight: 6.83948" ;
+PV/sstahpik+:sstahpik BOUND "weight: 15.0652" ;
+PV/sstok+:sstok BOUND "weight: 15.0652" ;
+PV/sstonnat+:sstonnat BOUND "weight: 15.0652" ;
+PV/sstsina'+:sstsina' BOUND "weight: 15.0652" ;
+PV/sstónnat+:sstónnat BOUND "weight: 15.0652" ;
+PV/ssáak+:ssáak BOUND "weight: 15.0652" ;
+PV/stam+:stam BOUND "weight: 7.53262" ;
+PV/sáótat+:sáótat BOUND "weight: 15.0652" ;
+PV/tatsiki+:tatsiki BOUND "weight: 15.0652" ;
+PV/waahki+:waahki BOUND "weight: 15.0652" ;
+PV/waahko+:waahko BOUND "weight: 15.0652" ;
+PV/waahto+:waahto BOUND "weight: 15.0652" ;
+PV/waahtsam+:waahtsam BOUND "weight: 15.0652" ;
+PV/waahtso+:waahtso BOUND "weight: 15.0652" ;
+PV/waako'tsi+:waako'tsi BOUND "weight: 15.0652" ;
+PV/waaksisto+:waaksisto BOUND "weight: 15.0652" ;
+PV/waanaoyit+:waanaoyit BOUND "weight: 15.0652" ;
+PV/waanook+:waanook BOUND "weight: 15.0652" ;
+PV/waapiiwaan+:waapiiwaan BOUND "weight: 15.0652" ;
+PV/wayák+:wayák BOUND "weight: 15.0652" ;
+PV/wayákiit+:wayákiit BOUND "weight: 15.0652" ;
+PV/wáyák+:wáyák BOUND "weight: 15.0652" ;
+PV/yaahs+:yaahs BOUND "weight: 7.53262" ;
+PV/yi2i2stap+:yi2i2stap BOUND "weight: 15.0652" ;
+PV/yoisstsikina+:yoisstsikina BOUND "weight: 15.0652" ;
+PV/yook+:yook BOUND "weight: 15.0652" ;
+PV/yáak+:yáak BOUND "weight: 15.0652" ;
+PV/yámoohk+:yámoohk BOUND "weight: 15.0652" ;
+PV/á'p+:á'p BOUND "weight: 15.0652" ;
+PV/á+:á BOUND "weight: 3.00002" ;
+PV/á7+:á7 BOUND "weight: 5.58671" ;
+PV/áka+:áka BOUND "weight: 15.0652" ;
+PV/ákstam+:ákstam BOUND "weight: 15.0652" ;
+PV/ákáá+:ákáá BOUND "weight: 15.0652" ;
+PV/ááhk+:ááhk BOUND "weight: 15.0652" ;
+PV/ááhkamá'p+:ááhkamá'p BOUND "weight: 15.0652" ;
+PV/ááhksikkama'p+:ááhksikkama'p BOUND "weight: 15.0652" ;
+PV/áák+:áák BOUND "weight: 15.0652" ;
+PV/áísooka+:áísooka BOUND "weight: 15.0652" ;
+PV/íka+:íka BOUND "weight: 15.0652" ;
+PV/ípssit+:ípssit BOUND "weight: 15.0652" ;
+
+
+LEXICON BOUND
+! 0:%< PREFIXES ;
+! 0:%<	VERB_STEMS ;
+0:%< PV_COUNTER  ;
+
+LEXICON PV_COUNTER
+@D.pvcount@@P.pvcount.1@ PREFIXES ;
+@R.pvcount.1@@P.pvcount.2@ PREFIXES ;
+@R.pvcount.2@@P.pvcount.3@ PREFIXES ;
+@R.pvcount.3@@P.pvcount.4@ PREFIXES ;
+@R.pvcount.4@@P.pvcount.5@ PREFIXES ;
+
+!! This file contains the Blackfoot verb stems. They are organized by their inflectional class.
+
+LEXICON VERB_STEMS
+! LEXICON PREFIXES
+@R.class.VAI@	VAI_STEMS ;
+@R.class.VII@	VII_STEMS ;
+@R.class.VTI@	VTI_STEMS ;
+@R.class.VTA@	VTA_STEMS ;
+
+LEXICON VAI_STEMS
+! a’painahkimaa:a’painahkimaa	VAI ;
+! a’pami:a’pami	VAI ;
+! a’panii:a’panii	VAI ;
+! á’páóoyi’kaa:á’páóoyi’kaa	VAI ;
+! a’piksikka’yi:a’piksikka’yi	VAI ;
+! a’pistohkimaa:a’pistohkimaa	VAI ;
+! a’písttaapikssi:a’písttaapikssi	VAI ;
+! a’písttotsi:a’písttotsi	VAI ;
+! á’pitsííhtaa:á’pitsííhtaa	VAI ;
+! á’pohpá’wani:á’pohpá’wani	VAI ;
+! a’pohpii:a’pohpii	VAI ;
+á’poo:á’poo	VAI  ;
+! á’pssapópii:á’pssapópii	VAI ;
+! a’psskiáapikssi:a’psskiáapikssi	VAI ;
+! á’psskootsiiyi:á’psskootsiiyi	VAI ;
+! a’simi:a’simi	VAI ;
+! aakíssi:aakíssi	VAI ;
+! aanii:aanii	VAI ;
+! aanistá’pssi:aanistá’pssi	VAI ;
+! aanistaiisi:aanistaiisi	VAI ;
+! aanistápaoo:aanistápaoo	VAI ;
+! aanistápssi:aanistápssi	VAI ;
+! aapamoo:aapamoo	VAI ;
+! aawapsspiinao’si:aawapsspiinao’si	VAI ;
+! aawápsspiinao’sskaa:aawápsspiinao’sskaa	VAI ;
+! aiistoo:aiistoo	VAI ;
+! aiitoohtsimi:aiitoohtsimi	VAI ;
+! áíkkakiiyi:áíkkakiiyi	VAI ;
+! áísspihka’si:áísspihka’si	VAI ;
+! akaahtoipoyi:akaahtoipoyi	VAI ;
+! akkawa’pssi:akkawa’pssi	VAI ;
+! ami:ami	VAI ;
+! anii:anii	VAI ;
+! ánistsska’si:ánistsska’si	VAI ;
+! apoká’siisi:apoká’siisi	VAI ;
+! apoyíínaa:apoyíínaa	VAI ;
+! apssi:apssi	VAI ;
+! ataksáakiimi:ataksáakiimi	VAI ;
+! ayaamoyi’poyi:ayaamoyi’poyi	VAI ;
+! í’kaasi:í’kaasi	VAI ;
+! i’kiisi:i’kiisi	VAI ;
+! i’kokaa:i’kokaa	VAI ;
+! i’kowani:i’kowani	VAI ;
+! i’ksíniisi:i’ksíniisi	VAI ;
+! i’ksinissi:i’ksinissi	VAI ;
+! i’ksipia’pssi:i’ksipia’pssi	VAI ;
+! i’kssistsinaa:i’kssistsinaa	VAI ;
+! i’ksskii’si:i’ksskii’si	VAI ;
+! i’naaki:i’naaki	VAI ;
+! i’nákihtssimm:i’nákihtssimm	VAI ;
+! 	
+! ! FIX PROBLEM HERE	
+! 	
+! iinissi:iinissi	VAI ;
+! Iitóómiksiowai’piiwa:Iitóómiksiowai’piiwa	VAI ;
+! iitsi’poyi:iitsi’poyi	VAI ;
+! iitsíksista’pssi:iitsíksista’pssi	VAI ;
+! iitska’si:iitska’si	VAI ;
+! iitsskaa:iitsskaa	VAI ;
+! iitsskoohsi:iitsskoohsi	VAI ;
+! iitssksiiststaa:iitssksiiststaa	VAI ;
+! iiya’ksisaa:iiya’ksisaa	VAI ;
+! iiyika’kimaa:iiyika’kimaa	VAI ;
+! iiyikihkaohsi:iiyikihkaohsi	VAI ;
+! iiyikitapiiyi:iiyikitapiiyi	VAI ;
+! iiyikoosi:iiyikoosi	VAI ;
+! iiyikoosi:iiyikoosi	VAI ;
+! iiyikskapi:iiyikskapi	VAI ;
+! ika’ki’taki:ika’ki’taki	VAI ;
+! ika’kimaa:ika’kimaa	VAI ;
+! ika’kimaa:ika’kimaa	VAI ;
+! ika’kimmohsi:ika’kimmohsi	VAI ;
+! ika’kssi:ika’kssi	VAI ;
+! ikaapoksiinimaa:ikaapoksiinimaa	VAI ;
+! ikaawoo:ikaawoo	VAI ;
+! ikaawoyi:ikaawoyi	VAI ;
+! ikahkainnimaa:ikahkainnimaa	VAI ;
+! ikahkapi’kamm:ikahkapi’kamm	VAI ;
+! ikahtomaa:ikahtomaa	VAI ;
+! ikahtsi:ikahtsi	VAI ;
+! ikai’taki:ikai’taki	VAI ;
+! ikaissi:ikaissi	VAI ;
+! ikaitapiitsiniki:ikaitapiitsiniki	VAI ;
+! ikakkssi:ikakkssi	VAI ;
+! ikakoopaa:ikakoopaa	VAI ;
+! ikamo’si:ikamo’si	VAI ;
+! ikámo’ta’pssi:ikámo’ta’pssi	VAI ;
+! ikamotaa:ikamotaa	VAI ;
+! ikamotaahpihkaapitsiiyi:ikamotaahpihkaapitsiiyi	VAI ;
+! ikánsskini:ikánsskini	VAI ;
+! ikansskini:ikansskini	VAI ;
+! ikayissanii:ikayissanii	VAI ;
+! ikaysskini:ikaysskini	VAI ;
+! iki’tayissksimmaa:iki’tayissksimmaa	VAI ;
+! iki’tsiiksowoo:iki’tsiiksowoo	VAI ;
+! ikia’pssi:ikia’pssi	VAI ;
+! ikii:ikii	VAI ;
+! ikiihtsipimi:ikiihtsipimi	VAI ;
+! ikiiki:ikiiki	VAI ;
+! ikiiki:ikiiki	VAI ;
+! ikimmapiiyipitsi:ikimmapiiyipitsi	VAI ;
+! ikimmata’paopii:ikimmata’paopii	VAI ;
+! ikimmata’pssi:ikimmata’pssi	VAI ;
+! ikimmatsska’si:ikimmatsska’si	VAI ;
+! ikimmohsi:ikimmohsi	VAI ;
+! ikimopii:ikimopii	VAI ;
+! ikinnssi:ikinnssi	VAI ;
+ikíppoayi’taki:ikíppoayi’taki	VAI  ;
+! ikkaaya’yi:ikkaaya’yi	VAI ;
+! ikkaayayisskattsiiyi:ikkaayayisskattsiiyi	VAI ;
+! ikkaayi:ikkaayi	VAI ;
+! ikkahsanii:ikkahsanii	VAI ;
+! ikkahsi’taki:ikkahsi’taki	VAI ;
+! ikkahsinaa:ikkahsinaa	VAI ;
+! ikkahsska’si:ikkahsska’si	VAI ;
+! ikkakotoopii:ikkakotoopii	VAI ;
+! ikkakssi:ikkakssi	VAI ;
+! ikkaksskiisi:ikkaksskiisi	VAI ;
+! ikkami’ni:ikkami’ni	VAI ;
+! ikkamssi:ikkamssi	VAI ;
+! ikkana:ikkana	VAI ;
+! ikkana’soyi:ikkana’soyi	VAI ;
+! ikkatsiiyi:ikkatsiiyi	VAI ;
+! ikkatsimaa:ikkatsimaa	VAI ;
+! ikkatsimao’tsisii:ikkatsimao’tsisii	VAI ;
+! ikkawa:ikkawa	VAI ;
+! ikki:ikki	VAI ;
+! ikkihkaa:ikkihkaa	VAI ;
+! ikkihkinioohsi:ikkihkinioohsi	VAI ;
+! ikkimaani:ikkimaani	VAI ;
+! ikkinaa’pssi:ikkinaa’pssi	VAI ;
+! ikkinissi:ikkinissi	VAI ;
+! ikkisstaa:ikkisstaa	VAI ;
+! ikkisstaa:ikkisstaa	VAI ;
+! ikkítsaapi:ikkítsaapi	VAI ;
+! ikkitsinaa:ikkitsinaa	VAI ;
+! ikkiyattsoohsi:ikkiyattsoohsi	VAI ;
+! íkkiyimmohsi:íkkiyimmohsi	VAI ;
+! ikkohponi:ikkohponi	VAI ;
+! ikkonamaa:ikkonamaa	VAI ;
+! ikkskssi:ikkskssi	VAI ;
+! ikksspiisi:ikksspiisi	VAI ;
+! ikkstsáánisi:ikkstsáánisi	VAI ;
+! ikkstsimi:ikkstsimi	VAI ;
+! ikkstsimi:ikkstsimi	VAI ;
+! ikkstsimiáttsoohsi:ikkstsimiáttsoohsi	VAI ;
+! ikkstsiniisi:ikkstsiniisi	VAI ;
+! iko’kapssi:iko’kapssi	VAI ;
+! iko’po:iko’po	VAI ;
+! iko’poinayi:iko’poinayi	VAI ;
+! iko’sistsaapini:iko’sistsaapini	VAI ;
+! ikohki’taki:ikohki’taki	VAI ;
+! ikohkia’pssi:ikohkia’pssi	VAI ;
+! ikohkíyissksipi:ikohkíyissksipi	VAI ;
+! ikohkíyissksipistaa’tsi:ikohkíyissksipistaa’tsi	VAI ;
+! ikohpaattstaa:ikohpaattstaa	VAI ;
+! ikohpattsimi:ikohpattsimi	VAI ;
+! ikohpawaapinissi:ikohpawaapinissi	VAI ;
+! ikooki’taki:ikooki’taki	VAI ;
+! ikookssi:ikookssi	VAI ;
+! ikoosi:ikoosi	VAI ;
+! ikotsa’pssi:ikotsa’pssi	VAI ;
+! ikotski’taki:ikotski’taki	VAI ;
+! ikotskiipomm:ikotskiipomm	VAI ;
+! iksa’si:iksa’si	VAI ;
+! iksaamaisskinii:iksaamaisskinii	VAI ;
+! iksama’pssi:iksama’pssi	VAI ;
+! iksamaoko’si:iksamaoko’si	VAI ;
+! iksi’soo:iksi’soo	VAI ;
+! iksii’taki:iksii’taki	VAI ;
+! iksiikskomaahkaa:iksiikskomaahkaa	VAI ;
+! iksíiyisi:iksíiyisi	VAI ;
+! iksikaaki:iksikaaki	VAI ;
+! iksikiowai’pii:iksikiowai’pii	VAI ;
+! iksikka’pssi:iksikka’pssi	VAI ;
+! iksikka’yi:iksikka’yi	VAI ;
+! iksikkiowai’piiyi:iksikkiowai’piiyi	VAI ;
+! iksiksiimohki:iksiksiimohki	VAI ;
+! iksikskoo:iksikskoo	VAI ;
+! iksimaa:iksimaa	VAI ;
+! iksimatsi’taki:iksimatsi’taki	VAI ;
+! iksimatsimmohki:iksimatsimmohki	VAI ;
+! iksimi’nikki:iksimi’nikki	VAI ;
+! iksimmohsi:iksimmohsi	VAI ;
+! iksimsstaa:iksimsstaa	VAI ;
+! iksipíkaasi:iksipíkaasi	VAI ;
+! iksisáíiki:iksisáíiki	VAI ;
+! iksisapitsa’pssi:iksisapitsa’pssi	VAI ;
+! iksisapitsissi:iksisapitsissi	VAI ;
+! iksisapoo:iksisapoo	VAI ;
+! iksisattsiiwaa:iksisattsiiwaa	VAI ;
+! iksisiststaa:iksisiststaa	VAI ;
+! iksisiststaa:iksisiststaa	VAI ;
+! iksisiststaki:iksisiststaki	VAI ;
+! iksisskahkaki:iksisskahkaki	VAI ;
+! iksissta’poo:iksissta’poo	VAI ;
+! iksissta’pssi:iksissta’pssi	VAI ;
+! iksissta’pssi:iksissta’pssi	VAI ;
+! iksisstoka’pssi:iksisstoka’pssi	VAI ;
+! iksisstowa’pssi:iksisstowa’pssi	VAI ;
+! iksisstoyitanii:iksisstoyitanii	VAI ;
+! iksista’pssi:iksista’pssi	VAI ;
+! iksisto’si:iksisto’si	VAI ;
+! iksisto’si:iksisto’si	VAI ;
+! iksistohsoyi:iksistohsoyi	VAI ;
+! iksistohsoyi:iksistohsoyi	VAI ;
+! iksistokomssaki:iksistokomssaki	VAI ;
+! iksistsikimisstaa:iksistsikimisstaa	VAI ;
+! iksistsikomi:iksistsikomi	VAI ;
+! iksistspi’taki:iksistspi’taki	VAI ;
+! iksistssi:iksistssi	VAI ;
+! iksistssi:iksistssi	VAI ;
+! iksiststsoohsi:iksiststsoohsi	VAI ;
+! iksisttaana’pssi:iksisttaana’pssi	VAI ;
+! iksistto’si:iksistto’si	VAI ;
+! iksistto’simm:iksistto’simm	VAI ;
+! iksisttonimmaa:iksisttonimmaa	VAI ;
+! iksisttotsa’pssi:iksisttotsa’pssi	VAI ;
+! iksisttotsi’taki:iksisttotsi’taki	VAI ;
+! iksísttotsissi:iksísttotsissi	VAI ;
+! iksisttoyi:iksisttoyi	VAI ;
+! iksisttssi:iksisttssi	VAI ;
+! iksiwainaka’si:iksiwainaka’si	VAI ;
+! ikskimaa:ikskimaa	VAI ;
+! ikskoosi:ikskoosi	VAI ;
+! ikskowoo:ikskowoo	VAI ;
+! ikso’koyi:ikso’koyi	VAI ;
+! iksowoo:iksowoo	VAI ;
+! iksska’takiipitsi:iksska’takiipitsi	VAI ;
+! iksskami:iksskami	VAI ;
+! iksstaa:iksstaa	VAI ;
+! iksstonimmaa:iksstonimmaa	VAI ;
+! ikstsiksiiyi:ikstsiksiiyi	VAI ;
+! imiihkini:imiihkini	VAI ;
+! imikihta’tsskaa:imikihta’tsskaa	VAI ;
+! imitaisski:imitaisski	VAI ;
+! immaka’pssi:immaka’pssi	VAI ;
+! immakoyaaki:immakoyaaki	VAI ;
+! immaksi’ni:immaksi’ni	VAI ;
+! immistsi’saki:immistsi’saki	VAI ;
+! immistsiihkiitaa:immistsiihkiitaa	VAI ;
+! immoki’kaa:immoki’kaa	VAI ;
+! immoyissi:immoyissi	VAI ;
+! immssikaa:immssikaa	VAI ;
+! immsskaa:immsskaa	VAI ;
+! imsskaa:imsskaa	VAI ;
+! inaamaahkaa:inaamaahkaa	VAI ;
+! inaamm:inaamm	VAI ;
+! inaani:inaani	VAI ;
+! inaani:inaani	VAI ;
+! inaanssi:inaanssi	VAI ;
+! inaanssi:inaanssi	VAI ;
+! inaansskaa:inaansskaa	VAI ;
+! inaapitsi:inaapitsi	VAI ;
+! inahkimaa:inahkimaa	VAI ;
+! inai’taki:inai’taki	VAI ;
+! inaihka’si:inaihka’si	VAI ;
+! inaimmohsi:inaimmohsi	VAI ;
+! inaka’siimi:inaka’siimi	VAI ;
+! inaka’sskaa:inaka’sskaa	VAI ;
+! inakataki:inakataki	VAI ;
+! inakoyiim:inakoyiim	VAI ;
+! inawa’si:inawa’si	VAI ;
+! ini’poyi:ini’poyi	VAI ;
+! inihka’siimi:inihka’siimi	VAI ;
+! inihka’simi:inihka’simi	VAI ;
+! inihkatsimaa:inihkatsimaa	VAI ;
+! inihki:inihki	VAI ;
+! inihki:inihki	VAI ;
+! inii’pokaa:inii’pokaa	VAI ;
+! inii’totoyaapikssi:inii’totoyaapikssi	VAI ;
+! iniitsi:iniitsi	VAI ;
+! iniiyi’taki:iniiyi’taki	VAI ;
+! iniiyi’taki:iniiyi’taki	VAI ;
+! inikimaa:inikimaa	VAI ;
+! inikimma:inikimma	VAI ;
+! inikkihkaohsi:inikkihkaohsi	VAI ;
+! inikksi:inikksi	VAI ;
+! inikksiistapoo:inikksiistapoo	VAI ;
+! inna’koohsi:inna’koohsi	VAI ;
+! innáapiksistaki:innáapiksistaki	VAI ;
+! innaihtsiiyi:innaihtsiiyi	VAI ;
+! innihtaa:innihtaa	VAI ;
+! innikinaa:innikinaa	VAI ;
+! innisi’yi:innisi’yi	VAI ;
+! innisoo:innisoo	VAI ;
+! innisoohkoyi:innisoohkoyi	VAI ;
+! inno’si:inno’si	VAI ;
+! innoisspi:innoisspi	VAI ;
+! innootaa:innootaa	VAI ;
+! innoyimi:innoyimi	VAI ;
+! inoka’pssi:inoka’pssi	VAI ;
+! inoki’taki:inoki’taki	VAI ;
+! inokssi:inokssi	VAI ;
+! insskimaa:insskimaa	VAI ;
+! insskimao’si:insskimao’si	VAI ;
+! insspa’pssi:insspa’pssi	VAI ;
+! insstawa’pssi:insstawa’pssi	VAI ;
+! insstawaapiksistsimaa:insstawaapiksistsimaa	VAI ;
+! ipa’kóyaaki:ipa’kóyaaki	VAI ;
+! ipááhksstooki:ipááhksstooki	VAI ;
+! ipaapikssi:ipaapikssi	VAI ;
+! ipaawani:ipaawani	VAI ;
+! ipahkínaa:ipahkínaa	VAI ;
+! ipahkitapi’taki:ipahkitapi’taki	VAI ;
+! ipahkóosi:ipahkóosi	VAI ;
+! ipahksimi:ipahksimi	VAI ;
+! ipahpáapinaapikssi:ipahpáapinaapikssi	VAI ;
+! ipahpoyi:ipahpoyi	VAI ;
+! ipahtani’si:ipahtani’si	VAI ;
+! ipahtsá’pssi:ipahtsá’pssi	VAI ;
+! ipaitapiiyi:ipaitapiiyi	VAI ;
+! ipakkihkaa:ipakkihkaa	VAI ;
+! ipákkitsa’pssi:ipákkitsa’pssi	VAI ;
+! ipákkowayikioohsi:ipákkowayikioohsi	VAI ;
+! ipakksíkamattstaa:ipakksíkamattstaa	VAI ;
+! ipakksiníkimaa:ipakksiníkimaa	VAI ;
+! ipakksskaa:ipakksskaa	VAI ;
+! ipákoto’kimaa:ipákoto’kimaa	VAI ;
+! ipakottsisstaki:ipakottsisstaki	VAI ;
+! ipakskáísiitamiihtsi:ipakskáísiitamiihtsi	VAI ;
+! ipani’kahtaa:ipani’kahtaa	VAI ;
+! ipaninnimaa:ipaninnimaa	VAI ;
+! ipannopii:ipannopii	VAI ;
+! ipáóotsimaa:ipáóotsimaa	VAI ;
+! ipapáí’poyi:ipapáí’poyi	VAI ;
+! ipapao’kaa:ipapao’kaa	VAI ;
+! ipápisa:ipápisa	VAI ;
+! ipapo:ipapo	VAI ;
+! ipásskaa:ipásskaa	VAI ;
+! ipasskata’pssi:ipasskata’pssi	VAI ;
+! ipasskohki:ipasskohki	VAI ;
+! ipi’ka’pssi:ipi’ka’pssi	VAI ;
+! ipi’kaani:ipi’kaani	VAI ;
+! ipi’kihtaa:ipi’kihtaa	VAI ;
+! ipi’kohkoyisoka’pssi:ipi’kohkoyisoka’pssi	VAI ;
+! ipi’kokiinihki:ipi’kokiinihki	VAI ;
+! ipi’ksí’poyi:ipi’ksí’poyi	VAI ;
+! ipi’ksikahtsi:ipi’ksikahtsi	VAI ;
+! ipí’sskínao’si:ipí’sskínao’si	VAI ;
+! ipiaohpi’yi:ipiaohpi’yi	VAI ;
+! ipii:ipii	VAI ;
+! ipiihkóo:ipiihkóo	VAI ;
+! ipííkskaa:ipííkskaa	VAI ;
+! ipíinitaki:ipíinitaki	VAI ;
+! ipiino’taki:ipiino’taki	VAI ;
+! ipiitsiihtaa:ipiitsiihtaa	VAI ;
+! ipiiyinaamm:ipiiyinaamm	VAI ;
+! ipiiyinákoyiim:ipiiyinákoyiim	VAI ;
+! ipikato’si:ipikato’si	VAI ;
+! ipikkssi:ipikkssi	VAI ;
+! ipiksi:ipiksi	VAI ;
+! ipíksini:ipíksini	VAI ;
+! ipiksiniáttsoohsi:ipiksiniáttsoohsi	VAI ;
+! ipiksiniáttsoohsi:ipiksiniáttsoohsi	VAI ;
+! ipisátá’pssi:ipisátá’pssi	VAI ;
+! ipisatsi’taki:ipisatsi’taki	VAI ;
+! ipisátska’si:ipisátska’si	VAI ;
+! ipisatsoyi’kaa:ipisatsoyi’kaa	VAI ;
+! ipisiiyi:ipisiiyi	VAI ;
+! ipisski:ipisski	VAI ;
+! ipisski:ipisski	VAI ;
+! ipistsi’taki:ipistsi’taki	VAI ;
+! ipisttotsi:ipisttotsi	VAI ;
+! ipisttsi:ipisttsi	VAI ;
+! ipiwá’pssi:ipiwá’pssi	VAI ;
+! ipiwasai’ni:ipiwasai’ni	VAI ;
+! ipo’tamiapikssattsiiyi:ipo’tamiapikssattsiiyi	VAI ;
+! ipo’tatsimaa:ipo’tatsimaa	VAI ;
+! ipo’tohkomsskattsiiyi:ipo’tohkomsskattsiiyi	VAI ;
+! ipo’tssokihkiniisattsiiyi:ipo’tssokihkiniisattsiiyi	VAI ;
+! ipo’tstaa:ipo’tstaa	VAI ;
+! ipohkiááki:ipohkiááki	VAI ;
+! ipohkisstoyoohsi:ipohkisstoyoohsi	VAI ;
+! ipoihtaki:ipoihtaki	VAI ;
+! ipoina:ipoina	VAI ;
+! ipoinaohkoyi:ipoinaohkoyi	VAI ;
+! ipoipoyi:ipoipoyi	VAI ;
+! ipoipoyinniisootsii’kaa:ipoipoyinniisootsii’kaa	VAI ;
+! ipóísoyaawani:ipóísoyaawani	VAI ;
+! ipoistao’taki:ipoistao’taki	VAI ;
+! ipokaawa’si:ipokaawa’si	VAI ;
+! ipokkitsáapikkssi:ipokkitsáapikkssi	VAI ;
+! ipomikka’pssi:ipomikka’pssi	VAI ;
+! iponihtaa:iponihtaa	VAI ;
+! iponihtsi:iponihtsi	VAI ;
+! iponiistahtsimaa:iponiistahtsimaa	VAI ;
+! iponina:iponina	VAI ;
+! iponippa’pssi:iponippa’pssi	VAI ;
+! iponisayi:iponisayi	VAI ;
+! iponóóhki:iponóóhki	VAI ;
+! ipónota’si:ipónota’si	VAI ;
+! iponsskiaaki:iponsskiaaki	VAI ;
+! ipookaki:ipookaki	VAI ;
+! ipotsima’si:ipotsima’si	VAI ;
+! ipotsimaa:ipotsimaa	VAI ;
+! ipottaa:ipottaa	VAI ;
+! ipottskaa:ipottskaa	VAI ;
+! ipowaoo:ipowaoo	VAI ;
+! ipówawa’pssi:ipówawa’pssi	VAI ;
+ipowayi’taki:ipowayi’taki	VAI  ;
+! ipoyáttstaa:ipoyáttstaa	VAI ;
+! ippataa:ippataa	VAI ;
+! íppia’pssi:íppia’pssi	VAI ;
+! ippohsoyi:ippohsoyi	VAI ;
+! ippotsi’kíniisi:ippotsi’kíniisi	VAI ;
+! ippotsipistaa:ippotsipistaa	VAI ;
+! ipssikahkaa:ipssikahkaa	VAI ;
+! ipssikinsstsi:ipssikinsstsi	VAI ;
+! ipssikinsstsskaa:ipssikinsstsskaa	VAI ;
+! ipssimaa:ipssimaa	VAI ;
+! ipsstaahkaa:ipsstaahkaa	VAI ;
+! ipsstao’ki:ipsstao’ki	VAI ;
+! ipsstsika’pssi:ipsstsika’pssi	VAI ;
+! ipsstsíkaakii:ipsstsíkaakii	VAI ;
+! ipsstsísttaapikkssi:ipsstsísttaapikkssi	VAI ;
+! ipsstsísttotsi:ipsstsísttotsi	VAI ;
+! isaamia’yi:isaamia’yi	VAI ;
+! isáatsimaa:isáatsimaa	VAI ;
+! isahpssi:isahpssi	VAI ;
+! isamonsskaa:isamonsskaa	VAI ;
+! isamssi:isamssi	VAI ;
+! isamssi:isamssi	VAI ;
+! isapahtsimaa:isapahtsimaa	VAI ;
+! isawai’taki:isawai’taki	VAI ;
+! isimia’pssi:isimia’pssi	VAI ;
+! isimíí’poyi:isimíí’poyi	VAI ;
+! isina’si:isina’si	VAI ;
+! isínata’pssi:isínata’pssi	VAI ;
+! isinikimaa:isinikimaa	VAI ;
+! iso’pioohsi:iso’pioohsi	VAI ;
+! isoihtaa:isoihtaa	VAI ;
+! isomaaki:isomaaki	VAI ;
+! isomaananiipitsi:isomaananiipitsi	VAI ;
+! isootsii’kaa:isootsii’kaa	VAI ;
+! isoyiikáapikssi:isoyiikáapikssi	VAI ;
+! issaokaasi:issaokaasi	VAI ;
+! issi:issi	VAI ;
+! issistsii:issistsii	VAI ;
+! isskitsiisaaki:isskitsiisaaki	VAI ;
+! isskoo:isskoo	VAI ;
+! issksi’sipistaa:issksi’sipistaa	VAI ;
+! issksistsaaki:issksistsaaki	VAI ;
+! issksistsoohsi:issksistsoohsi	VAI ;
+! isspiksistawa’si:isspiksistawa’si	VAI ;
+! isspikssi:isspikssi	VAI ;
+! isstohkimaa:isstohkimaa	VAI ;
+! ísstso’kini:ísstso’kini	VAI ;
+! ista’piisi:ista’piisi	VAI ;
+! istáaapssi:istáaapssi	VAI ;
+! istáíaikimm:istáíaikimm	VAI ;
+! istawa’si:istawa’si	VAI ;
+! istawatsimaa:istawatsimaa	VAI ;
+! istó’kao’si:istó’kao’si	VAI ;
+! istohkootohkitópii:istohkootohkitópii	VAI ;
+! istokaasi:istokaasi	VAI ;
+! istotoohsi:istotoohsi	VAI ;
+! istsi’tsaana’pssi:istsi’tsaana’pssi	VAI ;
+! istsipatakkaayi:istsipatakkaayi	VAI ;
+! istssoyi:istssoyi	VAI ;
+! istta’tsi:istta’tsi	VAI ;
+! isttáátsi:isttáátsi	VAI ;
+! isttahkapi:isttahkapi	VAI ;
+! isttami:isttami	VAI ;
+! isttaniokska’si:isttaniokska’si	VAI ;
+! isttapómao’si:isttapómao’si	VAI ;
+! isttayi:isttayi	VAI ;
+! isttohkihkiitaa:isttohkihkiitaa	VAI ;
+! isttohkihtsii:isttohkihtsii	VAI ;
+! isttohkohpa’wani:isttohkohpa’wani	VAI ;
+! isttohkohpi’yi:isttohkohpi’yi	VAI ;
+! isttokiisi:isttokiisi	VAI ;
+! isttókimaa:isttókimaa	VAI ;
+! isttonnihki:isttonnihki	VAI ;
+! isttsá’pssi:isttsá’pssi	VAI ;
+! isttsííka’yi:isttsííka’yi	VAI ;
+! isttsííkinaki:isttsííkinaki	VAI ;
+! isttsííkini:isttsííkini	VAI ;
+! isttsiipssi:isttsiipssi	VAI ;
+! isttsiipsskini:isttsiipsskini	VAI ;
+! isttsiistokíniisi:isttsiistokíniisi	VAI ;
+! isttsiistomi:isttsiistomi	VAI ;
+! isttsiiyáksiisi:isttsiiyáksiisi	VAI ;
+! isttsikááhkimaa:isttsikááhkimaa	VAI ;
+! isttsikáánihka’si:isttsikáánihka’si	VAI ;
+! isttsikihkaki:isttsikihkaki	VAI ;
+! isttsikihkini:isttsikihkini	VAI ;
+! isttsiksika:isttsiksika	VAI ;
+! isttsíkssaisskinaa:isttsíkssaisskinaa	VAI ;
+! isttsimm:isttsimm	VAI ;
+! isttsinaa:isttsinaa	VAI ;
+! isttsisskini:isttsisskini	VAI ;
+! isttsisspi:isttsisspi	VAI ;
+! isttsitaa:isttsitaa	VAI ;
+! isttsittsskimaa:isttsittsskimaa	VAI ;
+! isttskssi:isttskssi	VAI ;
+! isttso’kini:isttso’kini	VAI ;
+! isttsomo’ki:isttsomo’ki	VAI ;
+! isttsóoyi:isttsóoyi	VAI ;
+! isttsóoyihkaa:isttsóoyihkaa	VAI ;
+! isttssoo:isttssoo	VAI ;
+! isttsta’pssi:isttsta’pssi	VAI ;
+! itá’paissi:itá’paissi	VAI ;
+! itá’paohpi’yi:itá’paohpi’yi	VAI ;
+! itai’taki:itai’taki	VAI ;
+! itanii:itanii	VAI ;
+! itaopii:itaopii	VAI ;
+! itapiiyi:itapiiyi	VAI ;
+! itapiiyi:itapiiyi	VAI ;
+! itapiksstssi:itapiksstssi	VAI ;
+! itapipihtaki:itapipihtaki	VAI ;
+! itapísskatsimaa:itapísskatsimaa	VAI ;
+! itapisttotsi:itapisttotsi	VAI ;
+! itapíwa’si:itapíwa’si	VAI ;
+! itapoo:itapoo	VAI ;
+! itapssaataki:itapssaataki	VAI ;
+! itapssi:itapssi	VAI ;
+! ito’tsináan:ito’tsináan	VAI ;
+! itohkítamia’yi:itohkítamia’yi	VAI ;
+! itohkitsikínsstsaaki:itohkitsikínsstsaaki	VAI ;
+! itohtoka’si:itohtoka’si	VAI ;
+! itotoisapanii:itotoisapanii	VAI ;
+! itotoisapóo:itotoisapóo	VAI ;
+! itotoisapssi:itotoisapssi	VAI ;
+! itotoisskskanii:itotoisskskanii	VAI ;
+! itotoisttoo:itotoisttoo	VAI ;
+! itotoitsiihtaa:itotoitsiihtaa	VAI ;
+! itsa’ta:itsa’ta	VAI ;
+! itsiiyihka’si:itsiiyihka’si	VAI ;
+! itsiiyimió’si:itsiiyimió’si	VAI ;
+! itsiiyisi:itsiiyisi	VAI ;
+! itsikapini:itsikapini	VAI ;
+! itsiki’taki:itsiki’taki	VAI ;
+! itsikiihkaa:itsikiihkaa	VAI ;
+! itsikkitáópii:itsikkitáópii	VAI ;
+! itsiksina:itsiksina	VAI ;
+! itsikssi:itsikssi	VAI ;
+! itsiksskini:itsiksskini	VAI ;
+! itsimi:itsimi	VAI ;
+! itsimsskiisi:itsimsskiisi	VAI ;
+! itsina’pssi:itsina’pssi	VAI ;
+! itsinika’si:itsinika’si	VAI ;
+! itsiniki:itsiniki	VAI ;
+! itsinssi:itsinssi	VAI ;
+! itsipsstsó’kioohsi:itsipsstsó’kioohsi	VAI ;
+! itsísoipiitsiihtaa:itsísoipiitsiihtaa	VAI ;
+! itsisttsima’si:itsisttsima’si	VAI ;
+! itskaitsi:itskaitsi	VAI ;
+! itsksí’poyi:itsksí’poyi	VAI ;
+! itsó’kini:itsó’kini	VAI ;
+! itsówa’pssi:itsówa’pssi	VAI ;
+! itsówaakiiyi:itsówaakiiyi	VAI ;
+! itssapa’páó’kaasi:itssapa’páó’kaasi	VAI ;
+! itssapihtsii:itssapihtsii	VAI ;
+! itsskaa:itsskaa	VAI ;
+! itsskaa:itsskaa	VAI ;
+! itssoksiisi:itssoksiisi	VAI ;
+! itssoyottaksi:itssoyottaksi	VAI ;
+! itsssokihka’si:itsssokihka’si	VAI ;
+! itsstoyiimi:itsstoyiimi	VAI ;
+! itsstsipaaniststsoohsi:itsstsipaaniststsoohsi	VAI ;
+! ittahsi:ittahsi	VAI ;
+! ittahsiinihki:ittahsiinihki	VAI ;
+! ittahsoohkomi:ittahsoohkomi	VAI ;
+! iyaa’ksisa:iyaa’ksisa	VAI ;
+! iyii:iyii	VAI ;
+! kiihtsipimi:kiihtsipimi	VAI ;
+! kinni:kinni	VAI ;
+! ksikksinaa:ksikksinaa	VAI ;
+! ksíssta’pssi:ksíssta’pssi	VAI ;
+! máaksisttsomo’ki:máaksisttsomo’ki	VAI ;
+! maka’pssi:maka’pssi	VAI ;
+! makámo’ta’pssi:makámo’ta’pssi	VAI ;
+! maohksinaa:maohksinaa	VAI ;
+! matsissi:matsissi	VAI ;
+! matsowá’pssi:matsowá’pssi	VAI ;
+! máttsa’pssi:máttsa’pssi	VAI ;
+! mi’ksinaa:mi’ksinaa	VAI ;
+! misspikii:misspikii	VAI ;
+! náai:náai	VAI ;
+! naanistsimmaa:naanistsimmaa	VAI ;
+! ni’tókskaa:ni’tókskaa	VAI ;
+! ni’tsitaopi:ni’tsitaopi	VAI ;
+! níítsanaamma:níítsanaamma	VAI ;
+! niitsíítapi:niitsíítapi	VAI ;
+! niitsímm:niitsímm	VAI ;
+! niitsitsstsímini:niitsitsstsímini	VAI ;
+! niitsowá’pssi:niitsowá’pssi	VAI ;
+! nisitoyi:nisitoyi	VAI ;
+! noohkíítsi:noohkíítsi	VAI ;
+! o’káaattsoohsi:o’káaattsoohsi	VAI ;
+! o’kaasi:o’kaasi	VAI ;
+! o’kiáapikssattstaa:o’kiáapikssattstaa	VAI ;
+! o’kiáapikssi:o’kiáapikssi	VAI ;
+! o’koaa:o’koaa	VAI ;
+! o’komi:o’komi	VAI ;
+! o’koo:o’koo	VAI ;
+! o’koo:o’koo	VAI ;
+! o’kotónaayoohtohkoohsi:o’kotónaayoohtohkoohsi	VAI ;
+! o’kotonaitapiyi:o’kotonaitapiyi	VAI ;
+! o’ksipohsi:o’ksipohsi	VAI ;
+! o’ksisakoohpommaa:o’ksisakoohpommaa	VAI ;
+! o’ksoyi:o’ksoyi	VAI ;
+! o’kstsikimi:o’kstsikimi	VAI ;
+! o’kstsikimio’toohsi:o’kstsikimio’toohsi	VAI ;
+! o’kstsíksinaa:o’kstsíksinaa	VAI ;
+! o’má’pimaa:o’má’pimaa	VAI ;
+! o’mikína’si:o’mikína’si	VAI ;
+! o’mohpiyi:o’mohpiyi	VAI ;
+! o’psskaa:o’psskaa	VAI ;
+! o’ta’paissi:o’ta’paissi	VAI ;
+! o’ta’paitapiiyi:o’ta’paitapiiyi	VAI ;
+! o’táaattsiiyi:o’táaattsiiyi	VAI ;
+! o’tááo:o’tááo	VAI ;
+! o’takohkiaaki:o’takohkiaaki	VAI ;
+! o’taksiinikimm:o’taksiinikimm	VAI ;
+! o’taksisttotsi:o’taksisttotsi	VAI ;
+! o’takssi:o’takssi	VAI ;
+! o’tama’pssi:o’tama’pssi	VAI ;
+! o’tamiaatayayi:o’tamiaatayayi	VAI ;
+! o’tamínnisi’yi:o’tamínnisi’yi	VAI ;
+! o’taminnisoo:o’taminnisoo	VAI ;
+! o’tamisoo:o’tamisoo	VAI ;
+! o’tamisskapi:o’tamisskapi	VAI ;
+! o’tapootsi:o’tapootsi	VAI ;
+! o’tapootsi:o’tapootsi	VAI ;
+! o’tokiaaki:o’tokiaaki	VAI ;
+! o’tokonnaayi:o’tokonnaayi	VAI ;
+! o’too:o’too	VAI ;
+! o’totama’pssi:o’totama’pssi	VAI ;
+! o’totamanisi:o’totamanisi	VAI ;
+! o’totamssi:o’totamssi	VAI ;
+! o’towá’pssi:o’towá’pssi	VAI ;
+! o’towa’pssi:o’towa’pssi	VAI ;
+! o’tsimaa:o’tsimaa	VAI ;
+! o’tsinááni:o’tsinááni	VAI ;
+! o’tsipikkssi:o’tsipikkssi	VAI ;
+! o’tsisii:o’tsisii	VAI ;
+! o’tsistaa:o’tsistaa	VAI ;
+! o’tsistaapikssi:o’tsistaapikssi	VAI ;
+! o’tsisttotsi:o’tsisttotsi	VAI ;
+! o’tsitsiki’taki:o’tsitsiki’taki	VAI ;
+! o’tsitska’pssi:o’tsitska’pssi	VAI ;
+! o’tsitskóó:o’tsitskóó	VAI ;
+! o’tssata’pssi:o’tssata’pssi	VAI ;
+! o’tssopokiiyi:o’tssopokiiyi	VAI ;
+! ohka’pssi:ohka’pssi	VAI ;
+! ohkiimi:ohkiimi	VAI ;
+! ohkinayo’si:ohkinayo’si	VAI ;
+! ohkinimmi:ohkinimmi	VAI ;
+! ohkinni:ohkinni	VAI ;
+! ohkinohkomi:ohkinohkomi	VAI ;
+! ohkipistaa:ohkipistaa	VAI ;
+ohkisskaa:ohkisskaa	VAI  ;
+! ohkitópii:ohkitópii	VAI ;
+! ohkitsika:ohkitsika	VAI ;
+! ohkitstsi’si:ohkitstsi’si	VAI ;
+! ohko’kakiniáapikssi:ohko’kakiniáapikssi	VAI ;
+! ohko’tsimaa:ohko’tsimaa	VAI ;
+! ohkohtaa:ohkohtaa	VAI ;
+! ohkoi’taki:ohkoi’taki	VAI ;
+! ohkoi’taki:ohkoi’taki	VAI ;
+! ohkoiki:ohkoiki	VAI ;
+! ohkoimmohsi:ohkoimmohsi	VAI ;
+! ohkoinááni:ohkoinááni	VAI ;
+! ohkoinnisoohkoyi:ohkoinnisoohkoyi	VAI ;
+! ohkoissi:ohkoissi	VAI ;
+! ohkoisstaki:ohkoisstaki	VAI ;
+! ohkoitapiiyi:ohkoitapiiyi	VAI ;
+! ohkomi:ohkomi	VAI ;
+! ohkomihka’si:ohkomihka’si	VAI ;
+! ohkomisskinaaki:ohkomisskinaaki	VAI ;
+! ohkomisskini:ohkomisskini	VAI ;
+! ohkómssi:ohkómssi	VAI ;
+! ohkona’pssi:ohkona’pssi	VAI ;
+! ohkoní’poyi:ohkoní’poyi	VAI ;
+! ohkoni’tsiihtaa:ohkoni’tsiihtaa	VAI ;
+! ohkooksiniimi:ohkooksiniimi	VAI ;
+! ohkoonimaa:ohkoonimaa	VAI ;
+! ohkóotsi:ohkóotsi	VAI ;
+! ohkowa’pssi:ohkowa’pssi	VAI ;
+! ohkowaatsi:ohkowaatsi	VAI ;
+! ohkoyi’kso’koyi:ohkoyi’kso’koyi	VAI ;
+! ohkoyikii:ohkoyikii	VAI ;
+! ohksisstaa:ohksisstaa	VAI ;
+! ohksisstaa:ohksisstaa	VAI ;
+! ohksisstaki:ohksisstaki	VAI ;
+! ohksskaa:ohksskaa	VAI ;
+! ohksssaaninaa:ohksssaaninaa	VAI ;
+! ohpa’taa:ohpa’taa	VAI ;
+! ohpa’wani:ohpa’wani	VAI ;
+! ohpáakskiniihtaa:ohpáakskiniihtaa	VAI ;
+! ohpaaninnimaa:ohpaaninnimaa	VAI ;
+! ohpáaninnimaa:ohpáaninnimaa	VAI ;
+! ohpáataki:ohpáataki	VAI ;
+! ohpaatsímoyihkaa:ohpaatsímoyihkaa	VAI ;
+! ohpai’piiyi:ohpai’piiyi	VAI ;
+! ohpáí’sksistóniisi:ohpáí’sksistóniisi	VAI ;
+! ohpakóyi’saki:ohpakóyi’saki	VAI ;
+! ohpakoyi’soyi:ohpakoyi’soyi	VAI ;
+! ohpapiiyi:ohpapiiyi	VAI ;
+! ohpáttsoohsi:ohpáttsoohsi	VAI ;
+! ohpi’si:ohpi’si	VAI ;
+! ohpihka’si:ohpihka’si	VAI ;
+! ohpihtaa:ohpihtaa	VAI ;
+! ohpiiyistotoohsi:ohpiiyistotoohsi	VAI ;
+! ohpikíípaisstsimi:ohpikíípaisstsimi	VAI ;
+! ohpikiipaisstsimi’si:ohpikiipaisstsimi’si	VAI ;
+! ohpiksisa’si:ohpiksisa’si	VAI ;
+! ohpitapiiyi:ohpitapiiyi	VAI ;
+! ohpo’kiaa’paissi:ohpo’kiaa’paissi	VAI ;
+! ohpo’kiaanikkohksi:ohpo’kiaanikkohksi	VAI ;
+! ohpo’kiaasai’ni:ohpo’kiaasai’ni	VAI ;
+! ohpo’kiiyoo:ohpo’kiiyoo	VAI ;
+! ohpo’sim:ohpo’sim	VAI ;
+! ohpokápsskaa:ohpokápsskaa	VAI ;
+! ohpokihtssimm:ohpokihtssimm	VAI ;
+! ohpokimi:ohpokimi	VAI ;
+! ohpokohkimaami:ohpokohkimaami	VAI ;
+! ohpokssi:ohpokssi	VAI ;
+! ohpommaa:ohpommaa	VAI ;
+! ohpowaanssi:ohpowaanssi	VAI ;
+! ohpsskiniihtaa:ohpsskiniihtaa	VAI ;
+! ohsiihkaa:ohsiihkaa	VAI ;
+! ohsistsi:ohsistsi	VAI ;
+! ohsistsiniimsstaa:ohsistsiniimsstaa	VAI ;
+! ohsistssin:ohsistssin	VAI ;
+! ohtamm:ohtamm	VAI ;
+! ohtámohsi:ohtámohsi	VAI ;
+! ohtáóhsokoyi:ohtáóhsokoyi	VAI ;
+! ohto’tsipakkio’taki:ohto’tsipakkio’taki	VAI ;
+! ohtohkinni:ohtohkinni	VAI ;
+! ohtohkitoo:ohtohkitoo	VAI ;
+! ohtohkoyikii:ohtohkoyikii	VAI ;
+! ohtohpani’kahtaa:ohtohpani’kahtaa	VAI ;
+! ohtoi’tsii:ohtoi’tsii	VAI ;
+! ohtóísskimaa:ohtóísskimaa	VAI ;
+! ohtomaahkaa:ohtomaahkaa	VAI ;
+! ohtooki:ohtooki	VAI ;
+! ohtookimii:ohtookimii	VAI ;
+! ohtookisakko:ohtookisakko	VAI ;
+! ohtookoapsskaa:ohtookoapsskaa	VAI ;
+! ohtoonimaa:ohtoonimaa	VAI ;
+! ohtotóísskskomaa:ohtotóísskskomaa	VAI ;
+! ohtowoo:ohtowoo	VAI ;
+! ohtsiki:ohtsiki	VAI ;
+! ohtsikii:ohtsikii	VAI ;
+! ohtsimaa:ohtsimaa	VAI ;
+! ohtsinio’ohkoyi:ohtsinio’ohkoyi	VAI ;
+! ohtsinssoyi:ohtsinssoyi	VAI ;
+! ohtsipottskaa:ohtsipottskaa	VAI ;
+! ohtsissitapii:ohtsissitapii	VAI ;
+! ohtsísstsi’kini:ohtsísstsi’kini	VAI ;
+! ohtsisttsisskini:ohtsisttsisskini	VAI ;
+! ohtsitomma’piimi:ohtsitomma’piimi	VAI ;
+! ohtsitskanii:ohtsitskanii	VAI ;
+! ohtssapoo:ohtssapoo	VAI ;
+! oka’pí’poyi:oka’pí’poyi	VAI ;
+! oka’pihtsimi:oka’pihtsimi	VAI ;
+! oká’pssi:oká’pssi	VAI ;
+! okaa:okaa	VAI ;
+! okaki:okaki	VAI ;
+! okakiaanii:okakiaanii	VAI ;
+! okakihtsimaa:okakihtsimaa	VAI ;
+! okakio’si:okakio’si	VAI ;
+! okamanii:okamanii	VAI ;
+! okamo’ta’pssi:okamo’ta’pssi	VAI ;
+! okamo’tsipokaa:okamo’tsipokaa	VAI ;
+! ókamo’tsitapiyi:ókamo’tsitapiyi	VAI ;
+! oki’kaa:oki’kaa	VAI ;
+! okihka’si:okihka’si	VAI ;
+! okitsiihtaa:okitsiihtaa	VAI ;
+! okitskaa:okitskaa	VAI ;
+! oko’si:oko’si	VAI ;
+! ókohkoyi:ókohkoyi	VAI ;
+! okoopihkaa:okoopihkaa	VAI ;
+! okooyi:okooyi	VAI ;
+! okooysskaa:okooysskaa	VAI ;
+! okoyi:okoyi	VAI ;
+! oksikinaki:oksikinaki	VAI ;
+! oksina:oksina	VAI ;
+! oksini:oksini	VAI ;
+! oksinihka’siimi:oksinihka’siimi	VAI ;
+! óksiniimi:óksiniimi	VAI ;
+! oksisawoo:oksisawoo	VAI ;
+! oksisstssi:oksisstssi	VAI ;
+! okska’si:okska’si	VAI ;
+! okskoipoyáttstaa:okskoipoyáttstaa	VAI ;
+! okskoowóo:okskoowóo	VAI ;
+! okskówóo:okskówóo	VAI ;
+! oksoohsi:oksoohsi	VAI ;
+! okspainnohkio’taki:okspainnohkio’taki	VAI ;
+! okspimi:okspimi	VAI ;
+! okstaki:okstaki	VAI ;
+! okstsimaa:okstsimaa	VAI ;
+! omááhkaa:omááhkaa	VAI ;
+! omahkimi:omahkimi	VAI ;
+! omahksi:omahksi	VAI ;
+! omai’taki:omai’taki	VAI ;
+! omaimmohsi:omaimmohsi	VAI ;
+! omaissapi:omaissapi	VAI ;
+! omaisstsiiyi:omaisstsiiyi	VAI ;
+! omaitsimihki:omaitsimihki	VAI ;
+! omanii:omanii	VAI ;
+! omaohksskihkaa:omaohksskihkaa	VAI ;
+! omáópii:omáópii	VAI ;
+! omatanii:omatanii	VAI ;
+! omatsiiyissi:omatsiiyissi	VAI ;
+! omatskaohsi:omatskaohsi	VAI ;
+! omi’kinaa:omi’kinaa	VAI ;
+! omiá’nistsípssaaki:omiá’nistsípssaaki	VAI ;
+! omii:omii	VAI ;
+! omiihkaa:omiihkaa	VAI ;
+! omiisi:omiisi	VAI ;
+! omííyisskaa:omííyisskaa	VAI ;
+! omino’toohsi:omino’toohsi	VAI ;
+! omitao’kaasi:omitao’kaasi	VAI ;
+! omitsikkinii:omitsikkinii	VAI ;
+! omó’tsaaki:omó’tsaaki	VAI ;
+! omo’tstaa:omo’tstaa	VAI ;
+! omoi’sskimaa:omoi’sskimaa	VAI ;
+! omoi’tsi:omoi’tsi	VAI ;
+! omokapistaa:omokapistaa	VAI ;
+! omokinsstsaaki:omokinsstsaaki	VAI ;
+! omoonaka’si:omoonaka’si	VAI ;
+! omoonimaa:omoonimaa	VAI ;
+! omottotsi:omottotsi	VAI ;
+! omowa’kimaa:omowa’kimaa	VAI ;
+! omowoo:omowoo	VAI ;
+! omoysskimaa:omoysskimaa	VAI ;
+! omsspika’pssi:omsspika’pssi	VAI ;
+! omsstaki:omsstaki	VAI ;
+! omsstskiihtsii:omsstskiihtsii	VAI ;
+! ona’pssi:ona’pssi	VAI ;
+! onaasi:onaasi	VAI ;
+! onakisttsi’taki:onakisttsi’taki	VAI ;
+! onamatsstaa:onamatsstaa	VAI ;
+! onataa:onataa	VAI ;
+! oni’taki:oni’taki	VAI ;
+! onnatohsi:onnatohsi	VAI ;
+! onnohkata’pssi:onnohkata’pssi	VAI ;
+! onnohkatsi’taki:onnohkatsi’taki	VAI ;
+! onootapissapi:onootapissapi	VAI ;
+! onootsi:onootsi	VAI ;
+! onootsi:onootsi	VAI ;
+! onootsski:onootsski	VAI ;
+! onootsskissapi:onootsskissapi	VAI ;
+! oohkohtsskaa:oohkohtsskaa	VAI ;
+! ookaa:ookaa	VAI ;
+! ookataki:ookataki	VAI ;
+! ookitsiihtaa:ookitsiihtaa	VAI ;
+! ootaa:ootaa	VAI ;
+! ootaa:ootaa	VAI ;
+! ooyattsstaa:ooyattsstaa	VAI ;
+! ooyi:ooyi	VAI ;
+! ooyi:ooyi	VAI ;
+! ooyi’kaa:ooyi’kaa	VAI ;
+! ooyiitsi’taki:ooyiitsi’taki	VAI ;
+! ooyissi:ooyissi	VAI ;
+! ooyo’si:ooyo’si	VAI ;
+! opa’taa:opa’taa	VAI ;
+! opáa’taa:opáa’taa	VAI ;
+! opahkimiksáaki:opahkimiksáaki	VAI ;
+! opahkiminnaki:opahkiminnaki	VAI ;
+! opakííyi:opakííyi	VAI ;
+! opaksísttohkihtsii:opaksísttohkihtsii	VAI ;
+! opaksísttohkssi:opaksísttohkssi	VAI ;
+! opamoo:opamoo	VAI ;
+! opasoo:opasoo	VAI ;
+! opasoo:opasoo	VAI ;
+! opasskoyaapikssi:opasskoyaapikssi	VAI ;
+! opi:opi	VAI ;
+! opiaapikkssi:opiaapikkssi	VAI ;
+! opii:opii	VAI ;
+! opiinaki:opiinaki	VAI ;
+! opisaa:opisaa	VAI ;
+! opisttoksisaanópii:opisttoksisaanópii	VAI ;
+! opitsa’paohpi’yi:opitsa’paohpi’yi	VAI ;
+! opitsisowoo:opitsisowoo	VAI ;
+! opitsskimiksáaki:opitsskimiksáaki	VAI ;
+! opóniaaki:opóniaaki	VAI ;
+! opoonihkamm:opoonihkamm	VAI ;
+! opotssi:opotssi	VAI ;
+! opowaa’pssi:opowaa’pssi	VAI ;
+! opowaoo:opowaoo	VAI ;
+! ota’si:ota’si	VAI ;
+! otaahsowaa:otaahsowaa	VAI ;
+! otáakissi:otáakissi	VAI ;
+! otaatsimi:otaatsimi	VAI ;
+! otahksiniisi:otahksiniisi	VAI ;
+! otahpiaaki:otahpiaaki	VAI ;
+! otahsohkiaaki:otahsohkiaaki	VAI ;
+! otahsohkiáapikssi:otahsohkiáapikssi	VAI ;
+! otahsoo:otahsoo	VAI ;
+! otahsskaohsi:otahsskaohsi	VAI ;
+! otaimi:otaimi	VAI ;
+! otoinahkimaa:otoinahkimaa	VAI ;
+! otoinnaihtsiiyi:otoinnaihtsiiyi	VAI ;
+! otonaa’ki:otonaa’ki	VAI ;
+! otonaa:otonaa	VAI ;
+! otonaa:otonaa	VAI ;
+! otoohkohtaa:otoohkohtaa	VAI ;
+! otoohsi:otoohsi	VAI ;
+! otoomsoohkomi:otoomsoohkomi	VAI ;
+! otoopaa:otoopaa	VAI ;
+! otoowahsoohpommaa:otoowahsoohpommaa	VAI ;
+! otooyitsi’taki:otooyitsi’taki	VAI ;
+! ototaa:ototaa	VAI ;
+! otowaanisoo:otowaanisoo	VAI ;
+! otowoohkaa:otowoohkaa	VAI ;
+! otoyiimsskaa:otoyiimsskaa	VAI ;
+! otsi:otsi	VAI ;
+! otsi’tsiiyi:otsi’tsiiyi	VAI ;
+! otsikihtaa:otsikihtaa	VAI ;
+! otsimihkiaattsiiyi:otsimihkiaattsiiyi	VAI ;
+! otsimotaa:otsimotaa	VAI ;
+! otsisa’kaa:otsisa’kaa	VAI ;
+! ottaki:ottaki	VAI ;
+! ottsiimi:ottsiimi	VAI ;
+! ottsiimsskaa:ottsiimsskaa	VAI ;
+! oy’ssi:oy’ssi	VAI ;
+! oyiisskimaa:oyiisskimaa	VAI ;
+! oyimmohsi:oyimmohsi	VAI ;
+! oyitsi’taki:oyitsi’taki	VAI ;
+! oyitsi’taki:oyitsi’taki	VAI ;
+! paahkóóhsinihkaa:paahkóóhsinihkaa	VAI ;
+! sa’kapaao:sa’kapaao	VAI ;
+! sa’kapisttotsi:sa’kapisttotsi	VAI ;
+! sa’ksisakimaa:sa’ksisakimaa	VAI ;
+! sa’kssoyi:sa’kssoyi	VAI ;
+! sa’naa:sa’naa	VAI ;
+! saaami:saaami	VAI ;
+! sááamisttotsi:sááamisttotsi	VAI ;
+! saahksstssi:saahksstssi	VAI ;
+! saakoapinihkaa:saakoapinihkaa	VAI ;
+! saakohsoyi:saakohsoyi	VAI ;
+! saakoowotsikkinihkaa:saakoowotsikkinihkaa	VAI ;
+! saaksinattsoohsi:saaksinattsoohsi	VAI ;
+! saaksini:saaksini	VAI ;
+! sáami:sáami	VAI ;
+! saao’taki:saao’taki	VAI ;
+! saapohpi’yi:saapohpi’yi	VAI ;
+! saata’pssi:saata’pssi	VAI ;
+! saataki:saataki	VAI ;
+! saatstsaa:saatstsaa	VAI ;
+! saaya’pssi:saaya’pssi	VAI ;
+! saayii:saayii	VAI ;
+! saayiitapiiyi:saayiitapiiyi	VAI ;
+! sahpió’kaasi:sahpió’kaasi	VAI ;
+! sai’koyi:sai’koyi	VAI ;
+! sai’piyi:sai’piyi	VAI ;
+! sai’sapitapííyi:sai’sapitapííyi	VAI ;
+! sai’sokkita’pssi:sai’sokkita’pssi	VAI ;
+! saihpiyi:saihpiyi	VAI ;
+! saikinnssi:saikinnssi	VAI ;
+! saiksisaa:saiksisaa	VAI ;
+! saiksisttoo:saiksisttoo	VAI ;
+! sainakoi’sstaa:sainakoi’sstaa	VAI ;
+! saipioohsi:saipioohsi	VAI ;
+! saipokomsstsimaa:saipokomsstsimaa	VAI ;
+! saipsstááki:saipsstááki	VAI ;
+! saipstaahkaa:saipstaahkaa	VAI ;
+! saipstaahkohki:saipstaahkohki	VAI ;
+! saisskihssoyi:saisskihssoyi	VAI ;
+! saisskinaa:saisskinaa	VAI ;
+! saisskítsimaa:saisskítsimaa	VAI ;
+! saisttoo:saisttoo	VAI ;
+! saisttsipatákkaayayi:saisttsipatákkaayayi	VAI ;
+! saitami:saitami	VAI ;
+! saittsíkaapiksistaki:saittsíkaapiksistaki	VAI ;
+! sakaka’pssi:sakaka’pssi	VAI ;
+! sakakohkomi:sakakohkomi	VAI ;
+! sakonimmaa:sakonimmaa	VAI ;
+! saksi:saksi	VAI ;
+! sánamaa:sánamaa	VAI ;
+! sao’ohka’pssi:sao’ohka’pssi	VAI ;
+! sao’ohpísstsa’pssi:sao’ohpísstsa’pssi	VAI ;
+! saohkiaaki:saohkiaaki	VAI ;
+! saokihtsii:saokihtsii	VAI ;
+! saokítsiisi:saokítsiisi	VAI ;
+! saoksíkaakii:saoksíkaakii	VAI ;
+! saoksikínsstsaaki:saoksikínsstsaaki	VAI ;
+! saotsikkinihkaa:saotsikkinihkaa	VAI ;
+! saottsisskaa:saottsisskaa	VAI ;
+! sapa’pssi:sapa’pssi	VAI ;
+! sapá’tsima’pssi:sapá’tsima’pssi	VAI ;
+! sapa’tstaa:sapa’tstaa	VAI ;
+! sapáakáó’pii:sapáakáó’pii	VAI ;
+! sapáakihtaa:sapáakihtaa	VAI ;
+! sapahtsimaa:sapahtsimaa	VAI ;
+! sapanii:sapanii	VAI ;
+! sapanistsimm:sapanistsimm	VAI ;
+! sapasai’ni:sapasai’ni	VAI ;
+! sapasai’ni:sapasai’ni	VAI ;
+! sapi’kínamaa:sapi’kínamaa	VAI ;
+! sapi’tsii:sapi’tsii	VAI ;
+! sapihkahtaa:sapihkahtaa	VAI ;
+! sapihtsimaa:sapihtsimaa	VAI ;
+! sapiipommaa:sapiipommaa	VAI ;
+! sapika’si:sapika’si	VAI ;
+! sapikamaa:sapikamaa	VAI ;
+! sapikamatsstaa:sapikamatsstaa	VAI ;
+! sapikinao’taki:sapikinao’taki	VAI ;
+! sapo’kinihkaa:sapo’kinihkaa	VAI ;
+! sápohkimaa:sápohkimaa	VAI ;
+! saponsstaa:saponsstaa	VAI ;
+! sapoo:sapoo	VAI ;
+! sapopii:sapopii	VAI ;
+! sapskaohsi:sapskaohsi	VAI ;
+! sapspihkaa:sapspihkaa	VAI ;
+! satáí’poyi:satáí’poyi	VAI ;
+! sataissi:sataissi	VAI ;
+! satsinísstaki:satsinísstaki	VAI ;
+! sattsikohtaa:sattsikohtaa	VAI ;
+! sawohkaanii:sawohkaanii	VAI ;
+! sawohkoyi’taki:sawohkoyi’taki	VAI ;
+! sawohpisstsa’pssi:sawohpisstsa’pssi	VAI ;
+! sayááhkimaa:sayááhkimaa	VAI ;
+! sayi:sayi	VAI ;
+! sayi’tsimaa:sayi’tsimaa	VAI ;
+! sayiipa’si:sayiipa’si	VAI ;
+! sayínakoyi:sayínakoyi	VAI ;
+! sayínsskaka’pssi:sayínsskaka’pssi	VAI ;
+! sayippoma’pssi:sayippoma’pssi	VAI ;
+! sayíppomiksimsstaa:sayíppomiksimsstaa	VAI ;
+! sayitapiiyi:sayitapiiyi	VAI ;
+! si’kaanomaahkaa:si’kaanomaahkaa	VAI ;
+! si’kióóhsi:si’kióóhsi	VAI ;
+! si’kopiaanii:si’kopiaanii	VAI ;
+! siikaasi:siikaasi	VAI ;
+! siiksiksaapi’maa:siiksiksaapi’maa	VAI ;
+! síini’taki:síini’taki	VAI ;
+! siistonaa’pssi:siistonaa’pssi	VAI ;
+! siitami:siitami	VAI ;
+! sika’pssi:sika’pssi	VAI ;
+! sikahkapiniáápikssi:sikahkapiniáápikssi	VAI ;
+! sikahkihka’si:sikahkihka’si	VAI ;
+! sikapistaa:sikapistaa	VAI ;
+! sikimi:sikimi	VAI ;
+! sikkohsaki:sikkohsaki	VAI ;
+! siksi’poyi:siksi’poyi	VAI ;
+! siksikimssimaa:siksikimssimaa	VAI ;
+! siksináámm:siksináámm	VAI ;
+! simsskini:simsskini	VAI ;
+! sínaakia’tsii:sínaakia’tsii	VAI ;
+! sinái’tômiisi:sinái’tômiisi	VAI ;
+! sínaohsi:sínaohsi	VAI ;
+! sisaapittaki:sisaapittaki	VAI ;
+! sisákksskii:sisákksskii	VAI ;
+! sísapo’ka’pssi:sísapo’ka’pssi	VAI ;
+! sisapo’koo:sisapo’koo	VAI ;
+! sisiksináani:sisiksináani	VAI ;
+! sisoyi:sisoyi	VAI ;
+! sisoyi:sisoyi	VAI ;
+! sistsikoo:sistsikoo	VAI ;
+! sistsíkoo:sistsíkoo	VAI ;
+! sistsiksskiaaki:sistsiksskiaaki	VAI ;
+! sistsikstskaa:sistsikstskaa	VAI ;
+! sitokoo:sitokoo	VAI ;
+! sohkataksaapini:sohkataksaapini	VAI ;
+! sohkoyissi:sohkoyissi	VAI ;
+! soi’sstsikaohsi:soi’sstsikaohsi	VAI ;
+! soi’stsípikiaaki:soi’stsípikiaaki	VAI ;
+! soka’pssi:soka’pssi	VAI ;
+! sokai’piiyi:sokai’piiyi	VAI ;
+! sokimmohsi:sokimmohsi	VAI ;
+! sokottaa:sokottaa	VAI ;
+sokoyii:sokoyii	VAI  ;
+! soksistawa’si:soksistawa’si	VAI ;
+! soksistomi:soksistomi	VAI ;
+! somaananíí’poyi:somaananíí’poyi	VAI ;
+! somaananiipitsi:somaananiipitsi	VAI ;
+! somo’si:somo’si	VAI ;
+! soo:soo	VAI ;
+! soohtsissi:soohtsissi	VAI ;
+! sóómihtsoohsi:sóómihtsoohsi	VAI ;
+! sóomini:sóomini	VAI ;
+! soopoyóóyihkaa:soopoyóóyihkaa	VAI ;
+! sootamsstaa:sootamsstaa	VAI ;
+! sootokiaawattsa’pssi:sootokiaawattsa’pssi	VAI ;
+! sootomaki:sootomaki	VAI ;
+! sootsi’kaa:sootsi’kaa	VAI ;
+! sooyinnimaa:sooyinnimaa	VAI ;
+! sopoksistawa’si:sopoksistawa’si	VAI ;
+! sopomitaka’si:sopomitaka’si	VAI ;
+! sopomsstaa:sopomsstaa	VAI ;
+! sopowahtsi’si:sopowahtsi’si	VAI ;
+! sopowatsistotoohsi:sopowatsistotoohsi	VAI ;
+! sopoya’payoohtsimi:sopoya’payoohtsimi	VAI ;
+! sopoya’pssi:sopoya’pssi	VAI ;
+! sopoyi:sopoyi	VAI ;
+! sopoyiipitsi:sopoyiipitsi	VAI ;
+! sotánikimaa:sotánikimaa	VAI ;
+! sowaanopii:sowaanopii	VAI ;
+! sowóo:sowóo	VAI ;
+! sowottsi:sowottsi	VAI ;
+! soyisi:soyisi	VAI ;
+! soyoohpi’yi:soyoohpi’yi	VAI ;
+! ssaahsinaa:ssaahsinaa	VAI ;
+! ssaaksisttakaaki:ssaaksisttakaaki	VAI ;
+! ssaki’taki:ssaki’taki	VAI ;
+! ssanisttsi:ssanisttsi	VAI ;
+! ssapi:ssapi	VAI ;
+! ssiihkinááwaatsi:ssiihkinááwaatsi	VAI ;
+! ssiikaasi:ssiikaasi	VAI ;
+! ssiikaawaatsi:ssiikaawaatsi	VAI ;
+! ssiikiniistsi:ssiikiniistsi	VAI ;
+! ssiistsi:ssiistsi	VAI ;
+! ssikoo:ssikoo	VAI ;
+! ssikopii:ssikopii	VAI ;
+! ssikotoyiipasskaa:ssikotoyiipasskaa	VAI ;
+! ssiksínaasi:ssiksínaasi	VAI ;
+! ssímihkaa:ssímihkaa	VAI ;
+! ssisskiitsi:ssisskiitsi	VAI ;
+! ssisskioohsi:ssisskioohsi	VAI ;
+! ssitsimaa:ssitsimaa	VAI ;
+! sskaa:sskaa	VAI ;
+! sskáakanii:sskáakanii	VAI ;
+! sskai’taki:sskai’taki	VAI ;
+! sskao’mitaoopikkini:sskao’mitaoopikkini	VAI ;
+! sski’tstaa:sski’tstaa	VAI ;
+! sskíinaa:sskíinaa	VAI ;
+! sskimaa:sskimaa	VAI ;
+! sskitapoo:sskitapoo	VAI ;
+! sskitssi:sskitssi	VAI ;
+! sskohpi:sskohpi	VAI ;
+! sskohtoistotoohsi:sskohtoistotoohsi	VAI ;
+! sskohtoitapiiyi:sskohtoitapiiyi	VAI ;
+! sskohtoyimohsi:sskohtoyimohsi	VAI ;
+! sskonaki:sskonaki	VAI ;
+! sskonáta’pssi:sskonáta’pssi	VAI ;
+! sskoo:sskoo	VAI ;
+! ssksi:ssksi	VAI ;
+! ssksikayaa:ssksikayaa	VAI ;
+! ssksinimá’tstohki:ssksinimá’tstohki	VAI ;
+! ssksipoaoo:ssksipoaoo	VAI ;
+! sskskomaa:sskskomaa	VAI ;
+! ssksksinihka:ssksksinihka	VAI ;
+! ssoka’pssi:ssoka’pssi	VAI ;
+! ssoksi:ssoksi	VAI ;
+! ssoohkimaa:ssoohkimaa	VAI ;
+! ssoohsi:ssoohsi	VAI ;
+! sspíípioohsi:sspíípioohsi	VAI ;
+! sspikinsstsaaki:sspikinsstsaaki	VAI ;
+! sspiksíkkohpai’piiyi:sspiksíkkohpai’piiyi	VAI ;
+! sspikssi:sspikssi	VAI ;
+! sspimi:sspimi	VAI ;
+! sspitaa:sspitaa	VAI ;
+! sspiwóo:sspiwóo	VAI ;
+! sspommihtaa:sspommihtaa	VAI ;
+! sspomóo:sspomóo	VAI ;
+! sspssi:sspssi	VAI ;
+! sstaa:sstaa	VAI ;
+! sstaa:sstaa	VAI ;
+! sstaahkahtaa:sstaahkahtaa	VAI ;
+! sstáásiisi:sstáásiisi	VAI ;
+! sstáásimmohsi:sstáásimmohsi	VAI ;
+! sstahpíkihka’si:sstahpíkihka’si	VAI ;
+! sstahpíkimmohsi:sstahpíkimmohsi	VAI ;
+! sstahpikssi:sstahpikssi	VAI ;
+! sstaoka’tskaa:sstaoka’tskaa	VAI ;
+! sstatanssi:sstatanssi	VAI ;
+! sstatsska’si:sstatsska’si	VAI ;
+! sstayi:sstayi	VAI ;
+! ssto’si:ssto’si	VAI ;
+! sstoksiinao’si:sstoksiinao’si	VAI ;
+! sstoopii:sstoopii	VAI ;
+! sstoyíímsstaa:sstoyíímsstaa	VAI ;
+! sstoyísi:sstoyísi	VAI ;
+! sstsaaka’si:sstsaaka’si	VAI ;
+! sstsiihkiitaa:sstsiihkiitaa	VAI ;
+! sstsiipihtaki:sstsiipihtaki	VAI ;
+! sstsiisi:sstsiisi	VAI ;
+! sstsiiyi:sstsiiyi	VAI ;
+! sstsikoni’kaki:sstsikoni’kaki	VAI ;
+! sstsimiiyi:sstsimiiyi	VAI ;
+! sstsímotsiiyi:sstsímotsiiyi	VAI ;
+! sstsimssi:sstsimssi	VAI ;
+! sstsimsstaa:sstsimsstaa	VAI ;
+! sstsinaa:sstsinaa	VAI ;
+! sstsipísiisi:sstsipísiisi	VAI ;
+! sstsipisimaa:sstsipisimaa	VAI ;
+! sstskáki:sstskáki	VAI ;
+! sstskimihkaki:sstskimihkaki	VAI ;
+! sstso’taki:sstso’taki	VAI ;
+! sstssimaa:sstssimaa	VAI ;
+! sstsskiisi:sstsskiisi	VAI ;
+! sta’toksááki:sta’toksááki	VAI ;
+! tsimayi:tsimayi	VAI ;
+! wa’kiaakii:wa’kiaakii	VAI ;
+! wa’kihtaki:wa’kihtaki	VAI ;
+! wa’kíkaasi:wa’kíkaasi	VAI ;
+! wa’kíkaihtsi:wa’kíkaihtsi	VAI ;
+! wa’kikaihtsii:wa’kikaihtsii	VAI ;
+! wa’komootsii:wa’komootsii	VAI ;
+! wa’kotá’pssi:wa’kotá’pssi	VAI ;
+! wa’kotsiiyi:wa’kotsiiyi	VAI ;
+! wa’kotsistotsimaa:wa’kotsistotsimaa	VAI ;
+! wa’koyihka’si:wa’koyihka’si	VAI ;
+! wa’piisi:wa’piisi	VAI ;
+! wa’psskaa:wa’psskaa	VAI ;
+! wa’saisskapihtaa:wa’saisskapihtaa	VAI ;
+! wa’siiyi:wa’siiyi	VAI ;
+! wa’tsimaa:wa’tsimaa	VAI ;
+! wa’yi:wa’yi	VAI ;
+! waahkaniaaki:waahkaniaaki	VAI ;
+waahkayi:waahkayi	VAI  ;
+! waahkiitaa:waahkiitaa	VAI ;
+! waahko’si:waahko’si	VAI ;
+! waahko’sskaa:waahko’sskaa	VAI ;
+! waahkoma’taa:waahkoma’taa	VAI ;
+! waahkoma’taahkohki:waahkoma’taahkohki	VAI ;
+! waahkomi:waahkomi	VAI ;
+! waahkoomohsi:waahkoomohsi	VAI ;
+! waahpatottsii:waahpatottsii	VAI ;
+! waahso:waahso	VAI ;
+! waahtaayi’maa:waahtaayi’maa	VAI ;
+! waahtsimaa:waahtsimaa	VAI ;
+! waahtsowaapiksistsimaa:waahtsowaapiksistsimaa	VAI ;
+! waaka’taki:waaka’taki	VAI ;
+! waakáa’tsiiyi:waakáa’tsiiyi	VAI ;
+! waakáínaamaahkaa:waakáínaamaahkaa	VAI ;
+! waakámmaa:waakámmaa	VAI ;
+! waakanaki:waakanaki	VAI ;
+! waakanohsi:waakanohsi	VAI ;
+! waakayi:waakayi	VAI ;
+! waakiihka’si:waakiihka’si	VAI ;
+! waakiipitsi:waakiipitsi	VAI ;
+! waakissi:waakissi	VAI ;
+! waako’pihtaa:waako’pihtaa	VAI ;
+! waakohkiisi:waakohkiisi	VAI ;
+! waakohkimaa:waakohkimaa	VAI ;
+! waakohsimaa:waakohsimaa	VAI ;
+! waakohsoyi:waakohsoyi	VAI ;
+! waakokaa’tsii:waakokaa’tsii	VAI ;
+! waakomimmihtaa:waakomimmihtaa	VAI ;
+! waakomitapiiyi:waakomitapiiyi	VAI ;
+! waakomitsiihtaa:waakomitsiihtaa	VAI ;
+! waakootsa’pssi:waakootsa’pssi	VAI ;
+! waakóótsa’pssiihka’si:waakóótsa’pssiihka’si	VAI ;
+! waakootsaayi:waakootsaayi	VAI ;
+! waaksipistaa:waaksipistaa	VAI ;
+! waaksistooyi’taki:waaksistooyi’taki	VAI ;
+! waamato’simaa:waamato’simaa	VAI ;
+! waamatonssoyi:waamatonssoyi	VAI ;
+! waami:waami	VAI ;
+! waamiao’pii:waamiao’pii	VAI ;
+! waamisoo:waamisoo	VAI ;
+! waamisskapi:waamisskapi	VAI ;
+! waamiwa’si:waamiwa’si	VAI ;
+! waamohsi:waamohsi	VAI ;
+! waamohsikahkaa:waamohsikahkaa	VAI ;
+! waamokapistaa:waamokapistaa	VAI ;
+! waana’kimaa:waana’kimaa	VAI ;
+! waana’ssoyi:waana’ssoyi	VAI ;
+! waanao’ki’si:waanao’ki’si	VAI ;
+! waanaoyitanii:waanaoyitanii	VAI ;
+! waanatsinaa:waanatsinaa	VAI ;
+! waanii:waanii	VAI ;
+! waanii:waanii	VAI ;
+! waanii:waanii	VAI ;
+! waanistápaoo:waanistápaoo	VAI ;
+! waanistsi’taki:waanistsi’taki	VAI ;
+! waanistsinaa:waanistsinaa	VAI ;
+! waanisttsi:waanisttsi	VAI ;
+! waanisttsi:waanisttsi	VAI ;
+! waanoohpa’pssi:waanoohpa’pssi	VAI ;
+! waanoyo’si:waanoyo’si	VAI ;
+! waapatsii’yi:waapatsii’yi	VAI ;
+! waapatsska’si:waapatsska’si	VAI ;
+! waapi’maa:waapi’maa	VAI ;
+! waapiikamaa:waapiikamaa	VAI ;
+! waapiiwaanitapiiyi:waapiiwaanitapiiyi	VAI ;
+! waapikssi1:waapikssi1	VAI ;
+! waapikssi2:waapikssi2	VAI ;
+! waapiksski:waapiksski	VAI ;
+! waapína’ki:waapína’ki	VAI ;
+! waapínao’si:waapínao’si	VAI ;
+! waapisoyiina:waapisoyiina	VAI ;
+! waapitsíkamaa:waapitsíkamaa	VAI ;
+! waapitsipoyi:waapitsipoyi	VAI ;
+! waapo’ka’siisi:waapo’ka’siisi	VAI ;
+! waapo’kapáao:waapo’kapáao	VAI ;
+! waapo’ksiistsi:waapo’ksiistsi	VAI ;
+! waapo’pi:waapo’pi	VAI ;
+! waapoyiihkini:waapoyiihkini	VAI ;
+! waapsstsitsikini:waapsstsitsikini	VAI ;
+! waasai’ni:waasai’ni	VAI ;
+! waasani’niipitsi:waasani’niipitsi	VAI ;
+! waasanii:waasanii	VAI ;
+! waata’pihkaa:waata’pihkaa	VAI ;
+! waata’pssoyi:waata’pssoyi	VAI ;
+! waata’yayi:waata’yayi	VAI ;
+! waatahsinaa:waatahsinaa	VAI ;
+! waatanimmaipasskaa:waatanimmaipasskaa	VAI ;
+! waatapoka’yi:waatapoka’yi	VAI ;
+! waataponisskaa:waataponisskaa	VAI ;
+! waato’si:waato’si	VAI ;
+! waatoksipistaa:waatoksipistaa	VAI ;
+! waatoyínnayi:waatoyínnayi	VAI ;
+! waatsimihka’si:waatsimihka’si	VAI ;
+! waatsímma’pssi:waatsímma’pssi	VAI ;
+! waatsimoyihkaa:waatsimoyihkaa	VAI ;
+! waattsiihka’si:waattsiihka’si	VAI ;
+! waattsisskii:waattsisskii	VAI ;
+! waattsiyi:waattsiyi	VAI ;
+! waattsoohkitopii:waattsoohkitopii	VAI ;
+! waawá’kimaa:waawá’kimaa	VAI ;
+! waawa’kinisoo:waawa’kinisoo	VAI ;
+! waawaattsisowoo:waawaattsisowoo	VAI ;
+! waawahkaa:waawahkaa	VAI ;
+! waawahkaotsiiyi:waawahkaotsiiyi	VAI ;
+! waawai’skapi:waawai’skapi	VAI ;
+! waawakaapikssi:waawakaapikssi	VAI ;
+! waawakksi:waawakksi	VAI ;
+! waawammaa:waawammaa	VAI ;
+! waawao’píniisi:waawao’píniisi	VAI ;
+! waawapistaa:waawapistaa	VAI ;
+! waawapohsi:waawapohsi	VAI ;
+! waawatoyaapikssi:waawatoyaapikssi	VAI ;
+! waawattamohsi:waawattamohsi	VAI ;
+! waawattoo:waawattoo	VAI ;
+! waawattoohsi:waawattoohsi	VAI ;
+! waawooka’pssi:waawooka’pssi	VAI ;
+! waawowaoo:waawowaoo	VAI ;
+! waayaksstooki:waayaksstooki	VAI ;
+! waayi’sipissaa:waayi’sipissaa	VAI ;
+! wai’piiyi:wai’piiyi	VAI ;
+! wai’tsinimaa:wai’tsinimaa	VAI ;
+! wakkay’sspi:wakkay’sspi	VAI ;
+! wakkayitsiihtaa:wakkayitsiihtaa	VAI ;
+! wakkioo:wakkioo	VAI ;
+! waoo’ssi:waoo’ssi	VAI ;
+! waookaasi:waookaasi	VAI ;
+! waooksiisi:waooksiisi	VAI ;
+! watapoka’yi:watapoka’yi	VAI ;
+! wáttsa’pssi:wáttsa’pssi	VAI ;
+! wattsáakiihka’si:wattsáakiihka’si	VAI ;
+! wattsipamaa:wattsipamaa	VAI ;
+! wattsisski:wattsisski	VAI ;
+! wayaamini:wayaamini	VAI ;
+! wayákiitoo:wayákiitoo	VAI ;
+! wayaksipistaa:wayaksipistaa	VAI ;
+! wayami’tsim:wayami’tsim	VAI ;
+! wayamoo:wayamoo	VAI ;
+! wayikinaa:wayikinaa	VAI ;
+! wowohkaa:wowohkaa	VAI ;
+! yaahkioohsi:yaahkioohsi	VAI ;
+! yaahkoi’sstaaki:yaahkoi’sstaaki	VAI ;
+! yaahsi’taki:yaahsi’taki	VAI ;
+! yaahssi:yaahssi	VAI ;
+! yaahsssapi:yaahsssapi	VAI ;
+! yaakááhkimaa:yaakááhkimaa	VAI ;
+! yaakaapiksistsimaa:yaakaapiksistsimaa	VAI ;
+! yáakatoksipistaa:yáakatoksipistaa	VAI ;
+! yáaki’taa:yáaki’taa	VAI ;
+! yáakihkiniiyi:yáakihkiniiyi	VAI ;
+! yáakihtaa:yáakihtaa	VAI ;
+! yáakihtaki:yáakihtaki	VAI ;
+! yáakihtsiiyi:yáakihtsiiyi	VAI ;
+! yáakohkimmaa:yáakohkimmaa	VAI ;
+! yáakohkinsstaa:yáakohkinsstaa	VAI ;
+! yáakohkipistaa:yáakohkipistaa	VAI ;
+! yáakokiiyi:yáakokiiyi	VAI ;
+! yáakotoahsimi:yáakotoahsimi	VAI ;
+! yáakotsi’tsiiyi:yáakotsi’tsiiyi	VAI ;
+! yáakowayi:yáakowayi	VAI ;
+! yáaksiisattstaa:yáaksiisattstaa	VAI ;
+! yáaksiisi:yáaksiisi	VAI ;
+! yáaksiksaaki:yáaksiksaaki	VAI ;
+! yáaksinao’si:yáaksinao’si	VAI ;
+! yáaksínao’si:yáaksínao’si	VAI ;
+! yáaksisakiaaki:yáaksisakiaaki	VAI ;
+! yáaksissksimmaa:yáaksissksimmaa	VAI ;
+! yáaksistotoohsi:yáaksistotoohsi	VAI ;
+! yáaksistsiipisski:yáaksistsiipisski	VAI ;
+! yáakssi’kaa:yáakssi’kaa	VAI ;
+! yáaksstsitsiki:yáaksstsitsiki	VAI ;
+! yaamoyi:yaamoyi	VAI ;
+! yaamoyíi’poyi:yaamoyíi’poyi	VAI ;
+! yaamsskiaaki:yaamsskiaaki	VAI ;
+! yaamsstsinnimaa:yaamsstsinnimaa	VAI ;
+! yáapi:yáapi	VAI ;
+! yáápíí’poyi:yáápíí’poyi	VAI ;
+! yáapiiniiwana’si:yáapiiniiwana’si	VAI ;
+! yáapittahsi:yáapittahsi	VAI ;
+! yáápstsaaki:yáápstsaaki	VAI ;
+! yaapstsiiyi:yaapstsiiyi	VAI ;
+! yaatoo:yaatoo	VAI ;
+! yaatsskinaa:yaatsskinaa	VAI ;
+! yamaakioko’si:yamaakioko’si	VAI ;
+! yi’tsaawaahkaa:yi’tsaawaahkaa	VAI ;
+! yiimaapitsi:yiimaapitsi	VAI ;
+! yiinapanii:yiinapanii	VAI ;
+! yiinapanssi:yiinapanssi	VAI ;
+! yiinííwaahkaa:yiinííwaahkaa	VAI ;
+! yiistahtaa:yiistahtaa	VAI ;
+! yiistahtsimaa:yiistahtsimaa	VAI ;
+! yiistapoo:yiistapoo	VAI ;
+! yiistapssi:yiistapssi	VAI ;
+! yiistapsskimaa:yiistapsskimaa	VAI ;
+! yiistomsskoohsi:yiistomsskoohsi	VAI ;
+! yiitsiihtaa:yiitsiihtaa	VAI ;
+! yiitsimaa:yiitsimaa	VAI ;
+! yiitsimaahkaa:yiitsimaahkaa	VAI ;
+! yiitsittsimaa:yiitsittsimaa	VAI ;
+! yimmi:yimmi	VAI ;
+! yiniyi’taki:yiniyi’taki	VAI ;
+! yinnimaa:yinnimaa	VAI ;
+! yissi:yissi	VAI ;
+! yisski:yisski	VAI ;
+! yisskihtsiiyi:yisskihtsiiyi	VAI ;
+! yisskoo:yisskoo	VAI ;
+! yisskoyipistaa:yisskoyipistaa	VAI ;
+! yissksimmaa:yissksimmaa	VAI ;
+! yissoo:yissoo	VAI ;
+! yisstooki:yisstooki	VAI ;
+! yisstoyi:yisstoyi	VAI ;
+! yisstsa’pssi:yisstsa’pssi	VAI ;
+! yisstsáánohkiaaki:yisstsáánohkiaaki	VAI ;
+! yisstsaanopii:yisstsaanopii	VAI ;
+! yisstsi’kini:yisstsi’kini	VAI ;
+! yisstsiiyi:yisstsiiyi	VAI ;
+! yo’kaa:yo’kaa	VAI ;
+! yo’kaahtaa:yo’kaahtaa	VAI ;
+! yo’káánipohsi:yo’káánipohsi	VAI ;
+! yo’kaanopii:yo’kaanopii	VAI ;
+! yo’kimaa:yo’kimaa	VAI ;
+! yo’kimaa’tsi:yo’kimaa’tsi	VAI ;
+! yoisstskaohsi:yoisstskaohsi	VAI ;
+! yoohkíítsi’taki:yoohkíítsi’taki	VAI ;
+! yoohkimaa:yoohkimaa	VAI ;
+! yoohksipistaa:yoohksipistaa	VAI ;
+! yoohksipoyi:yoohksipoyi	VAI ;
+! yoohksskinihkaa:yoohksskinihkaa	VAI ;
+! yoohsiniina:yoohsiniina	VAI ;
+! yoohsíniisi:yoohsíniisi	VAI ;
+! yoohtohkoohsi:yoohtohkoohsi	VAI ;
+! yoohtsimi:yoohtsimi	VAI ;
+! yookstsimaa:yookstsimaa	VAI ;
+! yoomaahkaa:yoomaahkaa	VAI ;
+! yóomi:yóomi	VAI ;
+! yootsiimssta’si:yootsiimssta’si	VAI ;
+! yootsipinaa:yootsipinaa	VAI ;
+! a’pihkahtaki:a’pihkahtaki	VAI ;
+! á’pistotaki:á’pistotaki	VAI ;
+! a’písttaapiksistaki:a’písttaapiksistaki	VAI ;
+! á’po’taki:á’po’taki	VAI ;
+! a’psskaki:a’psskaki	VAI ;
+! a’psstaki:a’psstaki	VAI ;
+! aotokiaaki:aotokiaaki	VAI ;
+! i’ksino’taki:i’ksino’taki	VAI ;
+! i’nikki:i’nikki	VAI ;
+! i’tsikanihkaki:i’tsikanihkaki	VAI ;
+! i’tsinssaki:i’tsinssaki	VAI ;
+! i’tsippoyi’kaki:i’tsippoyi’kaki	VAI ;
+! i’tsksoyi:i’tsksoyi	VAI ;
+! i’tsksoyi:i’tsksoyi	VAI ;
+! i’yittaki:i’yittaki	VAI ;
+! ihkiitaa:ihkiitaa	VAI ;
+! ihkssaki:ihkssaki	VAI ;
+! ihtatsikiooyi:ihtatsikiooyi	VAI ;
+! ihtsisttaki:ihtsisttaki	VAI ;
+! ii’yittaki:ii’yittaki	VAI ;
+! iipistotaki:iipistotaki	VAI ;
+! iitsittaki:iitsittaki	VAI ;
+! iitsskaahkio’taki:iitsskaahkio’taki	VAI ;
+! ika’kiaaki:ika’kiaaki	VAI ;
+! ika’kstaki:ika’kstaki	VAI ;
+! ikáapiksistaki:ikáapiksistaki	VAI ;
+! ikahksiststaki:ikahksiststaki	VAI ;
+! ikaisínaaki:ikaisínaaki	VAI ;
+! ikano’taki:ikano’taki	VAI ;
+! ikawai’piksistaki:ikawai’piksistaki	VAI ;
+! ikawohpattsaaki:ikawohpattsaaki	VAI ;
+! ikimmatsistotaki:ikimmatsistotaki	VAI ;
+! ikkamistotaki:ikkamistotaki	VAI ;
+! ikkiaaki:ikkiaaki	VAI ;
+! ikkiniihkimiksaaki:ikkiniihkimiksaaki	VAI ;
+! ikkitstaki:ikkitstaki	VAI ;
+! ikkstsinio’taki:ikkstsinio’taki	VAI ;
+! ikohkiai’piksistaki:ikohkiai’piksistaki	VAI ;
+! ikohkiistotaki:ikohkiistotaki	VAI ;
+! ikohkiistotaki:ikohkiistotaki	VAI ;
+! ikottsaaki:ikottsaaki	VAI ;
+! iksiinaki:iksiinaki	VAI ;
+! iksikiinaki:iksikiinaki	VAI ;
+! iksikka’pistotaki:iksikka’pistotaki	VAI ;
+! iksikkiaaki:iksikkiaaki	VAI ;
+! iksippoyinnaki:iksippoyinnaki	VAI ;
+! iksisskstaki:iksisskstaki	VAI ;
+! innioomsstaki:innioomsstaki	VAI ;
+! innisskaki:innisskaki	VAI ;
+! innoohpattsaaki:innoohpattsaaki	VAI ;
+! ipa’sokinnaki:ipa’sokinnaki	VAI ;
+! ipahpaapiksistaki:ipahpaapiksistaki	VAI ;
+! ipainssaki:ipainssaki	VAI ;
+! ipaisskio’taki:ipaisskio’taki	VAI ;
+! ipakksstaki:ipakksstaki	VAI ;
+! ipaksstookiaaki:ipaksstookiaaki	VAI ;
+! ipaninnaki:ipaninnaki	VAI ;
+! ipáóo’taki:ipáóo’taki	VAI ;
+! ipi’nitaki:ipi’nitaki	VAI ;
+! ipíiksaaki:ipíiksaaki	VAI ;
+! ipíkkiaaki:ipíkkiaaki	VAI ;
+! ipiyistotaki:ipiyistotaki	VAI ;
+! ipo’tstaki:ipo’tstaki	VAI ;
+! ipo’tstaki:ipo’tstaki	VAI ;
+! ipohko’taki:ipohko’taki	VAI ;
+! ipohksiiminnaki:ipohksiiminnaki	VAI ;
+! ipohksisttskiniaaki:ipohksisttskiniaaki	VAI ;
+! ipommaki:ipommaki	VAI ;
+! ipottaahkaki:ipottaahkaki	VAI ;
+! ipssaaki:ipssaaki	VAI ;
+! ipsstsiksistotaki:ipsstsiksistotaki	VAI ;
+! isoomoonaki:isoomoonaki	VAI ;
+! issksimataki:issksimataki	VAI ;
+! istokahkaki:istokahkaki	VAI ;
+! istta’pinaki:istta’pinaki	VAI ;
+! isttanai’piksistaki:isttanai’piksistaki	VAI ;
+! isttapinnaki:isttapinnaki	VAI ;
+! isttókiaaki:isttókiaaki	VAI ;
+! isttsiistotaki:isttsiistotaki	VAI ;
+! isttsikááhkiaaki:isttsikááhkiaaki	VAI ;
+! isttsikanistotaki:isttsikanistotaki	VAI ;
+! itsisttákaaki:itsisttákaaki	VAI ;
+! itskitaki:itskitaki	VAI ;
+! itsspiihtaki:itsspiihtaki	VAI ;
+! itstaki:itstaki	VAI ;
+! mo’taki:mo’taki	VAI ;
+! niitsítaki:niitsítaki	VAI ;
+! o’kspanohkio’taki:o’kspanohkio’taki	VAI ;
+! o’taki:o’taki	VAI ;
+! o’taki:o’taki	VAI ;
+! ohkomataki:ohkomataki	VAI ;
+! ohkotaki:ohkotaki	VAI ;
+! oksistotaki:oksistotaki	VAI ;
+! okspainnaki:okspainnaki	VAI ;
+! omatskahtaki:omatskahtaki	VAI ;
+! omino’taki:omino’taki	VAI ;
+! omowááhkiaaki:omowááhkiaaki	VAI ;
+! opooksskaki:opooksskaki	VAI ;
+! opoyiiksstaki:opoyiiksstaki	VAI ;
+! otahksinaaki:otahksinaaki	VAI ;
+! otanitaki:otanitaki	VAI ;
+! otano’taki:otano’taki	VAI ;
+! otawanssaki:otawanssaki	VAI ;
+! otoi’tsikataki:otoi’tsikataki	VAI ;
+! otsistapi’taki:otsistapi’taki	VAI ;
+! oyi’taki:oyi’taki	VAI ;
+! saatstaki:saatstaki	VAI ;
+! saipihtaki:saipihtaki	VAI ;
+! sapikaaki:sapikaaki	VAI ;
+! sapstookio’taki:sapstookio’taki	VAI ;
+! sátsaaki:sátsaaki	VAI ;
+! satsínaaki:satsínaaki	VAI ;
+! sattsikaapiksistaki:sattsikaapiksistaki	VAI ;
+! sattsikano’taki:sattsikano’taki	VAI ;
+! si’kaki:si’kaki	VAI ;
+! siiko’taki:siiko’taki	VAI ;
+! sikstaki:sikstaki	VAI ;
+! sikstaki:sikstaki	VAI ;
+! sínaaki:sínaaki	VAI ;
+! sínaaki:sínaaki	VAI ;
+! sinihtaki:sinihtaki	VAI ;
+! sisiksino’taki:sisiksino’taki	VAI ;
+! soi’stsipínnaki:soi’stsipínnaki	VAI ;
+! sokinaki:sokinaki	VAI ;
+! sonai’sskihtaki:sonai’sskihtaki	VAI ;
+! ssáaki:ssáaki	VAI ;
+! ssiiststaki:ssiiststaki	VAI ;
+! ssinnaki:ssinnaki	VAI ;
+! ssinnaki:ssinnaki	VAI ;
+! sskohtoistotaki:sskohtoistotaki	VAI ;
+! ssksimataki:ssksimataki	VAI ;
+! sskska’taki1:sskska’taki1	VAI ;
+! sskska’taki2:sskska’taki2	VAI ;
+! sskska’taki3:sskska’taki3	VAI ;
+! sskskaaki:sskskaaki	VAI ;
+! ssksksinitaki:ssksksinitaki	VAI ;
+! ssokááhkiaaki:ssokááhkiaaki	VAI ;
+! sspíísao’taki:sspíísao’taki	VAI ;
+! sspinnaki:sspinnaki	VAI ;
+! sstaaki:sstaaki	VAI ;
+! sstaki:sstaki	VAI ;
+! sstaki:sstaki	VAI ;
+! sstssaki:sstssaki	VAI ;
+! wa’kiaaki:wa’kiaaki	VAI ;
+! wa’paahkiaaki:wa’paahkiaaki	VAI ;
+! waahkániksáaki:waahkániksáaki	VAI ;
+! waahtsaaki:waahtsaaki	VAI ;
+! waaso’kinaki:waaso’kinaki	VAI ;
+! waatániaaki:waatániaaki	VAI ;
+! waatohtaki:waatohtaki	VAI ;
+! waawahkáísínaaki:waawahkáísínaaki	VAI ;
+! waawakino’taki:waawakino’taki	VAI ;
+! wai’tsinnaki:wai’tsinnaki	VAI ;
+! wáíai’taki:wáíai’taki	VAI ;
+! waoo’tokiaaki:waoo’tokiaaki	VAI ;
+! waoo’tokiaaki:waoo’tokiaaki	VAI ;
+! wayami’taki:wayami’taki	VAI ;
+! yaamaahkiaaki:yaamaahkiaaki	VAI ;
+! yaamsstookio’taki:yaamsstookio’taki	VAI ;
+! yiinapistotaki:yiinapistotaki	VAI ;
+! yiisaki:yiisaki	VAI ;
+! yiistsinitaki:yiistsinitaki	VAI ;
+! yinnaki:yinnaki	VAI ;
+! yissksipistaki:yissksipistaki	VAI ;
+yo’kiaaki:yo’kiaaki	VAI  ;
+
+LEXICON VII_STEMS
+! a’paisii:a’paisii	VII ;
+! aakawoo:aakawoo	VII ;
+! aanistá’pii:aanistá’pii	VII ;
+! aanistápanissin:aanistápanissin	VII ;
+! aanistápii:aanistápii	VII ;
+! aanistsii:aanistsii	VII ;
+! aanistsii:aanistsii	VII ;
+! aanistsinaattsi:aanistsinaattsi	VII ;
+! aawoyihtsi:aawoyihtsi	VII ;
+! aiistaihtsiiyi:aiistaihtsiiyi	VII ;
+! akákkoma’pii:akákkoma’pii	VII ;
+! anistsii:anistsii	VII ;
+! apaksisttohkii:apaksisttohkii	VII ;
+! apoyíínaattsi:apoyíínaattsi	VII ;
+! i’kotsaapinako:i’kotsaapinako	VII ;
+! i’kotsaapinako:i’kotsaapinako	VII ;
+! i’ksskii:i’ksskii	VII ;
+! i’nakawaatsi:i’nakawaatsi	VII ;
+! i’nakohtssii:i’nakohtssii	VII ;
+! i’nakohtssii:i’nakohtssii	VII ;
+! i’nákohtsssi:i’nákohtsssi	VII ;
+! i’ni:i’ni	VII ;
+! i’pahkoo:i’pahkoo	VII ;
+! i’pii:i’pii	VII ;
+! i’sa’pii:i’sa’pii	VII ;
+! i’sskaana’pii:i’sskaana’pii	VII ;
+! i’táámiksistsiko:i’táámiksistsiko	VII ;
+! i’tsii:i’tsii	VII ;
+! i’tsii:i’tsii	VII ;
+! i’tsinihkaa:i’tsinihkaa	VII ;
+! i’tsíppoyi’kaa:i’tsíppoyi’kaa	VII ;
+! i’tska’pii:i’tska’pii	VII ;
+! ihkitsi:ihkitsi	VII ;
+! iinikim:iinikim	VII ;
+! iiso:iiso	VII ;
+! iitsiksista’pii:iitsiksista’pii	VII ;
+! iitsskihkaa:iitsskihkaa	VII ;
+! iiyi:iiyi	VII ;
+! iiyikoo:iiyikoo	VII ;
+! ika’kii:ika’kii	VII ;
+! ikahkapi’kaa:ikahkapi’kaa	VII ;
+! ikaisii:ikaisii	VII ;
+! ikámo’ta’pii:ikámo’ta’pii	VII ;
+! ikia’pii:ikia’pii	VII ;
+! ikimskaa:ikimskaa	VII ;
+! ikinnii:ikinnii	VII ;
+! ikkahsinaattsi:ikkahsinaattsi	VII ;
+! ikkakii:ikkakii	VII ;
+! ikkanattsi:ikkanattsi	VII ;
+! ikkaniksoohpapoka:ikkaniksoohpapoka	VII ;
+! ikkaniksoohpi’yi:ikkaniksoohpi’yi	VII ;
+! ikkattsi:ikkattsi	VII ;
+! ikkinaa’pii:ikkinaa’pii	VII ;
+! ikkinisii:ikkinisii	VII ;
+! ikkitsinaattsi:ikkitsinaattsi	VII ;
+! ikkitsinááttsi:ikkitsinááttsi	VII ;
+! ikkskii:ikkskii	VII ;
+! ikkstsii:ikkstsii	VII ;
+! iko’ko:iko’ko	VII ;
+! ikohpi’:ikohpi’	VII ;
+! ikokoto:ikokoto	VII ;
+! ikóóhpapokaa:ikóóhpapokaa	VII ;
+! ikooo:ikooo	VII ;
+! ikoopiisopo:ikoopiisopo	VII ;
+! ikotskiipoko:ikotskiipoko	VII ;
+! iksiiyi:iksiiyi	VII ;
+! iksikka’pii:iksikka’pii	VII ;
+! iksísaako:iksísaako	VII ;
+! iksissta’pii:iksissta’pii	VII ;
+! iksisstoka’pii:iksisstoka’pii	VII ;
+! iksistokomi:iksistokomi	VII ;
+! iksistoyi:iksistoyi	VII ;
+! iksistsii:iksistsii	VII ;
+! iksistsikó:iksistsikó	VII ;
+! iksistsikoinaattsi:iksistsikoinaattsi	VII ;
+! iksisttaana’pii:iksisttaana’pii	VII ;
+! iksisttoihtsi:iksisttoihtsi	VII ;
+! iksisttotsa’pii:iksisttotsa’pii	VII ;
+! iksisttoyisi:iksisttoyisi	VII ;
+! iksoyihtsii:iksoyihtsii	VII ;
+! iksskanáótonni:iksskanáótonni	VII ;
+! immaka’pii:immaka’pii	VII ;
+! immi:immi	VII ;
+! immiko:immiko	VII ;
+! immoyii:immoyii	VII ;
+! inaattsi:inaattsi	VII ;
+! inááttsi:inááttsi	VII ;
+! inako:inako	VII ;
+! inákoi:inákoi	VII ;
+! innisi:innisi	VII ;
+! innoyi:innoyi	VII ;
+! inoka’pii:inoka’pii	VII ;
+! insspa’pii:insspa’pii	VII ;
+! insstawa’pii:insstawa’pii	VII ;
+! ipa’ksiksini’kaa:ipa’ksiksini’kaa	VII ;
+! ipahka’pii:ipahka’pii	VII ;
+! ipahkai’mimm:ipahkai’mimm	VII ;
+! ipahksikaimo:ipahksikaimo	VII ;
+! ipahksimo:ipahksimo	VII ;
+! ipahsii:ipahsii	VII ;
+! ipahtsa’pii:ipahtsa’pii	VII ;
+! ipainihkaa:ipainihkaa	VII ;
+! ipáísstsitsiimi’kaa:ipáísstsitsiimi’kaa	VII ;
+! ipaitsii:ipaitsii	VII ;
+! ipákksii:ipákksii	VII ;
+! ipakksii:ipakksii	VII ;
+! ipaksksisskaa:ipaksksisskaa	VII ;
+! ipákssaisstoyi:ipákssaisstoyi	VII ;
+! ipáni:ipáni	VII ;
+! ipanssi:ipanssi	VII ;
+! ipasskata’pii:ipasskata’pii	VII ;
+ipáttsii:ipáttsii	VII  ;
+! ipattsikanittsi:ipattsikanittsi	VII ;
+! ipi’ka’pii:ipi’ka’pii	VII ;
+! ipiiyinaattsi:ipiiyinaattsi	VII ;
+! ipisátá’pii:ipisátá’pii	VII ;
+! ipísspii:ipísspii	VII ;
+! ipísttanisii:ipísttanisii	VII ;
+! ipiwa’pii:ipiwa’pii	VII ;
+! ipoipoka:ipoipoka	VII ;
+! ipoksskaa:ipoksskaa	VII ;
+! ipómikka’pii:ipómikka’pii	VII ;
+! ipoonihkaa:ipoonihkaa	VII ;
+! íppiihtssii:íppiihtssii	VII ;
+! ipsstsikakattokiniisi:ipsstsikakattokiniisi	VII ;
+! ipsstsitsiinaattsii:ipsstsitsiinaattsii	VII ;
+! isamo:isamo	VII ;
+! isamo:isamo	VII ;
+! isattsiksi:isattsiksi	VII ;
+! isimia’pii:isimia’pii	VII ;
+! isinata’pii:isinata’pii	VII ;
+! isitsipohtako:isitsipohtako	VII ;
+! isspikii:isspikii	VII ;
+! isspikii:isspikii	VII ;
+! istaako:istaako	VII ;
+! istsitsii:istsitsii	VII ;
+! isttakoyii:isttakoyii	VII ;
+! isttapoyittsi:isttapoyittsi	VII ;
+! isttohki:isttohki	VII ;
+! isttsá’pii:isttsá’pii	VII ;
+! isttsii:isttsii	VII ;
+! isttsiipii:isttsiipii	VII ;
+! isttsikahko:isttsikahko	VII ;
+! isttsíkaittsi:isttsíkaittsi	VII ;
+! isttsikákki:isttsikákki	VII ;
+! isttsikii:isttsikii	VII ;
+! isttsíkssaakokotaahko:isttsíkssaakokotaahko	VII ;
+! isttstsissii:isttstsissii	VII ;
+! itapiksstsii:itapiksstsii	VII ;
+! itapissko:itapissko	VII ;
+! ito’tsisamssootaa:ito’tsisamssootaa	VII ;
+! itotoisapii:itotoisapii	VII ;
+! itsiiyimo:itsiiyimo	VII ;
+! itsiiyipoko:itsiiyipoko	VII ;
+! itsimo:itsimo	VII ;
+! itsina’pii:itsina’pii	VII ;
+! itsina’pii:itsina’pii	VII ;
+! itsinaihtsi:itsinaihtsi	VII ;
+! itsissii:itsissii	VII ;
+! itsówa’pii:itsówa’pii	VII ;
+! itsskihkaa:itsskihkaa	VII ;
+! itssoyottaki:itssoyottaki	VII ;
+! itsspa’kihtsii:itsspa’kihtsii	VII ;
+! iyoomokihtsi:iyoomokihtsi	VII ;
+! kííhtsipinaattsi:kííhtsipinaattsi	VII ;
+! kokóto:kokóto	VII ;
+! ksiistoyi:ksiistoyi	VII ;
+! ksikksinaattsi:ksikksinaattsi	VII ;
+! maaná’pii:maaná’pii	VII ;
+! maanii:maanii	VII ;
+! maanikinako:maanikinako	VII ;
+! maansstoyii:maansstoyii	VII ;
+! maka’pii:maka’pii	VII ;
+! maohksinááttsi:maohksinááttsi	VII ;
+matónni:matónni	VII  ;
+! matsissii:matsissii	VII ;
+! matsowá’pii:matsowá’pii	VII ;
+! máttsa’pii:máttsa’pii	VII ;
+! mi’ksinááttsi:mi’ksinááttsi	VII ;
+! miyiko:miyiko	VII ;
+! miyikoo:miyikoo	VII ;
+! mo’ko:mo’ko	VII ;
+! náao:náao	VII ;
+! náápia’pii:náápia’pii	VII ;
+! ni’to:ni’to	VII ;
+! niipó:niipó	VII ;
+! niisó:niisó	VII ;
+! níítsanaattsi:níítsanaattsi	VII ;
+! niitsii:niitsii	VII ;
+! niitsii:niitsii	VII ;
+! niitsó:niitsó	VII ;
+! niitsowá’pii:niitsowá’pii	VII ;
+! nisitó:nisitó	VII ;
+! noohkíítsi:noohkíítsi	VII ;
+! o’kakóyi:o’kakóyi	VII ;
+! o’kakoyi:o’kakoyi	VII ;
+! o’kiyihtsi:o’kiyihtsi	VII ;
+! o’ko:o’ko	VII ;
+! o’ksiko’ko:o’ksiko’ko	VII ;
+! o’kstsiki:o’kstsiki	VII ;
+! o’kstsiksinaattsi:o’kstsiksinaattsi	VII ;
+! o’má’pii:o’má’pii	VII ;
+! o’miistsi:o’miistsi	VII ;
+! o’sohkii:o’sohkii	VII ;
+! o’takii:o’takii	VII ;
+! o’totama’pii:o’totama’pii	VII ;
+! o’tsatstsi:o’tsatstsi	VII ;
+! o’tsitskihtsi:o’tsitskihtsi	VII ;
+! o’tssatstsii:o’tssatstsii	VII ;
+! o’tstsii:o’tstsii	VII ;
+! o’tstsii:o’tstsii	VII ;
+! ohka’pii:ohka’pii	VII ;
+! ohkaatsi:ohkaatsi	VII ;
+! ohkákotsii:ohkákotsii	VII ;
+! ohkoikii:ohkoikii	VII ;
+! ohkomíí:ohkomíí	VII ;
+! ohkomii:ohkomii	VII ;
+! ohkona’pii:ohkona’pii	VII ;
+! ohkowa’pii:ohkowa’pii	VII ;
+! ohkoyikii:ohkoyikii	VII ;
+! ohksinitsi:ohksinitsi	VII ;
+! ohpai’kímsskaa:ohpai’kímsskaa	VII ;
+! ohpakóyittsi:ohpakóyittsi	VII ;
+! ohpawakki:ohpawakki	VII ;
+! ohpi’yi:ohpi’yi	VII ;
+! ohpokii:ohpokii	VII ;
+! ohpokohtssi:ohpokohtssi	VII ;
+! ohpotaa:ohpotaa	VII ;
+! ohpsskonaka’si:ohpsskonaka’si	VII ;
+! ohtako:ohtako	VII ;
+! ohto’tstsii:ohto’tstsii	VII ;
+! ohtsipoka:ohtsipoka	VII ;
+! oka’pihtsii:oka’pihtsii	VII ;
+! oka’pii:oka’pii	VII ;
+! okahsii:okahsii	VII ;
+! okamo’ta’pii:okamo’ta’pii	VII ;
+! okamo’tstsii:okamo’tstsii	VII ;
+! oksista’pii:oksista’pii	VII ;
+! okspii:okspii	VII ;
+! okspii:okspii	VII ;
+! okspipoko:okspipoko	VII ;
+! omaohkapinako:omaohkapinako	VII ;
+! omatapihtsii:omatapihtsii	VII ;
+! omokihtsii:omokihtsii	VII ;
+! onakia’pii:onakia’pii	VII ;
+! onnatohsii:onnatohsii	VII ;
+! onnohkata’pii:onnohkata’pii	VII ;
+! onooksiksistsiko:onooksiksistsiko	VII ;
+! opaksísttohkii:opaksísttohkii	VII ;
+! opoonihkaa:opoonihkaa	VII ;
+! opottsii:opottsii	VII ;
+! osstsii:osstsii	VII ;
+! otahkoomaiksistoyi:otahkoomaiksistoyi	VII ;
+! otakó:otakó	VII ;
+! otamanistsi:otamanistsi	VII ;
+! otó:otó	VII ;
+! otsikahko:otsikahko	VII ;
+! oyíkaitsii:oyíkaitsii	VII ;
+! pi’ka’pii:pi’ka’pii	VII ;
+! piitsistóyi:piitsistóyi	VII ;
+! saahkohtssi:saahkohtssi	VII ;
+! saakoo:saakoo	VII ;
+! saakotsii:saakotsii	VII ;
+! saata’pii:saata’pii	VII ;
+! sahpii:sahpii	VII ;
+! saikimsskaa:saikimsskaa	VII ;
+! saikskaa:saikskaa	VII ;
+! saipihkaa:saipihkaa	VII ;
+! saipikoyi:saipikoyi	VII ;
+! saisi’toyi:saisi’toyi	VII ;
+! sáísskii:sáísskii	VII ;
+! sakaka’pii:sakaka’pii	VII ;
+! sao’ohka’pii:sao’ohka’pii	VII ;
+! saokihtsi:saokihtsi	VII ;
+! sapa’pii:sapa’pii	VII ;
+! sapanistso:sapanistso	VII ;
+! sattoto’kaa:sattoto’kaa	VII ;
+! sattsiksskaa:sattsiksskaa	VII ;
+! sawómmita’pii:sawómmita’pii	VII ;
+! sayinako:sayinako	VII ;
+! sayinsskaka’pii:sayinsskaka’pii	VII ;
+! sayippoma’pii:sayippoma’pii	VII ;
+! si’kii:si’kii	VII ;
+! si’tsii:si’tsii	VII ;
+! si’tsiinaattsi:si’tsiinaattsi	VII ;
+! siistonaa’pii:siistonaa’pii	VII ;
+! sika’pii:sika’pii	VII ;
+! sikki:sikki	VII ;
+! sikkohpi’yi:sikkohpi’yi	VII ;
+! sikkohsoyi:sikkohsoyi	VII ;
+! sikkotsi:sikkotsi	VII ;
+! siksinááttsi:siksinááttsi	VII ;
+! sipioomaiksistoyi:sipioomaiksistoyi	VII ;
+! skíinaattsi:skíinaattsi	VII ;
+soka’pii:soka’pii	VII  ;
+! sootaa:sootaa	VII ;
+! sopo:sopo	VII ;
+! sopówatsikimi:sopówatsikimi	VII ;
+! sopowatsinaattsi:sopowatsinaattsi	VII ;
+! sopoyiinako:sopoyiinako	VII ;
+! soyini:soyini	VII ;
+! soyoopoka’si:soyoopoka’si	VII ;
+! ssiinaattsi:ssiinaattsi	VII ;
+! ssikáaa’si:ssikáaa’si	VII ;
+! ssikáaa’si:ssikáaa’si	VII ;
+! ssikssopo:ssikssopo	VII ;
+! sskaa:sskaa	VII ;
+! sskito’tsstsi:sskito’tsstsi	VII ;
+! sskskoto’kaa:sskskoto’kaa	VII ;
+! ssksksinihkaa:ssksksinihkaa	VII ;
+! ssksspohpi’yi:ssksspohpi’yi	VII ;
+! ssoko:ssoko	VII ;
+! sspii:sspii	VII ;
+! sspii:sspii	VII ;
+! sspikii:sspikii	VII ;
+! sstaanoko:sstaanoko	VII ;
+! sstakskaa:sstakskaa	VII ;
+! sstoopa’si:sstoopa’si	VII ;
+! sstowa’pii:sstowa’pii	VII ;
+! sstoyii:sstoyii	VII ;
+! sstsi’kitsi:sstsi’kitsi	VII ;
+! sstsiisapiistakoyi:sstsiisapiistakoyi	VII ;
+! sstsííwa’si:sstsííwa’si	VII ;
+! sstsikii:sstsikii	VII ;
+! sstsipoko:sstsipoko	VII ;
+! sstsisi:sstsisi	VII ;
+! sstsitsíí:sstsitsíí	VII ;
+! sstssaakoyi:sstssaakoyi	VII ;
+! wa’kíkaoohpi’:wa’kíkaoohpi’	VII ;
+! wa’soka’pii:wa’soka’pii	VII ;
+! waahkanaapinako:waahkanaapinako	VII ;
+! waahkiáápiksistsiko:waahkiáápiksistsiko	VII ;
+! waahkowao’tstsi:waahkowao’tstsi	VII ;
+! waahtaa:waahtaa	VII ;
+! waakawoo:waakawoo	VII ;
+! waakawoo:waakawoo	VII ;
+! waamohsohpi’:waamohsohpi’	VII ;
+! waamottsinaawaatsi:waamottsinaawaatsi	VII ;
+! waana’si:waana’si	VII ;
+! waanao’kohpi:waanao’kohpi	VII ;
+! waanata’pii:waanata’pii	VII ;
+! waanattsii:waanattsii	VII ;
+! waanistsinaattsi:waanistsinaattsi	VII ;
+! waaniya’si:waaniya’si	VII ;
+! waanooksiksistsiko:waanooksiksistsiko	VII ;
+! waapikii:waapikii	VII ;
+! waapinako:waapinako	VII ;
+! waapipittsko:waapipittsko	VII ;
+! waapissahko:waapissahko	VII ;
+! waapistsisskitsii:waapistsisskitsii	VII ;
+! waapoyoohkittsii:waapoyoohkittsii	VII ;
+! wáátahssopo:wáátahssopo	VII ;
+! waatakimsskaa:waatakimsskaa	VII ;
+! waatapoko:waatapoko	VII ;
+! waatsistoihtsii:waatsistoihtsii	VII ;
+! waawakoyii:waawakoyii	VII ;
+! waawaksskaa:waawaksskaa	VII ;
+! waawanoosi:waawanoosi	VII ;
+! waawapokihki:waawapokihki	VII ;
+! waayaksikinako:waayaksikinako	VII ;
+! wakkii:wakkii	VII ;
+! waokskaa:waokskaa	VII ;
+! waoohkaa:waoohkaa	VII ;
+! wayaksiksistsiko:wayaksiksistsiko	VII ;
+! ya’takoo:ya’takoo	VII ;
+! yaahki’tsimii:yaahki’tsimii	VII ;
+! yaahkitsi:yaahkitsi	VII ;
+! yaahsii:yaahsii	VII ;
+! yiipo:yiipo	VII ;
+! yissksaana’pii:yissksaana’pii	VII ;
+! yisstsa’pii:yisstsa’pii	VII ;
+! yoohkíítsimm:yoohkíítsimm	VII ;
+! yoohsiniinaattsi:yoohsiniinaattsi	VII ;
+! yootsipinaattsi:yootsipinaattsi	VII ;
+! yosstsikinaisi:yosstsikinaisi	VII ;
+
+LEXICON VTI_STEMS
+! á’pai’piksi:á’pai’piksi	VTI ;
+! a’panistoo:a’panistoo	VTI ;
+! a’pihkahtoo:a’pihkahtoo	VTI ;
+! a’pistotsi:a’pistotsi	VTI ;
+! a’pistotsi:a’pistotsi	VTI ;
+! a’pitsiihtatoo:a’pitsiihtatoo	VTI ;
+! á’po’tsi:á’po’tsi	VTI ;
+! á’pohpáttsii:á’pohpáttsii	VTI ;
+! á’pohpáttski:á’pohpáttski	VTI ;
+! a’psski:a’psski	VTI ;
+! aanistsoo:aanistsoo	VTI ;
+! áí’stamatstohkatoo:áí’stamatstohkatoo	VTI ;
+! aiistohki:aiistohki	VTI ;
+! attstoo:attstoo	VTI ;
+! i’kókatoo:i’kókatoo	VTI ;
+! i’ksino’tsi:i’ksino’tsi	VTI ;
+! i’nohtoo:i’nohtoo	VTI ;
+! i’nokatoo:i’nokatoo	VTI ;
+! i’nssimatoo:i’nssimatoo	VTI ;
+! i’piiststoo:i’piiststoo	VTI ;
+! i’piiststoo:i’piiststoo	VTI ;
+! i’pistotsi:i’pistotsi	VTI ;
+! i’powatoo:i’powatoo	VTI ;
+! i’si:i’si	VTI ;
+! i’sii’tsi:i’sii’tsi	VTI ;
+! i’sskatoo:i’sskatoo	VTI ;
+! i’tsi:i’tsi	VTI ;
+! i’tsi:i’tsi	VTI ;
+! i’tsinihka’too:i’tsinihka’too	VTI ;
+! i’tsinssi:i’tsinssi	VTI ;
+! i’tsippoyi’ki:i’tsippoyi’ki	VTI ;
+! i’tska’ki:i’tska’ki	VTI ;
+! i’tsksowatoo:i’tsksowatoo	VTI ;
+! ihkihsi:ihkihsi	VTI ;
+! ihkiitatoo:ihkiitatoo	VTI ;
+! ihkssi:ihkssi	VTI ;
+! ihpiwatoo:ihpiwatoo	VTI ;
+! ihtawa’pssatoo:ihtawa’pssatoo	VTI ;
+! ihtsíípohtoo:ihtsíípohtoo	VTI ;
+! ihtsiiyi’tsi:ihtsiiyi’tsi	VTI ;
+! ihtsistta:ihtsistta	VTI ;
+! ihtssi:ihtssi	VTI ;
+! iipistotsi:iipistotsi	VTI ;
+! iistsini:iistsini	VTI ;
+! iita’pio’kii:iita’pio’kii	VTI ;
+! iitsittsi:iitsittsi	VTI ;
+! iitsskaahkio’tsi:iitsskaahkio’tsi	VTI ;
+! iitsskaamatoo:iitsskaamatoo	VTI ;
+! iitssksiiststoo:iitssksiiststoo	VTI ;
+! iiyika’kimatoo:iiyika’kimatoo	VTI ;
+! iiyiki’tsi:iiyiki’tsi	VTI ;
+! iiyikskapatoo:iiyikskapatoo	VTI ;
+! ika’ki:ika’ki	VTI ;
+! ika’ki’tsi:ika’ki’tsi	VTI ;
+! ika’kstsi:ika’kstsi	VTI ;
+! ikáapiksi:ikáapiksi	VTI ;
+! ikahkimatoo:ikahkimatoo	VTI ;
+! ikahksini:ikahksini	VTI ;
+! ikahksiststoo:ikahksiststoo	VTI ;
+! ikai’tsi:ikai’tsi	VTI ;
+! ikamo’satoo:ikamo’satoo	VTI ;
+! ikamotsiipohtoo:ikamotsiipohtoo	VTI ;
+! ikanihki:ikanihki	VTI ;
+! ikano’tsi:ikano’tsi	VTI ;
+! ikawai’piksi:ikawai’piksi	VTI ;
+! ikawohpattsii:ikawohpattsii	VTI ;
+! ikawohtoo:ikawohtoo	VTI ;
+! ikayinni:ikayinni	VTI ;
+! ikayissanistoo:ikayissanistoo	VTI ;
+! iki’tawaatoo:iki’tawaatoo	VTI ;
+! iki’tayissksimmatoo:iki’tayissksimmatoo	VTI ;
+! iki’tsiiksowaatoo:iki’tsiiksowaatoo	VTI ;
+! ikí’tsoohtoo:ikí’tsoohtoo	VTI ;
+! ikiihtsi:ikiihtsi	VTI ;
+! ikiikatoo:ikiikatoo	VTI ;
+! ikimihkahtoo:ikimihkahtoo	VTI ;
+! ikio:ikio	VTI ;
+! ikippoayi’tsi:ikippoayi’tsi	VTI ;
+! ikitayi’tsi:ikitayi’tsi	VTI ;
+! ikitayi’tsi:ikitayi’tsi	VTI ;
+! ikkaahkaanistotsi:ikkaahkaanistotsi	VTI ;
+! ikkahsi’tsi:ikkahsi’tsi	VTI ;
+! ikkakoyisstoo:ikkakoyisstoo	VTI ;
+! ikkamssatoo:ikkamssatoo	VTI ;
+! ikkatoo:ikkatoo	VTI ;
+! ikkatoo:ikkatoo	VTI ;
+! ikkawatoo:ikkawatoo	VTI ;
+! ikkimaanatoo:ikkimaanatoo	VTI ;
+! ikkiniihkimiksiiyi:ikkiniihkimiksiiyi	VTI ;
+! ikkiniistotsi:ikkiniistotsi	VTI ;
+! ikkitstoo:ikkitstoo	VTI ;
+! ikksisitsi’tsi:ikksisitsi’tsi	VTI ;
+! ikohkiai’piksi:ikohkiai’piksi	VTI ;
+! ikoohpáttsii:ikoohpáttsii	VTI ;
+! ikooki’tsi:ikooki’tsi	VTI ;
+! ikooni:ikooni	VTI ;
+! ikotski’tsi:ikotski’tsi	VTI ;
+! iksiiksksipo’tsi:iksiiksksipo’tsi	VTI ;
+! iksiini:iksiini	VTI ;
+! iksikká’pistotsi:iksikká’pistotsi	VTI ;
+! iksikki’tsi:iksikki’tsi	VTI ;
+! iksikksinimmaa:iksikksinimmaa	VTI ;
+! iksiksiimohkatoo:iksiksiimohkatoo	VTI ;
+! iksimatsi’tsi:iksimatsi’tsi	VTI ;
+! iksimatsi’tsi:iksimatsi’tsi	VTI ;
+! iksimsstatoo:iksimsstatoo	VTI ;
+! iksipinni:iksipinni	VTI ;
+! iksippoyinni:iksippoyinni	VTI ;
+! iksippoyinni:iksippoyinni	VTI ;
+! iksipskapatoo:iksipskapatoo	VTI ;
+! iksisatoo:iksisatoo	VTI ;
+! iksisiststoo:iksisiststoo	VTI ;
+! iksisskahki:iksisskahki	VTI ;
+! iksisskstsi:iksisskstsi	VTI ;
+! iksisstoyi’tsi:iksisstoyi’tsi	VTI ;
+! iksistohsi:iksistohsi	VTI ;
+! iksistsikomatoo:iksistsikomatoo	VTI ;
+! iksistspi’tsi:iksistspi’tsi	VTI ;
+! iksistspi’tsi:iksistspi’tsi	VTI ;
+! iksiststsoohsatoo:iksiststsoohsatoo	VTI ;
+! iksisttoksii:iksisttoksii	VTI ;
+! iksisttoni:iksisttoni	VTI ;
+! iksowaaatoo:iksowaaatoo	VTI ;
+! iksska’tsi:iksska’tsi	VTI ;
+! iksstatoo:iksstatoo	VTI ;
+! ikstsikinao’tsi:ikstsikinao’tsi	VTI ;
+! immistsiihkiitatoo:immistsiihkiitatoo	VTI ;
+! immssikatoo:immssikatoo	VTI ;
+! immssikatoo:immssikatoo	VTI ;
+! imsskatoo:imsskatoo	VTI ;
+! inaamaahkatoo:inaamaahkatoo	VTI ;
+! inaanatoo:inaanatoo	VTI ;
+! inaansskatoo:inaansskatoo	VTI ;
+! inai’tsi:inai’tsi	VTI ;
+! inaihka’satoo:inaihka’satoo	VTI ;
+! inakatoo:inakatoo	VTI ;
+! ini:ini	VTI ;
+! ini:ini	VTI ;
+ini:ini	VTI  ;
+! inihkatoo:inihkatoo	VTI ;
+! inihkihtsi:inihkihtsi	VTI ;
+! iniitstoo:iniitstoo	VTI ;
+! iniiyi’tsi:iniiyi’tsi	VTI ;
+! inikato’katoo:inikato’katoo	VTI ;
+! inikksistotsi:inikksistotsi	VTI ;
+! inna’ki:inna’ki	VTI ;
+! innáapiksi:innáapiksi	VTI ;
+! innaapotskihtsi:innaapotskihtsi	VTI ;
+! innihtatoo:innihtatoo	VTI ;
+! innioomsstsi:innioomsstsi	VTI ;
+! innoohpattsii:innoohpattsii	VTI ;
+! innoohtoo:innoohtoo	VTI ;
+! innootatoo:innootatoo	VTI ;
+! ino’tsi:ino’tsi	VTI ;
+! insskimao’satoo:insskimao’satoo	VTI ;
+! insstawohtoo:insstawohtoo	VTI ;
+! ipa’sokinni:ipa’sokinni	VTI ;
+! ipahkoosatoo:ipahkoosatoo	VTI ;
+! ipahpáapiksi:ipahpáapiksi	VTI ;
+! ipahpaapinaapikssatoo:ipahpaapinaapikssatoo	VTI ;
+! ipainssi:ipainssi	VTI ;
+! ipaisskio’tsi:ipaisskio’tsi	VTI ;
+! ipaisspikahki:ipaisspikahki	VTI ;
+! ipakksski:ipakksski	VTI ;
+! ipakksstsi:ipakksstsi	VTI ;
+! ipakottsisstoo:ipakottsisstoo	VTI ;
+! ipáóo’tsi:ipáóo’tsi	VTI ;
+! ipáóo’tsi:ipáóo’tsi	VTI ;
+! ipáóotskihtsi:ipáóotskihtsi	VTI ;
+! ipapaini:ipapaini	VTI ;
+! ipapao’katoo:ipapao’katoo	VTI ;
+! ipasskatoo:ipasskatoo	VTI ;
+! ipi’nitsi:ipi’nitsi	VTI ;
+! ipiiksii:ipiiksii	VTI ;
+! ipíino’tsi:ipíino’tsi	VTI ;
+! ipikki:ipikki	VTI ;
+! ipikksipi:ipikksipi	VTI ;
+! ipikssatoo:ipikssatoo	VTI ;
+! ipisatsi’tsi:ipisatsi’tsi	VTI ;
+! ipisatska’satoo:ipisatska’satoo	VTI ;
+! ipistsi’tsi:ipistsi’tsi	VTI ;
+! ipisttotskihtsi:ipisttotskihtsi	VTI ;
+! ipiyistotsi:ipiyistotsi	VTI ;
+! ipo’tsi:ipo’tsi	VTI ;
+! ipo’tsi:ipo’tsi	VTI ;
+! ipo’tstoo:ipo’tstoo	VTI ;
+! ipohki:ipohki	VTI ;
+! ipohko’tsi:ipohko’tsi	VTI ;
+! ipohksiiminni:ipohksiiminni	VTI ;
+! ipohksini:ipohksini	VTI ;
+! ipohtoo:ipohtoo	VTI ;
+! ipoipoohtoo:ipoipoohtoo	VTI ;
+! ipommakatoo:ipommakatoo	VTI ;
+! iponihtatoo:iponihtatoo	VTI ;
+! ipoohtoo:ipoohtoo	VTI ;
+! ipotsimatoo:ipotsimatoo	VTI ;
+! ipowayi’tsi:ipowayi’tsi	VTI ;
+! ipoyísskihtsi:ipoyísskihtsi	VTI ;
+! ippatsi’tsi:ippatsi’tsi	VTI ;
+! ippatstatoo:ippatstatoo	VTI ;
+! ippoayi’tsi:ippoayi’tsi	VTI ;
+! ippoayi’tsi:ippoayi’tsi	VTI ;
+! ippotsipi:ippotsipi	VTI ;
+! ipssi:ipssi	VTI ;
+! ipssimatoo:ipssimatoo	VTI ;
+! ipsstaahkio’tsi:ipsstaahkio’tsi	VTI ;
+! ipsstsipohtoo:ipsstsipohtoo	VTI ;
+! ipsstskahtoo:ipsstskahtoo	VTI ;
+! isamohtoo:isamohtoo	VTI ;
+! isamonsskatoo:isamonsskatoo	VTI ;
+! isawaao’ohtoo:isawaao’ohtoo	VTI ;
+! isina’satoo:isina’satoo	VTI ;
+! iskai’tsi:iskai’tsi	VTI ;
+! isoihtatoo:isoihtatoo	VTI ;
+! isomatoo:isomatoo	VTI ;
+! isoohtoo:isoohtoo	VTI ;
+! isoomooni:isoomooni	VTI ;
+! issksimatoo:issksimatoo	VTI ;
+! issksini:issksini	VTI ;
+! issohki:issohki	VTI ;
+! isstsi’tsi:isstsi’tsi	VTI ;
+! istaaapssatoo:istaaapssatoo	VTI ;
+! istainni:istainni	VTI ;
+! istómatoo:istómatoo	VTI ;
+! istookiiki’tawáatoo:istookiiki’tawáatoo	VTI ;
+! istotsi:istotsi	VTI ;
+! istsikapoisínaii:istsikapoisínaii	VTI ;
+! istsikapooyinni:istsikapooyinni	VTI ;
+! istssi:istssi	VTI ;
+! istta’tstoo:istta’tstoo	VTI ;
+! isttakoysstoo:isttakoysstoo	VTI ;
+! isttamatoo:isttamatoo	VTI ;
+! isttanai’piksi:isttanai’piksi	VTI ;
+! isttapinni:isttapinni	VTI ;
+! isttohkohtoo:isttohkohtoo	VTI ;
+! isttohksíístsini:isttohksíístsini	VTI ;
+! isttoki:isttoki	VTI ;
+! isttoki:isttoki	VTI ;
+! isttokimatoo:isttokimatoo	VTI ;
+! isttókinssi:isttókinssi	VTI ;
+! isttsi’tsi:isttsi’tsi	VTI ;
+! isttsikaahki:isttsikaahki	VTI ;
+! isttsikánistotoo:isttsikánistotoo	VTI ;
+! isttsikóksspainni:isttsikóksspainni	VTI ;
+! isttsimatoo:isttsimatoo	VTI ;
+! isttsinatoo:isttsinatoo	VTI ;
+! isttsitatoo:isttsitatoo	VTI ;
+! isttsitatoo:isttsitatoo	VTI ;
+! itapipohtoo:itapipohtoo	VTI ;
+! itapomatsskahtoo:itapomatsskahtoo	VTI ;
+! itapomátsskai:itapomátsskai	VTI ;
+! itota’pii:itota’pii	VTI ;
+! itotoisapistoo:itotoisapistoo	VTI ;
+! itsinipo’tssi:itsinipo’tssi	VTI ;
+! itsinipo’tssi:itsinipo’tssi	VTI ;
+! itsinohtoo:itsinohtoo	VTI ;
+! itsisoipiitsiihtatoo:itsisoipiitsiihtatoo	VTI ;
+! itsito:itsito	VTI ;
+! itski:itski	VTI ;
+! itsspioohtoo:itsspioohtoo	VTI ;
+! itstoo:itstoo	VTI ;
+! itstsii:itstsii	VTI ;
+! ittahsatoo:ittahsatoo	VTI ;
+! ittahsiinihkihtsi:ittahsiinihkihtsi	VTI ;
+! ittahsoohkomatoo:ittahsoohkomatoo	VTI ;
+! kottsii:kottsii	VTI ;
+! ma’tsi:ma’tsi	VTI ;
+! niitsí’tsi:niitsí’tsi	VTI ;
+! o’kaasatoo:o’kaasatoo	VTI ;
+! o’kinatoo:o’kinatoo	VTI ;
+! o’ksowatoo:o’ksowatoo	VTI ;
+! o’kspanohkio’tsi:o’kspanohkio’tsi	VTI ;
+! o’ma’pistoo:o’ma’pistoo	VTI ;
+! o’mohtoo:o’mohtoo	VTI ;
+! o’tákaapiksi:o’tákaapiksi	VTI ;
+! o’taksísskii:o’taksísskii	VTI ;
+! o’taminnisi’sskihtsi:o’taminnisi’sskihtsi	VTI ;
+! o’totamii’tsi:o’totamii’tsi	VTI ;
+! o’tsi:o’tsi	VTI ;
+! o’tsi:o’tsi	VTI ;
+! o’tsi:o’tsi	VTI ;
+! o’tsipohtoo:o’tsipohtoo	VTI ;
+! o’tsitsiki’tsi:o’tsitsiki’tsi	VTI ;
+! ohkinayo’satoo:ohkinayo’satoo	VTI ;
+! ohkinnatoo:ohkinnatoo	VTI ;
+! ohkisskatoo:ohkisskatoo	VTI ;
+! ohko’tsi:ohko’tsi	VTI ;
+! ohkoi’tsi:ohkoi’tsi	VTI ;
+! ohkoi’tsi:ohkoi’tsi	VTI ;
+! ohkoissksini:ohkoissksini	VTI ;
+! ohkooni:ohkooni	VTI ;
+! ohkóotatoo:ohkóotatoo	VTI ;
+! ohkottai’tsi:ohkottai’tsi	VTI ;
+! ohkowaatsi:ohkowaatsi	VTI ;
+! ohkowai’tsi:ohkowai’tsi	VTI ;
+! ohpáatoo:ohpáatoo	VTI ;
+! ohpakóyi’si:ohpakóyi’si	VTI ;
+! ohpattsii:ohpattsii	VTI ;
+! ohpattsski:ohpattsski	VTI ;
+! ohpohtoo:ohpohtoo	VTI ;
+! ohpommatoo:ohpommatoo	VTI ;
+! ohponnatoo:ohponnatoo	VTI ;
+! ohpooni:ohpooni	VTI ;
+! ohpopaatoo:ohpopaatoo	VTI ;
+! ohpowaanssatoo:ohpowaanssatoo	VTI ;
+! ohsiihkatoo:ohsiihkatoo	VTI ;
+! ohso’kapáaatoo:ohso’kapáaatoo	VTI ;
+! ohtaisskapatoo:ohtaisskapatoo	VTI ;
+! ohtoi’too:ohtoi’too	VTI ;
+! ohtoissa’tsi:ohtoissa’tsi	VTI ;
+! ohtoo:ohtoo	VTI ;
+! ohtookimsstoo:ohtookimsstoo	VTI ;
+! ohtookisatoo:ohtookisatoo	VTI ;
+! ohtoonimatoo:ohtoonimatoo	VTI ;
+! ohtowáatoo:ohtowáatoo	VTI ;
+! ohtoyi’too:ohtoyi’too	VTI ;
+! ohtsimatoo:ohtsimatoo	VTI ;
+! oka’pahsinatoo:oka’pahsinatoo	VTI ;
+! okakihtsimatoo:okakihtsimatoo	VTI ;
+! okakio’satoo:okakio’satoo	VTI ;
+! okamaini:okamaini	VTI ;
+! okamo’tstoo:okamo’tstoo	VTI ;
+! okatoo:okatoo	VTI ;
+! okoowatoo:okoowatoo	VTI ;
+! oksinnatoo:oksinnatoo	VTI ;
+! oksistotsi:oksistotsi	VTI ;
+! oksistsi’tsi:oksistsi’tsi	VTI ;
+! okspainni:okspainni	VTI ;
+! okspainni:okspainni	VTI ;
+! okstoo:okstoo	VTI ;
+! omai’tsi:omai’tsi	VTI ;
+! omaimmohsatoo:omaimmohsatoo	VTI ;
+! omaissa’tsi:omaissa’tsi	VTI ;
+! omatapistotsi:omatapistotsi	VTI ;
+! omatsipohtoo:omatsipohtoo	VTI ;
+! omatskahtoo:omatskahtoo	VTI ;
+! omatskahtoo:omatskahtoo	VTI ;
+! omikinai:omikinai	VTI ;
+! omikso’tsi:omikso’tsi	VTI ;
+! omino’tsi:omino’tsi	VTI ;
+! omoksipi:omoksipi	VTI ;
+! omooni:omooni	VTI ;
+! omowááhkii:omowááhkii	VTI ;
+! omowai’piksii:omowai’piksii	VTI ;
+! omowohtoo:omowohtoo	VTI ;
+! onakisttsi’tsi:onakisttsi’tsi	VTI ;
+! onatoo:onatoo	VTI ;
+! oni’tsi:oni’tsi	VTI ;
+! onii:onii	VTI ;
+! onnatsstoo:onnatsstoo	VTI ;
+! onnohkatsi’tsi:onnohkatsi’tsi	VTI ;
+! onohkoyi’tsimatoo:onohkoyi’tsimatoo	VTI ;
+! onootapissatoo:onootapissatoo	VTI ;
+! onootatoo:onootatoo	VTI ;
+! oohkohki:oohkohki	VTI ;
+! oohtohki:oohtohki	VTI ;
+! ootstoo:ootstoo	VTI ;
+! oowatoo:oowatoo	VTI ;
+! ooyo’satoo:ooyo’satoo	VTI ;
+! opahkimiksi:opahkimiksi	VTI ;
+! opakiiyihksstsii:opakiiyihksstsii	VTI ;
+! opaksinni:opaksinni	VTI ;
+! opaksiststoo:opaksiststoo	VTI ;
+! opakso’tsi:opakso’tsi	VTI ;
+! opamáatoo:opamáatoo	VTI ;
+! opano’tsi:opano’tsi	VTI ;
+! opatoo:opatoo	VTI ;
+! opatoo:opatoo	VTI ;
+! opitsino’tsi:opitsino’tsi	VTI ;
+! opitskapatoo:opitskapatoo	VTI ;
+! opitso’tsi:opitso’tsi	VTI ;
+! opoksini:opoksini	VTI ;
+! opóókski:opóókski	VTI ;
+! opooksski:opooksski	VTI ;
+! opooni:opooni	VTI ;
+! opoonistoo:opoonistoo	VTI ;
+! otahpii:otahpii	VTI ;
+! otamii’tsi:otamii’tsi	VTI ;
+! otamohtoyi’too:otamohtoyi’too	VTI ;
+! otani:otani	VTI ;
+! otano’to:otano’to	VTI ;
+! otawanssi:otawanssi	VTI ;
+! otohká’tatoo:otohká’tatoo	VTI ;
+! otoi’tsikatoo:otoi’tsikatoo	VTI ;
+! otoi’tsikatoo:otoi’tsikatoo	VTI ;
+! otonatoo:otonatoo	VTI ;
+! otoomsoohkomatoo:otoomsoohkomatoo	VTI ;
+! ototoo:ototoo	VTI ;
+! otoyi’tsikatoo:otoyi’tsikatoo	VTI ;
+! otsikihtatoo:otsikihtatoo	VTI ;
+! otsikohtoo:otsikohtoo	VTI ;
+! otsikohtoo:otsikohtoo	VTI ;
+! otsiksiiststoo:otsiksiiststoo	VTI ;
+! otsistapi’tsi:otsistapi’tsi	VTI ;
+! oy’ssatoo:oy’ssatoo	VTI ;
+! oyi’tsi:oyi’tsi	VTI ;
+! oyi’tskihtsi:oyi’tskihtsi	VTI ;
+! sa’kahkanii:sa’kahkanii	VTI ;
+! sa’kapaaatoo:sa’kapaaatoo	VTI ;
+! sa’ksisákii:sa’ksisákii	VTI ;
+! saahtsíkapinni:saahtsíkapinni	VTI ;
+! saani:saani	VTI ;
+! sáatapiksi:sáatapiksi	VTI ;
+! saatstoo:saatstoo	VTI ;
+! sahpssi:sahpssi	VTI ;
+! saiikso’tsi:saiikso’tsi	VTI ;
+! saikskaotsi:saikskaotsi	VTI ;
+! sáípihkao’tsi:sáípihkao’tsi	VTI ;
+! saipohpatski:saipohpatski	VTI ;
+! saipohtoo:saipohtoo	VTI ;
+! saipskapatoo:saipskapatoo	VTI ;
+! saisstowohtoo:saisstowohtoo	VTI ;
+! sakaki’tsi:sakaki’tsi	VTI ;
+! sakskihtsi:sakskihtsi	VTI ;
+! sao’ohpisstsiistotsi:sao’ohpisstsiistotsi	VTI ;
+! sao’tsi:sao’tsi	VTI ;
+! sáóhpapokai’sstoo:sáóhpapokai’sstoo	VTI ;
+! saohpattsistoo:saohpattsistoo	VTI ;
+! saokohtoo:saokohtoo	VTI ;
+! saoppiso’tsi:saoppiso’tsi	VTI ;
+! sáóppisski:sáóppisski	VTI ;
+! sapa’pssatoo:sapa’pssatoo	VTI ;
+! sapaakohtoo:sapaakohtoo	VTI ;
+! sapanisto:sapanisto	VTI ;
+! sapi’kínai:sapi’kínai	VTI ;
+! sapistotsi:sapistotsi	VTI ;
+! sápomatoo:sápomatoo	VTI ;
+! sapskahtoo:sapskahtoo	VTI ;
+! sapskaohsatoo:sapskaohsatoo	VTI ;
+! satai’powatoo:satai’powatoo	VTI ;
+! satsi:satsi	VTI ;
+! satsini:satsini	VTI ;
+! sáttaapiksi:sáttaapiksi	VTI ;
+! sattsini:sattsini	VTI ;
+! sawohkoi’tsi:sawohkoi’tsi	VTI ;
+! sawótsstsimini:sawótsstsimini	VTI ;
+! sayi’tsimatoo:sayi’tsimatoo	VTI ;
+! si’ki:si’ki	VTI ;
+! si’kinni:si’kinni	VTI ;
+! si’kopiaanistoo:si’kopiaanistoo	VTI ;
+! siiko’tsi:siiko’tsi	VTI ;
+! síini’tsi:síini’tsi	VTI ;
+! siitohtonni:siitohtonni	VTI ;
+! siitsoohtoo:siitsoohtoo	VTI ;
+! sikahksípo’tsi:sikahksípo’tsi	VTI ;
+! siki’tsi:siki’tsi	VTI ;
+! sikkai’piksi:sikkai’piksi	VTI ;
+! sikkohsi:sikkohsi	VTI ;
+! sikohkioohtoo:sikohkioohtoo	VTI ;
+! sikstsi:sikstsi	VTI ;
+! simaatoo:simaatoo	VTI ;
+! simakatoo:simakatoo	VTI ;
+! simatoo:simatoo	VTI ;
+! sinai:sinai	VTI ;
+! sinaohsatoo:sinaohsatoo	VTI ;
+! sínihtsi:sínihtsi	VTI ;
+! sinokoopatoo:sinokoopatoo	VTI ;
+! sisiksinii:sisiksinii	VTI ;
+! sisiksino’tsi:sisiksino’tsi	VTI ;
+! sisowatoo:sisowatoo	VTI ;
+! sisowatoo:sisowatoo	VTI ;
+! sistsikaatoo:sistsikaatoo	VTI ;
+! so’satoo:so’satoo	VTI ;
+! soi’sstsinio’tsi:soi’sstsinio’tsi	VTI ;
+! sóí’staapiksi:sóí’staapiksi	VTI ;
+! soi’stsipinnatoo:soi’stsipinnatoo	VTI ;
+! sokottoatoo:sokottoatoo	VTI ;
+! soksísstoo:soksísstoo	VTI ;
+! soksistotsi:soksistotsi	VTI ;
+! somaanii’powatoo:somaanii’powatoo	VTI ;
+! sóókski:sóókski	VTI ;
+! sóókso’tsi:sóókso’tsi	VTI ;
+! sooyinnimatoo:sooyinnimatoo	VTI ;
+! sopoksistotsi:sopoksistotsi	VTI ;
+! sopowahtsi’satoo:sopowahtsi’satoo	VTI ;
+! sopowatoo:sopowatoo	VTI ;
+! sopowatsistotoohsatoo:sopowatsistotoohsatoo	VTI ;
+soyaapiksi:soyaapiksi	VTI  ;
+! ssa’tsí:ssa’tsí	VTI ;
+! ssa’tsi:ssa’tsi	VTI ;
+! ssa’tsi:ssa’tsi	VTI ;
+! ssaahsinatoo:ssaahsinatoo	VTI ;
+! ssaki’tsi:ssaki’tsi	VTI ;
+! ssaki’tsi:ssaki’tsi	VTI ;
+! ssii:ssii	VTI ;
+! ssiini:ssiini	VTI ;
+! ssiiststoo:ssiiststoo	VTI ;
+! ssikáaattsstoo:ssikáaattsstoo	VTI ;
+! ssimatoo:ssimatoo	VTI ;
+! ssímihkatoo:ssímihkatoo	VTI ;
+! ssinni:ssinni	VTI ;
+! ssinni:ssinni	VTI ;
+! sskáakanistoo:sskáakanistoo	VTI ;
+! sskahsi’tsi:sskahsi’tsi	VTI ;
+! sskai’tsi:sskai’tsi	VTI ;
+! sski:sski	VTI ;
+! sski:sski	VTI ;
+! sskihkahtoo:sskihkahtoo	VTI ;
+! sskitsaohpattsii:sskitsaohpattsii	VTI ;
+! ssko’tsi:ssko’tsi	VTI ;
+! sskohkooni:sskohkooni	VTI ;
+! ssksimatoo:ssksimatoo	VTI ;
+! ssksini:ssksini	VTI ;
+! sskska’tsi:sskska’tsi	VTI ;
+! sskska’tsi:sskska’tsi	VTI ;
+! sskskoi:sskskoi	VTI ;
+! sskskomatoo:sskskomatoo	VTI ;
+! ssksksini:ssksksini	VTI ;
+! ssohki:ssohki	VTI ;
+! ssokaahki:ssokaahki	VTI ;
+! sspaahki:sspaahki	VTI ;
+! sspihki:sspihki	VTI ;
+! sspiisao’tsi:sspiisao’tsi	VTI ;
+! sspinatoo:sspinatoo	VTI ;
+! sspinni:sspinni	VTI ;
+! sstahpiki’tsi:sstahpiki’tsi	VTI ;
+! sstai:sstai	VTI ;
+! sstao’tsi:sstao’tsi	VTI ;
+! sstatoo:sstatoo	VTI ;
+! sstonni:sstonni	VTI ;
+! sstssi:sstssi	VTI ;
+! sta’toksii:sta’toksii	VTI ;
+! stsiyi’tsi:stsiyi’tsi	VTI ;
+! wa’kikaohtoo:wa’kikaohtoo	VTI ;
+! wa’paahkii:wa’paahkii	VTI ;
+! wa’soyinni:wa’soyinni	VTI ;
+! wa’tstoo:wa’tstoo	VTI ;
+! wa’tstoo:wa’tstoo	VTI ;
+! wa’yihkihtsi:wa’yihkihtsi	VTI ;
+! waahkanii:waahkanii	VTI ;
+! waahkaniksiiyi:waahkaniksiiyi	VTI ;
+! waahkó’satoo:waahkó’satoo	VTI ;
+! waahkoma’taahkohkatoo:waahkoma’taahkohkatoo	VTI ;
+! waahkoma’tatoo:waahkoma’tatoo	VTI ;
+! waahtsii:waahtsii	VTI ;
+! waahtsowáapiksi:waahtsowáapiksi	VTI ;
+! waakaistotsi:waakaistotsi	VTI ;
+! waakáóhtoo:waakáóhtoo	VTI ;
+! waakohsi:waakohsi	VTI ;
+! waakomi’tsi:waakomi’tsi	VTI ;
+! waakomi’tsi:waakomi’tsi	VTI ;
+! waakomitsiihtatoo:waakomitsiihtatoo	VTI ;
+! waamatoo:waamatoo	VTI ;
+! waamohsai’piksi:waamohsai’piksi	VTI ;
+! waana’ki:waana’ki	VTI ;
+! waana’ki:waana’ki	VTI ;
+! waanaoyitanistoo:waanaoyitanistoo	VTI ;
+! waanatsistotsi:waanatsistotsi	VTI ;
+! waanistoo:waanistoo	VTI ;
+! waanistoo:waanistoo	VTI ;
+! waanistsi’tsi:waanistsi’tsi	VTI ;
+! waanisttotsi:waanisttotsi	VTI ;
+! waanisttsi’tsi:waanisttsi’tsi	VTI ;
+! waapáápiksi:waapáápiksi	VTI ;
+! waapatsi’tsi:waapatsi’tsi	VTI ;
+! waapitsíkai:waapitsíkai	VTI ;
+! waapitstsi:waapitstsi	VTI ;
+! waapo’kapáatoo:waapo’kapáatoo	VTI ;
+! waapo’kio’tsi:waapo’kio’tsi	VTI ;
+! waapo’kohpattski:waapo’kohpattski	VTI ;
+! waapo’ksiiststoo:waapo’ksiiststoo	VTI ;
+! waapo’tsi:waapo’tsi	VTI ;
+! waapowohpatsski:waapowohpatsski	VTI ;
+! waatakimii:waatakimii	VTI ;
+! waatanioot:waatanioot	VTI ;
+! waatano’tsi:waatano’tsi	VTI ;
+! waataponisskatoo:waataponisskatoo	VTI ;
+! waatohtsi:waatohtsi	VTI ;
+! waatowa’pistotoo:waatowa’pistotoo	VTI ;
+! waatsistooyinni:waatsistooyinni	VTI ;
+! waawaahsatoo:waawaahsatoo	VTI ;
+! waawai’kimisstoo:waawai’kimisstoo	VTI ;
+! waawakino’tsi:waawakino’tsi	VTI ;
+! waawattaapiksi:waawattaapiksi	VTI ;
+! waawattsski:waawattsski	VTI ;
+! waayipi:waayipi	VTI ;
+! wai’piht:wai’piht	VTI ;
+! wai’tsinni:wai’tsinni	VTI ;
+! waokstsi:waokstsi	VTI ;
+! waonihtsi:waonihtsi	VTI ;
+! waonii:waonii	VTI ;
+! waoo’tokii:waoo’tokii	VTI ;
+! wattsisskisatoo:wattsisskisatoo	VTI ;
+! wayákiitohpattsistsi:wayákiitohpattsistsi	VTI ;
+! wayaksipi:wayaksipi	VTI ;
+! yaakaahkio’tsi:yaakaahkio’tsi	VTI ;
+! yáakai’piksi:yáakai’piksi	VTI ;
+! yaakainni:yaakainni	VTI ;
+! yáakohtoo:yáakohtoo	VTI ;
+! yáaksíksii:yáaksíksii	VTI ;
+! yaaksini:yaaksini	VTI ;
+! yaaksstsitsikatoo:yaaksstsitsikatoo	VTI ;
+! yaamaahki:yaamaahki	VTI ;
+! yaamikskáapiksi:yaamikskáapiksi	VTI ;
+! yaaminni:yaaminni	VTI ;
+! yaamitaoksistotsi:yaamitaoksistotsi	VTI ;
+! yaamsstsinni:yaamsstsinni	VTI ;
+! yiihki:yiihki	VTI ;
+! yiimatoo:yiimatoo	VTI ;
+! yiinapanistoo:yiinapanistoo	VTI ;
+! yiinapanssatoo:yiinapanssatoo	VTI ;
+! yiipistotsi:yiipistotsi	VTI ;
+! yiistaapiksi:yiistaapiksi	VTI ;
+! yiistahtoo:yiistahtoo	VTI ;
+! yiistapááhkio’tsi:yiistapááhkio’tsi	VTI ;
+! yiistapipo’tsi:yiistapipo’tsi	VTI ;
+! yiistapsski:yiistapsski	VTI ;
+! yiistsini:yiistsini	VTI ;
+! yiistsino’tsi:yiistsino’tsi	VTI ;
+! yiistsipommatoo:yiistsipommatoo	VTI ;
+! yiitsittsi:yiitsittsi	VTI ;
+yinni:yinni	VTI  ;
+! yiskai’tatoo:yiskai’tatoo	VTI ;
+! yissinio’tsi:yissinio’tsi	VTI ;
+! yissitoo:yissitoo	VTI ;
+! yissksipi:yissksipi	VTI ;
+! yissohki:yissohki	VTI ;
+! yisstahtsi:yisstahtsi	VTI ;
+! yisstsiiwakatoo:yisstsiiwakatoo	VTI ;
+! yo’kii:yo’kii	VTI ;
+! yoohkaninni:yoohkaninni	VTI ;
+! yoohkawatssi:yoohkawatssi	VTI ;
+! yoohki:yoohki	VTI ;
+! yoohtsi:yoohtsi	VTI ;
+! yootsipistotsi:yootsipistotsi	VTI ;
+
+LEXICON VTA_STEMS
+! a’paisskin:a’paisskin	VTA ;
+! a’panist:a’panist	VTA ;
+! a’patapiksist1:a’patapiksist1	VTA ;
+! a’patapiksist2:a’patapiksist2	VTA ;
+! a’pihka:a’pihka	VTA ;
+! a’pistoto:a’pistoto	VTA ;
+! á’pistoto:á’pistoto	VTA ;
+! a’pitsiihtat:a’pitsiihtat	VTA ;
+! a’po’to:a’po’to	VTA ;
+! a’pohpáttsko:a’pohpáttsko	VTA ;
+! á’psskiáapikssat:á’psskiáapikssat	VTA ;
+! a’pssko:a’pssko	VTA ;
+! a’pssko:a’pssko	VTA ;
+! a’pssto:a’pssto	VTA ;
+! aanistaimmiyi:aanistaimmiyi	VTA ;
+! aanistsimmaa:aanistsimmaa	VTA ;
+! ahkanaapitt:ahkanaapitt	VTA ;
+! ahkiaapamm:ahkiaapamm	VTA ;
+! ahkiaapapohkat:ahkiaapapohkat	VTA ;
+! áí’pohto:áí’pohto	VTA ;
+! áí’stamatsi:áí’stamatsi	VTA ;
+! aiistohko:aiistohko	VTA ;
+! akomimm:akomimm	VTA ;
+! anistá’paistoto:anistá’paistoto	VTA ;
+! ayaamoyi’powat:ayaamoyi’powat	VTA ;
+! i’ki:i’ki	VTA ;
+! i’kowanisttoto:i’kowanisttoto	VTA ;
+! i’nimm:i’nimm	VTA ;
+! i’nit:i’nit	VTA ;
+! i’nit:i’nit	VTA ;
+! i’nokat:i’nokat	VTA ;
+! i’nssimat:i’nssimat	VTA ;
+! i’powat:i’powat	VTA ;
+! i’powatomo:i’powatomo	VTA ;
+! i’simm:i’simm	VTA ;
+! i’sskat:i’sskat	VTA ;
+! i’tomanistanikkohksiim:i’tomanistanikkohksiim	VTA ;
+! i’tsiihkíni:i’tsiihkíni	VTA ;
+! i’tsiiyisko:i’tsiiyisko	VTA ;
+! i’tsinss:i’tsinss	VTA ;
+! i’tsisspíni:i’tsisspíni	VTA ;
+! i’tsksowat:i’tsksowat	VTA ;
+! i’tsoohksistoni:i’tsoohksistoni	VTA ;
+! i’yinn:i’yinn	VTA ;
+! i’yittsi:i’yittsi	VTA ;
+! ihkihs:ihkihs	VTA ;
+! ihkiitat:ihkiitat	VTA ;
+! ihkss:ihkss	VTA ;
+! ihtawa’pssat:ihtawa’pssat	VTA ;
+! ihtohkihtsi:ihtohkihtsi	VTA ;
+! ihtsíípi:ihtsíípi	VTA ;
+! ihtsiiyimm:ihtsiiyimm	VTA ;
+! ihtsisttam:ihtsisttam	VTA ;
+! ihtsoohkitsiw:ihtsoohkitsiw	VTA ;
+! ihtsoohkitso:ihtsoohkitso	VTA ;
+! ii’yitt:ii’yitt	VTA ;
+! iimapááhko:iimapááhko	VTA ;
+! iinawátso:iinawátso	VTA ;
+! iino:iino	VTA ;
+! iipistoto:iipistoto	VTA ;
+! iitsi’powat:iitsi’powat	VTA ;
+! iitsskaam:iitsskaam	VTA ;
+! iiyika’kimat:iiyika’kimat	VTA ;
+! iiyikimm:iiyikimm	VTA ;
+! iiyikskapat:iiyikskapat	VTA ;
+! iiyikssko:iiyikssko	VTA ;
+! iiyistsipi:iiyistsipi	VTA ;
+! ika:ika	VTA ;
+! ika’ki:ika’ki	VTA ;
+! ika’kimm:ika’kimm	VTA ;
+! ika’ksipi:ika’ksipi	VTA ;
+! ika’tai’pohto:ika’tai’pohto	VTA ;
+! ikáapiksist:ikáapiksist	VTA ;
+! ikaatapiksist:ikaatapiksist	VTA ;
+! ikahko’ki:ikahko’ki	VTA ;
+! ikahksini:ikahksini	VTA ;
+! ikahksistsim:ikahksistsim	VTA ;
+! ikahksstóóki:ikahksstóóki	VTA ;
+! ikahtomo:ikahtomo	VTA ;
+! ikahtsiim:ikahtsiim	VTA ;
+! ikaimm:ikaimm	VTA ;
+! ikaimm:ikaimm	VTA ;
+! ikaisinamo:ikaisinamo	VTA ;
+! ikaitapiitsiniko:ikaitapiitsiniko	VTA ;
+ikákomimm:ikákomimm	VTA  ;
+! ikamo’sat:ikamo’sat	VTA ;
+! ikamotsíípi:ikamotsíípi	VTA ;
+! ikanihko:ikanihko	VTA ;
+! ikano’to:ikano’to	VTA ;
+! ikawaahkomo:ikawaahkomo	VTA ;
+! ikawai’piksist:ikawai’piksist	VTA ;
+! ikawohpattsi:ikawohpattsi	VTA ;
+! ikayinnamo:ikayinnamo	VTA ;
+! ikayinno:ikayinno	VTA ;
+! ikayissanist:ikayissanist	VTA ;
+! ikaysspomo:ikaysspomo	VTA ;
+! iki’tawaat:iki’tawaat	VTA ;
+! iki’tayissksimmat:iki’tayissksimmat	VTA ;
+! iki’tsiihtsi:iki’tsiihtsi	VTA ;
+! iki’tsim:iki’tsim	VTA ;
+! ikiaahpiksistoto:ikiaahpiksistoto	VTA ;
+! ikiihto:ikiihto	VTA ;
+! ikiikat:ikiikat	VTA ;
+! ikimm:ikimm	VTA ;
+! ikimmatahsinat:ikimmatahsinat	VTA ;
+! ikimmatsistoto:ikimmatsistoto	VTA ;
+! ikitáyimm:ikitáyimm	VTA ;
+! ikkaahkaanistoto:ikkaahkaanistoto	VTA ;
+! ikkaayayisskattsiim:ikkaayayisskattsiim	VTA ;
+! ikkahsanist:ikkahsanist	VTA ;
+! ikkahsimm:ikkahsimm	VTA ;
+! ikkahsistoto:ikkahsistoto	VTA ;
+! ikkahsitapimm:ikkahsitapimm	VTA ;
+! ikkahsitapistoto:ikkahsitapistoto	VTA ;
+! ikkamssat:ikkamssat	VTA ;
+! ikkat:ikkat	VTA ;
+! ikkawat:ikkawat	VTA ;
+! ikki:ikki	VTA ;
+! ikkiaakat:ikkiaakat	VTA ;
+! ikkiaakat:ikkiaakat	VTA ;
+! ikkiniistot:ikkiniistot	VTA ;
+! ikkio’to:ikkio’to	VTA ;
+! ikkitst:ikkitst	VTA ;
+! ikksspi:ikksspi	VTA ;
+! ikkstsíni:ikkstsíni	VTA ;
+! ikkstsínio’to:ikkstsínio’to	VTA ;
+! iko’poinawat:iko’poinawat	VTA ;
+! ikohkiistoto:ikohkiistoto	VTA ;
+! ikohkiistoto:ikohkiistoto	VTA ;
+! ikohkíyissksipistaa’t:ikohkíyissksipistaa’t	VTA ;
+! ikohtoma’t:ikohtoma’t	VTA ;
+! ikookimm:ikookimm	VTA ;
+! ikoon:ikoon	VTA ;
+! ikottsi:ikottsi	VTA ;
+! iksamaoko’sat:iksamaoko’sat	VTA ;
+! iksííkskaaat:iksííkskaaat	VTA ;
+! iksiin:iksiin	VTA ;
+! iksiinsski:iksiinsski	VTA ;
+! iksikiin:iksikiin	VTA ;
+! iksikioohpatsko:iksikioohpatsko	VTA ;
+! iksikká’pistoto:iksikká’pistoto	VTA ;
+! iksikkimm:iksikkimm	VTA ;
+! iksikkiowai’piisskohto:iksikkiowai’piisskohto	VTA ;
+! iksiksiimohkat:iksiksiimohkat	VTA ;
+! iksikskáaat:iksikskáaat	VTA ;
+! iksimatsí’tomo:iksimatsí’tomo	VTA ;
+! iksimatsimm:iksimatsimm	VTA ;
+! iksimi’nit:iksimi’nit	VTA ;
+! iksiminihkat:iksiminihkat	VTA ;
+! iksimm:iksimm	VTA ;
+! iksimm:iksimm	VTA ;
+! iksimminihkat:iksimminihkat	VTA ;
+! iksimsstat:iksimsstat	VTA ;
+! iksimsstat:iksimsstat	VTA ;
+! iksisat:iksisat	VTA ;
+! iksisistsim:iksisistsim	VTA ;
+! iksisskahko:iksisskahko	VTA ;
+! iksissksi’p:iksissksi’p	VTA ;
+! iksisstoohkot:iksisstoohkot	VTA ;
+! iksisstoyimm:iksisstoyimm	VTA ;
+! iksistspimm:iksistspimm	VTA ;
+! iksiststsoohsat:iksiststsoohsat	VTA ;
+! iksisttoksi:iksisttoksi	VTA ;
+! iksisttonit:iksisttonit	VTA ;
+! iksisttotsimm:iksisttotsimm	VTA ;
+! iksisttowat:iksisttowat	VTA ;
+! ikskimat:ikskimat	VTA ;
+! ikso’kowamm:ikso’kowamm	VTA ;
+! iksowaaat:iksowaaat	VTA ;
+! iksskamm:iksskamm	VTA ;
+! iksspito:iksspito	VTA ;
+! iksstat:iksstat	VTA ;
+! imm:imm	VTA ;
+! imm:imm	VTA ;
+! immaksi’nit:immaksi’nit	VTA ;
+! immistsiihkiitat:immistsiihkiitat	VTA ;
+! immsowaat:immsowaat	VTA ;
+! immssikat:immssikat	VTA ;
+! imsskat:imsskat	VTA ;
+! inaamaahkat:inaamaahkat	VTA ;
+! inaanat:inaanat	VTA ;
+! inaanssat:inaanssat	VTA ;
+! inaanssko:inaanssko	VTA ;
+! inaihka’sat:inaihka’sat	VTA ;
+! inaimm:inaimm	VTA ;
+! inakat:inakat	VTA ;
+! inawaakiistoto:inawaakiistoto	VTA ;
+! ini’stoto:ini’stoto	VTA ;
+! ini’yimm:ini’yimm	VTA ;
+! inihkat:inihkat	VTA ;
+! inihkatsimat:inihkatsimat	VTA ;
+! inihkohto:inihkohto	VTA ;
+! inihkohtomo:inihkohtomo	VTA ;
+! iniitsim:iniitsim	VTA ;
+! iniiyimm:iniiyimm	VTA ;
+! inikato’kat:inikato’kat	VTA ;
+! inikkihka’sat:inikkihka’sat	VTA ;
+! inikkihkaohsat:inikkihkaohsat	VTA ;
+! inikkoyihkaam:inikkoyihkaam	VTA ;
+! inikksistoto:inikksistoto	VTA ;
+! inna’ko:inna’ko	VTA ;
+! innáapiksist:innáapiksist	VTA ;
+! innihtat:innihtat	VTA ;
+! inniihtsi:inniihtsi	VTA ;
+! inniipo’to:inniipo’to	VTA ;
+! innioomipi:innioomipi	VTA ;
+! innissko:innissko	VTA ;
+! innoohpattsi:innoohpattsi	VTA ;
+! innootat:innootat	VTA ;
+! innootat:innootat	VTA ;
+! ino:ino	VTA ;
+! ino:ino	VTA ;
+ino:ino	VTA  ;
+! inowaamihka’sat:inowaamihka’sat	VTA ;
+! insskimao’sat:insskimao’sat	VTA ;
+! insstat:insstat	VTA ;
+! insstayihtsi:insstayihtsi	VTA ;
+! ipahkitapiistoto:ipahkitapiistoto	VTA ;
+! ipahkoosat:ipahkoosat	VTA ;
+! ipahpaapiksist:ipahpaapiksist	VTA ;
+! ipahpaapinaapikssat:ipahpaapinaapikssat	VTA ;
+! ipaisskio’to:ipaisskio’to	VTA ;
+! ipáísspikahko:ipáísspikahko	VTA ;
+! ipakihkíni:ipakihkíni	VTA ;
+! ipakkapíni:ipakkapíni	VTA ;
+! ipakksip:ipakksip	VTA ;
+! ipakkssk:ipakkssk	VTA ;
+! ipakóttsisim:ipakóttsisim	VTA ;
+! ipáksski:ipáksski	VTA ;
+! ipaksskíni:ipaksskíni	VTA ;
+! ipaksstóóki:ipaksstóóki	VTA ;
+! ipanínnat:ipanínnat	VTA ;
+! ipannopaat:ipannopaat	VTA ;
+! ipáóo’tomo:ipáóo’tomo	VTA ;
+! ipaoooto:ipaoooto	VTA ;
+! ipáóotsim:ipáóotsim	VTA ;
+! ipapaino:ipapaino	VTA ;
+! ipapao’kat:ipapao’kat	VTA ;
+! ipapisa’kohto:ipapisa’kohto	VTA ;
+! ipasskat:ipasskat	VTA ;
+! ipi:ipi	VTA ;
+! ipi’kaahko:ipi’kaahko	VTA ;
+! ipi’kato’sat:ipi’kato’sat	VTA ;
+! ipi’ko:ipi’ko	VTA ;
+! ipi’kokiinihkohtomo:ipi’kokiinihkohtomo	VTA ;
+! ipi’ksistoto:ipi’ksistoto	VTA ;
+! ipi’nit:ipi’nit	VTA ;
+! ipi’sskinao’sat:ipi’sskinao’sat	VTA ;
+! ipiihksin:ipiihksin	VTA ;
+! ipiiksi:ipiiksi	VTA ;
+! ipiinio’to:ipiinio’to	VTA ;
+! ipíiyinommo:ipíiyinommo	VTA ;
+! ipikato’sat:ipikato’sat	VTA ;
+! ipikksíkahko:ipikksíkahko	VTA ;
+! ipikksip:ipikksip	VTA ;
+! ipíkksskino’to:ipíkksskino’to	VTA ;
+! ipiksiniattsi:ipiksiniattsi	VTA ;
+! ipikssat:ipikssat	VTA ;
+! ipisatsimm:ipisatsimm	VTA ;
+! ipisatska’sat:ipisatska’sat	VTA ;
+! ipisátsoyi’ko:ipisátsoyi’ko	VTA ;
+! ipistsiksistoto:ipistsiksistoto	VTA ;
+! ipistsimm:ipistsimm	VTA ;
+! ipisttotskohto:ipisttotskohto	VTA ;
+! ipiyistoto:ipiyistoto	VTA ;
+! ipo’tatsimat:ipo’tatsimat	VTA ;
+! ipo’to:ipo’to	VTA ;
+! ipo’tomo:ipo’tomo	VTA ;
+! ipo’tstsi:ipo’tstsi	VTA ;
+! ipohkísstoyi:ipohkísstoyi	VTA ;
+! ipohko’to:ipohko’to	VTA ;
+! ipohkó’tomo:ipohkó’tomo	VTA ;
+! ipohksisttskíni:ipohksisttskíni	VTA ;
+! ipoihtsi:ipoihtsi	VTA ;
+! ipoinakat:ipoinakat	VTA ;
+! ipoipoyattsi:ipoipoyattsi	VTA ;
+! ipokááim:ipokááim	VTA ;
+! ipokkitsaapikkssat:ipokkitsaapikkssat	VTA ;
+! ipokkitsimm:ipokkitsimm	VTA ;
+! ipommo:ipommo	VTA ;
+! iponihtaissko:iponihtaissko	VTA ;
+! iponihtat:iponihtat	VTA ;
+! iponiistam:iponiistam	VTA ;
+! iponikso’kowamm:iponikso’kowamm	VTA ;
+! iponiowat:iponiowat	VTA ;
+! iponip:iponip	VTA ;
+! ipónota’simm:ipónota’simm	VTA ;
+! ipot:ipot	VTA ;
+! ipótsimat:ipótsimat	VTA ;
+! ipottaahko:ipottaahko	VTA ;
+! ipottaahkomo:ipottaahkomo	VTA ;
+! ipowayimm:ipowayimm	VTA ;
+! ipoyáttsi:ipoyáttsi	VTA ;
+! ippatsimm:ippatsimm	VTA ;
+! ippatstat:ippatstat	VTA ;
+! ippotsipist:ippotsipist	VTA ;
+! ippotsskipist:ippotsskipist	VTA ;
+! ipssi:ipssi	VTA ;
+! ipssimat:ipssimat	VTA ;
+! ipsstaahkio’to:ipsstaahkio’to	VTA ;
+! ipsstsiksistoto:ipsstsiksistoto	VTA ;
+! ipsstsipi:ipsstsipi	VTA ;
+! ipsstska:ipsstska	VTA ;
+! ipsstso’ki:ipsstso’ki	VTA ;
+! ipsststsi:ipsststsi	VTA ;
+! ipstaahko:ipstaahko	VTA ;
+! isamihtsi:isamihtsi	VTA ;
+! isawaaksistoto:isawaaksistoto	VTA ;
+! isawaanopaat:isawaanopaat	VTA ;
+! isawai’tsi:isawai’tsi	VTA ;
+! isina’sat:isina’sat	VTA ;
+! iso’pi:iso’pi	VTA ;
+! isohko:isohko	VTA ;
+! isoihtat:isoihtat	VTA ;
+! isoohto:isoohto	VTA ;
+! isoohto:isoohto	VTA ;
+! isoomoon:isoomoon	VTA ;
+! isoomoonomo:isoomoonomo	VTA ;
+! isowaanopaat:isowaanopaat	VTA ;
+! issamm:issamm	VTA ;
+! issikan:issikan	VTA ;
+! isskoyipist:isskoyipist	VTA ;
+! issksi’sipist:issksi’sipist	VTA ;
+! isstsimm:isstsimm	VTA ;
+! isstsinááhkohki:isstsinááhkohki	VTA ;
+! ista’pim:ista’pim	VTA ;
+! istaaapssat:istaaapssat	VTA ;
+! istawat:istawat	VTA ;
+! istokahko:istokahko	VTA ;
+! istookiiki’tawáat:istookiiki’tawáat	VTA ;
+! istotahsinat:istotahsinat	VTA ;
+! istotsimm:istotsimm	VTA ;
+! istssi:istssi	VTA ;
+! istta’pin:istta’pin	VTA ;
+! istta’pin:istta’pin	VTA ;
+! isttá’pssko:isttá’pssko	VTA ;
+! isttahkapsskohto:isttahkapsskohto	VTA ;
+! isttainn:isttainn	VTA ;
+! isttanai’piksist:isttanai’piksist	VTA ;
+! isttapinn:isttapinn	VTA ;
+! istto:istto	VTA ;
+! isttohkatapiksist:isttohkatapiksist	VTA ;
+! isttohkihtsi:isttohkihtsi	VTA ;
+! isttóki:isttóki	VTA ;
+! isttoki:isttoki	VTA ;
+! isttokomo:isttokomo	VTA ;
+! isttsá’pistoto:isttsá’pistoto	VTA ;
+! isttsiistoto:isttsiistoto	VTA ;
+! isttsikaahki:isttsikaahki	VTA ;
+! isttsikaanihka’sat:isttsikaanihka’sat	VTA ;
+! isttsikaanimm:isttsikaanimm	VTA ;
+! isttsikánistot:isttsikánistot	VTA ;
+! isttsimat:isttsimat	VTA ;
+! isttsinaahko:isttsinaahko	VTA ;
+! isttsinat:isttsinat	VTA ;
+! isttsisskinatanistoto:isttsisskinatanistoto	VTA ;
+! isttsisskinato:isttsisskinato	VTA ;
+! isttsitat:isttsitat	VTA ;
+! isttsitsi:isttsitsi	VTA ;
+! isttsítsskim:isttsítsskim	VTA ;
+! isttsíttssko:isttsíttssko	VTA ;
+! isttsksi:isttsksi	VTA ;
+! isttsooyihkat:isttsooyihkat	VTA ;
+! itapanist:itapanist	VTA ;
+! itapípi:itapípi	VTA ;
+! itapomátsska:itapomátsska	VTA ;
+! ito’kskit:ito’kskit	VTA ;
+! ítoto’tsim:ítoto’tsim	VTA ;
+! itotoisapanist:itotoisapanist	VTA ;
+! itsiihtat:itsiihtat	VTA ;
+! itsínikat:itsínikat	VTA ;
+! itsíniko:itsíniko	VTA ;
+! itsit:itsit	VTA ;
+! itskamm:itskamm	VTA ;
+! itskit:itskit	VTA ;
+! itskitsim:itskitsim	VTA ;
+! itssapipo’to:itssapipo’to	VTA ;
+! itssayó’ki:itssayó’ki	VTA ;
+! itsskihtat:itsskihtat	VTA ;
+! itssko:itssko	VTA ;
+! itssko:itssko	VTA ;
+! itssksikimm:itssksikimm	VTA ;
+! itsspiihtsi:itsspiihtsi	VTA ;
+! itsspinno:itsspinno	VTA ;
+! itsstsaawaanist:itsstsaawaanist	VTA ;
+! itsto:itsto	VTA ;
+! ittahsiinihkohto:ittahsiinihkohto	VTA ;
+! ittahsoohkomat:ittahsoohkomat	VTA ;
+! ksaahkoiikimsskomo:ksaahkoiikimsskomo	VTA ;
+! naatowá’pistoto:naatowá’pistoto	VTA ;
+! naatowá’psskska:naatowá’psskska	VTA ;
+! niitsí’to:niitsí’to	VTA ;
+! ninawaakiistoto:ninawaakiistoto	VTA ;
+! o’tsipaksisto’:o’tsipaksisto’	VTA ;
+! o’tsípi:o’tsípi	VTA ;
+! o’tsisátomo:o’tsisátomo	VTA ;
+! o’tsítsikimm:o’tsítsikimm	VTA ;
+! ohkáamat:ohkáamat	VTA ;
+! ohkanohko:ohkanohko	VTA ;
+! ohkat:ohkat	VTA ;
+! ohkat:ohkat	VTA ;
+! ohkiáápikssat:ohkiáápikssat	VTA ;
+! ohkiaayowa’sat:ohkiaayowa’sat	VTA ;
+! ohkinayo’sat:ohkinayo’sat	VTA ;
+! ohkínnat:ohkínnat	VTA ;
+! ohkitsii:ohkitsii	VTA ;
+! ohkó’mistoto:ohkó’mistoto	VTA ;
+! ohko’to:ohko’to	VTA ;
+! ohkoi’sski:ohkoi’sski	VTA ;
+! ohkoi’to:ohkoi’to	VTA ;
+! ohkoikaimm:ohkoikaimm	VTA ;
+! ohkoimm:ohkoimm	VTA ;
+! ohkoissksino:ohkoissksino	VTA ;
+! ohkomat:ohkomat	VTA ;
+! ohkomat:ohkomat	VTA ;
+! ohkoonimatt:ohkoonimatt	VTA ;
+! ohkoono:ohkoono	VTA ;
+! ohkóotat:ohkóotat	VTA ;
+! ohkot:ohkot	VTA ;
+! ohkottaimm:ohkottaimm	VTA ;
+! ohkottoto:ohkottoto	VTA ;
+! ohkottsstakat:ohkottsstakat	VTA ;
+! ohkowaatsim:ohkowaatsim	VTA ;
+! ohkowaimm:ohkowaimm	VTA ;
+! ohkoyimm:ohkoyimm	VTA ;
+! ohksinommo:ohksinommo	VTA ;
+! ohksissto:ohksissto	VTA ;
+! ohksssamm:ohksssamm	VTA ;
+! ohpááattsi:ohpááattsi	VTA ;
+! ohpáaninn:ohpáaninn	VTA ;
+! ohpáat:ohpáat	VTA ;
+! ohpakóyi’s:ohpakóyi’s	VTA ;
+! ohpattsi:ohpattsi	VTA ;
+! ohpattssko:ohpattssko	VTA ;
+! ohpiiyistoto:ohpiiyistoto	VTA ;
+! ohpimm:ohpimm	VTA ;
+! ohpitapitapiiyim:ohpitapitapiiyim	VTA ;
+! ohpo’kiaanikkohksiim:ohpo’kiaanikkohksiim	VTA ;
+! ohpoisskin:ohpoisskin	VTA ;
+! ohpoka’paissiim:ohpoka’paissiim	VTA ;
+! ohpokanikkohksiim:ohpokanikkohksiim	VTA ;
+! ohpokáópiim:ohpokáópiim	VTA ;
+! ohpókihka’siim:ohpókihka’siim	VTA ;
+! ohpokoká’tsiim:ohpokoká’tsiim	VTA ;
+! ohpokóoyisskat:ohpokóoyisskat	VTA ;
+! ohpommat:ohpommat	VTA ;
+! ohpommo:ohpommo	VTA ;
+! ohpónnat:ohpónnat	VTA ;
+! ohpoon:ohpoon	VTA ;
+! ohpootsi:ohpootsi	VTA ;
+! ohpópaat:ohpópaat	VTA ;
+! ohpopaatomo:ohpopaatomo	VTA ;
+! ohpowaanssat:ohpowaanssat	VTA ;
+! ohsiihkat:ohsiihkat	VTA ;
+! ohsistsinimsstat:ohsistsinimsstat	VTA ;
+! ohso’kapáaat:ohso’kapáaat	VTA ;
+! ohsoto’kino:ohsoto’kino	VTA ;
+! ohtaisskapat:ohtaisskapat	VTA ;
+! ohtámohsi’yáttsi:ohtámohsi’yáttsi	VTA ;
+! ohtóíssamm:ohtóíssamm	VTA ;
+! ohtookimi’:ohtookimi’	VTA ;
+! ohtookisat:ohtookisat	VTA ;
+! ohtookisato:ohtookisato	VTA ;
+! ohtowáat:ohtowáat	VTA ;
+! ohtsimat:ohtsimat	VTA ;
+! ohtsini’tstoto:ohtsini’tstoto	VTA ;
+! ohtsistoto:ohtsistoto	VTA ;
+! ohtsisttsisskinat:ohtsisttsisskinat	VTA ;
+! ohtssapípi:ohtssapípi	VTA ;
+! oissimm:oissimm	VTA ;
+! oka’pahsinat:oka’pahsinat	VTA ;
+! oka’pi’powat:oka’pi’powat	VTA ;
+! okahsinat:okahsinat	VTA ;
+! okakiaanist:okakiaanist	VTA ;
+! okakihtsimat:okakihtsimat	VTA ;
+! okakio’sat:okakio’sat	VTA ;
+! okakissko:okakissko	VTA ;
+! okakohtomo:okakohtomo	VTA ;
+! okamaino:okamaino	VTA ;
+! okamanist:okamanist	VTA ;
+! okat:okat	VTA ;
+! okihka’sat:okihka’sat	VTA ;
+! okiin:okiin	VTA ;
+! okimm:okimm	VTA ;
+! okitsiihtat:okitsiihtat	VTA ;
+! oko’s:oko’s	VTA ;
+! oko’simm:oko’simm	VTA ;
+! okoopihko:okoopihko	VTA ;
+! okoowat:okoowat	VTA ;
+! okooyssko:okooyssko	VTA ;
+! oksi:oksi	VTA ;
+! oksi:oksi	VTA ;
+! oksinnat:oksinnat	VTA ;
+! oksisaissko:oksisaissko	VTA ;
+! oksisawaaat:oksisawaaat	VTA ;
+! oksisstsimm:oksisstsimm	VTA ;
+! oksistoto:oksistoto	VTA ;
+! oksistoto:oksistoto	VTA ;
+! oksistsi’tomo:oksistsi’tomo	VTA ;
+! oksistsimm:oksistsimm	VTA ;
+! okskoihtsi:okskoihtsi	VTA ;
+! okspann:okspann	VTA ;
+! okstsimat:okstsimat	VTA ;
+! omáat:omáat	VTA ;
+! omahksiim:omahksiim	VTA ;
+! omai’to:omai’to	VTA ;
+! omaimmohsat:omaimmohsat	VTA ;
+! omaissamm:omaissamm	VTA ;
+! omáópaat:omáópaat	VTA ;
+! omaopiáttsi:omaopiáttsi	VTA ;
+! omatapinnihko:omatapinnihko	VTA ;
+! omatapistoto:omatapistoto	VTA ;
+! omatsipi:omatsipi	VTA ;
+! omatska:omatska	VTA ;
+! omatskahto:omatskahto	VTA ;
+! omatskaohsat:omatskaohsat	VTA ;
+! omiistoto:omiistoto	VTA ;
+! omiistoto:omiistoto	VTA ;
+! omikso’to:omikso’to	VTA ;
+! omino’to:omino’to	VTA ;
+! ommo:ommo	VTA ;
+! omó’tsi:omó’tsi	VTA ;
+! omoi’sskimat:omoi’sskimat	VTA ;
+! omoi’ssko:omoi’ssko	VTA ;
+! omóípi:omóípi	VTA ;
+! omokapist:omokapist	VTA ;
+! omoon:omoon	VTA ;
+! omowai’piksist:omowai’piksist	VTA ;
+! omoyssko:omoyssko	VTA ;
+! omsstomo:omsstomo	VTA ;
+! onakisttsimm:onakisttsimm	VTA ;
+! onat:onat	VTA ;
+! oni’tsi:oni’tsi	VTA ;
+! oniiniiwat:oniiniiwat	VTA ;
+! onnatsst:onnatsst	VTA ;
+! onnatssto:onnatssto	VTA ;
+! onnimm:onnimm	VTA ;
+! onnohkatsimm:onnohkatsimm	VTA ;
+! ono:ono	VTA ;
+! onoohki:onoohki	VTA ;
+! onootapissat:onootapissat	VTA ;
+! onootat:onootat	VTA ;
+! oohkohko:oohkohko	VTA ;
+! oohtohko:oohtohko	VTA ;
+! ookatomo:ookatomo	VTA ;
+! ookitsiihtat:ookitsiihtat	VTA ;
+! ooto:ooto	VTA ;
+! ooto:ooto	VTA ;
+! ootoissamm:ootoissamm	VTA ;
+! oowat:oowat	VTA ;
+! ooyi’ko:ooyi’ko	VTA ;
+! ooyiipi:ooyiipi	VTA ;
+! ooyiistoto:ooyiistoto	VTA ;
+! ooyim:ooyim	VTA ;
+! ooyo’sat:ooyo’sat	VTA ;
+! ooyo’satomo:ooyo’satomo	VTA ;
+! opa’kiikinit:opa’kiikinit	VTA ;
+! opa’m:opa’m	VTA ;
+! opáa’taahkat:opáa’taahkat	VTA ;
+! opaksinn:opaksinn	VTA ;
+! opasaaáttsi:opasaaáttsi	VTA ;
+! opasskoyo’to:opasskoyo’to	VTA ;
+! opat:opat	VTA ;
+! opiinomo:opiinomo	VTA ;
+! opitso’to:opitso’to	VTA ;
+! opókksini:opókksini	VTA ;
+! opookssko:opookssko	VTA ;
+! opoonim:opoonim	VTA ;
+! opóttsin:opóttsin	VTA ;
+! opowamm:opowamm	VTA ;
+! osskat:osskat	VTA ;
+! otaapohkat:otaapohkat	VTA ;
+! otáatomo:otáatomo	VTA ;
+! otáatsim:otáatsim	VTA ;
+! otáatsim:otáatsim	VTA ;
+! otahksini:otahksini	VTA ;
+! otami’tsi:otami’tsi	VTA ;
+! otamimm:otamimm	VTA ;
+! otanimm:otanimm	VTA ;
+! otanit:otanit	VTA ;
+! otano’tomo:otano’tomo	VTA ;
+! otano’tsi:otano’tsi	VTA ;
+! otanomo:otanomo	VTA ;
+! otapinn:otapinn	VTA ;
+! otawanss:otawanss	VTA ;
+! otohká’tat:otohká’tat	VTA ;
+! otohkat:otohkat	VTA ;
+! otóí’m:otóí’m	VTA ;
+! otoi’tsikat:otoi’tsikat	VTA ;
+! otona’:otona’	VTA ;
+! otoomsoohkomat:otoomsoohkomat	VTA ;
+! ototsi:ototsi	VTA ;
+! otowoohkat:otowoohkat	VTA ;
+! otoyi’tsikat:otoyi’tsikat	VTA ;
+! otoyó’ki:otoyó’ki	VTA ;
+! otsa’:otsa’	VTA ;
+! otsi’:otsi’	VTA ;
+! otsíípi:otsíípi	VTA ;
+! otsikihtsi:otsikihtsi	VTA ;
+! otsiksiistsim:otsiksiistsim	VTA ;
+! otsimotaam:otsimotaam	VTA ;
+! otsimotaamat:otsimotaamat	VTA ;
+! otsisa’ko:otsisa’ko	VTA ;
+! otsistapi’to:otsistapi’to	VTA ;
+! otsistapimm:otsistapimm	VTA ;
+! ottako:ottako	VTA ;
+! ottako:ottako	VTA ;
+! owawat:owawat	VTA ;
+! owayitt:owayitt	VTA ;
+! oy’ssat:oy’ssat	VTA ;
+! oyi’to:oyi’to	VTA ;
+! oyi’tskohto:oyi’tskohto	VTA ;
+! oyimm:oyimm	VTA ;
+! sa’kinoohsat:sa’kinoohsat	VTA ;
+! sa’kss:sa’kss	VTA ;
+! saahkai’sat:saahkai’sat	VTA ;
+! saan:saan	VTA ;
+! saao’tomo:saao’tomo	VTA ;
+! saatapiksist:saatapiksist	VTA ;
+! sahpss:sahpss	VTA ;
+! sai’kowat:sai’kowat	VTA ;
+! sai’piyisskohto:sai’piyisskohto	VTA ;
+! saipi:saipi	VTA ;
+! saipihkamm:saipihkamm	VTA ;
+! saipioohsattsi:saipioohsattsi	VTA ;
+! saipohpatskoyi:saipohpatskoyi	VTA ;
+! saipskapat:saipskapat	VTA ;
+! saipsst:saipsst	VTA ;
+! saisskomo:saisskomo	VTA ;
+! sakakimm:sakakimm	VTA ;
+! sakskohto:sakskohto	VTA ;
+! sao’to:sao’to	VTA ;
+! saohpapoka’:saohpapoka’	VTA ;
+! sáóhpáttsisto:sáóhpáttsisto	VTA ;
+! saokihtsi:saokihtsi	VTA ;
+! saopissko:saopissko	VTA ;
+! sáóppiso’to:sáóppiso’to	VTA ;
+! saottsísi:saottsísi	VTA ;
+! sapáaat:sapáaat	VTA ;
+! sapáat:sapáat	VTA ;
+! sapaatsimaahko:sapaatsimaahko	VTA ;
+! sapanist:sapanist	VTA ;
+! sapanist:sapanist	VTA ;
+! sapi’to:sapi’to	VTA ;
+! sapiipommo:sapiipommo	VTA ;
+! sapikinao’tomo:sapikinao’tomo	VTA ;
+! sapistoto:sapistoto	VTA ;
+! sapohkínn:sapohkínn	VTA ;
+! sapohtomo:sapohtomo	VTA ;
+! sapomat:sapomat	VTA ;
+! sapottoksiináni:sapottoksiináni	VTA ;
+! sapskahtoo:sapskahtoo	VTA ;
+! sapsski:sapsski	VTA ;
+! sapstookio’to:sapstookio’to	VTA ;
+! sata’pssattsiim:sata’pssattsiim	VTA ;
+! satai’powat:satai’powat	VTA ;
+! sataimm:sataimm	VTA ;
+! satáístoto:satáístoto	VTA ;
+! satsistoto:satsistoto	VTA ;
+! sáttaapiksist:sáttaapiksist	VTA ;
+! sattsikaapiksist:sattsikaapiksist	VTA ;
+! sattsikano’to:sattsikano’to	VTA ;
+! sáttsiksskio’to:sáttsiksskio’to	VTA ;
+! sawohkaanist:sawohkaanist	VTA ;
+! sawohkoimm:sawohkoimm	VTA ;
+! sáwohkoimm:sáwohkoimm	VTA ;
+! sawootsstsimistoto:sawootsstsimistoto	VTA ;
+! sayaahki:sayaahki	VTA ;
+! sayi’to:sayi’to	VTA ;
+! sayi’tsimat:sayi’tsimat	VTA ;
+! sayippomi’tomo:sayippomi’tomo	VTA ;
+! sayisskahto:sayisskahto	VTA ;
+! si’kat:si’kat	VTA ;
+! si’kinn:si’kinn	VTA ;
+! si’ko:si’ko	VTA ;
+! si’ko:si’ko	VTA ;
+! si’ko:si’ko	VTA ;
+! si’komo:si’komo	VTA ;
+! si’kopiaanist:si’kopiaanist	VTA ;
+! siim:siim	VTA ;
+! síinimm:síinimm	VTA ;
+! siinomo:siinomo	VTA ;
+! siistonaistoto:siistonaistoto	VTA ;
+! siitsiihtsi:siitsiihtsi	VTA ;
+! siitsino’to:siitsino’to	VTA ;
+! sikahkapiniáápiksat:sikahkapiniáápiksat	VTA ;
+! sikahksistoto:sikahksistoto	VTA ;
+! sikapista’tssko:sikapista’tssko	VTA ;
+! sikapisto:sikapisto	VTA ;
+! sikimm:sikimm	VTA ;
+! sikohko:sikohko	VTA ;
+! siksi’powat:siksi’powat	VTA ;
+! siksip:siksip	VTA ;
+! siksip:siksip	VTA ;
+! siksip:siksip	VTA ;
+! sim:sim	VTA ;
+! simaatam:simaatam	VTA ;
+! simi:simi	VTA ;
+! simiipi:simiipi	VTA ;
+! simimm:simimm	VTA ;
+! sina:sina	VTA ;
+! sinái’tômiistot:sinái’tômiistot	VTA ;
+! sinam:sinam	VTA ;
+! sinip:sinip	VTA ;
+! sinnikimat:sinnikimat	VTA ;
+! sinnikinsstsiipi:sinnikinsstsiipi	VTA ;
+! sinokóópat:sinokóópat	VTA ;
+! sinsskip:sinsskip	VTA ;
+! sisíkohkot:sisíkohkot	VTA ;
+! sisíkohtomo:sisíkohtomo	VTA ;
+! sisiksinim:sisiksinim	VTA ;
+! sisowat:sisowat	VTA ;
+! sistsikaaattsi:sistsikaaattsi	VTA ;
+! sistsikáat:sistsikáat	VTA ;
+! sistsiksskiaakat:sistsiksskiaakat	VTA ;
+! sitoksskit:sitoksskit	VTA ;
+! sitsipssat:sitsipssat	VTA ;
+! sokanist:sokanist	VTA ;
+! sokin:sokin	VTA ;
+! sokináápi:sokináápi	VTA ;
+! sokómmaahko:sokómmaahko	VTA ;
+! sokottat:sokottat	VTA ;
+! soksim:soksim	VTA ;
+! somaananist:somaananist	VTA ;
+! somaanii’powat:somaanii’powat	VTA ;
+! somiikan:somiikan	VTA ;
+! somo’to:somo’to	VTA ;
+! sonai’sskip:sonai’sskip	VTA ;
+! sonihko:sonihko	VTA ;
+! soohtsimm:soohtsimm	VTA ;
+! sóomininn:sóomininn	VTA ;
+! sooyinnimat:sooyinnimat	VTA ;
+! sopómi:sopómi	VTA ;
+! sopowahtsi’sat:sopowahtsi’sat	VTA ;
+! sopowat:sopowat	VTA ;
+! sopowatomo:sopowatomo	VTA ;
+! sopowatsistotoohsat:sopowatsistotoohsat	VTA ;
+! sotamitsskit:sotamitsskit	VTA ;
+! sowaanopaat:sowaanopaat	VTA ;
+! soyaapiksist:soyaapiksist	VTA ;
+! spomipi:spomipi	VTA ;
+! ssáa’takiáíttsi:ssáa’takiáíttsi	VTA ;
+! ssaahsinat:ssaahsinat	VTA ;
+! ssáaki’tomo:ssáaki’tomo	VTA ;
+! ssakimm:ssakimm	VTA ;
+! ssamm:ssamm	VTA ;
+! ssamm:ssamm	VTA ;
+! ssapapasai’nsskohto:ssapapasai’nsskohto	VTA ;
+! ssi:ssi	VTA ;
+! ssiiyaki:ssiiyaki	VTA ;
+! ssikáaattsi:ssikáaattsi	VTA ;
+! ssikópiáttsi:ssikópiáttsi	VTA ;
+! ssiksa’píni:ssiksa’píni	VTA ;
+! ssim:ssim	VTA ;
+! ssimi:ssimi	VTA ;
+! ssinn:ssinn	VTA ;
+! ssinn:ssinn	VTA ;
+! ssisskiitsim:ssisskiitsim	VTA ;
+! sskáaat:sskáaat	VTA ;
+! sskáakanist:sskáakanist	VTA ;
+! sskahsi’tomo:sskahsi’tomo	VTA ;
+! sskai’stoto:sskai’stoto	VTA ;
+! sskai’to:sskai’to	VTA ;
+! sskaim:sskaim	VTA ;
+! sskapiim:sskapiim	VTA ;
+! sskatapiksist:sskatapiksist	VTA ;
+! sski’tsi:sski’tsi	VTA ;
+! sskitsim:sskitsim	VTA ;
+! sskitsistoto:sskitsistoto	VTA ;
+! ssko:ssko	VTA ;
+! sskohkot:sskohkot	VTA ;
+! sskohtoistoto:sskohtoistoto	VTA ;
+! sskohtoistoto:sskohtoistoto	VTA ;
+! sskohtoo’tomo:sskohtoo’tomo	VTA ;
+! sskonákat:sskonákat	VTA ;
+! ssksikoyi:ssksikoyi	VTA ;
+! ssksimat:ssksimat	VTA ;
+! ssksinima’tsi:ssksinima’tsi	VTA ;
+! ssksino:ssksino	VTA ;
+! ssksino:ssksino	VTA ;
+! sskská’tomo:sskská’tomo	VTA ;
+! sskskamm:sskskamm	VTA ;
+! sskskamm:sskskamm	VTA ;
+! ssksksim:ssksksim	VTA ;
+! ssksksin:ssksksin	VTA ;
+! sskso’sat:sskso’sat	VTA ;
+! ssksskópa’:ssksskópa’	VTA ;
+! ssó’to:ssó’to	VTA ;
+! sso’tsi:sso’tsi	VTA ;
+! ssoksksin:ssoksksin	VTA ;
+! ssoohki:ssoohki	VTA ;
+! sspihka:sspihka	VTA ;
+! sspiisao’to:sspiisao’to	VTA ;
+! sspinn:sspinn	VTA ;
+! sspommo:sspommo	VTA ;
+! sspssksinima’tsi:sspssksinima’tsi	VTA ;
+! ssta:ssta	VTA ;
+! sstaahka:sstaahka	VTA ;
+! sstaasimm:sstaasimm	VTA ;
+! sstahpikimm:sstahpikimm	VTA ;
+! sstahpiksistoto:sstahpiksistoto	VTA ;
+! sstákat:sstákat	VTA ;
+! sstaksáananist:sstaksáananist	VTA ;
+! sstamat:sstamat	VTA ;
+! sstat:sstat	VTA ;
+! sstawat:sstawat	VTA ;
+! sstonno:sstonno	VTA ;
+! sstoyisat:sstoyisat	VTA ;
+! sstsáákat:sstsáákat	VTA ;
+! sstsi’tsi:sstsi’tsi	VTA ;
+! sstsiinss:sstsiinss	VTA ;
+! sstsiiyihkaa:sstsiiyihkaa	VTA ;
+! sstsiiyihko/sstsiiyssko:sstsiiyihko/sstsiiyssko	VTA ;
+! sstsikína:sstsikína	VTA ;
+! sstsim:sstsim	VTA ;
+! sstsimaahkat:sstsimaahkat	VTA ;
+! sstsimimm:sstsimimm	VTA ;
+! sstsipísi:sstsipísi	VTA ;
+! sstsipisimat:sstsipisimat	VTA ;
+! sstss:sstss	VTA ;
+! sstsski:sstsski	VTA ;
+! sstsskimat:sstsskimat	VTA ;
+! stsiyimm:stsiyimm	VTA ;
+! stsoohkitso:stsoohkitso	VTA ;
+! wa’kii:wa’kii	VTA ;
+! wa’kikaihtsi:wa’kikaihtsi	VTA ;
+! wa’kskim:wa’kskim	VTA ;
+! wa’ksstsimat:wa’ksstsimat	VTA ;
+! wa’pimm:wa’pimm	VTA ;
+! wa’psskat:wa’psskat	VTA ;
+! wa’sokssko:wa’sokssko	VTA ;
+! wa’tsi:wa’tsi	VTA ;
+! wa’tsimat:wa’tsimat	VTA ;
+! wa’ysskohto:wa’ysskohto	VTA ;
+! waahkani:waahkani	VTA ;
+! waahkaniksi:waahkaniksi	VTA ;
+! waahkanisstóóki:waahkanisstóóki	VTA ;
+! waahkapat:waahkapat	VTA ;
+! waahkapi:waahkapi	VTA ;
+! waahkó’sat:waahkó’sat	VTA ;
+! waahko’sskat:waahko’sskat	VTA ;
+! waahkoma’taahko:waahkoma’taahko	VTA ;
+! waahkoma’tat:waahkoma’tat	VTA ;
+! waahkomat:waahkomat	VTA ;
+! waahsowat:waahsowat	VTA ;
+! waai’tomo:waai’tomo	VTA ;
+! waakamm:waakamm	VTA ;
+! waakan:waakan	VTA ;
+! waakiistoto:waakiistoto	VTA ;
+! waakohko:waakohko	VTA ;
+! waakomimm:waakomimm	VTA ;
+! waakomitsiihtat:waakomitsiihtat	VTA ;
+! waakoo’w:waakoo’w	VTA ;
+! waaksina’:waaksina’	VTA ;
+! waamisáaat:waamisáaat	VTA ;
+! waamokapist:waamokapist	VTA ;
+! waamottsskin:waamottsskin	VTA ;
+! waana’ko:waana’ko	VTA ;
+! waanaoyitanist:waanaoyitanist	VTA ;
+! waaniitsinit:waaniitsinit	VTA ;
+! waanist:waanist	VTA ;
+! waanist:waanist	VTA ;
+! waanistápohto:waanistápohto	VTA ;
+! waanistsi’to:waanistsi’to	VTA ;
+! waanistsinnomo:waanistsinnomo	VTA ;
+! waanisttoto:waanisttoto	VTA ;
+! waanisttotomo:waanisttotomo	VTA ;
+! waapaohkinn:waapaohkinn	VTA ;
+! waapatsimm:waapatsimm	VTA ;
+! waapiikan:waapiikan	VTA ;
+! waapiiwaanistoto:waapiiwaanistoto	VTA ;
+! waapína’:waapína’	VTA ;
+! waapistoto:waapistoto	VTA ;
+! waapo’kapáat:waapo’kapáat	VTA ;
+! waapo’to:waapo’to	VTA ;
+! waapohkat:waapohkat	VTA ;
+! waapowohpatssko:waapowohpatssko	VTA ;
+! waasanimm:waasanimm	VTA ;
+! waaso’kini:waaso’kini	VTA ;
+! waatani:waatani	VTA ;
+! waatapimm:waatapimm	VTA ;
+! waataponisskatsi:waataponisskatsi	VTA ;
+! waataponissko:waataponissko	VTA ;
+! wáátato’to:wáátato’to	VTA ;
+! waatowa’pistoto:waatowa’pistoto	VTA ;
+! waatowa’pistta’pin:waatowa’pistta’pin	VTA ;
+! waatoyisainn:waatoyisainn	VTA ;
+! waatoyisann:waatoyisann	VTA ;
+! waattsiistoto:waattsiistoto	VTA ;
+! waawa’ko:waawa’ko	VTA ;
+! waawa’komo:waawa’komo	VTA ;
+! waawaahpitsimm:waawaahpitsimm	VTA ;
+! waawaahsat:waawaahsat	VTA ;
+! waawahkaootsiim:waawahkaootsiim	VTA ;
+! waawai’tsinnomo:waawai’tsinnomo	VTA ;
+! waawakaapikssat:waawakaapikssat	VTA ;
+! waawakino’to:waawakino’to	VTA ;
+! waawamm:waawamm	VTA ;
+! waawáttssko:waawáttssko	VTA ;
+! waawayáki:waawayáki	VTA ;
+! waawowaat:waawowaat	VTA ;
+! waayipist:waayipist	VTA ;
+! wai’ihtá’sat:wai’ihtá’sat	VTA ;
+! wai’pi:wai’pi	VTA ;
+! wai’pohto:wai’pohto	VTA ;
+! wai’stamáttsi:wai’stamáttsi	VTA ;
+! waiai’t:waiai’t	VTA ;
+! waistáaat:waistáaat	VTA ;
+! wamm:wamm	VTA ;
+! waoo’tokomo:waoo’tokomo	VTA ;
+! wattsisskisat:wattsisskisat	VTA ;
+! wayaksipist:wayaksipist	VTA ;
+! wayami’to:wayami’to	VTA ;
+! yaahsi’tsoohsat:yaahsi’tsoohsat	VTA ;
+! yaakai’pisskohto:yaakai’pisskohto	VTA ;
+! yaakihtsi:yaakihtsi	VTA ;
+! yaaksiisat:yaaksiisat	VTA ;
+! yáaksinit:yáaksinit	VTA ;
+! yáaksinommo:yáaksinommo	VTA ;
+! yáaksissksommo:yáaksissksommo	VTA ;
+! yáaksssit:yáaksssit	VTA ;
+! yaaksstsitsikatomo:yaaksstsitsikatomo	VTA ;
+! yaamihkinit:yaamihkinit	VTA ;
+! yaamoyii’powat:yaamoyii’powat	VTA ;
+! yaamsstookio’to:yaamsstookio’to	VTA ;
+! yáápiistotsimat:yáápiistotsimat	VTA ;
+! yáapittahsohkohto:yáapittahsohkohto	VTA ;
+! yamaakioko’sat:yamaakioko’sat	VTA ;
+! yi’tsaawaahko:yi’tsaawaahko	VTA ;
+! yiihko:yiihko	VTA ;
+! yiikano:yiikano	VTA ;
+! yiim:yiim	VTA ;
+! yiimat:yiimat	VTA ;
+! yiinapanist:yiinapanist	VTA ;
+! yiinapanssat:yiinapanssat	VTA ;
+! yiinapistoto:yiinapistoto	VTA ;
+! yiinapssko:yiinapssko	VTA ;
+! yiiponi’sat:yiiponi’sat	VTA ;
+! yiiso:yiiso	VTA ;
+! yiistam:yiistam	VTA ;
+! yiistam:yiistam	VTA ;
+! yiistapist:yiistapist	VTA ;
+! yiistapokska’siim:yiistapokska’siim	VTA ;
+! yiistapssko:yiistapssko	VTA ;
+! yiistsinit:yiistsinit	VTA ;
+! yinn:yinn	VTA ;
+! yisaiksiksino:yisaiksiksino	VTA ;
+! yiskai’tat:yiskai’tat	VTA ;
+! yissáaat:yissáaat	VTA ;
+! yissáaat:yissáaat	VTA ;
+! yissini:yissini	VTA ;
+! yissinio’to:yissinio’to	VTA ;
+! yissito:yissito	VTA ;
+! yisskai’tat:yisskai’tat	VTA ;
+! yissko:yissko	VTA ;
+! yisskoyipist:yisskoyipist	VTA ;
+! yissksimmat:yissksimmat	VTA ;
+! yissksipist:yissksipist	VTA ;
+! yissomat:yissomat	VTA ;
+! yisstsiistoto:yisstsiistoto	VTA ;
+! yisstsiiwakat:yisstsiiwakat	VTA ;
+! yo’kaahtat:yo’kaahtat	VTA ;
+! yo’kaahtsimaa:yo’kaahtsimaa	VTA ;
+! yo’kimat:yo’kimat	VTA ;
+! yo’ko:yo’ko	VTA ;
+! yoohkatahkipist:yoohkatahkipist	VTA ;
+! yoohko:yoohko	VTA ;
+! yoohkóyi:yoohkóyi	VTA ;
+! yoohsini:yoohsini	VTA ;
+! yoohto:yoohto	VTA ;
+yookowat:yookowat	VTA  ;
+! yootsiimstat:yootsiimstat	VTA ;
+! yootsipistoto:yootsipistoto	VTA ;
+
+! I am including the concrete verb finals (see Frantz 2017 chapter 18.)
+! The reason being that this is the best place to control them considering the four verb classes
+! The reflexive changes VTA verbs into VAI verbs and takes VAI suffixes. The same is true of the reciprocal. 
+! The benefactive changes Intransitive to Transitive verbs.
+
+LEXICON VAI
++VAI:0                                           VAI_SUFFIXES  ;
++VAI+Der/Caus:%>áttsi                            VTA  ;
++VAI+Der/Caus:%>pi                               VTA  ;
+@P.class.VTA@+VAI+Der/Bnf+VTA:@P.class.VTA@%>mo  VTA_SUFFIXES  ;
+@P.class.VTA@+VAI+Der/Bnf+VTA:@P.class.VTA@%>omo VTA_SUFFIXES  ;
+@P.class.VTA@+VAI+Der/Bnf+VTA:@P.class.VTA@%>o   VTA_SUFFIXES  ;
+@R.accomp.A@+VAI+Accomp:@R.accomp.A@%>m	         VAI_SUFFIXES  ; ! -> VTA?
+
+LEXICON VII
++VII:0		VII_SUFFIXES  ;
+
+LEXICON VTI
++VTI:0                                           VTI_SUFFIXES  ;
+@P.class.VTA@+VTI+Der/Bnf+VTA:@P.class.VTA@%>mo  VTA_SUFFIXES  ;
+@P.class.VTA@+VTI+Der/Bnf+VTA:@P.class.VTA@%>omo VTA_SUFFIXES  ;
+@P.class.VTA@+VTI+Der/Bnf+VTA:@P.class.VTA@%>o   VTA_SUFFIXES  ;
+
+LEXICON VTA
++VTA:0                        VTA_SUFFIXES  ;
++VTA+Der/Bnf+VTA:%>mo         VTA_SUFFIXES  ;
++VTA+Der/Bnf+VTA:%>omo        VTA_SUFFIXES  ;
++VTA+Der/Bnf+VTA:%>o          VTA_SUFFIXES  ;
++VTA+Der/Rflx+VAI:%>ohsi      VAI_SUFFIXES  ;
++VTA+Der/Rcpr+VAI:%>otsiiyi   VAI_SUFFIXES  ;
++VTA+Der/Rcpr+VAI:%>tsiiyi    VAI_SUFFIXES  ;
+
+! BELOW ARE THE VAI SUFFIXES ;
+
+LEXICON VAI_SUFFIXES
+@R.mode.IND@+Ind:@R.mode.IND@ INDEP_VAI_SUFFIXES  ;
+@R.mode.CON@+Cnj:@R.mode.CON@ CONJ_VAI_SUFFIXES  ;
+@R.mode.SUB@+Sbj:@R.mode.SUB@ SUBJ_VAI_SUFFIXES  ;
+@R.mode.IRR@+Irr:@R.mode.IRR@ UNREAL_VAI_SUFFIXES  ;
+@R.mode.IMP@+Imp:@R.mode.IMP@ IMP_VAI_SUFFIXES  ;
+
+LEXICON INDEP_VAI_SUFFIXES
+! Singular INDEPENDENT
+@R.person.NI@+1Sg:@R.person.NI@0   		#  ;	
+@R.person.KI@+2Sg:@R.person.KI@0   		#  ;
+@R.person.NULL@+3Sg:@R.person.NULL@%>wa		#  ;
+@R.person.NULL@+3Sg:@R.person.NULL@%>w		#  ;
+@R.person.NULL@+4Sg:@R.person.NULL@%>yini   	#  ;
+! Plural INDEPENDENT
+@R.person.NI@+1Pl:@R.person.NI@%>hpinnaana  #  ;	
+@R.person.NI@+1Pl:@R.person.NI@%>hpinnaan  #  ;	
+@R.person.NULL@+21Pl:@R.person.NULL@%>o'pa	 #  ;	
+@R.person.NULL@+21Pl:@R.person.NULL@%>o'p	 #  ;
+@R.person.KI@+2Pl:@R.person.KI@%>hpoaawa	 #  ;  	
+@R.person.NULL@+3Pl:@R.person.NULL@%>yi		#  ;
+@R.person.NULL@+4Pl:@R.person.NULL@%>yi   	#  ;
+@R.person.NULL@+3Pl:@R.person.NULL@%>y		#  ;
+@R.person.NULL@+4Pl:@R.person.NULL@%>y   	#  ;
+
+LEXICON CONJ_VAI_SUFFIXES
+! Singular CONJUNCTIVE
+@R.person.NI@+1Sg:@R.person.NI@%>hsi   	#  ; 
+@R.person.KI@+2Sg:@R.person.KI@%>hsi  	#  ;
+@R.person.OT@+3Sg:@R.person.OT@%>hsi 		#  ;
+@R.person.NULL@+4Sg:@R.person.NULL@%>hsi   	#  ;
+! Plural CONJUNCTIVE
+@R.person.NI@+1Pl:@R.person.NI@%>hsinnaana  #  ;
+@R.person.NI@+1Pl:@R.person.NI@%>hsinnaan  #  ;
+@R.person.NULL@+21Pl:@R.person.NULL@%>hsi 	 #  ;
+@R.person.KI@+2Pl:@R.person.KI@%>hsoaayi	 #  ;  
+@R.person.OT@+3Pl:@R.person.OT@%>hsi	#  ;	
+@R.person.NULL@+4Pl:@R.person.NULL@%>hsi	#  ;
+
+LEXICON SUBJ_VAI_SUFFIXES
+! Singular SUBJUNCTIVE
+@R.person.NULL@+1Sg:@R.person.NULL@%>iniki   	#  ;
+@R.person.NULL@+2Sg:@R.person.NULL@%>iniki   	#  ;
+@R.person.NULL@+3Sg:@R.person.NULL@%>si   	#  ;
+@R.person.NULL@+4Sg:@R.person.NULL@%>si   	#  ;
+! Plural SUBJUNCTIVE
+@R.person.NULL@+1Pl:@R.person.NULL@%>innaaniki  #  ;
+@R.person.NULL@+21Pl:@R.person.NULL@%>inoainiki #  ;	
+@R.person.NULL@+2Pl:@R.person.NULL@%>o'ki 		#  ;
+@R.person.NULL@+3Pl:@R.person.NULL@%>si			#  ;
+@R.person.NULL@+4Pl:@R.person.NULL@%>si			#  ;
+
+LEXICON UNREAL_VAI_SUFFIXES
+! Singular UNREAL
+@R.person.NI@+1Sg:@R.person.NI@%>htopi   	#  ;
+@R.person.KI@+2Sg:@R.person.KI@%>htopi   	#  ;
+@R.person.NULL@+3Sg:@R.person.NULL@%>wahtopi	#  ;
+@R.person.NULL@+4Sg:@R.person.NULL@%>wahtopini   #  ;	
+! Plural UNREAL
+@R.person.NI@+1Pl:@R.person.NI@%>hpinnaanopi  #  ;
+@R.person.NULL@+21Pl:@R.person.NULL@%>hpoaawopi 	#  ;	
+@R.person.KI@+2Pl:@R.person.KI@%>wahtopiyi	#  ;   
+@R.person.NULL@+3Pl:@R.person.NULL@%>wahtopiyi	#  ;
+@R.person.NULL@+4Pl:@R.person.NULL@%>wahtopiyini    #  ;
+
+LEXICON IMP_VAI_SUFFIXES
+! Singular IMPERATIVE
++Sg:%>t	#  ;
+! Plural IMPERATIVE
++Pl:%>k	#  ;
+
+! BELOW ARE THE VII SUFFIXES
+
+LEXICON VII_SUFFIXES
+@R.mode.IND@+Ind:@R.mode.IND@ INDEP_VII_SUFFIXES  ;
+@R.mode.CON@+Cnj:@R.mode.CON@ CONJ_VII_SUFFIXES  ;
+@R.mode.SUB@+Sbj:@R.mode.SUB@ SUBJ_VII_SUFFIXES  ;
+@R.mode.IRR@+Irr:@R.mode.IRR@ UNREAL_VII_SUFFIXES  ;
+
+LEXICON INDEP_VII_SUFFIXES
+! Singular INDEPENDENT
+@R.person.NULL@+%0Sg:@R.person.NULL@%>wa		#  ;
+! Plural INDEPENDENT
+@R.person.NULL@+%0Pl:@R.person.NULL@%>yi		#  ;
+
+LEXICON CONJ_VII_SUFFIXES
+! Singular CONJUNCTIVE
+@R.person.OT@+%0Sg:@R.person.OT@%>hsi 		#  ;
+! Plural CONJUNCTIVE
+@R.person.OT@+%0Pl:@R.person.OT@%>hsi	#  ;	
+
+LEXICON SUBJ_VII_SUFFIXES
+! Singular SUBJUNCTIVE
+@R.person.NULL@+%0Sg:@R.person.NULL@%>si   	#  ;
+! Plural SUBJUNCTIVE
+@R.person.NULL@+%0Pl:@R.person.NULL@%>si			#  ;
+
+LEXICON UNREAL_VII_SUFFIXES
+! Singular UNREAL
+@R.person.NULL@+%0Sg:@R.person.NULL@%>wahtopi	#  ;
+! Plural UNREAL  
+@R.person.NULL@+%0Pl:@R.person.NULL@%>wahtopiyi	#  ;
+
+! BELOW ARE THE VTI SUFFIXES 
+
+LEXICON VTI_SUFFIXES
+@R.mode.IND@+Ind:@R.mode.IND@	INDEP_VTI_SUFFIXES  ;
+@R.mode.CON@+Cnj:@R.mode.CON@	CONJ_VTI_SUFFIXES  ;
+@R.mode.SUB@+Sbj:@R.mode.SUB@	SUBJ_VTI_SUFFIXES  ;
+@R.mode.IRR@+Irr:@R.mode.IRR@	UNREAL_VTI_SUFFIXES  ;
+@R.mode.IMP@+Imp:@R.mode.IMP@	IMP_VTI_SUFFIXES  ;
+
+! Objects are included because Frantz says that -wa and -yi suffixes are only added to 1 and 2 forms in the independent.
+
+LEXICON INDEP_VTI_SUFFIXES
+! Singular INDEPENDENT
+@R.person.NI@+1Sg+%0SgO:@R.person.NI@%>hpa   		#  ;	
+@R.person.KI@+2Sg+%0SgO:@R.person.KI@%>hpa   		#  ;
+@R.person.NI@+1Sg+%0PlO:@R.person.NI@%>hpi   		#  ;	
+@R.person.KI@+2Sg+%0PlO:@R.person.KI@%>hpi   		#  ;
+@R.person.NULL@+3Sg+%0SgO:@R.person.NULL@%>ma		#  ;
+@R.person.NULL@+4Sg+%0SgO:@R.person.NULL@%>mini   	#  ;
+! Plural INDEPENDENT
+@R.person.NI@+1Pl+%0SgO:@R.person.NI@%>hpinnaana  #  ;	
+@R.person.NULL@+21Pl+%0SgO:@R.person.NULL@%>'pa	 #  ;
+@R.person.NI@+1Pl+%0PlO:@R.person.NI@%>hpinnaani  #  ;	
+@R.person.NULL@+21Pl+%0PlO:@R.person.NULL@%>'pi	 #  ;
+@R.person.KI@+2Pl+%0SgO:@R.person.KI@%>hpoaawa	 #  ;
+@R.person.KI@+2Pl+%0PlO:@R.person.KI@%>hpoaayi	 #  ; 
+@R.person.NULL@+3Pl+%0PlO:@R.person.NULL@%>mi		#  ;
+@R.person.NULL@+4Pl+%0PlO:@R.person.NULL@%>mi   	#  ;
+
+LEXICON CONJ_VTI_SUFFIXES
+! Singular CONJUNCTIVE
+@R.person.NI@+1Sg+%0SgO:@R.person.NI@%>hsi   	#  ; 
+@R.person.KI@+2Sg+%0SgO:@R.person.KI@%>hsi  	#  ;
+@R.person.OT@+3Sg+%0SgO:@R.person.OT@%>hsi 		#  ;
+@R.person.NULL@+4Sg+%0SgO:@R.person.NULL@%>hsi   	#  ;
+@R.person.NI@+1Sg+%0PlO:@R.person.NI@%>hsi   	#  ; 
+@R.person.KI@+2Sg+%0PlO:@R.person.KI@%>hsi  	#  ;
+@R.person.OT@+3Sg+%0PlO:@R.person.OT@%>hsi 		#  ;
+@R.person.NULL@+4Sg+%0PlO:@R.person.NULL@%>hsi   	#  ;
+! Plural CONJUNCTIVE
+@R.person.NI@+1Pl+%0SgO:@R.person.NI@%>hsinnaani  #  ;
+@R.person.NI@+1Pl+%0SgO:@R.person.NI@%>hsinnaan  #  ;
+@R.person.NULL@+21Pl+%0SgO:@R.person.NULL@%>hsi 	 #  ;
+@R.person.KI@+2Pl+%0SgO:@R.person.KI@%>hsoaayi	 #  ;  
+@R.person.OT@+3Pl+%0SgO:@R.person.OT@%>hsi	#  ;	
+@R.person.NULL@+4Pl+%0SgO:@R.person.NULL@%>hsi	#  ;
+@R.person.NI@+1Pl+%0PlO:@R.person.NI@%>hsinnaani  #  ;
+@R.person.NI@+1Pl+%0PlO:@R.person.NI@%>hsinnaan  #  ;
+@R.person.NULL@+21Pl+%0PlO:@R.person.NULL@%>hsi 	 #  ;
+@R.person.KI@+2Pl+%0PlO:@R.person.KI@%>hsoaayi	 #  ;  
+@R.person.OT@+3Pl+%0PlO:@R.person.OT@%>hsi	#  ;	
+@R.person.NULL@+4Pl+%0PlO:@R.person.NULL@%>hsi	#  ;
+
+LEXICON SUBJ_VTI_SUFFIXES
+! Singular SUBJUNCTIVE
+@R.person.NULL@+1Sg+%0SgO:@R.person.NULL@%>mmiiniki   	#  ;
+@R.person.NULL@+2Sg+%0SgO:@R.person.NULL@%>mmiiniki   	#  ;
+@R.person.NULL@+3Sg+%0SgO:@R.person.NULL@%>isi   	#  ;
+@R.person.NULL@+4Sg+%0SgO:@R.person.NULL@%>isi   	#  ;
+@R.person.NULL@+1Sg+%0PlO:@R.person.NULL@%>mmiiniki   	#  ;
+@R.person.NULL@+2Sg+%0PlO:@R.person.NULL@%>mmiiniki   	#  ;
+@R.person.NULL@+3Sg+%0PlO:@R.person.NULL@%>isi   	#  ;
+@R.person.NULL@+4Sg+%0PlO:@R.person.NULL@%>isi   	#  ;
+! Plural SUBJUNCTIVE
+@R.person.NULL@+1Pl+%0SgO:@R.person.NULL@%>mmiiinnainiki  #  ;
+@R.person.NULL@+21Pl+%0SgO:@R.person.NULL@%>mmiinoainiki #  ;	
+@R.person.NULL@+2Pl+%0SgO:@R.person.NULL@%>i'ki 		#  ;
+@R.person.NULL@+3Pl+%0SgO:@R.person.NULL@%>isi			#  ;
+@R.person.NULL@+4Pl+%0SgO:@R.person.NULL@%>isi			#  ;
+@R.person.NULL@+1Pl+%0PlO:@R.person.NULL@%>mmiiinnainiki  #  ;
+@R.person.NULL@+21Pl+%0PlO:@R.person.NULL@%>mmiinoainiki #  ;	
+@R.person.NULL@+2Pl+%0PlO:@R.person.NULL@%>i'ki 		#  ;
+@R.person.NULL@+3Pl+%0PlO:@R.person.NULL@%>isi			#  ;
+@R.person.NULL@+4Pl+%0PlO:@R.person.NULL@%>isi			#  ;
+
+LEXICON UNREAL_VTI_SUFFIXES
+! Singular UNREAL
+@R.person.NI@+1Sg+%0SgO:@R.person.NI@%>htopi   	#  ;
+@R.person.KI@+2Sg+%0SgO:@R.person.KI@%>htopi   	#  ;
+@R.person.NULL@+3Sg+%0SgO:@R.person.NULL@%>mahtopi	#  ;
+@R.person.NULL@+4Sg+%0SgO:@R.person.NULL@%>mahtopiyini   #  ;
+@R.person.NI@+1Sg+%0PlO:@R.person.NI@%>htopi   	#  ;
+@R.person.KI@+2Sg+%0PlO:@R.person.KI@%>htopi   	#  ;
+@R.person.NULL@+3Sg+%0PlO:@R.person.NULL@%>mahtopi	#  ;
+@R.person.NULL@+4Sg+%0PlO:@R.person.NULL@%>mahtopiyini   #  ;	
+! Plural UNREAL
+@R.person.NI@+1Pl+%0SgO:@R.person.NI@%>hpinnaanopi  #  ;
+@R.person.NULL@+21Pl+%0SgO:@R.person.NULL@%>'pohtopi 	#  ;	
+@R.person.KI@+2Pl+%0SgO:@R.person.KI@%>mahtopiyi	#  ;   
+@R.person.NULL@+3Pl+%0SgO:@R.person.NULL@%>mahtopiyi	#  ;
+@R.person.NULL@+4Pl+%0SgO:@R.person.NULL@%>mahtopiyini    #  ;
+@R.person.NI@+1Pl+%0PlO:@R.person.NI@%>hpinnaanopi  #  ;
+@R.person.NULL@+21Pl+%0PlO:@R.person.NULL@%>'pohtopi 	#  ;	
+@R.person.KI@+2Pl+%0PlO:@R.person.KI@%>mahtopiyi	#  ;   
+@R.person.NULL@+3Pl+%0PlO:@R.person.NULL@%>mahtopiyi	#  ;
+@R.person.NULL@+4Pl+%0PlO:@R.person.NULL@%>mahtopiyini    #  ;
+
+LEXICON IMP_VTI_SUFFIXES
+! Singular IMPERATIVE
+@R.person.IMP@+2Sg+%0SgO:@R.person.IMP@%>ta	#  ;
+@R.person.IMP@+2Sg+%0PlO:@R.person.IMP@%>ti	#  ;
+! Plural IMPERATIVE
+@R.person.IMP@+2Pl+%0SgO:@R.person.IMP@%>ka	#  ;
+@R.person.IMP@+2Pl+%0PlO:@R.person.IMP@%>ki	#  ;
+
+! BELOW ARE THE VTA VERBS
+
+LEXICON VTA_SUFFIXES
+@R.mode.IND@+Ind:@R.mode.IND@	INDEP_VTA_SUFFIXES  ;
+@R.mode.CON@+Cnj:@R.mode.CON@	CONJ_VTA_SUFFIXES  ;
+@R.mode.SUB@+Sbj:@R.mode.SUB@	SUBJ_VTA_SUFFIXES  ;
+@R.mode.IMP@+Imp:@R.mode.IMP@	IMP_VTA_SUFFIXES  ;
+
+! I will first list the DIRECT paradigms
+
+LEXICON INDEP_VTA_SUFFIXES
+! Direct, Singular Subject and Object, INDEPENDENT
+@R.person.KI@+1Sg+2SgO:@R.person.KI@%>o   		#  ;	
+@R.person.NI@+1Sg+3SgO:@R.person.NI@%>aawa   	#  ;
+@R.person.NI@+1Sg+4SgO:@R.person.NI@%>aayini   		#  ;
+@R.person.KI@+2Sg+3SgO:@R.person.KI@%>aawa   		#  ;
+@R.person.KI@+2Sg+4SgO:@R.person.KI@%>aayini		#  ;
+@R.person.KI@+2Sg+4PlO:@R.person.KI@%>aayini		#  ;
+@R.person.NULL@+3Sg+4SgO:@R.person.NULL@%>yiiwa   	#  ;
+@R.person.NULL@+4Sg+5Sg/PlO:@R.person.NULL@%>yiiyina   	#  ;
+! Direct, Plural Subject, Singular Object, INDEPENDENT
+@R.person.KI@+1Pl+2SgO:@R.person.KI@%>ohpinnaana  		#  ;	
+@R.person.NI@+1Pl+3SgO:@R.person.NI@%>annanna   	#  ;
+@R.person.NI@+1Pl+4SgO:@R.person.NI@%>annaanina   		#  ;	
+@R.person.KI@+2Pl+3SgO:@R.person.KI@%>awaawa   		#  ;
+@R.person.KI@+2Pl+4SgO:@R.person.KI@%>awaayini		#  ;
+@R.person.NULL@+21Pl+3SgO:@R.person.NULL@%>aawa   	#  ;
+@R.person.NULL@+3Pl+4SgO:@R.person.NULL@%>yiiyi   	#  ;
+! Direct, Plural Subject and Object, INDEPENDENT
+@R.person.KI@+1Pl+2PlO:@R.person.KI@%>ohpinnaana  		#  ;	
+@R.person.NI@+1Pl+3PlO:@R.person.NI@%>annaani  #  ;	
+@R.person.NI@+1Pl+4PlO:@R.person.NI@%>annaani  #  ;	
+@R.person.KI@+2Pl+3PlO:@R.person.KI@%>awaayi	 #  ;
+@R.person.KI@+2Pl+4PlO:@R.person.KI@%>awaayi	 #  ;
+@R.person.NULL@+21Pl+3PlO:@R.person.NULL@%>aayi  #  ;
+@R.person.NULL@+3Pl+4PlO:@R.person.NULL@%>yiiyi   	#  ;
+@R.person.NULL@+4Pl+5Sg/PlO:@R.person.NULL@%>yiiyi   	#  ;
+! Direct, Plural Object, Singular Subject
+@R.person.KI@+1Sg+2PlO:@R.person.KI@%>ohpoaawa  		#  ;	
+@R.person.KI@+1Sg+2PlO:@R.person.KI@%>ohpoaaw  		#  ;	
+@R.person.NI@+1Sg+3PlO:@R.person.NI@%>aayi   	#  ;
+@R.person.NI@+1Sg+4PlO:@R.person.NI@%>aayi   	#  ;
+@R.person.KI@+2Sg+3PlO:@R.person.KI@%>aayi   		#  ;
+@R.person.KI@+2Sg+4PlO:@R.person.KI@%>aayi   		#  ;
+@R.person.NULL@+3Sg+4PlO:@R.person.NULL@%>yiiwa   	#  ;
+@R.person.NULL@+4Sg+5Sg/PlO:@R.person.NULL@%>yiiyini   	#  ;
+! Inverse, Singular Subject and Object, INDEPENDENT
+@R.person.KI@+2Sg+1SgO:@R.person.KI@%>oki   		#  ;	
+@R.person.KI@+3Sg+2SgO:@R.person.KI@%>oka   	#  ;
+@R.person.NI@+3Sg+1SgO:@R.person.NI@%>oka  		#  ;	
+@R.person.OT@+4Sg+3SgO:@R.person.OT@%>oka   		#  ;
+@R.person.KI@+4Sg+2SgO:@R.person.KI@%>okini   	#  ;
+@R.person.NI@+4Sg+1SgO:@R.person.NI@%>okini   	#  ;
+@R.person.OT@+4Sg+3SgO:@R.person.OT@%>oka   		#  ;
+@R.person.OT@+5Sg/Pl+4Sg:@R.person.OT@%>okini   	#  ;
+! Inverse, Plural Subject, Singular Object, INDEPENDENT
+@R.person.KI@+2Pl+1SgO:@R.person.KI@%>okihpoaawa  		#  ;
+@R.person.NI@+3Pl+1SgO:@R.person.NI@%>oki   	#  ;
+@R.person.KI@+3Pl+2SgO:@R.person.KI@%>oki   	#  ;
+@R.person.NI@+4Pl+1SgO:@R.person.NI@%>oki   	#  ;
+@R.person.KI@+4Pl+2SgO:@R.person.KI@%>oki   	#  ;
+@R.person.OT@+4Pl+3SgO:@R.person.OT@%>oka   		#  ;
+@R.person.NULL@+4Pl+5Sg/PlO:@R.person.NULL@%>yiiyini   		#  ;
+! Inverse, Plural Subject and Object, INDEPENDENT
+@R.person.KI@+2Pl+1PlO:@R.person.KI@%>okihpinnana  #  ;
+@R.person.NULL@+3Pl+21PlO:@R.person.NULL@%>okiyi	 #  ;
+@R.person.NI@+3Pl+1PlO:@R.person.NI@%>okinnaani  #  ;
+@R.person.KI@+3Pl+2PlO:@R.person.KI@%>okoaayi  #  ;
+@R.person.OT@+4Pl+3PlO:@R.person.OT@%>okoaayi  #  ;
+@R.person.KI@+4Pl+2PlO:@R.person.KI@%>okoaayi  #  ;
+@R.person.NULL@+4Pl+21PlO:@R.person.NULL@%>okiyi  #  ;
+@R.person.NI@+4Pl+1PlO:@R.person.NI@%>okinnani  #  ;
+@R.person.OT@+5Sg/Pl+4Pl:@R.person.OT@%>okoaayini  #  ;
+! Inverse, Plural Object, Singular Subject, INDEPENDENT
+@R.person.KI@+2Sg+1PlO:@R.person.KI@%>okihpinnana  #  ; 
+@R.person.KI@+3Sg+2PlO:@R.person.KI@%>okoaawa   	#  ;
+@R.person.NI@+3Sg+1PlO:@R.person.NI@%>okinnaani 		#  ;	
+@R.person.NI@+3Sg+1PlO:@R.person.NI@%>okinnaan 		#  ;	
+@R.person.OT@+4Sg+3PlO:@R.person.OT@%>okoaayi   	#  ;
+@R.person.KI@+4Sg+2PlO:@R.person.KI@%>okini   	#  ;
+@R.person.NULL@+4Sg+21PlO:@R.person.NULL@%>okiyini   	#  ;
+@R.person.NI@+4Sg+1PlO:@R.person.NI@%>okini   	#  ;
+! Unspecified INDEPENDENT
+@R.person.NI@+Unspec+1SgO:@R.person.NI@%>okoo   	#  ;
+@R.person.NI@+Unspec+1PlO:@R.person.NI@%>otsspinnaana   	#  ;
+@R.person.KI@+Unspec+2SgO:@R.person.KI@%>okoo   	#  ;
+@R.person.KI@+Unspec+2SgO:@R.person.KI@%>otsspoaawa   	#  ;
+@R.person.NULL@+Unspec+21PlO:@R.person.NULL@%>okiwa  	#  ;
+@R.person.NULL@+Unspec+3SgO:@R.person.NULL@%>aawa   	#  ;
+@R.person.NULL@+Unspec+3PlO:@R.person.NULL@%>aayi   	#  ;
+@R.person.NULL@+Unspec+4SgO:@R.person.NULL@%>aayini   	#  ;
+@R.person.NULL@+Unspec+4PlO:@R.person.NULL@%>aayi   	#  ;
+
+LEXICON CONJ_VTA_SUFFIXES
+! Direct, Singular Subject and Object, CONJUNCTIVE
+@R.person.KI@+1Sg+2SgO:@R.person.KI@%>ohsi   	#  ;	
+@R.person.NI@+1Sg+3SgO:@R.person.NI@%>ahsi   	#  ;
+@R.person.KI@+2Sg+3SgO:@R.person.KI@%>ahsi   		#  ;
+@R.person.OT@+3Sg+4SgO:@R.person.OT@%>ahsi   		#  ;
+! Direct, Plural Subject, Singular Object, CONJUNCTIVE
+@R.person.KI@+1Pl+2SgO:@R.person.KI@%>ohsinnaani   		#  ;
+@R.person.NI@+1Pl+3SgO:@R.person.NI@%>ahsinnaani   		#  ;
+@R.person.NI@+1Pl+4SgO:@R.person.NI@%>ahsinnaanini   		#  ;
+@R.person.NULL@+21Pl+3SgO:@R.person.NULL@%>ahsi   		#  ;
+@R.person.NULL@+21Pl+4SgO:@R.person.NULL@%>ahsini   		#  ;
+@R.person.KI@+2Pl+3SgO:@R.person.KI@%>ahsoaayi   		#  ;
+@R.person.KI@+2Pl+4SgO:@R.person.KI@%>ahsoaayini   		#  ;
+@R.person.OT@+3Pl+4SgO:@R.person.OT@%>ahsi   		#  ;
+! Direct, Plural Subject and Object, CONJUNCTIVE
+@R.person.KI@+1Pl+2PlO:@R.person.KI@%>ohsinnaani   		#  ;
+@R.person.NI@+1Pl+3PlO:@R.person.NI@%>ahsinnaani   		#  ;
+@R.person.NI@+1Pl+4PlO:@R.person.NI@%>ahsinnaani   		#  ;
+@R.person.NULL@+21Pl+3PlO:@R.person.NULL@%>ahsi   		#  ;
+@R.person.NULL@+21Pl+4PlO:@R.person.NULL@%>ahsi   		#  ;
+@R.person.KI@+2Pl+3PlO:@R.person.KI@%>ahsoaayi   		#  ;
+@R.person.KI@+2Pl+4PlO:@R.person.KI@%>ahsoaayi   		#  ;
+@R.person.OT@+3Pl+4PlO:@R.person.OT@%>ahsi   		#  ;
+! Direct, Singular Subject, Plural Object, CONJUNCTIVE
+@R.person.KI@+1Sg+2PlO:@R.person.KI@%>ohsoaayi   		#  ;
+@R.person.NI@+1Sg+3PlO:@R.person.NI@%>ahsi   	#  ;
+@R.person.NI@+1Sg+4PlO:@R.person.NI@%>ahsi   	#  ;
+@R.person.KI@+2Sg+3PlO:@R.person.KI@%>ahsi   		#  ;
+@R.person.KI@+2Sg+4PlO:@R.person.KI@%>ahsi   		#  ;
+@R.person.OT@+3Sg+4PlO:@R.person.OT@%>ahsi   		#  ;
+! Inverse, Singular Subject and Object, CONJUNCTIVE
+@R.person.KI@+2Sg+1SgO:@R.person.KI@%>okssi   	#  ;	
+@R.person.KI@+3Sg+2SgO:@R.person.KI@%>yssi   	#  ;
+@R.person.NI@+3Sg+1SgO:@R.person.NI@%>yssi   		#  ;
+@R.person.OT@+4Sg+3SgO:@R.person.OT@%>yssi   		#  ;
+! Inverse, Plural Subject and Singular Object, CONJUNCTIVE
+@R.person.KI@+2Pl+1SgO:@R.person.KI@%>okssoaayi   	#  ;	
+@R.person.NI@+3Pl+1SgO:@R.person.NI@%>yssinnaani   		#  ;
+@R.person.KI@+3Pl+2SgO:@R.person.KI@%>yssi   	#  ;
+@R.person.OT@+4Pl+3SgO:@R.person.OT@%>yssi   		#  ;
+! Inverse, Plural Subject and Object, CONJUNCTIVE
+@R.person.KI@+2Pl+1PlO:@R.person.KI@%>okssinnaani   	#  ;	
+@R.person.KI@+3Pl+2PlO:@R.person.KI@%>yssoaayi   	#  ;
+@R.person.NI@+3Pl+21PlO:@R.person.NI@%>okssi   		#  ;
+@R.person.NI@+3Pl+1PlO:@R.person.NI@%>yssinnaani   		#  ;
+@R.person.OT@+4Pl+4PlO:@R.person.OT@%>yssi   		#  ;
+! Inverse, Singular Subject and Plural Object, CONJUNCTIVE
+@R.person.KI@+2Sg+1PlO:@R.person.KI@%>okssinnaani   	#  ;
+@R.person.NI@+3Sg+1PlO:@R.person.NI@%>yssinnaani   	#  ;
+@R.person.KI@+3Sg+2PlO:@R.person.KI@%>yssoaayi   	#  ;
+@R.person.OT@+3Sg+2PlO:@R.person.OT@%>aahsi   	#  ;
+@R.person.OT@+4Sg+3PlO:@R.person.OT@%>yssi   	#  ;
+@R.person.OT@+4Sg+4PlO:@R.person.OT@%>yssi   	#  ;
+! Unspecified Subject, Conjunctive
+@R.person.NI@+Unspec+1SgO:@R.person.NI@%>okoohsi   	#  ;	
+@R.person.NI@+Unspec+1PlO:@R.person.NI@%>otssinnaani   	#  ;
+@R.person.KI@+Unspec+2SgO:@R.person.KI@%>okoohsi   	#  ;
+@R.person.KI@+Unspec+2PlO:@R.person.KI@%>otssoaayi   	#  ;
+@R.person.NULL@+Unspec+21PlO:@R.person.NULL@%>otssi   	#  ;
+@R.person.NULL@+Unspec+3SgO:@R.person.NULL@%>aahsi   	#  ;
+@R.person.NULL@+Unspec+3PlO:@R.person.NULL@%>aahsi   	#  ;
+@R.person.NULL@+Unspec+4SgO:@R.person.NULL@%>aahsini   	#  ;
+@R.person.NULL@+Unspec+4PlO:@R.person.NULL@%>aahsi   	#  ;
+
+LEXICON SUBJ_VTA_SUFFIXES
+! Direct, Singular Subject and Object, SUBJUNCTIVE
+@R.person.NULL@+1Sg+2SgO:@R.person.NULL@%>iniki   	#  ;	
+@R.person.NULL@+1Sg+3SgO:@R.person.NULL@%>aniki   	#  ;
+@R.person.NULL@+2Sg+3SgO:@R.person.NULL@%>aniki   	#  ;
+@R.person.NULL@+3Sg+4SgO:@R.person.NULL@%>asi   	#  ;	
+! Direct, Plural Subject, Singular Object, SUBJUNCTIVE
+@R.person.NULL@+1Pl+2SgO:@R.person.NULL@%>innaaniki   	#  ;
+@R.person.NULL@+1Pl+3SgO:@R.person.NULL@%>ainnaaniki   	#  ;
+@R.person.NULL@+2Pl+3SgO:@R.person.NULL@%>ainainiki   	#  ;
+@R.person.NULL@+21Pl+3SgO:@R.person.NULL@%>ahki   	#  ;
+@R.person.NULL@+3Pl+4SgO:@R.person.NULL@%>asi   	#  ;	
+! Direct, Plural Subject and Object, SUBJUNCTIVE
+@R.person.NULL@+1Pl+2PlO:@R.person.NULL@%>innaaniki   	#  ;
+@R.person.NULL@+1Pl+3PlO:@R.person.NULL@%>ainnaaniki   	#  ;
+@R.person.NULL@+2Pl+3PlO:@R.person.NULL@%>ainainiki   	#  ;
+@R.person.NULL@+21Pl+3PlO:@R.person.NULL@%>ahki   	#  ;
+@R.person.NULL@+3Pl+4PlO:@R.person.NULL@%>asi   	#  ;	
+! Direct, Singular Subject, Plural Object, SUBJUNCTIVE
+@R.person.NULL@+1Sg+2PlO:@R.person.NULL@%>inoainiki   	#  ;
+@R.person.NULL@+2Sg+3PlO:@R.person.NULL@%>ainiki   	#  ;
+@R.person.NULL@+3Sg+4PlO:@R.person.NULL@%>asi   	#  ;	
+! Inverse, Singular Subject and Object, SUBJUNCTIVE
+@R.person.NULL@+2Sg+1SgO:@R.person.NULL@%>okiiniki   	#  ;	
+@R.person.NULL@+3Sg+1SgO:@R.person.NULL@%>otsiiniki   	#  ;
+@R.person.NULL@+3Sg+2SgO:@R.person.NULL@%>otsiiniki   	#  ;
+@R.person.NULL@+4Sg+3SgO:@R.person.NULL@%>otsiiniki   	#  ;
+! Inverse, Plural Subject and Singular Object, SUBJUNCTIVE
+@R.person.NULL@+2Pl+1SgO:@R.person.NULL@%>okiinoainiki   	#  ;
+@R.person.NULL@+3Pl+1SgO:@R.person.NULL@%>otsiiniki   	#  ;
+@R.person.NULL@+3Pl+2SgO:@R.person.NULL@%>otsiiniki   	#  ;
+! Inverse, Plural Subject and Object, SUBJUNCTIVE
+@R.person.NULL@+2Pl+1PlO:@R.person.NULL@%>okinnaaniki   	#  ;	
+@R.person.NULL@+3Pl+2PlO:@R.person.NULL@%>otsiinoainiki   	#  ;
+@R.person.NULL@+3Pl+1PlO:@R.person.NULL@%>otsiinoainiki   	#  ;
+@R.person.NULL@+3Pl+1PlO:@R.person.NULL@%>otsiinnaaniki   	#  ;
+@R.person.NULL@+3Pl+21PlO:@R.person.NULL@%>okisi   	#  ;
+! Inverse, Singular Subject and Plural Object, CONJUNCTIVE
+@R.person.NULL@+3Sg+1PlO:@R.person.NULL@%>okinnaaniki   	#  ;	
+@R.person.NULL@+3Sg+2PlO:@R.person.NULL@%>okinnaaniki   	#  ;
+@R.person.NULL@+3Sg+21PlO:@R.person.NULL@%>okisi   	#  ;
+! Unspecified Subject, SUBJUNCTIVE
+@R.person.NULL@+Unspec+1SgO:@R.person.NULL@%>okoiniki   	#  ;	
+@R.person.NULL@+Unspec+1PlO:@R.person.NULL@%>okoinnaaniki   	#  ;
+@R.person.NULL@+Unspec+2SgO:@R.person.NULL@%>okoiniki   	#  ;	
+@R.person.NULL@+Unspec+2PlO:@R.person.NULL@%>okoinoainiki		#  ;
+@R.person.NULL@+Unspec+21PlO:@R.person.NULL@%>otsski   	#  ;
+@R.person.NULL@+Unspec+3SgO:@R.person.NULL@%>aahki   	#  ;
+@R.person.NULL@+Unspec+3PlO:@R.person.NULL@%>aahki   	#  ;
+

@@ -1,0 +1,57 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - á'po'taki - ok : # -m animate intransitive verb, work AEW NA1
+     nitá'páo'taki: Dur+a'po'taki+VAI+Ind+1Sg
+     kitá'páo'taki: Dur+a'po'taki+VAI+Ind+2Sg
+     á'páo'takiwa: Dur+a'po'taki+VAI+Ind+3Sg
+     á'páo'takiyini: Dur+a'po'taki+VAI+Ind+4Sg
+     á'páo'takio'pa: Dur+a'po'taki+VAI+Ind+21Pl
+     nitá'páo'takihpinnaan: Dur+a'po'taki+VAI+Ind+2Pl
+     kitohkaná'páo'takihpoaawa: Dur+a'po'taki+VAI+Ind+2Pl
+     á'páo'takiyaawa: Dur+a'po'taki+VAI+Ind+3Pl+PRO+3/0Sg+PRO+3/0Sg
+		
+     nitáakotá'po'taki: Fut+a'po'taki+VAI+Ind+1Sg
+     kitáakotá'po'taki: Fut+a'po'taki+VAI+Ind+2Sg
+     áakotá'po'takiwa: Fut+a'po'taki+VAI+Ind+3Sg
+     áakotá'po'takiyini: Fut+a'po'taki+VAI+Ind+4Sg
+     áaká'po'takio'pa: Fut+a'po'taki+VAI+Ind+21Pl
+     nitáakotá'po'takihpinnaan: Fut+a'po'taki+VAI+Ind+1Pl
+     kitáakohkanotá'po'takihpoaawa: Fut+a'po'taki+VAI+Ind+2Pl
+     áakotá'po'takiyaawa: Fut+a'po'taki+VAI+Ind+3Pl+PRO+3/0Sg
+		
+     nitá'po'taki: a'po'taki+VAI+Ind+1Sg
+     kitá'po'taki: a'po'taki+VAI+Ind+2Sg
+     á'po'takiwa: a'po'taki+VAI+Ind+3Sg
+     á'po'takiyini: a'po'taki+VAI+Ind+4Sg
+     á'po'takio'pa: a'po'taki+VAI+Ind+21Pl
+     nitá'po'takihpinnaan: a'po'taki+VAI+Ind+1Pl
+     kitá'po'takihpoaawa: a'po'taki+VAI+Ind+2Pl
+     á'po'takiyaawa: a'po'taki+VAI+Ind+3Pl+PRO+3/0Sg
+		
+     nimáátá'páo'takihpa: Neg+Dur+a'po'taki+VAI+Ind+1Sg+INTERR
+     kimáátá'páo'takihpa: Neg+Dur+a'po'taki+VAI+Ind+2Sg+INTERR
+     máátá'páo'takiwa: Neg+Dur+a'po'taki+VAI+Ind+3Sg
+     nimáátá'páo'takihpinnaan: Neg+Dur+a'po'taki+VAI+Ind+1Pl
+     máátá'páo'takiwaiksaawayi: Neg+Dur+a'po'taki+VAI+Ind+3Pl+INTERR
+		
+     nimáátáaká'po'takihpa: Neg+Fut+a'po'taki+VAI+Ind+1Sg+INTERR
+     kimáátáaká'po'takihpa: Neg+Fut+a'po'taki+VAI+Ind+2Sg+INTERR
+     máátaaká'po'takiwa: Neg+Fut+a'po'taki+VAI+Ind+3Sg
+     máátáaká'po'takio'pa: Neg+Fut+a'po'taki+VAI+Ind+21Pl
+     kimáátáaká'po'takihpoaawa: Neg+Fut+a'po'taki+VAI+Ind+2Pl
+     máátáaká'po'takiwaiksaawayi: Neg+Fut+a'po'taki+VAI+Ind+3Pl++INTERR
+		
+     nimáátá'po'takihpa: Neg+Fut+a'po'taki+VAI+Ind+1Sg+INTERR
+     kimáátá'po'takihpa: Neg+Fut+a'po'taki+VAI+Ind+2Sg+INTERR
+     máátá'po'takiwatsiksiwa: Neg+Fut+a'po'taki+VAI+Ind+3Sg
+     nimáátá'po'takihpinnaan: Neg+Fut+a'po'taki+VAI+Ind+1Pl
+     máátá'po'takiwaiksaawayi: Neg+Fut+a'po'taki+VAI+Ind+3Pl+INTERR
