@@ -1,0 +1,51 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - ísska - ok : # -m animate noun, pail AEW NA1
+     ísska+NA+Sg: ísska
+     ísska+NA+Pl: íssiksi
+     ísska+NA+Obv: ísski
+     ísska+NA+Non: isskí
+     
+     ísska+NA+Px1Sg+Sg: nóóhka
+     ísska+NA+Px1Sg+Pl: nóóhkiksi
+     ísska+NA+Px1Sg+Obv: nóóhki
+     ísska+NA+Px1Sg+Non: nóóhki
+     
+     ísska+NA+Px1Pl+Sg: nóóhkinnaana
+     ísska+NA+Px1Pl+Pl: nóóhkinnaaniksi
+     ísska+NA+Px1Pl+Obv: nóóhkinnaani
+     ísska+NA+Px1Pl+Non: nóóhkinnaani
+
+     ísska+NA+Px21Pl+Sg: kóóhkinnoona
+     ísska+NA+Px21Pl+Pl: kóóhkinnooniksi
+     ísska+NA+Px21Pl+Obv: kóóhkinnooni
+     ísska+NA+Px21Pl+Non: kóóhkinnooni
+
+     ísska+NA+Px2Sg+Sg: kóóhka
+     ísska+NA+Px2Sg+Pl: kóóhkiksi
+     ísska+NA+Px2Sg+Obv: kóóhki
+     ísska+NA+Px2Sg+Non: kóóhki
+
+     ísska+NA+Px2Pl+Sg: kóóhkoaawa
+     ísska+NA+Px2Pl+Pl: kóóhkoaawaiksi
+     ísska+NA+Px2Pl+Obv: kóóhkoaawayi
+     ísska+NA+Px2Pl+Non: kóóhkoaawai
+
+     ísska+NA+Px3Sg+Sg: óóhka
+     ísska+NA+Px3Sg+Pl: óóhkiksi
+     ísska+NA+Px3Sg+Obv: óóhki
+     ísska+NA+Px3Sg+Non: óóhki
+
+     ísska+NA+Px3Pl+Sg: óóhkoaawa
+     ísska+NA+Px3Pl+Pl: óóhkoaawaiksi
+     ísska+NA+Px3Pl+Obv: óóhkoaawayi
+     ísska+NA+Px3Pl+Non: óóhkoaawai

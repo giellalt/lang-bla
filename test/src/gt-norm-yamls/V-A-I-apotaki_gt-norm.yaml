@@ -52,6 +52,39 @@ Tests:
 		
      nimáátá'po'takihpa: Neg+Fut+a'po'taki+VAI+Ind+1Sg+INTERR
      kimáátá'po'takihpa: Neg+Fut+a'po'taki+VAI+Ind+2Sg+INTERR
-     máátá'po'takiwatsiksiwa: Neg+Fut+a'po'taki+VAI+Ind+3Sg
+     máátá'po'takiwatsiksiwa: Neg+Fut+a'po'taki+VAI+Ind+PRO+3Sg
      nimáátá'po'takihpinnaan: Neg+Fut+a'po'taki+VAI+Ind+1Pl
      máátá'po'takiwaiksaawayi: Neg+Fut+a'po'taki+VAI+Ind+3Pl+INTERR
+
+     nita'páo'takihsi: Dur+a'po'taki+VAI+Cnj+1Sg
+     kita'páo'takihsi: Dur+a'po'taki+VAI+Cnj+2Sg
+     ota'páo'takihsi: Dur+a'po'taki+VAI+Cnj+3Sg
+     a'páo'takihsi: Dur+a'po'taki+VAI+Cnj+4Sg
+     nita'páo'takihsinnaana: Dur+a'po'taki+VAI+Cnj+1Pl
+     a'páo'takihsi: Dur+a'po'taki+VAI+Cnj+21Pl
+     kita'páo'takihsoaayi: Dur+a'po'taki+VAI+Cnj+2Pl
+     ota'páo'takihsi: Dur+a'po'taki+VAI+Cnj+3Pl
+     a'páo'takihsi: Dur+a'po'taki+VAI+Cnj+4Pl
+
+     a'páo'takiniki: Dur+a'po'taki+VAI+Sbj+1Sg
+     a'páo'takiniki: Dur+a'po'taki+VAI+Sbj+2Sg
+     a'páo'takisi: Dur+a'po'taki+VAI+Sbj+3Sg
+     a'páo'takisi: Dur+a'po'taki+VAI+Sbj+4Sg
+     a'páo'takinnaaniki: Dur+a'po'taki+VAI+Sbj+1Pl
+     a'páo'takinoainiki: Dur+a'po'taki+VAI+Sbj+21Pl
+     a'páo'takino'ki: Dur+a'po'taki+VAI+Sbj+2Pl
+     a'páo'takisi: Dur+a'po'taki+VAI+Sbj+3Pl
+     a'páo'takisi: Dur+a'po'taki+VAI+Sbj+4Pl
+
+     nita'páo'takihtopi: Dur+a'po'taki+VAI+Irr+1Sg
+     kita'páo'takihtopi: Dur+a'po'taki+VAI+Irr+2Sg
+     a'páo'takiwahtopi: Dur+a'po'taki+VAI+Irr+3Sg
+     a'páo'takiwahtopini: Dur+a'po'taki+VAI+Irr+4Sg
+     nita'páo'takihpinnaanopi: Dur+a'po'taki+VAI+Irr+1Pl
+     a'páo'takihpoaawopi: Dur+a'po'taki+VAI+Irr+21Pl
+     kita'páo'takiwahtopiyi: Dur+a'po'taki+VAI+Irr+2Pl
+     a'páo'takiwahtopiyi: Dur+a'po'taki+VAI+Irr+3Pl
+     a'páo'takiwahtopiyini: Dur+a'po'taki+VAI+Irr+4Pl
+
+     a'páo'takit: Dur+a'po'taki+VAI+Imp+Sg
+     a'páo'takik: Dur+a'po'taki+VAI+Imp+Pl

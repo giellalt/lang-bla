@@ -1,0 +1,218 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+   Verb - ikákomimm - ok : # -m animate transitive verb, love AEW NA1
+     ikákomimm+VTA+Ind+1Sg+2SgO: kitsikákomimmo
+     ikákomimm+VTA+Ind+1Sg+3SgO: nitsikákomimmawa
+     ikákomimm+VTA+Ind+1Sg+4SgO: nitsikákomimmayini
+     ikákomimm+VTA+Ind+2Sg+1SgO: kitsikákomimmoki
+     ikákomimm+VTA+Ind+2Sg+3SgO: kitsikákomimmawa
+     ikákomimm+VTA+Ind+2Sg+4SgO: kitsikákomimmayini
+     ikákomimm+VTA+Ind+3Sg+1SgO: nitsikákomimmoka
+     ikákomimm+VTA+Ind+3Sg+2SgO: kitsikákomimmoka
+     ikákomimm+VTA+Ind+3Sg+4SgO: ikákomimmiiwa
+     ikákomimm+VTA+Ind+4Sg+3SgO: otsikákomimmoki
+     ikákomimm+VTA+Ind+4Sg+2SgO: kitsikákomimmokini
+     ikákomimm+VTA+Ind+4Sg+1SgO: nitsikákomimmokini
+     ikákomimm+VTA+Ind+4Pl+5Sg/PlO: ikákomimmiiyiina
+     ikákomimm+VTA+Ind+5Sg/Pl+4SgO: osikákomimmokini
+     
+     ikákomimm+VTA+Ind+1Pl+2PlO: kitsikákomimmohpinnaana
+     ikákomimm+VTA+Ind+1Pl+3PlO: nitsikákomimmannaani
+     ikákomimm+VTA+Ind+1Pl+4PlO: nitsikákomimmannaani
+     ikákomimm+VTA+Ind+21Pl+3PlO: ikákomimmayi
+     ikákomimm+VTA+Ind+21Pl+4PlO: ikákomimmayi
+     ikákomimm+VTA+Ind+2Pl+1PlO: kitsikákomimmokihpinnaana
+     ikákomimm+VTA+Ind+2Pl+3PlO: kitsikákomimmawaayi
+     ikákomimm+VTA+Ind+2Pl+4PlO: kitsikákomimmawaayi
+     ikákomimm+VTA+Ind+3Pl+1PlO: nitsikákomimmokinnaani
+     ikákomimm+VTA+Ind+3Pl+2PlO: kitsikákomimmokoaayi
+     ikákomimm+VTA+Ind+3Pl+4PlO: ikákomimmiiyi
+     ikákomimm+VTA+Ind+4Pl+1PlO: nitsikákomimmokinnani
+     ikákomimm+VTA+Ind+4Pl+2PlO: kitsikákomimmokoaayini
+     ikákomimm+VTA+Ind+4Pl+3PlO: otsikákomimmokoaayi
+     ikákomimm+VTA+Ind+4Pl+5Sg/PlO: kitsikákomimmokoaayi
+     ikákomimm+VTA+Ind+5Sg/Pl+4PlO: otsikákomimmokoaayini
+     
+     ikákomimm+VTA+Ind+1Pl+2SgO: kitsikákomimmohpinnaana
+     ikákomimm+VTA+Ind+1Pl+3SgO: nitsikákomimmannaana
+     ikákomimm+VTA+Ind+1Pl+4SgO: nitsikákomimmannaanina
+     ikákomimm+VTA+Ind+21Pl+3SgO: ikákomimmawa
+     ikákomimm+VTA+Ind+21Pl+4SgO: ikákomimmayini
+     ikákomimm+VTA+Ind+2Pl+1SgO: kitsikákomimmokihpoaawa
+     ikákomimm+VTA+Ind+2Pl+3SgO: kitsikákomimmawaawa
+     ikákomimm+VTA+Ind+2Pl+4SgO: kitsikákomimmawaayi
+     ikákomimm+VTA+Ind+3Pl+1SgO: nitsikákomimmoki
+     ikákomimm+VTA+Ind+3Pl+2SgO: kitsikákomimmoki
+     ikákomimm+VTA+Ind+3Pl+4SgO: ikákomimmiiyi
+     ikákomimm+VTA+Ind+4Pl+1SgO: nitsikákomimmoki
+     ikákomimm+VTA+Ind+4Pl+2SgO: kitsikákomimmoki
+     ikákomimm+VTA+Ind+4Pl+3SgO: otsikákomimmoka
+
+     ikákomimm+VTA+Ind+1Sg+2PlO: kitsikákomimmohpoaawa     
+     ikákomimm+VTA+Ind+1Sg+3PlO: nitsikákomimmayi
+     ikákomimm+VTA+Ind+1Sg+4PlO: nitsikákomimmayi
+     ikákomimm+VTA+Ind+2Sg+1PlO: kitsikákomimmokihpinnaana    
+     ikákomimm+VTA+Ind+2Sg+3PlO: kitsikákomimmayi
+     ikákomimm+VTA+Ind+2Sg+4PlO: kitsikákomimmayi
+     ikákomimm+VTA+Ind+3Sg+1PlO: nitsikákomimmokinnaani
+     ikákomimm+VTA+Ind+3Sg+2PlO: kitsikákomimmokoaawa
+     ikákomimm+VTA+Ind+3Sg+4PlO: ikákomimmiiwa
+     ikákomimm+VTA+Ind+4Sg+1PlO: nitsikákomimmokini
+     ikákomimm+VTA+Ind+4Sg+2PlO: kitsikákomimmokini
+     ikákomimm+VTA+Ind+4Sg+3PlO: otsikákomimmokoaayi
+ 
+     ikákomimm+VTA+Ind+Unspec+1SgO: nitsikákomimmokoo
+     ikákomimm+VTA+Ind+Unspec+1PlO: nitsikákomimmotsspinnaana
+     ikákomimm+VTA+Ind+Unspec+2SgO: kitsikákomimmokoo
+     ikákomimm+VTA+Ind+Unspec+2PlO: kitsikákomimmotsspoaawa
+     ikákomimm+VTA+Ind+Unspec+21SgO: ikákomimmokiwa
+     ikákomimm+VTA+Ind+Unspec+3SgO: ikákomimmawa
+     ikákomimm+VTA+Ind+Unspec+3PlO: ikákomimmayi
+     ikákomimm+VTA+Ind+Unspec+4SgO: ikákomimmayini
+     ikákomimm+VTA+Ind+Unspec+4SgO: ikákomimmayi
+
+     ikákomimm+VTA+Cnj+1Sg+2SgO: kitsikákomimmohsi
+     ikákomimm+VTA+Cnj+1Sg+3SgO: nitsikákomimmahsi
+     ikákomimm+VTA+Cnj+1Sg+4SgO: nitsikákomimmahsi
+     ikákomimm+VTA+Cnj+2Sg+1SgO: kitsikákomimmokssi
+     ikákomimm+VTA+Cnj+2Sg+3SgO: kitsikákomimmahsi
+     ikákomimm+VTA+Cnj+2Sg+4SgO: kitsikákomimmahsi
+     ikákomimm+VTA+Cnj+3Sg+1SgO: nitsikákomimmssi
+     ikákomimm+VTA+Cnj+3Sg+2SgO: kitsikákomimmssi
+     ikákomimm+VTA+Cnj+3Sg+4SgO: otsikákomimmahsi
+     ikákomimm+VTA+Cnj+4Sg+3SgO: otsikákomimmssi
+     ikákomimm+VTA+Cnj+4Sg+4SgO: otsikákomimmssi
+
+     ikákomimm+VTA+Cnj+1Sg+2PlO: kitsikákomimmohsoaayi
+     ikákomimm+VTA+Cnj+1Sg+3PlO: nitsikákomimmahsi
+     ikákomimm+VTA+Cnj+1Sg+4PlO: nitsikákomimmahsi
+     ikákomimm+VTA+Cnj+2Sg+1PlO: kitsikákomimmokssinnani
+     ikákomimm+VTA+Cnj+2Sg+3PlO: kitsikákomimmahsi
+     ikákomimm+VTA+Cnj+2Sg+4PlO: kitsikákomimmahsi
+     ikákomimm+VTA+Cnj+3Sg+1PlO: nitsikákomimmssinnani
+     ikákomimm+VTA+Cnj+3Sg+2PlO: otsikákomimmahsi
+     ikákomimm+VTA+Cnj+3Sg+4PlO: otsikákomimmssi
+     ikákomimm+VTA+Cnj+4Sg+3PlO: otsikákomimmssi
+     ikákomimm+VTA+Cnj+4Sg+4PlO: otsikákomimmssi
+
+     ikákomimm+VTA+Cnj+1Pl+2PlO: kitsikákomimmohsinnani
+     ikákomimm+VTA+Cnj+1Pl+3PlO: nitsikákomimmahsinnaani
+     ikákomimm+VTA+Cnj+1Pl+4PlO: nitsikákomimmahsinnaani
+     ikákomimm+VTA+Cnj+21Pl+3PlO: ikákomimmahsi
+     ikákomimm+VTA+Cnj+21Pl+4PlO: ikákomimmahsi
+     ikákomimm+VTA+Cnj+2Pl+1PlO: kitsikákomimmokssinnani
+     ikákomimm+VTA+Cnj+2Pl+3PlO: kitsikákomimmahsoaayi
+     ikákomimm+VTA+Cnj+2Pl+4PlO: kitsikákomimmahsoaayi
+     ikákomimm+VTA+Cnj+3Pl+1PlO: nitsikákomimmssinnani
+     ikákomimm+VTA+Cnj+3Pl+21PlO: nitsikákomimmokssi
+     ikákomimm+VTA+Cnj+3Pl+2PlO: otsikákomimmssoaayi
+     ikákomimm+VTA+Cnj+3Pl+4PlO: otsikákomimmssi
+     ikákomimm+VTA+Cnj+4Pl+4PlO: otsikákomimmssi
+     ikákomimm+VTA+Cnj+4Pl+3PlO: otsikákomimmssi
+
+     ikákomimm+VTA+Cnj+1Pl+2SgO: kitsikákomimmohsinnani
+     ikákomimm+VTA+Cnj+1Pl+3SgO: nitsikákomimmahsinnaani
+     ikákomimm+VTA+Cnj+1Pl+4SgO: nitsikákomimmahsinnaanini
+     ikákomimm+VTA+Cnj+21Pl+3SgO: ikákomimmahsi
+     ikákomimm+VTA+Cnj+21Pl+4SgO: ikákomimmahsini
+     ikákomimm+VTA+Cnj+2Pl+1SgO: kitsikákomimmokssoaayi
+     ikákomimm+VTA+Cnj+2Pl+3SgO: kitsikákomimmahsoaayi
+     ikákomimm+VTA+Cnj+2Pl+4SgO: kitsikákomimmahsoaayini
+     ikákomimm+VTA+Cnj+3Pl+1SgO: nitsikákomimmssinnani
+     ikákomimm+VTA+Cnj+3Pl+21SgO: nitsikákomimmokssi
+     ikákomimm+VTA+Cnj+3Pl+2SgO: kitsikákomimmssi
+     ikákomimm+VTA+Cnj+3Pl+4SgO: otsikákomimmahsi
+     ikákomimm+VTA+Cnj+4Pl+4SgO: otsikákomimmssi
+     ikákomimm+VTA+Cnj+4Pl+3SgO: otsikákomimmssi
+
+     ikákomimm+VTA+Cnj+Unspec+1SgO: nitsikákomimmokoohsi
+     ikákomimm+VTA+Cnj+Unspec+1PlO: nitsikákomimmotssinnaana
+     ikákomimm+VTA+Cnj+Unspec+2SgO: kitsikákomimmokoohsi
+     ikákomimm+VTA+Cnj+Unspec+2PlO: kitsikákomimmotssoaayi
+     ikákomimm+VTA+Cnj+Unspec+21SgO: ikákomimmotssi
+     ikákomimm+VTA+Cnj+Unspec+3SgO: ikákomimmahsi
+     ikákomimm+VTA+Cnj+Unspec+3PlO: ikákomimmahsi
+     ikákomimm+VTA+Cnj+Unspec+4SgO: ikákomimmahsini
+     ikákomimm+VTA+Cnj+Unspec+4SgO: ikákomimmahsi
+
+     ikákomimm+VTA+Sbj+1Sg+2SgO: ikákomimminiki
+     ikákomimm+VTA+Sbj+1Sg+3SgO: ikákomimmaniki
+     ikákomimm+VTA+Sbj+1Sg+4SgO: ikákomimmaniki
+     ikákomimm+VTA+Sbj+2Sg+1SgO: ikákomimmokiiniki
+     ikákomimm+VTA+Sbj+2Sg+3SgO: ikákomimmaniki
+     ikákomimm+VTA+Sbj+2Sg+4SgO: ikákomimmaniki
+     ikákomimm+VTA+Sbj+3Sg+1SgO: ikákomimmotsiiniki
+     ikákomimm+VTA+Sbj+3Sg+2SgO: ikákomimmotsiiniki
+     ikákomimm+VTA+Sbj+3Sg+4SgO: ikákomimmasi
+     ikákomimm+VTA+Sbj+4Sg+3SgO: ikákomimmotsiiniki
+
+     ikákomimm+VTA+Sbj+1Sg+2PlO: ikákomimminoaiki
+     ikákomimm+VTA+Sbj+1Sg+3PlO: ikákomimmainiki
+     ikákomimm+VTA+Sbj+2Sg+1PlO: ikákomimmokinnaaniki
+     ikákomimm+VTA+Sbj+2Sg+3PlO: ikákomimmainiki
+     ikákomimm+VTA+Sbj+3Sg+1PlO: ikákomimmokinnaaniki
+     ikákomimm+VTA+Sbj+3Sg+21PlO: ikákomimmokisi
+     ikákomimm+VTA+Sbj+3Sg+2PlO: ikákomimmotsinoainiki
+     ikákomimm+VTA+Sbj+3Sg+4PlO: ikákomimmasi
+     ikákomimm+VTA+Sbj+4Sg+3PlO: ikákomimmotsiinoainiki
+
+     ikákomimm+VTA+Sbj+1Pl+2PlO: ikákomimminnaaniki
+     ikákomimm+VTA+Sbj+1Pl+3PlO: ikákomimmainnaaniki
+     ikákomimm+VTA+Sbj+2Pl+1PlO: ikákomimmokinnaaniki
+     ikákomimm+VTA+Sbj+2Pl+3PlO: ikákomimmainainiki
+     ikákomimm+VTA+Sbj+3Pl+1PlO: ikákomimmotsiinoainiki
+     ikákomimm+VTA+Sbj+3Pl+21PlO: ikákomimmokisi
+     ikákomimm+VTA+Sbj+3Pl+2PlO: ikákomimmotsinoainiki
+     ikákomimm+VTA+Sbj+3Pl+4PlO: ikákomimmasi
+     ikákomimm+VTA+Sbj+4Pl+3PlO: ikákomimmotsiiniki
+
+     ikákomimm+VTA+Sbj+1Pl+2SgO: ikákomimminoainiki
+     ikákomimm+VTA+Sbj+1Pl+3SgO: ikákomimmainiki
+     ikákomimm+VTA+Sbj+21Pl+3SgO: ikákomimmahki
+     ikákomimm+VTA+Sbj+2Pl+1SgO: ikákomimmokiinoainiki
+     ikákomimm+VTA+Sbj+2Pl+3SgO: ikákomimmainiki
+     ikákomimm+VTA+Sbj+3Pl+1SgO: ikákomimmotsiiniki
+     ikákomimm+VTA+Sbj+3Pl+21SgO: ikákomimmokisi
+     ikákomimm+VTA+Sbj+3Pl+2SgO: ikákomimmotsiiniki
+     ikákomimm+VTA+Sbj+3Pl+4SgO: ikákomimmasi
+     ikákomimm+VTA+Sbj+4Pl+3SgO: ikákomimmotsiinoainiki
+
+     ikákomimm+VTA+Sbj+1Pl+2SgO: ikákomimminoaiiki
+     ikákomimm+VTA+Sbj+1Pl+3SgO: ikákomimmainiki
+     ikákomimm+VTA+Sbj+21Pl+3SgO: ikákomimmahki
+     ikákomimm+VTA+Sbj+2Pl+1SgO: ikákomimmokiinoainiki
+     ikákomimm+VTA+Sbj+2Pl+3SgO: ikákomimmainiki
+     ikákomimm+VTA+Sbj+3Pl+1SgO: ikákomimmotsiiniki
+     ikákomimm+VTA+Sbj+3Pl+21SgO: ikákomimmokisi
+     ikákomimm+VTA+Sbj+3Pl+2SgO: ikákomimmotsiiniki
+     ikákomimm+VTA+Sbj+3Pl+4SgO: ikákomimmasi
+     ikákomimm+VTA+Sbj+4Pl+3SgO: ikákomimmotsiinoainiki
+
+     ikákomimm+VTA+Sbj+Unspec+1SgO: ikákomimmokoiniki
+     ikákomimm+VTA+Sbj+Unspec+1PlO: ikákomimmokoinnaaniki
+     ikákomimm+VTA+Sbj+Unspec+2SgO: ikákomimmokoiniki
+     ikákomimm+VTA+Sbj+Unspec+2PlO: ikákomimmokoinoainiki
+     ikákomimm+VTA+Sbj+Unspec+21SgO: ikákomimmotsski
+     ikákomimm+VTA+Sbj+Unspec+3SgO: ikákomimmahki
+     ikákomimm+VTA+Sbj+Unspec+3PlO: ikákomimmahki
+
+     ikákomimm+VTA+Imp+2Sg+1SgO: ikákomimmokit
+     ikákomimm+VTA+Imp+2Sg+1PlO: ikákomimmaokinnaana
+     ikákomimm+VTA+Imp+2Sg+3SgO: ikákomimmis
+     ikákomimm+VTA+Imp+2Sg+3PlO: ikákomimmis
+     ikákomimm+VTA+Imp+2Pl+1SgO: ikákomimmokik
+     ikákomimm+VTA+Imp+2Pl+1PlO: ikákomimmaokinnaana
+     ikákomimm+VTA+Imp+2Pl+3SgO: ikákomimmok
+     ikákomimm+VTA+Imp+2Pl+3PlO: ikákomimmok
+
+     ikákomimm+VTA+Der/Rcpr+VAI+Ind+1Pl: nitsikákomimmotsiiyihpinnaan
+     

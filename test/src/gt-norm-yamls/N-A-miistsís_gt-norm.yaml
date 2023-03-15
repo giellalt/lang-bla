@@ -1,0 +1,51 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - miistsísa - ok : # -m animate noun, tree AEW NA1
+     miistsísa+NA+Sg: miistsísa
+     miistsísa+NA+Pl: miistsíksi
+     miistsísa+NA+Obv: miistsíyi
+     miistsísa+NA+Non: miistsíí
+     
+     miistsísa+NA+Px1Sg+Sg: nitsiistsíma
+     miistsísa+NA+Px1Sg+Pl: nitsiistsímiksi
+     miistsísa+NA+Px1Sg+Obv: nitsiistsími
+     miistsísa+NA+Px1Sg+Non: nitsiistsími
+     
+     miistsísa+NA+Px1Pl+Sg: nitsiistsíminnaana
+     miistsísa+NA+Px1Pl+Pl: nitsiistsíminnaaniksi
+     miistsísa+NA+Px1Pl+Obv: nitsiistsíminnaani
+     miistsísa+NA+Px1Pl+Non: nitsiistsíminnaani
+
+     miistsísa+NA+Px21Pl+Sg: kitsiistsíminnoona
+     miistsísa+NA+Px21Pl+Pl: kitsiistsíminnooniksi
+     miistsísa+NA+Px21Pl+Obv: kitsiistsíminnooni
+     miistsísa+NA+Px21Pl+Non: kitsiistsíminnooni
+
+     miistsísa+NA+Px2Sg+Sg: kitiistsíma
+     miistsísa+NA+Px2Sg+Pl: kitiistsímiksi
+     miistsísa+NA+Px2Sg+Obv: kitiistsími
+     miistsísa+NA+Px2Sg+Non: kitiistsími
+
+     miistsísa+NA+Px2Pl+Sg: kitiistsímoaawa
+     miistsísa+NA+Px2Pl+Pl: kitiistsímoaawaiksi
+     miistsísa+NA+Px2Pl+Obv: kitiistsímoaawayi
+     miistsísa+NA+Px2Pl+Non: kitiistsímoaawai
+
+     miistsísa+NA+Px3Sg+Sg: otiistsíma
+     miistsísa+NA+Px3Sg+Pl: otiistsímiksi
+     miistsísa+NA+Px3Sg+Obv: otiistsími
+     miistsísa+NA+Px3Sg+Non: otiistsími
+
+     miistsísa+NA+Px3Pl+Sg: otiistsímoaawa
+     miistsísa+NA+Px3Pl+Pl: otiistsímoaawaiksi
+     miistsísa+NA+Px3Pl+Obv: otiistsímoaawayi
+     miistsísa+NA+Px3Pl+Non: otiistsímoaawai

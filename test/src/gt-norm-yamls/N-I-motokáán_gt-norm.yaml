@@ -1,0 +1,43 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - mo'tokááni - ok : # -m inanimate noun, head AEW NA1
+     mo'tokááni+NI+Sg: mo'tokááni
+     mo'tokááni+NI+Pl: mo'tokáánistsi
+     mo'tokááni+NI+Non: mo'tokááni
+
+     mo'tokááni+NI+Px1Sg+Sg: no'tokááni
+     mo'tokááni+NI+Px1Sg+Pl: no'tokáánistsi
+     mo'tokááni+NI+Px1Sg+Non: no'tokááni
+
+     mo'tokááni+NI+Px1Pl+Sg: no'tokáánnaani
+     mo'tokááni+NI+Px1Pl+Pl: no'tokáánnaanistsi
+     mo'tokááni+NI+Px1Pl+Non: no'tokáánnaani
+
+     mo'tokááni+NI+Px21Pl+Sg: ko'tokáánnooni
+     mo'tokááni+NI+Px21Pl+Pl: ko'tokáánnoonistsi
+     mo'tokááni+NI+Px21Pl+Non: ko'tokáánnooni
+
+     mo'tokááni+NI+Px2Sg+Sg: ko'tokááni
+     mo'tokááni+NI+Px2Sg+Pl: ko'tokáánistsi
+     mo'tokááni+NI+Px2Sg+Non: ko'tokááni
+
+     mo'tokááni+NI+Px2Pl+Sg: ko'tokáánoaawayi
+     mo'tokááni+NI+Px2Pl+Pl: ko'tokáánoaawaistsi
+     mo'tokááni+NI+Px2Pl+Non: ko'tokáánoaawai
+
+     mo'tokááni+NI+Px3Sg+Sg: o'tokááni
+     mo'tokááni+NI+Px3Sg+Pl: o'tokáánistsi
+     mo'tokááni+NI+Px3Sg+Non: o'tokááni
+
+     mo'tokááni+NI+Px3Pl+Sg: o'tokáánoaawayi
+     mo'tokááni+NI+Px3Pl+Pl: o'tokáánoaawaistsi
+     mo'tokááni+NI+Px3Pl+Non: o'tokáánoaawai

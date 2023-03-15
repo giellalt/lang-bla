@@ -1,0 +1,51 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - nínaawa - ok : # -m animate noun, dog AEW NA1
+     nínaawa+NA+Sg: nínaawa
+     nínaawa+NA+Pl: nínaaiksi
+     nínaawa+NA+Obv: nínaayi
+     nínaawa+NA+Non: nínaaí
+     
+     nínaawa+NA+Px1Sg+Sg: nitsínaama
+     nínaawa+NA+Px1Sg+Pl: nitsínaamiksi
+     nínaawa+NA+Px1Sg+Obv: nitsínaami
+     nínaawa+NA+Px1Sg+Non: nitsínaami
+     
+     nínaawa+NA+Px1Pl+Sg: nitsínaaminnaana
+     nínaawa+NA+Px1Pl+Pl: nitsínaaminnaaniksi
+     nínaawa+NA+Px1Pl+Obv: nitsínaaminnaani
+     nínaawa+NA+Px1Pl+Non: nitsínaaminnaani
+
+     nínaawa+NA+Px21Pl+Sg: kitsínaaminnoona
+     nínaawa+NA+Px21Pl+Pl: kitsínaaminnooniksi
+     nínaawa+NA+Px21Pl+Obv: kitsínaaminnooni
+     nínaawa+NA+Px21Pl+Non: kitsínaaminnooni
+
+     nínaawa+NA+Px2Sg+Sg: kitsínaama
+     nínaawa+NA+Px2Sg+Pl: kitsínaamiksi
+     nínaawa+NA+Px2Sg+Obv: kitsínaami
+     nínaawa+NA+Px2Sg+Non: kitsínaami
+
+     nínaawa+NA+Px2Pl+Sg: kitsínaamoaawa
+     nínaawa+NA+Px2Pl+Pl: kitsínaamoaawaiksi
+     nínaawa+NA+Px2Pl+Obv: kitsínaamoaawayi
+     nínaawa+NA+Px2Pl+Non: kitsínaamoaawai
+
+     nínaawa+NA+Px3Sg+Sg: otsínaama
+     nínaawa+NA+Px3Sg+Pl: otsínaamiksi
+     nínaawa+NA+Px3Sg+Obv: otsínaami
+     nínaawa+NA+Px3Sg+Non: otsínaami
+
+     nínaawa+NA+Px3Pl+Sg: otsínaamoaawa
+     nínaawa+NA+Px3Pl+Pl: otsínaamoaawaiksi
+     nínaawa+NA+Px3Pl+Obv: otsínaamoaawayi
+     nínaawa+NA+Px3Pl+Non: otsínaamoaawai
