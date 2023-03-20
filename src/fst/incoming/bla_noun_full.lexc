@@ -1099,7 +1099,11 @@ i3
 a2
 a3
 a4
+á2 
+á3 
+á4
 o2
+ó2
 m2
 n2
 '
@@ -1129,7 +1133,7 @@ LEXICON NOUN_INDEP_PREFIXES
 @P.person.NULL@0                    PRE_INDEP_FLAG ;
 
 LEXICON PRE_INDEP_FLAG
-@P.class.NOUN@ PREVERBS ;
+@P.class.NOUN@ PRENOUNS ;
 @P.class.VERB@ PREFIXES ;
 
 ! LEXICON NON_INDEP_FLAG
@@ -1165,9 +1169,9 @@ LEXICON PV_COUNTER1
 @R.pvcountf.1@@R.count1.T@@P.pvcountf.2@@R.count1.T@ PREFIXES ;
 @R.pvcountf.2@@R.count1.A@@P.pvcountf.3@@R.count1.A@ PREFIXES ;
 @R.pvcountf.3@@R.count1.P@@P.pvcountf.4@@R.count1.P@ PREFIXES ;
-0 PREVERBS ;
+0 PRENOUNS ;
  
-LEXICON PREVERBS
+LEXICON PRENOUNS
 0 NOUN_STEMS ;
 @P.assoc.A@PV/ohpok+:@P.assoc.A@%^SPohpok BOUND ;
 PV/saw+:saw BOUND ;
@@ -1722,12 +1726,12 @@ LEXICON BOUND
 0:%< PV_COUNTER ;
 
 LEXICON PV_COUNTER
-@D.pvcount@@P.pvcount.1@ PREVERBS ;
-@R.pvcount.1@@P.pvcount.2@ PREVERBS ;
-@R.pvcount.2@@P.pvcount.3@ PREVERBS ;
-@R.pvcount.3@@P.pvcount.4@ PREVERBS ;
-@R.pvcount.4@@P.pvcount.5@ PREVERBS ;
-@R.pvcount.5@@P.pvcount.6@ PREVERBS ;
+@D.pvcount@@P.pvcount.1@ PRENOUNS ;
+@R.pvcount.1@@P.pvcount.2@ PRENOUNS ;
+@R.pvcount.2@@P.pvcount.3@ PRENOUNS ;
+@R.pvcount.3@@P.pvcount.4@ PRENOUNS ;
+@R.pvcount.4@@P.pvcount.5@ PRENOUNS ;
+@R.pvcount.5@@P.pvcount.6@ PRENOUNS ;
 
 !!!!! After this, we collect the stems !!!!!
 
@@ -1738,6 +1742,8 @@ LEXICON PV_COUNTER
 LEXICON NOUN_STEMS
 @P.pos.NA@ INDEP_NA_STEMS ;
 @P.pos.NI@ INDEP_NI_STEMS ;
+@P.pos.VAI@ INDEP_NA_STEMS ;
+@P.pos.VII@ INDEP_NI_STEMS ;
 
 ! When working with the lexicon, be sure to know the following lexical information:
 ! 1. Does it take the /-im/ suffix when possessed? If so, use NA_IM or NI_IM
@@ -3748,24 +3754,24 @@ LEXICON NI_SUFFIXES
 @D.number.SG@+Pl:@D.number.SG@%>istsi # ;
 @D.number.SG@@D.number.PL@+Non:@D.number.SG@@D.number.PL@%>i # ;
 
-! Below is the set of verb suffixes that occur when a noun undergoes the verbalization process. (aakiiyiwa-she is a woman).
-! They are only instransitive verbs. Somethings to note. I have only included the person suffixes, not the derivational suffixes.
+! Below is the set of verb suffixes that occur when a noun undergoes the verbalization process. (aakiiyiwa 'she is a woman').
+! They are only instransitive verbs. Some things to note. I have only included the person suffixes, not the derivational suffixes.
 ! This verb paradigm does not include dependent nouns.
 
 LEXICON VAI_SUFFIXES
-@R.mode.IND@+Ind:@R.mode.IND@ INDEP_VAI_SUFFIXES ;
-@R.mode.CON@+Cnj:@R.mode.CON@ CONJ_VAI_SUFFIXES ;
-@R.mode.SUB@+Sbj:@R.mode.SUB@ SUBJ_VAI_SUFFIXES ;
-@R.mode.IRR@+Irr:@R.mode.IRR@ UNREAL_VAI_SUFFIXES ;
-@R.mode.IMP@+Imp:@R.mode.IMP@ IMP_VAI_SUFFIXES ;
+@P.mode.IND@+Ind:@P.mode.IND@ INDEP_VAI_SUFFIXES ;
+@P.mode.CON@+Cnj:@P.mode.CON@ CONJ_VAI_SUFFIXES ;
+@P.mode.SUB@+Sbj:@P.mode.SUB@ SUBJ_VAI_SUFFIXES ;
+@P.mode.IRR@+Irr:@P.mode.IRR@ UNREAL_VAI_SUFFIXES ;
+@P.mode.IMP@+Imp:@P.mode.IMP@ IMP_VAI_SUFFIXES ;
 
 LEXICON INDEP_VAI_SUFFIXES
 ! Third Person Interrogatives
 @R.person.NULL@+3Sg+INTERR:@R.person.NULL@%>waatsiksi # ;
 @R.person.NULL@+3Pl+INTERR:@R.person.NULL@%>waiksaawa # ;
 ! Singular INDEPENDENT
-@R.person.NI@+1Sg:@R.person.NI@yi   	ANIM_INTERR ;	
-@R.person.KI@+2Sg:@R.person.KI@yi   		ANIM_INTERR ;
+@R.person.NI@+1Sg:@R.person.NI@%>yi   	ANIM_INTERR ;	
+@R.person.KI@+2Sg:@R.person.KI@%>yi   		ANIM_INTERR ;
 @R.person.NULL@+3Sg:@R.person.NULL@%>wa		ENCLITICS ;
 @R.person.NULL@+4Sg:@R.person.NULL@%>yini   	ENCLITICS ; ! Unknown, but following Frantz regarding the third person.
 ! Plural INDEPENDENT
@@ -3870,6 +3876,6 @@ LEXICON ENCLITICS
 +PRO+3/%0:%>aawa # ;
 +PRO+3Pl:%>aiksi # ;
 +PRO+D3Sg:%>áyi # ;
-+PRO+0Pl:%>aistsi # ;
++PRO+%0Pl:%>aistsi # ;
 
 ! End Code

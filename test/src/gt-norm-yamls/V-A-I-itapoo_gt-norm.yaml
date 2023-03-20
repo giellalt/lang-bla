@@ -1,0 +1,37 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  +ero+:
+    Gen: ../../../src/generator-gt-norm.+fst
+    Morph: ../../../src/analyser-gt-norm.+fst
+    App: lookup
+
+Tests
+  
+  Verb - itapoo - ok : # -m animate transitive verb, go AEW NA1	
+     Fut+itapoo+VAI+Ind+1Sg: nitáakitapoo
+     Fut+itapoo+VAI+Ind+1Pl: nitáakitapoohpinnaan
+     Fut+itapoo+VAI+Ind+2Sg+INTERR: kitáakitapóóhpa
+     Fut+PV/it+itapoo+VAI+Ind+3Sg: áakitsitapoowa
+     Fut+itapoo+VAI+Ind+3Sg: áakitapoowa
+     Fut+itapoo+VAI+Ind+21Pl: áakitapaoo'pa
+     Dur+itapoo+VAI+Ind+2Sg+INTERR: kitáítapoohpa
+     itapoo+VAI+Ind+3Sg: itapóówa
+     itapoo+VAI+Ind+21Pl: itapáóo'pa
+     Past+itapoo+VAI+Ind+3Sg: iitapóówa
+     Dur+PN/sstsim+itapoo+VAI+Ind+3Sg: áísstsimitapóowa
+     Fut+PN/otoom+itapoo+VAI+Ind+3Sg: áakotóómitapoowa
+     Neg+PV/káák+itapoo+VAI+Ind+3Sg: máátsikakitapoowa
+     Fut+PN/otam+itapoo+VAI+Ind+3Sg: áakotámitapoowa
+     PV/aahksikkam+PV/á'p+itapoo+VAI+Ind+3Sg: ááhksíkkama'pitapoowa
+     PV/áák+PV/oht+itapoo+VAI+Ind+2Sg: kitáákohtsitapoo
+     PV/áák+itapoo+VAI+Ind+2Sg: kitáákitapoo
+     Fut+PV/ikipp+itapoo+VAI+Ind+3Sg: áaksikíppitapoowa
+     itapoo+VAI+Ind+2Sg+INTERR: kitsítapoohpa
+     PV/áák+itapoo+VAI+Ind+2Sg+INTERR: kitáákitapoohpa
+     PV/stam+itapoo+VAI+Imp+Sg: stámitapoot
+     PV/mátt+PV/it+itapoo+VAI+Ind+1Pl: nimáttsitsitapoohpinnaana
+     Neg+PV/anow+Dur+itapoo+VAI+Ind+2Sg+INTERR: máátánowaitapoohpa
+     PV/itam+/it+Dur+itapoo+VAI+Ind+3Sg: itámitaitapoowa
+     Dur+PV/issk+PV/ahsa+itapoo+VAI+Ind+3Sg: áísskahsaitapoowa
