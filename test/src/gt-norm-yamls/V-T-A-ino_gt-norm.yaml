@@ -1,0 +1,41 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  +ero+:
+    Gen: ../../../src/generator-gt-norm.+fst
+    Morph: ../../../src/analyser-gt-norm.+fst
+    App: lookup
+
+Tests
+  
+  Verb - ino - ok : # -m animate intransitive verb, see AEW NA1
+     PV/hkana+ino+VTA+Der/Bnf+VTA+Ind+2Pl+1PlO: kitohkanáínookihpinnaana
+     Past+ino+VTA+Ind+3Sg+1SgO: nitsíínooka
+     Dur+PV/mátt+ino+VTA+Ind+1Sg+2SgO: kitamáttsino
+     Dur+ino+VTA+Der/Bnf+VTA+Ind+2Sg+1SgO: kitáínooki
+     Past+PN/o'k+PN/ksis+PV/ist+ino+VTA+Ind+Unspec+3SgO: i'kssistsinaawa
+     ino+VTA+Der/Bnf+VTA+Ind+3Sg+4PlO: íínoyiiwa'
+     PV/akoksska+ino+VTA+Ind+Unspec+3SgO: akoksskainaawa
+     PV/ipiitsiiyóóhk+ino+VTA+Der/Bnf+VTA+Ind+3Sg+4PlO: piitsiyóóhksinoyiiwa
+     Fut+PV/kaat+PN/aahs+ino+VTA+Ind+Unspec+3SgO: áakatahsinaawa
+     PV/stam+PV/hkana+itapoo+VAI+Ind+3Pl+PRO+3/0: stámohkanaitapóoyaawa
+     Dur+ino+VTA+Ind+2Sg+3SgO: kitáínoaawa
+     Dur+ino+VTA+Ind+3Sg+4PlO: áínoyííwa
+     Past+Perf+PV/ama+ino+VTA+Ind+3Sg+4PlO+PRO+3Pl: iikamáínoyiiwaiksi
+     ino+VTA+Ind+3Sg+1SgO: nitsinóóka
+     ino+VTA+Ind+1Sg+2SgO: kitsínoo
+     Past+ino+VTA+Ind+Unspec+21PlO: iinóókiwa
+     Past+PV/istsa'+ino+VTA+Ind+21Pl+3SgO+INTERR: nitsíístsai'noawa
+     PV/káta'+ino+VTA+Ind+3Pl+2SgO+INTERR: kikátai'nóókaiksaawa
+     Fut+ino+VTA+Ind+21Pl+4SgO+INTERR: kitáaksinoawa
+     PV/ikkam+PV/á'p+ino+VTA+Sbj+1Sg+3PlO: ikkamá'pinoainiki
+     Dur+ino+VTA+Der/Rflx+VAI+Ind+1Pl: nitáínoohsspinnaan
+     ino+VTA+Ind+2Sg+3SgO: kitsínoaawa
+     Fut+ino+VTA+Ind+Unspec+3SgO: áaksinaawa
+     Dur+ino+VTA+Ind+1Sg+2SgO: kitáínoo
+     Dur+ino+VTA+Ind+1Sg+3SgO: nitáínoaawa
+     ino+VTA+Ind+1Pl+2PlO: kitsínoohpinnaana
+     PV/hkana+ino+VTA+Ind+1Sg+2PlO: kitohkanáínoohpoaawa
+     PV/hkana+ino+VTA+Ind+2Pl+3SgO: kitohkanáínoawaawa
+     Dur+ino+VTA+Ind+1Pl+3SgO: nitáínoaannaana

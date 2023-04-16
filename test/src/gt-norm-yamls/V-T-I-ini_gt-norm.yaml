@@ -1,0 +1,22 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  +ero+:
+    Gen: ../../../src/generator-gt-norm.+fst
+    Morph: ../../../src/analyser-gt-norm.+fst
+    App: lookup
+
+Tests
+  
+  Verb - ini - ok : # -m transitive inanimate verb, see AEW NA1
+     PN/sik+PN/ok+ini+VTI+Sbj+4Sg+0PlO: siikokiinis
+     PV/omoht+PN/iss+ini+VTI+Ind+3Sg+1SgO: nómohtsissíniooka
+     PV/iik+PV/ááhk+ini+VTI+Ind+3Sg+0SgO: ikahksínima
+     PV/káta'+ini+VTI+Ind+3Sg+0SgO: katai'nímma
+     Dur+PV/ama+ini+VTI+Ind+21Pl+0SgO: kitáámaini'pa
+     PV/iik+ini+VTI+Ind+3Sg+0SgO: iiksiinima
+     Fut+ini+VTI+Ind+3Sg+0SgO: áaksinima
+     PV/iik+Dur+PN/pok+ini+VTI+Der/Bnf+VTA+Ind+Unspec+3SgO: iikáápoksiinimaawa
+     Neg+PV/oohk+PN/isttsi+PN/o'k+PN/mii+ini+VTI+Ind+1Sg+0SgO: nimáátohkisttso'kinihpa
+     Fut+PV/á'+PV/it+ini+VTI+Ind+Unspec+3SgO: áakai'tsinimaawa
