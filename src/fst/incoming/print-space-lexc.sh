@@ -3,7 +3,7 @@
 # cat bla_verb_full.lexc |
 
 gawk -v MULTCHAR=$1 'BEGIN { multchar=MULTCHAR; }
-{ sub("!.*$","");
+{ sub("[[:space:]]*!.*$","");
   if(index($0,"Multichar_Symbols")!=0)
     { p=1; next; }
   if(index($0,"LEXICON ")!=0)
