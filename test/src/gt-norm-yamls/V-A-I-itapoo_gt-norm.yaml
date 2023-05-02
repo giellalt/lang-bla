@@ -9,7 +9,7 @@ Config:
 
 Tests
   
-  Verb - itapoo - ok : # -m animate transitive verb, go AEW NA1	
+  Verb - itapoo - ok : # -m animate intransitive verb, go AEW NA2
      Fut+itapoo+VAI+Ind+1Sg: nitáakitapoo
      Fut+itapoo+VAI+Ind+1Pl: nitáakitapoohpinnaan
      Fut+itapoo+VAI+Ind+2Sg+INTERR: kitáakitapóóhpa

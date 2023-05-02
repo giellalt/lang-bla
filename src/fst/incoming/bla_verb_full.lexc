@@ -41,7 +41,13 @@ Nonaff+
 +Sbj
 +Irr
 +Pre
++Der/Nom
++Der/Nom2
++Der/Nom3
++Der/Nom4
++Der/Nom5
 +Der/Caus
++Der/Caus2 
 +Der/Rcpr
 +Der/Rflx
 +Der/Bnf
@@ -1123,8 +1129,8 @@ n2
 ! -> LEXC: @U.person.NI@0:@U.person.NI@ nit
 
 LEXICON Root
-@P.pos.VERB@@P.pos.VERB@ PREFIX_SETS ;
-@P.class.NOUN@@P.class.NOUN@ NOUN_PREFIXES ;
+@P.pos.VERB@ PREFIX_SETS ;
+@P.class.NOUN@ NOUN_PREFIXES ;
 
 LEXICON NOUN_PREFIXES
 @P.person.NI@:@P.person.NI@nit%< PREVERBS ;
@@ -1143,7 +1149,7 @@ LEXICON BASIC_PREFIXES
 @P.mode.CON@	BASIC_CNJ_PREFIXES ;
 @P.mode.SUB@	BASIC_SBJ_PREFIXES ;
 @P.mode.IRR@	BASIC_IRR_PREFIXES ;
-@P.mode.IMP@	PREFIXES ;
+@P.mode.IMP@	BASIC_IMP_PREFIXES ;
 
 LEXICON BASIC_IND_PREFIXES
 @P.person.NI@:@P.person.NI@nit%< PREFIXES ;
@@ -1165,13 +1171,16 @@ LEXICON BASIC_IRR_PREFIXES
 @P.person.KI@:@P.person.KI@kit%<    PREFIXES ;
 @P.person.NULL@:@P.person.NULL@0    PREFIXES ;
 
+LEXICON BASIC_IMP_PREFIXES
+@P.person.IMP@:@P.person.IMP@0    PREFIXES ;
+
 LEXICON PREFIXES
 @P.count1.N@@P.count1.T@@P.count1.A@@P.count1.P@@P.count1.N@@P.count1.T@@P.count1.A@@P.count1.P@0 PV_COUNTER1 ;
 @R.mode.IND@@P.count1.N@Neg+:@R.mode.IND@@P.count1.N@%^SPi2máát BOUND1 ;
 @R.mode.IMP@@P.count1.N@Neg+:@R.mode.IMP@@P.count1.N@%^SPi2miin BOUND1 ;
 @R.mode.IMP@@P.count1.N@Neg+:@R.mode.IMP@@P.count1.N@%^SPi2piin BOUND1 ;
 @R.mode.IND@@P.count1.N@PV/máátaommita'p+:@R.mode.IND@@P.count1.N@%^SPmáátaommita'p BOUND1 ;
-@P.count1.P@PV/i2kátá'+:@P.count1.P@i2kátá' BOUND1 ;
+@P.count1.P@PV/ikátá'+:@P.count1.P@i2kátá' BOUND1 ;
 @P.count1.T@Imm+:@P.count1.T@ayáak BOUND1 ;
 @P.count1.T@Dur+:@P.count1.T@á BOUND1 ;
 @P.count1.T@Fut+:@P.count1.T@yáak BOUND1 ;
@@ -1198,6 +1207,7 @@ LEXICON PREVERBS
 PV/saw+:saw BOUND ;
 @R.mode.CON@PV/áákssta'+:@R.mode.CON@%^SPáákssta'	BOUND ;
 @R.mode.CON@PV/ááhkssta'+:@R.mode.CON@%^SPááhkssta' BOUND ;
+@P.count1.T@Dur+:@P.count1.T@á BOUND ;
 !! New list of preverbs
 PV/a'kooht+:a'kooht BOUND ;
 PV/ááhkamá'p+:%^SPááhkamá'p BOUND ;
@@ -1753,8 +1763,12 @@ LEXICON PV_COUNTER
 @R.pvcount.3@@P.pvcount.4@ PREVERBS ;
 @R.pvcount.4@@P.pvcount.5@ PREVERBS ;
 @R.pvcount.5@@P.pvcount.6@ PREVERBS ;
+@R.count1.T@@R.count1.T@ PREVERBS ;
 
-!! Next come the Blackfoot verb stems. They are organized by their inflectional classes.
+!!! Next come the Blackfoot verb stems. !!!
+
+! These are the Blackfoot verb stems.
+! They are organized by their inflectional classes.
 
 LEXICON VERB_STEMS
 ! LEXICON PREFIXES
@@ -1762,8 +1776,10 @@ LEXICON VERB_STEMS
 @R.class.VII@	VII_STEMS ;
 @R.class.VTI@	VTI_STEMS ;
 @R.class.VTA@	VTA_STEMS ;
-@P.pos.NA@@R.class.NOUN@:@P.pos.NA@@R.class.NOUN@ VAI_STEMS ;
-@P.pos.NI@@R.class.NOUN@:@P.pos.NI@@R.class.NOUN@ VII_STEMS ;
+@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VAI_STEMS ;
+@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VII_STEMS ;
+@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTI_STEMS ;
+@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTA_STEMS ;
 
 LEXICON VAI_STEMS
 a'painahkimaa:a'painahkimaa	VAI ;
@@ -1982,7 +1998,7 @@ ikoosi:i2koosi	VAI ;
 ikotsa'pssi:i2kotsa'pssi	VAI ;
 ikotski'taki:i2kotski'taki	VAI ;
 ikotskiipomm:i2kotskiipomm	VAI ;
-iksa'si:ik2sa'si	VAI ;
+iksa'si:i2ksa'si	VAI ;
 iksaamaisskinii:i2ksaamaisskinii	VAI ;
 iksama'pssi:iksama'pssi	VAI ;
 iksamaoko'si:iksamaoko'si	VAI ;
@@ -3104,8 +3120,8 @@ waapatsska'si:waapatsska'si	VAI ;
 waapi'maa:waapi'maa	VAI ;
 waapiikamaa:waapiikamaa	VAI ;
 waapiiwaanitapiiyi:waapiiwaanitapiiyi	VAI ;
-waapikssi1:waapikssi1	VAI ;
-waapikssi2:waapikssi2	VAI ;
+waapikssi:waapikssi	VAI ;
+waapikssi:waapikssi	VAI ;
 waapiksski:waapiksski	VAI ;
 waapína'ki:waapína'ki	VAI ;
 waapínao'si:waapínao'si	VAI ;
@@ -3279,7 +3295,7 @@ yootsipinaa:yootsipinaa	VAI ;
 a'pihkahtaki:a'pihkahtaki	VAI ;
 á'pistotaki:á'pistotaki	VAI ;
 a'písttaapiksistaki:a'písttaapiksistaki	VAI ;
-á'po'taki:á'po'taki	VAI ;
+a'po'taki:á'po'taki	VAI ;
 a'psskaki:a'psskaki	VAI ;
 a'psstaki:a'psstaki	VAI ;
 aotokiaaki:aotokiaaki	VAI ;
@@ -3407,9 +3423,9 @@ ssinnaki:i2ssinnaki	VAI ;
 ssinnaki:i2ssinnaki	VAI ;
 sskohtoistotaki:i2sskohtoistotaki	VAI ;
 ssksimataki:i2ssksimataki	VAI ;
-sskska'taki1:i2sskska'taki	VAI ;
-sskska'taki2:i2sskska'taki	VAI ;
-sskska'taki3:i2sskska'taki	VAI ;
+sskska'taki:i2sskska'taki	VAI ;
+sskska'taki:i2sskska'taki	VAI ;
+sskska'taki:i2sskska'taki	VAI ;
 sskskaaki:i2sskskaaki	VAI ;
 ssksksinitaki:i2ssksksinitaki	VAI ;
 ssokááhkiaaki:i2ssokááhkiaaki	VAI ;
@@ -5240,7 +5256,7 @@ sstsáákat:sstsáákat	VTA ;
 sstsi'tsi:sstsi'tsi	VTA ;
 sstsiinss:sstsiinss	VTA ;
 sstsiiyihkaa:sstsiiyihkaa	VTA ;
-sstsiiyihko/sstsiiyssko:sstsiiyihko/sstsiiyssko	VTA ;
+sstsiiyihkosstsiiyssko:sstsiiyihkosstsiiyssko	VTA ;
 sstsikína:sstsikína	VTA ;
 sstsim:sstsim	VTA ;
 sstsimaahkat:sstsimaahkat	VTA ;
@@ -5400,7 +5416,7 @@ yookowat:yookowat	VTA ;
 yootsiimstat:yootsiimstat	VTA ;
 yootsipistoto:yootsipistoto	VTA ;
 
-! I am including the concrete verb finals (see Frantz 201' chapter 18.)
+! I am including the concrete verb finals (see Frantz 2017 chapter 18.)
 ! The reason being that this is the best place to control them considering the four verb classes
 ! The reflexive changes VTA verbs into VAI verbs and takes VAI suffixes. The same is true of the reciprocal. 
 ! The benefactive changes Intransitive to Transitive verbs.
@@ -5409,44 +5425,44 @@ yootsipistoto:yootsipistoto	VTA ;
 ! is assumed to be already present in the noun model. 
 
 LEXICON VAI
-@R.pos.NA@+NA:@R.pos.NA@0                    ANIMATE_NOUN_SUFFIXES ;
-@R.pos.NA@+NA:@R.pos.NA@%>n                  ANIMATE_NOUN_SUFFIXES ;
-@R.pos.NA@+NA:@R.pos.NA@%>i2hsin             ANIMATE_NOUN_SUFFIXES ;
-@R.pos.NA@+NA:@R.pos.NA@%>hp                 ANIMATE_NOUN_SUFFIXES ;
-@R.pos.NA@+NA:@R.pos.NA@%>o'p                ANIMATE_NOUN_SUFFIXES ;
+@R.pos.NA@+VAI:@R.pos.NA@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.NI@+VAI:@R.pos.NI@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.VERB@  VAI_DERIVATION ;
+
+LEXICON VII
+@R.pos.NA@+VII:@R.pos.NA@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.NI@+VII:@R.pos.NI@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.VERB@  VII_DERIVATION ;
+
+LEXICON VTI
+@R.pos.NA@+VTI:@R.pos.NA@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.NI@+VTI:@R.pos.NI@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.VERB@  VTI_DERIVATION ;
+
+LEXICON VTA
+@R.pos.NA@+VTA:@R.pos.NA@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.NI@+VTA:@R.pos.NI@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.VERB@  VTA_DERIVATION ;
+
+LEXICON VAI_DERIVATION
 @R.pos.VERB@+VAI:@R.pos.VERB@0                                           VAI_SUFFIXES ;
 @R.pos.VERB@+VAI+Der/Caus:@R.pos.VERB@%>áttsi                            VTA ;
-@R.pos.VERB@+VAI+Der/Caus:@R.pos.VERB@%>pi                               VTA ;
+@R.pos.VERB@+VAI+Der/Caus2:@R.pos.VERB@%>pi                              VTA ; ! Rare, give low weight
 @R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo  VTA_SUFFIXES ;
 @R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>omo VTA_SUFFIXES ;
 @R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>o   VTA_SUFFIXES ;
 @R.pos.VERB@@R.accomp.A@+VAI+Accomp:@R.pos.VERB@@R.accomp.A@%>m	         VAI_SUFFIXES ; ! -> VTA?
 
-LEXICON VII
-@R.pos.NI@+NI:@R.pos.NI@0                    INANIMATE_NOUN_SUFFIXES ;
-@R.pos.NI@+NI:@R.pos.NI@%>n                  INANIMATE_NOUN_SUFFIXES ;
-@R.pos.NI@+NI:@R.pos.NI@%>i2hsin             INANIMATE_NOUN_SUFFIXES ;
-@R.pos.NI@+NI:@R.pos.NI@%>hp                 INANIMATE_NOUN_SUFFIXES ;
-@R.pos.NI@+NI:@R.pos.NI@%>o'p                INANIMATE_NOUN_SUFFIXES ;
+LEXICON VII_DERIVATION
 @R.pos.VERB@+VII:@R.pos.VERB@0		VII_SUFFIXES ;
 
-LEXICON VTI
-@R.pos.NI@+NI:@R.pos.NI@0                    INANIMATE_NOUN_SUFFIXES ;
-@R.pos.NI@+NI:@R.pos.NI@%>n                  INANIMATE_NOUN_SUFFIXES ;
-@R.pos.NI@+NI:@R.pos.NI@%>i2hsin             INANIMATE_NOUN_SUFFIXES ;
-@R.pos.NI@+NI:@R.pos.NI@%>hp                 INANIMATE_NOUN_SUFFIXES ;
-@R.pos.NI@+NI:@R.pos.NI@%>o'p                INANIMATE_NOUN_SUFFIXES ;
+LEXICON VTI_DERIVATION
 @R.pos.VERB@+VTI:@R.pos.VERB@0                                           VTI_SUFFIXES ;
 @R.pos.VERB@@P.class.VTA@+VTI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo  VTA_SUFFIXES ;
 @R.pos.VERB@@P.class.VTA@+VTI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>omo VTA_SUFFIXES ;
 @R.pos.VERB@@P.class.VTA@+VTI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>o   VTA_SUFFIXES ;
 
-LEXICON VTA
-@R.pos.NA@+NA:@R.pos.NA@0                    ANIMATE_NOUN_SUFFIXES ;
-@R.pos.NA@+NA:@R.pos.NA@%>n                  ANIMATE_NOUN_SUFFIXES ;
-@R.pos.NA@+NA:@R.pos.NA@%>i2hsin             ANIMATE_NOUN_SUFFIXES ;
-@R.pos.NA@+NA:@R.pos.NA@%>hp                 ANIMATE_NOUN_SUFFIXES ;
-@R.pos.NA@+NA:@R.pos.NA@%>o'p                ANIMATE_NOUN_SUFFIXES ;
+LEXICON VTA_DERIVATION
 @R.pos.VERB@+VTA:@R.pos.VERB@0                        VTA_SUFFIXES ;
 @R.pos.VERB@@P.class.VTA@+VTA+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo         VTA_SUFFIXES ;
 @R.pos.VERB@@P.class.VTA@+VTA+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>omo        VTA_SUFFIXES ;
@@ -5454,6 +5470,8 @@ LEXICON VTA
 @R.pos.VERB@@P.class.VAI@+VTA+Der/Rflx+VAI:@R.pos.VERB@@P.class.VAI@%>ohsi      VAI_SUFFIXES ;
 @R.pos.VERB@@P.class.VAI@+VTA+Der/Rcpr+VAI:@R.pos.VERB@@P.class.VAI@%>otsiiyi   VAI_SUFFIXES ;
 @R.pos.VERB@@P.class.VAI@+VTA+Der/Rcpr+VAI:@R.pos.VERB@@P.class.VAI@%>tsiiyi    VAI_SUFFIXES ;
+
+! BELOW ARE THE VAI SUFFIXES ;
 
 ! BELOW ARE THE VAI SUFFIXES ;
 
@@ -5466,9 +5484,12 @@ LEXICON VAI_SUFFIXES
 
 LEXICON INDEP_VAI_SUFFIXES
 ! Third Person Interrogatives
-@R.person.NULL@+3Sg+INTERR:@R.person.NULL@%>waatsiksi ENCLITICS ;
+@R.person.NULL@+3Sg+INTERR:@R.person.NULL@%>watsiksi ENCLITICS ;
+@R.person.NULL@+3Sg+INTERR:@R.person.NULL@%>watsiksiwa ENCLITICS ; ! Sometimes, we end up with a -wa suffix following this interrogative
 @R.person.NULL@+3Pl+INTERR:@R.person.NULL@%>waiksaawa ENCLITICS ;
+@R.person.NULL@+3Pl+INTERR:@R.person.NULL@%>waiksaawayi ENCLITICS ; ! Sometimes, we end up with a -yi suffix following this interrogative
 ! Singular INDEPENDENT
+@R.person.NULL@:@R.person.NULL@0   	ENCLITICS ;
 @R.person.NI@+1Sg:@R.person.NI@0   	ANIM_INTERR ;	
 @R.person.KI@+2Sg:@R.person.KI@0   		ANIM_INTERR ;
 @R.person.NULL@+3Sg:@R.person.NULL@%>wa		ENCLITICS ;
@@ -5736,6 +5757,7 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NULL@+4Sg+3PlO+INTERR:@R.person.NULL@%>okaiksaawa # ;
 @R.person.NULL@+4Pl+3PlO+INTERR:@R.person.NULL@%>okaiksaawa # ;
 ! Interrogatives INVERSE Plural Object
+@R.person.KI@+2Sg+1PlO+INTERR:@R.person.KI@%>okihpinnaana # ;
 @R.person.NI@+3Sg+1PlO+INTERR:@R.person.NI@%>okinnáánawa # ;
 @R.person.KI@+3Sg+2PlO+INTERR:@R.person.KI@%>okoááwa # ;
 @R.person.KI@+3Sg+21PlO+INTERR:@R.person.KI@%>okááwa # ;
@@ -5763,8 +5785,8 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NULL@+4Sg+5Sg/PlO:@R.person.NULL@%>yiiyina   	ENCLITICS ;
 ! Direct, Plural Subject, Singular Object, INDEPENDENT
 @R.person.KI@+1Pl+2SgO:@R.person.KI@%>ohpinnaana  		ANIM_INTERR ;	
-@R.person.NI@+1Pl+3SgO:@R.person.NI@%>annanna   	ENCLITICS ;
-@R.person.NI@+1Pl+4SgO:@R.person.NI@%>annaanina   		ENCLITICS ;	
+@R.person.NI@+1Pl+3SgO:@R.person.NI@%>annaana   	ENCLITICS ;
+@R.person.NI@+1Pl+4SgO:@R.person.NI@%>annaanini   		ENCLITICS ;	
 @R.person.KI@+2Pl+3SgO:@R.person.KI@%>awaawa   		ENCLITICS ;
 @R.person.KI@+2Pl+4SgO:@R.person.KI@%>awaayini		ENCLITICS ;
 @R.person.NULL@+21Pl+3SgO:@R.person.NULL@%>aawa   	ENCLITICS ;
@@ -5806,7 +5828,7 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.OT@+4Pl+3SgO:@R.person.OT@%>oka   		ENCLITICS ;
 @R.person.NULL@+4Pl+5Sg/PlO:@R.person.NULL@%>yiiyini   		ENCLITICS ;
 ! Inverse, Plural Subject and Object, INDEPENDENT
-@R.person.KI@+2Pl+1PlO:@R.person.KI@%>okihpinnana  ANIM_INTERR ;
+@R.person.KI@+2Pl+1PlO:@R.person.KI@%>okihpinnaana  ANIM_INTERR ;
 @R.person.NULL@+3Pl+21PlO:@R.person.NULL@%>okiyi	 ENCLITICS ;
 @R.person.NI@+3Pl+1PlO:@R.person.NI@%>okinnaani  ENCLITICS ;
 @R.person.KI@+3Pl+2PlO:@R.person.KI@%>okoaayi  ENCLITICS ;
@@ -5816,7 +5838,7 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NI@+4Pl+1PlO:@R.person.NI@%>okinnani  ENCLITICS ;
 @R.person.OT@+5Sg/Pl+4PlO:@R.person.OT@%>okoaayini  ENCLITICS ;
 ! Inverse, Plural Object, Singular Subject, INDEPENDENT
-@R.person.KI@+2Sg+1PlO:@R.person.KI@%>okihpinnana  ANIM_INTERR ; 
+@R.person.KI@+2Sg+1PlO:@R.person.KI@%>okihpinnaana  ANIM_INTERR ; 
 @R.person.KI@+3Sg+2PlO:@R.person.KI@%>okoaawa   	ENCLITICS ;
 @R.person.NI@+3Sg+1PlO:@R.person.NI@%>okinnaani 		ENCLITICS ;	
 @R.person.NI@+3Sg+1PlO:@R.person.NI@%>okinnaan 		ENCLITICS ;	
@@ -5829,7 +5851,7 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NI@+Unspec+1PlO:@R.person.NI@%>otsspinnaana   	ANIM_INTERR ;
 @R.person.KI@+Unspec+2SgO:@R.person.KI@%>okoo   	ANIM_INTERR ;
 @R.person.KI@+Unspec+2PlO:@R.person.KI@%>otsspoaawa   	ANIM_INTERR ;
-@R.person.NULL@+Unspec+21PlO:@R.person.NULL@%>okiwa  	ANIM_INTERR ;
+@R.person.NULL@+Unspec+21PlO:@R.person.NULL@%>otssp  	ANIM_INTERR ;
 @R.person.NULL@+Unspec+3SgO:@R.person.NULL@%>aawa   	ENCLITICS ;
 @R.person.NULL@+Unspec+3PlO:@R.person.NULL@%>aayi   	ENCLITICS ;
 @R.person.NULL@+Unspec+4SgO:@R.person.NULL@%>aayini   	ENCLITICS ;
@@ -5841,6 +5863,7 @@ LEXICON CONJ_VTA_SUFFIXES
 @R.person.NI@+1Sg+3SgO:@R.person.NI@%>ahsi   	ENCLITICS ;
 @R.person.NI@+1Sg+4SgO:@R.person.NI@%>ahsi   	ENCLITICS ;
 @R.person.KI@+2Sg+3SgO:@R.person.KI@%>ahsi   		ENCLITICS ;
+@R.person.KI@+2Sg+4SgO:@R.person.KI@%>ahsini   		ENCLITICS ;
 @R.person.OT@+3Sg+4SgO:@R.person.OT@%>ahsi   		ENCLITICS ;
 ! Direct, Plural Subject, Singular Object, CONJUNCTIVE
 @R.person.KI@+1Pl+2SgO:@R.person.KI@%>ohsinnaani   		ENCLITICS ;
@@ -5882,6 +5905,7 @@ LEXICON CONJ_VTA_SUFFIXES
 @R.person.KI@+3Pl+2PlO:@R.person.KI@%>yssoaayi   	ENCLITICS ;
 @R.person.NI@+3Pl+21PlO:@R.person.NI@%>okssi   		ENCLITICS ;
 @R.person.NI@+3Pl+1PlO:@R.person.NI@%>yssinnaani   		ENCLITICS ;
+@R.person.OT@+4Pl+3PlO:@R.person.OT@%>yssi   		ENCLITICS ;
 @R.person.OT@+4Pl+4PlO:@R.person.OT@%>yssi   		ENCLITICS ;
 ! Inverse, Singular Subject and Plural Object, CONJUNCTIVE
 @R.person.KI@+2Sg+1PlO:@R.person.KI@%>okssinnaani   	ENCLITICS ;
@@ -5910,7 +5934,7 @@ LEXICON SUBJ_VTA_SUFFIXES
 ! Direct, Plural Subject, Singular Object, SUBJUNCTIVE
 @R.person.NULL@+1Pl+2SgO:@R.person.NULL@%>innaaniki   	ENCLITICS ;
 @R.person.NULL@+1Pl+3SgO:@R.person.NULL@%>ainnaaniki   	ENCLITICS ;
-@R.person.NULL@+2Pl+3SgO:@R.person.NULL@%>ainainiki   	ENCLITICS ;
+@R.person.NULL@+2Pl+3SgO:@R.person.NULL@%>ainoainiki   	ENCLITICS ;
 @R.person.NULL@+21Pl+3SgO:@R.person.NULL@%>ahki   	ENCLITICS ;
 @R.person.NULL@+3Pl+4SgO:@R.person.NULL@%>asi   	ENCLITICS ;	
 ! Direct, Plural Subject and Object, SUBJUNCTIVE
@@ -5918,7 +5942,7 @@ LEXICON SUBJ_VTA_SUFFIXES
 @R.person.NULL@+1Pl+3PlO:@R.person.NULL@%>ainnaaniki   	ENCLITICS ;
 @R.person.NULL@+2Pl+3PlO:@R.person.NULL@%>ainainiki   	ENCLITICS ;
 @R.person.NULL@+21Pl+3PlO:@R.person.NULL@%>ahki   	ENCLITICS ;
-@R.person.NULL@+3Pl+4PlO:@R.person.NULL@%>asi   	ENCLITICS ;	
+@R.person.NULL@+3Pl+4PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;	
 ! Direct, Singular Subject, Plural Object, SUBJUNCTIVE
 @R.person.NULL@+1Sg+2PlO:@R.person.NULL@%>inoainiki   	ENCLITICS ;
 @R.person.NULL@+1Sg+3PlO:@R.person.NULL@%>ainiki   	ENCLITICS ;
@@ -5933,17 +5957,20 @@ LEXICON SUBJ_VTA_SUFFIXES
 @R.person.NULL@+2Pl+1SgO:@R.person.NULL@%>okiinoainiki   	ENCLITICS ;
 @R.person.NULL@+3Pl+1SgO:@R.person.NULL@%>otsiiniki   	ENCLITICS ;
 @R.person.NULL@+3Pl+2SgO:@R.person.NULL@%>otsiiniki   	ENCLITICS ;
+@R.person.NULL@+4Pl+3SgO:@R.person.NULL@%>otsiiniki   	ENCLITICS ;
 ! Inverse, Plural Subject and Object, SUBJUNCTIVE
 @R.person.NULL@+2Pl+1PlO:@R.person.NULL@%>okinnaaniki   	ENCLITICS ;	
 @R.person.NULL@+3Pl+2PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;
 @R.person.NULL@+3Pl+1PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;
 @R.person.NULL@+3Pl+1PlO:@R.person.NULL@%>otsiinnaaniki   	ENCLITICS ;
 @R.person.NULL@+3Pl+21PlO:@R.person.NULL@%>okisi   	ENCLITICS ;
+@R.person.NULL@+4Pl+3PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;
 ! Inverse, Singular Subject and Plural Object, CONJUNCTIVE
 @R.person.NULL@+2Sg+1PlO:@R.person.NULL@%>okinnaaniki   	ENCLITICS ;
 @R.person.NULL@+3Sg+1PlO:@R.person.NULL@%>okinnaaniki   	ENCLITICS ;	
 @R.person.NULL@+3Sg+2PlO:@R.person.NULL@%>otsinoainiki  	ENCLITICS ;
 @R.person.NULL@+3Sg+21PlO:@R.person.NULL@%>okisi   	ENCLITICS ;
+@R.person.NULL@+4Sg+3PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;
 ! Unspecified Subject, SUBJUNCTIVE
 @R.person.NULL@+Unspec+1SgO:@R.person.NULL@%>okoiniki   	ENCLITICS ;	
 @R.person.NULL@+Unspec+1PlO:@R.person.NULL@%>okoinnaaniki   	ENCLITICS ;
@@ -5956,12 +5983,12 @@ LEXICON SUBJ_VTA_SUFFIXES
 LEXICON IMP_VTA_SUFFIXES
 ! Singular IMPERATIVE
 @R.person.IMP@+2Sg+1SgO:@R.person.IMP@%>okit         ENCLITICS ;
-@R.person.IMP@+2Sg+1PlO:@R.person.IMP@%>okinnaana ENCLITICS ;
+@R.person.IMP@+2Sg+1PlO:@R.person.IMP@%>aokinnaana ENCLITICS ;
 @R.person.IMP@+2Sg+3SgO:@R.person.IMP@%>is        ENCLITICS ;
 @R.person.IMP@+2Sg+3PlO:@R.person.IMP@%>is        ENCLITICS ;
 ! Plural IMPERATIVE
 @R.person.IMP@+2Pl+1SgO:@R.person.IMP@%>okik      ENCLITICS ;
-@R.person.IMP@+2Pl+1PlO:@R.person.IMP@%>okinnaana ENCLITICS ;
+@R.person.IMP@+2Pl+1PlO:@R.person.IMP@%>aokinnaana ENCLITICS ;
 @R.person.IMP@+2Pl+3SgO:@R.person.IMP@%>ok        ENCLITICS ;
 @R.person.IMP@+2Pl+3PlO:@R.person.IMP@%>ok        ENCLITICS ;
 
@@ -5981,45 +6008,50 @@ LEXICON ANIM_INTERR
 
 LEXICON ENCLITICS
 0 # ;
-+PRO+3/%0:%>aawa ENCLITICS_BOUND ;
-+PRO+3Pl:%>aiksi ENCLITICS_BOUND ;
++PRO+3/%0:%>yaawa ENCLITICS_BOUND ;
++PRO+3Pl:%>yaiksi ENCLITICS_BOUND ;
 +PRO+D3Sg:%>áyi ENCLITICS_BOUND ;
-+PRO+%0Pl:%>aistsi ENCLITICS_BOUND ;
++PRO+%0Pl:%>yaistsi ENCLITICS_BOUND ;
 
 LEXICON ENCLITICS_BOUND
 0 # ;
-+PRO+3/%0:%>aawa # ;
-+PRO+3Pl:%>aiksi # ;
++PRO+3/%0:%>yaawa # ;
++PRO+3Pl:%>yaiksi # ;
 +PRO+D3Sg:%>áyi # ;
-+PRO+%0Pl:%>aistsi # ;
++PRO+%0Pl:%>yaistsi # ;
 
-LEXICON ANIMATE_NOUN_SUFFIXES
-0	IM ;
+LEXICON VERB_DER_NOM_SUFFIXES
++Der/Nom:0                     NOUN_SUFFIXES ;
++Der/Nom2:%>n                  NOUN_SUFFIXES ;
++Der/Nom3:%>i2hsin             NOUN_SUFFIXES ;
++Der/Nom4:%>hp                 NOUN_SUFFIXES ;
++Der/Nom5:%>o'p                NOUN_SUFFIXES ;
 
-LEXICON INANIMATE_NOUN_SUFFIXES
-0	IM ;
+LEXICON NOUN_SUFFIXES
+@R.pos.NA@+NA:@R.pos.NA@0 POSS_NUM ;
+@R.pos.NI@+NI:@R.pos.NI@0 POSS_NUM ;
 
-LEXICON IM
-0 POSS_NUM ;
-@D.person.NULL@@R.im.IM@:@D.person.NULL@@R.im.IM@%>im POSS_NUM ;
-@D.person.NULL@@D.im.IM@                              POSS_NUM ;
-@R.person.NULL@                                       POSS_NUM ;
+!LEXICON IM
+!0 POSS_NUM ;
+!@D.person.NULL@@R.im.IM@:@D.person.NULL@@R.im.IM@%>im POSS_NUM ;
+!@D.person.NULL@@D.im.IM@                              POSS_NUM ;
+!@R.person.NULL@                                       POSS_NUM ;
 
 LEXICON POSS_NUM
 ! Singular possessors
-@R.person.NI@+Px1Sg:@R.person.NI@0   NOUN_SUFFIXES ;
-@R.person.KI@+Px2Sg:@R.person.KI@0   NOUN_SUFFIXES ;
-@R.person.OT@+Px3Sg:@R.person.OT@0   NOUN_SUFFIXES ;
-@R.person.NULL@:@R.person.NULL@0      NOUN_SUFFIXES ;
+@R.person.NI@+Px1Sg:@R.person.NI@0   NOUN_FINALS ;
+@R.person.KI@+Px2Sg:@R.person.KI@0   NOUN_FINALS ;
+@R.person.OT@+Px3Sg:@R.person.OT@0   NOUN_FINALS ;
+@R.person.NULL@:@R.person.NULL@0      NOUN_FINALS ;
 ! Plural possessors
-@R.person.NI@+Px1Pl:@R.person.NI@%>innaan  NOUN_SUFFIXES ;
-@R.person.KI@+Px21Pl:@R.person.KI@%>innoon NOUN_SUFFIXES ;
-@R.person.KI@+Px2Pl:@R.person.KI@%>oaawa   NOUN_SUFFIXES ;
-@R.person.OT@+Px3Pl:@R.person.OT@%>oaawa   NOUN_SUFFIXES ;
+@R.person.NI@+Px1Pl:@R.person.NI@%>innaan  NOUN_FINALS ;
+@R.person.KI@+Px21Pl:@R.person.KI@%>innoon NOUN_FINALS ;
+@R.person.KI@+Px2Pl:@R.person.KI@%>oaawa   NOUN_FINALS ;
+@R.person.OT@+Px3Pl:@R.person.OT@%>oaawa   NOUN_FINALS ;
 
-LEXICON NOUN_SUFFIXES
-@R.pos.NA@@R.pos.NA@ NA_SUFFIXES ;
-@R.pos.NI@@R.pos.NI@ NI_SUFFIXES ;
+LEXICON NOUN_FINALS
+@R.pos.NA@ NA_SUFFIXES ;
+@R.pos.NI@ NI_SUFFIXES ;
 
 LEXICON NA_SUFFIXES
 ! Obviative

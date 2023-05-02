@@ -28,13 +28,13 @@ define Gx [ w | y ] ;
 
 ! The following code is for the highest level of morpho-phonological initial allomorphy (specific to nouns)
 
-define shortPrefix [ n i t -> n , k i t -> k , o t -> w || .#. _ %< %^SP ] ;
+define shortPrefix [ n i t -> n , k i t -> k , o t -> w || .#. _ %< %^SP [ Vowel | m ] ] ;
+define mdeletion [ m -> 0 || .#. [ n | k | w ] %< %^SP _ ] ;
+define tDeletion [ n i t -> n i , k i t -> k i , o t -> o || _ %< %^SP [ Consonant - m ] ] ;
 define internasal [ a -> o || %< %^SP m _ [ m | n ] ] ;
 
 ! is it m | n ?
 define mattException [ n -> n i , k -> k i , w -> o || .#. _ %< m [ a | á ] t t ] ;
-define mdeletion [ m -> 0 || .#. [ n | k | w ] %< %^SP _ ] ;
-define iInsertion [ n -> n i , k -> k i , w -> o || _ %< %^SP Consonant ] ;
 define rmSP [ %^SP -> 0 ] ;
 define a2iRule [ a4 -> i2 || %< _ ] ;
 define ohPrefix [ 0 -> o || %< _ h ] ;
@@ -44,7 +44,7 @@ define weakt [ t -> 0 || _ %< [ p | k ] ] ;
 define strongk [ p -> 0 || [ k | p ] %< _ ] ;
 define strongp [ k -> 0 || [ k | p ] %< _ ] ;
 
-define oAlternation [ i2 (->) [ o | a ] || .#. _ [ o | a ] ] ;
+define i2Alternation [ i2 (->) o || .#. _ o ,, i2 (->) a || .#. _ a  ] ;
 define ghosti2 [ i2 (->) 0 || .#. _ Consonant ] ;
 define i2oRule [ i3 -> o , i3 y -> o2 , a3 -> o || %< _ ] ;
 define w2yRule [ w (->) y || _ %< Vowel ] ;
@@ -72,17 +72,16 @@ define CC2GemRule [ Ck2kkRule .o. Cp2ppRule .o. Ct2ttRule .o. Cs2ssRule .o. Cm2m
 
 ! The following is the morpho-phonology of the inflectional suffix boundary
 
-define mmRule [ a -> 0 || Clong %> _ a ] ;
 define imRule [ i -> 0 || Vlong %> _ m %> ] ;
-define finalNrule [ i -> 0 || n %> _ n ,, _ %> i n ] ;
-define fixN [ n+ -> 0 || _ (Bx) n n ] ;
-! define n20Rule [ n -> 0 || Vshort _ %> Vowel ,, o [ a | á ] _ %> Vowel ] ;
+define finalNrule [ i -> 0 || n %> _ n ] ;
+define fixN [ n+ -> 0 || _ (Bx) n n ] ; 
+! define n20Rule [ n -> 0 || Vshort _ %> Vowel ,, o [ a | á ] _ %> Vowel ] ;  
 define sisRule [ s -> 0 || s [ i | í ] _ Bx i Consonant ] ;
 define oaawaRule [ o a a w a (Bx) w a -> o a a w a (Bx) ] ;
-define pastPrefix [ Vowel (o) -> 0 || [ .#. | %< ] i i %< _ ] ;
+define pastPrefix [ Vowel -> 0 || [ .#. | %< ] i i %< _ ] ;
 define pastPrefixSik [ Vowel -> 0 || [ .#. | %< ] n a %< _ ] ;
 define Dipthongization [ 0 (->) [ a | á ] || _ [ o o | ó ó ] %> [ o ' p a | h s i | o ' k i | o ' t o p i ] ] ;
-define moveDur [ á %< a ' p -> %< a ' p á ,, á %< á ' p -> %< a ' p á ] ;
+define moveDur [ [ .#. | %< ] á %< a ' p Vowel -> [ .#. | %< ] a ' p á vowel ] ;
 define delNi [ n i (i) -> 0 || n i (i) %< _ ] ;
 
 !!€ nitáni2t>k>wa
@@ -99,7 +98,7 @@ define BreakSRule [ [..] -> s || k _ i2 ] ;
 
 ! x-Sibilation h > ss / i2 _
 
-define h2ssRule [ h s -> s s || i2 _ ] ;
+define h2ssRule [ h -> s s || i2 _ ] ;
 
 !!€ ann>yi2hka
 !!€ annisska
@@ -146,7 +145,7 @@ define wi2oRuleB2 [ w %< í -> ó %< ] ;
 
 ! '. Breaking k > ks / _i2
 
-define k2ksRule [ k -> k s || [ Vowel | Consonant ] _ (Bx) [ i2 | o2 ] ] ;
+define k2ksRule [ k -> k s || _ (Bx) [ i2 | o2 ] ] ;
 
 
 !!€ áak<i2piima
@@ -163,14 +162,10 @@ define Vowel2GlideRule [ i2yRule .o. o2wRule ] ;
 
 ! 10. Vowel shortening V: > V / _ + V
 
-define ii2iRule [ [i i] -> i || _ Bx Vowel ,, [í í] -> í || _ Bx Vowel ] ;
-define aa2aRule [ [a a] -> a || _ Bx Vowel ,, [á á] -> á || _ Bx Vowel ] ;
-define oo2oRule [ [o o] -> o || _ Bx Vowel ,, [ó ó] -> ó || _ Bx Vowel ] ;
+define ii2iRule [ [i i] -> i || _ Bx Vowel ,, [í i] -> í || _ Bx Vowel ,, [ í í ] -> í || _ Bx Vowel ] ;
+define aa2aRule [ [a a] -> a || _ Bx Vowel ,, [á a] -> á || _ Bx Vowel ,, [ á á ] -> á || _ Bx Vowel ] ;
+define oo2oRule [ [o o] -> o || _ Bx Vowel ,, [ó o] -> ó || _ Bx Vowel ,, [ ó ó ] -> ó || _ Bx Vowel ] ;
 define VV2VRule [ ii2iRule .o. aa2aRule .o. oo2oRule ] ;
-
-!  [í i] -> í || _ Bx Vowel ,,
-!  [á a] -> á || _ Bx Vowel ,,
-!  [ó o] -> ó || _ Bx Vowel ,,
 
 !!€ áyo'kaa>o'pa
 !!€ áyo'kao'pa
@@ -197,8 +192,8 @@ define iAbsorbRule [ i -> 0 || s (Bx) _ (Bx) [ a | [a a] | o | [o o] ] ] ;
 
 ! 19. t-Affrication t > ts / _ i
 
-define tAffricRule [ t -> t s || _ Bx [ i | i2 ] ] ;
-define i2deletion [ i2 -> 0  || s %< _ s s ,, i2 -> 0 || %< _ o ] ;
+define tAffricRule [ t -> t s || _ (Bx) i ] ;
+define i2deletion [ i2 -> 0  || s %< _ s s ] ;
 define rmi2 [ i2 -> i ] ;
 
 !!€ nit<it<itsiniki
@@ -347,27 +342,25 @@ define AccentRule [ aAccentRule .o. iAccentRule .o. oAccentRule ] ;
 define i2NeutRule [ i3 -> i ] ;
 ! i2 -> i ,, i i2 -> i i ,, 
 
-define deep2surfRule [ Bx -> 0 ,, n2 -> n ,, a2 -> a ,, o2 -> o ,, a3 -> a ,, a4 -> a ] ; 
-
-define relax [ a (->) á, i (->) í, o (->) ó, á (->) a, í (->) i, ó (->) o ] ;  
+define deep2surfRule [ Bx -> 0 ,, n2 -> n ,, a2 -> a ,, o2 -> o ,, a3 -> a ,, a4 -> a ] ;  
 
 ! Dominik made some extra rules to make it work with the morphosyntax model
 
 ! define DelNasal [ m -> 0 || _ Consonant ] ;
 
 read regex [ shortPrefix
+.o. tDeletion
 .o. internasal
 .o. mattException
 .o. mdeletion
-.o. iInsertion
 .o. rmSP
 .o. a2iRule
 .o. ohPrefix
 .o. hdeletion
-.o. weakt
-.o. strongk
-.o. strongp
-.o. oAlternation
+!.o. weakt
+!.o. strongk
+!.o. strongp
+.o. i2Alternation
 .o. ghosti2
 .o. i2oRule
 .o. w2yRule
@@ -376,7 +369,6 @@ read regex [ shortPrefix
 .o. sConnRuleB 
 .o. sConnRuleA 
 .o. CC2GemRule
-.o. mmRule
 .o. imRule
 .o. finalNrule
 .o. fixN
@@ -421,8 +413,7 @@ read regex [ shortPrefix
 .o. VowelEpenRule
 .o. AccentRule 
 .o. deep2surfRule
-.o. sInsRule 
-.o. relax ] ;
+.o. sInsRule ] ;
 
 !!!!! END !!!!!
 ! .o. sss2ssRule

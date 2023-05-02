@@ -9,13 +9,13 @@ Config:
 
 Tests
   
-  Verb - ino - ok : # -m animate intransitive verb, see AEW NA1
+  Verb - ino - ok : # -m animate transitive verb, see AEW NA1
      PV/hkana+ino+VTA+Der/Bnf+VTA+Ind+2Pl+1PlO: kitohkanáínookihpinnaana
      Past+ino+VTA+Ind+3Sg+1SgO: nitsíínooka
      Dur+PV/mátt+ino+VTA+Ind+1Sg+2SgO: kitamáttsino
      Dur+ino+VTA+Der/Bnf+VTA+Ind+2Sg+1SgO: kitáínooki
      Past+PN/o'k+PN/ksis+PV/ist+ino+VTA+Ind+Unspec+3SgO: i'kssistsinaawa
-     ino+VTA+Der/Bnf+VTA+Ind+3Sg+4PlO: íínoyiiwa'
+     ino+VTA+Der/Bnf+VTA+Ind+3Sg+4PlO: íínoyiiwa
      PV/akoksska+ino+VTA+Ind+Unspec+3SgO: akoksskainaawa
      PV/ipiitsiiyóóhk+ino+VTA+Der/Bnf+VTA+Ind+3Sg+4PlO: piitsiyóóhksinoyiiwa
      Fut+PV/kaat+PN/aahs+ino+VTA+Ind+Unspec+3SgO: áakatahsinaawa

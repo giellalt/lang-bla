@@ -10,127 +10,109 @@ Config:
 Tests:
   
   Verb - oowatoo - ok : # -m inanimate transitive verb, eat AEW NA1
-     nitáówatoo'pa: Dur+oowatoo+VTI+Ind+1Sg+0SgO
-     kitáówatoo'pa: Dur+oowatoo+VTI+Ind+2Sg+0SgO
-     áówatoomaayi: Dur+oowatoo+VTI+Ind+3Sg+0SgO
-     nitáówatoo'pinnaana: Dur+oowatoo+VTI+Ind+1Pl+0SgO
-     áówatoo'pa: Dur+oowatoo+VTI+Ind+21Pl+0SgO
-     kitáówatoo'poaawa: Dur+oowatoo+VTI+Ind+1Pl+0SgO
-     áówatoomiaawaayi: Dur+oowatoo+VTI+Ind+3Pl+0SgO+PRO+3/0Sg
-		
-     nitáaksowatoo'pa: Fut+oowatoo+VTI+Ind+1Sg+0SgO
-     kitáaksowatoo'pa: Fut+oowatoo+VTI+Ind+2Pl+0SgO
-     áaksowatoomaayi: Fut+oowatoo+VTI+Ind+3Sg+0SgO
-     nitáaksowatoo'pinnaana: Fut+oowatoo+VTI+Ind+1Pl+0SgO
-     áaksowatoo'pa: Fut+oowatoo+VTI+Ind+21Pl+0SgO
-     kitáaksowatoo'poaawa: Fut+oowatoo+VTI+Ind+2Pl+0SgO
-     áaksowatoomiaawaayi: Fut+oowatoo+VTI+Ind+3Pl+0SgO+PRO+3/0Sg
-		
-     nitsowatoo'pa: oowatoo+VTI+Ind+1Sg+0SgO
-     kitsowatoo'pa: oowatoo+VTI+Ind+2Sg+0SgO
-     iiwátoomaayi: Past+oowatoo+VTI+Ind+3Sg+0SgO
-     nitsowatoo'pinnaana: oowatoo+VTI+Ind+1Pl+0SgO
-     iiwatoo'pa: Past+oowatoo+VTI+Ind+21Pl+0SgO
-     kitsowatoo'poaawa: oowatoo+VTI+Ind+2Pl+0SgO
-     iiwatoomiaawaayi: Past+oowatoo+VTI+Ind+3Pl+0SgO+PRO+3/0Sg
-		
-     nimaatáówatoo'pa: Neg+Dur+oowatoo+VTI+Ind+1Sg+0SgO
-     kimaatáówatoo'pa: Neg+Dur+oowatoo+VTI+Ind+2Sg+0SgO
-     maatáówatoomaiksayi: Neg+Dur+oowatoo+VTI+Ind+3Sg+0SgO
-     nimaatáówatoo'pinnaana: Neg+Dur+oowatoo+VTI+Ind+1Pl+0SgO
-     maatáówatoo'pa: Neg+Dur+oowatoo+VTI+Ind+21Pl+0SgO
-     kimaatáówatoo'poaawa: Neg+Dur+oowatoo+VTI+Ind+2Pl+0SgO
-     maatáówatoomaiksaawaayi: Neg+Dur+oowatoo+VTI+Ind+3Pl+0SgO+PRO+3/0Sg
-		
-     nimaatáaksowatoo'pa: Neg+Fut+oowatoo+VTI+Ind+1Sg+0SgO
-     kimaatáaksowatoo'pa: Neg+Fut+oowatoo+VTI+Ind+2Sg+0SgO
-     maatáaksowatoomaatsayi: Neg+Fut+oowatoo+VTI+Ind+3Sg+0SgO
-     nimaatáaksowatoo'pinnaana: Neg+Fut+oowatoo+VTI+Ind+1Pl+0SgO
-     maatáaksowatoo'pa: Neg+Fut+oowatoo+VTI+Ind+21Pl+0SgO
-     kimaatáaksowatoo'poaawa: Neg+Fut+oowatoo+VTI+Ind+2Pl+0SgO
-     maatáaksowatoomiaawaayi: Neg+Fut+oowatoo+VTI+Ind+3Pl+0SgO+PRO+3/0Sg
-		
-     nimaatsowatoo'pa: Neg+oowatoo+VTI+Ind+1Sg+0SgO
-     kimaatsowatoo'pa: Neg+oowatoo+VTI+Ind+2Sg+0SgO
-     maatsowatoomaatsayi: Neg+oowatoo+VTI+Ind+3Sg+0SgO
-     nimaatsowatoo'pinnaana: Neg+oowatoo+VTI+Ind+1Pl+0SgO
-     maatsowatoo'pa: Neg+oowatoo+VTI+Ind+21Pl+0SgO
-     kimaatsowatoo'poaawa: Neg+oowatoo+VTI+Ind+2Pl+0SgO
-     maatsowatoomaiksaawaayi: Neg+oowatoo+VTI+Ind+3Pl+0SgO+PRO+3/0Sg+INTERR
-
-     nitáówatoohsi: Dur+oowatoo+VTI+Cnj+1Sg+0SgO
-     kitáówatoohsi: Dur+oowatoo+VTI+Cnj+2Sg+0SgO
-     otáówatoohsi: Dur+oowatoo+VTI+Cnj+3Sg+0SgO
-     áówatoohsi: Dur+oowatoo+VTI+Cnj+4Sg+0SgO
-     nitáówatoohsi: Dur+oowatoo+VTI+Cnj+1Sg+0PlO
-     kitáówatoohsi: Dur+oowatoo+VTI+Cnj+2Sg+0PlO
-     otáówatoohsi: Dur+oowatoo+VTI+Cnj+3Sg+0PlO
-     áówatoohsi: Dur+oowatoo+VTI+Cnj+4Sg+0PlO
-
-     nitáówatoohsinnaani: Dur+oowatoo+VTI+Cnj+1Pl+0SgO
-     áówatoohsi: Dur+oowatoo+VTI+Cnj+21Pl+0SgO
-     kitáówatoohsoaayi: Dur+oowatoo+VTI+Cnj+2Pl+0SgO
-     otáówatoohsi: Dur+oowatoo+VTI+Cnj+3Pl+0SgO
-     áówatoohsi: Dur+oowatoo+VTI+Cnj+4Pl+0SgO
-     nitáówatoohsinnaani: Dur+oowatoo+VTI+Cnj+1Pl+0PlO
-     áówatoohsi: Dur+oowatoo+VTI+Cnj+21Pl+0PlO
-     kitáówatoohsoaayi: Dur+oowatoo+VTI+Cnj+2Pl+0PlO
-     otáówatoohsi: Dur+oowatoo+VTI+Cnj+3Pl+0PlO
-     áówatoohsi: Dur+oowatoo+VTI+Cnj+4Pl+0PlO
-
-     áówatoomminiki: Dur+oowatoo+VTI+Sbj+1Sg+0SgO
-     áówatoomminiki: Dur+oowatoo+VTI+Sbj+2Sg+0SgO
-     áówatooisi: Dur+oowatoo+VTI+Sbj+3Sg+0SgO
-     áówatooisi: Dur+oowatoo+VTI+Sbj+4Sg+0SgO
-     áówatoomminiki: Dur+oowatoo+VTI+Sbj+1Sg+0PlO
-     áówatoomminiki: Dur+oowatoo+VTI+Sbj+2Sg+0PlO
-     áówatooisi: Dur+oowatoo+VTI+Sbj+3Sg+0PlO
-     áówatooisi: Dur+oowatoo+VTI+Sbj+4Sg+0PlO
-
-     áówatoommiinainiki: Dur+oowatoo+VTI+Sbj+1Pl+0SgO
-     áówatoomminoainiki: Dur+oowatoo+VTI+Sbj+21Pl+0SgO
-     áówatooi'ki: Dur+oowatoo+VTI+Sbj+2Pl+0SgO
-     áówatooisi: Dur+oowatoo+VTI+Sbj+3Pl+0SgO
-     áówatooisi: Dur+oowatoo+VTI+Sbj+4Pl+0SgO
-     áówatoommiinainiki: Dur+oowatoo+VTI+Sbj+1Pl+0PlO
-     áówatoomminoainiki: Dur+oowatoo+VTI+Sbj+21Pl+0PlO
-     áówatooi'ki: Dur+oowatoo+VTI+Sbj+2Pl+0PlO
-     áówatooisi: Dur+oowatoo+VTI+Sbj+3Pl+0PlO
-     áówatooisi: Dur+oowatoo+VTI+Sbj+4Pl+0PlO
-
-     nitáówatoohtopi: Dur+oowatoo+VTI+Irr+1Sg+0SgO
-     kitáówatoohtopi: Dur+oowatoo+VTI+Irr+2Sg+0SgO
-     áówatoomahtopi: Dur+oowatoo+VTI+Irr+3Sg+0SgO
-     áówatoomahtopiyini: Dur+oowatoo+VTI+Irr+4Sg+0SgO
-     nitáówatoohtopi: Dur+oowatoo+VTI+Irr+1Sg+0PlO
-     kitáówatoohtopi: Dur+oowatoo+VTI+Irr+2Sg+0PlO
-     áówatoomahtopi: Dur+oowatoo+VTI+Irr+3Sg+0PlO
-     áówatoomahtopiyini: Dur+oowatoo+VTI+Irr+4Sg+0PlO
-
-     nitáówatoohpinnaanopi: Dur+oowatoo+VTI+Irr+1Pl+0SgO
-     áówatoo'pohtopi: Dur+oowatoo+VTI+Irr+21Pl+0SgO
-     kitáówatoomahtopiyi: Dur+oowatoo+VTI+Irr+2Pl+0SgO
-     áówatoomahtopiyi: Dur+oowatoo+VTI+Irr+3Pl+0SgO
-     áówatoomahtopiyini: Dur+oowatoo+VTI+Irr+4Pl+0SgO
-     nitáówatoohpinnaanopi: Dur+oowatoo+VTI+Irr+1Pl+0PlO
-     áówatoo'pohtopi: Dur+oowatoo+VTI+Irr+21Pl+0PlO
-     kitáówatoomahtopiyi: Dur+oowatoo+VTI+Irr+2Pl+0PlO
-     áówatoomahtopiyi: Dur+oowatoo+VTI+Irr+3Pl+0PlO
-     áówatoomahtopiyini: Dur+oowatoo+VTI+Irr+4Pl+0PlO
-
-     áówatoota: Dur+oowatoo+VTI+Imp+Sg+0SgO
-     áówatooka: Dur+oowatoo+VTI+Imp+Pl+0SgO
-     áówatooti: Dur+oowatoo+VTI+Imp+Sg+0PlO
-     áówatooki: Dur+oowatoo+VTI+Imp+Pl+0PlO
-
-
-
-
-
-
-
-
-
-
-
-
+     Dur+oowatoo+VTI+Ind+1Sg+0SgO: nitáówatoohpa
+     Dur+oowatoo+VTI+Ind+2Sg+0SgO: kitáówatoohpa
+     Dur+oowatoo+VTI+Ind+3Sg+0SgO+PRO+D3Sg: áówatoomaayi
+     Dur+oowatoo+VTI+Ind+1Pl+0SgO: nitáówatoohpinnaana
+     Dur+oowatoo+VTI+Ind+21Pl+0SgO: áówatoo'pa
+     Dur+oowatoo+VTI+Ind+2Pl+0SgO: kitáówatoohpoaawa
+     
+     Fut+oowatoo+VTI+Ind+1Sg+0SgO: nitáaksowatoohpa
+     Fut+oowatoo+VTI+Ind+2Pl+0SgO: kitáaksowatoohpa
+     Fut+oowatoo+VTI+Ind+3Sg+0SgO+PRO+D3Sg: áaksowatoomaayi
+     Fut+oowatoo+VTI+Ind+1Pl+0SgO: nitáaksowatoohpinnaana
+     Fut+oowatoo+VTI+Ind+21Pl+0SgO: áaksowatoo'pa
+     Fut+oowatoo+VTI+Ind+2Pl+0SgO: kitáaksowatoohpoaawa
+     
+     oowatoo+VTI+Ind+1Sg+0SgO: nitsowatoohpa
+     oowatoo+VTI+Ind+2Sg+0SgO: kitsowatoohpa
+     Past+oowatoo+VTI+Ind+3Sg+0SgO+PRO+D3Sg: iiwátoomaayi
+     oowatoo+VTI+Ind+1Pl+0SgO: nitsowatoohpinnaana
+     Past+oowatoo+VTI+Ind+21Pl+0SgO: iiwatoo'pa
+     oowatoo+VTI+Ind+2Pl+0SgO: kitsowatoohpoaawa
+     
+     Neg+Dur+oowatoo+VTI+Ind+1Sg+0SgO: nimaatáówatoohpa
+     Neg+Dur+oowatoo+VTI+Ind+2Sg+0SgO: kimaatáówatoohpa
+     Neg+Dur+oowatoo+VTI+Ind+3Sg+0SgO: maatáówatoomaiksayi
+     Neg+Dur+oowatoo+VTI+Ind+1Pl+0SgO: nimaatáówatoohpinnaana
+     Neg+Dur+oowatoo+VTI+Ind+21Pl+0SgO: maatáówatoo'pa
+     Neg+Dur+oowatoo+VTI+Ind+2Pl+0SgO: kimaatáówatoohpoaawa
+     
+     Neg+Fut+oowatoo+VTI+Ind+1Sg+0SgO: nimaatáaksowatoohpa
+     Neg+Fut+oowatoo+VTI+Ind+2Sg+0SgO: kimaatáaksowatoohpa
+     Neg+Fut+oowatoo+VTI+Ind+3Sg+0SgO: maatáaksowatoomaatsayi
+     Neg+Fut+oowatoo+VTI+Ind+1Pl+0SgO: nimaatáaksowatoohpinnaana
+     Neg+Fut+oowatoo+VTI+Ind+21Pl+0SgO: maatáaksowatoo'pa
+     Neg+Fut+oowatoo+VTI+Ind+2Pl+0SgO: kimaatáaksowatoohpoaawa
+     
+     Neg+oowatoo+VTI+Ind+1Sg+0SgO: nimaatsowatoohpa
+     Neg+oowatoo+VTI+Ind+2Sg+0SgO: kimaatsowatoohpa
+     Neg+oowatoo+VTI+Ind+3Sg+0SgO: maatsowatoomaatsayi
+     Neg+oowatoo+VTI+Ind+1Pl+0SgO: nimaatsowatoohpinnaana
+     Neg+oowatoo+VTI+Ind+21Pl+0SgO: maatsowatoo'pa
+     Neg+oowatoo+VTI+Ind+2Pl+0SgO: kimaatsowatoohpoaawa
+     
+     Dur+oowatoo+VTI+Cnj+1Sg+0SgO: nitáówatoohsi
+     Dur+oowatoo+VTI+Cnj+2Sg+0SgO: kitáówatoohsi
+     Dur+oowatoo+VTI+Cnj+3Sg+0SgO: otáówatoohsi
+     Dur+oowatoo+VTI+Cnj+4Sg+0SgO: áówatoohsi
+     Dur+oowatoo+VTI+Cnj+1Sg+0PlO: nitáówatoohsi
+     Dur+oowatoo+VTI+Cnj+2Sg+0PlO: kitáówatoohsi
+     Dur+oowatoo+VTI+Cnj+3Sg+0PlO: otáówatoohsi
+     Dur+oowatoo+VTI+Cnj+4Sg+0PlO: áówatoohsi
+     
+     Dur+oowatoo+VTI+Cnj+1Pl+0SgO: nitáówatoohsinnaani
+     Dur+oowatoo+VTI+Cnj+21Pl+0SgO: áówatoohsi
+     Dur+oowatoo+VTI+Cnj+2Pl+0SgO: kitáówatoohsoaayi
+     Dur+oowatoo+VTI+Cnj+3Pl+0SgO: otáówatoohsi
+     Dur+oowatoo+VTI+Cnj+4Pl+0SgO: áówatoohsi
+     Dur+oowatoo+VTI+Cnj+1Pl+0PlO: nitáówatoohsinnaani
+     Dur+oowatoo+VTI+Cnj+21Pl+0PlO: áówatoohsi
+     Dur+oowatoo+VTI+Cnj+2Pl+0PlO: kitáówatoohsoaayi
+     Dur+oowatoo+VTI+Cnj+3Pl+0PlO: otáówatoohsi
+     Dur+oowatoo+VTI+Cnj+4Pl+0PlO: áówatoohsi
+     
+     Dur+oowatoo+VTI+Sbj+1Sg+0SgO: áówatoommiiniki
+     Dur+oowatoo+VTI+Sbj+2Sg+0SgO: áówatoommiiniki
+     Dur+oowatoo+VTI+Sbj+3Sg+0SgO: áówatoisi
+     Dur+oowatoo+VTI+Sbj+4Sg+0SgO: áówatoisi
+     Dur+oowatoo+VTI+Sbj+1Sg+0PlO: áówatoommiiniki
+     Dur+oowatoo+VTI+Sbj+2Sg+0PlO: áówatoommiiniki
+     Dur+oowatoo+VTI+Sbj+3Sg+0PlO: áówatoisi
+     Dur+oowatoo+VTI+Sbj+4Sg+0PlO: áówatoisi
+     
+     Dur+oowatoo+VTI+Sbj+1Pl+0SgO: áówatoommiinnainiki
+     Dur+oowatoo+VTI+Sbj+21Pl+0SgO: áówatoommiinoainiki
+     Dur+oowatoo+VTI+Sbj+2Pl+0SgO: áówatoi'ki
+     Dur+oowatoo+VTI+Sbj+3Pl+0SgO: áówatoisi
+     Dur+oowatoo+VTI+Sbj+4Pl+0SgO: áówatoisi
+     Dur+oowatoo+VTI+Sbj+1Pl+0PlO: áówatoommiinnainiki
+     Dur+oowatoo+VTI+Sbj+21Pl+0PlO: áówatoommiinoainiki
+     Dur+oowatoo+VTI+Sbj+2Pl+0PlO: áówatoi'ki
+     Dur+oowatoo+VTI+Sbj+3Pl+0PlO: áówatoisi
+     Dur+oowatoo+VTI+Sbj+4Pl+0PlO: áówatoisi
+     
+     Dur+oowatoo+VTI+Irr+1Sg+0SgO: nitáówatoohtopi
+     Dur+oowatoo+VTI+Irr+2Sg+0SgO: kitáówatoohtopi
+     Dur+oowatoo+VTI+Irr+3Sg+0SgO: áówatoomahtopi
+     Dur+oowatoo+VTI+Irr+4Sg+0SgO: áówatoomahtopiyini
+     Dur+oowatoo+VTI+Irr+1Sg+0PlO: nitáówatoohtopi
+     Dur+oowatoo+VTI+Irr+2Sg+0PlO: kitáówatoohtopi
+     Dur+oowatoo+VTI+Irr+3Sg+0PlO: áówatoomahtopi
+     Dur+oowatoo+VTI+Irr+4Sg+0PlO: áówatoomahtopiyini
+     
+     Dur+oowatoo+VTI+Irr+1Pl+0SgO: nitáówatoohpinnaanopi
+     Dur+oowatoo+VTI+Irr+21Pl+0SgO: áówatoo'pohtopi
+     Dur+oowatoo+VTI+Irr+2Pl+0SgO: kitáówatoomahtopiyi
+     Dur+oowatoo+VTI+Irr+3Pl+0SgO: áówatoomahtopiyi
+     Dur+oowatoo+VTI+Irr+4Pl+0SgO: áówatoomahtopiyini
+     Dur+oowatoo+VTI+Irr+1Pl+0PlO: nitáówatoohpinnaanopi
+     Dur+oowatoo+VTI+Irr+21Pl+0PlO: áówatoo'pohtopi
+     Dur+oowatoo+VTI+Irr+2Pl+0PlO: kitáówatoomahtopiyi
+     Dur+oowatoo+VTI+Irr+3Pl+0PlO: áówatoomahtopiyi
+     Dur+oowatoo+VTI+Irr+4Pl+0PlO: áówatoomahtopiyini
+     
+     Dur+oowatoo+VTI+Imp+Sg+0SgO: áówatoota
+     Dur+oowatoo+VTI+Imp+Pl+0SgO: áówatooka
+     Dur+oowatoo+VTI+Imp+Sg+0PlO: áówatooti
+     Dur+oowatoo+VTI+Imp+Pl+0PlO: áówatooki

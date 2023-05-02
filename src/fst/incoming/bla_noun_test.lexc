@@ -1,7 +1,5 @@
-! Blackfoot Regular Noun Inflectional Morphology
-
 Multichar_Symbols
-! Noun tags
+
 +NI
 +NA
 +NAD
@@ -29,6 +27,7 @@ Neg+
 Perf+
 Dur+
 Fut+
+Imm+ ! For imminent future
 Prox+
 Past+
 Nonaff+
@@ -40,7 +39,13 @@ Nonaff+
 +Sbj
 +Irr
 +Pre
++Der/Nom
++Der/Nom2
++Der/Nom3
++Der/Nom4
++Der/Nom5
 +Der/Caus
++Der/Caus2 
 +Der/Rcpr
 +Der/Rflx
 +Der/Bnf
@@ -74,10 +79,11 @@ Nonaff+
 +4SgO
 +4PlO
 +5Sg/PlO
-+PRO+3/0
++PRO+3/%0Sg
++PRO+3/%0
 +PRO+3Pl
 +PRO+D3Sg
-+PRO+0Pl
++PRO+%0Pl
 +INTERR
 ! Prenoun tags
 PN/a's+
@@ -152,7 +158,7 @@ PN/ipiiw+
 PN/ipiihk+
 PN/ipisat+
 PN/ipíttsik+
-PN/ipo(w/y)+
+PN/ipow+
 PN/ipoohsap+
 PN/ippat+
 PN/ippom+
@@ -300,7 +306,7 @@ PN/sohk+
 PN/sok+
 PN/sok+
 PN/soohk+
-PN/sopo(w/y)+
+PN/sopow+
 PN/sopok+
 PN/sopoya'p+
 PN/ssik+
@@ -362,18 +368,18 @@ PV/yáak+
 PV/ayáak+
 PV/ayáakak+
 PV/akaa+
-PV/Xomohp+
-PV/Xomoht+
-PV/Xohtatsiwa+
+PV/omohp+
+PV/omoht+
+PV/ohtatsiwa+
 PV/itap+
 PV/poohsap+
-PV/i2poohsap+
+PV/ipoohsap+
 PV/it+
 PV/ist+
 PV/ípssit+
 PV/ohkit+
 PV/miistap+
-PV/yi2i2stap+
+PV/yiistap+
 PV/saaki+
 PV/omá+
 PV/iimá+
@@ -386,26 +392,26 @@ PV/omoht+
 PV/á'+
 PV/á'+
 PV/ikkam+
-PV/Xoohk+
-PV/Xipp+
+PV/oohk+
+PV/ipp+
 PV/iik+
 PV/sska'+
 PV/sstónnat+
-PV/i2kkam+
+PV/ikkam+
 PV/iitsiksist+
 PV/ii+
 PV/na+
 PV/hkana+
-PV/i2kkina+
+PV/ikkina+
 PV/iiyik+
-PV/i2poina+
+PV/ipoina+
 PV/poína+
 PV/sok+
 PV/niit+
 PV/anist+
 PV/ohs+
 PV/yaahs+
-PV/i2ksistt+
+PV/iksistt+
 PV/mato+
 PV/oto+
 PV/ohkott+
@@ -669,6 +675,8 @@ PV/yook+
 PV/a'kooht+
 PV/a+
 PV/aahksikkam+
+PV/ááhkamá'p+
+PV/ááhk+
 PV/aahs+
 PV/aaksta'+
 PV/aanist+
@@ -678,6 +686,7 @@ PV/akaa+
 PV/akisspí+
 PV/akk+
 PV/akoksska+
+PV/áka+
 PV/ama+
 PV/amo'tap+
 PV/ana+
@@ -698,11 +707,11 @@ PV/ayáak+
 PV/hkana+
 PV/i'sskaan+
 PV/i'tsk+
-PV/i2kkam+
-PV/i2kkina+
-PV/i2ksistt+
-PV/i2poina+
-PV/i2poohsap+
+PV/ikkam+
+PV/ikkina+
+PV/iksistt+
+PV/ipoina+
+PV/ipoohsap+
 PV/ihta+
 PV/ii+
 PV/iihk+
@@ -732,7 +741,7 @@ PV/ikaiksist+
 PV/ikak+
 PV/ikamo't+
 PV/ikapo+
-PV/i2kátá'+
+PV/ikátá'+
 PV/ikayiss+
 PV/ikia'ya+
 PV/ikihkiht+
@@ -764,7 +773,7 @@ PV/ipana+
 PV/ipann+
 PV/ipapa+
 PV/ipiitsiiyóóhk+
-PV/ipiitsiw+
+PV/ipiitsiy+
 PV/ipo't+
 PV/ipoina+
 PV/ipp+
@@ -811,13 +820,13 @@ PV/káta'+
 PV/káák+
 PV/káátsisto+
 PV/kínnak+
-PV/m2aat+
-PV/m2att+
-PV/m2attsistá'+
-PV/m2átt+
-PV/m2áttsit+
-PV/m2áát+
-PV/m2áátaommita'p+
+PV/maat+
+PV/matt+
+PV/mattsistá'+
+PV/mátt+
+PV/máttsit+
+PV/máát+
+PV/máátaommita'p+
 PV/maak+
 PV/maam+
 PV/mak+
@@ -931,7 +940,7 @@ PV/wayák+
 PV/wayákiit+
 PV/wáyák+
 PV/yaahs+
-PV/yi2i2stap+
+PV/yiistap+
 PV/yoisstsikina+
 PV/yook+
 PV/yáak+
@@ -1014,12 +1023,28 @@ PV/ípssit+
 @R.class.VII@
 @R.class.VTI@
 @R.class.VTA@
+@P.pos.VAI@
+@P.pos.VII@
+@P.pos.VTI@
+@P.pos.VTA@
+@R.pos.VAI@
+@R.pos.VII@
+@R.pos.VTI@
+@R.pos.VTA@
 @P.assoc.A@
 @R.assoc.A@
 @P.class.NOUN@
 @P.class.VERB@
 @R.class.NOUN@
 @R.class.VERB@
+@P.pos.NA@
+@P.pos.NI@
+@R.pos.NA@
+@R.pos.NI@
+@P.pos.NOUN@
+@P.pos.VERB@
+@R.pos.NOUN@
+@R.pos.VERB@
 
 ! Constraining preverb recycling
 @D.pvcount@
@@ -1040,12 +1065,65 @@ PV/ípssit+
 @R.pvcountf.1@
 @R.pvcountf.2@
 @R.pvcountf.3@
+! Constraining preverb recycling
+@D.pvcount@
+@P.pvcount.1@
+@P.pvcount.2@
+@P.pvcount.3@
+@P.pvcount.4@
+@P.pvcount.5@
+@P.pvcount.6@
+@P.pvcount.7@
+@P.pvcount.8@
+@R.pvcount.1@
+@R.pvcount.2@
+@R.pvcount.3@
+@R.pvcount.4@
+@R.pvcount.5@
+@R.pvcount.6@
+@R.pvcount.7@
+@D.pvcountf@
+@P.pvcountf.1@
+@P.pvcountf.2@
+@P.pvcountf.3@
+@P.pvcountf.4@
+@R.pvcountf.1@
+@R.pvcountf.2@
+@R.pvcountf.3@
+@D.pncount@
+@P.pncount.1@
+@P.pncount.2@
+@P.pncount.3@
+@R.pncount.1@
+@R.pncount.2@
+@R.pncount.3@
+@D.encount@
+@P.encount.1@
+@P.encount.2@
+@R.encount.1@
+@R.encount.2@
+@P.count1.P@
+@P.count1.N@
+@P.count1.T@
+@P.count1.A@
+@R.count1.P@
+@R.count1.N@
+@R.count1.T@
+@R.count1.A@
 
 ! Special_characters
 i2
 i3
 í2
 í3
+a2
+a3
+a4
+á2 
+á3 
+á4
+o2
+ó2
 m2
 n2
 '
@@ -1053,44 +1131,6 @@ n2
 %<
 %>
 
-! Flag diacritics to be used
-@U.person.NI@
-@U.person.KI@
-@U.person.OT@
-@U.person.NULL@
-@U.stem.PRE@
-@U.stem.NON@
-@U.stem.DEP@
-@U.stem.SHORT@
-@P.person.NI@
-@P.person.KI@
-@P.person.OT@
-@P.person.NULL@
-@R.person.NULL@
-@R.person.OT@
-@D.person.NULL@
-@D.person.OT@
-@P.im.IM@
-@R.im.IM@
-@D.im.IM@
-@P.number.SG@
-@P.number.PL@
-@D.number.SG@
-@D.number.PL@
-@P.noun.PRE@
-@P.noun.NON@
-@R.noun.PRE@
-@R.noun.NON@
-
-! Special_characters
-i4
-i3
-í2
-í3
-n
-X
-%<
-%>
 
 ! Desired input-output
 ! Input: @U.person.NI@ 0
@@ -1110,67 +1150,72 @@ LEXICON NOUN_INDEP_PREFIXES
 @P.person.NI@:@P.person.NI@nit%<    PRE_INDEP_FLAG ;
 @P.person.KI@:@P.person.KI@kit%<    PRE_INDEP_FLAG ;
 @P.person.OT@:@P.person.OT@ot%<     PRE_INDEP_FLAG ;
-@P.person.NULL@0                    NON_INDEP_FLAG ;
+@P.person.NULL@0                    PRE_INDEP_FLAG ;
 
 LEXICON PRE_INDEP_FLAG
 @P.class.NOUN@ PRENOUNS ;
-@P.class.VERB@ PREVERBS ;
+@P.class.VERB@ PREFIXES ;
 
-LEXICON NON_INDEP_FLAG
-PRENOUNS ;
+! LEXICON NON_INDEP_FLAG
+! PRENOUNS ;
 
 LEXICON NOUN_SHORT_PREFIXES
-@P.person.NI@:@P.person.NI@n%<    DEP_NA_STEMS ;
-@P.person.KI@:@P.person.KI@k%<    DEP_NA_STEMS ;
-@P.person.OT@:@P.person.OT@w%<    DEP_NA_STEMS ;
-@P.person.NI@:@P.person.NI@n%<    DEP_NI_STEMS ;
-@P.person.KI@:@P.person.KI@k%<    DEP_NI_STEMS ;
-@P.person.OT@:@P.person.OT@w%<    DEP_NI_STEMS ;
+@P.person.NI@:@P.person.NI@n%<    DEP_STEMS ;
+@P.person.KI@:@P.person.KI@k%<    DEP_STEMS ;
+@P.person.OT@:@P.person.OT@w%<    DEP_STEMS ;
 
 ! This is the preverb set, which can only combine with verb suffixes
 
-LEXICON PREVERBS
-0 PREFIXES2 ;
-@R.mode.IND@Neg+:@R.mode.IND@%^SPm2áát BOUND1 ;
-@R.mode.IMP@Neg+:@R.mode.IMP@%^SPm2iin BOUND1 ;
-@R.mode.IMP@Neg+:@R.mode.IMP@%^SPpiin BOUND1 ;
-PV/i2kátá'+:i2kátá' BOUND1 ;
-PV/ayáak+:ayáak BOUND1 ;
-PV/á+:á BOUND1 ;
-PV/yáak+:yáak BOUND1 ;
-PV/akáa+:akáa BOUND ;
+LEXICON PREFIXES
+@P.count1.N@@P.count1.T@@P.count1.A@@P.count1.P@@P.count1.N@@P.count1.T@@P.count1.A@@P.count1.P@ 0 PV_COUNTER1 ;
+@R.mode.IND@@P.count1.N@Neg+:@R.mode.IND@@P.count1.N@%^SPi2máát BOUND1 ;
+@R.mode.IMP@@P.count1.N@Neg+:@R.mode.IMP@@P.count1.N@%^SPi2miin BOUND1 ;
+@R.mode.IMP@@P.count1.N@Neg+:@R.mode.IMP@@P.count1.N@%^SPi2piin BOUND1 ;
+@R.mode.IND@@P.count1.N@PV/máátaommita'p+:@R.mode.IND@@P.count1.N@%^SPmáátaommita'p BOUND1 ;
+@P.count1.P@PV/ikátá'+:@P.count1.P@i2kátá' BOUND1 ;
+@P.count1.T@Imm+:@P.count1.T@ayáak BOUND1 ;
+@P.count1.T@Dur+:@P.count1.T@á BOUND1 ;
+@P.count1.T@Fut+:@P.count1.T@yáak BOUND1 ;
+@P.count1.T@Past+:@P.count1.T@ii BOUND1 ;
+@P.count1.A@Perf+:@P.count1.A@akáa BOUND1 ;
+@P.count1.A@Perf+:@P.count1.A@ikáa BOUND1 ;
+@P.count1.A@Perf+:@P.count1.A@okáa BOUND1 ; ! enumerating this one because it appears in these three forms
 
 LEXICON BOUND1
 0:%< PV_COUNTER1 ;
 
 LEXICON PV_COUNTER1
-@D.pvcountf@@P.pvcountf.1@ PREVERBS ; 
-@R.pvcountf.1@@P.pvcountf.2@ PREVERBS ;
-@R.pvcountf.2@@P.pvcountf.3@ PREVERBS ;
-
-LEXICON PREFIXES2
+@D.pvcountf@@R.count1.N@@P.pvcountf.1@@R.count1.N@ PREFIXES ;
+@R.pvcountf.1@@R.count1.T@@P.pvcountf.2@@R.count1.T@ PREFIXES ;
+@R.pvcountf.2@@R.count1.A@@P.pvcountf.3@@R.count1.A@ PREFIXES ;
+@R.pvcountf.3@@R.count1.P@@P.pvcountf.4@@R.count1.P@ PREFIXES ;
 0 PRENOUNS ;
+ 
+LEXICON PRENOUNS
+0 NOUN_STEMS ;
 @P.assoc.A@PV/ohpok+:@P.assoc.A@%^SPohpok BOUND ;
 PV/saw+:saw BOUND ;
-@R.mode.CON@PV/áákssta'+:@R.mode.CON@áákssta'	BOUND ;
-@R.mode.CON@PV/ááhkssta'+:@R.mode.CON@ááhkssta' BOUND ;
+@R.mode.CON@PV/áákssta'+:@R.mode.CON@%^SPáákssta'	BOUND ;
+@R.mode.CON@PV/ááhkssta'+:@R.mode.CON@%^SPááhkssta' BOUND ;
 !! New list of preverbs
 PV/a'kooht+:a'kooht BOUND ;
-PV/aahksikkam+:aahksikkam BOUND ;
+PV/ááhkamá'p+:%^SPááhkamá'p BOUND ;
+PV/ááhk+:%^SPááhk BOUND ;
+PV/aahksikkam+:%^SPaahksikkam BOUND ;
 PV/aahs+:aahs BOUND ;
 PV/aaksta'+:aaksta' BOUND ;
-PV/aanist+:aanist BOUND ;
+PV/aanist+:%^SPaanist BOUND ;
 PV/ai'tamáak+:ai'tamáak BOUND ;
 PV/aisskahs+:aisskahs BOUND ;
 PV/akisspí+:akisspí BOUND ;
 PV/akk+:akk BOUND ;
 PV/akoksska+:akoksska BOUND ;
+PV/áka+:%^SPa4ka BOUND ;
 PV/ama+:ama BOUND ;
 PV/amo'tap+:amo'tap BOUND ;
-PV/ana+:ana BOUND ;
 PV/anaw+:anaw BOUND ;
 PV/anist+:anist BOUND ;
-PV/ano+:ano BOUND ;
+PV/ano+:anow BOUND ;
 PV/anootap+:anootap BOUND ;
 PV/anow+:anow BOUND ;
 PV/ao'tamáak+:ao'tamáak BOUND ;
@@ -1180,23 +1225,18 @@ PV/assaak+:assaak BOUND ;
 PV/att+:att BOUND ;
 PV/awa'+:awa' BOUND ;
 PV/hkana+:hkana BOUND ;
-PV/i'sskaan+:i'sskaan BOUND ;
+PV/i'sskaan+:i2'sskaan BOUND ;
 PV/i'tsk+:i'tsk BOUND ;
-PV/i2kkam+:i2kkam BOUND ;
-PV/i2kkina+:i2kkina BOUND ;
-PV/i2ksistt+:i2ksistt BOUND ;
-PV/i2poina+:i2poina BOUND ;
-PV/i2poohsap+:i2poohsap BOUND ;
-PV/ihta+:ihta BOUND ;
-PV/ii+:ii BOUND ;
+PV/ihta+:ihtaw BOUND ;
+! @P.count1.P@PV/ii+:@P.count1.P@ii BOUND ;
 PV/iihk+:iihk BOUND ;
 PV/iiht+:iiht BOUND ;
-PV/iihtsitok+:iihtsitok BOUND ;
+PV/iihtsitok+:i3htsitok BOUND ;
 PV/iihtsitssitak+:iihtsitssitak BOUND ;
-PV/iik+:iik BOUND ;
+PV/iik+:i2ik BOUND ;
 PV/iikska'+:iikska' BOUND ;
 PV/iima+:iima BOUND ;
-PV/iimaa+:iimaa BOUND ;
+PV/iimaa+:i3maa BOUND ;
 PV/iimat+:iimat BOUND ;
 PV/iimá+:iimá BOUND ;
 PV/iin+:iin BOUND ;
@@ -1210,9 +1250,9 @@ PV/iitsiksist+:iitsiksist BOUND ;
 PV/iitskimaan+:iitskimaan BOUND ;
 PV/iiyik+:iiyik BOUND ;
 PV/ika'+:ika' BOUND ;
-PV/ika'to+:ika'to BOUND ;
-PV/ikaap+:ikaap BOUND ;
-PV/ikaiksist+:ikaiksist BOUND ;
+PV/ika'to+:i2ka'to BOUND ;
+PV/ikaap+:i2kaap BOUND ;
+PV/ikaiksist+:i2kaiksist BOUND ;
 PV/ikak+:ikak BOUND ;
 PV/ikamo't+:ikamo't BOUND ;
 PV/ikapo+:ikapo BOUND ;
@@ -1220,46 +1260,47 @@ PV/ikayiss+:ikayiss BOUND ;
 PV/ikia'ya+:ikia'ya BOUND ;
 PV/ikihkiht+:ikihkiht BOUND ;
 PV/ikimm+:ikimm BOUND ;
-PV/ikimmat+:ikimmat BOUND ;
-PV/ikipp+:ikipp BOUND ;
-PV/ikippa'+:ikippa' BOUND ;
-PV/ikkam+:ikkam BOUND ;
+PV/ikimmat+:i2kimmat BOUND ;
+PV/ikipp+:i2kipp BOUND ;
+PV/ikippa'+:i2kippa' BOUND ;
+PV/ikkam+:i2kkam BOUND ;
 PV/ikkan+:ikkan BOUND ;
 PV/ikkia'+:ikkia' BOUND ;
 PV/ikkihkini+:ikkihkini BOUND ;
 PV/ikkina+:ikkina BOUND ;
-PV/iksissto+:iksissto BOUND ;
+PV/iksissto+:i2ksissto BOUND ;
 PV/iksist+:iksist BOUND ;
 PV/iksksowa'+:iksksowa' BOUND ;
 PV/ikssto+:ikssto BOUND ;
 PV/ikstsina'+:ikstsina' BOUND ;
+PV/ikstsina'+:kstsina' BOUND ;
 PV/ikíppoa+:ikíppoa BOUND ;
 PV/imaat+:imaat BOUND ;
 PV/imak+:imak BOUND ;
 PV/immoyi+:immoyi BOUND ;
 PV/inai't+:inai't BOUND ;
-PV/inikk+:inikk BOUND ;
+PV/inikk+:i2nikk BOUND ;
 PV/innaahkoot+:innaahkoot BOUND ;
 PV/ipahkitap+:ipahkitap BOUND ;
-PV/ipahtsik+:ipahtsik BOUND ;
+PV/ipahtsik+:i2pahtsik BOUND ;
 PV/ipakska+:ipakska BOUND ;
 PV/ipana+:ipana BOUND ;
-PV/ipann+:ipann BOUND ;
+PV/ipann+:i2pann BOUND ;
 PV/ipapa+:ipapa BOUND ;
-PV/ipiitsiiyóóhk+:ipiitsiiyóóhk BOUND ;
-PV/ipiitsiw+:ipiitsiw BOUND ;
-PV/ipo't+:ipo't BOUND ;
+PV/ipiitsiiyóóhk+:%^SPi2piitsiiyóóhk BOUND ;
+PV/ipiitsiy+:%^SPi2piitsiy BOUND ;
+PV/ipo't+:i2po't BOUND ;
 PV/ipoina+:ipoina BOUND ;
 PV/ipp+:%^SPipp BOUND ;
 PV/ipp+:ipp BOUND ;
 PV/ippita+:ippita BOUND ;
 PV/ippoa+:ippoa BOUND ;
 PV/ippssa'kapp+:ippssa'kapp BOUND ;
-PV/ipsstsikatt+:ipsstsikatt BOUND ;
-PV/ipsstsík+:ipsstsík BOUND ;
-PV/ipákkssa+:ipákkssa BOUND ;
-PV/isimi+:isimi BOUND ;
-PV/isinap+:isinap BOUND ;
+PV/ipsstsikatt+:i2psstsikatt BOUND ;
+PV/ipsstsík+:i2psstsík BOUND ;
+PV/ipákkssa+:i2pákkssa BOUND ;
+PV/isimi+:i2simi BOUND ;
+PV/isinap+:i2sinap BOUND ;
 PV/isitsip+:isitsip BOUND ;
 PV/isk+:isk BOUND ;
 PV/iss+:iss BOUND ;
@@ -1269,11 +1310,11 @@ PV/ist+:ist BOUND ;
 PV/ista'+:ista' BOUND ;
 PV/istohk+:istohk BOUND ;
 PV/istohkana+:istohkana BOUND ;
-PV/istsa'+:istsa' BOUND ;
-PV/istto't+:istto't BOUND ;
-PV/isttsikohpo+:isttsikohpo BOUND ;
-PV/isttsitsa+:isttsitsa BOUND ;
-PV/isttssi+:isttssi BOUND ;
+PV/istsa'+:i2stsa' BOUND ;
+PV/istto't+:i2stto't BOUND ;
+PV/isttsikohpo+:i2sttsikohpo BOUND ;
+PV/isttsitsa+:i2sttsitsa BOUND ;
+PV/isttssi+:i2sttssi BOUND ;
 PV/it+:it BOUND ;
 PV/itap+:itap BOUND ;
 PV/ito't+:ito't BOUND ;
@@ -1283,48 +1324,47 @@ PV/itsst+:itsst BOUND ;
 PV/itáak+:itáak BOUND ;
 PV/iámoohk+:iámoohk BOUND ;
 PV/kaat+:kaat BOUND ;
-PV/kakanott+:kakanott BOUND ;
+PV/kakanott+:i2kakanott BOUND ;
 PV/kam+:kam BOUND ;
-PV/kan+:kan BOUND ;
+PV/kan+:hkan BOUND ;
 PV/kipita+:kipita BOUND ;
-PV/kipp+:kipp BOUND ;
-PV/kotski+:kotski BOUND ;
+PV/kipita+:ippita BOUND ; ! enumerating this because the dictionary has two alternative forms
+PV/kipp+:ki2pp BOUND ; !
+PV/kotski+:i2kotski BOUND ;
 PV/ksisttoyi+:ksisttoyi BOUND ;
 PV/káta'+:káta' BOUND ;
-PV/káák+:káák BOUND ;
+PV/káák+:i2káák BOUND ;
 PV/káátsisto+:káátsisto BOUND ;
 PV/kínnak+:kínnak BOUND ;
-PV/m2att+:m2att BOUND ;
-PV/m2attsistá'+:m2attsistá' BOUND ;
-PV/m2átt+:m2átt BOUND ;
-PV/m2áttsit+:m2áttsit BOUND ;
-PV/m2áátaommita'p+:m2áátaommita'p BOUND ;
-PV/m2aak+:m2aak BOUND ;
-PV/m2aam+:m2aam BOUND ;
-PV/m2ak+:m2ak BOUND ;
+PV/mattsistá'+:%^SPmattsistá' BOUND ; ! Allomorphy of matt- dealt with as an exception in the phonology
+PV/mátt+:%^SPmátt BOUND ;
+PV/máttsit+:%^SPmáttsit BOUND ;
+PV/maak+:maak BOUND ;
+PV/maam+:%^SPmaam BOUND ;
+PV/mak+:mak BOUND ;
 PV/mato+:mato BOUND ;
 PV/matsowá'p+:matsowá'p BOUND ;
 PV/mi'kotsi+:mi'kotsi BOUND ;
 PV/miiksist+:miiksist BOUND ;
-PV/miin+:miin BOUND ;
 PV/miistap+:miistap BOUND ;
 PV/min+:min BOUND ;
 PV/missk+:missk BOUND ;
 PV/misst+:misst BOUND ;
 PV/mo'tóí+:mo'tóí BOUND ;
-PV/máak+:máak BOUND ;
-PV/máo'k+:máo'k BOUND ;
+PV/máak+:%^SPi2máak BOUND ;
+PV/máo'k+:%^SPmáo'k BOUND ;
 PV/na+:na BOUND ;
-PV/naat+:naat BOUND ;
+PV/naat+:%^SPnaat BOUND ;
 PV/nai't+:nai't BOUND ;
 PV/niistsikáp+:niistsikáp BOUND ;
 PV/niit+:niit BOUND ;
 PV/niitsi+:niitsi BOUND ;
 PV/niitsskimaan+:niitsskimaan BOUND ;
-PV/niitá'p+:niitá'p BOUND ;
-PV/noohk+:noohk BOUND ;
-PV/noohkátt+:noohkátt BOUND ;
-PV/níítaak+:níítaak BOUND ;
+PV/niitá'p+:ni2itá'p BOUND ;
+PV/noohk+:%^SPnoohk BOUND ;
+PV/noohkátt+:%^SPnoohkátt BOUND ;
+PV/noohkátt+:noohkátt BOUND ; ! I am doing this because there are two acceptable variants listed in the dictionary
+PV/níítaak+:ní2ítaak BOUND ;
 PV/o'kia'p+:o'kia'p BOUND ;
 PV/o'kio+:o'kio BOUND ;
 PV/o'tap+:o'tap BOUND ;
@@ -1337,6 +1377,7 @@ PV/ohkott+:ohkott BOUND ;
 PV/ohpii+:ohpii BOUND ;
 PV/ohpiistap+:ohpiistap BOUND ;
 PV/ohpo'kii+:ohpo'kii BOUND ;
+PV/ohpo'kii+:hpo'kii BOUND ; ! The reason I'm copying this is that evidently, the oh- here can sometimes dissapear in initial position, but not always.
 PV/ohpok+:ohpok BOUND ;
 PV/ohs+:ohs BOUND ;
 PV/oht+:oht BOUND ;
@@ -1372,19 +1413,19 @@ PV/pin+:pin BOUND ;
 PV/po'kí+:po'kí BOUND ;
 PV/poina+:poina BOUND ;
 PV/poohsap+:poohsap BOUND ;
-PV/poína+:poína BOUND ;
-PV/sa+:sa BOUND ;
-PV/saa+:saa BOUND ;
-PV/saaki+:saaki BOUND ;
-PV/saapo'kit+:saapo'kit BOUND ;
+PV/poína+:i2poína BOUND ;
+PV/sa+:saw BOUND ;
+PV/saa+:saaw BOUND ;
+PV/saaki+:i2saaki BOUND ;
+PV/saapo'kit+:i2saapo'kit BOUND ;
 PV/saipa'+:saipa' BOUND ;
-PV/sipi+:sipi BOUND ;
-PV/sok+:sok BOUND ;
-PV/sook+:sook BOUND ;
-PV/sootam+:sootam BOUND ;
+PV/sipi+:i2sipi BOUND ;
+PV/sok+:i2sok BOUND ;
+PV/sook+:i2sook BOUND ;
+PV/sootam+:i2sootam BOUND ;
 PV/sotám+:sotám BOUND ;
 PV/soyi+:soyi BOUND ;
-PV/ssap+:ssap BOUND ;
+PV/ssap+:i2ssap BOUND ;
 PV/sska'+:sska' BOUND ;
 PV/sska'+:sska' BOUND ;
 PV/sspi+:sspi BOUND ;
@@ -1393,10 +1434,10 @@ PV/sstok+:sstok BOUND ;
 PV/sstonnat+:sstonnat BOUND ;
 PV/sstsina'+:sstsina' BOUND ;
 PV/sstónnat+:sstónnat BOUND ;
-PV/ssáak+:ssáak BOUND ;
-PV/stam+:stam BOUND ;
+PV/ssáak+:i2ssáak BOUND ;
+PV/stam+:i2stam BOUND ;
 PV/sáótat+:sáótat BOUND ;
-PV/tatsiki+:tatsiki BOUND ;
+PV/tatsiki+:i2tatsiki BOUND ;
 PV/waahki+:waahki BOUND ;
 PV/waahko+:waahko BOUND ;
 PV/waahto+:waahto BOUND ;
@@ -1411,7 +1452,7 @@ PV/wayák+:wayák BOUND ;
 PV/wayákiit+:wayákiit BOUND ;
 PV/wáyák+:wáyák BOUND ;
 PV/yaahs+:yaahs BOUND ;
-PV/yi2i2stap+:yi2i2stap BOUND ;
+PV/yiistap+:yi2istap BOUND ;
 PV/yoisstsikina+:yoisstsikina BOUND ;
 PV/yook+:yook BOUND ;
 PV/yámoohk+:yámoohk BOUND ;
@@ -1427,2237 +1468,377 @@ PV/áák+:áák BOUND ;
 PV/áísooka+:áísooka BOUND ;
 PV/íka+:íka BOUND ;
 PV/ípssit+:ípssit BOUND ;
-
+PN/a's+:a's	BOUND ;
+PN/aahs+:aahs	BOUND ;
+PN/aaká+:aaká	BOUND ;
+PN/aamsskááp+:aamsskááp	BOUND ;
+PN/aapám+:aapám	BOUND ;
+PN/aapát+:aapát	BOUND ;
+PN/áápi+:áápi	BOUND ;
+PN/aatow+:aatow	BOUND ;
+PN/ahkiaap+:ahkiaap	BOUND ;
+PN/aiist+:aiist	BOUND ;
+PN/aká+:aká	BOUND ;
+PN/akim+:akim	BOUND ;
+PN/akkaw+:akkaw	BOUND ;
+PN/anao'k+:anao'k	BOUND ;
+PN/apak+:apak	BOUND ;
+PN/apoyi+:apoyi	BOUND ;
+PN/atso't+:atso't	BOUND ;
+PN/áwatt+:áwatt	BOUND ;
+PN/ayaam+:ayaam	BOUND ;
+PN/ayaam+:iyaam	BOUND ; ! Initial variation of ayaam
+PN/i'nák+:i'nák	BOUND ;
+PN/i'táám+:i'táám	BOUND ;
+PN/i'tsin+:i'tsin	BOUND ;
+PN/i'tsk+:i'tsk	BOUND ;
+PN/i'tsk+:i'tsk	BOUND ;
+PN/ihtsis+:ihtsis	BOUND ;
+PN/iinohk+:iinohk	BOUND ;
+PN/iitaam+:iitaam	BOUND ;
+PN/iitoom+:iitoom	BOUND ;
+PN/ííyik+:ííyik	BOUND ;
+PN/ikaw+:ikaw	BOUND ;
+PN/ikaaw+:ikaaw	BOUND ;
+PN/ikakk+:ikakk	BOUND ;
+PN/ikako+:ikako	BOUND ;
+PN/iki'ta+:i2ki'ta	BOUND ;
+PN/ikim+:ikim	BOUND ;
+PN/ikim+:akim	BOUND ; ! Alternation of ikim-
+PN/ikkahs+:ikkahs	BOUND ;
+PN/ikkak+:ikkak	BOUND ;
+PN/ikksk+:i2kksk	BOUND ;
+PN/ikkst+:ikkst	BOUND ;
+PN/ikotsk+:ikotsk	BOUND ;
+PN/iksi's+:iksi's	BOUND ;
+PN/iksiw+:iksiw	BOUND ;
+PN/iksiiksk+:i2ksiiksk	BOUND ;
+PN/iksikk+:iksikk	BOUND ;
+PN/iksim+:iksim	BOUND ;
+PN/iksimat+:iksimat	BOUND ;
+PN/iksisap+:i2ksisap	BOUND ;
+PN/iksissta'p+:i2ksissta'p	BOUND ;
+PN/iksisto+:i2ksisto	BOUND ;
+PN/iksow+:iksow	BOUND ;
+PN/imi+:i2mi	BOUND ;
+PN/immak+:immak	BOUND ;
+PN/inap+:inap	BOUND ;
+PN/inn+:i2nn	BOUND ;
+PN/innaap+:innaap	BOUND ;
+PN/innis+:innis	BOUND ;
+PN/inno+:i2nno	BOUND ;
+PN/inok+:inok	BOUND ;
+PN/insstaw+:insstaw	BOUND ;
+PN/ipahk+:ipahk	BOUND ;
+PN/ipahp+:ipahp	BOUND ;
+PN/ipahs+:i2pahs	BOUND ;
+PN/ipahs+:apahs	BOUND ; ! Initial alternation of ipahs-
+PN/ipaht+:ipaht	BOUND ;
+PN/ipahtsi+:i2pahtsi	BOUND ;
+PN/ipi'k+:ipi'k	BOUND ;
+PN/ipiiw+:i2piiw	BOUND ;
+PN/ipiihk+:i2piihk	BOUND ;
+PN/ipisat+:ipisat	BOUND ;
+PN/ipíttsik+:i2píttsik	BOUND ;
+PN/ipow+:ipow	BOUND ;
+PN/ipoohsap+:ipoohsap	BOUND ;
+PN/ippat+:ippat	BOUND ;
+PN/ippom+:ippom	BOUND ;
+PN/ippot+:i2ppot	BOUND ;
+PN/ipsst+:ipsst	BOUND ;
+PN/isakoow+:isakoow	BOUND ;
+PN/isam+:isam	BOUND ;
+PN/isap+:isap	BOUND ;
+PN/iso+:iso	BOUND ;
+PN/iss+:iss	BOUND ;
+PN/issk+:issk	BOUND ;
+PN/isskihta'+:isskihta'	BOUND ;
+PN/isspí+:isspí	BOUND ;
+PN/isspik+:isspik	BOUND ;
+PN/istaaht+:i2staaht	BOUND ;
+PN/istot+:istot	BOUND ;
+PN/isttani+:i2sttani	BOUND ;
+PN/isttohk+:isttohk	BOUND ;
+PN/isttsi+:isttsi	BOUND ;
+PN/isttsik+:isttsik	BOUND ;
+PN/isttsip+:i2sttsip	BOUND ;
+PN/itapiksst+:itapiksst	BOUND ;
+PN/itsiw+:itsiw	BOUND ;
+PN/itsiiy+:itsiiy	BOUND ;
+PN/itsik+:itsik	BOUND ;
+PN/itsin+:itsin	BOUND ;
+PN/iyoomok+:iyoomok	BOUND ;
+PN/ki'taw+:ki'taw	BOUND ;
+PN/ki'tsi+:ki'tsi	BOUND ;
+PN/kiihtsip+:kiihtsip	BOUND ;
+PN/komono+:hkomono	BOUND ;
+PN/ksiw+:i2ksiw	BOUND ;
+PN/ksikk+:ksikk	BOUND ;
+PN/ksis+:ksis	BOUND ;
+PN/ma'k+:ma'k	BOUND ;
+PN/maan+:maan	BOUND ;
+PN/maká+:maká	BOUND ;
+PN/máóhk+:máóhk	BOUND ;
+PN/matóóm+:matóóm	BOUND ;
+PN/matsiw+:matsiw	BOUND ;
+PN/matsiw+:itsiw	BOUND ;
+PN/mattsi+:mattsi	BOUND ;
+PN/mi'ki+:mi'ki	BOUND ;
+PN/mii+:mii	BOUND ;
+PN/miinohk+:miinohk	BOUND ;
+PN/míístap+:míístap	BOUND ;
+PN/mikksk+:mikksk	BOUND ;
+PN/misam+:misam	BOUND ;
+PN/mokamo't+:mokamo't	BOUND ;
+PN/naam+:naam	BOUND ;
+PN/náám+:náám	BOUND ; ! Problem Áaks>am>ito’too<wa.'(S)he will arrive here needlessly.' I am duplicating it because it's too weird.
+PN/náám+:i2ám	BOUND ;
+PN/naatow+:naatow	BOUND ;
+PN/naatsa+:naatsa	BOUND ;
+PN/naaw+:naaw	BOUND ;
+PN/ni'tóóhk+:ni2'tóóhk	BOUND ;
+PN/niit+:niit	BOUND ;
+PN/nimm+:nimm	BOUND ;
+PN/noohkíít+:noohkíít	BOUND ;
+PN/o'k+:o'k	BOUND ;
+PN/o'kstsik+:o'kstsik	BOUND ;
+PN/o't+:o't	BOUND ;
+PN/o'tak+:o'tak	BOUND ;
+PN/o'tami+:o'tami	BOUND ;
+PN/o'topi+:o'topi	BOUND ;
+PN/o'totam+:o'totam	BOUND ;
+PN/o'tsat+:o'tsat	BOUND ;
+PN/o'tsitsk+:o'tsitsk	BOUND ;
+PN/o'tssat+:o'tssat	BOUND ;
+PN/ohkit+:ohkit	BOUND ;
+PN/ohko+:ohko	BOUND ;
+PN/ohkom+:ohkom	BOUND ;
+PN/ohkon+:ohkon	BOUND ;
+PN/ohpo+:ohpo	BOUND ;
+PN/ohpok+:ohpok	BOUND ;
+PN/ohsi+:ohsi	BOUND ;
+PN/ohso'kap+:ohso'kap	BOUND ;
+PN/ohsohkat+:ohsohkat	BOUND ;
+PN/ohtow+:ohtow	BOUND ;
+PN/ohtssap+:ohtssap	BOUND ;
+PN/ok+:ok	BOUND ;
+PN/okaki+:okaki	BOUND ;
+PN/okamo't+:okamo't	BOUND ;
+PN/ómahk+:ómahk	BOUND ;
+PN/omat+:omat	BOUND ;
+PN/omatap+:omatap	BOUND ;
+PN/omia'nist+:omia'nist	BOUND ;
+PN/omow+:omow	BOUND ;
+PN/onnat+:onnat	BOUND ;
+PN/oohsi+:oohsi	BOUND ;
+PN/oomok+:oomok	BOUND ;
+PN/ooto+:ooto	BOUND ;
+PN/opam+:opam	BOUND ;
+PN/opi+:opi	BOUND ;
+PN/opott+:opott	BOUND ;
+PN/otahko+:otahko	BOUND ;
+PN/otam+:otam	BOUND ;
+PN/otats+:otats	BOUND ;
+PN/otoom+:otoom	BOUND ;
+PN/otsik+:otsik	BOUND ;
+PN/otsistap+:otsistap	BOUND ;
+PN/ótssko+:ótssko	BOUND ;
+PN/ottapit+:ottapit	BOUND ;
+PN/pa'ksik+:pa'ksik	BOUND ;
+PN/paahk+:i2paahk	BOUND ;
+PN/paahksíst+:paahksíst	BOUND ;
+PN/paaht+:paaht	BOUND ;
+PN/paahtsi+:paahtsi	BOUND ;
+PN/pi'k+:pi'k	BOUND ;
+PN/pinááp+:pi2nááp	BOUND ;
+PN/pisát+:i2pisát	BOUND ;
+PN/pisst+:pisst	BOUND ;
+PN/poohsap+:i2poohsap	BOUND ;
+PN/sa+:sa	BOUND ;
+PN/sa'kap+:sa'kap	BOUND ;
+PN/saahk+:saahk	BOUND ;
+PN/saat+:saat	BOUND ;
+PN/saayippom+:saayippom	BOUND ;
+PN/sahp+:sahp	BOUND ;
+PN/saikima'+:i2saikima'	BOUND ;
+PN/saiksistt+:saiksistt	BOUND ;
+PN/sainnis+:sainnis	BOUND ;
+PN/sainskaka'p+:sainskaka'p	BOUND ;
+PN/saip+:saip	BOUND ;
+PN/sakak+:sakak	BOUND ;
+PN/sako+:sako	BOUND ;
+PN/saoki+:saoki	BOUND ;
+PN/sap+:sap	BOUND ;
+PN/sapa'kot+:sapa'kot	BOUND ;
+PN/sata+:sata	BOUND ;
+PN/satt+:satt	BOUND ;
+PN/sawommit+:sawommit	BOUND ;
+PN/sawotsistap+:sawotsistap	BOUND ;
+PN/sayippom+:sayippom	BOUND ;
+PN/si'k+:si'k	BOUND ;
+PN/sik+:sik	BOUND ;
+PN/sikaapi+:sikaapi	BOUND ;
+PN/sikim+:i2sikim	BOUND ;
+PN/sikotahko+:sikotahko	BOUND ;
+PN/sisákk+:sisákk	BOUND ;
+PN/sisik+:sisik	BOUND ;
+PN/sistsik+:i2sistsik	BOUND ;
+PN/sitok+:sitok	BOUND ;
+PN/sitsip+:i2sitsip	BOUND ;
+PN/sow+:sow	BOUND ;
+PN/sohk+:sohk	BOUND ;
+PN/sok+:i2sok	BOUND ;
+PN/sok+:sok	BOUND ;
+PN/soohk+:soohk	BOUND ;
+PN/sopow+:i2sopow	BOUND ;
+PN/sopok+:i2sopok	BOUND ;
+PN/sopoya'p+:i2sopoya'p	BOUND ;
+PN/ssik+:i2ssik	BOUND ;
+PN/ssk+:ssk	BOUND ;
+PN/sski+:sski	BOUND ;
+PN/sskihta+:i2sskihta	BOUND ;
+PN/sskohto+:i2sskohto	BOUND ;
+PN/sskonát+:i2sskonát	BOUND ;
+PN/sso+:i2sso	BOUND ;
+PN/ssp+:ssp	BOUND ;
+PN/sspi+:sspi	BOUND ;
+PN/sspik+:sspik	BOUND ;
+PN/sspom+:sspom	BOUND ;
+PN/sstsaap+:i2sstsaap	BOUND ;
+PN/sstsim+:i2sstsim	BOUND ;
+PN/wa'kot+:wa'kot	BOUND ;
+PN/wa's+:wa's	BOUND ;
+PN/wa'sok+:wa'sok	BOUND ;
+PN/waahkiááp+:waahkiááp	BOUND ;
+PN/waaist+:waaist	BOUND ;
+PN/waaká+:waaká	BOUND ;
+PN/waami't+:waami't	BOUND ;
+PN/waamis+:waamis	BOUND ;
+PN/waamohs+:waamohs	BOUND ;
+PN/waamsskaap+:waamsskaap	BOUND ;
+PN/waanao'k+:waanao'k	BOUND ;
+PN/waanat+:waanat	BOUND ;
+PN/waaniit+:waaniit	BOUND ;
+PN/waapat+:waapat	BOUND ;
+PN/waapatohs+:waapatohs	BOUND ;
+PN/waapi+:waapi	BOUND ;
+PN/waapo'k+:waapo'k	BOUND ;
+PN/waatow+:waatow	BOUND ;
+PN/waattsi+:waattsi	BOUND ;
+PN/waawatt+:waawatt	BOUND ;
+PN/waawow+:waawow	BOUND ;
+PN/waist+:waist	BOUND ;
+PN/wattsi+:wattsi	BOUND ;
+PN/wayam+:wayam	BOUND ;
+PN/yááhs+:yááhs	BOUND ;
+PN/yaam+:yaam	BOUND ;
+PN/yaam+:yaam	BOUND ;
+PN/yaam+:yaam	BOUND ;
+PN/yaam+:yaam	BOUND ;
+PN/yiistap+:yiistap	BOUND ;
+PN/yiss+:yiss	BOUND ;
+PN/yissk+:yissk	BOUND ;
+PN/yoohk+:yoohk	BOUND ;
+PN/yoohkiit+:yoohkiit	BOUND ;
+PN/yootsip+:yootsip	BOUND ;	
 
 LEXICON BOUND
-! 0:%< PREFIXES ;
-! 0:%<	VERB_STEMS ;
 0:%< PV_COUNTER ;
 
 LEXICON PV_COUNTER
-@D.pvcount@@P.pvcount.1@ PREFIXES2 ;
-@R.pvcount.1@@P.pvcount.2@ PREFIXES2 ;
-@R.pvcount.2@@P.pvcount.3@ PREFIXES2 ;
-@R.pvcount.3@@P.pvcount.4@ PREFIXES2 ;
-@R.pvcount.4@@P.pvcount.5@ PREFIXES2 ;
-
-! Prefixed Prenouns
-
-LEXICON PRENOUNS
-0			NOUN_STEMS ;
-PN/a's+:a's	PRENOUNS_BOUND ;
-PN/aahs+:aahs	PRENOUNS_BOUND ;
-PN/aaká+:aaká	PRENOUNS_BOUND ;
-PN/aamsskááp+:aamsskááp	PRENOUNS_BOUND ;
-PN/aapám+:aapám	PRENOUNS_BOUND ;
-PN/aapát+:aapát	PRENOUNS_BOUND ;
-PN/áápi+:áápi	PRENOUNS_BOUND ;
-PN/aatow+:aatow	PRENOUNS_BOUND ;
-PN/ahkiaap+:ahkiaap	PRENOUNS_BOUND ;
-PN/aiist+:aiist	PRENOUNS_BOUND ;
-PN/aká+:aká	PRENOUNS_BOUND ;
-PN/akim+:akim	PRENOUNS_BOUND ;
-PN/akkaw+:akkaw	PRENOUNS_BOUND ;
-PN/anao'k+:anao'k	PRENOUNS_BOUND ;
-PN/apak+:apak	PRENOUNS_BOUND ;
-PN/apoyi+:apoyi	PRENOUNS_BOUND ;
-PN/atso't+:atso't	PRENOUNS_BOUND ;
-PN/áwatt+:áwatt	PRENOUNS_BOUND ;
-PN/ayaam+:ayaam	PRENOUNS_BOUND ;
-PN/i'nák+:i'nák	PRENOUNS_BOUND ;
-PN/i'táám+:i'táám	PRENOUNS_BOUND ;
-PN/i'táám+:i'táám	PRENOUNS_BOUND ;
-PN/i'tsin+:i'tsin	PRENOUNS_BOUND ;
-PN/i'tsk+:i'tsk	PRENOUNS_BOUND ;
-PN/i'tsk+:i'tsk	PRENOUNS_BOUND ;
-PN/ihtsis+:ihtsis	PRENOUNS_BOUND ;
-PN/iinohk+:iinohk	PRENOUNS_BOUND ;
-PN/iitaam+:iitaam	PRENOUNS_BOUND ;
-PN/iitaam+:iitaam	PRENOUNS_BOUND ;
-PN/iitoom+:iitoom	PRENOUNS_BOUND ;
-PN/ííyik+:ííyik	PRENOUNS_BOUND ;
-PN/ikaw+:ikaw	PRENOUNS_BOUND ;
-PN/ikaw+:ikaw	PRENOUNS_BOUND ;
-PN/ikaaw+:ikaaw	PRENOUNS_BOUND ;
-PN/ikakk+:ikakk	PRENOUNS_BOUND ;
-PN/ikako+:ikako	PRENOUNS_BOUND ;
-PN/iki'ta+:iki'ta	PRENOUNS_BOUND ;
-PN/ikim+:ikim	PRENOUNS_BOUND ;
-PN/ikkahs+:ikkahs	PRENOUNS_BOUND ;
-PN/ikkak+:ikkak	PRENOUNS_BOUND ;
-PN/ikksk+:ikksk	PRENOUNS_BOUND ;
-PN/ikkst+:ikkst	PRENOUNS_BOUND ;
-PN/ikotsk+:ikotsk	PRENOUNS_BOUND ;
-PN/iksi's+:iksi's	PRENOUNS_BOUND ;
-PN/iksiw+:iksiw	PRENOUNS_BOUND ;
-PN/iksiiksk+:iksiiksk	PRENOUNS_BOUND ;
-PN/iksikk+:iksikk	PRENOUNS_BOUND ;
-PN/iksim+:iksim	PRENOUNS_BOUND ;
-PN/iksimat+:iksimat	PRENOUNS_BOUND ;
-PN/iksisap+:iksisap	PRENOUNS_BOUND ;
-PN/iksissta'p+:iksissta'p	PRENOUNS_BOUND ;
-PN/iksisto+:iksisto	PRENOUNS_BOUND ;
-PN/iksow+:iksow	PRENOUNS_BOUND ;
-PN/imi+:imi	PRENOUNS_BOUND ;
-PN/immak+:immak	PRENOUNS_BOUND ;
-PN/inap+:inap	PRENOUNS_BOUND ;
-PN/inn+:inn	PRENOUNS_BOUND ;
-PN/innaap+:innaap	PRENOUNS_BOUND ;
-PN/innis+:innis	PRENOUNS_BOUND ;
-PN/inno+:inno	PRENOUNS_BOUND ;
-PN/inok+:inok	PRENOUNS_BOUND ;
-PN/insstaw+:insstaw	PRENOUNS_BOUND ;
-PN/ipahk+:ipahk	PRENOUNS_BOUND ;
-PN/ipahp+:ipahp	PRENOUNS_BOUND ;
-PN/ipahs+:ipahs	PRENOUNS_BOUND ;
-PN/ipaht+:ipaht	PRENOUNS_BOUND ;
-PN/ipahtsi+:ipahtsi	PRENOUNS_BOUND ;
-PN/ipi'k+:ipi'k	PRENOUNS_BOUND ;
-PN/ipiiw+:ipiiw	PRENOUNS_BOUND ;
-PN/ipiihk+:ipiihk	PRENOUNS_BOUND ;
-PN/ipisat+:ipisat	PRENOUNS_BOUND ;
-PN/ipíttsik+:ipíttsik	PRENOUNS_BOUND ;
-PN/ipow+:ipow	PRENOUNS_BOUND ;
-PN/ipoohsap+:ipoohsap	PRENOUNS_BOUND ;
-PN/ippat+:ippat	PRENOUNS_BOUND ;
-PN/ippom+:ippom	PRENOUNS_BOUND ;
-PN/ippot+:ippot	PRENOUNS_BOUND ;
-PN/ipsst+:ipsst	PRENOUNS_BOUND ;
-PN/isakoow+:isakoow	PRENOUNS_BOUND ;
-PN/isam+:isam	PRENOUNS_BOUND ;
-PN/isap+:isap	PRENOUNS_BOUND ;
-PN/iso+:iso	PRENOUNS_BOUND ;
-PN/iss+:iss	PRENOUNS_BOUND ;
-PN/issk+:issk	PRENOUNS_BOUND ;
-PN/isskihta'+:isskihta'	PRENOUNS_BOUND ;
-PN/isspí+:isspí	PRENOUNS_BOUND ;
-PN/isspik+:isspik	PRENOUNS_BOUND ;
-PN/istaaht+:istaaht	PRENOUNS_BOUND ;
-PN/istot+:istot	PRENOUNS_BOUND ;
-PN/isttani+:isttani	PRENOUNS_BOUND ;
-PN/isttohk+:isttohk	PRENOUNS_BOUND ;
-PN/isttsi+:isttsi	PRENOUNS_BOUND ;
-PN/isttsik+:isttsik	PRENOUNS_BOUND ;
-PN/isttsip+:isttsip	PRENOUNS_BOUND ;
-PN/itapiksst+:itapiksst	PRENOUNS_BOUND ;
-PN/itsiw+:itsiw	PRENOUNS_BOUND ;
-PN/itsiiy+:itsiiy	PRENOUNS_BOUND ;
-PN/itsik+:itsik	PRENOUNS_BOUND ;
-PN/itsin+:itsin	PRENOUNS_BOUND ;
-PN/iyoomok+:iyoomok	PRENOUNS_BOUND ;
-PN/ki'taw+:ki'taw	PRENOUNS_BOUND ;
-PN/ki'tsi+:ki'tsi	PRENOUNS_BOUND ;
-PN/kiihtsip+:kiihtsip	PRENOUNS_BOUND ;
-PN/komono+:komono	PRENOUNS_BOUND ;
-PN/ksiw+:ksiw	PRENOUNS_BOUND ;
-PN/ksikk+:ksikk	PRENOUNS_BOUND ;
-PN/ksis+:ksis	PRENOUNS_BOUND ;
-PN/ma'k+:ma'k	PRENOUNS_BOUND ;
-PN/maan+:maan	PRENOUNS_BOUND ;
-PN/maká+:maká	PRENOUNS_BOUND ;
-PN/máóhk+:máóhk	PRENOUNS_BOUND ;
-PN/matóóm+:matóóm	PRENOUNS_BOUND ;
-PN/matsiw+:matsiw	PRENOUNS_BOUND ;
-PN/mattsi+:mattsi	PRENOUNS_BOUND ;
-PN/mi'ki+:mi'ki	PRENOUNS_BOUND ;
-PN/mii+:mii	PRENOUNS_BOUND ;
-PN/miinohk+:miinohk	PRENOUNS_BOUND ;
-PN/míístap+:míístap	PRENOUNS_BOUND ;
-PN/mikksk+:mikksk	PRENOUNS_BOUND ;
-PN/misam+:misam	PRENOUNS_BOUND ;
-PN/mokamo't+:mokamo't	PRENOUNS_BOUND ;
-PN/naam+:naam	PRENOUNS_BOUND ;
-PN/náám+:náám	PRENOUNS_BOUND ;
-PN/naatow+:naatow	PRENOUNS_BOUND ;
-PN/naatsa+:naatsa	PRENOUNS_BOUND ;
-PN/naaw+:naaw	PRENOUNS_BOUND ;
-PN/ni'tóóhk+:ni'tóóhk	PRENOUNS_BOUND ;
-PN/niit+:niit	PRENOUNS_BOUND ;
-PN/nimm+:nimm	PRENOUNS_BOUND ;
-PN/noohkíít+:noohkíít	PRENOUNS_BOUND ;
-PN/o'k+:o'k	PRENOUNS_BOUND ;
-PN/o'kstsik+:o'kstsik	PRENOUNS_BOUND ;
-PN/o't+:o't	PRENOUNS_BOUND ;
-PN/o'tak+:o'tak	PRENOUNS_BOUND ;
-PN/o'tami+:o'tami	PRENOUNS_BOUND ;
-PN/o'topi+:o'topi	PRENOUNS_BOUND ;
-PN/o'totam+:o'totam	PRENOUNS_BOUND ;
-PN/o'tsat+:o'tsat	PRENOUNS_BOUND ;
-PN/o'tsitsk+:o'tsitsk	PRENOUNS_BOUND ;
-PN/o'tssat+:o'tssat	PRENOUNS_BOUND ;
-PN/ohkit+:ohkit	PRENOUNS_BOUND ;
-PN/ohko+:ohko	PRENOUNS_BOUND ;
-PN/ohkom+:ohkom	PRENOUNS_BOUND ;
-PN/ohkon+:ohkon	PRENOUNS_BOUND ;
-PN/ohpo+:ohpo	PRENOUNS_BOUND ;
-PN/ohpok+:ohpok	PRENOUNS_BOUND ;
-PN/ohsi+:ohsi	PRENOUNS_BOUND ;
-PN/ohso'kap+:ohso'kap	PRENOUNS_BOUND ;
-PN/ohsohkat+:ohsohkat	PRENOUNS_BOUND ;
-PN/ohtow+:ohtow	PRENOUNS_BOUND ;
-PN/ohtssap+:ohtssap	PRENOUNS_BOUND ;
-PN/ok+:ok	PRENOUNS_BOUND ;
-PN/okaki+:okaki	PRENOUNS_BOUND ;
-PN/okamo't+:okamo't	PRENOUNS_BOUND ;
-PN/ómahk+:ómahk	PRENOUNS_BOUND ;
-PN/omat+:omat	PRENOUNS_BOUND ;
-PN/omatap+:omatap	PRENOUNS_BOUND ;
-PN/omia'nist+:omia'nist	PRENOUNS_BOUND ;
-PN/omow+:omow	PRENOUNS_BOUND ;
-PN/onnat+:onnat	PRENOUNS_BOUND ;
-PN/oohsi+:oohsi	PRENOUNS_BOUND ;
-PN/oomok+:oomok	PRENOUNS_BOUND ;
-PN/ooto+:ooto	PRENOUNS_BOUND ;
-PN/opam+:opam	PRENOUNS_BOUND ;
-PN/opi+:opi	PRENOUNS_BOUND ;
-PN/opott+:opott	PRENOUNS_BOUND ;
-PN/otahko+:otahko	PRENOUNS_BOUND ;
-PN/otam+:otam	PRENOUNS_BOUND ;
-PN/otats+:otats	PRENOUNS_BOUND ;
-PN/otoom+:otoom	PRENOUNS_BOUND ;
-PN/otsik+:otsik	PRENOUNS_BOUND ;
-PN/otsistap+:otsistap	PRENOUNS_BOUND ;
-PN/ótssko+:ótssko	PRENOUNS_BOUND ;
-PN/ottapit+:ottapit	PRENOUNS_BOUND ;
-PN/pa'ksik+:pa'ksik	PRENOUNS_BOUND ;
-PN/paahk+:paahk	PRENOUNS_BOUND ;
-PN/paahksíst+:paahksíst	PRENOUNS_BOUND ;
-PN/paaht+:paaht	PRENOUNS_BOUND ;
-PN/paahtsi+:paahtsi	PRENOUNS_BOUND ;
-PN/pi'k+:pi'k	PRENOUNS_BOUND ;
-PN/pinááp+:pinááp	PRENOUNS_BOUND ;
-PN/pisát+:pisát	PRENOUNS_BOUND ;
-PN/pisst+:pisst	PRENOUNS_BOUND ;
-PN/poohsap+:poohsap	PRENOUNS_BOUND ;
-PN/sa+:sa	PRENOUNS_BOUND ;
-PN/sa'kap+:sa'kap	PRENOUNS_BOUND ;
-PN/saahk+:saahk	PRENOUNS_BOUND ;
-PN/saat+:saat	PRENOUNS_BOUND ;
-PN/saayippom+:saayippom	PRENOUNS_BOUND ;
-PN/sahp+:sahp	PRENOUNS_BOUND ;
-PN/saikima'+:saikima'	PRENOUNS_BOUND ;
-PN/saiksistt+:saiksistt	PRENOUNS_BOUND ;
-PN/sainnis+:sainnis	PRENOUNS_BOUND ;
-PN/sainskaka'p+:sainskaka'p	PRENOUNS_BOUND ;
-PN/saip+:saip	PRENOUNS_BOUND ;
-PN/sakak+:sakak	PRENOUNS_BOUND ;
-PN/sako+:sako	PRENOUNS_BOUND ;
-PN/saoki+:saoki	PRENOUNS_BOUND ;
-PN/sap+:sap	PRENOUNS_BOUND ;
-PN/sapa'kot+:sapa'kot	PRENOUNS_BOUND ;
-PN/sata+:sata	PRENOUNS_BOUND ;
-PN/satt+:satt	PRENOUNS_BOUND ;
-PN/sawommit+:sawommit	PRENOUNS_BOUND ;
-PN/sawotsistap+:sawotsistap	PRENOUNS_BOUND ;
-PN/sayippom+:sayippom	PRENOUNS_BOUND ;
-PN/si'k+:si'k	PRENOUNS_BOUND ;
-PN/sik+:sik	PRENOUNS_BOUND ;
-PN/sikaapi+:sikaapi	PRENOUNS_BOUND ;
-PN/sikim+:sikim	PRENOUNS_BOUND ;
-PN/sikotahko+:sikotahko	PRENOUNS_BOUND ;
-PN/sisákk+:sisákk	PRENOUNS_BOUND ;
-PN/sisik+:sisik	PRENOUNS_BOUND ;
-PN/sistsik+:sistsik	PRENOUNS_BOUND ;
-PN/sitok+:sitok	PRENOUNS_BOUND ;
-PN/sitsip+:sitsip	PRENOUNS_BOUND ;
-PN/sow+:sow	PRENOUNS_BOUND ;
-PN/sohk+:sohk	PRENOUNS_BOUND ;
-PN/sok+:sok	PRENOUNS_BOUND ;
-PN/sok+:sok	PRENOUNS_BOUND ;
-PN/soohk+:soohk	PRENOUNS_BOUND ;
-PN/sopow+:sopow	PRENOUNS_BOUND ;
-PN/sopok+:sopok	PRENOUNS_BOUND ;
-PN/sopoya'p+:sopoya'p	PRENOUNS_BOUND ;
-PN/ssik+:ssik	PRENOUNS_BOUND ;
-PN/ssk+:ssk	PRENOUNS_BOUND ;
-PN/sski+:sski	PRENOUNS_BOUND ;
-PN/sskihta+:sskihta	PRENOUNS_BOUND ;
-PN/sskohto+:sskohto	PRENOUNS_BOUND ;
-PN/sskonát+:sskonát	PRENOUNS_BOUND ;
-PN/sso+:sso	PRENOUNS_BOUND ;
-PN/ssp+:ssp	PRENOUNS_BOUND ;
-PN/sspi+:sspi	PRENOUNS_BOUND ;
-PN/sspik+:sspik	PRENOUNS_BOUND ;
-PN/sspom+:sspom	PRENOUNS_BOUND ;
-PN/sstsaap+:sstsaap	PRENOUNS_BOUND ;
-PN/sstsim+:sstsim	PRENOUNS_BOUND ;
-PN/wa'kot+:wa'kot	PRENOUNS_BOUND ;
-PN/wa's+:wa's	PRENOUNS_BOUND ;
-PN/wa'sok+:wa'sok	PRENOUNS_BOUND ;
-PN/waahkiááp+:waahkiááp	PRENOUNS_BOUND ;
-PN/waaist+:waaist	PRENOUNS_BOUND ;
-PN/waaká+:waaká	PRENOUNS_BOUND ;
-PN/waami't+:waami't	PRENOUNS_BOUND ;
-PN/waamis+:waamis	PRENOUNS_BOUND ;
-PN/waamohs+:waamohs	PRENOUNS_BOUND ;
-PN/waamsskaap+:waamsskaap	PRENOUNS_BOUND ;
-PN/waanao'k+:waanao'k	PRENOUNS_BOUND ;
-PN/waanat+:waanat	PRENOUNS_BOUND ;
-PN/waaniit+:waaniit	PRENOUNS_BOUND ;
-PN/waapat+:waapat	PRENOUNS_BOUND ;
-PN/waapatohs+:waapatohs	PRENOUNS_BOUND ;
-PN/waapi+:waapi	PRENOUNS_BOUND ;
-PN/waapo'k+:waapo'k	PRENOUNS_BOUND ;
-PN/waatow+:waatow	PRENOUNS_BOUND ;
-PN/waattsi+:waattsi	PRENOUNS_BOUND ;
-PN/waawatt+:waawatt	PRENOUNS_BOUND ;
-PN/waawow+:waawow	PRENOUNS_BOUND ;
-PN/waist+:waist	PRENOUNS_BOUND ;
-PN/wattsi+:wattsi	PRENOUNS_BOUND ;
-PN/wayam+:wayam	PRENOUNS_BOUND ;
-PN/yááhs+:yááhs	PRENOUNS_BOUND ;
-PN/yaam+:yaam	PRENOUNS_BOUND ;
-PN/yaam+:yaam	PRENOUNS_BOUND ;
-PN/yaam+:yaam	PRENOUNS_BOUND ;
-PN/yaam+:yaam	PRENOUNS_BOUND ;
-PN/yiistap+:yiistap	PRENOUNS_BOUND ;
-PN/yiss+:yiss	PRENOUNS_BOUND ;
-PN/yissk+:yissk	PRENOUNS_BOUND ;
-PN/yoohk+:yoohk	PRENOUNS_BOUND ;
-PN/yoohkiit+:yoohkiit	PRENOUNS_BOUND ;
-PN/yootsip+:yootsip	PRENOUNS_BOUND ;		
-	
-LEXICON PRENOUNS_BOUND
-0:%< PRENOUNS ;
+@D.pvcount@@P.pvcount.1@ PRENOUNS ;
+@R.pvcount.1@@P.pvcount.2@ PRENOUNS ;
+@R.pvcount.2@@P.pvcount.3@ PRENOUNS ;
+@R.pvcount.3@@P.pvcount.4@ PRENOUNS ;
+@R.pvcount.4@@P.pvcount.5@ PRENOUNS ;
+@R.pvcount.5@@P.pvcount.6@ PRENOUNS ;
 
 !!!!! After this, we collect the stems !!!!!
 
 ! Blackfoot Regular Noun Stems
 
-! Below are the regular INDEPENDENT noun stems and their allomorphic forms. 
-! They are organized as prefixed and non-prefixed forms 
+! Below are the INDEPENDENT noun stems and their allomorphic forms (only if the allomorph is irregular). 
 
 LEXICON NOUN_STEMS
-INDEP_NA_STEMS ;
-INDEP_NI_STEMS ;
+@P.pos.NA@ INDEP_NA_STEMS ;
+@P.pos.NI@ INDEP_NI_STEMS ;
+@P.pos.VAI@ INDEP_NA_STEMS ;
+@P.pos.VII@ INDEP_NI_STEMS ;
 
 ! When working with the lexicon, be sure to know the following lexical information:
 ! 1. Does it take the /-im/ suffix when possessed? If so, use NA_IM or NI_IM
-! 2. Does the word take a short person prefix? If so, put X at the beginning of the stem
-! 3. What allomorphy does the stem undergo? If it takes /oh-/, put /h/ at the beginning of the stem. If /i/ -> /o/, use /i/ 
+! 2. Does the word take a short person prefix? If so, put %^SP at the beginning of the stem
+! 3. What allomorphy does the stem undergo? If it takes oh-, put h at the beginning of the stem. If i -> o, use i3. If a -> i2, use a4. 
+! If a -> o, use a3. 
 ! 4. Everything else should be accounted for in the phonology
 
+! niksíssta
+
 LEXICON INDEP_NA_STEMS
-! imitááwa:i2mitáá               NA_IM ;
-! i'nokáá'tsiwa:i'nokáá'tsis      NA ;
-! póósa:hpóós                    NA_IM ;   
-! áákiiwa:aakíí                    NA ;
-! nínaawa:nínaa                     NA ;
-! ohkíímaana:ohkíímaan            NA ;
-! miistsísa:miistsís               NA ;
-! pónna:hpónn                      NA ;
-! isttoána:%^SPittoán         NA ;
-! moksísa:%^SPmoksís           NA ;    
-! ísska:%^SPí3ssk               NA ; ! Prefixed form is óóhka
-
-! SEE IF THIS CAN BE DONE WITH SOME PYTHON CODING
-
+imitááwa:i3mitáá NA_IM ;
+i'nokáá'tsiwa:i'nokáá'tsis NA ;
+póósa:hpóós NA_IM ;   
+áákiiwa:aakíí NA ;
+nínaawa:nínaa NA ;
+ohkíímaana:ohkíímaan NA ;
+miistsísa:miistsís NA ;
+pónna:hpónn NA ;
+isttoána:%^SPi2sttoán NA ;
+moksísa:%^SPmoksís NA ;    
+ísska:%^SPí3ssk NA ; ! Prefixed form is óóhka
+ísska:%^SPóóhka NA ; ! Prefixed form is óóhka
 ! Below is the full list of NI nouns. They need to be edited according to the pattern of the example nouns above.
 ! They were retrieved from the inanimate noun list in the browse section of the dictionary.
-
 ! Pairs		Part_of_Speech
-iistapipaitapiiyiwa:yiistapipaitapiiyi	NA ;
-tsíísiiwa:tsíísii	NA ;
-tsikatsííwa:tsikatsíí	NA ;
-tsaapinííkoana:tsaapinííkoan	NA ;
-tátsikikkónamaana:tátsikikkónamaan	NA ;
-tapimiima:tapimiim	NA ;
-tapikáíimiiwa:tapikáíimii	NA ;
-siksinnakiwa:siksinnaki	NA ;
-siksikáwa:siksiká	NA ;
-sikohksimiiksiwa:sikohkitsimiiksi	NA ;
-saahsiwa:saahsi	NA ;
-saahsáísso'kakiwa:saahsáísso'kitaki	NA ;
-sa'aiki'soma:sa'aiki'somm	NA ;
-sawómitsiki'soma:sawómmitsiki'somm	NA ;
-stá'aowa:istá'ao	NA ; ! i dissapears when NOT prefixed, and is a breaking i. It causes gemination in words starting with s
-stamika:stamik	NA_IM ;
-staahtsitsisa:istaahtsitsis	NA ;
-sta'koomiiwa:sta'koomii	NA ;
-sspóóhtsiwa:sspóóhtsi	NA ;
-sspopíiwa:sspopíi	NA ;
-sspomitápiwa:sspomitápi	NA ;
-sspattakinakima:sspattakinakimm	NA ;
-sspayiikoana:sspayiikoan	NA ;
-sskima:sskimm	NA ;
-sóótokiaawa:sóótokiaa	NA ;
-sotsskímaa'tsisa:sotsskímaa'tsis	NA ;
-sotánikimaa'tsisa:sotánikimaa'tsis	NA ;
-sopokssiwa:isopokssi	NA ;
-sopokíítsitapiikoana:sopokíítsitapiikoan	NA ;
-sootamsstaawa:sootamsstaa	NA ;
-sooyikkinssimoyiwa:sooyikkinssimoyi	NA ;
-sooyiipihtsiwa:sooyiipihtsi	NA ;
-sooyáíaiihtsiwa:sooyáíaiihtsi	NA ;
-soohksiisiimsstaana:soohksiisiimsstaan	NA ;
-soohkoyíínaamaawa:soohkoyíínaamaa	NA ;
-soohkáókomiiwa:soohkáókomii	NA ;
-somáána:somáán	NA ;
-sokopisáa'tsisa:isokopisáa'tsis	NA ;
-soyóttaksskawa:isoyóttaksska	NA ; ! i goes on all words beginning with soy, as this morpheme seems to always show this alternation
-soyomitaawa:isoyomitaa	NA ;
-soyíítapiwa:isoyíítapi	NA ;
-soyiiksiinawa:isoyiiksiina	NA ;
-soyii'kayiwa:isoyii'kayi	NA ;
-soy'sksíssiwa:isoy'sksíssi	NA ;
-skína'sa:skína's	NA ;
-skiníípikaniwa:skiníípikani	NA ;
-skiima:iskiim	NA ;
-síkohko'sa:síkohko's	NA ;
-sííksikapaanssiwa:sííksikapaanssi	NA ;
-sisttsíwa:isisttsí	NA ;
-sisóya'tsisa:sisóya'tsis	NA ;
-sisomma:isisomm	NA ;
-sisiinaawa:sisiinitaa	NA ;
-sisákkomiiwa:sisákkomii	NA ;
-sisákkomahkatayowa:sisákkomahkatayo	NA ;
-sisákkiikayiwa:sisákkiikayi	NA ;
-sipisttoowa:sipisttoo	NA ;
-sinopááwa:isinopáá	NA ;
-simitsiima:simitsiim	NA ;
-sikssíkapiiwa:sikssíkapii	NA ;
-siksí'ksskima:siksí'ksskimm	NA ;
-siksikanikiisayiiwa:siksikanikiisayii	NA ;
-siksáápiikoana:siksáápiikoan	NA ;
-sikó'tokaaniwa:sikó'tokaani	NA ;
-sikohpoyitaipanikima:sikohpoyitaipanikimm	NA ;
-sikohkiaayowa:sikohkiaayo	NA ;
-sikimiota'siwa:sikimiota'si	NA ;
-sikimiiniiwaniiwa:sikimiiniiwanii	NA ;
-sikihtsisoowa:isikihtsisoo	NA ;
-siká'saokkoyiwa:siká'saokkoyi	NA ;
-sikapootsiwa:sikapootsi	NA ;
-sikaiipisstsiwa:sikaiipisstsi	NA ;
-sikaapsskiwa:sikaapsski	NA ;
-sikaaattsistaawa:sikaaattsistaa	NA ;
-siinaisskiwa:isiinaisski	NA ;
-siiksinokowohtoka:isiiksinokowohtok	NA ;
-siikama:siikamm	NA ;
-siiyíí'kayiwa:siiyíí'kayi	NA ;
-siiyáá'kayiwa:siiyáá'kayi	NA ;
-si'káána:si'káán	NA ;
-sáóka'sima:sáóka'simm	NA ;
-sáí'ittsikotoyiwa:isáí'ittsikotoyi	NA ;
-sapikamaana:sapikamaan	NA ;
-saooko'pisa:isaooko'pis	NA ;
-saoksspa:saokssp	NA ;
-saokíísipisttoowa:saokíísipisttoo	NA ;
-saokiipisatsiinikima:saokiipisatsiinikimm	NA ;
-saokiikakkoowa:saokiikakkoo	NA ;
-saokiawakaasiwa:saokiawakaasi	NA ;
-samákinna:samákinn	NA ;
-saisí'toya'tsisa:saisí'toya'tsis	NA ;
-saipai'tapiwa:saipai'tapi	NA ;
-saapápista'tsisa:saapápista'tsis	NA ;
-saa'kssoyaa'tsisa:saa'kssoyaa'tsis	NA ;
-saahkómaapiwa:isaahkómaapi	NA ;
-saahkinaawa:saahkinaa	NA ;
-sayaittsikihtaana:sayaittsikihtaan	NA ;
-sa'áíwa:sa'áí	NA ;
-sawómitsitapiwa:sawómmitsitapi	NA ;
-sawómitsaapiikoana:sawómmitsaapiikoan	NA ;
-pottstakiiksiwa:pottstakiiksi	NA ;
-píítaiki'soma:píítaiki'somm	NA ;
-pitsiiksiinaitapiikoana:pitsiiksiinaitapiikoan	NA ;
-piikániwa:piikáni	NA ;
-póósipokaawa:hpóósipokaa	NA ;
-pónna:pónn	NA ;
-poosa:poos	NA_IM ;
-poonisáyiwa:hpoonisáyi	NA ;
-pookáóhtaohpomao'pa:pookáóhtaohpommao'p	NA ;
-pookáíksskima:pookáíksskim	NA ;
-pookááwa:ipookáá	NA ; ! Another example of the dissappearing breaking I
-poohkísstoya'tsisa:poohkísstoya'tsis	NA ;
-ponokáómitaawa:ponokáómitaa	NA ; ! This has a VERY strange allomorphic pattern. Solution is just to change the whole word in the phonology.
-ponokáwa:ponoká	NA ; ! This has a VERY strange allomorphic pattern. Solution is just to change the whole word in the phonology.
-pomíísisttsiiwa:pomíísisttsii	NA ;
-pokóna:pokón	NA ; ! This one is a little weird too. You might want to check out the rules to make sure they'll work.
-pokínssomowa:pokínssomo	NA ;
-pokáaima'tsisa:ipokáaima'tsis	NA ;
-pokáaakiiwa:ipokáaakii	NA ;
-poi'sksíwa:poi'sksí	NA ;
-poyíí'ksskima:poyíí'ksskimm	NA ;
-po'tohkípistaana:po'tohkípistaan	NA ;
-po'táána:po'táán	NA ;
-po'táa'tsisa:po'táa'tsis	NA ;
-píítaiáíwa:píítaiáí	NA ;
-píítaawa:ipíítaa	NA ;
-pííkohksiksima:ipííkohksiksimm	NA ;
-pí'kihtaana:pí'kihtaan	NA ;
-pitsííksiinaawa:pitsííksiinaa	NA ;
-pisttoowa:pisttoo	NA ;
-pisspsksiwa:pisspsksi	NA ;
-pisatsiinikima:pisatsiinikimm	NA ;
-pinotóyiwa:ipinotóyi	NA ;
-pinaapisinaawa:pinaapisinaa	NA ;
-piksííksiinaawa:piksííksiinaa	NA ;
-piinotóyiwa:piinotóyi	NA ;
-piiksikaohsiwa:piiksikaohsi	NA ;
-piikokíwa:ipiikokí	NA ;
-pi'kssííwa:pi'kssíí	NA ;
-pááksipaawa:pááksipaa	NA ;
-paanssína:paanssín	NA ;
-paakahtaana:paakahtaan	NA ;
-paahtsííksistsikoma:paahtsííksistsikomm	NA ;
-paahtsiisipisttoowa:paahtsiisipisttoo	NA ;
-paahssaakiiwa:paahssaakii	NA ;
-paahpakssksissiiwa:paahpakssksissii	NA ;
-paahksimíma:paahksimímm	NA ;
-paahkoomokonaisikaayayiwa:paahkoomokonaisikaayayi	NA ;
-pa'ksíkoyiwa:pa'ksíkoyi	NA ;
-pa'ksíkahkoisa'aiwa:pa'ksíkahkoisa'ai	NA ;
-pawákksskiwa:pawákksski	NA ;
-pahtóóka:pahtóók	NA ;
-pahkoyiisaoka'sima:pahkoyiisaoka'simm	NA ;
-óóhkotoksíísinaikoana:Óóhkotoksíísinaikoan	NA ;
-ómahksíki'soma:Ómahksíki'somm	NA ;
-oohkotoksiisahkomaapiwa:oohkotoksiisahkomaapi	NA ;
-onistááhsisoka'sima:onistááhsisoka'sim	NA ;
-omahksikookstao'tsimaiksiwa:omahksikookstao'tsimaiksi	NA ;
-omahkokataooyiwa:omahkokataooyi	NA ;
-omahkátoyiiki'somiaato'sa:omahkátoyiiki'sommiaato's	NA ;
-ótapi'sina:ótapi'sin	NA ;
-ótahkohsóa'tsisa:ótahkohsóa'tsis	NA ;
-óóhkotoka:óóhkotok	NA ;
-ómahkssa'áíwa:ómahkssa'áí	NA ;
-ómahksípiitaawa:ómahksípiitaa	NA ;
-ómahksipi'kssííwa:ómahksipi'kssíí	NA ;
-ómahksi'kiimatawa:ómahksi'kiimata	NA ;
-ómahkínaotohtona:ómahkínaotohton	NA ;
-ómahkínaohtaohpomao'pa:ómahkínaohtaohpommao'p	NA ;
-ómahkínai'kskima:ómahkínai'kskimm	NA ;
-ómahki'tawáakiiwa:ómahki'tawáakii	NA ;
-ómahkapi'siwa:ómahkapi'si	NA ;
-ómahka'sa:ómahka's	NA ;
-óko'siipokaawa:óko'siipokaa	NA ;
-ottsííwaana:ottsííwaan	NA ;
-ottsikiikinaohsoa'tsisa:ottsikiikinaohsoa'tsis	NA ;
-otsskoisisttsiwa:otsskoisisttsi	NA ;
-otsskoiminnisa'aiwa:otsskoiminnisa'ai	NA ;
-otsskoiitsisa:otsskoiitsis	NA ;
-otskaponaawa:otskaponaa	NA ;
-otsímihkisa:otsímihkis	NA ;
-otokssksiwa:otokssksi	NA ;
-otáátoyiwa:otáátoyi	NA ;
-otááwa:otáá	NA ;
-otaikimio'tokaana:otaikimmio'tokaan	NA ;
-otaikima:otaikimm	NA ;
-otahkónsskiwa:otahkónsski	NA ;
-otahkóíssksisiyoohkiaayowa:otahkóíssksisiyoohkiaayo	NA ;
-otahkóíssksisiwa:otahkóíssksisi	NA ;
-otahkóísisttsiiwa:otahkóísisttsii	NA ;
-otahkoottsisa:otahkoottsis	NA ;
-otahkoikawa:otahkoika	NA ;
-otahkoiimiwa:otahkoiimi	NA ;
-otahkáápiwa:otahkáápi	NA ;
-otahkaaokayiiwa:otahkaaokayii	NA ;
-ostóyiwa:ostóyi	NA ;
-ostówaawayiwa:ostówaawayi	NA ;
-ootsímiwa:ootsími	NA ;
-ootsimiohkiaayowa:ootsimiohkiaayo	NA ;
-ootohtoyiwa:ootohtoyi	NA ;
-ootááwa:ootáá	NA ;
-ootaamaawanowa:ootaamaawano	NA ;
-oostóyiwa:oostóyi	NA ;
-oostówaawayiwa:oostówaawayi	NA ;
-oosipistaana:oosipistaan	NA ;
-oosáka:oosák	NA ;
-oohtsistsí(ki)na:oohtsistsí(ki)n	NA ;
-oohkóyimaa'tsisa:oohkóyimaa'tsis	NA ;
-oohka:oohk	NA ;
-onistaahsa:onistaahs	NA ;
-onistawa:onista	NA ;
-omííhkaa'tsisa:omííhkaa'tsis	NA ;
-omitaawa:omitaa	NA ;
-omahksstsiikssitsoma:omahksstsiikitssitsom	NA ;
-omahksstóókinnokaomitaawa:omahksstóókinnokaomitaa	NA ;
-omahksstookiwa:omahksstooki	NA ;
-omahkssiiksikapaanssiwa:omahkssiiksikapaanssi	NA ;
-omahksísttsiiksiinaawa:omahksísttsiiksiinaa	NA ;
-omahksísttoayáapiikoana:omahksísttoayáapiikoan	NA ;
-omahksisttsiipanikima:omahksisttsiipanikimm	NA ;
-omahksisttoaniwa:omahksisttoani	NA ;
-omahksipisspsksiiwa:omahksipisspsksii	NA ;
-omahksikiitokiiwa:omahksikiitokii	NA ;
-omahksikanaisskiinaawa:omahksikanaisskiinaa	NA ;
-omahksikaapiikoana:omahksikaapiikoan	NA ;
-omahksaksiina:omahksaksiin	NA ;
-omahkotsskoiisisttsiiwa:omahkotsskoiisisttsii	NA ;
-omahkooksisa:omahkookitsis	NA ;
-omahkokatawa:omahkokata	NA ;
-omahkohpokona:omahkohpokon	NA ;
-omahkínaiksskima:omahkínaiksskim	NA ;
-omahkinaawa:omahkinaa	NA ;
-omahkáattsistaawa:omahkáattsistaa	NA ;
-omahkatayowa:omahkatayo	NA ;
-omahkaokomiiwa:omahkaokomii	NA ;
-omahkanao'kssiwa:omahkanao'kssi	NA ;
-omahkainaka'siwa:omahkainaka'si	NA ;
-omahkai'stoowa:omahkai'stoo	NA ;
-omahkaapaawa:omahkaapaa	NA ;
-omahkapiwa:omahkitapi	NA ;
-okoyiima:okoyiim	NA ;
-oapsspa:oapssp	NA ;
-o'táksisstoyiikoana:o'táksisstoyiikoan	NA ;
-o'táksisstoyiwa:o'táksisstoyi	NA ;
-o'taksiksiwa:o'taksiksi	NA ;
-o'takáínaka'siwa:o'takáínaka'si	NA ;
-o'sohkiiwa:o'sohkii	NA ;
-o'kstsikihkiniwa:o'kstsikihkini	NA ;
-o'kotónaawa:o'kotónaa	NA ;
-o'kia'pitapiwa:o'kia'pitapi	NA ;
-ohtookipisa:ohtookipis	NA ;
-ohpoosa:ohpoos	NA ;
-ohpatóttssina:ohpatóttssin	NA ;
-ohko'sa:ohko's	NA ;
-ohkinniksiwa:ohkinniksi	NA ;
-ohkinniinaawa:ohkinniinaa	NA ;
-ohkinna:ohkinn	NA ;
-ohkiimaana:ohkiimaan	NA ;
-ohkiááyowa:ohkiááyo	NA ;
-niípiaato'sa:niípiaato's	NA ;
-niitsísinaawa:niitsísinaa	NA ;
-niipóómahkátoyiiksistsikaato'sa:niipóómahkátoyiiksistsikaato's	NA ;
-ni'tsitáípoyiwa:ni'tsitáípoyi	NA ;
-ni'taiitsskaawa:ni'taiitsskaa	NA ;
-náápiwa:náápi	NA ;
-namoopisiiksiwa:namoopisiiksi	NA ;
-noohkiitsitapiwa:noohkiitsitapi	NA ;
-nínaipokaawa:nínaipokaa	NA ;
-nínaawa:nínaa	NA ;
-níípomakiiwa:níípomakii	NA ;
-ní'poomiwa:ní'poomi	NA ;
-ní'pohkiima:ní'pohkiim	NA ;
-nioomítaawa:nioomítaa	NA ;
-nináímsskááakiiwa:nináímsskááakii	NA ;
-nináímsskaana:nináímsskaan	NA ;
-niitsítapiikoana:niitsítapiikoan	NA ;
-niitsítapiiwa:niitsítapii	NA ;
-niitsáápiikoana:niitsáápiikoan	NA ;
-niitá'pomiiwa:niitá'pomii	NA ;
-niitá'piaapiikoana:niitá'piaapiikoan	NA ;
-niistsímiiwa:niistsímii	NA ;
-niistsikápa'sa:niistsikápa's	NA ;
-niipóínsstaama:niipóínsstaam	NA ;
-niinskímao'sa'tsisa:niinskímao'sa'tsis	NA ;
-niináwaakiiwa:niináwaakii	NA ;
-ni'tsitápiwa:ni'tsitápi	NA ;
-ni'tohkátsainaka'siwa:ni'tohkátsainaka'si	NA ;
-ni'tanáó'ksiwa:ni'tanáó'ksi	NA ;
-ni'tawáakiiwa:ni'tawáakii	NA ;
-náísttooyiiksikkssooa'tsisa:náísttooyiiksikkssooa'tsis	NA ;
-náápiikoana:náápiikoan	NA ;
-náápiáakiiwa:náápiáakii	NA ;
-náámaakiiwa:náámaakii	NA ;
-náámaa1wa:náámaa1	NA ;
-nááipisstsiwa:nááipisstsi	NA ;
-nááipisstsáápikima:nááipisstsáápikimm	NA ;
-natáyowa:natáyo	NA ;
-naatóyinaimsskáakiiwa:naatóyinaimsskáakii	NA ;
-naatóyaapiikoana:naatóyaapiikoan	NA ;
-naató'siwa:naató'si	NA ;
-naatoyípi'kssiiwa:naatoyípi'kssii	NA ;
-naatowá'sa:naatowá's	NA ;
-naatowá'pínaawa:naatowá'pínaa	NA ;
-naatowá'paakiiwa:naatowá'paakii	NA ;
-naapstsiiiyiwa:naapstsiiiyi	NA ;
-naapíma:naapím	NA ;
-naapisskowa:naapissko	NA ;
-naamsskííwa:naamsskíí	NA ;
-naamóówa:naamóó	NA ;
-naamóísisttsiiwa:naamóísisttsii	NA ;
-naamoikina:naamoikin	NA ;
-naamítapiwa:naamítapi	NA ;
-mo'toisspitaiksiwa:mo'toisspitaiksi	NA ;
-mo'toisikskiiskiwa:mo'toisikskiiski	NA ;
-mo'toikkakssiiksiwa:mo'toikkakssiiksi	NA ;
-mo'kááto'sa:mo'kááto's	NA ;
-míísinsskiaakiiwa:míísinsskiaakii	NA ;
-mí'kiai'stoowawa:mí'kiai'stoowa	NA ;
-mí'kai'stoowawa:mí'kai'stoowa	NA ;
-misámiko'komiaato'sa:misámiko'komiaato's	NA ;
-miistsoohtaapiikamaawa:miistsoohtaapiikammaa	NA ;
-miaawaahpitsiiwa:miaawaahpitsii	NA ;
-mátsiyikkapisaiki'soma:mátsiyikkapisaiki'somm	NA ;
-máóto'kiiksiwa:máóto'kiiksi	NA ;
-máóhksiipssiwa:máóhksiipssi	NA ;
-mamioyiiksiwa:mamioyiiksi	NA ;
-makóyópisstookiwa:makóyópisstooki	NA ;
-makáísináaakiiwawa:makáísináaakiiwa	NA ;
-mai'stóóhpaatakiwa:mai'stóóhpaataki	NA ;
-mósstsiiwa:mósstsii	NA ;
-móótsiniipiitaawa:móótsiniipiitaa	NA ;
-móótsikkinaana:móótsikkinaan	NA ;
-móótoyi'sa:móótoyi's	NA ;
-móósa:móós	NA ;
-mottoksísa:mottoksís	NA ;
-mottáka:mották	NA ;
-motóísisttsiiwa:motóísisttsii	NA ;
-motokísa:motokís	NA ;
-mootskína'yiwa:mootskína'yi	NA ;
-mootokísa:mootokís	NA ;
-mookítsisa:mookítsis	NA ;
-moksísa:moksís	NA ;
-mokámiipoohko'sa:mokámiipoohko's	NA ;
-moápsspa:moápssp	NA ;
-mo'tóínsstaama:mo'tóínsstaam	NA ;
-mohsistsííkina:mohsistsííkin	NA ;
-mohksistóna:mohksistón	NA ;
-mohkíítohksistona:mohkíítohksiston	NA ;
-mohkinána:mohkinán	NA ;
-mohkamiiwa:mohkammii	NA ;
-míísinsskiwa:míísinsski	NA ;
-míísa'aiwa:míísa'ai	NA ;
-mí'sohpsskiwa:mí'sohpsski	NA ;
-mí'ksskimiksísoyiwa:mí'ksskimmiksísoyi	NA ;
-mí'ksskima:mí'ksskimm	NA ;
-mí'ksisttayiwa:mí'ksisttayi	NA ;
-mí'ko'tokaana:mí'ko'tokaan	NA ;
-missiwa:missi	NA ;
-misisaimi'soyiisa:misisaimi'soyiis	NA ;
-mióóhpokona:mióóhpokon	NA ;
-mióóhpokoiksiwa:mióóhpokoiksi	NA ;
-miníí'pokaawa:miníí'pokaa	NA ;
-miistsísa:miistsís	NA ;
-miistsáápaaawa:miistsáápaaa	NA ;
-miistáksoomahkihkinaawa:miistáksoomahkihkinaa	NA ;
-miistaksskima:miistaksskim	NA ;
-miiyáttsi'kayiwa:miiyáttsi'kayi	NA ;
-miá'nistsípssaakssina:miá'nistsípssaakssin	NA ;
-mia'tsiiwa:mia'tsii	NA ;
-mi'kssííkama:mi'kssííkamm	NA ;
-mi'ksiníttsiima:mi'ksiníttsiim	NA ;
-mi'ksikátsiwa:mi'ksikátsi	NA ;
-mi'kótso'tokaana:mi'kótso'tokaan	NA ;
-mi'kótaikima:mi'kótaikimm	NA ;
-mi'kiimatawa:mi'kiimata	NA ;
-mi'kapikssoyiisa:mi'kapikssoyiis	NA ;
-mi'kaníki'soyiiwa:mi'kaníki'soyii	NA ;
-máttsiipíítaawa:máttsiipíítaa	NA ;
-máttsáakiiwa:máttsáakii	NA ;
-máókiiwa:máókii	NA ;
-máóhkotooksskaawa:máóhkotooksskaa	NA ;
-máóhkowa'siwa:máóhkowa'si	NA ;
-máóhkihkiniwa:máóhkihkini	NA ;
-máóhkataatoyiwa:máóhkataatoyi	NA ;
-mánsstaama:mánsstaam	NA ;
-máakááhkima'tsisa:máakááhkima'tsis	NA ;
-mattsikaana:mattsikaan	NA ;
-matsí(y)'sai'piyiwa:matsí(y)'sai'piyi	NA ;
-matsissa:matsiss	NA ;
-matsiyíkkapisaawa:matsiyíkkapisaa	NA ;
-matápiiwa:matápii	NA ;
-manistsi'sstaamio'pisa:manistsi'sstaamio'pis	NA ;
-mamííyinnimaawa:mamííyinnimaa	NA ;
-mamííwa:mamíí	NA ;
-mamiá'tsíkimiwa:mamiá'tsíkimi	NA ;
-maksísskoma:maksísskomm	NA ;
-maksiníwa:maksiní	NA ;
-makóyiwa:makóyi	NA ;
-makkookiima:makkookiim	NA ;
-makíínimaawa:makíínimaa	NA ;
-makáítapiiwa:makáítapii	NA ;
-maká'pipiitaawa:maká'pipiitaa	NA ;
-maká'pipi'kssiwa:maká'pipi'kssi	NA ;
-maká'pato'siwa:maká'pato'si	NA ;
-makainnokaomitaawa:makainnokaomitaa	NA ;
-mai'stóónatawa:mai'stóónata	NA ;
-mai'stóówa:mai'stóó	NA ;
-maatáásiiwa:maatáásii	NA ;
-maataiksisaahkimaawa:maataiksisaahkimaa	NA ;
-maanipokaawa:maanipokaa	NA ;
-maanikapi1wa:maanikapi1	NA ;
-maanikapiwa:maanikapi	NA ;
-maanápiwa:maanitápi	NA ;
-maaáíwa:maaáí	NA ;
-ma'sa:ma's	NA ;
-ksikksisóka'simiwa:ksikksisóka'simi	NA ;
-kottonáaikoana:kottonáaikoan	NA ;
-kottonaa'wa:kottonaa'	NA ;
-kootsaakiiyi'taawa:kootsaakiiyi'taa	NA ;
-komonóítapiikoana:komonóítapiikoan	NA ;
-kiihtsipimiitapiwa:kiihtsipimiitapi	NA ;
-káta'yayimiwa:káta'yayimmi	NA ;
-káínaiwa:káínai	NA ;
-káínaawa:káínaa	NA ;
-kááy'sspaawa:kááy'sspaa	NA ;
-kayikkao'kiikina:kayikkao'kiikin	NA ;
-ksstsííwa:ksstsíí	NA ;
-ksísstá'piaapiikoana:ksísstá'piaapiikoan	NA ;
-ksíssta'pssiwa:ksíssta'pssi	NA ;
-ksísskstakiwa:ksísskstaki	NA ;
-ksíkka'sa:ksíkka's	NA ;
-ksisskioomiiwa:ksisskioomii	NA ;
-ksisóyiwa:ksisóyi	NA ;
-ksisówáwakaasiwa:ksisówáwakaasi	NA ;
-ksisohksísiwa:ksisohksísi	NA ;
-ksisísttsomo'kiwa:ksisísttsomo'ki	NA ;
-ksisíísa:ksisíís	NA ;
-ksisaiki'taana:ksisaiki'taan	NA ;
-ksippotsíkamaana:ksippotsíkamaan	NA ;
-ksina'oowa:ksina'oo	NA ;
-ksikkómahkayiiwa:ksikkómahkayii	NA ;
-ksikkihkíniwa:ksikkihkíni	NA ;
-ksikkapiitaipanikima:ksikkapiitaipanikimm	NA ;
-ksiistsikómipi'kssiiwa:ksiistsikómipi'kssii	NA ;
-ksiistsikoma:ksiistsikom	NA ;
-ksiiniwa:ksiini	NA ;
-ksiwáínaka'siwa:ksiwáínaka'si	NA ;
-ksiwáwákaasiwa:ksiwáwákaasi	NA ;
-ksaamá'pssina:ksaamá'pssin	NA ;
-ksaahkoma:ksaahkomm	NA ;
-kómoyo'kstsiikinakima:kómmoyo'kstsiikinakimm	NA ;
-kopottssksisiwa:kopottssksisi	NA ;
-koona:koon	NA ;
-komáápinssina:komáápinssin	NA ;
-ko'sa:ko's	NA ;
-ko'komiki'soma:ko'komiki'somm	NA ;
-kímatá'piaapiikoana:kímmatá'piaapiikoan	NA ;
-kímata'pssiwa:kímmata'pssi	NA ;
-kíítokiiwa:kíítokii	NA ;
-kíítohkomiiwa:kíítohkomii	NA ;
-kííhtsípimisa'aiwa:kííhtsípimisa'ai	NA ;
-kííhtsípimiota'siwa:kííhtsípimiota'si	NA ;
-kippiaapiwa:kippiaapi	NA ;
-kipitáípokaawa:kipitáípokaa	NA ;
-kipitáaakiiwa:kipitáaakii	NA ;
-kinsstóókipssa'tsisa:kinsstóókipssa'tsis	NA ;
-kinííwa:kiníí	NA ;
-kiitsípitsikayiiwa:kiitsípitsikayii	NA ;
-kiipáánao'kssiwa:kiipáánao'kssi	NA ;
-kiihtsipimiwa:kiihtsipimi	NA ;
-kiááyootokisa:hkiááyootokis	NA ;
-kiááyowa:hkiááyo	NA_IM ;
-ki'sóma:ki'sómm	NA ;
-kátoyissa:kátoyiss	NA ;
-kátao'ohkiimiwa:kátao'ohkiimi	NA ;
-kátao'mawáakííwa'siwa:kátao'mawáakííwa'si	NA ;
-kátai'poyiwa:kátai'poyi	NA ;
-káta'yaohkiimiwa:káta'yaohkiimi	NA ;
-káksaakina:káksaakin	NA ;
-kákanottsstookiiwa:kákanottsstookii	NA ;
-kááyiiwa:kááyii	NA ;
-katsistoyiikoana:katsistoyiikoan	NA ;
-katsiiksiwa:katsiiksi	NA ;
-katoyísa:katoyís	NA ;
-kata'yoohtsimiwa:kata'yoohtsimi	NA ;
-kapaama:kapaam	NA ;
-kaniksima:kaniksimm	NA ;
-kanáttsoomitaawa:kanáttsoomitaa	NA ;
-kanákkááatsiwa:kanákkááatsi	NA ;
-kamó'siipitsiwa:kamó'siipitsi	NA ;
-kamó'siwa:kamó'si	NA ;
-kakkoowa:kakkoo	NA ;
-kakató'siwa:kakató'si	NA ;
-kaanaisskiinaawa:kaanaisskiinaa	NA ;
-kaaysskááhpa:kaaysskááhp	NA ;
-kaawá'pomaahkaawa:kaawá'pomaahkaa	NA ;
-kaahtomina:kaahtomin	NA ;
-kaahtomáána:kaahtomáán	NA ;
-kaahksikawa:kaahksika	NA ;
-ka'ksimóyiitapiwa:ka'ksimóyiitapi	NA ;
-kssí'tsoma:kitssí'tsomm	NA ;
-ksisomahkokatawa:kitsisomahkokata	NA ;
-Íítskinaiksiwa:Íítskinaiksi	NA ;
-ísstsí'kiniipitsiwa:ísstsí'kiniipitsi	NA ;
-ísskoyipistaa'tsisa:ísskoyipistaa'tsis	NA ;
-íkasskiniwa:íkasskini	NA ;
-íímahkihkinaawa:íímahkihkinaa	NA ;
-isstááato'sa:isstááato's	NA ;
-isskssiinaisimiiksiwa:isskssiinaisimiiksi	NA ;
-issapówa:issapó	NA ;
-ipahtsikaawa'niwa:ipahtsikaawa'ni	NA ;
-imoyissksisiwa:immoyissksisi	NA ;
-iisisoka'simiiksiwa:iisisoka'simiiksi	NA ;
-iipisówaahsa:iipisówaahs	NA ;
-iihtsipáítapiiyo'pawa:iihtsipáítapiiyo'pa	NA ;
-i'náksiyiiksiwa:i'náksiyiiksi	NA ;
-i'naksiiksiwa:i'naksiiksi	NA ;
-itsiinohksikanikima:itsiinohksikanikimm	NA ;
-ito'kskawa:ito'kskita	NA ;
-itákkaawa:itákkaa	NA ;
-itapiwa:itapi	NA ;
-isttstsissiiwa:isttstsissii	NA ;
-isttstsáápikima:isttstsáápikimm	NA ;
-isttsííksiinawa:isttsííksiina	NA ;
-isttsikítsisa:isttsikítsis	NA ;
-isttsiipihkiniinaawa:isttsiipihkiniinaa	NA ;
-isttsiipaokayiiwa:isttsiipaokayii	NA ;
-isttoána:isttoán	NA ;
-isttohksaana:isttohksaan	NA ;
-isstsíísoota'siwa:isstsíísoota'si	NA ;
-isstsimamsskaapoowa:isstsimamsskaapoo	NA ;
-isstsiiyainaka'siwa:isstsiiyainaka'si	NA ;
-isstsáínaka'siwa:isstsáínaka'si	NA ;
-isstoyiisisttsiwa:isstoyiisisttsi	NA ;
-isstahtsimaa'tsisa:isstahtsimaa'tsis	NA ;
-isstahtsikímaa'tsisa:isstahtsikímaa'tsis	NA ;
-isstahpikssiwa:isstahpikssi	NA ;
-isspiksisttohksaana:isspiksisttohksaan	NA ;
-isspaysstoowa:isspaysstoo	NA ;
-issoyiwa:issoyi	NA ;
-isskssíínaawa:isskssíínaa	NA ;
-isskssiinaiinikima:isskssiinaiinikimm	NA ;
-isskoohtaka:isskoohtak	NA ;
-isskimáa'tsisa:isskimáa'tsis	NA ;
-issksíísainaka'siwa:isskitsíísainaka'si	NA ;
-isska:issk	NA ;
-issitsimaana:issitsimaan	NA ;
-issistsáakiiwa:issistsáakii	NA ;
-ississa:ississ	NA ;
-issikotoyiwa:issikotoyi	NA ;
-issikaokayiwa:issikaokayi	NA ;
-isapiiksoohsa'tsisa:isapiikitsoohsa'tsis	NA ;
-isa'kinoohsatahpa:isa'kinoohsatahp	NA ;
-ipsstsstsiiwa:ipsstsstsii	NA ;
-ippotsíísoohsa'tsisa:ippotsíísoohsa'tsis	NA ;
-ipióówoowana:ipióówoowan	NA ;
-ipákkohtama:ipákkohtamm	NA ;
-innóóhsoyisa:innóóhsoyis	NA ;
-innóóhksisiiwa:innóóhksisii	NA ;
-innóísttoaniwa:innóísttoani	NA ;
-innoohpokona:innoohpokon	NA ;
-innokaomitaawa:innokaomitaa	NA ;
-innokawa:innoka	NA ;
-innoisayiino'toawa:innoisayiino'toa	NA ;
-inaima:inaim	NA ;
-inaana:inaan	NA ;
-imitáó'koma:imitáó'kom	NA ;
-imitááwa:imitáá	NA ;
-imitaikoana:imitaikoan	NA ;
-imiihkayiiwa:imiihkayii	NA ;
-imoki'kaa'tsisa:immoki'kaa'tsis	NA ;
-imoyíítapiwa:immoyíítapi	NA ;
-imoyáapasstaamiinaama:immoyáapasstaamiinaamm	NA ;
-imoyaana:immoyaan	NA ;
-iksstsoohkinna:iksstsoohkinn	NA ;
-iksowá'pomaahkaawa:iksowá'pomaahkaa	NA ;
-iksamáóniipokaawa:iksamáóniipokaa	NA ;
-iko'siwa:iko'si	NA ;
-ikohkiaapittaa'tsisa:ikohkiaapittaa'tsis	NA ;
-ikkstsskiómitaawa:ikkstsskiómitaa	NA ;
-ikkstáínaka'siwa:ikkstáínaka'si	NA ;
-ikksipóóhko'sa:ikksipóóhko's	NA ;
-ikkiniohpokona:ikkiniohpokon	NA ;
-ikkiaakia'tsisa:ikkiaakia'tsis	NA ;
-ikkia'tsisa:ikkia'tsis	NA ;
-ikkákima'tsisa:ikkákima'tsis	NA ;
-ikkatsimaisstookiwa:ikkatsimaisstooki	NA ;
-ikkaksaapiikoana:ikkaksaapiikoan	NA ;
-ikákksaapiikoana:ikákksaapiikoan	NA ;
-iitsisóóminnio'pa:iitsisóóminnio'p	NA ;
-iitáókstsimao'pa:iitáókstsimao'p	NA ;
-iitáóhkipistao'pa:iitáóhkipistao'p	NA ;
-iitáísstoyihtakio'pa:iitáísstoyihtakio'p	NA ;
-iitáísskimao'pa:iitáísskimao'p	NA ;
-iitáísooko'so'pa:iitáísooko'so'p	NA ;
-iitáísápohkimao'pa:iitáísápohkimao'p	NA ;
-iitáísapsssiiststakio'pa:iitáísapsssiiststakio'p	NA ;
-iitáísapssoi'sstahkimao'pa:iitáísapssoi'sstahkimao'p	NA ;
-iitáísapópaoo'pa:iitáísapópaoo'p	NA ;
-iitáísapiooyo'so'pa:iitáísapiooyo'so'p	NA ;
-iitáísapinnihtao'pa:iitáísapinnihtao'p	NA ;
-iitáísapikkákoyisstao'pa:iitáísapikkákoyisstao'p	NA ;
-iitáísapiistsinimao'pa:iitáísapiistsinimao'p	NA ;
-iitáísapahtsimao'pa:iitáísapahtsimao'p	NA ;
-iitáísaamia'yao'pa:iitáísaamia'yao'p	NA ;
-iitáípisao'pa:iitáípisao'p	NA ;
-iitáínnihtao'pa:iitáínnihtao'p	NA ;
-iitáíksistokomssakio'pa:iitáíksistokomssakio'p	NA ;
-iitáíkkakoyisstao'pa:iitáíkkakoyisstao'p	NA ;
-iitawáí'pihtakio'pa:iitawáí'pihtakio'p	NA ;
-iitawáakohsimao'pa:iitawáakohsimao'p	NA ;
-iitawanssawa:iitawanssa	NA ;
-iipakssoa'tsimio'pa:iipakssoa'tsimio'p	NA ;
-iinóhpinsoyiiwa:iinóhpinsoyii	NA ;
-iinísskima:iinísskimm	NA ;
-iinííwa:iiníí	NA ;
-iimáóhksiipssiwa:iimáóhksiipssi	NA ;
-iimáóhkominniiksiiniwa:iimáóhkominniiksiini	NA ;
-iimáápitsiwa:iimáápitsi	NA ;
-iimahkáyiiwa:iimahkáyii	NA ;
-iikó'siwa:iikó'si	NA ;
-iiyo'kiaawa:iiyo'kiaa	NA ;
-iiyikoyáápiikoana:iiyikoyáápiikoan	NA ;
-ii'ksskawa:ii'ksskita	NA ;
-iihtsíístapipaitapiiyo'pa:iihtsíístapipaitapiiyo'p	NA ;
-iihtsistsíípisskio'pa:iihtsistsíípisskio'p	NA ;
-iihtsipóísstao'takio'pa:iihtsipóísstao'takio'p	NA ;
-iihtáóttakio'pa:iihtáóttakio'p	NA ;
-iihtáópahkimiksáakio'pa:iihtáópahkimiksáakio'p	NA ;
-iihtáóoyo'pa:iihtáóoyo'p	NA ;
-iihtáókspainnohkio'takio'pa:iihtáókspainnohkio'takio'p	NA ;
-iihtáó'takio'pa:iihtáó'takio'p	NA ;
-iihtáó'takaahkiaakio'pa:iihtáó'takaahkiaakio'p	NA ;
-iihtáóhsistsiniimsstao'pa:iihtáóhsistsiniimsstao'p	NA ;
-iihtáóhpomao'pa:iihtáóhpommao'p	NA ;
-iihtáísttsikááhkiaakio'pa:iihtáísttsikááhkiaakio'p	NA ;
-iihtáísstssimao'pa:iihtáísstssimao'p	NA ;
-iihtáíssokááhkiaakio'pa:iihtáíssokááhkiaakio'p	NA ;
-iihtáíssisskioohsao'pa:iihtáíssisskioohsao'p	NA ;
-iihtáíssiiststakio'pa:iihtáíssiiststakio'p	NA ;
-iihtáíssáakio'pa:iihtáíssáakio'p	NA ;
-iihtáíso'pioohso'pa:iihtáíso'pioohso'p	NA ;
-iihtáísínaakio'pa:iihtáísínaakio'p	NA ;
-iihtáísattsíkaapiksistakio'pa:iihtáísattsíkaapiksistakio'p	NA ;
-iihtáísatsínaakio'pa:iihtáísatsínaakio'p	NA ;
-iihtáíppotsipistao'pa:iihtáíppotsipistao'p	NA ;
-iihtáípiksao'pa:iihtáípiksao'p	NA ;
-iihtáípiinakio'pa:iihtáípiinitakio'p	NA ;
-iihtáípii'poyo'pa:iihtáípii'poyo'p	NA ;
-iihtáípiyoohtsimio'pa:iihtáípiyoohtsimio'p	NA ;
-iihtáíksisttoksaakio'pa:iihtáíksisttoksaakio'p	NA ;
-iihtáíksistsikomio'pa:iihtáíksistsikomio'p	NA ;
-iihtáíkkio'pa:iihtáíkkio'p	NA ;
-iihtáíkkiniihkimiksaakio'pa:iihtáíkkiniihkimiksaakio'p	NA ;
-iihtáíkkamipii'poyo'pa:iihtáíkkamipii'poyo'p	NA ;
-iihtáíkayinnakio'pa:iihtáíkayinnakio'p	NA ;
-iihtáíkawai'piksistakio'pa:iihtáíkawai'piksistakio'p	NA ;
-iihtáíkahksiststakio'pa:iihtáíkahksiststakio'p	NA ;
-iihtáí'tsinssakio'pa:iihtáí'tsinssakio'p	NA ;
-iihtáíhksoohpattsaakio'pa:iihtáíhkitsoohpattsaakio'p	NA ;
-iihtáyiyaahkiaakio'pa:iihtáyiyaahkiaakio'p	NA ;
-iihtawáóniaakio'pa:iihtawáóniaakio'p	NA ;
-iihtawáí'tsinnakio'pa:iihtawáí'tsinnakio'p	NA ;
-iihtawáámato'simao'pa:iihtawáámato'simao'p	NA ;
-iihpokaopiimotsiiyiwa:iihpokaopiimotsiiyi	NA ;
-iihpohsoa'tsiiwa:iihpohsoa'tsii	NA ;
-iihkanipihtsiwa:iihkanipihtsi	NA ;
-iyinnakiikoana:iyinnakiikoan	NA ;
-iyi'tayimiwa:iyi'tayimmi	NA ;
-i'nokáá'tsisa:i'nokáá'tsis	NA ;
-i'naksípokaawa:i'naksípokaa	NA ;
-i'nakánao'kssiwa:i'nakánao'kssi	NA ;
-i'ksisakoma:i'ksisakomm	NA ;
-i'kotsóómiiwa:i'kotsóómii	NA ;
-i'kayssiwa:i'kayssi	NA ;
-ihksíkamiksiwa:ihkitsíkammiksi	NA ;
-atsíínawa:atsíína	NA ;
-asinaawa:asinaa	NA ;
-apaksísttohkihkíníítsitapiikoana:apaksísttohkihkíníítsitapiikoan	NA ;
-aapistsíssksaato'sa:aapistsísskitsaato's	NA ;
-aapisówoohtawa:aapisówoohta	NA ;
-aapátohsipikániwa:aapátohsipikáni	NA ;
-aapáíaitapiwa:aapáíaitapi	NA ;
-aamsskáápipikaniwa:aamsskáápipikani	NA ;
-aakáókiinaawa:aakáókiinaa	NA ;
-aakáísta'aowa:aakáísta'ao	NA ;
-aakaipokaiksiwa:aakaipokaiksi	NA ;
-aakaiksamaiksiwa:aakaiksamaiksi	NA ;
-aawaiipisstsiimsskaawa:aawaiipisstsiimsskaa	NA ;
-ayaahkioohsiitapiwa:ayaahkioohsiitapi	NA ;
-átsi'tsiwa:átsi'tsi	NA ;
-ápasstaamiinaama:ápasstaamiinaamm	NA ;
-áóttakiwa:áóttaki	NA ;
-áótotsóókiwa:áótotsóóki	NA ;
-áótahkóínaama:áótahkóínaamm	NA ;
-áótahkááokayisa:áótahkááokayis	NA ;
-áómatskahtakiwa:áómatskahtaki	NA ;
-áókstakiwa:áókstaki	NA ;
-áókspipokowa:áókspipoko	NA ;
-áókooysskaawa:áókooysskaa	NA ;
-áókaki'tsiwa:áókaki'tsi	NA ;
-áókakihtsimaisiiko'takiwa:áókakihtsimaisiiko'taki	NA ;
-áókakihtsimaawa:áókakihtsimaa	NA ;
-áóhpomáópiiwa:áóhpommáópii	NA ;
-áóhpomaapiikoana:áóhpommaapiikoan	NA ;
-áóhpo'kiaa'paissiwa:áóhpo'kiaa'paissi	NA ;
-áóhpattsóótsiiyiiksiwa:áóhpattsóótsiiyiiksi	NA ;
-áóhko'kakinápikssiwa:áóhko'kakinápikssi	NA ;
-áóhkanohkimaiksiwa:áóhkanohkimaiksi	NA ;
-ámaohksikima:ámaohksikim	NA ;
-ákaitapiiwa:ákaitapii	NA ;
-áítsiyihka'siwa:áítsiyihka'si	NA ;
-áítapisskatsimaawa:áítapisskatsimaa	NA ;
-áítapióoyiwa:áítapióoyi	NA ;
-áísskssíinainikima:áísskssíinainikimm	NA ;
-áíssksinimá'tsaawa:áíssksinimá'tsaa	NA ;
-áíssksinima'tstohkiwa:áíssksinima'tstohki	NA ;
-áíssko'kíínaawa:áíssko'kíínaa	NA ;
-áíssimihkaawa:áíssimihkaa	NA ;
-áísopomitaka'siwa:áísopomitaka'si	NA ;
-áísokinakiáakiiwa:áísokinakiáakii	NA ;
-áísokinakiwa:áísokinaki	NA ;
-áísínaakiohpiwa:áísínaakiohpi	NA ;
-áísiníkiihpa:áísiníkiihp	NA ;
-áísátsaakiwa:áísátsaaki	NA ;
-áísapikinao'takiwa:áísapikinao'taki	NA ;
-áísaisttoowa:áísaisttoo	NA ;
-áísaiksisttoowa:áísaiksisttoo	NA ;
-áísaiksisto'sima:áísaiksisto'simm	NA ;
-áísaayoohkomiwa:áísaayoohkomi	NA ;
-áípottaawa:áípottaa	NA ;
-áípi'kssokinakiwa:áípi'kssokinaki	NA ;
-áípasstaamiinaama:áípasstaamiinaamm	NA ;
-áípapoma:áípapomm	NA ;
-áípakkohtama:áípakkohtamm	NA ;
-áípakkohsoyiwa:áípakkohsoyi	NA ;
-áípakkaka'siwa:áípakkitaka'si	NA ;
-áínaka'siwa:áínaka'si	NA ;
-áímóniisiwa:áímmóniisi	NA ;
-áímoyo'kiniomitaawa:áímmoyo'kiniomitaa	NA ;
-áíksisstoomatokska'siwa:áíksisstoomatokska'si	NA ;
-áíksiniwa:áíksini	NA ;
-áíksikkssksisiwa:áíksikkssksisi	NA ;
-áíksikkominsstsiikina:áíksikkominsstsiikin	NA ;
-áíkayissaissapiwa:áíkayissaissapi	NA ;
-áíkayisaisttooma:áíkayisaisttoom	NA ;
-áápsspiniwa:áápsspini	NA ;
-áápsksisiwa:áápsksisi	NA ;
-áápotskinawa:áápotskina	NA ;
-áápomahkihkinaawa:áápomahkihkinaa	NA ;
-áápohkomiiwa:áápohkomii	NA ;
-áápikíítokiiwa:áápikíítokii	NA ;
-áápiinikima:áápiinikimm	NA ;
-áápiikayiwa:áápiikayi	NA ;
-áápiiwa:áápii	NA ;
-áápataamsstsinnimaawa:áápataamsstsinnimaa	NA ;
-áápaokomiwa:áápaokomi	NA ;
-áápaiaiwa:áápaiai	NA ;
-ááattsistaawa:ááattsistaa	NA ;
-ááyí'sipissaawa:ááyí'sipissaa	NA ;
-ááwowáakiiwa:ááwowáakii	NA ;
-ááhso(w)awa:ááhso(w)a	NA ;
-áyinnimaawa:áyinnimaa	NA ;
-áyiinapaniiwa:áyiinapanii	NA ;
-áyáaksisákiaakiwa:áyáaksisákiaaki	NA ;
-áwákaasiiwa:áwákaasii	NA ;
-áwatoyiwa:áwatoyi	NA ;
-áwaamisskapataawa:áwaamisskapataa	NA ;
-áwaawai'sskapiwa:áwaawai'sskapi	NA ;
-áwaawahkao'tsiiwa:áwaawahkao'tsii	NA ;
-Á'pistotookiwa:Á'pistotooki	NA ;
-Áwákaasiiki'soma:Áwákaasiiki'somm	NA ;
-atsísa:atsís	NA ;
-atsíínaisisttsiwa:atsíínaisisttsi	NA ;
-atsí'tsiwa:atsí'tsi	NA ;
-ató'ahsima:ató'ahsim	NA ;
-atonáóksisa:atonáóksis	NA ;
-atokísa:atokís	NA ;
-atohká'taana:atohká'taan	NA ;
-atapííma:atapíím	NA ;
-asóótokiaawa:asóótokiaa	NA ;
-asó'tsiinaamaawa:asó'tsiinaamaa	NA ;
-asáóka'sima:asáóka'simm	NA ;
-asáóhkama'tsisa:asáóhkama'tsis	NA ;
-apssíwa:apssí	NA ;
-apootstsiinaana:apootstsiinaan	NA ;
-apoká'ssiniwa:apoká'ssini	NA ;
-apokaawa:apokaa	NA ;
-apitsó'toyiwa:apitsó'toyi	NA ;
-apániiwa:apánii	NA ;
-apáksa'tsisa:apáksa'tsis	NA ;
-apaksskióómiiwa:apaksskióómii	NA ;
-apaksísttohksipokáí'staana:apaksísttohksipokáí'staan	NA ;
-apaksísttohkáksaakina:apaksísttohkáksaakin	NA ;
-apahtóka:apahtók	NA ;
-apahtó'kiiwa:apahtó'kii	NA ;
-apahsípokowa:apahsípoko	NA ;
-aohkiómahkohsiiksikapaanssiwa:aohkiómahkohsiiksikapaanssi	NA ;
-aohkiókiinimaawa:aohkiókiinimaa	NA ;
-anááyiwa:anááyi	NA ;
-amokapistaa'tsisa:amokapistaa'tsis	NA ;
-akstsimá'tsisa:akstsimá'tsis	NA ;
-aksstsííwa:aksstsíí	NA ;
-akoksskaaapiikoana:akoksskaaapiikoan	NA ;
-akkáyssksisikaanaisskiinaawa:akkáyssksisikaanaisskiinaa	NA ;
-akkáyssksisiwa:akkáyssksisi	NA ;
-aitsikiihkaawa:aitsikiihkaa	NA ;
-aisstsinika'siima:aisstsinika'siim	NA ;
-aiksisstoomatoowa:aiksisstoomatoo	NA ;
-aiksisstoomatomaahkaawa:aiksisstoomatomaahkaa	NA ;
-aiksisstoomatapisttsipatakkayayiwa:aiksisstoomatapisttsipatakkayayi	NA ;
-aiksippoyinnomoawa:aiksippoyinnomoa	NA ;
-aiksinoosaka:aiksinoosak	NA ;
-aapsskíwa:aapsskí	NA ;
-aapssííkama:aapssííkam	NA ;
-aapssííyi'kayiwa:aapssííyi'kayi	NA ;
-aapssipisttoowa:aapssipisttoo	NA ;
-aapotskinaisahkomaapiwa:aapotskinaisahkomaapi	NA ;
-aapohkinniyiwa:aapohkinniyi	NA ;
-aapí'soomitaawa:aapí'soomitaa	NA ;
-aapí'siwa:aapí'si	NA ;
-aapinákoisisttsiiwa:aapinákoisisttsii	NA ;
-aapiipíssoohsiwa:aapiipíssoohsi	NA ;
-aapiiksístsimaohkinniwa:aapiiksístsimaohkinni	NA ;
-aapiakonsskiwa:aapiakonsski	NA ;
-aapátsínnapisiwa:aapátsínnapisi	NA ;
-aapátohsaapiikoana:aapátohsaapiikoan	NA ;
-aapámiaapiikoana:aapámiaapiikoan	NA ;
-aapáítapiwa:aapáítapi	NA ;
-aapatssaissksikawa:aapatssaissksika	NA ;
-aaníítohkatsiwa:aaníítohkatsi	NA ;
-aanáó'kapiikoana:aanáó'kitapiikoan	NA ;
-aakííkoana:aakííkoan	NA ;
-aakííwa:aakíí	NA ;
-aakáísatstsaawa:aakáísatstsaa	NA ;
-aakáíksimonniipokaawa:aakáíksimonniipokaa	NA ;
-aawápsspiinao'sa'tsisa:aawápsspiinao'sa'tsis	NA ;
-aawákksisa:aawákksis	NA ;
-aawakksaawaniwa:aawakksaawani	NA ;
-aawa'kawaniwa:aawa'kawani	NA ;
-ayíkinaana:ayíkinaan	NA ;
-a'sínnokawa:a'sínnoka	NA ;
-a'síítsiksima:a'síítsiksimm	NA ;
-a'sitápiwa:a'sitápi	NA ;
-a'sisttsííksiinaawa:a'sisttsííksiinaa	NA ;
-a'sipísa:a'sipís	NA ;
-a'sa:a's	NA ;
-a'písa:a'pís	NA ;
-a'kahkaakiiwa:a'kahkaakii	NA ;
-awó'taanooksisa:awó'taanookitsis	NA ;
-awáma'tsisa:awámma'tsis	NA ;
-awákksoopana:awákksoopan	NA ;
-awáísstaama:awáísstaam	NA ;
-awanáána:awanáán	NA ;
-awakáapikssa'tsisa:awakáapikssa'tsis	NA ;
-awaahkaniaakiwa:awaahkaniaaki	NA ;
 
 LEXICON INDEP_NI_STEMS
-! aaápani:aaápan                   NI ;
-! ááhkioohsa'tsisi:ááhkioohsa'tsis NI ;
-! mííni:míín                       NI ;
-! ninihkssíni:ninihkssín           NI ;
-! sináákia'tsisi:sináákia'tsis      NI ;
-! matsikíni:%^SPmatsikín            NI ;
-! kinakíyi:%^SPkinákin            NI ;
-! mo'tokááni:%^SPmo'tokáán         NI ;
+aaápani:aaápan                   NI ;
+ááhkioohsa'tsisi:ááhkioohsa'tsis NI ;
+mííni:míín                       NI ;
+ninihkssíni:ninihkssín           NI ;
+sináákia'tsisi:sináákia'tsis      NI ;
+matsikíni:%^SPmatsikín            NI ;
+kinakíyi:%^SPkinákin            NI ;
+mo'tokááni:%^SPmo'tokáán         NI ;
 
 ! Below is the full list of NI nouns. They need to be edited according to the pattern of the example nouns above.
 ! They were retrieved from the inanimate noun list in the browse section of the dictionary.
-
-aakokaa'tsisi:waakokaa'tsis	NI ;
-to'tohtáátoyiiksistsikoyi:to'tohtáátoyiiksistsiko	NI ;
-tó'piinimaani:tó'piinimaan	NI ;
-tátsikii'saani:tátsikii'saan	NI ;
-tátsikiaiksistsikoyi:tátsikiaiksistsiko	NI ;
-tatsikiyaiko'koyi:tatsikiyaiko'ko	NI ;
-stámiksaoo'sini:stámiksaoo'sin	NI ;
-sstsikómi:sstsikómm	NI ;
-sstsiiysskaani:sstsiiysskaan	NI ;
-sstaoka'tsisi:sstaoka'tsis	NI ;
-sspohksikaahpi:sspohkitsikaahp	NI ;
-sspísttsiksikini:sspísttsikitsikin	NI ;
-sspátsikoyi:sspátsiko	NI ;
-sspahkoyi:sspahko	NI ;
-sskskomaani:sskskomaan	NI ;
-sskoyi:ssko	NI ;
-sóópoyooyihkaani:sóópoyooyihkaan	NI ;
-sóópa'tsisi:sóópa'tsis	NI ;
-sóóa'tsisi:sóóa'tsis	NI ;
-sottoani:sottoan	NI ;
-sopoyi:sopo	NI ;
-sootsímaani:sootsímaan	NI ;
-sookayisi:sookayis	NI ;
-soohpómaa'tsisi:soohpómmaa'tsis	NI ;
-sooyínakssini:sooyínitakssin	NI ;
-sonáí'sskihtakáatoyiiksistsikoyi:sonáí'sskihtakáatoyiiksistsiko	NI ;
-soksistsikóyi:soksistsikó	NI ;
-soksaana'pssini:soksaana'pssin	NI ;
-sokámisáaka'tsisi:sokámisáaka'tsis	NI ;
-soi'stsipínnakssini:soi'stsipínnakssin	NI ;
-soapíttakssini:soapíttakssin	NI ;
-soyoopoki:soyoopok	NI ;
-soyíísiitsiksskoyi:soyíísiitsikssko	NI ;
-soyíípoksskoyi:soyíípokssko	NI ;
-soyipíttakssini:soyipíttakssin	NI ;
-skinítsimaani:skinítsimaan	NI ;
-skinííta'tsisi:skinííta'tsis	NI ;
-skinííhtaani:skinííhtaan	NI ;
-sísstsiksiiyi:sísstsiksii	NI ;
-síkohpoyííyi:síkohpoyíí	NI ;
-síínikskaahkoyi:síínikskaahko	NI ;
-sííkokíínisi:sííkokíínis	NI ;
-sitokihkiitaani:sitokihkiitaan	NI ;
-sisikóóhkotoksskoyi:sisikóóhkotokssko	NI ;
-sisikóóhkotoki:sisikóóhkotok	NI ;
-sisaahtaayiyi:sisaahtaayi	NI ;
-sipiáána'kimaa'tsisi:sipiáána'kimaa'tsis	NI ;
-sipátsimoyi:sipátsimo	NI ;
-sináákssini:sináákssin	NI ;
-sináákia'tsisi:sináákia'tsis	NI ;
-simssíni:simssín	NI ;
-siksikimííwyi:siksikimííw	NI ;
-sikóóhkotok1yi:sikóóhkotok1	NI ;
-sikotsipiiyisi:sikotsipiiyis	NI ;
-sikomahksiini:sikomahksiin	NI ;
-sikohtsaakiikahtssini:sikohtsaakiikahtssin	NI ;
-sikkohsákssini:sikkohsákssin	NI ;
-sikaokiyi:sikaoki	NI ;
-siitámssini:siitámssin	NI ;
-siiksinokoyi:siiksinoko	NI ;
-siiksiksíyiyi:siiksiksíyi	NI ;
-siikokíínayi:siikokíína	NI ;
-si'kssopoyi:si'kssopo	NI ;
-si'kimaikahtssini:si'kimaikahtssin	NI ;
-sáíkimao'tonipsstaani:sáíkimao'tonipsstaan	NI ;
-sáápo'pipisátssaisskiiyi:sáápo'pipisátssaisskii	NI ;
-sáápo'pi:sáápo'p	NI ;
-sáapia'tsisi:sáapia'tsis	NI ;
-sattsskimsskaani:sattsskimsskaan	NI ;
-sapíkamaa'tsisi:sapíkamaa'tsis	NI ;
-sapi'kínamaani:sapi'kínamaan	NI ;
-sapi'kínamaa'tsisi:sapi'kínamaa'tsis	NI ;
-saooyísi:saooyís	NI ;
-sama'kooyi:sama'koo	NI ;
-sakonímaani:sakonímmaan	NI ;
-saissksiimokoyi:saissksiimoko	NI ;
-saipstsimaani:saipstsimaan	NI ;
-saipáóóhtsiyi:saipáóóhtsi	NI ;
-saáó'takssini:saáó'takssin	NI ;
-saatstakssini:saatstakssin	NI ;
-saatá'pssini:saatá'pssin	NI ;
-saapohtonnakiotoyisi:saapohtonnakiotoyis	NI ;
-saapímaani:saapímaan	NI ;
-saapíkaakia'tsisi:saapíkaakia'tsis	NI ;
-saamikini:saamikin	NI ;
-saakókotoisskoyi:saakókotoissko	NI ;
-saakókotoinaattsiyi:saakókotoinaattsi	NI ;
-saakoapinihkaani:saakoapinihkaan	NI ;
-saaámi:saaám	NI ;
-saahsiipakksini'simaaniyi:saahsiipakksini'simaani	NI ;
-sa'tsoopa'tsisi:sa'tsoopa'tsis	NI ;
-sa'ksisákimaani:sa'ksisákimaan	NI ;
-sa'kapoohtsiyi:sa'kapoohtsi	NI ;
-sayiitssksskimsskoyi:sayiitssksskimssko	NI ;
-spitsíiyi:spitsíi	NI ;
-soyóóhpawahkoyi:soyóóhpawahko	NI ;
-sipisttoipasskaani:sipisttoipasskaan	NI ;
-sikóóhkotok2yi:sikóóhkotok2	NI ;
-sa'áíksiyi:sa'áíksi	NI ;
-pómaiksistsikoyi:pómmaiksistsiko	NI ;
-poyíítahtaiyi:poyíítahtai	NI ;
-pi'kssííksiyi:pi'kssííksi	NI ;
-pákkii'pistsiyi:pákkii'pistsi	NI ;
-paahtómahksikimiyi:paahtómahksikimi	NI ;
-pómakssini:pómmakssin	NI ;
-potótskoyi:potótsko	NI ;
-pootsitsíyi:pootsitsí	NI ;
-poosohsooa'tsisi:poosohsooa'tsis	NI ;
-ponopaani:ponopaan	NI ;
-ponokáómitaoyisi:ponokáómitaoyis	NI ;
-ponoká'sisaahtaayi:ponoká'sisaahtaa	NI ;
-ponokaoowahsini:ponokaoowahsin	NI ;
-pomísi:pomís	NI ;
-pomíísaami:pomíísaam	NI ;
-pomiáana'kima'tsisi:pomiáana'kima'tsis	NI ;
-pokakimaani:pokakimaan	NI ;
-poisstámaani:poisstámmaan	NI ;
-poipoyínniisootsii'kaani:poipoyínniisootsii'kaan	NI ;
-po'tstákssini:po'tstákssin	NI ;
-po'tááni:po'táán	NI ;
-poyííyi:poyíí	NI ;
-poyáana'kimaa'tsisi:poyáana'kimaa'tsis	NI ;
-pííksskaayi:pííksskaa	NI ;
-pííksiistsimaani:pííksiistsimaan	NI ;
-pííhkoohtsiyi:pííhkoohtsi	NI ;
-pitsííksiináóowahsini:pitsííksiináóowahsin	NI ;
-pisstskiá'tayi:pisstskiá'ta	NI ;
-pisstááhkaani:pisstááhkaan	NI ;
-pisstaahkaipokooyi:pisstaahkaipokoo	NI ;
-pisskani:pisskan	NI ;
-pisátsskiitaani:pisátsskiitaan	NI ;
-pisátssaisskiiyi:pisátssaisskii	NI ;
-pisátsi'nsimaani:pisátsi'nsimaan	NI ;
-pisatsaapiiniiwani:pisatsaapiiniiwan	NI ;
-pisatótsipíiyisi:pisatótsipíiyis	NI ;
-pináápssokimiyi:pináápssokimi	NI ;
-pikkiáákssin1yi:pikkiáákssin1	NI ;
-pikkiáákssinyi:pikkiáákssin	NI ;
-pikkiáákio'ksisakoyi:pikkiáákio'ksisako	NI ;
-pikíípaisstsimssini:pikíípaisstsimssin	NI ;
-pikató'ssini:pikató'ssin	NI ;
-piikohksíksiyi:piikohksíksi	NI ;
-pii'nakssini:pii'nitakssin	NI ;
-piá'piiyi:piá'pii	NI ;
-piwá'piiyi:piwá'pii	NI ;
-pi'ksísskaani:pi'ksísskaan	NI ;
-pi'ksíkahtssini:pi'ksíkahtssin	NI ;
-pi'ksiistsimaani:pi'ksiistsimaan	NI ;
-pi'kááni:pi'káán	NI ;
-pi'káákssini:pi'káákssin	NI ;
-páni'kahtáísstaakssin1yi:páni'kahtáísstaakssin1	NI ;
-páni'kahtáísstaakssinyi:páni'kahtáísstaakssin	NI ;
-pákkii'pi:pákkii'p	NI ;
-páyooyi:páyoo	NI ;
-passtaami:passtaam	NI ;
-passkaani:passkaan	NI ;
-panokáínattsiyi:panokáínattsi	NI ;
-pani'kahtaa'tsisi:pani'kahtaa'tsis	NI ;
-panáaikssta'tsisi:panáaikssta'tsis	NI ;
-pakóyittsiyi:pakóyittsi	NI ;
-pakksíni'simaani:pakksíni'simaan	NI ;
-pakksiníkimaani:pakksiníkimaan	NI ;
-pakkiaóó'sssini:pakkiaóó'sssin	NI ;
-paataaki:paataak	NI ;
-paapó'sini:paapó'sin	NI ;
-paapáóowahsini:paapáóowahsin	NI ;
-paapáó'kaani:paapáó'kaan	NI ;
-pawahkoyi:pawahko	NI ;
-pa'ksíkahkoyi:pa'ksíkahko	NI ;
-otsítsipottaahpiyi:otsítsipottaahpi	NI ;
-otómohtsisto'kissikatoyiiksistsikoohpi:otómohtsisto'kissikatoyiiksistsikoohp	NI ;
-omahkátoyiiksistsikáato'simi:omahkátoyiiksistsikáato'sim	NI ;
-Ókonokistsiyi:Ókonokistsi	NI ;
-ótsskoohpoyiyi:ótsskoohpoyi	NI ;
-ótsskoyiiniyi:ótsskoyiini	NI ;
-ótskaapistsissksiyi:ótskaapistsisskitsi	NI ;
-óppaniyi:óppani	NI ;
-óópaihpi:óópaihp	NI ;
-óóhtatsika'pisi:óóhtatsika'pis	NI ;
-óóhksipistaani:óóhksipistaan	NI ;
-óóhkotoki:óóhkotok	NI ;
-ónnikisisaahtaayiyi:ónnikisisaahtaayi	NI ;
-ómahksspatsikoyi:ómahksspatsiko	NI ;
-ómahksíkskoyi:ómahksíksko	NI ;
-ómahksíkimiyi:ómahksíkimi	NI ;
-ómahkotsskoi'nssimaani:ómahkotsskoi'nssimaan	NI ;
-ómahkokataoowahsini:ómahkokataoowahsin	NI ;
-ómahkítaissksinima'tstohkio'pi:ómahkítaissksinima'tstohkio'p	NI ;
-ó'psskaani:ó'psskaan	NI ;
-ó'kapayini:ó'kapayin	NI ;
-ottsímahkisi:ottsímmahkis	NI ;
-ottsíímsskaani:ottsíímsskaan	NI ;
-otsstatsimaani:otsstatsimaan	NI ;
-otsítsinsstao'wahkohpiyi:otsítsinsstao'wahkohpi	NI ;
-otsítao'to'wahtaahpi:otsítao'to'wahtaahp	NI ;
-otsittsskisi:otsittsskis	NI ;
-otsisa'kaani:otsisa'kaan	NI ;
-otsipíisi:otsipíis	NI ;
-otsipiiisi:otsipiiis	NI ;
-otsikssisi:otsikssis	NI ;
-otsiimokoyi:otsiimoko	NI ;
-otsiikini:otsiikin	NI ;
-otohtoksiini:otohtoksiin	NI ;
-otámawani:otámawan	NI ;
-otahpikaohsini:otahpikaohsin	NI ;
-otahkoíítahtaayi:otahkoíítahtaa	NI ;
-otahkáápistsissksiyi:otahkáápistsisskitsi	NI ;
-osspi:ossp	NI ;
-osáóhkoyiyi:osáóhkoyi	NI ;
-opitsskimiksimaani:opitsskimiksimaan	NI ;
-opáákahtaani:opáákahtaan	NI ;
-ootsistsíni:ootsistsín	NI ;
-ootsistsííni:ootsistsíín	NI ;
-ootokiáápinihpisi:ootokiáápinihpis	NI ;
-ootoki'pi:ootoki'p	NI ;
-ootohtóíikini:ootohtóíikin	NI ;
-ootááni:ootáán	NI ;
-ookoaissisi:ookoaissis	NI ;
-ookááni:ookáán	NI ;
-oohkotoksiisoyinni:oohkotoksiisoyinn	NI ;
-oohkotoksaisiksikimiyi:oohkotoksaisiksikimi	NI ;
-oohkinaakini:oohkinaakin	NI ;
-onsskisi:onsskis	NI ;
-onnopa'tsisi:onnopa'tsis	NI ;
-onnikisi:onnikis	NI ;
-onnikiisaikimsskaani:onnikiisaikimsskaan	NI ;
-omokihtsiyi:omokihtsi	NI ;
-omohkohsattsisskoyihpi:omohkohsattsisskoyihp	NI ;
-omistta(a)yi:omistta(a)	NI ;
-omiominni:omiominn	NI ;
-ominni:ominn	NI ;
-omiitsiksikaahpi:omiitsiksikaahp	NI ;
-omahkssaikimaiksikkáaa'siyi:omahkssaikimaiksikkáaa'si	NI ;
-omahksíkiipippoyi:omahksíkiipippo	NI ;
-omahksikakahsiini:omahksikakahsiin	NI ;
-omahkottsiimskaani:omahkottsiimskaan	NI ;
-omahkátoyiiksistsikoyi:omahkátoyiiksistsiko	NI ;
-omahkáíksikksiksiyi:omahkáíksikksiksi	NI ;
-omahkanokoisttsomo'kaani:omahkanokoisttsomo'kaan	NI ;
-oksstsookaani:oksstsookaan	NI ;
-okspanísttsissini:okspanísttsissin	NI ;
-okonoki:okonok	NI ;
-okoani:okoan	NI ;
-okksisákáóo'sini:okksisákáóo'sin	NI ;
-oki'kaani:oki'kaan	NI ;
-okakihtsimaani:okakihtsimaan	NI ;
-oapisakisi:oapisakis	NI ;
-owááyi:owáá	NI ;
-owa'siyiihtaani:owa'siyiihtaan	NI ;
-owa'si:owa's	NI ;
-owahsini:owahsin	NI ;
-o'tsístaa'tsisi:o'tsístaa'tsis	NI ;
-o'tsisi:o'tsis	NI ;
-o'taksíkinakoyi:o'taksíkinako	NI ;
-o'taksiksiyi:o'taksiksi	NI ;
-o'takoohsini:o'takoohsin	NI ;
-o'pi:o'p	NI ;
-o'kstsisi:o'kstsis	NI ;
-o'ksísi:o'ksís	NI ;
-o'ksisakaoo'sini:o'ksisakaoo'sin	NI ;
-o'ksiksiyi:o'ksiksi	NI ;
-o'kiáákssini:o'kiáákssin	NI ;
-o'kaniksiyi:o'kaniksi	NI ;
-o'kakini:o'kakin	NI ;
-ohtookisi:ohtookis	NI ;
-ohtookiinaattsiyi:ohtookiinaattsi	NI ;
-ohtatsikini:ohtatsikin	NI ;
-ohsooa'tsisi:ohsooa'tsis	NI ;
-ohsiihkaani:ohsiihkaan	NI ;
-ohpsskonaka'siyi:ohpsskonaka'si	NI ;
-ohpíni:ohpín	NI ;
-ohpiikini:ohpiikin	NI ;
-ohksisstakssini:ohksisstakssin	NI ;
-ohksisisi:ohksisis	NI ;
-ohksinssimaani:ohksinssimaan	NI ;
-ohksinsiyi:ohksinitsi	NI ;
-ohkomiaapiiniiwani:ohkomiaapiiniiwan	NI ;
-ohkomapinssini:ohkomapinssin	NI ;
-ohkínayo'ssini:ohkínayo'ssin	NI ;
-ohkinsstsisi:ohkinsstsis	NI ;
-ohkiniimoyi:ohkiniimo	NI ;
-ohkini:ohkin	NI ;
-oyííyisi:oyííyis	NI ;
-oyisi:oyis	NI ;
-nínaiistákoyi:nínaiistáko	NI ;
-niipístsiyi:niipístsi	NI ;
-nááto'kiookáísisaahtaayiyi:nááto'kiookáísisaahtaayi	NI ;
-náápiwayi:náápiwa	NI ;
-náámiksistsikoyi:náámiksistsiko	NI ;
-naatóyiiksistsikoyi:naatóyiiksistsiko	NI ;
-naatoyíksistsikoyi:naatoyíksistsiko	NI ;
-nisitóyi:nisitó	NI ;
-ninihkssíni:ninihkssín	NI ;
-ninaimsskaahkoyinnimaani:ninaimsskaahkoyinnimaan	NI ;
-ninaika'ksimoyi:ninaika'ksimo	NI ;
-nimohpáootsspiyi:nimohpáootsspi	NI ;
-niítahtaayi:niítahtaa	NI ;
-niípi:niíp	NI ;
-niitsítsikini:niitsítsikin	NI ;
-niitsítapia'piiyi:niitsítapia'pii	NI ;
-niitsíístakiimistsiyi:niitsíístakiimistsi	NI ;
-niitóóhtsiyi:niitóóhtsi	NI ;
-niitóyisi:niitóyis	NI ;
-niitá'pihkiitaani:niitá'pihkiitaan	NI ;
-niitá'paisiksikimiyi:niitá'paisiksikimi	NI ;
-niistsíípisskani:niistsíípisskan	NI ;
-niisóíkopottoyi:niisóíkopotto	NI ;
-niisíppoyi:niisíppo	NI ;
-niipssíma'tsisi:niipssíma'tsis	NI ;
-niipáítapiiwahsini:niipáítapiiwahsin	NI ;
-niipáítapiiyssini:niipáítapiiyssin	NI ;
-niimiá'piiyi:niimiá'pii	NI ;
-niiyíppoyi:niiyíppo	NI ;
-ni'tsitáísaipoyiyi:ni'tsitáísaipoyi	NI ;
-ni'tsikópottoyi:ni'tsikópotto	NI ;
-ni'tómoyi:ni'tómmo	NI ;
-ni'íítsi'saani:ni'íítsi'saan	NI ;
-náátsippoyi:náátsippo	NI ;
-náátsikopottoyi:náátsikopotto	NI ;
-náátsikopotoyi:náátsikopoto	NI ;
-náápioyisi:náápioyis	NI ;
-náápiiniiwani:náápiiniiwan	NI ;
-náápiihtaani:náápiihtaan	NI ;
-náápiaohkiiyi:náápiaohkii	NI ;
-náánisoyiyi:náánisoyi	NI ;
-náámaa2yi:náámaa2	NI ;
-nááipisstsáápikimi:nááipisstsáápikimm	NI ;
-napayíni'nssimaani:napayíni'nssimaan	NI ;
-napayíni:napayín	NI ;
-namááhkimaa'tsisi:namááhkimaa'tsis	NI ;
-naatóóhtsiyi:naatóóhtsi	NI ;
-naató'sipisátssaisskiyi:naató'sipisátssaisski	NI ;
-naató'saapistsissksiyi:naató'saapistsisskitsi	NI ;
-naatóysspikssínaakssini:naatóysspikssínaakssin	NI ;
-naatowá'piiyi:naatowá'pii	NI ;
-naatoyípi'ksikkahtssini:naatoyípi'ksikkahtssin	NI ;
-naapíttahsini:naapíttahsin	NI ;
-naamóí'staani:naamóí'staan	NI ;
-naamooyisi:naamooyis	NI ;
-naaipisstsiitsikini:naaipisstsiitsikin	NI ;
-naawoohtsiyi:naawoohtsi	NI ;
-mohkínsstsisiyi:mohkínsstsisi	NI ;
-miistsáákaitapissko1yi:miistsáákaitapissko1	NI ;
-miistsáákaitapissko2yi:miistsáákaitapissko2	NI ;
-matsináwaisstaami:matsináwaisstaam	NI ;
-mamiiksistsikoyi:mamiiksistsiko	NI ;
-mótookisi:mótookis	NI ;
-móssksipahpi:mósskitsipahp	NI ;
-móótoki'pi:móótoki'p	NI ;
-móópikkinaani:móópikkinaan	NI ;
-móókoani:móókoan	NI ;
-móókoan'ssiistsiyi:móókoan'ssiistsi	NI ;
-móókimaani:móókimaan	NI ;
-móókaakini:móókaakin	NI ;
-mónnikisi:mónnikis	NI ;
-mókkoyisi:mókkoyis	NI ;
-mottsísi:mottsís	NI ;
-mottsikísi:mottsikís	NI ;
-mottsikííkini:mottsikííkin	NI ;
-mottoksíínanni:mottoksíínann	NI ;
-motsí'naayi:motsí'naa	NI ;
-motókskoyi:motóksko	NI ;
-motoyi:moto	NI ;
-mosstoksísi:mosstoksís	NI ;
-mootstsípinnaani:mootstsípinnaan	NI ;
-mootskinaiisaami:mootskinaiisaam	NI ;
-mootóópisi:mootóópis	NI ;
-mootóónisi:mootóónis	NI ;
-mootohtóni:mootohtón	NI ;
-moostómi:moostóm	NI ;
-moonsskísi:moonsskís	NI ;
-mooní'siyi:mooní'si	NI ;
-moohkinákini:moohkinákin	NI ;
-mokákihtsimaani:mokákihtsimaan	NI ;
-moistómi:moistóm	NI ;
-moápisakisi:moápisakis	NI ;
-moápahkisi:moápahkis	NI ;
-mo'tsísi:mo'tsís	NI ;
-mo'tóísspatsikoyi:mo'tóísspatsiko	NI ;
-mo'tóyáóhkiiyi:mo'tóyáóhkii	NI ;
-mo'tokááni:mo'tokáán	NI ;
-mo'pi:mo'p	NI ;
-mo'kstsisi:mo'kstsis	NI ;
-mo'ksísi:mo'ksís	NI ;
-mo'kíni:mo'kín	NI ;
-mo'kííkini:mo'kííkin	NI ;
-mo'kakíni:mo'kakín	NI ;
-mo'kakííkini:mo'kakííkin	NI ;
-mohtóókisi:mohtóókis	NI ;
-mohtátsikini:mohtátsikin	NI ;
-mohsóóa'tsisi:mohsóóa'tsis	NI ;
-mohsokóyi:mohsokó	NI ;
-mohsoyísi:mohsoyís	NI ;
-mohpsskína'yi:mohpsskína'	NI ;
-mohpíni:mohpín	NI ;
-mohpííkini:mohpííkin	NI ;
-mohpikísi:mohpikís	NI ;
-mohksisísi:mohksisís	NI ;
-mohkokíni:mohkokín	NI ;
-mohkínsstsisi:mohkínsstsis	NI ;
-mohkátsi:mohkát	NI ;
-mohkatsikini:mohkatsikin	NI ;
-moyísi:moyís	NI ;
-mísstoani:mísstoan	NI ;
-mííniaohtaisttsikááhkimao'pi:mííniaohtaisttsikááhkimao'p	NI ;
-mííniaohkiiyi:mííniaohkii	NI ;
-mííni:míín	NI ;
-misisáóyisi:misisáóyis	NI ;
-misisa1yi:misisa1	NI ;
-misisa2yi:misisa2	NI ;
-misámaahkoyinnimaani:misámaahkoyinnimaan	NI ;
-miníyi:miní	NI ;
-miitsíksikinsstsspi:miitsíksikinsstssp	NI ;
-miitsiksikaahpi:miitsiksikaahp	NI ;
-miistsóyisi:miistsóyis	NI ;
-miistsísi:miistsís	NI ;
-miistáksskoyi:miistákssko	NI ;
-miistáki:miisták	NI ;
-miistakiimi:miistakiim	NI ;
-miiniinokooyi:miiniinokoo	NI ;
-miiniiwani:miiniiwan	NI ;
-miiniiyookaakini:miiniiyookaakin	NI ;
-miáápinaani:miáápinaan	NI ;
-mi'kotsíípiiyisi:mi'kotsíípiiyis	NI ;
-mi'kotsáápiksssini:mi'kotsáápiksssin	NI ;
-mi'kokááni:mi'kokáán	NI ;
-mi'kiákkssini:mi'kiákkssin	NI ;
-máókomi:máókom	NI ;
-máókayisi:máókayis	NI ;
-máóhtokskoyi:máóhtoksko	NI ;
-máóhksí'saani:máóhksí'saan	NI ;
-máóhkí'saani:máóhkí'saan	NI ;
-máóhka'saani:máóhka'saan	NI ;
-mánoyi:máno	NI ;
-máma'pisi:mámma'pis	NI ;
-máíipssimi:máíipssim	NI ;
-máakohkima'tsisi:máakohkimma'tsis	NI ;
-máakai'piiyiyi:máakai'piiyi	NI ;
-matsiníyi:matsiní	NI ;
-matóyihkoyi:matóyihko	NI ;
-matoihkoyipisatssaisskiyi:matoihkoyipisatssaisski	NI ;
-matoyísttsomo'kaani:matoyísttsomo'kaan	NI ;
-matoyí'nssimaani:matoyí'nssimaan	NI ;
-matakóyi:matakó	NI ;
-maotoyóópani:maotoyóópan	NI ;
-maoóyi:maoó	NI ;
-mao'tookoyi:mao'tooko	NI ;
-manistsí'sstaani:manistsí'sstaan	NI ;
-manistsíyi:manistsí	NI ;
-maná'tsisi:maná'tsis	NI ;
-mamínni:mamínn	NI ;
-mamííwayi:mamííwa	NI ;
-mamííyiyi:mamííyi	NI ;
-mamióótokisi:mamióótokis	NI ;
-mamióóhpoyisi:mamióóhpoyis	NI ;
-mamió'kakííkini:mamió'kakííkin	NI ;
-mamiominni:mamiominn	NI ;
-makssksiyi:maksskitsi	NI ;
-makóyoohsokoyiyi:makóyoohsokoyi	NI ;
-makóyoohkatsi:makóyoohkat	NI ;
-makóyisttsomo'kiyi:makóyisttsomo'ki	NI ;
-makoyópowáóowahsini:makoyópowáóowahsin	NI ;
-makoyoohkatsi:makoyoohkat	NI ;
-maká'pssáísskiyi:maká'pssáísski	NI ;
-maatááki:maatáák	NI ;
-ma'kakíínimaani:ma'kakíínimaan	NI ;
-ksstakssini:ksstakssin	NI ;
-ksowóóhtsiyi:ksowóóhtsi	NI ;
-ksowahsini:ksowahsin	NI ;
-ksísskstakióhpoyisi:ksísskstakióhpoyis	NI ;
-ksisttoyisi:ksisttoyis	NI ;
-ksistopísstakiohkisska'tsisi:ksistopísstakiohkisska'tsis	NI ;
-ksisstonímaapioyisi:ksisstonímmaapioyis	NI ;
-ksisstonímaani:ksisstonímmaan	NI ;
-ksisstoyitanissini:ksisstoyitanissin	NI ;
-ksisskanáótonniyi:ksisskanáótonni	NI ;
-ksisskanáówahsini:ksisskanáówahsin	NI ;
-ksisáíki'taani:ksisáíki'taan	NI ;
-ksinó'takssini:ksinó'takssin	NI ;
-ksinsiyi:ksinitsi	NI ;
-ksikksinattsiisaami:ksikksinattsiisaam	NI ;
-ksikkokóówayi:ksikkokóówa	NI ;
-ksikkihkimikoyi:ksikkihkimiko	NI ;
-ksikkapístsissksiyi:ksikkapístsisskitsi	NI ;
-ksikkapínssisi:ksikkapínssis	NI ;
-ksiistsimaani:ksiistsimaan	NI ;
-ksiistsikómsstaani:ksiistsikómsstaan	NI ;
-ksiistsikóyi:ksiistsikó	NI ;
-ksiistsikímisstaani:ksiistsikímisstaan	NI ;
-ksááhkoyi:ksááhko	NI ;
-kóópisi:kóópis	NI ;
-kóónsskoyi:kóónssko	NI ;
-kómsskoyi:kómssko	NI ;
-kottsáákiisi'kaani:kottsáákiisi'kaan	NI ;
-kotokiaapokoyi:kotokiaapoko	NI ;
-kotokiaanokoyi:kotokiaanoko	NI ;
-kootokiaapinaani:kootokiaapinaan	NI ;
-koopimistsiiyi:koopimmistsii	NI ;
-koopiisopoyi:koopiisopo	NI ;
-koohpááttstaani:koohpááttstaan	NI ;
-kominokoyi:kominoko	NI ;
-komihtaani:komihtaan	NI ;
-komihkíítaani:komihkíítaan	NI ;
-kokótoyi:kokóto	NI ;
-ko'si:ko's	NI ;
-ko'kíyi:ko'kí	NI ;
-kísskaa'tsisi:kísskaa'tsis	NI ;
-kinsstaa'tsisi:kinsstaa'tsis	NI ;
-kiníínokoyi:kiníínoko	NI ;
-kinakíni:kinakín	NI ;
-kiitakapssimi:kiitakapssimm	NI ;
-kiitaani:kiitaan	NI ;
-kiipóyiyi:kiipóyi	NI ;
-kiiyí'taani:kiiyí'taan	NI ;
-kiaayaapistsissksiyi:kiaayaapistsisskitsi	NI ;
-ki'takápssini:ki'takápssin	NI ;
-kániksiyi:kániksi	NI ;
-kááyihkimikoyi:kááyihkimiko	NI ;
-káyiisi:káyiis	NI ;
-katsiksisto'koyi:katsiksisto'ko	NI ;
-katsiikinakoyi:katsiikinako	NI ;
-kapimááni:kapimáán	NI ;
-kaookihkaani:kaookihkaan	NI ;
-kaoo'piyi:kaoo'pi	NI ;
-kano'tsisissini:kano'tsisissin	NI ;
-kaniksskoyi:kanikssko	NI ;
-kaná'pssini:kaná'pssin	NI ;
-kamihtááni:kamihtáán	NI ;
-kakahsiini:kakahsiin	NI ;
-kai'niksiyi:kai'niksi	NI ;
-kaatsiyi:kaatsi	NI ;
-kaapoksíínakssini:kaapoksíínakssin	NI ;
-kaapoksiinimaani:kaapoksiinimaan	NI ;
-kaawahkóyi:kaawahkó	NI ;
-kaahtssíni:kaahtssín	NI ;
-kaahtsá'tsisi:kaahtsá'tsis	NI ;
-kaayíísi:kaayíís	NI ;
-ka'ksimóyi:ka'ksimó	NI ;
-ka'ksimiisi:ka'ksimiis	NI ;
-ka'kahtáánayi:ka'kahtáána	NI ;
-ka'ksímoyi:ka'kitsímo	NI ;
-ksími:kitsímm	NI ;
-Ííkaitaisttsinao'pi:Ííkaitaisttsinao'p	NI ;
-íssoohtsiki:íssoohtsik	NI ;
-íikaitaissksinima'tstohkio'pi:íikaitaissksinima'tstohkio'p	NI ;
-isttsinaiksistsiko1yi:isttsinaiksistsiko1	NI ;
-isttsinaiksistsiko2yi:isttsinaiksistsiko2	NI ;
-isspssáíssksimao'pi:isspssáísskitsimao'p	NI ;
-isskihtáii'tahtaayi:isskihtáii'tahtaa	NI ;
-issikatoyiiksistsikoyi:issikatoyiiksistsiko	NI ;
-iitsínnisi'yiyi:iitsínnisi'yi	NI ;
-iitáómatapapitsitsisskoyi:iitáómatapapitsitsissko	NI ;
-iitáó'tsstoyiiyi:iitáó'tsstoyii	NI ;
-iitáóhkohtao'pi:iitáóhkohtao'p	NI ;
-iitáóhkanáóo'pi:iitáóhkanáóo'p	NI ;
-iitáóhkanaikokotoyiyi:iitáóhkanaikokotoyi	NI ;
-iitáísttsinao'pi:iitáísttsinao'p	NI ;
-iitáísaipoyiyi:iitáísaipoyi	NI ;
-iitáípa'ksiksini'kaayiyi:iitáípa'ksiksini'kaayi	NI ;
-iitáyiitsimaahkao'pi:iitáyiitsimaahkao'p	NI ;
-iitawáánao'kso'kii'pi:iitawáánao'kso'kii'p	NI ;
-iiniipasskaani:iiniipasskaan	NI ;
-i'nakohpomaiksistsikoyi:i'nakohpommaiksistsiko	NI ;
-itsiniyi:itsini	NI ;
-itsikini:itsikin	NI ;
-itsiihtaani:itsiihtaan	NI ;
-itowaisstaakssini:itowaisstaakssin	NI ;
-isttstsísotahkaapistsissksiyi:isttstsísotahkaapistsisskitsi	NI ;
-isttstsissíí'pisatssaisskiyi:isttstsissíí'pisatssaisski	NI ;
-isttsomo'kaani:isttsomo'kaan	NI ;
-isttsíkssaisskinaani:isttsíkssaisskinaan	NI ;
-isttsíístomssini:isttsíístomssin	NI ;
-isttsitaani:isttsitaan	NI ;
-isttsisspssini:isttsisspssin	NI ;
-isttsisspiisaami:isttsisspiisaam	NI ;
-isttsinaani:isttsinaan	NI ;
-isttsiksipokoyi:isttsiksipoko	NI ;
-isttsikónistsiyi:isttsikónistsi	NI ;
-isttsikítsikini:isttsikítsikin	NI ;
-isttsikihkina'siyi:isttsikihkina'si	NI ;
-isttsikánokoisoka'simi:isttsikánokoisoka'sim	NI ;
-isttsikánokoyi:isttsikánoko	NI ;
-isttsikapokoyi:isttsikapoko	NI ;
-isttsikakkssini:isttsikakkssin	NI ;
-isttókimaa'tsisi:isttókimaa'tsis	NI ;
-isttokimaani:isttokimaan	NI ;
-isttohksisoka'simi:isttohksisoka'sim	NI ;
-isttohkihkiitaani:isttohkihkiitaan	NI ;
-isttohkaiipisstsiyi:isttohkaiipisstsi	NI ;
-isttapinnakssini:isttapinnakssin	NI ;
-istotoohsini:istotoohsin	NI ;
-istaahtsistotoohsini:istaahtsistotoohsin	NI ;
-istaahtataniaakssini:istaahtataniaakssin	NI ;
-isstsskááni:isstsskáán	NI ;
-isstssimááni:isstssimáán	NI ;
-isstssimaa'tsisi:isstssimaa'tsis	NI ;
-isstsímotsiiy'ssiniyi:isstsímotsiiy'ssini	NI ;
-isstsipísimaa'tsisi:isstsipísimaa'tsis	NI ;
-isstsikomi:isstsikomm	NI ;
-isstsikahkoyi:isstsikahko	NI ;
-isstsiiyi:isstsii	NI ;
-isstsána'kimaa'tsisi:isstsána'kimaa'tsis	NI ;
-isstoowahsini:isstoowahsin	NI ;
-isstoohpoyiyi:isstoohpoyi	NI ;
-isspohkítsíkaahpi:isspohkítsíkaahp	NI ;
-isspohkítsíkahpi:isspohkítsíkahp	NI ;
-isspíksskoyi:isspíkssko	NI ;
-isspioohtsiyi:isspioohtsi	NI ;
-isspiksísoka'simi:isspiksísoka'sim	NI ;
-isspánokóísttsomo'kaani:isspánokóísttsomo'kaan	NI ;
-isspakóótohtonaitsikini:isspakóótohtonaitsikin	NI ;
-isspahkoyi:isspahko	NI ;
-issoohkoohtsiyi:issoohkitoohtsi	NI ;
-issoitahtaani:issoitahtaan	NI ;
-issohkatsi:issohkat	NI ;
-issksskoi'pi:issksskoi'p	NI ;
-isskská'takssini:isskská'takssin	NI ;
-issksí'sipistaa'tsisi:issksí'sipistaa'tsis	NI ;
-issksimátoo'pi:issksimátoo'p	NI ;
-issksimátakssini:issksimátakssin	NI ;
-isskoohtsiki:isskoohtsik	NI ;
-isskoohtsiyi:isskoohtsi	NI ;
-issísskioohsa'tsisi:issísskioohsa'tsis	NI ;
-issitsímaa'tsisi:issitsímaa'tsis	NI ;
-issisi:issis	NI ;
-issikotoyiipasskaani:issikotoyiipasskaan	NI ;
-issikihtatsikiaiksistsikoyi:issikihtatsikiaiksistsiko	NI ;
-issiiststaani:issiiststaan	NI ;
-issáana'kima'tsisi:issáana'kima'tsis	NI ;
-issapiá'tsisi:issapiá'tsis	NI ;
-isoohkamaa'tsisi:isoohkamaa'tsis	NI ;
-isksksínakssini:isksksínitakssin	NI ;
-isitoyi:isito	NI ;
-ipssto'kiyi:ipssto'ki	NI ;
-ipssímaa'tsisi:ipssímaa'tsis	NI ;
-ippotsipistaani:ippotsipistaan	NI ;
-ipapoki'tsimaani:ipapoki'tsimaan	NI ;
-inokssini:inokssin	NI ;
-innoisooyiinii'pi:innoisooyiinii'p	NI ;
-innikinaani:innikinaan	NI ;
-innaihtsookakihtsimaani:innaihtsookakihtsimaan	NI ;
-inao'sa'tsisi:inao'sa'tsis	NI ;
-inaani:inaan	NI ;
-inaamaahkaani:inaamaahkaan	NI ;
-imohpaootsspi:imohpaootssp	NI ;
-imitáóhkatsi:imitáóhkat	NI ;
-imoyoohtookiyi:immoyoohtooki	NI ;
-imoyísttsomo'kaani:immoyísttsomo'kaan	NI ;
-imoyiisoka'simi:immoyiisoka'sim	NI ;
-imoyiikanssini:immoyiikanssin	NI ;
-imistsííhkiitaani:immistsííhkiitaan	NI ;
-imistsiiyi:immistsii	NI ;
-imikskisttsomo'kaani:immikskisttsomo'kaan	NI ;
-iksskanáówahsini:iksskanáówahsin	NI ;
-iksíkkáaa'siyi:iksíkkáaa'si	NI ;
-iksistsikomssini:iksistsikomssin	NI ;
-ikomihtaani:ikomihtaan	NI ;
-ikkstsiksisi:ikkstsiksis	NI ;
-ikkstóttsisi:ikkstóttsis	NI ;
-ikkstóttsiimsskaani:ikkstóttsiimsskaan	NI ;
-ikkítstakssini:ikkítstakssin	NI ;
-ikkihkimikoyi:ikkihkimiko	NI ;
-ikkatsimaanisi'yiyi:ikkatsimaanisi'yi	NI ;
-ikkahsánissini:ikkahsánissin	NI ;
-ikawahkoyi:ikawahko	NI ;
-iitssksííststaani:iitssksííststaan NI ;
-iitsskonnikisi:iitsskonnikis	NI ;
-iitssíkohksimio'pi:iitssíkohkitsimio'p	NI ;
-iitsittsimaani:iitsittsimaan	NI ;
-iitsimaisskinsimaani:iitsimaisskinitsimaan	NI ;
-iitsimaani:iitsimaan	NI ;
-iitsimaahkaani:iitsimaahkaan	NI ;
-iitopóniaakio'pi:iitopóniaakio'p	NI ;
-iitáópiaapikksso'pi:iitáópiaapikksso'p	NI ;
-iitáópaoo'payi:iitáópaoo'pa	NI ;
-iitáómiiyáóo'pi:iitáómiiyáóo'p	NI ;
-iitáókakihtsimao'pi:iitáókakihtsimao'p	NI ;
-iitáóhpomootsiiyo'pi:iitáóhpommootsiiyo'p	NI ;
-iitáóhpomao'pi:iitáóhpommao'p	NI ;
-iitáítsiiyiiso'pi:iitáítsiiyiiso'p	NI ;
-iitáíssksinima'tstohkio'pi:iitáíssksinima'tstohkio'p	NI ;
-iitáíssiiststakio'pi:iitáíssiiststakio'p NI ;	
-iitáíssáakio'pi:iitáíssáakio'p	NI ;
-iitáísootsi'kao'pi:iitáísootsi'kao'p	NI ;
-iitáísooyo'pi:iitáísooyo'p	NI ;
-iitáísokohko'so'pi:iitáísokohko'so'p	NI ;
-iitáísokinakio'pi:iitáísokinakio'p	NI ;
-iitáísokihtakio'pi:iitáísokihtakio'p	NI ;
-iitáísííkaaso'pi:iitáísííkaaso'p	NI ;
-iitáísiiyiso'pi:iitáísiiyiso'p	NI ;
-iitáísátsaakio'pi:iitáísátsaakio'p	NI ;
-iitáísápiooyááttstao'pi:iitáísápiooyááttstao'p	NI ;
-iitáísapssítsimao'pi:iitáísapssítsimao'p NI ;	
-iitáísapssáakio'pi:iitáísapssáakio'p	NI ;
-iitáísapa'soyinnimao'pi:iitáísapa'soyinnimao'p	NI ;
-iitáísapayi'sipisao'pi:iitáísapayi'sipisao'p	NI ;
-iitáí'tssksoyo'pi:iitáí'tssksoyo'p	NI ;
-iitáí'poyo'pi:iitáí'poyo'p	NI ;
-iitáí'nssimao'pi:iitáí'nssimao'p	NI ;
-iitáíhtsiiyo'pi:iitáíhtsiiyo'p	NI ;
-iitáíhkssakio'pi:iitáíhkssakio'p	NI ;
-iitáwaatsímoyihkao'pi:iitáwaatsímoyihkao'p	NI ;
-iitáyo'kiaakio'pi:iitáyo'kiaakio'p	NI ;
-iitáyaakihtsootsspi:iitáyaakihtsootssp	NI ;
-iitawááwao'píniisao'pi:iitawááwao'píniisao'p	NI ;
-iitawááhkiitao'piyi:iitawááhkiitao'pi	NI ;
-iinió'tokaani:iinió'tokaan	NI ;
-iináni:iinán	NI ;
-iimíkihta'tsskaani:iimíkihta'tsskaan	NI ;
-iimitaohkatsiyi:iimitaohkatsi	NI ;
-iimatotsiinaimoyi:iimatotsiinaimo	NI ;
-iimatáípakkihkaayi:iimatáípakkihkaa	NI ;
-iiitáíhtsootsiiyo'pi:iiitáíhtsootsiiyo'p	NI ;
-iihtáómatskapatakio'pi:iihtáómatskapatakio'p	NI ;
-iihtáómaitsimihkio'pi:iihtáómaitsimihkio'p	NI ;
-iihtáókspainnakio'pi:iihtáókspainnakio'p	NI ;
-iihtáókoopsskao'pi:iihtáókoopsskao'p	NI ;
-iihtáóhpakóyi'sakio'pi:iihtáóhpakóyi'sakio'p	NI ;
-iihtáóhkomatakio'pi:iihtáóhkomatakio'p	NI ;
-iihtáítsinikio'pi:iihtáítsinikio'p	NI ;
-iihtáítsiimooyao'pi:iihtáítsiimooyao'p	NI ;
-iihtáítsiiyimio'so'pi:iihtáítsiiyimio'so'p	NI ;
-iihtáísttsikááhkimao'pi:iihtáísttsikááhkimao'p	NI ;
-iihtáísskskaakio'pi:iihtáísskskaakio'p	NI ;
-iihtáísoksistawa'sao'pi:iihtáísoksistawa'sao'p	NI ;
-iihtáísokamisáóo'pi:iihtáísokamisáóo'p	NI ;
-iihtáísínaakio'pi:iihtáísínaakio'p	NI ;
-iihtáísikksinipsso'pi:iihtáísikksinipsso'p	NI ;
-iihtáísikkonnikipsso'pi:iihtáísikkonnikipsso'p	NI ;
-iihtáísapiipomao'pi:iihtáísapiipommao'p	NI ;
-iihtáísaisi'toyihpiyi:iihtáísaisi'toyihpi	NI ;
-iihtáísaipsskaahpi:iihtáísaipsskaahp	NI ;
-iihtáípsstomaahkao'pi:iihtáípsstomaahkao'p	NI ;
-iihtáínao'so'pi:iihtáínao'so'p	NI ;
-iihtáíksisiststao'pi:iihtáíksisiststao'p	NI ;
-iihtáíkkowao'pi:iihtáíkkowao'p	NI ;
-iihtá'paisskootsiiyo'pi:iihtá'paisskootsiiyo'p	NI ;
-iihtáyo'kimao'pi:iihtáyo'kimao'p	NI ;
-iihtáyaakohkimao'pi:iihtáyaakohkimmao'p	NI ;
-iihtáyaahkoi'sstaakio'pi:iihtáyaahkoi'sstaakio'p	NI ;
-iihtawáákomímotsiiyo'pi:iihtawáákomímmotsiiyo'p	NI ;
-iihtawá'siiyo'pi:iihtawá'siiyo'p	NI ;
-iihpáókoopihkao'pi:iihpáókoopihkao'p	NI ;
-iihpáíksksisttsikaahkiaakio'pi:iihpáíksksisttsikaahkiaakio'p	NI ;
-iiyiksíkoyiitahtaayi:iiyiksíkoyiitahtaa	NI ;
-iaapani:iaapan	NI ;
-i'tskóóhtsiyi:i'tskóóhtsi	NI ;
-i'tomoyi:i'tommo	NI ;
-i'stááni:i'stáán	NI ;
-i'simááni:i'simáán	NI ;
-i'simaa'tsisi:i'simaa'tsis	NI ;
-i'pówahsini:i'pówahsin	NI ;
-i'pahkoyi:i'pahko	NI ;
-i'náksiini:i'náksiin	NI ;
-i'ksisáka'piyi:i'ksisáka'pi	NI ;
-i'ksisakoyi:i'ksisako	NI ;
-i'ksino'takkssini:i'ksino'takkssin	NI ;
-ihtátsikiisapo'piyi:ihtátsikiisapo'pi	NI ;
-ihtakssini:ihtakssin	NI ;
-iyó'kimaa'tsisi:iyó'kimaa'tsis	NI ;
-iyoomoksiksiiyi:iyoomoksiksii	NI ;
-iyí'taani:iyí'taan	NI ;
-Áísstoyiimsstaayi:Áísstoyiimsstaa	NI ;
-Áísínai'piyi:Áísínai'pi	NI ;
-aakáíksamaiksi1yi:aakáíksamaiksi1	NI ;
-aakááapioyisi:aakááapioyis	NI ;
-ápssiyi:ápssi	NI ;
-áótooksiinaattsiyi:áótooksiinaattsi	NI ;
-áópakíítsskii'pi:áópakíítsskii'p	NI ;
-áó'tsohkssistta'pi:áó'tsohkssistta'p	NI ;
-áó'tokiaakssini:áó'tokiaakssin	NI ;
-áó'takiiyi:áó'takii	NI ;
-áóhtoksóo'kiyi:áóhtoksóo'ki	NI ;
-áóhto'tsssapiyi:áóhto'tsssapi	NI ;
-áóhtakoyi:áóhtako	NI ;
-áóhpiikiinaattsiyi:áóhpiikiinaattsi	NI ;
-áóhkominokoyi:áóhkominoko	NI ;
-ákookinssini:ákookinssin	NI ;
-áísttákoyiiyi:áísttákoyii	NI ;
-áísstssípokoyi:áísstssípoko	NI ;
-áíssinnii'pi:áíssinnii'p	NI ;
-áíssimihkatoo'pi:áíssimihkatoo'p	NI ;
-áísoyoopoksiikimiyi:áísoyoopoksiikimi	NI ;
-áísiksikimiyi:áísiksikimi	NI ;
-áísiitamatoo'piyi:áísiitamatoo'pi	NI ;
-áísapíkaii'pi:áísapíkaii'p	NI ;
-áísaipihkáísttsomo'kaani:áísaipihkáísttsomo'kaan	NI ;
-áísaipihkaisoka'simi:áísaipihkaisoka'sim	NI ;
-áísaakotsiiyi:áísaakotsii	NI ;
-áípottaayi:áípottaa	NI ;
-áípahtsíkaimoyi:áípahtsíkaimo	NI ;
-áípahpoyiyi:áípahpoyi	NI ;
-áíksisstáanattsiiyi:áíksisstáanattsii	NI ;
-áíksinottsisi:áíksinottsis	NI ;
-áíksikksiksi(s)yi:áíksikksiksi(s)	NI ;
-áíksikkookiyi:áíksikkooki	NI ;
-áíkkatoo'pi:áíkkatoo'p	NI ;
-áíkkaniksipii'pi:áíkkaniksipii'p	NI ;
-áiksippoyínnii'pi:áiksippoyínnii'p	NI ;
-áápo'pihkaa'tsisi:áápo'pihkaa'tsis	NI ;
-ááksi'ksaahkoyi:ááksi'ksaahko	NI ;
-ááhko'sskaani:ááhko'sskaan	NI ;
-áwákaasiistotoohsini:áwákaasiistotoohsin	NI ;
-áwaanataapistsissksiyi:áwaanataapistsisskitsi	NI ;
-atsówa'sskoyi:atsówa'ssko	NI ;
-atsíínaimoyi:atsíínaimo	NI ;
-atsistoohkinnssini:atsistoohkinnssin	NI ;
-atsipíisi:atsipíis	NI ;
-atsiníkssini:atsiníkssin	NI ;
-atsinikíísinaakssini:atsinikíísinaakssin	NI ;
-atsinayíyi:atsinayí	NI ;
-atsikíni:atsikín	NI ;
-atotááni:atotáán	NI ;
-atonááni:atonáán	NI ;
-atowáa'tsisi:atowáa'tsis	NI ;
-ataksáakssini:ataksáakssin	NI ;
-astotoohsini:astotoohsin	NI ;
-asóópa'tsisi:asóópa'tsis	NI ;
-asóka'simi:asóka'sim	NI ;
-asonnopa'tsisi:asonnopa'tsis	NI ;
-asoyínnáápiooyisi:asoyínnáápiooyis	NI ;
-asoyínni:asoyínn	NI ;
-asoyááhkoinnimaani:asoyááhkoinnimaan	NI ;
-asáápo'pinááttsiyi:asáápo'pinááttsi	NI ;
-apookaani:apookaan	NI ;
-apisaani:apisaan	NI ;
-apiksípistaani:apiksípistaan	NI ;
-apáni'kahtaa'tsisi:apáni'kahtaa'tsis	NI ;
-apáíhpiisoká'simi:apáíhpiisoká'sim	NI ;
-apasstaani:apasstaan	NI ;
-apaohponotssimi:apaohponotssim	NI ;
-apaksísttohksíksaapiooyisi:apaksísttohksíksaapiooyis	NI ;
-apaksísttohksiksisi:apaksísttohksiksis	NI ;
-apaksípistaani:apaksípistaan	NI ;
-apahtóksipisskani:apahtóksipisskan	NI ;
-apahtóksaapiooyisi:apahtóksaapiooyis	NI ;
-apahsónnikisi:apahsónnikis	NI ;
-apahkísi:apahkís	NI ;
-apahkiáápokoyi:apahkiáápoko	NI ;
-aotahkoinaattsiyi:aotahkoinaattsi	NI ;
-aoówahsini:aoówahsin	NI ;
-aoó'ssini:aoó'ssin	NI ;
-aomaohksikimiiyi:aomaohksikimii	NI ;
-aokayisi:aokayis	NI ;
-ao'tópistaani:ao'tópistaan	NI ;
-ao'tookoyi:ao'tooko	NI ;
-aohkííyi:aohkíí	NI ;
-aohkiáána'kimaa'tsisi:aohkiáána'kimaa'tsis	NI ;
-anootapisttsomo'kaani:anootapisttsomo'kaan	NI ;
-aná'kimaa'tsisi:aná'kimaa'tsis	NI ;
-amopístaani:amopístaan	NI ;
-amoonimaani:amoonimaan	NI ;
-amínsstsiikini:amínsstsiikin	NI ;
-amí'tsssokimiyi:amí'tsssokimi	NI ;
-amánissini:amánissin	NI ;
-amáíipssimi:amáíipssim	NI ;
-amató'simaani:amató'simaan	NI ;
-amaohkaapistsissksiyi:amaohkaapistsisskitsi	NI ;
-akssíni:akssín	NI ;
-akspííyi:akspíí	NI ;
-akspiáápiiniiwani:akspiáápiiniiwan	NI ;
-aksistóóyinihkssini:aksistóóyinihkssin	NI ;
-aksipístaani:aksipístaan	NI ;
-aksipínnakssini:aksipínnakssin	NI ;
-akóópsskaani:akóópsskaan	NI ;
-akóópisi:akóópis	NI ;
-akóka'tssini:akóka'tssin	NI ;
-akomí'tsimaani:akomí'tsimaan	NI ;
-akí'kaani:akí'kaan	NI ;
-akimata'pssiyi:akimmata'pssi	NI ;
-akákihtsimaani:akákihtsimaan	NI ;
-akáa'tsisi:akáa'tsis	NI ;
-akakkahkoyi:akakkahko	NI ;
-akai'tsiiyi:akai'tsii	NI ;
-aisattsikohtakoyi:aisattsikohtako	NI ;
-aiksisookiyi:aiksisooki	NI ;
-aatsímoyihkaani:aatsímoyihkaan	NI ;
-aatoksípistaani:aatoksípistaan	NI ;
-aatakoyi:aatako	NI ;
-aapíksssini:aapíksssin	NI ;
-aapíínima'tsisi:aapíínima'tsis	NI ;
-aapitsíkamaani:aapitsíkamaan	NI ;
-aapitsíkamaa'tsisi:aapitsíkamaa'tsis	NI ;
-aapistsissksiyi:aapistsisskitsi	NI ;
-aapiónsskiyi:aapiónsski	NI ;
-aapinákosi:aapinákos	NI ;
-aapi'maani:aapi'maan	NI ;
-aapátsstaani:aapátsstaan	NI ;
-aapátohkatsi:aapátohkat	NI ;
-aapátataksáakssini:aapátataksáakssin	NI ;
-aapáíaiyi:aapáíai	NI ;
-aapaookiyi:aapaooki	NI ;
-aapaawapsspiyi:aapaawapsspi	NI ;
-aanisoyi:aaniso	NI ;
-aanáttsiiyi:aanáttsii	NI ;
-aaná'kimaa'tsisi:aaná'kimaa'tsis	NI ;
-aamio'kakiikinaattsiyi:aamio'kakiikinaattsi	NI ;
-aakókaa'tsisi:aakókaa'tsis	NI ;
-aakíípasskaani:aakíípasskaan	NI ;
-aakiika'ksimiiyi:aakiika'ksimii	NI ;
-aakáítapisskoyi:aakáítapissko	NI ;
-aaápaoo'ssini:aaápaoo'ssin	NI ;
-aaápani:aaápan	NI ;
-aaattsistaotsipiiisi:aaattsistaotsipiiis	NI ;
-aahkóinnimaani:aahkóinnimaan	NI ;
-aahkioohsa'tsisi:aahkioohsa'tsis	NI ;
-aahkiáapiksistsikoyi:aahkiáapiksistsiko	NI ;
-aayí'sipisaani:aayí'sipisaan	NI ;
-awóí'sstaakssini:awóí'sstaakssin	NI ;
-awó'taani:awó'taan	NI ;
-awápistaani:awápistaan	NI ;
-awápahkiaana'kimaa'tsisi:awápahkiaana'kimaa'tsis	NI ;
-awáksipistaani:awáksipistaan	NI ;
-awáí'sstaakssini:awáí'sstaakssin	NI ;
-awatsimaani:awatsimaan	NI ;
-awapokiyi:awapoki	NI ;
-awaatakoyiyi:awaatakoyi	NI ;
-awahsini:awahsin	NI ;
-awahkáóótsiiyssini:awahkáóótsiiyssin	NI ;
-awahkáa'tsisi:awahkáa'tsis	NI ;
-awayiisoonii'pi:awayiisoonii'p	NI ;
-a'síítsiksáápiooyisi:a'síítsiksáápiooyis	NI ;
-a'síítahtaayi:a'síítahtaa	NI ;
-a'sííya'tsisi:a'sííya'tsis	NI ;
-a'sááni:a'sáán	NI ;
-a'póóhsini:a'póóhsin	NI ;
-a'ksikahkssini:a'ksikahkssin	NI ;
-a'kíítoyisi:a'kíítoyis	NI ;
-a'kíítoyiyi:a'kíítoyi	NI ;
-a'kióóhsini:a'kióóhsin	NI ;
-a'kihtákssini:a'kihtákssin	NI ;
-a'kakáwaatsimaani:a'kakáwaatsimaan	NI ;
-a'kahkóyi:a'kahkó	NI ;
 
 ! Below are the regular DEPENDENT noun stems
 
 LEXICON DEP_STEMS
-@U.stem.DEP@ DEP_NA_STEMS ;
-@U.stem.DEP@ DEP_NI_STEMS ;
+@P.pos.NA@ DEP_NA_STEMS ;
+@P.pos.NI@ DEP_NI_STEMS ;
 
 LEXICON DEP_NA_STEMS
+! Test Stems
 nohkówa:ohkó                NAD ;
 naaáhsa:maaáhs              NAD ;
 nitána:itán                 NAD ;
 niksíssta:iksísst           NAD ;
-
-LEXICON DEP_NI_STEMS
-ookóówayi+NID:ookóówan     NI_POSS_NUM ;
+! Full list
 
 LEXICON NA
-@R.class.NOUN@+NA:@R.class.NOUN@0  NA_0_IM ;
+@P.pos.NA@@R.class.NOUN@+NA:@P.pos.NA@@R.class.NOUN@0  IM ;
 @R.class.VERB@+VAI:@R.class.VERB@0 VAI_SUFFIXES ;
-
-! LEXICON NA_SG
-! @P.number.SG@+NA:@P.number.SG@  NA_0_IM ;
-! @R.class.VERB@+VAI@R.class.VERB@:0 VAI_SUFFIXES ;
-
-! LEXICON NA_PL
-! @P.number.PL@+NA:@P.number.PL@  NA_0_IM ;
-! @R.class.VERB@+VAI@R.class.VERB@:0 VAI_SUFFIXES ;
 
 LEXICON NA_IM
-@P.im.IM@@R.class.NOUN@+NA:@P.in.IM@@R.class.NOUN@  NA_0_IM ;
+@P.im.IM@@P.pos.NA@@R.class.NOUN@+NA:@P.im.IM@@P.pos.NA@@R.class.NOUN@  IM ;
 @R.class.VERB@+VAI:@R.class.VERB@0 VAI_SUFFIXES ;
 
-! LEXICON NA_SG_IM
-! @P.number.SG@@P.im.IM@+NA:@P.number.SG@@P.im.IM@  NA_0_IM ;
-! @R.class.VERB@+VAI:@R.class.VERB@0 VAI_SUFFIXES ;
-
-! LEXICON NA_PL_IM
-! @P.number.PL@@P.im.IM@+NA:@P.number.PL@@P.im.IM@  NA_0_IM ;
-! @R.class.VERB@+VAI:@R.class.VERB@0 VAI_SUFFIXES ;
-
 LEXICON NI
-@R.class.NOUN@+NI:@R.class.NOUN@0  NA_0_IM ;
+@P.pos.NI@@R.class.NOUN@+NI:@P.pos.NI@@R.class.NOUN@0  IM ;
 @R.class.VERB@+VII:@R.class.VERB@0 VII_SUFFIXES ;
 
-! LEXICON NI_SG
-! @P.number.SG@+NI:@P.number.SG@  NI_POSS_NUM ;
-! @R.class.VERB@+VII@R.class.VERB@:0 VII_SUFFIXES ;
-
-! LEXICON NI_PL
-! @P.number.PL@+NI:@P.number.PL@  NI_POSS_NUM ;
-! @R.class.VERB@+VII@R.class.VERB@:0 VII_SUFFIXES ;
-
 LEXICON NI_IM
-@P.im.IM@@R.class.NOUN@+NI:@P.im.IM@@R.class.NOUN@0  NI_POSS_NUM ;
-@R.class.VERB@+VII@R.class.VERB@:0 VII_SUFFIXES ;
-
-! LEXICON NI_SG_IM
-! @P.number.SG@@P.im.IM@+NI:@P.number.SG@@P.im.IM@  NI_POSS_NUM ;
-! @R.class.VERB@+VII@R.class.VERB@:0 VII_SUFFIXES ;
-
-! LEXICON NI_PL_IM
-! @P.number.PL@@P.im.IM@+NI:@P.number.PL@@P.im.IM@  NI_POSS_NUM ;
-! @R.class.VERB@+VII@R.class.VERB@:0 VII_SUFFIXES ;
+@P.im.IM@@P.pos.NI@@R.class.NOUN@+NI:@P.im.IM@@P.pos.NI@@R.class.NOUN@0  IM ;
+@R.class.VERB@+VII:@R.class.VERB@0 VII_SUFFIXES ;
 
 LEXICON NAD
-+NAD:0  NA_0_IM ;
-
-! LEXICON NAD_SG
-! @P.number.SG@+NAD:@P.number.SG@  NA_0_IM ;
-
-! LEXICON NAD_PL
-! @P.number.PL@+NAD:@P.number.PL@  NA_0_IM ;
-
-LEXICON NAD_IM
-@P.im.IM@+NAD:@P.im.IM@  NA_0_IM ;
-
-! LEXICON NAD_SG_IM
-! @P.number.SG@@P.im.IM@+NAD:@P.number.SG@@P.im.IM@  NA_0_IM ;
-
-! LEXICON NAD_PL_IM
-! @P.number.PL@@P.im.IM@+NAD:@P.number.PL@@P.im.IM@  NA_0_IM ;
+@P.pos.NA@+NAD:@P.pos.NA@0  POSS_NUM ;
 
 LEXICON NID
-+NID:0  NI_POSS_NUM ;
-
-! LEXICON NID_SG
-! @P.number.SG@+NID:@P.number.SG@  NI_POSS_NUM ;
-
-! LEXICON NID_PL
-! @P.number.PL@+NID:@P.number.PL@  NI_POSS_NUM ;
-
-LEXICON NID_IM
-@P.im.IM@+NID:@P.im.IM@  NI_POSS_NUM ;
-
-! LEXICON NID_SG_IM
-! @P.number.SG@@P.im.IM@+NID:@P.number.SG@@P.im.IM@  NI_POSS_NUM ;
-
-! LEXICON NID_PL_IM
-! @P.number.PL@@P.im.IM@+NID:@P.number.PL@@P.im.IM@  NI_POSS_NUM ;
+@P.pos.NI@+NID:@P.pos.NI@0  POSS_NUM ;
 
 ! Below is the combinatorial PARADIGM for the possessive circumfixes
 
@@ -3666,41 +1847,62 @@ LEXICON NID_IM
 ! stem+NUM
 ! stem+OBV
 
-LEXICON NA_0_IM
-@D.person.NULL@@R.im.IM@:@D.person.NULL@@R.im.IM@%>im NA_POSS ;
-@D.person.NULL@@D.im.IM@                              NA_POSS ;
-@R.person.NULL@                                       NA_POSS ;
+LEXICON IM
+0 POSS_NUM ;
+@D.person.NULL@@R.im.IM@:@D.person.NULL@@R.im.IM@%>im POSS_NUM ;
+@D.person.NULL@@D.im.IM@                              POSS_NUM ;
+@R.person.NULL@                                       POSS_NUM ;
 
-LEXICON NA_POSS
+LEXICON POSS_NUM
 ! Singular possessors
-@U.person.NI@+Px1Sg:@U.person.NI@0   NA_NUMBER_OBV_SUFFIXES ;
-@U.person.KI@+Px2Sg:@U.person.KI@0   NA_NUMBER_OBV_SUFFIXES ;
-@U.person.OT@+Px3Sg:@U.person.OT@0   NA_NUMBER_OBV_SUFFIXES ;
-@U.person.NULL@:@U.person.NULL@      NA_NUMBER_OBV_SUFFIXES ;
+@R.person.NI@+Px1Sg:@R.person.NI@0   NOUN_SUFFIXES ;
+@R.person.KI@+Px2Sg:@R.person.KI@0   NOUN_SUFFIXES ;
+@R.person.OT@+Px3Sg:@R.person.OT@0   NOUN_SUFFIXES ;
+@R.person.NULL@:@R.person.NULL@0      NOUN_SUFFIXES ;
 ! Plural possessors
-@U.person.NI@+Px1Pl:@U.person.NI@%>innaan  NA_NUMBER_OBV_SUFFIXES ;
-@U.person.KI@+Px21Pl:@U.person.KI@%>innoon NA_NUMBER_OBV_SUFFIXES ;
-@U.person.KI@+Px2Pl:@U.person.KI@%>oaawa   NA_NUMBER_OBV_SUFFIXES ;
-@U.person.OT@+Px3Pl:@U.person.OT@%>oaawa   NA_NUMBER_OBV_SUFFIXES ;
+@R.person.NI@+Px1Pl:@R.person.NI@%>innaan  NOUN_SUFFIXES ;
+@R.person.KI@+Px21Pl:@R.person.KI@%>innoon NOUN_SUFFIXES ;
+@R.person.KI@+Px2Pl:@R.person.KI@%>oaawa   NOUN_SUFFIXES ;
+@R.person.OT@+Px3Pl:@R.person.OT@%>oaawa   NOUN_SUFFIXES ;
 
-! Below is the set of verb suffixes that occur when a noun undergoes the verbalization process. (aakiiyiwa-she is a woman).
-! They are only instransitive verbs. Somethings to note. I have only included the person suffixes, not the derivational suffixes.
+LEXICON NOUN_SUFFIXES
+@R.pos.NA@ NA_SUFFIXES ;
+@R.pos.NI@ NI_SUFFIXES ;
+
+LEXICON NA_SUFFIXES
+! Obviative
+@R.person.NULL@+Obv:@R.person.NULL@%>yi # ; ! Optional obviative with non-possessed form
+@D.person.NULL@@R.person.OT@+Obv:@D.person.NULL@@R.person.OT@%>yi # ; ! Obligatory obviative with 3rd person possessor
+@D.person.NULL@@D.person.OT@+Obv:@D.person.NULL@@D.person.OT@%>yi # ; ! Optional obviative with non-3rd possessor
+! Plural
++Pl:%>iksi # ; ! Optional plural NO CONDITIONS (other than non-singular)
+! Non-Referring
++Non:%>i # ; ! Optional non-referring suffix, number unrestricted
+@D.person.OT@+Sg:@D.person.OT@%>wa # ; ! Optional singular for non-3rd person possessed, non-plural only
+
+LEXICON NI_SUFFIXES
+@D.number.PL@+Sg:@D.number.SG@%>yi # ; 
+@D.number.SG@+Pl:@D.number.SG@%>istsi # ;
+@D.number.SG@@D.number.PL@+Non:@D.number.SG@@D.number.PL@%>i # ;
+
+! Below is the set of verb suffixes that occur when a noun undergoes the verbalization process. (aakiiyiwa 'she is a woman').
+! They are only instransitive verbs. Some things to note. I have only included the person suffixes, not the derivational suffixes.
 ! This verb paradigm does not include dependent nouns.
 
 LEXICON VAI_SUFFIXES
-@R.mode.IND@+Ind:@R.mode.IND@ INDEP_VAI_SUFFIXES ;
-@R.mode.CON@+Cnj:@R.mode.CON@ CONJ_VAI_SUFFIXES ;
-@R.mode.SUB@+Sbj:@R.mode.SUB@ SUBJ_VAI_SUFFIXES ;
-@R.mode.IRR@+Irr:@R.mode.IRR@ UNREAL_VAI_SUFFIXES ;
-@R.mode.IMP@+Imp:@R.mode.IMP@ IMP_VAI_SUFFIXES ;
+@P.mode.IND@+Ind:@P.mode.IND@ INDEP_VAI_SUFFIXES ;
+@P.mode.CON@+Cnj:@P.mode.CON@ CONJ_VAI_SUFFIXES ;
+@P.mode.SUB@+Sbj:@P.mode.SUB@ SUBJ_VAI_SUFFIXES ;
+@P.mode.IRR@+Irr:@P.mode.IRR@ UNREAL_VAI_SUFFIXES ;
+@P.mode.IMP@+Imp:@P.mode.IMP@ IMP_VAI_SUFFIXES ;
 
 LEXICON INDEP_VAI_SUFFIXES
 ! Third Person Interrogatives
 @R.person.NULL@+3Sg+INTERR:@R.person.NULL@%>waatsiksi # ;
 @R.person.NULL@+3Pl+INTERR:@R.person.NULL@%>waiksaawa # ;
 ! Singular INDEPENDENT
-@R.person.NI@+1Sg:@R.person.NI@yi   	ANIM_INTERR ;	
-@R.person.KI@+2Sg:@R.person.KI@yi   		ANIM_INTERR ;
+@R.person.NI@+1Sg:@R.person.NI@%>yi   	ANIM_INTERR ;	
+@R.person.KI@+2Sg:@R.person.KI@%>yi   		ANIM_INTERR ;
 @R.person.NULL@+3Sg:@R.person.NULL@%>wa		ENCLITICS ;
 @R.person.NULL@+4Sg:@R.person.NULL@%>yini   	ENCLITICS ; ! Unknown, but following Frantz regarding the third person.
 ! Plural INDEPENDENT
@@ -3791,38 +1993,6 @@ LEXICON UNREAL_VII_SUFFIXES
 ! Plural UNREAL  
 @R.person.NULL@+%0Pl:@R.person.NULL@%>yiwahtopiyi	ENCLITICS ;
 
-LEXICON NA_NUMBER_OBV_SUFFIXES
-! Singular
-@D.number.PL@ NA_NUMBER_SUFFIXES_SG ;
-! Obviative
-@R.person.NULL@+Obv:@R.person.NULL@%>yi # ; ! Optional obviative with non-possessed form
-@D.person.NULL@@U.person.OT@+Obv:@D.person.NULL@@U.person.OT@%>yi # ; ! Obligatory obviative with 3rd person possessor
-@D.person.NULL@@D.person.OT@+Obv:@D.person.NULL@@D.person.OT@%>yi # ; ! Optional obviative with non-3rd possessor
-! Plural
-@D.number.SG@@D.person.OT@+Pl:@D.number.SG@@D.person.OT@%>iksi # ; ! Optional plural for non-3rd possessor and non-possessed
-! Non-Referring
-@D.number.SG@@D.number.PL@+Non:@D.number.SG@@D.number.PL@%>i # ; ! Optional non-referring suffix, number unrestricted
-
-LEXICON NA_NUMBER_SUFFIXES_SG
-@D.person.OT@@D.number.PL@+Sg:@D.person.OT@@D.number.PL@%>wa # ; ! Optional singular for non-3rd person possessed, non-plural only
-
-LEXICON NI_POSS_NUM
-! Singular possessors
-@U.person.NI@+Px1Sg:@U.person.NI@0 NI_NUMBER_SUFFIXES ;
-@U.person.KI@+Px2Sg:@U.person.KI@0 NI_NUMBER_SUFFIXES ;
-@U.person.OT@+Px3Sg:@U.person.OT@0   NI_NUMBER_SUFFIXES ;
-@U.person.NULL@:@U.person.NULL@                NI_NUMBER_SUFFIXES ;
-! Plural possessors
-@U.person.NI@+Px1Pl:@U.person.NI@%>innaan  NI_NUMBER_SUFFIXES ;
-@U.person.KI@+Px21Pl:@U.person.KI@%>innoon NI_NUMBER_SUFFIXES ;
-@U.person.KI@+Px2Pl:@U.person.KI@%>oaawa  NI_NUMBER_SUFFIXES ;
-@U.person.OT@+Px3Pl:@U.person.OT@%>oaawa   NI_NUMBER_SUFFIXES ;
-
-LEXICON NI_NUMBER_SUFFIXES
-@D.number.PL@+Sg:@D.number.SG@%>yi # ; 
-@D.number.SG@+Pl:@D.number.SG@%>istsi # ;
-@D.number.SG@@D.number.PL@+Non:@D.number.SG@@D.number.PL@%>i # ;
-
 LEXICON ANIM_INTERR
 0 # ;
 +INTERR:%>hpa # ;
@@ -3834,9 +2004,9 @@ LEXICON ANIM_INTERR
 
 LEXICON ENCLITICS
 0 # ;
-+PRO+3/0:%>aawa # ;
++PRO+3/%0:%>aawa # ;
 +PRO+3Pl:%>aiksi # ;
 +PRO+D3Sg:%>áyi # ;
-+PRO+0Pl:%>aistsi # ;
++PRO+%0Pl:%>aistsi # ;
 
 ! End Code

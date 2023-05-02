@@ -1,7 +1,5 @@
-! Blackfoot Regular Noun Inflectional Morphology
-
 Multichar_Symbols
-! Noun tags
+
 +NI
 +NA
 +NAD
@@ -29,8 +27,8 @@ Neg+
 Perf+
 Dur+
 Fut+
+Imm+ ! For imminent future
 Prox+
-Imm+
 Past+
 Nonaff+
 +Pl
@@ -41,7 +39,13 @@ Nonaff+
 +Sbj
 +Irr
 +Pre
++Der/Nom
++Der/Nom2
++Der/Nom3
++Der/Nom4
++Der/Nom5
 +Der/Caus
++Der/Caus2 
 +Der/Rcpr
 +Der/Rflx
 +Der/Bnf
@@ -75,10 +79,11 @@ Nonaff+
 +4SgO
 +4PlO
 +5Sg/PlO
++PRO+3/%0Sg
 +PRO+3/%0
 +PRO+3Pl
 +PRO+D3Sg
-+PRO+0Pl
++PRO+%0Pl
 +INTERR
 ! Prenoun tags
 PN/a's+
@@ -1018,6 +1023,14 @@ PV/ípssit+
 @R.class.VII@
 @R.class.VTI@
 @R.class.VTA@
+@P.pos.VAI@
+@P.pos.VII@
+@P.pos.VTI@
+@P.pos.VTA@
+@R.pos.VAI@
+@R.pos.VII@
+@R.pos.VTI@
+@R.pos.VTA@
 @P.assoc.A@
 @R.assoc.A@
 @P.class.NOUN@
@@ -1028,6 +1041,10 @@ PV/ípssit+
 @P.pos.NI@
 @R.pos.NA@
 @R.pos.NI@
+@P.pos.NOUN@
+@P.pos.VERB@
+@R.pos.NOUN@
+@R.pos.VERB@
 
 ! Constraining preverb recycling
 @D.pvcount@
@@ -1055,13 +1072,16 @@ PV/ípssit+
 @P.pvcount.3@
 @P.pvcount.4@
 @P.pvcount.5@
+@P.pvcount.6@
+@P.pvcount.7@
+@P.pvcount.8@
 @R.pvcount.1@
 @R.pvcount.2@
 @R.pvcount.3@
 @R.pvcount.4@
 @R.pvcount.5@
-@R.pvcount.5@
-@P.pvcount.6@
+@R.pvcount.6@
+@R.pvcount.7@
 @D.pvcountf@
 @P.pvcountf.1@
 @P.pvcountf.2@
@@ -1151,8 +1171,8 @@ LEXICON PREFIXES
 @R.mode.IND@@P.count1.N@Neg+:@R.mode.IND@@P.count1.N@%^SPi2máát BOUND1 ;
 @R.mode.IMP@@P.count1.N@Neg+:@R.mode.IMP@@P.count1.N@%^SPi2miin BOUND1 ;
 @R.mode.IMP@@P.count1.N@Neg+:@R.mode.IMP@@P.count1.N@%^SPi2piin BOUND1 ;
-@R.mode.IND@@P.count1.N@PV/máátaommita'p+:@R.mode.IND@@P.count1.N@:%^SPmáátaommita'p BOUND1 ;
-@P.count1.P@PV/i2kátá'+:@P.count1.P@i2kátá' BOUND1 ;
+@R.mode.IND@@P.count1.N@PV/máátaommita'p+:@R.mode.IND@@P.count1.N@%^SPmáátaommita'p BOUND1 ;
+@P.count1.P@PV/ikátá'+:@P.count1.P@i2kátá' BOUND1 ;
 @P.count1.T@Imm+:@P.count1.T@ayáak BOUND1 ;
 @P.count1.T@Dur+:@P.count1.T@á BOUND1 ;
 @P.count1.T@Fut+:@P.count1.T@yáak BOUND1 ;
@@ -1981,7 +2001,7 @@ oostóyiwa:oostóyi	NA ;
 oostówaawayiwa:oostówaawayi	NA ;
 oosipistaana:oosipistaan	NA ;
 oosáka:oosák	NA ;
-oohtsistsí(ki)na:oohtsistsí(ki)n	NA ;
+oohtsistsíkina:oohtsistsíkin	NA ;
 oohkóyimaa'tsisa:oohkóyimaa'tsis	NA ;
 oohka:oohk	NA ;
 onistaahsa:onistaahs	NA ;
@@ -2449,8 +2469,8 @@ iihkanipihtsiwa:iihkanipihtsi	NA ;
 iyinnakiikoana:iyinnakiikoan	NA ;
 iyi'tayimiwa:iyi2'tayimmi	NA ;
 i'nokáá'tsisa:i2'nokáá'tsis	NA ;
-i2'naksípokaawa:i'naksípokaa	NA ;
-i2'nakánao'kssiwa:i'nakánao'kssi	NA ;
+i'naksípokaawa:i2'naksípokaa	NA ;
+i'nakánao'kssiwa:i2'nakánao'kssi	NA ;
 i'ksisakoma:i'ksisakomm	NA ;
 i'kotsóómiiwa:i'kotsóómii	NA ;
 i'kayssiwa:i'kayssi	NA ;
@@ -2761,7 +2781,7 @@ saamikini:saamikin	NI ;
 saakókotoisskoyi:saakókotoissko	NI ;
 saakókotoinaattsiyi:saakókotoinaattsi	NI ;
 saakoapinihkaani:%^SPsaakoapinihkaan	NI ;
-saaámi:saaám2	NI ;
+saaámi:saaám	NI ;
 saahsiipakksini'simaaniyi:saahsiipakksini'simaani	NI ;
 sa'tsoopa'tsisi:sa'tsoopa'tsis	NI ;
 sa'ksisákimaani:sa'ksisákimaan	NI ;
@@ -2770,7 +2790,7 @@ sayiitssksskimsskoyi:sayiitssksskimssko	NI ;
 spitsíiyi:spitsíi	NI ;
 soyóóhpawahkoyi:soyóóhpawahko	NI ;
 sipisttoipasskaani:sipisttoipasskaan	NI ;
-sikóóhkotok2yi:sikóóhkotok2	NI ;
+sikóóhkotokyi:sikóóhkotok	NI ;
 sa'áíksiyi:sa'áíksi	NI ;
 pómaiksistsikoyi:pómmaiksistsiko	NI ;
 poyíítahtaiyi:poyíítahtai	NI ;
@@ -3005,7 +3025,7 @@ náápiiniiwani:náápiiniiwan	NI ; ! USES A nits- prefix. One of a few words wh
 náápiihtaani:náápiihtaan	NI ; ! USES A nits- prefix. One of a few words which do this, I don't know what to do.
 náápiaohkiiyi:náápiaohkii	NI ; ! USES A nits- prefix. One of a few words which do this, I don't know what to do.
 náánisoyiyi:náánisoyi	NI ;
-náámaa2yi:náámaa2	NI ;
+náámaayi:náámaa	NI ;
 nááipisstsáápikimi:%^SPnááipisstsáápikimm	NI ;
 napayíni'nssimaani:napayíni'nssimaan	NI ;
 napayíni:napayín	NI ;
@@ -3701,7 +3721,7 @@ LEXICON NI
 
 LEXICON NI_IM
 @P.im.IM@@P.pos.NI@@R.class.NOUN@+NI:@P.im.IM@@P.pos.NI@@R.class.NOUN@0  IM ;
-@R.class.VERB@+VII@R.class.VERB@:0 VII_SUFFIXES ;
+@R.class.VERB@+VII:@R.class.VERB@0 VII_SUFFIXES ;
 
 LEXICON NAD
 @P.pos.NA@+NAD:@P.pos.NA@0  POSS_NUM ;

@@ -10,81 +10,88 @@ Config:
 Tests:
   
   Verb - á'po'taki - ok : # -m animate intransitive verb, work AEW NA1
-     nitá'páo'taki: Dur+a'po'taki+VAI+Ind+1Sg
-     kitá'páo'taki: Dur+a'po'taki+VAI+Ind+2Sg
-     á'páo'takiwa: Dur+a'po'taki+VAI+Ind+3Sg
-     á'páo'takiyini: Dur+a'po'taki+VAI+Ind+4Sg
-     á'páo'takio'pa: Dur+a'po'taki+VAI+Ind+21Pl
-     nitá'páo'takihpinnaan: Dur+a'po'taki+VAI+Ind+2Pl
-     kitohkaná'páo'takihpoaawa: Dur+a'po'taki+VAI+Ind+2Pl
-     á'páo'takiyaawa: Dur+a'po'taki+VAI+Ind+3Pl+PRO+3/0Sg+PRO+3/0Sg
-		
-     nitáakotá'po'taki: Fut+a'po'taki+VAI+Ind+1Sg
-     kitáakotá'po'taki: Fut+a'po'taki+VAI+Ind+2Sg
-     áakotá'po'takiwa: Fut+a'po'taki+VAI+Ind+3Sg
-     áakotá'po'takiyini: Fut+a'po'taki+VAI+Ind+4Sg
-     áaká'po'takio'pa: Fut+a'po'taki+VAI+Ind+21Pl
-     nitáakotá'po'takihpinnaan: Fut+a'po'taki+VAI+Ind+1Pl
-     kitáakohkanotá'po'takihpoaawa: Fut+a'po'taki+VAI+Ind+2Pl
-     áakotá'po'takiyaawa: Fut+a'po'taki+VAI+Ind+3Pl+PRO+3/0Sg
-		
-     nitá'po'taki: a'po'taki+VAI+Ind+1Sg
-     kitá'po'taki: a'po'taki+VAI+Ind+2Sg
-     á'po'takiwa: a'po'taki+VAI+Ind+3Sg
-     á'po'takiyini: a'po'taki+VAI+Ind+4Sg
-     á'po'takio'pa: a'po'taki+VAI+Ind+21Pl
-     nitá'po'takihpinnaan: a'po'taki+VAI+Ind+1Pl
-     kitá'po'takihpoaawa: a'po'taki+VAI+Ind+2Pl
-     á'po'takiyaawa: a'po'taki+VAI+Ind+3Pl+PRO+3/0Sg
-		
-     nimáátá'páo'takihpa: Neg+Dur+a'po'taki+VAI+Ind+1Sg+INTERR
-     kimáátá'páo'takihpa: Neg+Dur+a'po'taki+VAI+Ind+2Sg+INTERR
-     máátá'páo'takiwa: Neg+Dur+a'po'taki+VAI+Ind+3Sg
-     nimáátá'páo'takihpinnaan: Neg+Dur+a'po'taki+VAI+Ind+1Pl
-     máátá'páo'takiwaiksaawayi: Neg+Dur+a'po'taki+VAI+Ind+3Pl+INTERR
-		
-     nimáátáaká'po'takihpa: Neg+Fut+a'po'taki+VAI+Ind+1Sg+INTERR
-     kimáátáaká'po'takihpa: Neg+Fut+a'po'taki+VAI+Ind+2Sg+INTERR
-     máátaaká'po'takiwa: Neg+Fut+a'po'taki+VAI+Ind+3Sg
-     máátáaká'po'takio'pa: Neg+Fut+a'po'taki+VAI+Ind+21Pl
-     kimáátáaká'po'takihpoaawa: Neg+Fut+a'po'taki+VAI+Ind+2Pl
-     máátáaká'po'takiwaiksaawayi: Neg+Fut+a'po'taki+VAI+Ind+3Pl++INTERR
-		
-     nimáátá'po'takihpa: Neg+Fut+a'po'taki+VAI+Ind+1Sg+INTERR
-     kimáátá'po'takihpa: Neg+Fut+a'po'taki+VAI+Ind+2Sg+INTERR
-     máátá'po'takiwatsiksiwa: Neg+Fut+a'po'taki+VAI+Ind+PRO+3Sg
-     nimáátá'po'takihpinnaan: Neg+Fut+a'po'taki+VAI+Ind+1Pl
-     máátá'po'takiwaiksaawayi: Neg+Fut+a'po'taki+VAI+Ind+3Pl+INTERR
+     Dur+a'po'taki+VAI+Ind+1Sg: nitá'páo'taki
+     Dur+a'po'taki+VAI+Ind+2Sg: kitá'páo'taki
+     Dur+a'po'taki+VAI+Ind+3Sg: á'páo'takiwa
+     Dur+a'po'taki+VAI+Ind+4Sg: á'páo'takiyini
+     Dur+a'po'taki+VAI+Ind+21Pl: á'páo'takio'pa
+     Dur+a'po'taki+VAI+Ind+1Pl: nitá'páo'takihpinnaana
+     Dur+a'po'taki+VAI+Ind+2Pl: kitohkaná'páo'takihpoaawa
+     Dur+a'po'taki+VAI+Ind+PRO+3/0: á'páo'takiyaawa
+     
+     Fut+a'po'taki+VAI+Ind+1Sg: nitáaká'po'taki
+     Fut+a'po'taki+VAI+Ind+2Sg: kitáaká'po'taki
+     Fut+a'po'taki+VAI+Ind+3Sg: áaká'po'takiwa
+     Fut+a'po'taki+VAI+Ind+4Sg: áaká'po'takiyini
+     Fut+a'po'taki+VAI+Ind+21Pl: áaká'po'takio'pa
+     Fut+a'po'taki+VAI+Ind+1Pl: nitáaká'po'takihpinnaana
+     Fut+PV/ohkan+a'po'taki+VAI+Ind+2Pl: kitáakohkaná'po'takihpoaawa
+     Fut+a'po'taki+VAI+Ind+PRO+3/0: áaká'po'takiyaawa
+ 
+     a'po'taki+VAI+Ind+1Sg: nitá'po'taki
+     a'po'taki+VAI+Ind+2Sg: kitá'po'taki
+     a'po'taki+VAI+Ind+3Sg: á'po'takiwa
+     a'po'taki+VAI+Ind+4Sg: á'po'takiyini
+     a'po'taki+VAI+Ind+21Pl: á'po'takio'pa
+     a'po'taki+VAI+Ind+1Pl: nitá'po'takihpinnaana
+     a'po'taki+VAI+Ind+2Pl: kitá'po'takihpoaawa
+     a'po'taki+VAI+Ind+PRO+3/0: á'po'takiyaawa
+     
+     Neg+Dur+a'po'taki+VAI+Ind+1Sg+INTERR: nimáátá'páo'takihpa
+     Neg+Dur+a'po'taki+VAI+Ind+2Sg+INTERR: kimáátá'páo'takihpa
+     Neg+Dur+a'po'taki+VAI+Ind+3Sg: máátá'páo'takiwa
+     Neg+Dur+a'po'taki+VAI+Ind+1Pl: nimáátá'páo'takihpinnaana
+     Neg+Dur+a'po'taki+VAI+Ind+3Pl+INTERR: máátá'páo'takiwaiksaawayi
+     
+     Neg+Fut+a'po'taki+VAI+Ind+1Sg+INTERR: nimáátáaká'po'takihpa
+     Neg+Fut+a'po'taki+VAI+Ind+2Sg+INTERR: kimáátáaká'po'takihpa
+     Neg+Fut+a'po'taki+VAI+Ind+3Sg: máátaaká'po'takiwa
+     Neg+Fut+a'po'taki+VAI+Ind+21Pl: máátáaká'po'takio'pa
+     Neg+Fut+a'po'taki+VAI+Ind+2Pl: kimáátáaká'po'takihpoaawa
+     Neg+Fut+a'po'taki+VAI+Ind+3Pl+INTERR: máátáaká'po'takiwaiksaawayi
+     
+     Neg+a'po'taki+VAI+Ind+1Sg+INTERR: nimáátá'po'takihpa
+     Neg+a'po'taki+VAI+Ind+2Sg+INTERR: kimáátá'po'takihpa
+     Neg+a'po'taki+VAI+Ind+3Sg+INTERR: máátá'po'takiwatsiksiwa
+     Neg+a'po'taki+VAI+Ind+1Pl: nimáátá'po'takihpinnaana
+     Neg+a'po'taki+VAI+Ind+3Pl+INTERR: máátá'po'takiwaiksaawayi
+    
+     Dur+a'po'taki+VAI+Cnj+1Sg: nita'páo'takssi
+     Dur+a'po'taki+VAI+Cnj+2Sg: kita'páo'takssi
+     Dur+a'po'taki+VAI+Cnj+3Sg: ota'páo'takssi
+     Dur+a'po'taki+VAI+Cnj+4Sg: a'páo'takssi
+     Dur+a'po'taki+VAI+Cnj+1Pl: nita'páo'takissinnaana
+     Dur+a'po'taki+VAI+Cnj+21Pl: a'páo'takssi
+     Dur+a'po'taki+VAI+Cnj+2Pl: kita'páo'takssoaayi
+     Dur+a'po'taki+VAI+Cnj+3Pl: ota'páo'takssi
+     Dur+a'po'taki+VAI+Cnj+4Pl: a'páo'takssi
+   
+     Dur+a'po'taki+VAI+Sbj+1Sg: a'páo'takiniki
+     Dur+a'po'taki+VAI+Sbj+2Sg: a'páo'takiniki
+     Dur+a'po'taki+VAI+Sbj+3Sg: a'páo'takisi
+     Dur+a'po'taki+VAI+Sbj+4Sg: a'páo'takisi
+     Dur+a'po'taki+VAI+Sbj+1Pl: a'páo'takinnaaniki
+     Dur+a'po'taki+VAI+Sbj+21Pl: a'páo'takinoainiki
+     Dur+a'po'taki+VAI+Sbj+2Pl: a'páo'takio'ki
+     Dur+a'po'taki+VAI+Sbj+3Pl: a'páo'takisi
+     Dur+a'po'taki+VAI+Sbj+4Pl: a'páo'takisi
 
-     nita'páo'takihsi: Dur+a'po'taki+VAI+Cnj+1Sg
-     kita'páo'takihsi: Dur+a'po'taki+VAI+Cnj+2Sg
-     ota'páo'takihsi: Dur+a'po'taki+VAI+Cnj+3Sg
-     a'páo'takihsi: Dur+a'po'taki+VAI+Cnj+4Sg
-     nita'páo'takihsinnaana: Dur+a'po'taki+VAI+Cnj+1Pl
-     a'páo'takihsi: Dur+a'po'taki+VAI+Cnj+21Pl
-     kita'páo'takihsoaayi: Dur+a'po'taki+VAI+Cnj+2Pl
-     ota'páo'takihsi: Dur+a'po'taki+VAI+Cnj+3Pl
-     a'páo'takihsi: Dur+a'po'taki+VAI+Cnj+4Pl
-
-     a'páo'takiniki: Dur+a'po'taki+VAI+Sbj+1Sg
-     a'páo'takiniki: Dur+a'po'taki+VAI+Sbj+2Sg
-     a'páo'takisi: Dur+a'po'taki+VAI+Sbj+3Sg
-     a'páo'takisi: Dur+a'po'taki+VAI+Sbj+4Sg
-     a'páo'takinnaaniki: Dur+a'po'taki+VAI+Sbj+1Pl
-     a'páo'takinoainiki: Dur+a'po'taki+VAI+Sbj+21Pl
-     a'páo'takino'ki: Dur+a'po'taki+VAI+Sbj+2Pl
-     a'páo'takisi: Dur+a'po'taki+VAI+Sbj+3Pl
-     a'páo'takisi: Dur+a'po'taki+VAI+Sbj+4Pl
-
-     nita'páo'takihtopi: Dur+a'po'taki+VAI+Irr+1Sg
-     kita'páo'takihtopi: Dur+a'po'taki+VAI+Irr+2Sg
-     a'páo'takiwahtopi: Dur+a'po'taki+VAI+Irr+3Sg
-     a'páo'takiwahtopini: Dur+a'po'taki+VAI+Irr+4Sg
-     nita'páo'takihpinnaanopi: Dur+a'po'taki+VAI+Irr+1Pl
-     a'páo'takihpoaawopi: Dur+a'po'taki+VAI+Irr+21Pl
-     kita'páo'takiwahtopiyi: Dur+a'po'taki+VAI+Irr+2Pl
-     a'páo'takiwahtopiyi: Dur+a'po'taki+VAI+Irr+3Pl
-     a'páo'takiwahtopiyini: Dur+a'po'taki+VAI+Irr+4Pl
-
-     a'páo'takit: Dur+a'po'taki+VAI+Imp+Sg
-     a'páo'takik: Dur+a'po'taki+VAI+Imp+Pl
+     Dur+a'po'taki+VAI+Irr+1Sg: nita'páo'takihtopi
+     Dur+a'po'taki+VAI+Irr+2Sg: kita'páo'takihtopi
+     Dur+a'po'taki+VAI+Irr+3Sg: a'páo'takiwahtopi
+     Dur+a'po'taki+VAI+Irr+4Sg: a'páo'takiwahtopini
+     Dur+a'po'taki+VAI+Irr+1Pl: nita'páo'takihpinnaanopi
+     Dur+a'po'taki+VAI+Irr+21Pl: a'páo'takihpoaawopi
+     Dur+a'po'taki+VAI+Irr+2Pl: kita'páo'takiwahtopiyi
+     Dur+a'po'taki+VAI+Irr+3Pl: a'páo'takiwahtopiyi
+     Dur+a'po'taki+VAI+Irr+4Pl: a'páo'takiwahtopiyini
+  
+     Dur+a'po'taki+VAI+Imp+Sg: a'páo'takit
+     Dur+a'po'taki+VAI+Imp+Pl: a'páo'takik
+     Dur+a'po'taki+VAI+Ind+2Sg: kitá'páo'taki
+     Dur+a'po'taki+VAI+Ind+3Sg: á'páo'takiwa
+     Dur+a'po'taki+VAI+Ind+4Sg: á'páo'takiyini
+     Dur+a'po'taki+VAI+Ind+21Pl: á'páo'takio'pa
+     Dur+a'po'taki+VAI+Ind+2Pl: nitá'páo'takihpinnaana
+     PV/ohkan+Dur+a'po'taki+VAI+Ind+2Pl: kitohkaná'páo'takihpoaawa
+     Dur+a'po'taki+VAI+Ind+PRO+3/0: á'páo'takiyaawa

@@ -1,0 +1,26 @@
+source phonology.xfscript
+define phonology
+read lexc bla_noun_full.lexc
+define nouns
+set flag-is-epsilon ON
+regex [ nouns .o. phonology ] ;
+define Blackfoot
+source relaxer.regex
+regex [ Blackfoot .o. relax ] ;
+! save stack all_nouns.fsm
+clear stack
+
+source phonology_triggers.xfscript
+define phonology
+read lexc bla_verb_full.lexc
+define verbs
+set flag-is-epsilon ON
+regex [ verbs .o. phonology ] ;
+save stack bla-generator.fsm
+invert net
+save stack bla-analyzer.fsm
+invert net
+define Blackfoot
+source relaxer.regex
+regex [ Blackfoot .o. relax ] ;
+! save stack verb_full.fsm
