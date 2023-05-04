@@ -1328,6 +1328,7 @@ PV/isttsitsa+:i2sttsitsa BOUND ;
 PV/isttssi+:i2sttssi BOUND ;
 PV/it+:it BOUND ;
 PV/itap+:itap BOUND ;
+PV/itam+:itam BOUND ;
 PV/ito't+:ito't BOUND ;
 PV/iton+:iton BOUND ;
 PV/itsisa+:itsisa BOUND ;
@@ -5558,6 +5559,7 @@ LEXICON INDEP_VII_SUFFIXES
 ! Inanimate Interrogatives
 @R.person.NULL@+%0Sg+INTERR:@R.person.NULL@%>waatsiksi ENCLITICS ;
 @R.person.NULL@+%0Pl+INTERR:@R.person.NULL@%>waistsaawa ENCLITICS ;
+@R.person.NULL@ ENCLITICS ;
 ! Singular INDEPENDENT
 @R.person.NULL@+%0Sg:@R.person.NULL@%>wa		ENCLITICS ;
 ! Plural INDEPENDENT
@@ -6009,16 +6011,16 @@ LEXICON ANIM_INTERR
 LEXICON ENCLITICS
 0 # ;
 +PRO+3/%0:%>yaawa ENCLITICS_BOUND ;
-+PRO+3Pl:%>yaiksi ENCLITICS_BOUND ;
++PRO+3Pl:%>waiksi ENCLITICS_BOUND ;
 +PRO+D3Sg:%>áyi ENCLITICS_BOUND ;
-+PRO+%0Pl:%>yaistsi ENCLITICS_BOUND ;
++PRO+%0Pl:%>waistsi ENCLITICS_BOUND ;
 
 LEXICON ENCLITICS_BOUND
 0 # ;
 +PRO+3/%0:%>yaawa # ;
-+PRO+3Pl:%>yaiksi # ;
++PRO+3Pl:%>waiksi # ;
 +PRO+D3Sg:%>áyi # ;
-+PRO+%0Pl:%>yaistsi # ;
++PRO+%0Pl:%>waistsi # ;
 
 LEXICON VERB_DER_NOM_SUFFIXES
 +Der/Nom:0                     NOUN_SUFFIXES ;

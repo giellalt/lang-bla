@@ -7,23 +7,22 @@ Config:
     Morph: ../../../src/analyser-gt-norm.+fst
     App: lookup
 
-Tests
+Tests:
   
   Verb - okska'si - ok : # -m animate intransitive verb, run AEW NA1
      PV/áka+PN/sistsik+okska'si+VAI+Ind+3Sg: ákaisistsikókska'siwa
      PV/ikipp+PN/yiistap+okska'si+VAI+Imp+Sg: kippíístapokska'sit
      PV/iitsiksist+okska'si+VAI+Ind+3Sg: iítsiksistokska'siwa
-     Fut+PN/isttani+okska'si+VAI+Ind+3Sg: áaksisttaniokska'siwa
+     Fut+PN/isttani+okska'si+VAI+Ind+3Sg: áaksisttanokska'siwa
      Fut+PN/poohsap+okska'si+VAI+Ind+3Sg: áaksipoohsapokska'siwa
      Fut+PN/ipiihk+okska'si+VAI+Ind+3Sg: áaksipiihkókska'siwa
-     Fut+PV/iik+sstoyii+VII+Ind+0Sg: áaksiksstoyiwa
      Fut+PV/ikkam+okska'si+VAI+Ind+3Sg: áaksíkkamokska'siwa
      okska'si+VAI+Cnj+3Pl: otókska'ssi
-     Past+PN/yiistap+okska'si+VAI+Ind+3Sg: iyíístapokska'siwa
-     PN/isttani+okska'si+VAI+Ind+3Sg: isttaniókska'siwa
-     PN/isttani+okska'si+VAI+Imp+Sg: isttaniókska'sit
+     Past+PN/yiistap+okska'si+VAI+Ind+3Sg: iiyíístapokska'siwa
+     PN/isttani+okska'si+VAI+Ind+3Sg: isttanókska'siwa
+     PN/isttani+okska'si+VAI+Imp+Sg: isttanókska'sit
      Past+PN/isam+okska'si+VAI+Ind+3Sg: iisamókska'siwa
-     Past+PV/it+PN/ksis+PV/ist+okska'si+VAI+Ind+3Sg: iitsíksistokska'siwa
+     PV/it+PV/iksist+okska'si+VAI+Ind+3Sg: itsíksistokska'siwa
      PN/ohsohkat+okska'si+VAI+Ind+1Sg: nítohsohkatokska'si
      Fut+okska'si+VAI+Ind+3Sg: áakokska'siwa
-     Dur+okska'si+VAI+Der/Caus+VTA+Ind+3Sg+1SgO: nitáókska'síípiooka
+     Dur+okska'si+VAI+Der/Caus2+VTA+Ind+3Sg+1SgO: nitáókska'sípoka

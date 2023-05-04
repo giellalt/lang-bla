@@ -1896,7 +1896,7 @@ pitsiiksiinaitapiikoana:pitsiiksiinaitapiikoan	NA ;
 piikániwa:piikáni	NA ;
 póósipokaawa:hpóósipokaa	NA ;
 pónna:hpónn	NA ;
-poosa:hpoos	NA_IM ;
+póósa:hpóós	NA_IM ;
 poonisáyiwa:hpoonisáyi	NA ;
 pookáóhtaohpomao'pa:i2pookáóhtaohpommao'p	NA ;
 pookáíksskima:i2pookáíksskim	NA ;
@@ -2341,7 +2341,7 @@ isskoohtaka:isskoohtak	NA ;
 isskimáa'tsisa:i2sskimáa'tsis	NA ;
 issksíísainaka'siwa:isskitsíísainaka'si	NA ;
 isska:issk	NA ;
-óóhkiwa:%^SPóóhki NA ;
+isska:%^SPóóhki NA ;
 issitsimaana:i2ssitsimaan	NA ;
 issistsáakiiwa:issistsáakii	NA ;
 ississa:ississ	NA ;
@@ -2693,6 +2693,7 @@ LEXICON INDEP_NI_STEMS
 ! Below is the full list of NI nouns. They need to be edited according to the pattern of the example nouns above.
 ! They were retrieved from the inanimate noun list in the browse section of the dictionary.
 
+ááhkioohsa'tsisi:ááhkioohsa'tsis NI ;
 aakokaa'tsisi:waakokaa'tsis	NI ;
 to'tohtáátoyiiksistsikoyi:to'tohtáátoyiiksistsiko	NI ;
 tó'piinimaani:tó'piinimaan	NI ;
@@ -3144,6 +3145,7 @@ mámma'pisi:%^SPmámma'pis	NI ;
 máíipssimi:máíipssim	NI ;
 máakohkima'tsisi:máakohkimma'tsis	NI ;
 máakai'piiyiyi:máakai'piiyi	NI ;
+matsikíni:%^SPmatsikín NI ;
 matsiníyi:%^SPmatsiní	NI ;
 matóyihkoyi:matóyihko	NI ;
 matoihkoyipisatssaisskiyi:matoihkoyipisatssaisski	NI ;
@@ -3215,7 +3217,7 @@ ko'kíyi:ko'kí	NI ;
 kísskaa'tsisi:kísskaa'tsis	NI ;
 kinsstaa'tsisi:kinsstaa'tsis	NI ;
 kiníínokoyi:kiníínoko	NI ;
-kinakíni:kinakín	NI ;
+kinakíni:%^SPhkinakín	NI ;
 kiitakapssimi:kiitakapssimm	NI ;
 kiitaani:kiitaan	NI ;
 kiipóyiyi:kiipóyi	NI ;
@@ -3453,7 +3455,7 @@ iihtawá'siiyo'pi:ii3htawá'siiyo'p	NI ;
 iihpáókoopihkao'pi:iihpáókoopihkao'p	NI ;
 iihpáíksksisttsikaahkiaakio'pi:iihpáíksksisttsikaahkiaakio'p	NI ;
 iiyiksíkoyiitahtaayi:iiyiksíkoyiitahtaa	NI ;
-iaapani:iaapan	NI ;
+aaápani:iaapan	NI ;
 i'tskóóhtsiyi:i'tskóóhtsi	NI ;
 i'tomoyi:i'tommo	NI ;
 i'stááni:i'stáán	NI ;
@@ -3738,7 +3740,7 @@ LEXICON NID
 
 LEXICON IM
 0 POSS_NUM ;
-@D.person.NULL@@R.im.IM@:@D.person.NULL@@R.im.IM@%>im POSS_NUM ;
+@D.person.NULL@:@D.person.NULL@%>im POSS_NUM ;
 @D.person.NULL@@D.im.IM@                              POSS_NUM ;
 @R.person.NULL@                                       POSS_NUM ;
 

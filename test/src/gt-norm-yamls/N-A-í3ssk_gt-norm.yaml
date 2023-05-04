@@ -10,42 +10,40 @@ Config:
 Tests:
   
   Noun - ísska - ok : # -m animate noun, pail AEW NA1
-     ísska+NA+Sg: ísska
-     ísska+NA+Pl: íssiksi
-     ísska+NA+Obv: ísski
-     ísska+NA+Non: isskí
+     isska+NA+Sg: ísska
+     isska+NA+Pl: ísskiksi
+     isska+NA+Obv: ísski
+     isska+NA+Non: isskí
      
-     ísska+NA+Px1Sg+Sg: nóóhka
-     ísska+NA+Px1Sg+Pl: nóóhkiksi
-     ísska+NA+Px1Sg+Obv: nóóhki
-     ísska+NA+Px1Sg+Non: nóóhki
+     isska+NA+Px1Sg+Sg: nóóhkiwa
+     isska+NA+Px1Sg+Pl: nóóhkiiksi
+     isska+NA+Px1Sg+Obv: nóóhkiyi
+     isska+NA+Px1Sg+Non: nóóhkii
      
-     ísska+NA+Px1Pl+Sg: nóóhkinnaana
-     ísska+NA+Px1Pl+Pl: nóóhkinnaaniksi
-     ísska+NA+Px1Pl+Obv: nóóhkinnaani
-     ísska+NA+Px1Pl+Non: nóóhkinnaani
+     isska+NA+Px1Pl+Sg: nóóhkinnaana
+     isska+NA+Px1Pl+Pl: nóóhkinnaaniksi
+     isska+NA+Px1Pl+Obv: nóóhkinnaani
+     isska+NA+Px1Pl+Non: nóóhkinnaani
 
-     ísska+NA+Px21Pl+Sg: kóóhkinnoona
-     ísska+NA+Px21Pl+Pl: kóóhkinnooniksi
-     ísska+NA+Px21Pl+Obv: kóóhkinnooni
-     ísska+NA+Px21Pl+Non: kóóhkinnooni
+     isska+NA+Px21Pl+Sg: kóóhkinnoona
+     isska+NA+Px21Pl+Pl: kóóhkinnooniksi
+     isska+NA+Px21Pl+Obv: kóóhkinnooni
+     isska+NA+Px21Pl+Non: kóóhkinnooni
 
-     ísska+NA+Px2Sg+Sg: kóóhka
-     ísska+NA+Px2Sg+Pl: kóóhkiksi
-     ísska+NA+Px2Sg+Obv: kóóhki
-     ísska+NA+Px2Sg+Non: kóóhki
+     isska+NA+Px2Sg+Sg: kóóhkiwa
+     isska+NA+Px2Sg+Pl: kóóhkiiksi
+     isska+NA+Px2Sg+Obv: kóóhkiyi
+     isska+NA+Px2Sg+Non: kóóhkii
 
-     ísska+NA+Px2Pl+Sg: kóóhkoaawa
-     ísska+NA+Px2Pl+Pl: kóóhkoaawaiksi
-     ísska+NA+Px2Pl+Obv: kóóhkoaawayi
-     ísska+NA+Px2Pl+Non: kóóhkoaawai
+     isska+NA+Px2Pl+Sg: kóóhkiwaawa
+     isska+NA+Px2Pl+Pl: kóóhkiwaawaiksi
+     isska+NA+Px2Pl+Obv: kóóhkiwaawayi
+     isska+NA+Px2Pl+Non: kóóhkiwaawai
 
-     ísska+NA+Px3Sg+Sg: óóhka
-     ísska+NA+Px3Sg+Pl: óóhkiksi
-     ísska+NA+Px3Sg+Obv: óóhki
-     ísska+NA+Px3Sg+Non: óóhki
+     isska+NA+Px3Sg+Obv: óóhkiyi
+     isska+NA+Px3Sg+Pl: óóhkiiksi
+     isska+NA+Px3Sg+Non: óóhkii
 
-     ísska+NA+Px3Pl+Sg: óóhkoaawa
-     ísska+NA+Px3Pl+Pl: óóhkoaawaiksi
-     ísska+NA+Px3Pl+Obv: óóhkoaawayi
-     ísska+NA+Px3Pl+Non: óóhkoaawai
+     isska+NA+Px3Pl+Obv: óóhkiwaawayi
+     isska+NA+Px3Pl+Pl: óóhkiwaawaiksi
+     isska+NA+Px3Pl+Non: óóhkiwaawai

@@ -10,37 +10,37 @@ Config:
 Tests:
   
   Noun - nitána - ok : # -m animate noun, my daughter AEW NA1
-     nitána+NAD+Px1Sg+Sg: nitána
-     nitána+NAD+Px1Sg+Pl: nitániksi
-     nitána+NAD+Px1Sg+Obv: nitáni
-     nitána+NAD+Px1Sg+Non: nitáni
+     nitana+NAD+Px1Sg+Sg: nitána
+     nitana+NAD+Px1Sg+Pl: nitániksi
+     nitana+NAD+Px1Sg+Obv: nitáni
+     nitana+NAD+Px1Sg+Non: nitáni
      
-     nitána+NAD+Px1Pl+Sg: nitáninnaana
-     nitána+NAD+Px1Pl+Pl: nitáninnaaniksi
-     nitána+NAD+Px1Pl+Obv: nitáninnaani
-     nitána+NAD+Px1Pl+Non: nitáninnaani
+     nitana+NAD+Px1Pl+Sg: nitánnaana
+     nitana+NAD+Px1Pl+Pl: nitánnaaniksi
+     nitana+NAD+Px1Pl+Obv: nitánnaani
+     nitana+NAD+Px1Pl+Non: nitánnaani
 
-     nitána+NAD+Px21Pl+Sg: kitáninnoona
-     nitána+NAD+Px21Pl+Pl: kitáninnooniksi
-     nitána+NAD+Px21Pl+Obv: kitáninnooni
-     nitána+NAD+Px21Pl+Non: kitáninnooni
+     nitana+NAD+Px21Pl+Sg: kitánnoona
+     nitana+NAD+Px21Pl+Pl: kitánnooniksi
+     nitana+NAD+Px21Pl+Obv: kitánnooni
+     nitana+NAD+Px21Pl+Non: kitánnooni
 
-     nitána+NAD+Px2Sg+Sg: kitána
-     nitána+NAD+Px2Sg+Pl: kitániksi
-     nitána+NAD+Px2Sg+Obv: kitáni
-     nitána+NAD+Px2Sg+Non: kitáni
+     nitana+NAD+Px2Sg+Sg: kitána
+     nitana+NAD+Px2Sg+Pl: kitániksi
+     nitana+NAD+Px2Sg+Obv: kitáni
+     nitana+NAD+Px2Sg+Non: kitáni
 
-     nitána+NAD+Px2Pl+Sg: kitánoaawa
-     nitána+NAD+Px2Pl+Pl: kitánoaawaiksi
-     nitána+NAD+Px2Pl+Obv: kitánoaawayi
-     nitána+NAD+Px2Pl+Non: kitánoaawai
+     nitana+NAD+Px2Pl+Sg: kitánoaawa
+     nitana+NAD+Px2Pl+Pl: kitánoaawaiksi
+     nitana+NAD+Px2Pl+Obv: kitánoaawayi
+     nitana+NAD+Px2Pl+Non: kitánoaawai
 
-     nitána+NAD+Px3Sg+Pl: otániksi
-     nitána+NAD+Px3Sg+Obv: otáni
-     nitána+NAD+Px3Sg+Non: otáni
+     nitana+NAD+Px3Sg+Pl: otániksi
+     nitana+NAD+Px3Sg+Obv: otáni
+     nitana+NAD+Px3Sg+Non: otáni
 
-     nitána+NAD+Px3Pl+Pl: otánoaawaiksi
-     nitána+NAD+Px3Pl+Obv: otánoaawayi
-     nitána+NAD+Px3Pl+Non: otánoaawai
+     nitana+NAD+Px3Pl+Pl: otánoaawaiksi
+     nitana+NAD+Px3Pl+Obv: otánoaawayi
+     nitana+NAD+Px3Pl+Non: otánoaawai
 
     

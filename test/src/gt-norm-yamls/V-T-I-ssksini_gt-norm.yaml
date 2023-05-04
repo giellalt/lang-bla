@@ -7,15 +7,15 @@ Config:
     Morph: ../../../src/analyser-gt-norm.+fst
     App: lookup
 
-Tests
+Tests:
   
   Verb - ssksini - ok : # -m transitive inanimate verb, know AEW NA1
-     ssksini+VTI+Ind+1Sg+0SgO: nítssksiniihpa
-     PV/mátt+PV/oht+PN/ohko+ssksini+VTI+Ind+21Pl+0PlO: mattohtohkoissksini'p
-     ssksini+VTI+Ind+3Pl+0PlO+PRO+3/0: ssksinímiaaw
-     ssksini+VTI+Ind+2Sg+0SgO: kítssksiniihpa
-     PV/ohkott+ssksini+VTI+Ind+2Sg+0SgO: kítohkottssksiniihpa
-     PN/nimm+PN/aatow+PV/iiht+ssksini+VTI+Ind+21Pl+0SgO: nimáátohtssksini'pa
-     ssksini+VTI+Ind+3Pl+0PlO: issksinimm
-     Fut+PV/anist+ssksini+VTI+Ind+21Pl+0SgO: áakánistssksinii'pa
-     PV/iiht+PV/á'+PN/o't+PN/ohko+ssksini+VTI+Ind+3Pl+0PlO+PRO+3/0: ihtao'tohkoissksinimmiawa
+     ssksini+VTI+Ind+1Sg+0SgO: nítsssksinihpa
+     PV/mátt+PV/oht+ohkoissksini+VTI+Ind+21Pl+0SgO: mattohtohkoissksini'pa
+     ssksini+VTI+Ind+3Pl+0PlO+PRO+3/0: ssksinímiyaawa
+     ssksini+VTI+Ind+2Sg+0SgO: kítsssksinihpa
+     PV/ohkott+ssksini+VTI+Ind+2Sg+0SgO: kítohkottsssksinihpa
+     Neg+PV/oht+ssksini+VTI+Ind+1Sg+0SgO: nimáátohtsssksinihpa
+     Past+ssksini+VTI+Ind+3Pl+0PlO: iissksinimi
+     Fut+PV/anist+ssksini+VTI+Ind+21Pl+0SgO: áakánistsssksini'pa
+     PV/iiht+PV/á'+PN/o't+PN/ohko+ssksini+VTI+Ind+3Pl+0PlO+PRO+3/0: iihtao'tohkoissksinimiyaawa

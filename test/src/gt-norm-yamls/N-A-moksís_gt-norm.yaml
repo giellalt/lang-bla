@@ -9,43 +9,41 @@ Config:
 
 Tests:
   
-  Noun - imitááwa - ok : # -m animate noun, dog AEW NA1
-     imitááwa+NA+Sg: imitááwa
-     imitááwa+NA+Pl: imitááíksi
-     imitááwa+NA+Obv: imitááyi
-     imitááwa+NA+Non: imitááí
+  Noun - moksísa - ok : # -m animate noun, dog AEW NA1
+     moksísa+NA+Sg: moksísa
+     moksísa+NA+Pl: moksiiksi
+     moksísa+NA+Obv: moksisi
+     moksísa+NA+Non: moksisí
      
-     imitááwa+NA+Px1Sg+Sg: nitomitááma
-     imitááwa+NA+Px1Sg+Pl: nitomitáámiksi
-     imitááwa+NA+Px1Sg+Obv: nitomitáámi
-     imitááwa+NA+Px1Sg+Non: nitomitáámi
+     moksísa+NA+Px1Sg+Sg: noksisa
+     moksísa+NA+Px1Sg+Pl: noksiiksi
+     moksísa+NA+Px1Sg+Obv: noksisi
+     moksísa+NA+Px1Sg+Non: noksisi
      
-     imitááwa+NA+Px1Pl+Sg: nitomitááminnaana
-     imitááwa+NA+Px1Pl+Pl: nitomitááminnaaniksi
-     imitááwa+NA+Px1Pl+Obv: nitomitááminnaani
-     imitááwa+NA+Px1Pl+Non: nitomitááminnaani
+     moksísa+NA+Px1Pl+Sg: noksiinnaana
+     moksísa+NA+Px1Pl+Pl: noksiinnaaniksi
+     moksísa+NA+Px1Pl+Obv: noksiinnaani
+     moksísa+NA+Px1Pl+Non: noksiinnaani
 
-     imitááwa+NA+Px21Pl+Sg: kitomitááminnoona
-     imitááwa+NA+Px21Pl+Pl: kitomitááminnooniksi
-     imitááwa+NA+Px21Pl+Obv: kitomitááminnooni
-     imitááwa+NA+Px21Pl+Non: kitomitááminnooni
+     moksísa+NA+Px21Pl+Sg: koksiinnoona
+     moksísa+NA+Px21Pl+Pl: koksiinnooniksi
+     moksísa+NA+Px21Pl+Obv: koksiinnooni
+     moksísa+NA+Px21Pl+Non: koksiinnooni
 
-     imitááwa+NA+Px2Sg+Sg: kitomitááma
-     imitááwa+NA+Px2Sg+Pl: kitomitáámiksi
-     imitááwa+NA+Px2Sg+Obv: kitomitáámi
-     imitááwa+NA+Px2Sg+Non: kitomitáámi
+     moksísa+NA+Px2Sg+Sg: koksisa
+     moksísa+NA+Px2Sg+Pl: koksiiksi
+     moksísa+NA+Px2Sg+Obv: koksisi
+     moksísa+NA+Px2Sg+Non: koksisi
 
-     imitááwa+NA+Px2Pl+Sg: kitomitáámoaawa
-     imitááwa+NA+Px2Pl+Pl: kitomitáámoaawaiksi
-     imitááwa+NA+Px2Pl+Obv: kitomitáámoaawayi
-     imitááwa+NA+Px2Pl+Non: kitomitáámoaawai
+     moksísa+NA+Px2Pl+Sg: koksisoaawa
+     moksísa+NA+Px2Pl+Pl: koksisoaawaiksi
+     moksísa+NA+Px2Pl+Obv: koksisoaawayi
+     moksísa+NA+Px2Pl+Non: koksisoaawai
 
-     imitááwa+NA+Px3Sg+Sg: otomitááma
-     imitááwa+NA+Px3Sg+Pl: otomitáámiksi
-     imitááwa+NA+Px3Sg+Obv: otomitáámi
-     imitááwa+NA+Px3Sg+Non: otomitáámi
+     moksísa+NA+Px3Sg+Pl: oksiiksi
+     moksísa+NA+Px3Sg+Obv: oksisi
+     moksísa+NA+Px3Sg+Non: oksisi
 
-     imitááwa+NA+Px3Pl+Sg: otomitáámoaawa
-     imitááwa+NA+Px3Pl+Pl: otomitáámoaawaiksi
-     imitááwa+NA+Px3Pl+Obv: otomitáámoaawayi
-     imitááwa+NA+Px3Pl+Non: otomitáámoaawai
+     moksísa+NA+Px3Pl+Pl: oksisoaawaiksi
+     moksísa+NA+Px3Pl+Obv: oksisoaawayi
+     moksísa+NA+Px3Pl+Non: oksisoaawai

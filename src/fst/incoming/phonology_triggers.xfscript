@@ -2,7 +2,7 @@
 
 define Bx [ %> | %< ] ;
   
-define Ix [ i | i2 | i3] ;
+define Ix [ i | í | i2 | i3 | í2 | í3 ] ;
   
 ! define Vowel [ a | aa | á | áa | i | ii | í | íi | o | oo | ó | óo | ai | áí | ao | áó | oi | óí | i2 | í2 | i3 | í3 ] ;
 
@@ -34,15 +34,17 @@ define internasal [ a -> o || %< %^SP m _ [ m | n ] ] ;
 ! is it m | n ?
 define mattException [ n -> n i , k -> k i , w -> o || .#. _ %< m [ a | á ] t t ] ;
 define mdeletion [ m -> 0 || .#. [ n | k | w ] %< %^SP _ ] ;
-define iInsertion [ n -> n i , k -> k i , w -> o || _ %< %^SP Consonant ] ;
+define iInsertion [ n -> n i , k -> k i , w -> o || _ %< %^SP [ k | n | p | s | t | n2 ] ] ;
 define rmSP [ %^SP -> 0 ] ;
 define a2iRule [ a4 -> i2 || %< _ ] ;
 define ohPrefix [ 0 -> o || %< _ h ] ;
 define hdeletion [ h -> 0 || .#. _ ] ;
 
+define strongt [ [ m | n ] -> 0 || t %< _ ] ;
 define weakt [ t -> 0 || _ %< [ p | k ] ] ;
 define strongk [ p -> 0 || [ k | p ] %< _ ] ;
 define strongp [ k -> 0 || [ k | p ] %< _ ] ;
+define weakm [ m -> 0 || [ n | k ] %< _ ] ;
 
 define oAlternation [ i2 (->) [ o | a ] || .#. _ [ o | a ] ] ;
 define ghosti2 [ i2 (->) 0 || .#. _ Consonant ] ;
@@ -73,17 +75,19 @@ define CC2GemRule [ Ck2kkRule .o. Cp2ppRule .o. Ct2ttRule .o. Cs2ssRule .o. Cm2m
 ! The following is the morpho-phonology of the inflectional suffix boundary
 
 define mmRule [ a -> 0 || Clong %> _ a ] ;
-define imRule [ i -> 0 || Vlong %> _ m %> ] ;
+define imRule [ i -> 0 || [ Vlong | i | í ] %> _ m %> ] ;
 define finalNrule [ i -> 0 || n %> _ n ,, _ %> i n ] ;
+define finalNdiss [ n -> 0 || k [ i | í ] _ %> [ i k s i | i s t s i ] ] ;
 define fixN [ n+ -> 0 || _ (Bx) n n ] ;
 ! define n20Rule [ n -> 0 || Vshort _ %> Vowel ,, o [ a | á ] _ %> Vowel ] ;
 define sisRule [ s -> 0 || s [ i | í ] _ Bx i Consonant ] ;
-define oaawaRule [ o a a w a (Bx) w a -> o a a w a (Bx) ] ;
+define oaawaRule [ w a -> 0 || Vlong w a (Bx) _ ] ;
 define pastPrefix [ Vowel (o) -> 0 || [ .#. | %< ] i i %< _ ] ;
 define pastPrefixSik [ Vowel -> 0 || [ .#. | %< ] n a %< _ ] ;
 define Dipthongization [ 0 (->) [ a | á ] || _ [ o o | ó ó ] %> [ o ' p a | h s i | o ' k i | o ' t o p i ] ] ;
 define moveDur [ á %< a ' p -> %< a ' p á ,, á %< á ' p -> %< a ' p á ] ;
 define delNi [ n i (i) -> 0 || n i (i) %< _ ] ;
+define initVV2V [ [ a a | á á ] (->) a || %< _ ] ;
 
 !!€ nitáni2t>k>wa
 !!€ nitánikka 
@@ -125,7 +129,7 @@ define sConnRuleB [ s -> i s || Vowel (') %< _ ] ;
 
 ! 5. o-Replacement o > a / _+a
 
-define oReplaceRule [ o -> a || _ Bx a ] ;
+define oReplaceRule [ o -> a || _ %< a ] ;
 
 !!€ áakoto<apinniiwa
 !!€ áakotaapinniiwa
@@ -133,13 +137,13 @@ define oReplaceRule [ o -> a || _ Bx a ] ;
 ! 6. Coalescence wi(:) > o
 
 define wi2oRuleA1 [ w %< [i i] -> o %< ] ;
-define wi2oRuleA2 [ w %< i -> o %< ] ;
+define wi2oRuleA2 [ w %< [ i | i2 ] -> o %< ] ;
 
 !!€ w<iihsíssi
 !!€ ohsíssi
 
 define wi2oRuleB1 [ w %< [í i] -> ó %< ] ;
-define wi2oRuleB2 [ w %< í -> ó %< ] ;
+define wi2oRuleB2 [ w %< [ í | í2 ] -> ó %< ] ;
 
 !!€ w<ínni
 !!€ ónni
@@ -180,14 +184,14 @@ define VV2VRule [ ii2iRule .o. aa2aRule .o. oo2oRule ] ;
 
 ! 11. i-Loss i > 0 / Vy _ {a,o})
 
-define iLossRule [ i -> 0 || Vowel (Bx) y _ (Bx) [ a | [a a] | o | [o o] ] ] ;
+define iLossRule [ Ix -> 0 || Vowel (Bx) y _ (Bx) [ a | [a a] | o | [o o] ] ] ;
 
 !!€ áyo'kaa>yi>aawa
 !!€ áyo'kaayaawa
 
 ! 12. i-Absorption i > 0 / s _ {a,o})
 
-define iAbsorbRule [ i -> 0 || s (Bx) _ (Bx) [ a | [a a] | o | [o o] ] ] ;
+define iAbsorbRule [ Ix -> 0 || (Bx) _ Bx [ a | [a a] | o | [o o] ] ] ;
 
 !!€ áókska'si>o'pa
 !!€ áókska'so'pa
@@ -198,7 +202,7 @@ define iAbsorbRule [ i -> 0 || s (Bx) _ (Bx) [ a | [a a] | o | [o o] ] ] ;
 ! 19. t-Affrication t > ts / _ i
 
 define tAffricRule [ t -> t s || _ Bx [ i | i2 ] ] ;
-define i2deletion [ i2 -> 0  || s %< _ s s ,, i2 -> 0 || %< _ o ] ;
+define i2deletion [ i2 -> 0  || s %< _ s s ,, i2 -> 0 || _ o ] ;
 define rmi2 [ i2 -> i ] ;
 
 !!€ nit<it<itsiniki
@@ -344,8 +348,7 @@ define AccentRule [ aAccentRule .o. iAccentRule .o. oAccentRule ] ;
 
 ! 8. I-neutralization I > i
 
-define i2NeutRule [ i3 -> i ] ;
-! i2 -> i ,, i i2 -> i i ,, 
+define i2NeutRule [ i3 -> i ,, i2 -> i ,, í2 -> í ] ; 
 
 define deep2surfRule [ Bx -> 0 ,, n2 -> n ,, a2 -> a ,, o2 -> o ,, a3 -> a ,, a4 -> a ] ; 
 
@@ -364,9 +367,11 @@ read regex [ shortPrefix
 .o. a2iRule
 .o. ohPrefix
 .o. hdeletion
+.o. strongt
 .o. weakt
 .o. strongk
 .o. strongp
+.o. weakm
 .o. oAlternation
 .o. ghosti2
 .o. i2oRule
@@ -379,6 +384,7 @@ read regex [ shortPrefix
 .o. mmRule
 .o. imRule
 .o. finalNrule
+.o. finalNdiss
 .o. fixN
 .o. sisRule
 .o. oaawaRule
@@ -386,6 +392,7 @@ read regex [ shortPrefix
 .o. h2ssRule 
 .o. oReplaceRule
 .o. delNi
+.o. initVV2V
 .o. wi2oRuleA1 
 .o. wi2oRuleA2 
 .o. wi2oRuleB1 
@@ -399,13 +406,12 @@ read regex [ shortPrefix
 .o. pastPrefixSik
 .o. Dipthongization
 .o. moveDur
-.o. k2ksRule 
-.o. i2NeutRule 
-.o. Vowel2GlideRule
+.o. k2ksRule
 .o. VV2VRule 
-.o. iLossRule 
+.o. iLossRule
 .o. tAffricRule 
 .o. i2deletion
+.o. Vowel2GlideRule
 .o. rmi2
 .o. iAbsorbRule 
 .o. ihLossRule 
@@ -421,6 +427,7 @@ read regex [ shortPrefix
 .o. VowelEpenRule
 .o. AccentRule 
 .o. deep2surfRule
+.o. i2NeutRule
 .o. sInsRule 
 .o. relax ] ;
 

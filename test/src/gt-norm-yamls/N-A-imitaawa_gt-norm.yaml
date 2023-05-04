@@ -11,9 +11,9 @@ Tests:
   
   Noun - imitááwa - ok : # -m animate noun, dog AEW NA1
      imitááwa+NA+Sg: imitááwa
-     imitááwa+NA+Pl: imitááíksi
+     imitááwa+NA+Pl: imitáíksi
      imitááwa+NA+Obv: imitááyi
-     imitááwa+NA+Non: imitááí
+     imitááwa+NA+Non: imitáí
      
      imitááwa+NA+Px1Sg+Sg: nitomitááma
      imitááwa+NA+Px1Sg+Pl: nitomitáámiksi
@@ -40,12 +40,10 @@ Tests:
      imitááwa+NA+Px2Pl+Obv: kitomitáámoaawayi
      imitááwa+NA+Px2Pl+Non: kitomitáámoaawai
 
-     imitááwa+NA+Px3Sg+Sg: otomitááma
-     imitááwa+NA+Px3Sg+Pl: otomitáámiksi
      imitááwa+NA+Px3Sg+Obv: otomitáámi
+     imitááwa+NA+Px3Sg+Pl: otomitáámiksi
      imitááwa+NA+Px3Sg+Non: otomitáámi
 
-     imitááwa+NA+Px3Pl+Sg: otomitáámoaawa
-     imitááwa+NA+Px3Pl+Pl: otomitáámoaawaiksi
      imitááwa+NA+Px3Pl+Obv: otomitáámoaawayi
+     imitááwa+NA+Px3Pl+Pl: otomitáámoaawaiksi
      imitááwa+NA+Px3Pl+Non: otomitáámoaawai

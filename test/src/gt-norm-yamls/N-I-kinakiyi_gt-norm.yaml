@@ -10,34 +10,34 @@ Config:
 Tests:
   
   Noun - kinakíyi - ok : # -m inanimate noun, liver AEW NA1
-     kinakíyi+NI+Sg: kinakíni
-     kinakíyi+NI+Pl: kinakíístsi
-     kinakíyi+NI+Non: kinakíní
+     kinakíni+NI+Sg: kinakíni
+     kinakíni+NI+Pl: kinakíistsi
+     kinakíni+NI+Non: kinakíní
 
-     kinakíyi+NI+Px1Sg+Sg: nohkinákini
-     kinakíyi+NI+Px1Sg+Pl: nohkinákiistsi
-     kinakíyi+NI+Px1Sg+Non: nohkinákini
+     kinakíni+NI+Px1Sg+Sg: nohkinákini
+     kinakíni+NI+Px1Sg+Pl: nohkinákiistsi
+     kinakíni+NI+Px1Sg+Non: nohkinákini
 
-     kinakíyi+NI+Px1Sg+Sg: nohkinákinnaani
-     kinakíyi+NI+Px1Sg+Pl: nohkinákinnaanistsi
-     kinakíyi+NI+Px1Sg+Non: nohkinákinnaani
+     kinakíni+NI+Px1Pl+Sg: nohkinákinnaani
+     kinakíni+NI+Px1Pl+Pl: nohkinákinnaanistsi
+     kinakíni+NI+Px1Pl+Non: nohkinákinnaani
 
-     kinakíyi+NI+Px21Pl+Sg: kohkinákinnooni
-     kinakíyi+NI+Px21Pl+Pl: kohkinákinnoonistsi
-     kinakíyi+NI+Px21Pl+Non: kohkinákinnooni
+     kinakíni+NI+Px21Pl+Sg: kohkinákinnooni
+     kinakíni+NI+Px21Pl+Pl: kohkinákinnoonistsi
+     kinakíni+NI+Px21Pl+Non: kohkinákinnooni
 
-     kinakíyi+NI+Px2Sg+Sg: kohkinákini
-     kinakíyi+NI+Px2Sg+Pl: kohkinákiistsi
-     kinakíyi+NI+Px2Sg+Non: kohkinákini
+     kinakíni+NI+Px2Sg+Sg: kohkinákini
+     kinakíni+NI+Px2Sg+Pl: kohkinákiistsi
+     kinakíni+NI+Px2Sg+Non: kohkinákini
 
-     kinakíyi+NI+Px2Pl+Sg: kohkinákinoaawayi
-     kinakíyi+NI+Px2Pl+Pl: kohkinákinoaawaistsi
-     kinakíyi+NI+Px2Pl+Non: kohkinákinoaawai
+     kinakíni+NI+Px2Pl+Sg: kohkinákinoaawayi
+     kinakíni+NI+Px2Pl+Pl: kohkinákinoaawaistsi
+     kinakíni+NI+Px2Pl+Non: kohkinákinoaawai
 
-     kinakíyi+NI+Px3Sg+Sg: ohkinákini
-     kinakíyi+NI+Px3Sg+Pl: ohkinákiistsi
-     kinakíyi+NI+Px3Sg+Non: ohkinákini
+     kinakíni+NI+Px3Sg+Sg: ohkinákini
+     kinakíni+NI+Px3Sg+Pl: ohkinákiistsi
+     kinakíni+NI+Px3Sg+Non: ohkinákini
 
-     kinakíyi+NI+Px3Pl+Sg: ohkinákinoaawayi
-     kinakíyi+NI+Px3Pl+Pl: ohkinákinoaawaistsi
-     kinakíyi+NI+Px3Pl+Sg: ohkinákinoaawai  
+     kinakíni+NI+Px3Pl+Sg: ohkinákinoaawayi
+     kinakíni+NI+Px3Pl+Pl: ohkinákinoaawaistsi
+     kinakíni+NI+Px3Pl+Non: ohkinákinoaawai  

@@ -12,22 +12,22 @@ Tests:
   Verb - soka'pii - ok : # -m inanimate intransitive verb, good AEW NA1
      PV/iik+soka'pii+VII+Ind+0Sg: iikssoka'piiwa
      PV/iik+soka'pii+VII+Ind+0Pl: iikssoka'piiyi
-     PV/iik+soka'pii+VII+Ind+0Sg+INTERR: iikssoka'piiwaatskiksi
-     PV/iik+soka'pii+VII+Ind+0Pl+INTERR: iikssoka'piiwaaistsaawa
-     PV/iik+soka'pii+VII+Ind+PRO+0Sg: iikssoka'piiwaawa
-     PV/iik+soka'pii+VII+Ind+PRO+0Pl: iikssoka'piiyiwaistsi
+     PV/iik+soka'pii+VII+Ind+0Sg+INTERR: iikssoka'piiwaatsiksi
+     PV/iik+soka'pii+VII+Ind+0Pl+INTERR: iikssoka'piiwaistsaawa
+     PV/iik+soka'pii+VII+Ind+PRO+3/0: iikssoka'piiyaawa
+     PV/iik+soka'pii+VII+Ind+PRO+0Pl: iikssoka'piiwaistsi
 
-     PV/iik+soka'pii+VII+Cnj+0Sg: otsiikssoka'piihsi
-     PV/iik+soka'pii+VII+Cnj+0Pl: otsiikssoka'piihsi
-     PV/iik+soka'pii+VII+Cnj+0Sg: otsiikssoka'piihsiaawa
-     PV/iik+soka'pii+VII+Cnj+0Pl: otsiikssoka'piihsiwaistsi
+     PV/iik+soka'pii+VII+Cnj+0Sg: otsiikssoka'pissi
+     PV/iik+soka'pii+VII+Cnj+0Pl: otsiikssoka'pissi
+     PV/iik+soka'pii+VII+Cnj+0Sg+PRO+3/0: otsiikssoka'pissiyaawa
+     PV/iik+soka'pii+VII+Cnj+0Pl+PRO+0Pl: otsiikssoka'pissiwaistsi
 
-     PV/iik+soka'pii+VII+Sbj+0Sg: otsiikssoka'piisi
-     PV/iik+soka'pii+VII+Sbj+0Pl: otsiikssoka'piisi
-     PV/iik+soka'pii+VII+Sbj+0Sg: otsiikssoka'piisiaawa
-     PV/iik+soka'pii+VII+Sbj+0Pl: otsiikssoka'piisiwaistsi
+     PV/iik+soka'pii+VII+Sbj+0Sg: iikssoka'piisi
+     PV/iik+soka'pii+VII+Sbj+0Pl: iikssoka'piisi
+     PV/iik+soka'pii+VII+Sbj+0Sg+PRO+3/0: iikssoka'piisiyaawa
+     PV/iik+soka'pii+VII+Sbj+0Pl+PRO+0Pl: iikssoka'piisiwaistsi
 
-     PV/iik+soka'pii+VII+Irr+0Sg: iikssoka'piiwahtohpi
+     PV/iik+soka'pii+VII+Irr+0Sg: iikssoka'piiwahtopi
      PV/iik+soka'pii+VII+Irr+0Pl: iikssoka'piiwahtopiyi
-     PV/iik+soka'pii+VII+Irr+0Sg: iikssoka'piiwahtohpiaawa
-     PV/iik+soka'pii+VII+Irr+0Pl: iikssoka'piiwahtopiyiwaistsi
+     PV/iik+soka'pii+VII+Irr+0Sg+PRO+3/0: iikssoka'piiwahtopiyaawa
+     PV/iik+soka'pii+VII+Irr+0Pl+PRO+0Pl: iikssoka'piiwahtopiyiwaistsi

@@ -7,20 +7,20 @@ Config:
     Morph: ../../../src/analyser-gt-norm.+fst
     App: lookup
 
-Tests
+Tests:
   
   Verb - inaatsi - ok : # -m inanimate intransitive verb, appear AEW NA1
      PN/niit+inááttsi+VII+Ind+0Sg: niitsinááttsiwa
      PV/iik+PN/oomok+inááttsi+VII+Ind+0Sg: iikóómoksinááttsiwa
      PV/iik+PN/ohpo+inááttsi+VII+Ind+0Sg: ííkohpoinaattsiwa
      Past+PV/hkana+PN/omia'nist+inááttsi+VII+Ind+0Pl: iihkanáómia'nistsinaattsiyi
-     Fut+PV/isttsikohpo+inááttsi+VII+Ind+0Sg: áaksisttsikohpoináttsiwa
+     Fut+PV/isttsikohpo+inááttsi+VII+Ind+0Sg: áaksisttsikohpoinááttsiwa
      Fut+PN/ipiiw+inááttsi+VII+Ind+0Sg: áaksipiiyinááttsiwa
      PV/iik+PV/aanist+inááttsi+VII+Ind+0Sg: ííkaanistsinaattsiwa
      PN/sikotahko+inááttsi+VII+Ind+0Sg: sikótahkoinaattsiwa
-     Past+PN/sstsaap+inááttsi+VII+Ind+0Sg: isstsáápinaattsiwa
+     Past+PN/sstsaap+inááttsi+VII+Ind+0Sg: iisstsáápinaattsiwa
      Past+PN/ohsi+inááttsi+VII+Ind+0Sg: issíinááttsiwa
      PN/ipiiw+inááttsi+VII+Ind+0Sg: ipííyinaattsiwa
-     Dur+apoyi+inááttsi+VII+Ind+0Sg: aapoyíínaattsiwa
+     Dur+PN/apoyi+inááttsi+VII+Ind+0Sg: aapoyíínaattsiwa
      Fut+PV/anist+inááttsi+VII+Ind+0Sg: áakanistsinaattsiwa
      Fut+PN/apoyi+inááttsi+VII+Ind+0Sg: áakapoyíínaattsiwa

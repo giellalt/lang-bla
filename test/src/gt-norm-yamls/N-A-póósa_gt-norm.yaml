@@ -9,43 +9,41 @@ Config:
 
 Tests:
   
-  Noun - imitááwa - ok : # -m animate noun, dog AEW NA1
-     imitááwa+NA+Sg: imitááwa
-     imitááwa+NA+Pl: imitááíksi
-     imitááwa+NA+Obv: imitááyi
-     imitááwa+NA+Non: imitááí
+  Noun - póósa - ok : # -m animate noun, dog AEW NA1
+     póósa+NA+Sg: póósa
+     póósa+NA+Pl: póósiksi
+     póósa+NA+Obv: póósi
+     póósa+NA+Non: póósi
      
-     imitááwa+NA+Px1Sg+Sg: nitomitááma
-     imitááwa+NA+Px1Sg+Pl: nitomitáámiksi
-     imitááwa+NA+Px1Sg+Obv: nitomitáámi
-     imitááwa+NA+Px1Sg+Non: nitomitáámi
+     póósa+NA+Px1Sg+Sg: nitohpóósima
+     póósa+NA+Px1Sg+Pl: nitohpóósimiksi
+     póósa+NA+Px1Sg+Obv: nitohpóósimi
+     póósa+NA+Px1Sg+Non: nitohpóósimi
      
-     imitááwa+NA+Px1Pl+Sg: nitomitááminnaana
-     imitááwa+NA+Px1Pl+Pl: nitomitááminnaaniksi
-     imitááwa+NA+Px1Pl+Obv: nitomitááminnaani
-     imitááwa+NA+Px1Pl+Non: nitomitááminnaani
+     póósa+NA+Px1Pl+Sg: nitohpóósiminnaana
+     póósa+NA+Px1Pl+Pl: nitohpóósiminnaaniksi
+     póósa+NA+Px1Pl+Obv: nitohpóósiminnaani
+     póósa+NA+Px1Pl+Non: nitohpóósiminnaani
 
-     imitááwa+NA+Px21Pl+Sg: kitomitááminnoona
-     imitááwa+NA+Px21Pl+Pl: kitomitááminnooniksi
-     imitááwa+NA+Px21Pl+Obv: kitomitááminnooni
-     imitááwa+NA+Px21Pl+Non: kitomitááminnooni
+     póósa+NA+Px21Pl+Sg: kitohpóósiminnoona
+     póósa+NA+Px21Pl+Pl: kitohpóósiminnooniksi
+     póósa+NA+Px21Pl+Obv: kitohpóósiminnooni
+     póósa+NA+Px21Pl+Non: kitohpóósiminnooni
 
-     imitááwa+NA+Px2Sg+Sg: kitomitááma
-     imitááwa+NA+Px2Sg+Pl: kitomitáámiksi
-     imitááwa+NA+Px2Sg+Obv: kitomitáámi
-     imitááwa+NA+Px2Sg+Non: kitomitáámi
+     póósa+NA+Px2Sg+Sg: kitohpóósima
+     póósa+NA+Px2Sg+Pl: kitohpóósimiksi
+     póósa+NA+Px2Sg+Obv: kitohpóósimi
+     póósa+NA+Px2Sg+Non: kitohpóósimi
 
-     imitááwa+NA+Px2Pl+Sg: kitomitáámoaawa
-     imitááwa+NA+Px2Pl+Pl: kitomitáámoaawaiksi
-     imitááwa+NA+Px2Pl+Obv: kitomitáámoaawayi
-     imitááwa+NA+Px2Pl+Non: kitomitáámoaawai
+     póósa+NA+Px2Pl+Sg: kitohpóósimoaawa
+     póósa+NA+Px2Pl+Pl: kitohpóósimoaawaiksi
+     póósa+NA+Px2Pl+Obv: kitohpóósimoaawayi
+     póósa+NA+Px2Pl+Non: kitohpóósimoaawai
 
-     imitááwa+NA+Px3Sg+Sg: otomitááma
-     imitááwa+NA+Px3Sg+Pl: otomitáámiksi
-     imitááwa+NA+Px3Sg+Obv: otomitáámi
-     imitááwa+NA+Px3Sg+Non: otomitáámi
+     póósa+NA+Px3Sg+Pl: otohpóósimiksi
+     póósa+NA+Px3Sg+Obv: otohpóósimi
+     póósa+NA+Px3Sg+Non: otohpóósimi
 
-     imitááwa+NA+Px3Pl+Sg: otomitáámoaawa
-     imitááwa+NA+Px3Pl+Pl: otomitáámoaawaiksi
-     imitááwa+NA+Px3Pl+Obv: otomitáámoaawayi
-     imitááwa+NA+Px3Pl+Non: otomitáámoaawai
+     póósa+NA+Px3Pl+Pl: otohpóósimoaawaiksi
+     póósa+NA+Px3Pl+Obv: otohpóósimoaawayi
+     póósa+NA+Px3Pl+Non: otohpóósimoaawai

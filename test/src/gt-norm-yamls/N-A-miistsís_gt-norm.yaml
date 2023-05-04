@@ -11,9 +11,9 @@ Tests:
   
   Noun - miistsísa - ok : # -m animate noun, tree AEW NA1
      miistsísa+NA+Sg: miistsísa
-     miistsísa+NA+Pl: miistsíksi
-     miistsísa+NA+Obv: miistsíyi
-     miistsísa+NA+Non: miistsíí
+     miistsísa+NA+Pl: miistsíiksi
+     miistsísa+NA+Obv: miistsísi
+     miistsísa+NA+Non: miistsísi
      
      miistsísa+NA+Px1Sg+Sg: nitsiistsíma
      miistsísa+NA+Px1Sg+Pl: nitsiistsímiksi
@@ -30,22 +30,20 @@ Tests:
      miistsísa+NA+Px21Pl+Obv: kitsiistsíminnooni
      miistsísa+NA+Px21Pl+Non: kitsiistsíminnooni
 
-     miistsísa+NA+Px2Sg+Sg: kitiistsíma
-     miistsísa+NA+Px2Sg+Pl: kitiistsímiksi
-     miistsísa+NA+Px2Sg+Obv: kitiistsími
-     miistsísa+NA+Px2Sg+Non: kitiistsími
+     miistsísa+NA+Px2Sg+Sg: kitsiistsíma
+     miistsísa+NA+Px2Sg+Pl: kitsiistsímiksi
+     miistsísa+NA+Px2Sg+Obv: kitsiistsími
+     miistsísa+NA+Px2Sg+Non: kitsiistsími
 
-     miistsísa+NA+Px2Pl+Sg: kitiistsímoaawa
-     miistsísa+NA+Px2Pl+Pl: kitiistsímoaawaiksi
-     miistsísa+NA+Px2Pl+Obv: kitiistsímoaawayi
-     miistsísa+NA+Px2Pl+Non: kitiistsímoaawai
+     miistsísa+NA+Px2Pl+Sg: kitsiistsímoaawa
+     miistsísa+NA+Px2Pl+Pl: kitsiistsímoaawaiksi
+     miistsísa+NA+Px2Pl+Obv: kitsiistsímoaawayi
+     miistsísa+NA+Px2Pl+Non: kitsiistsímoaawai
 
-     miistsísa+NA+Px3Sg+Sg: otiistsíma
-     miistsísa+NA+Px3Sg+Pl: otiistsímiksi
-     miistsísa+NA+Px3Sg+Obv: otiistsími
-     miistsísa+NA+Px3Sg+Non: otiistsími
+     miistsísa+NA+Px3Sg+Pl: otsiistsímiksi
+     miistsísa+NA+Px3Sg+Obv: otsiistsími
+     miistsísa+NA+Px3Sg+Non: otsiistsími
 
-     miistsísa+NA+Px3Pl+Sg: otiistsímoaawa
-     miistsísa+NA+Px3Pl+Pl: otiistsímoaawaiksi
-     miistsísa+NA+Px3Pl+Obv: otiistsímoaawayi
-     miistsísa+NA+Px3Pl+Non: otiistsímoaawai
+     miistsísa+NA+Px3Pl+Pl: otsiistsímoaawaiksi
+     miistsísa+NA+Px3Pl+Obv: otsiistsímoaawayi
+     miistsísa+NA+Px3Pl+Non: otsiistsímoaawai
