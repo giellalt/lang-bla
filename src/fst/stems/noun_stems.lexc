@@ -2,14 +2,8 @@
 
 ! Below are the INDEPENDENT noun stems and their allomorphic forms (only if the allomorph is irregular). 
 
-LEXICON NOUN_STEMS
-@P.pos.NA@ INDEP_NA_STEMS ;
-@P.pos.NI@ INDEP_NI_STEMS ;
-@P.pos.VAI@ INDEP_NA_STEMS ;
-@P.pos.VII@ INDEP_NI_STEMS ;
-
 ! When working with the lexicon, be sure to know the following lexical information:
-! 1. Does it take the /-im/ suffix when possessed? If so, use NA_IM or NI_IM
+! 1. Does it ALWAYS take the /-im/ suffix when possessed? If so, use NA_IM or NI_IM
 ! 2. Does the word take a short person prefix? If so, put %^SP at the beginning of the stem
 ! 3. What allomorphy does the stem undergo? If it takes oh-, put h at the beginning of the stem. If i -> o, use i3. If a -> i2, use a4. 
 ! If a -> o, use a3. 
@@ -1161,7 +1155,7 @@ oohkotoksiisoyinni:oohkotoksiisoyinn	NI ;
 oohkotoksaisiksikimiyi:oohkotoksaisiksikimi	NI ;
 oohkinaakini:oohkinaakin	NI ;
 moohkinaakin NI ;
-óóhksipistaani:i2óóhksipistaan
+óóhksipistaani:i2óóhksipistaan NI ;
 onsskisi:onsskis	NI ;
 onnopa'tsisi:%^SPonnopa'tsis	NI ;
 onnikisi:onnikis	NI ;
@@ -1948,4 +1942,4 @@ LEXICON DEP_NI_STEMS
 nookóówayi:ookóówan     NID ;
 nookóówayi:ookóówa     NID ;
 
-! END CODE
+!!! END CODE !!!

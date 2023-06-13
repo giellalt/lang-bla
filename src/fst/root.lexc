@@ -46,6 +46,7 @@ Nonaff+
 +Der/Nom3
 +Der/Nom4
 +Der/Nom5
++Der/Verb
 +Der/Caus
 +Der/Caus2 
 +Der/Rcpr
@@ -1131,13 +1132,17 @@ n2
 ! Input: @U.person.NI@ 0
 ! Output: @U.person.NI@ nit 
 ! -> LEXC: @U.person.NI@0:@U.person.NI@ nit
+! pos = part of speech (general syntactic classes of verbs and nouns)
+! class = subclass (Blackfoot syntactic classes of verbs and nouns, VAI, VII, VAI, VTA, NA, NI, NAD)
+
+! The Root lexicon sets a separate path for regular verb morphology and verbalization. There is only one next-lexicon in the Root for noun
+! prefixes. This noun prefix lexicon splits it into a regular noun morphology and a nominalization path.
 
 LEXICON Root
-! Verb stem inflectional root lexica (verb stems inflected as verbs or nouns)
+! Verb inflectional root lexica (verb or noun stems inflected as verbs)
 @P.pos.VERB@ VERB_PREFIX_SETS ;
-@P.pos.NOMINALIZE@ VERB_PREFIXES ;
-! Noun stem inflectional root lexica (noun stems inflected as nouns or verbs)
-@P.pos.VERBALIZE@ VERBALIZED_PREFIX_SETS ;
-@P.pos.NOUN@ NOUN_PREFIXES ;
+@P.pos.VERBALIZE@ VERB_PREFIX_SETS ;
+! Noun inflectional root lexica (noun or verb stems inflected as nouns)
+NOUN_PREFIXES ;
 
 !!! END CODE !!!

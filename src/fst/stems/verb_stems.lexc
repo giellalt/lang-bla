@@ -2,17 +2,6 @@
 ! They are organized by their inflectional classes.
 ! All allomorphic triggers have been added
 
-LEXICON VERB_STEMS
-! LEXICON PREFIXES
-@R.class.VAI@	VAI_STEMS ;
-@R.class.VII@	VII_STEMS ;
-@R.class.VTI@	VTI_STEMS ;
-@R.class.VTA@	VTA_STEMS ;
-@R.class.NOUN@:@R.class.NOUN@ VAI_STEMS ;
-@R.class.NOUN@:@R.class.NOUN@ VII_STEMS ;
-@R.class.NOUN@:@R.class.NOUN@ VTI_STEMS ;
-@R.class.NOUN@:@R.class.NOUN@ VTA_STEMS ;
-
 LEXICON VAI_STEMS
 a'painahkimaa:a'painahkimaa	VAI ;
 a'pami:a'pami	VAI ;

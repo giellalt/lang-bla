@@ -12,13 +12,13 @@ Tests:
   Noun - isttoána - ok : # -m animate noun, knife AEW NA1
      isttoána+NA+Sg: isttoána
      isttoána+NA+Pl: isttoáíksi
-     isttoána+NA+Obv: isttoáyi
-     isttoána+NA+Non: isttoáí
+     isttoána+NA+Obv: isttoáni
+     isttoána+NA+Non: isttoání
      
      isttoána+NA+Px1Sg+Sg: nottoána
      isttoána+NA+Px1Sg+Pl: nottoáíksi
-     isttoána+NA+Px1Sg+Obv: nottoáyi
-     isttoána+NA+Px1Sg+Non: nottoáí
+     isttoána+NA+Px1Sg+Obv: nottoáni
+     isttoána+NA+Px1Sg+Non: nottoání
 
      isttoána+NA+Px1Pl+Sg: nottoánnaana
      isttoána+NA+Px1Pl+Pl: nottoánnaaniksi
@@ -32,8 +32,8 @@ Tests:
 
      isttoána+NA+Px2Sg+Sg: kottoána
      isttoána+NA+Px2Sg+Pl: kottoáíksi
-     isttoána+NA+Px2Sg+Obv: kottoáyi
-     isttoána+NA+Px2Sg+Non: kottoáí
+     isttoána+NA+Px2Sg+Obv: kottoáni
+     isttoána+NA+Px2Sg+Non: kottoání
 
      isttoána+NA+Px2Pl+Sg: kottoánoaawa
      isttoána+NA+Px2Pl+Pl: kottoánoaawaiksi
@@ -41,8 +41,8 @@ Tests:
      isttoána+NA+Px2Pl+Non: kottoánoaawai
 
      isttoána+NA+Px3Sg+Pl: ottoáíksi
-     isttoána+NA+Px3Sg+Obv: ottoáyi
-     isttoána+NA+Px3Sg+Non: ottoáí
+     isttoána+NA+Px3Sg+Obv: ottoáni
+     isttoána+NA+Px3Sg+Non: ottoání
 
      isttoána+NA+Px3Pl+Pl: ottoánoaawaiksi
      isttoána+NA+Px3Pl+Obv: ottoánoaawayi

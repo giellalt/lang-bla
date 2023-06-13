@@ -77,7 +77,7 @@ define CC2GemRule [ Ck2kkRule .o. Cp2ppRule .o. Ct2ttRule .o. Cs2ssRule .o. Cm2m
 define mmRule [ a -> 0 || Clong %> _ a ] ;
 define imRule [ i -> 0 || [ Vlong | i | í ] %> _ m %> ] ;
 define finalNrule [ i -> 0 || n %> _ n ,, _ %> i n ] ;
-define finalNdiss [ n -> 0 || k [ i | í ] _ %> [ i k s i | i s t s i ] ] ;
+define finalNdiss [ n -> 0 || k [ i | í ] _ %> [ i k s i | i s t s i ] ,, n -> 0 || o [ á | a ]  _ %> [ i k s i | i s t s i ] ] ;
 define fixN [ n+ -> 0 || _ (Bx) n n ] ;
 ! define n20Rule [ n -> 0 || Vshort _ %> Vowel ,, o [ a | á ] _ %> Vowel ] ;
 define sisRule [ s -> 0 || s [ i | í ] _ Bx i Consonant ] ;
@@ -352,7 +352,7 @@ define i2NeutRule [ i3 -> i ,, i2 -> i ,, í2 -> í ] ;
 
 define deep2surfRule [ Bx -> 0 ,, n2 -> n ,, a2 -> a ,, o2 -> o ,, a3 -> a ,, a4 -> a ] ; 
 
-define relax [ a (->) á, i (->) í, o (->) ó, á (->) a, í (->) i, ó (->) o ] ;  
+!define relax [ a (->) á, i (->) í, o (->) ó, á (->) a, í (->) i, ó (->) o ] ;  
 
 ! Dominik made some extra rules to make it work with the morphosyntax model
 
@@ -429,7 +429,8 @@ read regex [ shortPrefix
 .o. deep2surfRule
 .o. i2NeutRule
 .o. sInsRule 
-.o. relax ] ;
+!.o. relax 
+] ;
 
 !!!!! END !!!!!
 ! .o. sss2ssRule

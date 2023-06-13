@@ -1133,10 +1133,10 @@ LEXICON Root
 @P.class.NOUN@ NOUN_PREFIXES ;
 
 LEXICON NOUN_PREFIXES
-@P.person.NI@:@P.person.NI@nit%< PREVERBS ;
-@P.person.KI@:@P.person.KI@kit%< PREVERBS ;
-@P.person.OT@:@P.person.OT@ot%< PREVERBS ;
-@P.person.NULL@:@P.person.NULL@0 PREVERBS ;
+@P.person.NI@:@P.person.NI@nit%< PREFIXES ;
+@P.person.KI@:@P.person.KI@kit%< PREFIXES ;
+@P.person.OT@:@P.person.OT@ot%< PREFIXES ;
+@P.person.NULL@:@P.person.NULL@0 PREFIXES ;
 
 LEXICON PREFIX_SETS
 @P.class.VAI@	BASIC_PREFIXES ;
@@ -1207,7 +1207,7 @@ LEXICON PREVERBS
 PV/saw+:saw BOUND ;
 @R.mode.CON@PV/áákssta'+:@R.mode.CON@%^SPáákssta'	BOUND ;
 @R.mode.CON@PV/ááhkssta'+:@R.mode.CON@%^SPááhkssta' BOUND ;
-@P.count1.T@Dur+:@P.count1.T@á BOUND ;
+! @P.count1.T@Dur+:@P.count1.T@á BOUND ;
 !! New list of preverbs
 PV/a'kooht+:a'kooht BOUND ;
 PV/ááhkamá'p+:%^SPááhkamá'p BOUND ;
@@ -1777,10 +1777,14 @@ LEXICON VERB_STEMS
 @R.class.VII@	VII_STEMS ;
 @R.class.VTI@	VTI_STEMS ;
 @R.class.VTA@	VTA_STEMS ;
-@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VAI_STEMS ;
-@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VII_STEMS ;
-@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTI_STEMS ;
-@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTA_STEMS ;
+@R.class.NOUN@	VAI_STEMS ;
+@R.class.NOUN@	VII_STEMS ;
+@R.class.NOUN@	VTI_STEMS ;
+@R.class.NOUN@	VTA_STEMS ;    
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VAI_STEMS ;
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VII_STEMS ;
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTI_STEMS ;
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTA_STEMS ;
 
 LEXICON VAI_STEMS
 a'painahkimaa:a'painahkimaa	VAI ;
@@ -5426,23 +5430,23 @@ yootsipistoto:yootsipistoto	VTA ;
 ! is assumed to be already present in the noun model. 
 
 LEXICON VAI
-@R.pos.NA@+VAI:@R.pos.NA@    VERB_DER_NOM_SUFFIXES ;
-@R.pos.NI@+VAI:@R.pos.NI@    VERB_DER_NOM_SUFFIXES ;
+@P.pos.NA@@R.class.NOUN@+VAI:@P.pos.NA@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.pos.NI@@R.class.NOUN@+VAI:@P.pos.NI@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
 @R.pos.VERB@  VAI_DERIVATION ;
 
 LEXICON VII
-@R.pos.NA@+VII:@R.pos.NA@    VERB_DER_NOM_SUFFIXES ;
-@R.pos.NI@+VII:@R.pos.NI@    VERB_DER_NOM_SUFFIXES ;
+@P.pos.NA@@R.class.NOUN@+VII:@P.pos.NA@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.pos.NI@@R.class.NOUN@+VII:@P.pos.NI@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
 @R.pos.VERB@  VII_DERIVATION ;
 
 LEXICON VTI
-@R.pos.NA@+VTI:@R.pos.NA@    VERB_DER_NOM_SUFFIXES ;
-@R.pos.NI@+VTI:@R.pos.NI@    VERB_DER_NOM_SUFFIXES ;
+@P.pos.NA@@R.class.NOUN@+VTI:@P.pos.NA@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.pos.NI@@R.class.NOUN@+VTI:@P.pos.NI@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
 @R.pos.VERB@  VTI_DERIVATION ;
 
 LEXICON VTA
-@R.pos.NA@+VTA:@R.pos.NA@    VERB_DER_NOM_SUFFIXES ;
-@R.pos.NI@+VTA:@R.pos.NI@    VERB_DER_NOM_SUFFIXES ;
+@P.pos.NA@@R.class.NOUN@+VTA:@P.pos.NA@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.pos.NI@@R.class.NOUN@+VTA:@P.pos.NI@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
 @R.pos.VERB@  VTA_DERIVATION ;
 
 LEXICON VAI_DERIVATION

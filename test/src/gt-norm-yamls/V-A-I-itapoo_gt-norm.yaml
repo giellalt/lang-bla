@@ -7,7 +7,7 @@ Config:
     Morph: ../../../src/analyser-gt-norm.+fst
     App: lookup
 
-Tests
+Tests:
   
   Verb - itapoo - ok : # -m animate intransitive verb, go AEW NA2
      Fut+itapoo+VAI+Ind+1Sg: nitáakitapoo
