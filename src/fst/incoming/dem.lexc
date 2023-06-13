@@ -1,0 +1,39 @@
+Multichar_Symbols
++Dem
++A
++I
++Sg
++Pl
++Stat
++Movg
++Invs
++Narr
+ama
+oma
+anna
+anno
+amo
+%>
+
+LEXICON Root
+Dem ;
+
+LEXICON Dem
+ama+Dem:am Dem_num_suffixes ;
+oma+Dem:om Dem_num_suffixes ;
+anna+Dem:ann Dem_num_suffixes ;
+anno+Dem:anno Dem_num_suffixes ;
+amo+Dem:amo Dem_num_suffixes ;
+
+LEXICON Dem_num_suffixes
++A+Sg:%>wa Dem_postinfl ;
++I+Sg:%>yi Dem_postinfl ;
++A+Pl:%>iksi Dem_postinfl ;
++I+Pl:%>istsi Dem_postinfl ;
+
+LEXICON Dem_postinfl
++Stat:%>ma # ;
++Movg:%>ya # ;
++Invs:%>hka # ;
++Narr:%>ka # ;
+0 # ;
