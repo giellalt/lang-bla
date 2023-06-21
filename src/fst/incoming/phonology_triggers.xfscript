@@ -76,7 +76,7 @@ define CC2GemRule [ Ck2kkRule .o. Cp2ppRule .o. Ct2ttRule .o. Cs2ssRule .o. Cm2m
 
 define mmRule [ a -> 0 || Clong %> _ a ] ;
 define imRule [ i -> 0 || [ Vlong | i | í ] %> _ m %> ] ;
-define finalNrule [ i -> 0 || n %> _ n ,, _ %> i n ] ;
+define finalNrule [ i -> 0 || n %> _ n ,, i -> 0 || _ %> i n ] ;
 define finalNdiss [ n -> 0 || k [ i | í ] _ %> [ i k s i | i s t s i ] ,, n -> 0 || o [ á | a ]  _ %> [ i k s i | i s t s i ] ] ;
 define fixN [ n+ -> 0 || _ (Bx) n n ] ;
 ! define n20Rule [ n -> 0 || Vshort _ %> Vowel ,, o [ a | á ] _ %> Vowel ] ;
@@ -428,9 +428,7 @@ read regex [ shortPrefix
 .o. AccentRule 
 .o. deep2surfRule
 .o. i2NeutRule
-.o. sInsRule 
-!.o. relax 
+.o. sInsRule
 ] ;
 
 !!!!! END !!!!!
-! .o. sss2ssRule
