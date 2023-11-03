@@ -8,15 +8,11 @@ Multichar_Symbols
 +Stat
 +Movg
 +Invs
-+Narr
++MT
 +Vblz
 +Obv
-am
-amo
-ann
-anno
-om
 %>
+^Dem
 
 LEXICON Root
 Dem ;
@@ -34,9 +30,9 @@ om+Dem:om Dem_num_suffixes ;
 om+Dem+Dim:omsst Dem_num_suffixes ;
 
 LEXICON Dem_num_suffixes
-+A+Sg:%>wa Dem_postinfl ;
-+I+Sg:%>yi Dem_postinfl ;
++A+Sg:%>^Demwa Dem_postinfl ;
 +A+Obv:%>yi Dem_postinfl ;
++I+Sg:%>yi Dem_postinfl ;
 +A+Pl:%>iksi Dem_postinfl ;
 +I+Pl:%>istsi Dem_postinfl ;
 
@@ -44,10 +40,10 @@ LEXICON Dem_postinfl
 +Stat:%>ma Vblz ;
 +Movg:%>ya Vblz ;
 +Invs:%>hka Vblz ;
-+Narr:%>ka Vblz ;
++MT:%>ka Vblz ;
 0 Vblz ;
 
 LEXICON Vblz
-+Vblz+Sg:%>ao'ka # ;
-+Vblz+Pl:%>ayi # ;
++Vblz:%>o'ka # ;
++Vblz:%>ayi # ;
 0 # ;
