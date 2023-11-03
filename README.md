@@ -1,8 +1,10 @@
 The Siksika (Blackfoot) morphology and tools
 ==========================================
 
+[![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-bla%2Fgh-pages%2Fmaturity.json)](https://giellalt.github.io/MaturityClassification.html)
+![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-bla%2Fgh-pages%2Flemmacount.json)
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-bla)](https://github.com/giellalt/lang-bla/issues)
-[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-bla/main/badge.svg)](https://github.com/giellalt/lang-bla/actions)
+[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-bla/main/badge.svg)](https://github.com/giellalt/lang-bla/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-bla)](https://github.com/giellalt/lang-bla/blob/main/LICENSE)
 [![Desktop speller download](https://img.shields.io/badge/download%40latest-desktop--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-bla?platform=desktop&channel=nightly)
 [![Mobile speller download](https://img.shields.io/badge/download%40latest-mobile--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-bla?platform=mbile&channel=nightly)
