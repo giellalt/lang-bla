@@ -1,0 +1,72 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Dem+Dimonstratsive - omsst - ok :
+     om+Dem+Dim+A+Sg: omssta
+     om+Dem+Dim+I+Sg: omsstsi
+     om+Dem+Dim+A+Obv: omsstsi
+     om+Dem+Dim+A+Pl: omsstsiksi
+     om+Dem+Dim+I+Pl: omsstsistsi
+     
+     om+Dem+Dim+A+Sg+Stat: omsstama
+     om+Dem+Dim+I+Sg+Stat: omsstsima
+     om+Dem+Dim+A+Obv+Stat: omsstsima
+     om+Dem+Dim+A+Pl+Stat: omsstsiksima
+     om+Dem+Dim+I+Pl+Stat: omsstsistsima
+     
+     om+Dem+Dim+A+Sg+Movg: omsstaya
+     om+Dem+Dim+I+Sg+Movg: omsstsiya
+     om+Dem+Dim+A+Obv+Movg: omsstsiya
+     om+Dem+Dim+A+Pl+Movg: omsstsiksiya
+     om+Dem+Dim+I+Pl+Movg: omsstsistsiya
+     
+     om+Dem+Dim+A+Sg+Invs: omsstahka
+     om+Dem+Dim+I+Sg+Invs: omsstsihka
+     om+Dem+Dim+A+Obv+Invs: omsstsihka
+     om+Dem+Dim+A+Pl+Invs: omsstsiksska
+     om+Dem+Dim+I+Pl+Invs: omsstsistsska
+     
+     om+Dem+Dim+A+Sg+MT: omsstaka
+     om+Dem+Dim+I+Sg+MT: omsstsika
+     om+Dem+Dim+A+Obv+MT: omsstsika
+     om+Dem+Dim+A+Pl+MT: omsstsiksika
+     om+Dem+Dim+I+Pl+MT: omsstsistsika
+     
+     om+Dem+Dim+A+Sg+Vblz:  [omsstao'ka,    omsstaayi]
+     om+Dem+Dim+I+Sg+Vblz:  [omssto'ka,     omsstayi]
+     om+Dem+Dim+A+Obv+Vblz: [omssto'ka,     omsstayi]
+     om+Dem+Dim+A+Pl+Vblz:  [omsstsikso'ka,  omsstsiksayi]
+     om+Dem+Dim+I+Pl+Vblz:  [omsstsistso'ka, omsstsistsayi]
+     
+     om+Dem+Dim+A+Sg+Stat+Vblz:  [omsstamao'ka,     omsstamaayi]
+     om+Dem+Dim+I+Sg+Stat+Vblz:  [omsstsimao'ka,     omsstsimaayi]
+     om+Dem+Dim+A+Obv+Stat+Vblz: [omsstsimao'ka,     omsstsimaayi]
+     om+Dem+Dim+A+Pl+Stat+Vblz:  [omsstsiksimao'ka,  omsstsiksimaayi]
+     om+Dem+Dim+I+Pl+Stat+Vblz:  [omsstsistsimao'ka, omsstsistsimaayi]
+     
+     om+Dem+Dim+A+Sg+Movg+Vblz:  [omsstayao'ka,     omsstayaayi]
+     om+Dem+Dim+I+Sg+Movg+Vblz:  [omsstsiyao'ka,     omsstsiyaayi]
+     om+Dem+Dim+A+Obv+Movg+Vblz: [omsstsiyao'ka,     omsstsiyaayi]
+     om+Dem+Dim+A+Pl+Movg+Vblz:  [omsstsiksiyao'ka,  omsstsiksiyaayi]
+     om+Dem+Dim+I+Pl+Movg+Vblz:  [omsstsistsiyao'ka, omsstsistsiyaayi]
+     
+     om+Dem+Dim+A+Sg+Invs+Vblz:  [omsstahkao'ka,    omsstahkaayi]
+     om+Dem+Dim+I+Sg+Invs+Vblz:  [omsstsihkao'ka,    omsstsihkaayi]
+     om+Dem+Dim+A+Obv+Invs+Vblz: [omsstsihkao'ka,    omsstsihkaayi]
+     om+Dem+Dim+A+Pl+Invs+Vblz:  [omsstsiksskao'ka,  omsstsiksskaayi]
+     om+Dem+Dim+I+Pl+Invs+Vblz:  [omsstsistsskao'ka, omsstsistsskaayi]
+     
+     om+Dem+Dim+A+Sg+MT+Vblz:  [omsstakao'ka,     omsstakaayi]
+     om+Dem+Dim+I+Sg+MT+Vblz:  [omsstsikao'ka,     omsstsikaayi]
+     om+Dem+Dim+A+Obv+MT+Vblz: [omsstsikao'ka,     omsstsikaayi]
+     om+Dem+Dim+A+Pl+MT+Vblz:  [omsstsiksikao'ka,  omsstsiksikaayi]
+     om+Dem+Dim+I+Pl+MT+Vblz:  [omsstsistsikao'ka, omsstsistsikaayi]
+     

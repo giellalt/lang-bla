@@ -1,0 +1,72 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Demonstrative - am - ok :
+     am+Dem+A+Sg: ama
+     am+Dem+I+Sg: ami
+     am+Dem+A+Obv: ami
+     am+Dem+A+Pl: amiksi
+     am+Dem+I+Pl: amistsi
+     
+     am+Dem+A+Sg+Stat: amama
+     am+Dem+I+Sg+Stat: amima
+     am+Dem+A+Obv+Stat: amima
+     am+Dem+A+Pl+Stat: amiksima
+     am+Dem+I+Pl+Stat: amistsima
+     
+     am+Dem+A+Sg+Movg: amaya
+     am+Dem+I+Sg+Movg: amiya
+     am+Dem+A+Obv+Movg: amiya
+     am+Dem+A+Pl+Movg: amiksiya
+     am+Dem+I+Pl+Movg: amistsiya
+     
+     am+Dem+A+Sg+Invs: amahka
+     am+Dem+I+Sg+Invs: amihka
+     am+Dem+A+Obv+Invs: amihka
+     am+Dem+A+Pl+Invs: amiksska
+     am+Dem+I+Pl+Invs: amistsska
+     
+     am+Dem+A+Sg+MT: amaka
+     am+Dem+I+Sg+MT: amika
+     am+Dem+A+Obv+MT: amika
+     am+Dem+A+Pl+MT: amiksika
+     am+Dem+I+Pl+MT: amistsika
+     
+     am+Dem+A+Sg+Vblz:  [amao'ka,    amaayi]
+     am+Dem+I+Sg+Vblz:  [amo'ka,     amayi]
+     am+Dem+A+Obv+Vblz: [amo'ka,     amayi]
+     am+Dem+A+Pl+Vblz:  [amikso'ka,  amiksayi]
+     am+Dem+I+Pl+Vblz:  [amistso'ka, amistsayi]
+     
+     am+Dem+A+Sg+Stat+Vblz:  [amamao'ka,     amamaayi]
+     am+Dem+I+Sg+Stat+Vblz:  [amimao'ka,     amimaayi]
+     am+Dem+A+Obv+Stat+Vblz: [amimao'ka,     amimaayi]
+     am+Dem+A+Pl+Stat+Vblz:  [amiksimao'ka,  amiksimaayi]
+     am+Dem+I+Pl+Stat+Vblz:  [amistsimao'ka, amistsimaayi]
+     
+     am+Dem+A+Sg+Movg+Vblz:  [amayao'ka,     amayaayi]
+     am+Dem+I+Sg+Movg+Vblz:  [amiyao'ka,     amiyaayi]
+     am+Dem+A+Obv+Movg+Vblz: [amiyao'ka,     amiyaayi]
+     am+Dem+A+Pl+Movg+Vblz:  [amiksiyao'ka,  amiksiyaayi]
+     am+Dem+I+Pl+Movg+Vblz:  [amistsiyao'ka, amistsiyaayi]
+     
+     am+Dem+A+Sg+Invs+Vblz:  [amahkao'ka,    amahkaayi]
+     am+Dem+I+Sg+Invs+Vblz:  [amihkao'ka,    amihkaayi]
+     am+Dem+A+Obv+Invs+Vblz: [amihkao'ka,    amihkaayi]
+     am+Dem+A+Pl+Invs+Vblz:  [amiksskao'ka,  amiksskaayi]
+     am+Dem+I+Pl+Invs+Vblz:  [amistsskao'ka, amistsskaayi]
+     
+     am+Dem+A+Sg+MT+Vblz:  [amakao'ka,     amakaayi]
+     am+Dem+I+Sg+MT+Vblz:  [amikao'ka,     amikaayi]
+     am+Dem+A+Obv+MT+Vblz: [amikao'ka,     amikaayi]
+     am+Dem+A+Pl+MT+Vblz:  [amiksikao'ka,  amiksikaayi]
+     am+Dem+I+Pl+MT+Vblz:  [amistsikao'ka, amistsikaayi]
+     

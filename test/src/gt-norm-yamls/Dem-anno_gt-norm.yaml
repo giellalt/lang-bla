@@ -1,0 +1,72 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Demonstrative - anno - ok :
+     anno+Dem+A+Sg: anno
+     anno+Dem+I+Sg: annoyi
+     anno+Dem+A+Obv: annoyi
+     anno+Dem+A+Pl: [annoiksi,  annoksi]
+     anno+Dem+I+Pl: [annoistsi, annostsi]
+     
+     anno+Dem+A+Sg+Stat: annoma
+     anno+Dem+I+Sg+Stat: annoyima
+     anno+Dem+A+Obv+Stat: annoyima
+     anno+Dem+A+Pl+Stat: [annoiksima,  annoksima]
+     anno+Dem+I+Pl+Stat: [annoistsima, annostsima]
+     
+     anno+Dem+A+Sg+Movg: annoya
+     anno+Dem+I+Sg+Movg: annoyiya
+     anno+Dem+A+Obv+Movg: annoyiya
+     anno+Dem+A+Pl+Movg: [annoiksiya,  annoksiya]
+     anno+Dem+I+Pl+Movg: [annoistsiya, annostsiya]
+     
+     anno+Dem+A+Sg+Invs: annohka
+     anno+Dem+I+Sg+Invs: annoyihka
+     anno+Dem+A+Obv+Invs: annoyihka
+     anno+Dem+A+Pl+Invs: [annoiksska,  annoksska]
+     anno+Dem+I+Pl+Invs: [annoistsska, annostsska]
+     
+     anno+Dem+A+Sg+MT: annoka
+     anno+Dem+I+Sg+MT: annoyika
+     anno+Dem+A+Obv+MT: annoyika
+     anno+Dem+A+Pl+MT: [annoiksika,  annoksika]
+     anno+Dem+I+Pl+MT: [annoistsika, annostsika]
+     
+     anno+Dem+A+Sg+Vblz:  [annoo'ka,     annoayi]
+     anno+Dem+I+Sg+Vblz:  [annoyo'ka,    annoyayi]
+     anno+Dem+A+Obv+Vblz: [annoyo'ka,    annoyayi]
+     anno+Dem+A+Pl+Vblz:  [annoikso'ka,  annoiksayi,  annokso'ka,  annoksayi]
+     anno+Dem+I+Pl+Vblz:  [annoistso'ka, annoistsayi, annostso'ka, annostsayi]
+     
+     anno+Dem+A+Sg+Stat+Vblz:  [annomao'ka,      annomaayi]
+     anno+Dem+I+Sg+Stat+Vblz:  [annoyimao'ka,    annoyimaayi]
+     anno+Dem+A+Obv+Stat+Vblz: [annoyimao'ka,    annoyimaayi]
+     anno+Dem+A+Pl+Stat+Vblz:  [annoiksimao'ka,  annoiksimaayi,  annoksimao'ka,  annoksimaayi]
+     anno+Dem+I+Pl+Stat+Vblz:  [annoistsimao'ka, annoistsimaayi, annostsimao'ka, annostsimaayi]
+     
+     anno+Dem+A+Sg+Movg+Vblz:  [annoyao'ka,      annoyaayi]
+     anno+Dem+I+Sg+Movg+Vblz:  [annoyiyao'ka,    annoyiyaayi]
+     anno+Dem+A+Obv+Movg+Vblz: [annoyiyao'ka,    annoyiyaayi]
+     anno+Dem+A+Pl+Movg+Vblz:  [annoiksiyao'ka,  annoiksiyaayi,  annoksiyao'ka,  annoksiyaayi]
+     anno+Dem+I+Pl+Movg+Vblz:  [annoistsiyao'ka, annoistsiyaayi, annostsiyao'ka, annostsiyaayi]
+     
+     anno+Dem+A+Sg+Invs+Vblz:  [annohkao'ka,     annohkaayi]
+     anno+Dem+I+Sg+Invs+Vblz:  [annoyihkao'ka,   annoyihkaayi]
+     anno+Dem+A+Obv+Invs+Vblz: [annoyihkao'ka,   annoyihkaayi]
+     anno+Dem+A+Pl+Invs+Vblz:  [annoiksskao'ka,  annoiksskaayi,  annoksskao'ka,  annoksskaayi]
+     anno+Dem+I+Pl+Invs+Vblz:  [annoistsskao'ka, annoistsskaayi, annostsskao'ka, annostsskaayi]
+     
+     anno+Dem+A+Sg+MT+Vblz:  [annokao'ka,     annokaayi]
+     anno+Dem+I+Sg+MT+Vblz:  [annoyikao'ka,     annoyikaayi]
+     anno+Dem+A+Obv+MT+Vblz: [annoyikao'ka,     annoyikaayi]
+     anno+Dem+A+Pl+MT+Vblz:  [annoiksikao'ka,  annoiksikaayi,  annoksikao'ka,  annoksikaayi]
+     anno+Dem+I+Pl+MT+Vblz:  [annoistsikao'ka, annoistsikaayi, annostsikao'ka, annostsikaayi]
+     
