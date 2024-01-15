@@ -65,7 +65,7 @@ LEXICON VTA
 
 LEXICON VAI_DERIVATION
 @R.pos.VERB@+VAI:@R.pos.VERB@0                                           VAI_SUFFIXES ;
-@R.pos.VERB@+VAI+Der/Caus:@R.pos.VERB@%>áttsi                            VTA ;
+@R.pos.VERB@+VAI+Der/Caus:@R.pos.VERB@%>Ã¡ttsi                            VTA ;
 @R.pos.VERB@+VAI+Der/Caus2:@R.pos.VERB@%>pi                            VTA ; ! Rare, give low weight
 @R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo  VTA_SUFFIXES ;
 @R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>omo VTA_SUFFIXES ;
@@ -337,12 +337,12 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NI@+1Sg+4SgO+INTERR:@R.person.NI@%>ayiniwaatsiksi # ;
 @R.person.KI@+2Sg+4SgO+INTERR:@R.person.KI@%>ayiniwaatsiksi # ;
 @R.person.NULL@+3Sg+4SgO+INTERR:@R.person.NULL@%>yiiwaatsiksi # ;
-@R.person.NI@+1Pl+3SgO+INTERR:@R.person.NI@%>annáánawaatsiksi # ;
-@R.person.KI@+2Pl+3SgO+INTERR:@R.person.KI@%>awááwaatsiksi # ;
-@R.person.NULL@+21Pl+3SgO+INTERR:@R.person.NULL@%>ááwa # ;
-@R.person.NI@+1Pl+4SgO+INTERR:@R.person.NI@%>annáániwa # ;
-@R.person.KI@+2Pl+4SgO+INTERR:@R.person.KI@%>awááyiniwa # ;
-@R.person.KI@+21Pl+4SgO+INTERR:@R.person.KI@%>ááwa # ;
+@R.person.NI@+1Pl+3SgO+INTERR:@R.person.NI@%>annÃ¡Ã¡nawaatsiksi # ;
+@R.person.KI@+2Pl+3SgO+INTERR:@R.person.KI@%>awÃ¡Ã¡waatsiksi # ;
+@R.person.NULL@+21Pl+3SgO+INTERR:@R.person.NULL@%>Ã¡Ã¡wa # ;
+@R.person.NI@+1Pl+4SgO+INTERR:@R.person.NI@%>annÃ¡Ã¡niwa # ;
+@R.person.KI@+2Pl+4SgO+INTERR:@R.person.KI@%>awÃ¡Ã¡yiniwa # ;
+@R.person.KI@+21Pl+4SgO+INTERR:@R.person.KI@%>Ã¡Ã¡wa # ;
 @R.person.NULL@+3Pl+4SgO+INTERR:@R.person.NULL@%>waiksaawa # ;
 ! Interrogatives DIRECT Plural Object
 @R.person.NI@+1Sg+3PlO+INTERR:@R.person.NI@%>waiksaawa # ;
@@ -351,12 +351,12 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.KI@+2Sg+4PlO+INTERR:@R.person.KI@%>waiksaawa # ;
 @R.person.NULL@+3Sg+4PlO+INTERR:@R.person.NULL@%>waiksaawa # ;
 @R.person.NULL@+3Sg+4PlO+INTERR:@R.person.NULL@%>waiksaawa # ;
-@R.person.KI@+1Pl+2PlO+INTERR:@R.person.KI@%>ohpinnáánawa # ;	
-@R.person.NI@+1Pl+3PlO+INTERR:@R.person.NI@%>annáániwa # ;	
-@R.person.NI@+1Pl+4PlO+INTERR:@R.person.NI@%>annáániwa # ;	
-@R.person.KI@+2Pl+3PlO+INTERR:@R.person.KI@%>awááyiwa # ;
-@R.person.KI@+2Pl+4PlO+INTERR:@R.person.KI@%>awááyiwa # ;
-@R.person.NULL@+21Pl+3PlO+INTERR:@R.person.NULL@%>ááyiwa # ;
+@R.person.KI@+1Pl+2PlO+INTERR:@R.person.KI@%>ohpinnÃ¡Ã¡nawa # ;	
+@R.person.NI@+1Pl+3PlO+INTERR:@R.person.NI@%>annÃ¡Ã¡niwa # ;	
+@R.person.NI@+1Pl+4PlO+INTERR:@R.person.NI@%>annÃ¡Ã¡niwa # ;	
+@R.person.KI@+2Pl+3PlO+INTERR:@R.person.KI@%>awÃ¡Ã¡yiwa # ;
+@R.person.KI@+2Pl+4PlO+INTERR:@R.person.KI@%>awÃ¡Ã¡yiwa # ;
+@R.person.NULL@+21Pl+3PlO+INTERR:@R.person.NULL@%>Ã¡Ã¡yiwa # ;
 ! Interrogatives INVERSE Singular Object
 @R.person.NI@+3Sg+1SgO+INTERR:@R.person.NI@%>okaatsiksi # ;
 @R.person.KI@+3Sg+2SgO+INTERR:@R.person.KI@%>okaatsiksi # ;
@@ -371,20 +371,20 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NULL@+4Sg+3PlO+INTERR:@R.person.NULL@%>okaiksaawa # ;
 @R.person.NULL@+4Pl+3PlO+INTERR:@R.person.NULL@%>okaiksaawa # ;
 ! Interrogatives INVERSE Plural Object
-@R.person.NI@+3Sg+1PlO+INTERR:@R.person.NI@%>okinnáánawa # ;
-@R.person.KI@+3Sg+2PlO+INTERR:@R.person.KI@%>okoááwa # ;
-@R.person.KI@+3Sg+21PlO+INTERR:@R.person.KI@%>okááwa # ;
-@R.person.NI@+4Sg+1PlO+INTERR:@R.person.NI@%>okinnáániniwa # ;
-@R.person.KI@+4Sg+2PlO+INTERR:@R.person.KI@%>okoááyiniwa # ;
-@R.person.KI@+4Sg+3PlO+INTERR:@R.person.KI@%>okawááyiniwa # ;
+@R.person.NI@+3Sg+1PlO+INTERR:@R.person.NI@%>okinnÃ¡Ã¡nawa # ;
+@R.person.KI@+3Sg+2PlO+INTERR:@R.person.KI@%>okoÃ¡Ã¡wa # ;
+@R.person.KI@+3Sg+21PlO+INTERR:@R.person.KI@%>okÃ¡Ã¡wa # ;
+@R.person.NI@+4Sg+1PlO+INTERR:@R.person.NI@%>okinnÃ¡Ã¡niniwa # ;
+@R.person.KI@+4Sg+2PlO+INTERR:@R.person.KI@%>okoÃ¡Ã¡yiniwa # ;
+@R.person.KI@+4Sg+3PlO+INTERR:@R.person.KI@%>okawÃ¡Ã¡yiniwa # ;
 @R.person.KI@+4Sg+21PlO+INTERR:@R.person.KI@%>okiyiniwa # ;
 @R.person.NULL@+4Sg+3SgO+INTERR:@R.person.NULL@%>okaiksaawa # ;
-@R.person.NI@+3Pl+1PlO+INTERR:@R.person.NI@%>okinnáániwa # ;
-@R.person.KI@+3Pl+2PlO+INTERR:@R.person.KI@%>okoááyiwa # ;
+@R.person.NI@+3Pl+1PlO+INTERR:@R.person.NI@%>okinnÃ¡Ã¡niwa # ;
+@R.person.KI@+3Pl+2PlO+INTERR:@R.person.KI@%>okoÃ¡Ã¡yiwa # ;
 @R.person.KI@+3Pl+21PlO+INTERR:@R.person.KI@%>okiyiwa # ;
-@R.person.NI@+4Pl+1PlO+INTERR:@R.person.NI@%>okinnáániwa # ;
-@R.person.KI@+4Pl+2PlO+INTERR:@R.person.KI@%>okoááyiwa # ;
-@R.person.KI@+4Pl+3PlO+INTERR:@R.person.KI@%>okoááyiwa # ;
+@R.person.NI@+4Pl+1PlO+INTERR:@R.person.NI@%>okinnÃ¡Ã¡niwa # ;
+@R.person.KI@+4Pl+2PlO+INTERR:@R.person.KI@%>okoÃ¡Ã¡yiwa # ;
+@R.person.KI@+4Pl+3PlO+INTERR:@R.person.KI@%>okoÃ¡Ã¡yiwa # ;
 @R.person.KI@+4Pl+21PlO+INTERR:@R.person.KI@%>okiyiwa # ;
 @R.person.NULL@+4Pl+3SgO+INTERR:@R.person.NULL@%>okaiksaawa # ;
 ! Direct, Singular Subject and Object, INDEPENDENT
@@ -726,14 +726,14 @@ LEXICON ENCLITICS
 0 # ;
 +PRO+3/%0:%>aawa ENCLITICS_BOUND ;
 +PRO+3Pl:%>aiksi ENCLITICS_BOUND ;
-+PRO+D3Sg:%>áyi ENCLITICS_BOUND ;
++PRO+D3Sg:%>Ã¡yi ENCLITICS_BOUND ;
 +PRO+%0Pl:%>aistsi ENCLITICS_BOUND ;
 
 LEXICON ENCLITICS_BOUND
 0 # ;
 +PRO+3/%0:%>aawa # ;
 +PRO+3Pl:%>aiksi # ;
-+PRO+D3Sg:%>áyi # ;
++PRO+D3Sg:%>Ã¡yi # ;
 +PRO+%0Pl:%>aistsi # ;
 
 !!! END CODE !!!
