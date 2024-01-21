@@ -170,61 +170,7 @@ These were the set types.
 ## HNOUN MAPPING
 
 * * *
-<small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-bla/blob/main/src/cg3/functions.cg3)</small>Adjective inflection
-The Siksika language adjectives compare.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/affixes/adjectives.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/affixes/adjectives.lexc)</small>
-
----
-
-
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/affixes/noun_affixes.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/affixes/noun_affixes.lexc)</small>
-
----
-
-Noun inflection
-The Siksika language nouns inflect in cases.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/affixes/nouns.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/affixes/nouns.lexc)</small>
-
----
-
-Proper noun inflection
-The Siksika language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/affixes/propernouns.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/affixes/propernouns.lexc)</small>
-
----
-
-
-# Symbol affixes
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/affixes/symbols.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/affixes/symbols.lexc)</small>
-
----
-
-Verb inflection
-The Siksika language verbs inflect in persons.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/affixes/verbs.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/affixes/verbs.lexc)</small>
-
----
-
-Definitions
+<small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-bla/blob/main/src/cg3/functions.cg3)</small>Definitions
 
 Rules
 
@@ -349,6 +295,68 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 
 ---
 
+Adjective inflection
+The Siksika language adjectives compare.
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/adjectives.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/adjectives.lexc)</small>
+
+---
+
+
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/noun_affixes.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/noun_affixes.lexc)</small>
+
+---
+
+Noun inflection
+The Siksika language nouns inflect in cases.
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/nouns.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/nouns.lexc)</small>
+
+---
+
+Proper noun inflection
+The Siksika language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/propernouns.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/propernouns.lexc)</small>
+
+---
+
+
+# Symbol affixes
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/symbols.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/symbols.lexc)</small>
+
+---
+
+
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/verb_affixes.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/verb_affixes.lexc)</small>
+
+---
+
+Verb inflection
+The Siksika language verbs inflect in persons.
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/verbs.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/verbs.lexc)</small>
+
+---
+
 Definitions
 
 Rules
@@ -357,129 +365,138 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 
 1. Gemination C1 > C2 / _ + C2
 
-* *nitáni2t>k>wa*
-* *nitánikka* ``
+* *nitáni2t>k>wa*
+* *nitánikka*
 
-* *nitáni2t>awa*
-* *nitánistawa* ``
+* *nitáni2t>awa*
+* *nitánistawa*
 
-* *ann>yi2hka*
-* *annisska*
+* *ann>yi2hka*
+* *annisska*
 
-* *nit<siksipawa*
-* *nitssiksipawa*
+* *nit<siksipawa*
+* *nitssiksipawa*
 
-* *á<sínaakiwa*
-* *áísínaakiwa*
+* *á<sínaakiwa*
+* *áísínaakiwa*
 
-* *káta7<simiwa*
-* *kátai'simiwa*
+* *káta7<simiwa*
+* *kátai'simiwa*
 
-* *áakoto<apinniiwa*
-* *áakotaapinniiwa*
+* *áakoto<apinniiwa*
+* *áakotaapinniiwa*
 
-* *w<iihsíssi*
-* *ohsíssi*
+* *w<iihsíssi*
+* *ohsíssi*
 
-* *w<ínni*
-* *ónni*
+* *w<ínni*
+* *ónni*
 
-* *áak<i2piima*
-* *áaksipiima*
+* *áak<i2piima*
+* *áaksipiima*
 
-* *á<i2o7kaa>wa*
-* *áyo'kaawa*
+* *á<i2o7kaa>wa*
+* *áyo'kaawa*
 
-* *áyo7kaa>o7pa*
-* *áyo'kao'pa*
+* *áyo7kaa>o7pa*
+* *áyo'kao'pa*
 
-* *áyo7kaa>yi>aawa*
-* *áyo'kaayaawa*
+* *áyo7kaa>yi>aawa*
+* *áyo'kaayaawa*
 
-* *áókska7si>o7pa*
-* *áókska'so'pa*
+* *áókska7si>o7pa*
+* *áókska'so'pa*
 
-* *nit<i2oyi*
-* *nitsoyi*
+* *nit<i2oyi*
+* *nitsoyi*
 
-* *nit<it<itsiniki*
-* *nitsitsitsiniki*
+* *nit<it<itsiniki*
+* *nitsitsitsiniki*
 
-* *nit<i2oyi*
-* *nitsoyi*
+* *nit<i2oyi*
+* *nitsoyi*
 
-* *otokska7si>hsi*
-* *otokska'ssi*
+* *otokska7si>hsi*
+* *otokska'ssi*
 
-* *otá7po7taki>hsi* ``
-* *otá'po'takssi*
+* *otá7po7taki>hsi*
+* *otá'po'takssi*
 
-* *pii<hsini*
-* *pissini*
+* *pii<hsini*
+* *pissini*
 
-* *yaatóót*
-* *aatóót*
+* *yaatóót*
+* *aatóót*
 
-* *waaníít*
-* *aaníít*
+* *waaníít*
+* *aaníít*
 
-* *w<óko7si*
-* *óko'si*
+* *w<óko7si*
+* *óko'si*
 
-* *kikáta7<waaniihpa*
-* *kikáta'waaniihpa*
+* *kikáta7<waaniihpa*
+* *kikáta'waaniihpa*
 
-* *kitanistawawaaw>yináyi*
-* *kitanistawawaayináyi*
+* *kitanistawawaaw>yináyi*
+* *kitanistawawaayináyi*
 
-* *áíhpiyi>yináyi*
-* *áíhpiiyináyi*
+* *áíhpiyi>yináyi*
+* *áíhpiiyináyi*
 
-* *nitáókska7si>hpinnan*
-* *nitáókska'sspinnan*
+* *nitáókska7si>hpinnan*
+* *nitáókska'sspinnan*
 
-* *á7<omai7takiwa* ``
-* *áó'mai'takiwa*
+* *á7<omai7takiwa*
+* *áó'mai'takiwa*
 
-* *káta7<sspitaawa*
-* *kátai'sspitaawa*
+* *káta7<sspitaawa*
+* *kátai'sspitaawa*
 
-* *káta7<ookaawaatsi*
-* *kátaookaawaatsi*
+* *káta7<ookaawaatsi*
+* *kátaookaawaatsi*
 
-* *káta7<ottakiwaatsi*
-* *kátaoottakiwaatsi*
+* *káta7<ottakiwaatsi*
+* *kátaoottakiwaatsi*
 
-* *á7<isttohkohpiy7ssi*
-* *áísttohkohpiy'ssi*
+* *á7<isttohkohpiy7ssi*
+* *áísttohkohpiy'ssi*
 
-* *á7<o7tooyiniki*
-* *áó'tooyiniki*
+* *á7<o7tooyiniki*
+* *áó'tooyiniki*
 
-* *káta7<ohto7toowa*
-* *kátao'ohto'toowa*
+* *káta7<ohto7toowa*
+* *kátao'ohto'toowa*
 
-* *nit<ssksinoawa*
-* *nitssksinoawa*
+* *nit<ssksinoawa*
+* *nitssksinoawa*
 
-* *á<okska7siwa*
-* *áókska'siwa*
+* *á<okska7siwa*
+* *áókska'siwa*
 
-* *atsikí>istsi*
-* *atsikíístsi*
+* *atsikí>istsi*
+* *atsikíístsi*
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/phonology.xfscript](https://github.com/giellalt/lang-bla/blob/main/src/fst/phonology.xfscript)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/phonology.xfscript](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/phonology.xfscript)</small>
 
 ---
 
-Adjectives
-Adjectives in the Siksika language describe things.
+
+
+Blackfoot Regular Verb Morphology
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/adjectives.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/stems/adjectives.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/root.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/root.lexc)</small>
+
+---
+
+
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/noun_stems.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/noun_stems.lexc)</small>
 
 ---
 
@@ -489,7 +506,7 @@ Morphology according to Wikipedia.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/nouns.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/stems/nouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/nouns.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/nouns.lexc)</small>
 
 ---
 
@@ -498,7 +515,7 @@ Numerals in the Siksika language are numbers.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/numerals.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/stems/numerals.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/numerals.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/numerals.lexc)</small>
 
 ---
 
@@ -507,7 +524,23 @@ Prefixes in the Siksika language are bound to beginning of other words.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/prefixes.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/stems/prefixes.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/prefixes.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/prefixes.lexc)</small>
+
+---
+
+This is the prestem lexicon. It is shared between the nouns and verbs, although regular nouns do not take the ordered prefix lexicon.
+
+This counter ensures that each type of prenoun can only appear once in the following order: 0, Negation | 0, Tense | 0, Aspect | 0, then ikata'
+
+New list of preverbs
+
+This counter ensures that each type of prenoun can only appear once in the following order: Negation | 0, Tense | 0, Aspect | 0, then ikata' | 0.
+
+New list of preverbs
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/prestems.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/prestems.lexc)</small>
 
 ---
 
@@ -516,7 +549,15 @@ Pronouns in the Siksika language are references to things.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/pronouns.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/stems/pronouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/pronouns.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/pronouns.lexc)</small>
+
+---
+
+
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/verb_stems.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/verb_stems.lexc)</small>
 
 ---
 
@@ -525,7 +566,7 @@ Verbs in the Siksika language are actions.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/verbs.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/stems/verbs.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/verbs.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/verbs.lexc)</small>
 
 ---
 
@@ -692,7 +733,7 @@ retracted tongue root			_q
 
 * * *
 
-<small>This (part of) documentation was generated from [src/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-bla/blob/main/src/phonetics/txt2ipa.xfscript)</small>
+<small>This (part of) documentation was generated from [src/fst/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-bla/blob/main/src/fst/phonetics/txt2ipa.xfscript)</small>
 
 ---
 
@@ -712,7 +753,7 @@ For example:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-abbrevs2text.lexc](https://github.com/giellalt/lang-bla/blob/main/src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-abbrevs2text.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/transcriptions/transcriptor-abbrevs2text.lexc)</small>
 
 ---
 
@@ -726,7 +767,7 @@ For example:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-bla/blob/main/src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
 
 ---
 
@@ -1150,6 +1191,70 @@ Finally we mark as a token any sequence making up a:
 * * *
 
 <small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript](https://github.com/giellalt/lang-bla/blob/main/tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript)</small>
+
+---
+
+# TTS tokenisation for smj
+
+Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
+Then just:
+```sh
+make
+echo "ja, ja" \
+| hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+```
+
+More usage examples:
+```sh
+echo "Juos gorreválggain lea (dárbbašlaš) deavdit gáibádusa \
+boasttu olmmoš, man mielde lahtuid." \
+| hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+echo "(gáfe) 'ja' ja 3. ja? ц jaja ukjend \"ukjend\"" \
+| hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+echo "márffibiillagáffe" \
+| hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+```
+
+Pmatch documentation:
+<https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch>
+
+Characters which have analyses in the lexicon, but can appear without spaces
+before/after, that is, with no context conditions, and adjacent to words:
+* Punct contains ASCII punctuation marks
+* The symbol after m-dash is soft-hyphen `U+00AD`
+* The symbol following {•} is byte-order-mark / zero-width no-break space
+`U+FEFF`.
+
+Whitespace contains ASCII white space and
+the List contains some unicode white space characters
+* En Quad U+2000 to Zero-Width Joiner U+200d'
+* Narrow No-Break Space U+202F
+* Medium Mathematical Space U+205F
+* Word joiner U+2060
+
+Apart from what's in our morphology, there are
+1) unknown word-like forms, and
+2) unmatched strings
+We want to give 1) a match, but let 2) be treated specially by hfst-tokenise -a
+* select extended latin symbols
+* select symbols
+* various symbols from Private area (probably Microsoft),
+so far:
+* U+F0B7 for "x in box"
+
+TODO: Could use something like this, but built-in's don't include šžđčŋ:
+
+Simply give an empty reading when something is unknown:
+hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
+remove empty analyses from other readings. Empty readings are also
+legal in CG, they get a default baseform equal to the wordform, but
+no tag to check, so it's safer to let hfst-tokenise handle them.
+
+Needs hfst-tokenise to output things differently depending on the tag they get
+
+* * *
+
+<small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-tts-cggt-desc.pmscript](https://github.com/giellalt/lang-bla/blob/main/tools/tokenisers/tokeniser-tts-cggt-desc.pmscript)</small>
 
 ---
 
