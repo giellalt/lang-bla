@@ -1,7 +1,5 @@
-! Flags, tags, and special characters for regular Blackfoot noun and verb morphology 
-
 Multichar_Symbols
-! Noun tags
+
 +NI
 +NA
 +NAD
@@ -19,6 +17,15 @@ Multichar_Symbols
 +Px2Pl
 +Px3Pl
 +Px4Sg/Pl
+! Pronoun tags
++Pron
++Dem
++Dim
++Stat
++Movg
++Invs
++MT
++Vblz
 ! Verb tags
 +VAI
 +VII
@@ -46,7 +53,6 @@ Nonaff+
 +Der/Nom3
 +Der/Nom4
 +Der/Nom5
-+Der/Verb
 +Der/Caus
 +Der/Caus2 
 +Der/Rcpr
@@ -1026,6 +1032,14 @@ PV/ípssit+
 @R.class.VII@
 @R.class.VTI@
 @R.class.VTA@
+@P.pos.VAI@
+@P.pos.VII@
+@P.pos.VTI@
+@P.pos.VTA@
+@R.pos.VAI@
+@R.pos.VII@
+@R.pos.VTI@
+@R.pos.VTA@
 @P.assoc.A@
 @R.assoc.A@
 @P.class.NOUN@
@@ -1040,10 +1054,9 @@ PV/ípssit+
 @P.pos.VERB@
 @R.pos.NOUN@
 @R.pos.VERB@
-@P.pos.NOMINALIZE@
-@P.pos.VERBALIZE@
-@R.pos.NOMINALIZE@
-@R.pos.VERBALIZE@
+
+
+
 
 ! Constraining preverb recycling
 @D.pvcount@
@@ -1118,31 +1131,22 @@ i3
 a2
 a3
 a4
+á2 
+á3 
+á4
 o2
+ó2
 m2
 n2
 '
 %^SP
+%^DEM
 %<
 %>
 
-!! Blackfoot Regular Verb Morphology
-
-! Desired input-output
-! Input: @U.person.NI@ 0
-! Output: @U.person.NI@ nit 
-! -> LEXC: @U.person.NI@0:@U.person.NI@ nit
-! pos = part of speech (general syntactic classes of verbs and nouns)
-! class = subclass (Blackfoot syntactic classes of verbs and nouns, VAI, VII, VAI, VTA, NA, NI, NAD)
-
-! The Root lexicon sets a separate path for regular verb morphology and verbalization. There is only one next-lexicon in the Root for noun
-! prefixes. This noun prefix lexicon splits it into a regular noun morphology and a nominalization path.
+!! Root lexicon for Blackfoot phonology
 
 LEXICON Root
-! Verb inflectional root lexica (verb or noun stems inflected as verbs)
-@P.pos.VERB@ VERB_PREFIX_SETS ;
-@P.pos.VERBALIZE@ VERB_PREFIX_SETS ;
-! Noun inflectional root lexica (noun or verb stems inflected as nouns)
-NOUN_PREFIXES ;
-
-!!! END CODE !!!
+N_NOUN_PREFIXES ;
+VERB_ROOT ;
+DEMONSTRATIVES ;
