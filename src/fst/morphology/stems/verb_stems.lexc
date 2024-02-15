@@ -1,6 +1,20 @@
 ! These are the Blackfoot verb stems.
 ! They are organized by their inflectional classes.
-! All allomorphic triggers have been added
+
+LEXICON VERB_STEMS
+! LEXICON PREFIXES
+@R.class.VAI@	VAI_STEMS ;
+@R.class.VII@	VII_STEMS ;
+@R.class.VTI@	VTI_STEMS ;
+@R.class.VTA@	VTA_STEMS ;
+@R.class.NOUN@	VAI_STEMS ;
+@R.class.NOUN@	VII_STEMS ;
+@R.class.NOUN@	VTI_STEMS ;
+@R.class.NOUN@	VTA_STEMS ;    
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VAI_STEMS ;
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VII_STEMS ;
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTI_STEMS ;
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTA_STEMS ;
 
 LEXICON VAI_STEMS
 a'painahkimaa:a'painahkimaa	VAI ;
@@ -1516,7 +1530,7 @@ yootsipinaa:yootsipinaa	VAI ;
 a'pihkahtaki:a'pihkahtaki	VAI ;
 á'pistotaki:á'pistotaki	VAI ;
 a'písttaapiksistaki:a'písttaapiksistaki	VAI ;
-á'po'taki:á'po'taki	VAI ;
+a'po'taki:á'po'taki	VAI ;
 a'psskaki:a'psskaki	VAI ;
 a'psstaki:a'psstaki	VAI ;
 aotokiaaki:aotokiaaki	VAI ;
@@ -3637,4 +3651,10 @@ yookowat:yookowat	VTA ;
 yootsiimstat:yootsiimstat	VTA ;
 yootsipistoto:yootsipistoto	VTA ;
 
-!!! END CODE !!!
+! I am including the concrete verb finals (see Frantz 2017 chapter 18.)
+! The reason being that this is the best place to control them considering the four verb classes
+! The reflexive changes VTA verbs into VAI verbs and takes VAI suffixes. The same is true of the reciprocal. 
+! The benefactive changes Intransitive to Transitive verbs.
+
+! I am also using nominalization morphology that is said to still be productive. Morphology that is no longer productive 
+! is assumed to be already present in the noun model. 

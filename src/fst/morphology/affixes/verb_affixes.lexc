@@ -1,6 +1,21 @@
-!!! This file contains all the affixes for regular verb morphology and verbalization !!! 
+!! Blackfoot Regular Verb Morphology
 
-LEXICON VERB_PREFIX_SETS
+! Desired input-output
+! Input: @U.person.NI@ 0
+! Output: @U.person.NI@ nit 
+! -> LEXC: @U.person.NI@0:@U.person.NI@ nit
+
+LEXICON VERB_ROOT
+@P.pos.VERB@ PREFIX_SETS ;
+@P.class.NOUN@ NOUN_PREFIXES ;
+
+LEXICON NOUN_PREFIXES
+@P.person.NI@:@P.person.NI@nit%< PREFIXES ;
+@P.person.KI@:@P.person.KI@kit%< PREFIXES ;
+@P.person.OT@:@P.person.OT@ot%< PREFIXES ;
+@P.person.NULL@:@P.person.NULL@0 PREFIXES ;
+
+LEXICON PREFIX_SETS
 @P.class.VAI@	BASIC_PREFIXES ;
 @P.class.VII@	BASIC_PREFIXES ;
 @P.class.VTI@	BASIC_PREFIXES ;
@@ -16,7 +31,7 @@ LEXICON BASIC_PREFIXES
 LEXICON BASIC_IND_PREFIXES
 @P.person.NI@:@P.person.NI@nit%< PREFIXES ;
 @P.person.KI@:@P.person.KI@kit%< PREFIXES ;
-@P.person.OT@:@P.person.OT@kit%< PREFIXES ;
+@P.person.OT@:@P.person.OT@ot%< PREFIXES ;
 @P.person.NULL@:@P.person.NULL@0 PREFIXES ;
 
 LEXICON BASIC_CNJ_PREFIXES
@@ -36,37 +51,626 @@ LEXICON BASIC_IRR_PREFIXES
 LEXICON BASIC_IMP_PREFIXES
 @P.person.IMP@:@P.person.IMP@0    PREFIXES ;
 
-!!! Now we collect the prestems and the verb and noun stems !!!
+LEXICON PREFIXES
+@P.count1.N@@P.count1.T@@P.count1.A@@P.count1.P@@P.count1.N@@P.count1.T@@P.count1.A@@P.count1.P@0 PV_COUNTER1 ;
+@R.mode.IND@@P.count1.N@Neg+:@R.mode.IND@@P.count1.N@%^SPi2máát BOUND1 ;
+@R.mode.IMP@@P.count1.N@Neg+:@R.mode.IMP@@P.count1.N@%^SPi2miin BOUND1 ;
+@R.mode.IMP@@P.count1.N@Neg+:@R.mode.IMP@@P.count1.N@%^SPi2piin BOUND1 ;
+@R.mode.IND@@P.count1.N@PV/máátaommita'p+:@R.mode.IND@@P.count1.N@%^SPmáátaommita'p BOUND1 ;
+@P.count1.P@PV/ikátá'+:@P.count1.P@i2kátá' BOUND1 ;
+@P.count1.T@Imm+:@P.count1.T@ayáak BOUND1 ;
+@P.count1.T@Dur+:@P.count1.T@á BOUND1 ;
+@P.count1.T@Fut+:@P.count1.T@yáak BOUND1 ;
+@P.count1.T@Past+:@P.count1.T@ii BOUND1 ;
+@P.count1.A@Perf+:@P.count1.A@akáa BOUND1 ;
+@P.count1.A@Perf+:@P.count1.A@ikáa BOUND1 ;
+@P.count1.A@Perf+:@P.count1.A@okáa BOUND1 ; ! enumerating this one because it appears in these three forms
 
-! I am going to include the concrete verb finals (see Frantz 2017 chapter 18.)
-! The reason being that this is the best place to control them considering the four verb classes
-! The relfexive changes VTA verbs into VAI verbs and takes VAI suffixes. The same is true of the reciprocal. 
-! The benfactive changes Intransitive to Transitive verbs.
+LEXICON BOUND1
+0:%< PV_COUNTER1 ;
+
+!! This counter ensures that each type of prenoun can only appear once in the following order: Negation | 0, Tense | 0, Aspect | 0, then ikata' | 0.
+
+LEXICON PV_COUNTER1
+@D.pvcountf@@R.count1.N@@P.pvcountf.1@@R.count1.N@ PREFIXES ;
+@R.pvcountf.1@@R.count1.A@@P.pvcountf.2@@R.count1.A@ PREFIXES ;
+@R.pvcountf.2@@R.count1.T@@P.pvcountf.3@@R.count1.T@ PREFIXES ;
+@R.pvcountf.3@@R.count1.P@@P.pvcountf.4@@R.count1.P@ PREFIXES ;
+0 PREVERBS ;
+ 
+LEXICON PREVERBS
+0 VERB_STEMS ;
+@P.assoc.A@PV/ohpok+:@P.assoc.A@%^SPohpok BOUND ;
+PV/saw+:saw BOUND ;
+@R.mode.CON@PV/áákssta'+:@R.mode.CON@%^SPáákssta'	BOUND ;
+@R.mode.CON@PV/ááhkssta'+:@R.mode.CON@%^SPááhkssta' BOUND ;
+! @P.count1.T@Dur+:@P.count1.T@á BOUND ;
+!! New list of preverbs
+PV/a'kooht+:a'kooht BOUND ;
+PV/ááhkamá'p+:%^SPááhkamá'p BOUND ;
+PV/ááhk+:%^SPááhk BOUND ;
+PV/aahksikkam+:%^SPaahksikkam BOUND ;
+PV/aahs+:aahs BOUND ;
+PV/aaksta'+:aaksta' BOUND ;
+PV/aanist+:%^SPaanist BOUND ;
+PV/ai'tamáak+:ai'tamáak BOUND ;
+PV/aisskahs+:aisskahs BOUND ;
+PV/akisspí+:akisspí BOUND ;
+PV/akk+:akk BOUND ;
+PV/akoksska+:akoksska BOUND ;
+PV/áka+:%^SPa4ka BOUND ;
+PV/ama+:ama BOUND ;
+PV/amo'tap+:amo'tap BOUND ;
+PV/anaw+:anaw BOUND ;
+PV/anist+:anist BOUND ;
+PV/ano+:anow BOUND ;
+PV/anootap+:anootap BOUND ;
+PV/anow+:anow BOUND ;
+PV/ao'tamáak+:ao'tamáak BOUND ;
+PV/apa'p+:apa'p BOUND ;
+PV/aso+:aso BOUND ;
+PV/assaak+:assaak BOUND ;
+PV/att+:att BOUND ;
+PV/awa'+:awa' BOUND ;
+PV/hkana+:hkana BOUND ;
+PV/i'sskaan+:i2'sskaan BOUND ;
+PV/i'tsk+:i'tsk BOUND ;
+PV/ihta+:ihtaw BOUND ;
+! @P.count1.P@PV/ii+:@P.count1.P@ii BOUND ;
+PV/iihk+:iihk BOUND ;
+PV/iiht+:iiht BOUND ;
+PV/iihtsitok+:i3htsitok BOUND ;
+PV/iihtsitssitak+:iihtsitssitak BOUND ;
+PV/iik+:i2ik BOUND ;
+PV/iikska'+:iikska' BOUND ;
+PV/iima+:iima BOUND ;
+PV/iimaa+:i3maa BOUND ;
+PV/iimat+:iimat BOUND ;
+PV/iimá+:iimá BOUND ;
+PV/iin+:iin BOUND ;
+PV/iina+:iina BOUND ;
+PV/iinao'k+:iinao'k BOUND ;
+PV/iinatt+:iinatt BOUND ;
+PV/iini+:iini BOUND ;
+PV/iinik+:iinik BOUND ;
+PV/iitaisap+:iitaisap BOUND ;
+PV/iitsiksist+:iitsiksist BOUND ;
+PV/iitskimaan+:iitskimaan BOUND ;
+PV/iiyik+:iiyik BOUND ;
+PV/ika'+:ika' BOUND ;
+PV/ika'to+:i2ka'to BOUND ;
+PV/ikaap+:i2kaap BOUND ;
+PV/ikaiksist+:i2kaiksist BOUND ;
+PV/ikak+:ikak BOUND ;
+PV/ikamo't+:ikamo't BOUND ;
+PV/ikapo+:ikapo BOUND ;
+PV/ikayiss+:ikayiss BOUND ;
+PV/ikia'ya+:ikia'ya BOUND ;
+PV/ikihkiht+:ikihkiht BOUND ;
+PV/ikimm+:ikimm BOUND ;
+PV/ikimmat+:i2kimmat BOUND ;
+PV/ikipp+:i2kipp BOUND ;
+PV/ikippa'+:i2kippa' BOUND ;
+PV/ikkam+:i2kkam BOUND ;
+PV/ikkan+:ikkan BOUND ;
+PV/ikkia'+:ikkia' BOUND ;
+PV/ikkihkini+:ikkihkini BOUND ;
+PV/ikkina+:ikkina BOUND ;
+PV/iksissto+:i2ksissto BOUND ;
+PV/iksist+:iksist BOUND ;
+PV/iksksowa'+:iksksowa' BOUND ;
+PV/ikssto+:ikssto BOUND ;
+PV/ikstsina'+:ikstsina' BOUND ;
+PV/ikstsina'+:kstsina' BOUND ;
+PV/ikíppoa+:ikíppoa BOUND ;
+PV/imaat+:imaat BOUND ;
+PV/imak+:imak BOUND ;
+PV/immoyi+:immoyi BOUND ;
+PV/inai't+:inai't BOUND ;
+PV/inikk+:i2nikk BOUND ;
+PV/innaahkoot+:innaahkoot BOUND ;
+PV/ipahkitap+:ipahkitap BOUND ;
+PV/ipahtsik+:i2pahtsik BOUND ;
+PV/ipakska+:ipakska BOUND ;
+PV/ipana+:ipana BOUND ;
+PV/ipann+:i2pann BOUND ;
+PV/ipapa+:ipapa BOUND ;
+PV/ipiitsiiyóóhk+:%^SPi2piitsiiyóóhk BOUND ;
+PV/ipiitsiy+:%^SPi2piitsiy BOUND ;
+PV/ipo't+:i2po't BOUND ;
+PV/ipoina+:ipoina BOUND ;
+PV/ipp+:%^SPipp BOUND ;
+PV/ipp+:ipp BOUND ;
+PV/ippita+:ippita BOUND ;
+PV/ippoa+:ippoa BOUND ;
+PV/ippssa'kapp+:ippssa'kapp BOUND ;
+PV/ipsstsikatt+:i2psstsikatt BOUND ;
+PV/ipsstsík+:i2psstsík BOUND ;
+PV/ipákkssa+:i2pákkssa BOUND ;
+PV/isimi+:i2simi BOUND ;
+PV/isinap+:i2sinap BOUND ;
+PV/isitsip+:isitsip BOUND ;
+PV/isk+:isk BOUND ;
+PV/iss+:iss BOUND ;
+PV/isska'+:isska' BOUND ;
+PV/isstohkana+:isstohkana BOUND ;
+PV/ist+:ist BOUND ;
+PV/ista'+:ista' BOUND ;
+PV/istohk+:istohk BOUND ;
+PV/istohkana+:istohkana BOUND ;
+PV/istsa'+:i2stsa' BOUND ;
+PV/istto't+:i2stto't BOUND ;
+PV/isttsikohpo+:i2sttsikohpo BOUND ;
+PV/isttsitsa+:i2sttsitsa BOUND ;
+PV/isttssi+:i2sttssi BOUND ;
+PV/it+:it BOUND ;
+PV/itap+:itap BOUND ;
+PV/itam+:itam BOUND ;
+PV/ito't+:ito't BOUND ;
+PV/iton+:iton BOUND ;
+PV/itsisa+:itsisa BOUND ;
+PV/itsst+:itsst BOUND ;
+PV/itáak+:itáak BOUND ;
+PV/iámoohk+:iámoohk BOUND ;
+PV/kaat+:kaat BOUND ;
+PV/kakanott+:i2kakanott BOUND ;
+PV/kam+:kam BOUND ;
+PV/kan+:hkan BOUND ;
+PV/kipita+:kipita BOUND ;
+PV/kipita+:ippita BOUND ; ! enumerating this because the dictionary has two alternative forms
+PV/kipp+:ki2pp BOUND ; !
+PV/kotski+:i2kotski BOUND ;
+PV/ksisttoyi+:ksisttoyi BOUND ;
+PV/káta'+:káta' BOUND ;
+PV/káák+:i2káák BOUND ;
+PV/káátsisto+:káátsisto BOUND ;
+PV/kínnak+:kínnak BOUND ;
+PV/mattsistá'+:%^SPmattsistá' BOUND ; ! Allomorphy of matt- dealt with as an exception in the phonology
+PV/mátt+:%^SPmátt BOUND ;
+PV/máttsit+:%^SPmáttsit BOUND ;
+PV/maak+:maak BOUND ;
+PV/maam+:%^SPmaam BOUND ;
+PV/mak+:mak BOUND ;
+PV/mato+:mato BOUND ;
+PV/matsowá'p+:matsowá'p BOUND ;
+PV/mi'kotsi+:mi'kotsi BOUND ;
+PV/miiksist+:miiksist BOUND ;
+PV/miistap+:miistap BOUND ;
+PV/min+:min BOUND ;
+PV/missk+:missk BOUND ;
+PV/misst+:misst BOUND ;
+PV/mo'tóí+:mo'tóí BOUND ;
+PV/máak+:%^SPi2máak BOUND ;
+PV/máo'k+:%^SPmáo'k BOUND ;
+PV/na+:na BOUND ;
+PV/naat+:%^SPnaat BOUND ;
+PV/nai't+:nai't BOUND ;
+PV/niistsikáp+:niistsikáp BOUND ;
+PV/niit+:niit BOUND ;
+PV/niitsi+:niitsi BOUND ;
+PV/niitsskimaan+:niitsskimaan BOUND ;
+PV/niitá'p+:ni2itá'p BOUND ;
+PV/noohk+:%^SPnoohk BOUND ;
+PV/noohkátt+:%^SPnoohkátt BOUND ;
+PV/noohkátt+:noohkátt BOUND ; ! I am doing this because there are two acceptable variants listed in the dictionary
+PV/níítaak+:ní2ítaak BOUND ;
+PV/o'kia'p+:o'kia'p BOUND ;
+PV/o'kio+:o'kio BOUND ;
+PV/o'tap+:o'tap BOUND ;
+PV/ohk+:ohk BOUND ;
+PV/ohkan+:ohkan BOUND ;
+PV/ohkana+:ohkana BOUND ;
+PV/ohkit+:ohkit BOUND ;
+PV/ohko+:ohko BOUND ;
+PV/ohkott+:ohkott BOUND ;
+PV/ohpii+:ohpii BOUND ;
+PV/ohpiistap+:ohpiistap BOUND ;
+PV/ohpo'kii+:ohpo'kii BOUND ;
+PV/ohpo'kii+:hpo'kii BOUND ; ! The reason I'm copying this is that evidently, the oh- here can sometimes dissapear in initial position, but not always.
+PV/ohpok+:ohpok BOUND ;
+PV/ohs+:ohs BOUND ;
+PV/oht+:oht BOUND ;
+PV/ohtatsiwa+:%^SPohtatsiwa BOUND ;
+PV/oka'p+:oka'p BOUND ;
+PV/oma+:oma BOUND ;
+PV/omaa+:omaa BOUND ;
+PV/omahka+:omahka BOUND ;
+PV/omanista+:omanista BOUND ;
+PV/omat+:omat BOUND ;
+PV/omi+:omi BOUND ;
+PV/omiiksist+:omiiksist BOUND ;
+PV/omo'tap+:omo'tap BOUND ;
+PV/omohp+:%^SPomohp BOUND ;
+PV/omoht+:%^SPomoht BOUND ;
+PV/omoht+:omoht BOUND ;
+PV/omá+:omá BOUND ;
+PV/on+:on BOUND ;
+PV/ona'+:ona' BOUND ;
+PV/onai't+:onai't BOUND ;
+PV/onaki+:onaki BOUND ;
+PV/oohk+:%^SPoohk BOUND ;
+PV/oohk+:oohk BOUND ;
+PV/oohkanistta+:oohkanistta BOUND ;
+PV/oohkatt+:oohkatt BOUND ;
+PV/opaksikssto+:opaksikssto BOUND ;
+PV/otam+:otam BOUND ;
+PV/oto+:oto BOUND ;
+PV/otomohk+:otomohk BOUND ;
+PV/piin+:piin BOUND ;
+PV/piitsiyoohk+:piitsiyoohk BOUND ;
+PV/pin+:pin BOUND ;
+PV/po'kí+:po'kí BOUND ;
+PV/poina+:poina BOUND ;
+PV/poohsap+:poohsap BOUND ;
+PV/poína+:i2poína BOUND ;
+PV/sa+:saw BOUND ;
+PV/saa+:saaw BOUND ;
+PV/saaki+:i2saaki BOUND ;
+PV/saapo'kit+:i2saapo'kit BOUND ;
+PV/saipa'+:saipa' BOUND ;
+PV/sipi+:i2sipi BOUND ;
+PV/sok+:i2sok BOUND ;
+PV/sook+:i2sook BOUND ;
+PV/sootam+:i2sootam BOUND ;
+PV/sotám+:sotám BOUND ;
+PV/soyi+:soyi BOUND ;
+PV/ssap+:i2ssap BOUND ;
+PV/sska'+:sska' BOUND ;
+PV/sska'+:sska' BOUND ;
+PV/sspi+:sspi BOUND ;
+PV/sstahpik+:sstahpik BOUND ;
+PV/sstok+:sstok BOUND ;
+PV/sstonnat+:sstonnat BOUND ;
+PV/sstsina'+:sstsina' BOUND ;
+PV/sstónnat+:sstónnat BOUND ;
+PV/ssáak+:i2ssáak BOUND ;
+PV/stam+:i2stam BOUND ;
+PV/sáótat+:sáótat BOUND ;
+PV/tatsiki+:i2tatsiki BOUND ;
+PV/waahki+:waahki BOUND ;
+PV/waahko+:waahko BOUND ;
+PV/waahto+:waahto BOUND ;
+PV/waahtsam+:waahtsam BOUND ;
+PV/waahtso+:waahtso BOUND ;
+PV/waako'tsi+:waako'tsi BOUND ;
+PV/waaksisto+:waaksisto BOUND ;
+PV/waanaoyit+:waanaoyit BOUND ;
+PV/waanook+:waanook BOUND ;
+PV/waapiiwaan+:waapiiwaan BOUND ;
+PV/wayák+:wayák BOUND ;
+PV/wayákiit+:wayákiit BOUND ;
+PV/wáyák+:wáyák BOUND ;
+PV/yaahs+:yaahs BOUND ;
+PV/yiistap+:yi2istap BOUND ;
+PV/yoisstsikina+:yoisstsikina BOUND ;
+PV/yook+:yook BOUND ;
+PV/yámoohk+:yámoohk BOUND ;
+PV/á'p+:á'p BOUND ;
+PV/á'+:á' BOUND ;
+PV/áka+:áka BOUND ;
+PV/ákstam+:ákstam BOUND ;
+PV/ákáá+:ákáá BOUND ;
+PV/ááhk+:ááhk BOUND ;
+PV/ááhkamá'p+:ááhkamá'p BOUND ;
+PV/ááhksikkama'p+:ááhksikkama'p BOUND ;
+PV/áák+:áák BOUND ;
+PV/áísooka+:áísooka BOUND ;
+PV/íka+:íka BOUND ;
+PV/ípssit+:ípssit BOUND ;
+PN/a's+:a's	BOUND ;
+PN/aahs+:aahs	BOUND ;
+PN/aaká+:aaká	BOUND ;
+PN/aamsskááp+:aamsskááp	BOUND ;
+PN/aapám+:aapám	BOUND ;
+PN/aapát+:aapát	BOUND ;
+PN/áápi+:áápi	BOUND ;
+PN/aatow+:aatow	BOUND ;
+PN/ahkiaap+:ahkiaap	BOUND ;
+PN/aiist+:aiist	BOUND ;
+PN/aká+:aká	BOUND ;
+PN/akim+:akim	BOUND ;
+PN/akkaw+:akkaw	BOUND ;
+PN/anao'k+:anao'k	BOUND ;
+PN/apak+:apak	BOUND ;
+PN/apoyi+:apoyi	BOUND ;
+PN/atso't+:atso't	BOUND ;
+PN/áwatt+:áwatt	BOUND ;
+PN/ayaam+:ayaam	BOUND ;
+PN/ayaam+:iyaam	BOUND ; ! Initial variation of ayaam
+PN/i'nák+:i'nák	BOUND ;
+PN/i'táám+:i'táám	BOUND ;
+PN/i'tsin+:i'tsin	BOUND ;
+PN/i'tsk+:i'tsk	BOUND ;
+PN/i'tsk+:i'tsk	BOUND ;
+PN/ihtsis+:ihtsis	BOUND ;
+PN/iinohk+:iinohk	BOUND ;
+PN/iitaam+:iitaam	BOUND ;
+PN/iitoom+:iitoom	BOUND ;
+PN/ííyik+:ííyik	BOUND ;
+PN/ikaw+:ikaw	BOUND ;
+PN/ikaaw+:ikaaw	BOUND ;
+PN/ikakk+:ikakk	BOUND ;
+PN/ikako+:ikako	BOUND ;
+PN/iki'ta+:i2ki'ta	BOUND ;
+PN/ikim+:ikim	BOUND ;
+PN/ikim+:akim	BOUND ; ! Alternation of ikim-
+PN/ikkahs+:ikkahs	BOUND ;
+PN/ikkak+:ikkak	BOUND ;
+PN/ikksk+:i2kksk	BOUND ;
+PN/ikkst+:ikkst	BOUND ;
+PN/ikotsk+:ikotsk	BOUND ;
+PN/iksi's+:iksi's	BOUND ;
+PN/iksiw+:iksiw	BOUND ;
+PN/iksiiksk+:i2ksiiksk	BOUND ;
+PN/iksikk+:iksikk	BOUND ;
+PN/iksim+:iksim	BOUND ;
+PN/iksimat+:iksimat	BOUND ;
+PN/iksisap+:i2ksisap	BOUND ;
+PN/iksissta'p+:i2ksissta'p	BOUND ;
+PN/iksisto+:i2ksisto	BOUND ;
+PN/iksow+:iksow	BOUND ;
+PN/imi+:i2mi	BOUND ;
+PN/immak+:immak	BOUND ;
+PN/inap+:inap	BOUND ;
+PN/inn+:i2nn	BOUND ;
+PN/innaap+:innaap	BOUND ;
+PN/innis+:innis	BOUND ;
+PN/inno+:i2nno	BOUND ;
+PN/inok+:inok	BOUND ;
+PN/insstaw+:insstaw	BOUND ;
+PN/ipahk+:ipahk	BOUND ;
+PN/ipahp+:ipahp	BOUND ;
+PN/ipahs+:i2pahs	BOUND ;
+PN/ipahs+:apahs	BOUND ; ! Initial alternation of ipahs-
+PN/ipaht+:ipaht	BOUND ;
+PN/ipahtsi+:i2pahtsi	BOUND ;
+PN/ipi'k+:ipi'k	BOUND ;
+PN/ipiiw+:i2piiw	BOUND ;
+PN/ipiihk+:i2piihk	BOUND ;
+PN/ipisat+:ipisat	BOUND ;
+PN/ipíttsik+:i2píttsik	BOUND ;
+PN/ipow+:ipow	BOUND ;
+PN/ipoohsap+:ipoohsap	BOUND ;
+PN/ippat+:ippat	BOUND ;
+PN/ippom+:ippom	BOUND ;
+PN/ippot+:i2ppot	BOUND ;
+PN/ipsst+:ipsst	BOUND ;
+PN/isakoow+:isakoow	BOUND ;
+PN/isam+:isam	BOUND ;
+PN/isap+:isap	BOUND ;
+PN/iso+:iso	BOUND ;
+PN/iss+:iss	BOUND ;
+PN/issk+:issk	BOUND ;
+PN/isskihta'+:isskihta'	BOUND ;
+PN/isspí+:isspí	BOUND ;
+PN/isspik+:isspik	BOUND ;
+PN/istaaht+:i2staaht	BOUND ;
+PN/istot+:istot	BOUND ;
+PN/isttani+:i2sttani	BOUND ;
+PN/isttohk+:isttohk	BOUND ;
+PN/isttsi+:isttsi	BOUND ;
+PN/isttsik+:isttsik	BOUND ;
+PN/isttsip+:i2sttsip	BOUND ;
+PN/itapiksst+:itapiksst	BOUND ;
+PN/itsiw+:itsiw	BOUND ;
+PN/itsiiy+:itsiiy	BOUND ;
+PN/itsik+:itsik	BOUND ;
+PN/itsin+:itsin	BOUND ;
+PN/iyoomok+:iyoomok	BOUND ;
+PN/ki'taw+:ki'taw	BOUND ;
+PN/ki'tsi+:ki'tsi	BOUND ;
+PN/kiihtsip+:kiihtsip	BOUND ;
+PN/komono+:hkomono	BOUND ;
+PN/ksiw+:i2ksiw	BOUND ;
+PN/ksikk+:ksikk	BOUND ;
+PN/ksis+:ksis	BOUND ;
+PN/ma'k+:ma'k	BOUND ;
+PN/maan+:maan	BOUND ;
+PN/maká+:maká	BOUND ;
+PN/máóhk+:máóhk	BOUND ;
+PN/matóóm+:matóóm	BOUND ;
+PN/matsiw+:matsiw	BOUND ;
+PN/matsiw+:itsiw	BOUND ;
+PN/mattsi+:mattsi	BOUND ;
+PN/mi'ki+:mi'ki	BOUND ;
+PN/mii+:mii	BOUND ;
+PN/miinohk+:miinohk	BOUND ;
+PN/míístap+:míístap	BOUND ;
+PN/mikksk+:mikksk	BOUND ;
+PN/misam+:misam	BOUND ;
+PN/mokamo't+:mokamo't	BOUND ;
+PN/naam+:naam	BOUND ;
+PN/náám+:náám	BOUND ; ! Problem here Áaks>am>ito'too<wa.'(S)he will arrive here needlessly.' I am duplicating the stem because it's too weird.
+PN/náám+:i2ám	BOUND ;
+PN/naatow+:naatow	BOUND ;
+PN/naatsa+:naatsa	BOUND ;
+PN/naaw+:naaw	BOUND ;
+PN/ni'tóóhk+:ni2'tóóhk	BOUND ;
+PN/niit+:niit	BOUND ;
+PN/nimm+:nimm	BOUND ;
+PN/noohkíít+:noohkíít	BOUND ;
+PN/o'k+:o'k	BOUND ;
+PN/o'kstsik+:o'kstsik	BOUND ;
+PN/o't+:o't	BOUND ;
+PN/o'tak+:o'tak	BOUND ;
+PN/o'tami+:o'tami	BOUND ;
+PN/o'topi+:o'topi	BOUND ;
+PN/o'totam+:o'totam	BOUND ;
+PN/o'tsat+:o'tsat	BOUND ;
+PN/o'tsitsk+:o'tsitsk	BOUND ;
+PN/o'tssat+:o'tssat	BOUND ;
+PN/ohkit+:ohkit	BOUND ;
+PN/ohko+:ohko	BOUND ;
+PN/ohkom+:ohkom	BOUND ;
+PN/ohkon+:ohkon	BOUND ;
+PN/ohpo+:ohpo	BOUND ;
+PN/ohpok+:ohpok	BOUND ;
+PN/ohsi+:ohsi	BOUND ;
+PN/ohso'kap+:ohso'kap	BOUND ;
+PN/ohsohkat+:ohsohkat	BOUND ;
+PN/ohtow+:ohtow	BOUND ;
+PN/ohtssap+:ohtssap	BOUND ;
+PN/ok+:ok	BOUND ;
+PN/okaki+:okaki	BOUND ;
+PN/okamo't+:okamo't	BOUND ;
+PN/ómahk+:ómahk	BOUND ;
+PN/omat+:omat	BOUND ;
+PN/omatap+:omatap	BOUND ;
+PN/omia'nist+:omia'nist	BOUND ;
+PN/omow+:omow	BOUND ;
+PN/onnat+:onnat	BOUND ;
+PN/oohsi+:oohsi	BOUND ;
+PN/oomok+:oomok	BOUND ;
+PN/ooto+:ooto	BOUND ;
+PN/opam+:opam	BOUND ;
+PN/opi+:opi	BOUND ;
+PN/opott+:opott	BOUND ;
+PN/otahko+:otahko	BOUND ;
+PN/otam+:otam	BOUND ;
+PN/otats+:otats	BOUND ;
+PN/otoom+:otoom	BOUND ;
+PN/otsik+:otsik	BOUND ;
+PN/otsistap+:otsistap	BOUND ;
+PN/ótssko+:ótssko	BOUND ;
+PN/ottapit+:ottapit	BOUND ;
+PN/pa'ksik+:pa'ksik	BOUND ;
+PN/paahk+:i2paahk	BOUND ;
+PN/paahksíst+:paahksíst	BOUND ;
+PN/paaht+:paaht	BOUND ;
+PN/paahtsi+:paahtsi	BOUND ;
+PN/pi'k+:pi'k	BOUND ;
+PN/pinááp+:pi2nááp	BOUND ;
+PN/pisát+:i2pisát	BOUND ;
+PN/pisst+:pisst	BOUND ;
+PN/poohsap+:i2poohsap	BOUND ;
+PN/sa+:sa	BOUND ;
+PN/sa'kap+:sa'kap	BOUND ;
+PN/saahk+:saahk	BOUND ;
+PN/saat+:saat	BOUND ;
+PN/saayippom+:saayippom	BOUND ;
+PN/sahp+:sahp	BOUND ;
+PN/saikima'+:i2saikima'	BOUND ;
+PN/saiksistt+:saiksistt	BOUND ;
+PN/sainnis+:sainnis	BOUND ;
+PN/sainskaka'p+:sainskaka'p	BOUND ;
+PN/saip+:saip	BOUND ;
+PN/sakak+:sakak	BOUND ;
+PN/sako+:sako	BOUND ;
+PN/saoki+:saoki	BOUND ;
+PN/sap+:sap	BOUND ;
+PN/sapa'kot+:sapa'kot	BOUND ;
+PN/sata+:sata	BOUND ;
+PN/satt+:satt	BOUND ;
+PN/sawommit+:sawommit	BOUND ;
+PN/sawotsistap+:sawotsistap	BOUND ;
+PN/sayippom+:sayippom	BOUND ;
+PN/si'k+:si'k	BOUND ;
+PN/sik+:sik	BOUND ;
+PN/sikaapi+:sikaapi	BOUND ;
+PN/sikim+:i2sikim	BOUND ;
+PN/sikotahko+:sikotahko	BOUND ;
+PN/sisákk+:sisákk	BOUND ;
+PN/sisik+:sisik	BOUND ;
+PN/sistsik+:i2sistsik	BOUND ;
+PN/sitok+:sitok	BOUND ;
+PN/sitsip+:i2sitsip	BOUND ;
+PN/sow+:sow	BOUND ;
+PN/sohk+:sohk	BOUND ;
+PN/sok+:i2sok	BOUND ;
+PN/sok+:sok	BOUND ;
+PN/soohk+:soohk	BOUND ;
+PN/sopow+:i2sopow	BOUND ;
+PN/sopok+:i2sopok	BOUND ;
+PN/sopoya'p+:i2sopoya'p	BOUND ;
+PN/ssik+:i2ssik	BOUND ;
+PN/ssk+:ssk	BOUND ;
+PN/sski+:sski	BOUND ;
+PN/sskihta+:i2sskihta	BOUND ;
+PN/sskohto+:i2sskohto	BOUND ;
+PN/sskonát+:i2sskonát	BOUND ;
+PN/sso+:i2sso	BOUND ;
+PN/ssp+:ssp	BOUND ;
+PN/sspi+:sspi	BOUND ;
+PN/sspik+:sspik	BOUND ;
+PN/sspom+:sspom	BOUND ;
+PN/sstsaap+:i2sstsaap	BOUND ;
+PN/sstsim+:i2sstsim	BOUND ;
+PN/wa'kot+:wa'kot	BOUND ;
+PN/wa's+:wa's	BOUND ;
+PN/wa'sok+:wa'sok	BOUND ;
+PN/waahkiááp+:waahkiááp	BOUND ;
+PN/waaist+:waaist	BOUND ;
+PN/waaká+:waaká	BOUND ;
+PN/waami't+:waami't	BOUND ;
+PN/waamis+:waamis	BOUND ;
+PN/waamohs+:waamohs	BOUND ;
+PN/waamsskaap+:waamsskaap	BOUND ;
+PN/waanao'k+:waanao'k	BOUND ;
+PN/waanat+:waanat	BOUND ;
+PN/waaniit+:waaniit	BOUND ;
+PN/waapat+:waapat	BOUND ;
+PN/waapatohs+:waapatohs	BOUND ;
+PN/waapi+:waapi	BOUND ;
+PN/waapo'k+:waapo'k	BOUND ;
+PN/waatow+:waatow	BOUND ;
+PN/waattsi+:waattsi	BOUND ;
+PN/waawatt+:waawatt	BOUND ;
+PN/waawow+:waawow	BOUND ;
+PN/waist+:waist	BOUND ;
+PN/wattsi+:wattsi	BOUND ;
+PN/wayam+:wayam	BOUND ;
+PN/yááhs+:yááhs	BOUND ;
+PN/yaam+:yaam	BOUND ;
+PN/yaam+:yaam	BOUND ;
+PN/yaam+:yaam	BOUND ;
+PN/yaam+:yaam	BOUND ;
+PN/yiistap+:yiistap	BOUND ;
+PN/yiss+:yiss	BOUND ;
+PN/yissk+:yissk	BOUND ;
+PN/yoohk+:yoohk	BOUND ;
+PN/yoohkiit+:yoohkiit	BOUND ;
+PN/yootsip+:yootsip	BOUND ;
+
+LEXICON BOUND
+0:%< PV_COUNTER ;
+
+LEXICON PV_COUNTER
+@D.pvcount@@P.pvcount.1@ PREVERBS ;
+@R.pvcount.1@@P.pvcount.2@ PREVERBS ;
+@R.pvcount.2@@P.pvcount.3@ PREVERBS ;
+@R.pvcount.3@@P.pvcount.4@ PREVERBS ;
+@R.pvcount.4@@P.pvcount.5@ PREVERBS ;
+@R.pvcount.5@@P.pvcount.6@ PREVERBS ;
+@R.count1.T@@R.count1.T@ PREVERBS ;
+
+!!! Next come the Blackfoot verb stems. !!!
+!!! This is where we visit verb_stems.lexc
+!!! And then we return for the verb prefixes
 
 LEXICON VAI
-@R.pos.NOMINALIZE@+VAI:@R.pos.NOMINALIZE@0    VERB_DER_NOM_SUFFIXES ;
-!@R.class.NI@+NI+Der/Verb+VAI:@R.class.NI@    VERB_DER_NOM_SUFFIXES ;
+@P.pos.NA@@R.class.NOUN@+VAI:@P.pos.NA@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.pos.NI@@R.class.NOUN@+VAI:@P.pos.NI@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
 @R.pos.VERB@  VAI_DERIVATION ;
 
 LEXICON VII
-!@R.class.NA@+NA+Der/Verb+VII:@R.class.NA@    VERB_DER_NOM_SUFFIXES ;
-@R.pos.NOMINALIZE@+VII:@R.pos.NOMINALIZE@0    VERB_DER_NOM_SUFFIXES ;
+@P.pos.NA@@R.class.NOUN@+VII:@P.pos.NA@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.pos.NI@@R.class.NOUN@+VII:@P.pos.NI@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
 @R.pos.VERB@  VII_DERIVATION ;
 
 LEXICON VTI
-@R.pos.NOMINALIZE@+VTI:@R.pos.NOMINALIZE@0    VERB_DER_NOM_SUFFIXES ;
-!@R.pos.NOMINALIZE@+NI+Der/Verb+VTI:@R.pos.NOMINALIZE@0    VERB_DER_NOM_SUFFIXES ;
+@P.pos.NA@@R.class.NOUN@+VTI:@P.pos.NA@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.pos.NI@@R.class.NOUN@+VTI:@P.pos.NI@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
 @R.pos.VERB@  VTI_DERIVATION ;
 
 LEXICON VTA
-@R.pos.NOMINALIZE@+VTA:@R.pos.NOMINALIZE@0    VERB_DER_NOM_SUFFIXES ;
-!@R.pos.NI@+NI+Der/Verb+VTA:@R.pos.NI@    VERB_DER_NOM_SUFFIXES ;
+@P.pos.NA@@R.class.NOUN@+VTA:@P.pos.NA@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.pos.NI@@R.class.NOUN@+VTA:@P.pos.NI@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
 @R.pos.VERB@  VTA_DERIVATION ;
 
 LEXICON VAI_DERIVATION
 @R.pos.VERB@+VAI:@R.pos.VERB@0                                           VAI_SUFFIXES ;
 @R.pos.VERB@+VAI+Der/Caus:@R.pos.VERB@%>áttsi                            VTA ;
-@R.pos.VERB@+VAI+Der/Caus2:@R.pos.VERB@%>pi                            VTA ; ! Rare, give low weight
+@R.pos.VERB@+VAI+Der/Caus2:@R.pos.VERB@%>pi                              VTA ; ! Rare, give low weight
 @R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo  VTA_SUFFIXES ;
 @R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>omo VTA_SUFFIXES ;
 @R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>o   VTA_SUFFIXES ;
@@ -92,6 +696,8 @@ LEXICON VTA_DERIVATION
 
 ! BELOW ARE THE VAI SUFFIXES ;
 
+! BELOW ARE THE VAI SUFFIXES ;
+
 LEXICON VAI_SUFFIXES
 @R.mode.IND@+Ind:@R.mode.IND@ INDEP_VAI_SUFFIXES ;
 @R.mode.CON@+Cnj:@R.mode.CON@ CONJ_VAI_SUFFIXES ;
@@ -101,9 +707,12 @@ LEXICON VAI_SUFFIXES
 
 LEXICON INDEP_VAI_SUFFIXES
 ! Third Person Interrogatives
-@R.person.NULL@+3Sg+INTERR:@R.person.NULL@%>waatsiksi ENCLITICS ;
+@R.person.NULL@+3Sg+INTERR:@R.person.NULL@%>watsiksi ENCLITICS ;
+@R.person.NULL@+3Sg+INTERR:@R.person.NULL@%>watsiksiwa ENCLITICS ; ! Sometimes, we end up with a -wa suffix following this interrogative
 @R.person.NULL@+3Pl+INTERR:@R.person.NULL@%>waiksaawa ENCLITICS ;
+@R.person.NULL@+3Pl+INTERR:@R.person.NULL@%>waiksaawayi ENCLITICS ; ! Sometimes, we end up with a -yi suffix following this interrogative
 ! Singular INDEPENDENT
+@R.person.NULL@:@R.person.NULL@0   	ENCLITICS ;
 @R.person.NI@+1Sg:@R.person.NI@0   	ANIM_INTERR ;	
 @R.person.KI@+2Sg:@R.person.KI@0   		ANIM_INTERR ;
 @R.person.NULL@+3Sg:@R.person.NULL@%>wa		ENCLITICS ;
@@ -172,6 +781,7 @@ LEXICON INDEP_VII_SUFFIXES
 ! Inanimate Interrogatives
 @R.person.NULL@+%0Sg+INTERR:@R.person.NULL@%>waatsiksi ENCLITICS ;
 @R.person.NULL@+%0Pl+INTERR:@R.person.NULL@%>waistsaawa ENCLITICS ;
+@R.person.NULL@ ENCLITICS ;
 ! Singular INDEPENDENT
 @R.person.NULL@+%0Sg:@R.person.NULL@%>wa		ENCLITICS ;
 ! Plural INDEPENDENT
@@ -371,6 +981,7 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NULL@+4Sg+3PlO+INTERR:@R.person.NULL@%>okaiksaawa # ;
 @R.person.NULL@+4Pl+3PlO+INTERR:@R.person.NULL@%>okaiksaawa # ;
 ! Interrogatives INVERSE Plural Object
+@R.person.KI@+2Sg+1PlO+INTERR:@R.person.KI@%>okihpinnaana # ;
 @R.person.NI@+3Sg+1PlO+INTERR:@R.person.NI@%>okinnáánawa # ;
 @R.person.KI@+3Sg+2PlO+INTERR:@R.person.KI@%>okoááwa # ;
 @R.person.KI@+3Sg+21PlO+INTERR:@R.person.KI@%>okááwa # ;
@@ -398,8 +1009,8 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NULL@+4Sg+5Sg/PlO:@R.person.NULL@%>yiiyina   	ENCLITICS ;
 ! Direct, Plural Subject, Singular Object, INDEPENDENT
 @R.person.KI@+1Pl+2SgO:@R.person.KI@%>ohpinnaana  		ANIM_INTERR ;	
-@R.person.NI@+1Pl+3SgO:@R.person.NI@%>annanna   	ENCLITICS ;
-@R.person.NI@+1Pl+4SgO:@R.person.NI@%>annaanina   		ENCLITICS ;	
+@R.person.NI@+1Pl+3SgO:@R.person.NI@%>annaana   	ENCLITICS ;
+@R.person.NI@+1Pl+4SgO:@R.person.NI@%>annaanini   		ENCLITICS ;	
 @R.person.KI@+2Pl+3SgO:@R.person.KI@%>awaawa   		ENCLITICS ;
 @R.person.KI@+2Pl+4SgO:@R.person.KI@%>awaayini		ENCLITICS ;
 @R.person.NULL@+21Pl+3SgO:@R.person.NULL@%>aawa   	ENCLITICS ;
@@ -441,7 +1052,7 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.OT@+4Pl+3SgO:@R.person.OT@%>oka   		ENCLITICS ;
 @R.person.NULL@+4Pl+5Sg/PlO:@R.person.NULL@%>yiiyini   		ENCLITICS ;
 ! Inverse, Plural Subject and Object, INDEPENDENT
-@R.person.KI@+2Pl+1PlO:@R.person.KI@%>okihpinnana  ANIM_INTERR ;
+@R.person.KI@+2Pl+1PlO:@R.person.KI@%>okihpinnaana  ANIM_INTERR ;
 @R.person.NULL@+3Pl+21PlO:@R.person.NULL@%>okiyi	 ENCLITICS ;
 @R.person.NI@+3Pl+1PlO:@R.person.NI@%>okinnaani  ENCLITICS ;
 @R.person.KI@+3Pl+2PlO:@R.person.KI@%>okoaayi  ENCLITICS ;
@@ -451,7 +1062,7 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NI@+4Pl+1PlO:@R.person.NI@%>okinnani  ENCLITICS ;
 @R.person.OT@+5Sg/Pl+4PlO:@R.person.OT@%>okoaayini  ENCLITICS ;
 ! Inverse, Plural Object, Singular Subject, INDEPENDENT
-@R.person.KI@+2Sg+1PlO:@R.person.KI@%>okihpinnana  ANIM_INTERR ; 
+@R.person.KI@+2Sg+1PlO:@R.person.KI@%>okihpinnaana  ANIM_INTERR ; 
 @R.person.KI@+3Sg+2PlO:@R.person.KI@%>okoaawa   	ENCLITICS ;
 @R.person.NI@+3Sg+1PlO:@R.person.NI@%>okinnaani 		ENCLITICS ;	
 @R.person.NI@+3Sg+1PlO:@R.person.NI@%>okinnaan 		ENCLITICS ;	
@@ -464,7 +1075,7 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NI@+Unspec+1PlO:@R.person.NI@%>otsspinnaana   	ANIM_INTERR ;
 @R.person.KI@+Unspec+2SgO:@R.person.KI@%>okoo   	ANIM_INTERR ;
 @R.person.KI@+Unspec+2PlO:@R.person.KI@%>otsspoaawa   	ANIM_INTERR ;
-@R.person.NULL@+Unspec+21PlO:@R.person.NULL@%>okiwa  	ANIM_INTERR ;
+@R.person.NULL@+Unspec+21PlO:@R.person.NULL@%>otssp  	ANIM_INTERR ;
 @R.person.NULL@+Unspec+3SgO:@R.person.NULL@%>aawa   	ENCLITICS ;
 @R.person.NULL@+Unspec+3PlO:@R.person.NULL@%>aayi   	ENCLITICS ;
 @R.person.NULL@+Unspec+4SgO:@R.person.NULL@%>aayini   	ENCLITICS ;
@@ -476,6 +1087,7 @@ LEXICON CONJ_VTA_SUFFIXES
 @R.person.NI@+1Sg+3SgO:@R.person.NI@%>ahsi   	ENCLITICS ;
 @R.person.NI@+1Sg+4SgO:@R.person.NI@%>ahsi   	ENCLITICS ;
 @R.person.KI@+2Sg+3SgO:@R.person.KI@%>ahsi   		ENCLITICS ;
+@R.person.KI@+2Sg+4SgO:@R.person.KI@%>ahsini   		ENCLITICS ;
 @R.person.OT@+3Sg+4SgO:@R.person.OT@%>ahsi   		ENCLITICS ;
 ! Direct, Plural Subject, Singular Object, CONJUNCTIVE
 @R.person.KI@+1Pl+2SgO:@R.person.KI@%>ohsinnaani   		ENCLITICS ;
@@ -517,6 +1129,7 @@ LEXICON CONJ_VTA_SUFFIXES
 @R.person.KI@+3Pl+2PlO:@R.person.KI@%>yssoaayi   	ENCLITICS ;
 @R.person.NI@+3Pl+21PlO:@R.person.NI@%>okssi   		ENCLITICS ;
 @R.person.NI@+3Pl+1PlO:@R.person.NI@%>yssinnaani   		ENCLITICS ;
+@R.person.OT@+4Pl+3PlO:@R.person.OT@%>yssi   		ENCLITICS ;
 @R.person.OT@+4Pl+4PlO:@R.person.OT@%>yssi   		ENCLITICS ;
 ! Inverse, Singular Subject and Plural Object, CONJUNCTIVE
 @R.person.KI@+2Sg+1PlO:@R.person.KI@%>okssinnaani   	ENCLITICS ;
@@ -545,7 +1158,7 @@ LEXICON SUBJ_VTA_SUFFIXES
 ! Direct, Plural Subject, Singular Object, SUBJUNCTIVE
 @R.person.NULL@+1Pl+2SgO:@R.person.NULL@%>innaaniki   	ENCLITICS ;
 @R.person.NULL@+1Pl+3SgO:@R.person.NULL@%>ainnaaniki   	ENCLITICS ;
-@R.person.NULL@+2Pl+3SgO:@R.person.NULL@%>ainainiki   	ENCLITICS ;
+@R.person.NULL@+2Pl+3SgO:@R.person.NULL@%>ainoainiki   	ENCLITICS ;
 @R.person.NULL@+21Pl+3SgO:@R.person.NULL@%>ahki   	ENCLITICS ;
 @R.person.NULL@+3Pl+4SgO:@R.person.NULL@%>asi   	ENCLITICS ;	
 ! Direct, Plural Subject and Object, SUBJUNCTIVE
@@ -553,7 +1166,7 @@ LEXICON SUBJ_VTA_SUFFIXES
 @R.person.NULL@+1Pl+3PlO:@R.person.NULL@%>ainnaaniki   	ENCLITICS ;
 @R.person.NULL@+2Pl+3PlO:@R.person.NULL@%>ainainiki   	ENCLITICS ;
 @R.person.NULL@+21Pl+3PlO:@R.person.NULL@%>ahki   	ENCLITICS ;
-@R.person.NULL@+3Pl+4PlO:@R.person.NULL@%>asi   	ENCLITICS ;	
+@R.person.NULL@+3Pl+4PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;	
 ! Direct, Singular Subject, Plural Object, SUBJUNCTIVE
 @R.person.NULL@+1Sg+2PlO:@R.person.NULL@%>inoainiki   	ENCLITICS ;
 @R.person.NULL@+1Sg+3PlO:@R.person.NULL@%>ainiki   	ENCLITICS ;
@@ -568,17 +1181,20 @@ LEXICON SUBJ_VTA_SUFFIXES
 @R.person.NULL@+2Pl+1SgO:@R.person.NULL@%>okiinoainiki   	ENCLITICS ;
 @R.person.NULL@+3Pl+1SgO:@R.person.NULL@%>otsiiniki   	ENCLITICS ;
 @R.person.NULL@+3Pl+2SgO:@R.person.NULL@%>otsiiniki   	ENCLITICS ;
+@R.person.NULL@+4Pl+3SgO:@R.person.NULL@%>otsiiniki   	ENCLITICS ;
 ! Inverse, Plural Subject and Object, SUBJUNCTIVE
 @R.person.NULL@+2Pl+1PlO:@R.person.NULL@%>okinnaaniki   	ENCLITICS ;	
 @R.person.NULL@+3Pl+2PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;
 @R.person.NULL@+3Pl+1PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;
 @R.person.NULL@+3Pl+1PlO:@R.person.NULL@%>otsiinnaaniki   	ENCLITICS ;
 @R.person.NULL@+3Pl+21PlO:@R.person.NULL@%>okisi   	ENCLITICS ;
+@R.person.NULL@+4Pl+3PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;
 ! Inverse, Singular Subject and Plural Object, CONJUNCTIVE
 @R.person.NULL@+2Sg+1PlO:@R.person.NULL@%>okinnaaniki   	ENCLITICS ;
 @R.person.NULL@+3Sg+1PlO:@R.person.NULL@%>okinnaaniki   	ENCLITICS ;	
 @R.person.NULL@+3Sg+2PlO:@R.person.NULL@%>otsinoainiki  	ENCLITICS ;
 @R.person.NULL@+3Sg+21PlO:@R.person.NULL@%>okisi   	ENCLITICS ;
+@R.person.NULL@+4Sg+3PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;
 ! Unspecified Subject, SUBJUNCTIVE
 @R.person.NULL@+Unspec+1SgO:@R.person.NULL@%>okoiniki   	ENCLITICS ;	
 @R.person.NULL@+Unspec+1PlO:@R.person.NULL@%>okoinnaaniki   	ENCLITICS ;
@@ -591,124 +1207,16 @@ LEXICON SUBJ_VTA_SUFFIXES
 LEXICON IMP_VTA_SUFFIXES
 ! Singular IMPERATIVE
 @R.person.IMP@+2Sg+1SgO:@R.person.IMP@%>okit         ENCLITICS ;
-@R.person.IMP@+2Sg+1PlO:@R.person.IMP@%>okinnaana ENCLITICS ;
+@R.person.IMP@+2Sg+1PlO:@R.person.IMP@%>aokinnaana ENCLITICS ;
 @R.person.IMP@+2Sg+3SgO:@R.person.IMP@%>is        ENCLITICS ;
 @R.person.IMP@+2Sg+3PlO:@R.person.IMP@%>is        ENCLITICS ;
 ! Plural IMPERATIVE
 @R.person.IMP@+2Pl+1SgO:@R.person.IMP@%>okik      ENCLITICS ;
-@R.person.IMP@+2Pl+1PlO:@R.person.IMP@%>okinnaana ENCLITICS ;
+@R.person.IMP@+2Pl+1PlO:@R.person.IMP@%>aokinnaana ENCLITICS ;
 @R.person.IMP@+2Pl+3SgO:@R.person.IMP@%>ok        ENCLITICS ;
 @R.person.IMP@+2Pl+3PlO:@R.person.IMP@%>ok        ENCLITICS ;
 
-! Below is the set of verb suffixes that occur when a noun undergoes the verbalization process. (aakiiyiwa-she is a woman).
-! They are only instransitive verbs. Somethings to note. I have only included the person suffixes, not the derivational suffixes.
-! This verb paradigm does not include dependent nouns.
-
-LEXICON NOUN_VAI_SUFFIXES
-@R.mode.IND@+Ind:@R.mode.IND@ INDEP_VAI_NOUN_SUFFIXES ;
-@R.mode.CON@+Cnj:@R.mode.CON@ CONJ_VAI_NOUN_SUFFIXES ;
-@R.mode.SUB@+Sbj:@R.mode.SUB@ SUBJ_VAI_NOUN_SUFFIXES ;
-@R.mode.IRR@+Irr:@R.mode.IRR@ UNREAL_VAI_NOUN_SUFFIXES ;
-@R.mode.IMP@+Imp:@R.mode.IMP@ IMP_VAI_NOUN_SUFFIXES ;
-
-LEXICON INDEP_VAI_NOUN_SUFFIXES
-! Third Person Interrogatives
-@R.person.NULL@+3Sg+INTERR:@R.person.NULL@%>waatsiksi # ;
-@R.person.NULL@+3Pl+INTERR:@R.person.NULL@%>waiksaawa # ;
-! Singular INDEPENDENT
-@R.person.NI@+1Sg:@R.person.NI@yi   	ANIM_INTERR ;	
-@R.person.KI@+2Sg:@R.person.KI@yi   		ANIM_INTERR ;
-@R.person.NULL@+3Sg:@R.person.NULL@%>wa		ENCLITICS ;
-@R.person.NULL@+4Sg:@R.person.NULL@%>yini   	ENCLITICS ; ! Unknown, but following Frantz regarding the third person.
-! Plural INDEPENDENT
-@R.person.NI@+1Pl:@R.person.NI@%>yihpinnaana  ANIM_INTERR ;	
-@R.person.NULL@+21Pl:@R.person.NULL@%>yio'pa	 ANIM_INTERR ;	
-@R.person.KI@+2Pl:@R.person.KI@%>yihpoaawa	 ANIM_INTERR ;  	
-@R.person.NULL@+3Pl:@R.person.NULL@%>yi		ENCLITICS ;
-@R.person.NULL@+4Pl:@R.person.NULL@%>yi   	ENCLITICS ;
-
-LEXICON CONJ_VAI_NOUN_SUFFIXES
-! Singular CONJUNCTIVE
-@R.person.NI@+1Sg:@R.person.NI@%>yihsi   	ENCLITICS ; 
-@R.person.KI@+2Sg:@R.person.KI@%>yihsi  	ENCLITICS ;
-@R.person.OT@+3Sg:@R.person.OT@%>yihsi 		ENCLITICS ;
-@R.person.NULL@+4Sg:@R.person.NULL@%>yihsi   	ENCLITICS ;
-! Plural CONJUNCTIVE
-@R.person.NI@+1Pl:@R.person.NI@%>yihsinnaana  ENCLITICS ;
-@R.person.NI@+1Pl:@R.person.NI@%>yihsinnaan  ENCLITICS ;
-@R.person.NULL@+21Pl:@R.person.NULL@%>yihsi 	 ENCLITICS ;
-@R.person.KI@+2Pl:@R.person.KI@%>yihsoaayi	 ENCLITICS ;  
-@R.person.OT@+3Pl:@R.person.OT@%>yihsi	ENCLITICS ;	
-@R.person.NULL@+4Pl:@R.person.NULL@%>yihsi	ENCLITICS ;
-
-LEXICON SUBJ_VAI_NOUN_SUFFIXES
-! Singular SUBJUNCTIVE
-@R.person.NULL@+1Sg:@R.person.NULL@%>yiniki   	ENCLITICS ;
-@R.person.NULL@+2Sg:@R.person.NULL@%>yiniki   	ENCLITICS ;
-@R.person.NULL@+3Sg:@R.person.NULL@%>yisi   	ENCLITICS ;
-@R.person.NULL@+4Sg:@R.person.NULL@%>yisi   	ENCLITICS ;
-! Plural SUBJUNCTIVE
-@R.person.NULL@+1Pl:@R.person.NULL@%>yinnaaniki  ENCLITICS ;
-@R.person.NULL@+21Pl:@R.person.NULL@%>yinoainiki ENCLITICS ;	
-@R.person.NULL@+2Pl:@R.person.NULL@%>yio'ki 		ENCLITICS ;
-@R.person.NULL@+3Pl:@R.person.NULL@%>yisi			ENCLITICS ;
-@R.person.NULL@+4Pl:@R.person.NULL@%>yisi			ENCLITICS ;
-
-LEXICON UNREAL_VAI_NOUN_SUFFIXES
-! Singular UNREAL
-@R.person.NI@+1Sg:@R.person.NI@%>yihtopi   	ENCLITICS ;
-@R.person.KI@+2Sg:@R.person.KI@%>yihtopi   	ENCLITICS ;
-@R.person.NULL@+3Sg:@R.person.NULL@%>yiwahtopi	ENCLITICS ;
-@R.person.NULL@+4Sg:@R.person.NULL@%>yiwahtopini   ENCLITICS ;	
-! Plural UNREAL
-@R.person.NI@+1Pl:@R.person.NI@%>yihpinnaanopi  ENCLITICS ;
-@R.person.NULL@+21Pl:@R.person.NULL@%>yihpoaawopi 	ENCLITICS ;	
-@R.person.KI@+2Pl:@R.person.KI@%>yiwahtopiyi	ENCLITICS ;   
-@R.person.NULL@+3Pl:@R.person.NULL@%>yiwahtopiyi	ENCLITICS ;
-@R.person.NULL@+4Pl:@R.person.NULL@%>yiwahtopiyini    ENCLITICS ;
-
-LEXICON IMP_VAI_NOUN_SUFFIXES
-! Singular IMPERATIVE
-+Sg:%>t	ENCLITICS ;
-! Plural IMPERATIVE
-+Pl:%>k	ENCLITICS ;
-
-! BELOW ARE THE VII SUFFIXES
-
-LEXICON NOUN_VII_SUFFIXES
-@R.mode.IND@+Ind:@R.mode.IND@ INDEP_VII_NOUN_SUFFIXES ;
-@R.mode.CON@+Cnj:@R.mode.CON@ CONJ_VII_NOUN_SUFFIXES ;
-@R.mode.SUB@+Sbj:@R.mode.SUB@ SUBJ_VII_NOUN_SUFFIXES ;
-@R.mode.IRR@+Irr:@R.mode.IRR@ UNREAL_VII_NOUN_SUFFIXES ;
-
-LEXICON INDEP_VII_NOUN_SUFFIXES
-! Inanimate Interrogatives
-@R.person.NULL@+%0Sg+INTERR:@R.person.NULL@%>waatsiksi # ;
-@R.person.NULL@+%0Pl+INTERR:@R.person.NULL@%>waistsaawa # ;
-! Singular INDEPENDENT
-@R.person.NULL@+%0Sg:@R.person.NULL@%>wa		ENCLITICS ;
-! Plural INDEPENDENT
-@R.person.NULL@+%0Pl:@R.person.NULL@%>yi		ENCLITICS ;
-
-LEXICON CONJ_VII_NOUN_SUFFIXES
-! Singular CONJUNCTIVE
-@R.person.OT@+%0Sg:@R.person.OT@%>yihsi 		ENCLITICS ;
-! Plural CONJUNCTIVE
-@R.person.OT@+%0Pl:@R.person.OT@%>yihsi	ENCLITICS ;	
-
-LEXICON SUBJ_VII_NOUN_SUFFIXES
-! Singular SUBJUNCTIVE
-@R.person.NULL@+%0Sg:@R.person.NULL@%>yisi   	ENCLITICS ;
-! Plural SUBJUNCTIVE
-@R.person.NULL@+%0Pl:@R.person.NULL@%>yisi			ENCLITICS ;
-
-LEXICON UNREAL_VII_NOUN_SUFFIXES
-! Singular UNREAL
-@R.person.NULL@+%0Sg:@R.person.NULL@%>yiwahtopi	ENCLITICS ;
-! Plural UNREAL  
-@R.person.NULL@+%0Pl:@R.person.NULL@%>yiwahtopiyi	ENCLITICS ;
-
-! The following lexicons contain the first and second person suffix used to express unsureness. Otherwise called interrogatives.
+! The following lexicons contain the suffixes used to formulate questions. Otherwise called interrogatives.
 ! For more information, see Frantz 2017 Chapter 21.
 
 LEXICON ANIM_INTERR
@@ -724,17 +1232,65 @@ LEXICON ANIM_INTERR
 
 LEXICON ENCLITICS
 0 # ;
-+PRO+3/%0:%>aawa ENCLITICS_BOUND ;
-+PRO+3Pl:%>aiksi ENCLITICS_BOUND ;
++PRO+3/%0:%>yaawa ENCLITICS_BOUND ;
++PRO+3Pl:%>waiksi ENCLITICS_BOUND ;
 +PRO+D3Sg:%>áyi ENCLITICS_BOUND ;
-+PRO+%0Pl:%>aistsi ENCLITICS_BOUND ;
++PRO+%0Pl:%>waistsi ENCLITICS_BOUND ;
 
 LEXICON ENCLITICS_BOUND
 0 # ;
-+PRO+3/%0:%>aawa # ;
-+PRO+3Pl:%>aiksi # ;
++PRO+3/%0:%>yaawa # ;
++PRO+3Pl:%>waiksi # ;
 +PRO+D3Sg:%>áyi # ;
-+PRO+%0Pl:%>aistsi # ;
++PRO+%0Pl:%>waistsi # ;
 
-!!! END CODE !!!
+LEXICON VERB_DER_NOM_SUFFIXES
++Der/Nom:0                     NOUN_SUFFIXES ;
++Der/Nom2:%>n                  NOUN_SUFFIXES ;
++Der/Nom3:%>i2hsin             NOUN_SUFFIXES ;
++Der/Nom4:%>hp                 NOUN_SUFFIXES ;
++Der/Nom5:%>o'p                NOUN_SUFFIXES ;
 
+LEXICON NOUN_SUFFIXES
+@R.pos.NA@+NA:@R.pos.NA@0 POSS_NUM ;
+@R.pos.NI@+NI:@R.pos.NI@0 POSS_NUM ;
+
+!LEXICON IM
+!0 POSS_NUM ;
+!@D.person.NULL@@R.im.IM@:@D.person.NULL@@R.im.IM@%>im POSS_NUM ;
+!@D.person.NULL@@D.im.IM@                              POSS_NUM ;
+!@R.person.NULL@                                       POSS_NUM ;
+
+LEXICON POSS_NUM
+! Singular possessors
+@R.person.NI@+Px1Sg:@R.person.NI@0   NOUN_FINALS ;
+@R.person.KI@+Px2Sg:@R.person.KI@0   NOUN_FINALS ;
+@R.person.OT@+Px3Sg:@R.person.OT@0   NOUN_FINALS ;
+@R.person.NULL@:@R.person.NULL@0      NOUN_FINALS ;
+! Plural possessors
+@R.person.NI@+Px1Pl:@R.person.NI@%>innaan  NOUN_FINALS ;
+@R.person.KI@+Px21Pl:@R.person.KI@%>innoon NOUN_FINALS ;
+@R.person.KI@+Px2Pl:@R.person.KI@%>oaawa   NOUN_FINALS ;
+@R.person.OT@+Px3Pl:@R.person.OT@%>oaawa   NOUN_FINALS ;
+
+LEXICON NOUN_FINALS
+@R.pos.NA@ NA_SUFFIXES ;
+@R.pos.NI@ NI_SUFFIXES ;
+
+LEXICON NA_SUFFIXES
+! Obviative
+@R.person.NULL@+Obv:@R.person.NULL@%>yi # ; ! Optional obviative with non-possessed form
+@D.person.NULL@@R.person.OT@+Obv:@D.person.NULL@@R.person.OT@%>yi # ; ! Obligatory obviative with 3rd person possessor
+@D.person.NULL@@D.person.OT@+Obv:@D.person.NULL@@D.person.OT@%>yi # ; ! Optional obviative with non-3rd possessor
+! Plural
++Pl:%>iksi # ; ! Optional plural NO CONDITIONS (other than non-singular)
+! Non-Referring
++Non:%>i # ; ! Optional non-referring suffix, number unrestricted
+@D.person.OT@+Sg:@D.person.OT@%>wa # ; ! Optional singular for non-3rd person possessed, non-plural only
+
+LEXICON NI_SUFFIXES
+@D.number.SG@+Sg:@D.number.SG@%>yi # ; 
+@D.number.SG@+Pl:@D.number.SG@%>istsi # ;
+@D.number.SG@@D.number.PL@+Non:@D.number.SG@@D.number.PL@%>i # ;
+
+! END CODE

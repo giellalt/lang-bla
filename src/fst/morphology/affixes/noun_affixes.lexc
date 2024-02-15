@@ -1,21 +1,18 @@
-! Blackfoot Regular Noun Inflectional Morphology AND Nominalization Morphology
+! Blackfoot Regular Noun Inflectional Morphology
 
-LEXICON NOUN_PREFIXES
-@P.pos.NOUN@ NOUN_INDEP_PREFIXES ;
-@P.pos.NOUN@ NOUN_SHORT_PREFIXES ;
-@P.pos.NOMINALIZE@ NOMINALIZED_PREFIX_SETS ; 
+LEXICON N_NOUN_PREFIXES !! [OLD: NOUN_PREFIXES]
+NOUN_INDEP_PREFIXES ;
+NOUN_SHORT_PREFIXES ;
 
 LEXICON NOUN_INDEP_PREFIXES
-@P.person.NI@:@P.person.NI@nit%<    PRENOUNS ;
-@P.person.KI@:@P.person.KI@kit%<    PRENOUNS ;
-@P.person.OT@:@P.person.OT@ot%<     PRENOUNS ;
-@P.person.NULL@0                    PRENOUNS ;
+@P.person.NI@:@P.person.NI@nit%<    PRE_INDEP_FLAG ;
+@P.person.KI@:@P.person.KI@kit%<    PRE_INDEP_FLAG ;
+@P.person.OT@:@P.person.OT@ot%<     PRE_INDEP_FLAG ;
+@P.person.NULL@0                    PRE_INDEP_FLAG ;
 
-LEXICON NOMINALIZED_PREFIX_SETS
-@P.person.NI@:@P.person.NI@nit%<    PREFIXES2 ;
-@P.person.KI@:@P.person.KI@kit%<    PREFIXES2 ;
-@P.person.OT@:@P.person.OT@ot%<     PREFIXES2 ;
-@P.person.NULL@0                    PREFIXES2 ;
+LEXICON PRE_INDEP_FLAG
+@P.class.NOUN@ PRENOUNS ;
+@P.class.VERB@ N_PREFIXES ; !! [OLD: PREFIXES]
 
 ! LEXICON NON_INDEP_FLAG
 ! PRENOUNS ;
@@ -25,91 +22,620 @@ LEXICON NOUN_SHORT_PREFIXES
 @P.person.KI@:@P.person.KI@k%<    DEP_STEMS ;
 @P.person.OT@:@P.person.OT@w%<    DEP_STEMS ;
 
-!!!!! After this, we collect the prestems, and then the stems !!!!!
+! This is the preverb set, which can only combine with verb suffixes
+
+LEXICON N_PREFIXES !! [OLD: PREFIXES]
+@P.count1.N@@P.count1.T@@P.count1.A@@P.count1.P@@P.count1.N@@P.count1.T@@P.count1.A@@P.count1.P@ N_PV_COUNTER1 ; !! [OLD: PV_COUNTER1]
+@R.mode.IND@@P.count1.N@Neg+:@R.mode.IND@@P.count1.N@%^SPi2máát N_BOUND1 ; !! [OLD: BOUND1]
+@R.mode.IMP@@P.count1.N@Neg+:@R.mode.IMP@@P.count1.N@%^SPi2miin N_BOUND1 ; !! [OLD: BOUND1]
+@R.mode.IMP@@P.count1.N@Neg+:@R.mode.IMP@@P.count1.N@%^SPi2piin N_BOUND1 ; !! [OLD: BOUND1]
+@R.mode.IND@@P.count1.N@PV/máátaommita'p+:@R.mode.IND@@P.count1.N@%^SPmáátaommita'p N_BOUND1 ; !! [OLD: BOUND1]
+@P.count1.P@PV/ikátá'+:@P.count1.P@i2kátá' N_BOUND1 ; !! [OLD: BOUND1]
+@P.count1.T@Imm+:@P.count1.T@ayáak N_BOUND1 ; !! [OLD: BOUND1]
+@P.count1.T@Dur+:@P.count1.T@á N_BOUND1 ; !! [OLD: BOUND1]
+@P.count1.T@Fut+:@P.count1.T@yáak N_BOUND1 ; !! [OLD: BOUND1]
+@P.count1.T@Past+:@P.count1.T@ii N_BOUND1 ; !! [OLD: BOUND1]
+@P.count1.A@Perf+:@P.count1.A@akáa N_BOUND1 ; !! [OLD: BOUND1]
+@P.count1.A@Perf+:@P.count1.A@ikáa N_BOUND1 ; !! [OLD: BOUND1]
+@P.count1.A@Perf+:@P.count1.A@okáa N_BOUND1 ; !! [OLD: BOUND1]
+
+LEXICON N_BOUND1 !! [OLD: BOUND1]
+0:%< N_PV_COUNTER1 ; !! [OLD: PV_COUNTER1]
+
+LEXICON N_PV_COUNTER1 !! [OLD: PV_COUNTER1]
+@D.pvcountf@@R.count1.N@@P.pvcountf.1@@R.count1.N@ N_PREFIXES ; !! [OLD: PREFIXES]
+@R.pvcountf.1@@R.count1.T@@P.pvcountf.2@@R.count1.T@ N_PREFIXES ; !! [OLD: PREFIXES]
+@R.pvcountf.2@@R.count1.A@@P.pvcountf.3@@R.count1.A@ N_PREFIXES ; !! [OLD: PREFIXES]
+@R.pvcountf.3@@R.count1.P@@P.pvcountf.4@@R.count1.P@ N_PREFIXES ; !! [OLD: PREFIXES]
+0 PRENOUNS ;
+ 
+LEXICON PRENOUNS
+0 NOUN_STEMS ;
+@P.assoc.A@PV/ohpok+:@P.assoc.A@%^SPohpok N_BOUND ; !! [OLD: BOUND]
+PV/saw+:saw N_BOUND ; !! [OLD: BOUND]
+@R.mode.CON@PV/áákssta'+:@R.mode.CON@%^SPáákssta' N_BOUND ; !! [OLD: BOUND]
+@R.mode.CON@PV/ááhkssta'+:@R.mode.CON@%^SPááhkssta' N_BOUND ; !! [OLD: BOUND]
+!! New list of preverbs
+PV/a'kooht+:a'kooht N_BOUND ; !! [OLD: BOUND]
+PV/ááhkamá'p+:%^SPááhkamá'p N_BOUND ; !! [OLD: BOUND]
+PV/ááhk+:%^SPááhk N_BOUND ; !! [OLD: BOUND]
+PV/aahksikkam+:%^SPaahksikkam N_BOUND ; !! [OLD: BOUND]
+PV/aahs+:aahs N_BOUND ; !! [OLD: BOUND]
+PV/aaksta'+:aaksta' N_BOUND ; !! [OLD: BOUND]
+PV/aanist+:%^SPaanist N_BOUND ; !! [OLD: BOUND]
+PV/ai'tamáak+:ai'tamáak N_BOUND ; !! [OLD: BOUND]
+PV/aisskahs+:aisskahs N_BOUND ; !! [OLD: BOUND]
+PV/akisspí+:akisspí N_BOUND ; !! [OLD: BOUND]
+PV/akk+:akk N_BOUND ; !! [OLD: BOUND]
+PV/akoksska+:akoksska N_BOUND ; !! [OLD: BOUND]
+PV/áka+:%^SPa4ka N_BOUND ; !! [OLD: BOUND]
+PV/ama+:ama N_BOUND ; !! [OLD: BOUND]
+PV/amo'tap+:amo'tap N_BOUND ; !! [OLD: BOUND]
+PV/anaw+:anaw N_BOUND ; !! [OLD: BOUND]
+PV/anist+:anist N_BOUND ; !! [OLD: BOUND]
+PV/ano+:anow N_BOUND ; !! [OLD: BOUND]
+PV/anootap+:anootap N_BOUND ; !! [OLD: BOUND]
+PV/anow+:anow N_BOUND ; !! [OLD: BOUND]
+PV/ao'tamáak+:ao'tamáak N_BOUND ; !! [OLD: BOUND]
+PV/apa'p+:apa'p N_BOUND ; !! [OLD: BOUND]
+PV/aso+:aso N_BOUND ; !! [OLD: BOUND]
+PV/assaak+:assaak N_BOUND ; !! [OLD: BOUND]
+PV/att+:att N_BOUND ; !! [OLD: BOUND]
+PV/awa'+:awa' N_BOUND ; !! [OLD: BOUND]
+PV/hkana+:hkana N_BOUND ; !! [OLD: BOUND]
+PV/i'sskaan+:i2'sskaan N_BOUND ; !! [OLD: BOUND]
+PV/i'tsk+:i'tsk N_BOUND ; !! [OLD: BOUND]
+PV/ihta+:ihtaw N_BOUND ; !! [OLD: BOUND]
+! @P.count1.P@PV/ii+:@P.count1.P@ii BOUND ;
+PV/iihk+:iihk N_BOUND ; !! [OLD: BOUND]
+PV/iiht+:iiht N_BOUND ; !! [OLD: BOUND]
+PV/iihtsitok+:i3htsitok N_BOUND ; !! [OLD: BOUND]
+PV/iihtsitssitak+:iihtsitssitak N_BOUND ; !! [OLD: BOUND]
+PV/iik+:i2ik N_BOUND ; !! [OLD: BOUND]
+PV/iikska'+:iikska' N_BOUND ; !! [OLD: BOUND]
+PV/iima+:iima N_BOUND ; !! [OLD: BOUND]
+PV/iimaa+:i3maa N_BOUND ; !! [OLD: BOUND]
+PV/iimat+:iimat N_BOUND ; !! [OLD: BOUND]
+PV/iimá+:iimá N_BOUND ; !! [OLD: BOUND]
+PV/iin+:iin N_BOUND ; !! [OLD: BOUND]
+PV/iina+:iina N_BOUND ; !! [OLD: BOUND]
+PV/iinao'k+:iinao'k N_BOUND ; !! [OLD: BOUND]
+PV/iinatt+:iinatt N_BOUND ; !! [OLD: BOUND]
+PV/iini+:iini N_BOUND ; !! [OLD: BOUND]
+PV/iinik+:iinik N_BOUND ; !! [OLD: BOUND]
+PV/iitaisap+:iitaisap N_BOUND ; !! [OLD: BOUND]
+PV/iitsiksist+:iitsiksist N_BOUND ; !! [OLD: BOUND]
+PV/iitskimaan+:iitskimaan N_BOUND ; !! [OLD: BOUND]
+PV/iiyik+:iiyik N_BOUND ; !! [OLD: BOUND]
+PV/ika'+:ika' N_BOUND ; !! [OLD: BOUND]
+PV/ika'to+:i2ka'to N_BOUND ; !! [OLD: BOUND]
+PV/ikaap+:i2kaap N_BOUND ; !! [OLD: BOUND]
+PV/ikaiksist+:i2kaiksist N_BOUND ; !! [OLD: BOUND]
+PV/ikak+:ikak N_BOUND ; !! [OLD: BOUND]
+PV/ikamo't+:ikamo't N_BOUND ; !! [OLD: BOUND]
+PV/ikapo+:ikapo N_BOUND ; !! [OLD: BOUND]
+PV/ikayiss+:ikayiss N_BOUND ; !! [OLD: BOUND]
+PV/ikia'ya+:ikia'ya N_BOUND ; !! [OLD: BOUND]
+PV/ikihkiht+:ikihkiht N_BOUND ; !! [OLD: BOUND]
+PV/ikimm+:ikimm N_BOUND ; !! [OLD: BOUND]
+PV/ikimmat+:i2kimmat N_BOUND ; !! [OLD: BOUND]
+PV/ikipp+:i2kipp N_BOUND ; !! [OLD: BOUND]
+PV/ikippa'+:i2kippa' N_BOUND ; !! [OLD: BOUND]
+PV/ikkam+:i2kkam N_BOUND ; !! [OLD: BOUND]
+PV/ikkan+:ikkan N_BOUND ; !! [OLD: BOUND]
+PV/ikkia'+:ikkia' N_BOUND ; !! [OLD: BOUND]
+PV/ikkihkini+:ikkihkini N_BOUND ; !! [OLD: BOUND]
+PV/ikkina+:ikkina N_BOUND ; !! [OLD: BOUND]
+PV/iksissto+:i2ksissto N_BOUND ; !! [OLD: BOUND]
+PV/iksist+:iksist N_BOUND ; !! [OLD: BOUND]
+PV/iksksowa'+:iksksowa' N_BOUND ; !! [OLD: BOUND]
+PV/ikssto+:ikssto N_BOUND ; !! [OLD: BOUND]
+PV/ikstsina'+:ikstsina' N_BOUND ; !! [OLD: BOUND]
+PV/ikstsina'+:kstsina' N_BOUND ; !! [OLD: BOUND]
+PV/ikíppoa+:ikíppoa N_BOUND ; !! [OLD: BOUND]
+PV/imaat+:imaat N_BOUND ; !! [OLD: BOUND]
+PV/imak+:imak N_BOUND ; !! [OLD: BOUND]
+PV/immoyi+:immoyi N_BOUND ; !! [OLD: BOUND]
+PV/inai't+:inai't N_BOUND ; !! [OLD: BOUND]
+PV/inikk+:i2nikk N_BOUND ; !! [OLD: BOUND]
+PV/innaahkoot+:innaahkoot N_BOUND ; !! [OLD: BOUND]
+PV/ipahkitap+:ipahkitap N_BOUND ; !! [OLD: BOUND]
+PV/ipahtsik+:i2pahtsik N_BOUND ; !! [OLD: BOUND]
+PV/ipakska+:ipakska N_BOUND ; !! [OLD: BOUND]
+PV/ipana+:ipana N_BOUND ; !! [OLD: BOUND]
+PV/ipann+:i2pann N_BOUND ; !! [OLD: BOUND]
+PV/ipapa+:ipapa N_BOUND ; !! [OLD: BOUND]
+PV/ipiitsiiyóóhk+:%^SPi2piitsiiyóóhk N_BOUND ; !! [OLD: BOUND]
+PV/ipiitsiy+:%^SPi2piitsiy N_BOUND ; !! [OLD: BOUND]
+PV/ipo't+:i2po't N_BOUND ; !! [OLD: BOUND]
+PV/ipoina+:ipoina N_BOUND ; !! [OLD: BOUND]
+PV/ipp+:%^SPipp N_BOUND ; !! [OLD: BOUND]
+PV/ipp+:ipp N_BOUND ; !! [OLD: BOUND]
+PV/ippita+:ippita N_BOUND ; !! [OLD: BOUND]
+PV/ippoa+:ippoa N_BOUND ; !! [OLD: BOUND]
+PV/ippssa'kapp+:ippssa'kapp N_BOUND ; !! [OLD: BOUND]
+PV/ipsstsikatt+:i2psstsikatt N_BOUND ; !! [OLD: BOUND]
+PV/ipsstsík+:i2psstsík N_BOUND ; !! [OLD: BOUND]
+PV/ipákkssa+:i2pákkssa N_BOUND ; !! [OLD: BOUND]
+PV/isimi+:i2simi N_BOUND ; !! [OLD: BOUND]
+PV/isinap+:i2sinap N_BOUND ; !! [OLD: BOUND]
+PV/isitsip+:isitsip N_BOUND ; !! [OLD: BOUND]
+PV/isk+:isk N_BOUND ; !! [OLD: BOUND]
+PV/iss+:iss N_BOUND ; !! [OLD: BOUND]
+PV/isska'+:isska' N_BOUND ; !! [OLD: BOUND]
+PV/isstohkana+:isstohkana N_BOUND ; !! [OLD: BOUND]
+PV/ist+:ist N_BOUND ; !! [OLD: BOUND]
+PV/ista'+:ista' N_BOUND ; !! [OLD: BOUND]
+PV/istohk+:istohk N_BOUND ; !! [OLD: BOUND]
+PV/istohkana+:istohkana N_BOUND ; !! [OLD: BOUND]
+PV/istsa'+:i2stsa' N_BOUND ; !! [OLD: BOUND]
+PV/istto't+:i2stto't N_BOUND ; !! [OLD: BOUND]
+PV/isttsikohpo+:i2sttsikohpo N_BOUND ; !! [OLD: BOUND]
+PV/isttsitsa+:i2sttsitsa N_BOUND ; !! [OLD: BOUND]
+PV/isttssi+:i2sttssi N_BOUND ; !! [OLD: BOUND]
+PV/it+:it N_BOUND ; !! [OLD: BOUND]
+PV/itap+:itap N_BOUND ; !! [OLD: BOUND]
+PV/ito't+:ito't N_BOUND ; !! [OLD: BOUND]
+PV/iton+:iton N_BOUND ; !! [OLD: BOUND]
+PV/itsisa+:itsisa N_BOUND ; !! [OLD: BOUND]
+PV/itsst+:itsst N_BOUND ; !! [OLD: BOUND]
+PV/itáak+:itáak N_BOUND ; !! [OLD: BOUND]
+PV/iámoohk+:iámoohk N_BOUND ; !! [OLD: BOUND]
+PV/kaat+:kaat N_BOUND ; !! [OLD: BOUND]
+PV/kakanott+:i2kakanott N_BOUND ; !! [OLD: BOUND]
+PV/kam+:kam N_BOUND ; !! [OLD: BOUND]
+PV/kan+:hkan N_BOUND ; !! [OLD: BOUND]
+PV/kipita+:kipita N_BOUND ; !! [OLD: BOUND]
+PV/kipita+:ippita N_BOUND ; !! [OLD: BOUND]
+PV/kipp+:ki2pp N_BOUND ; !! [OLD: BOUND]
+PV/kotski+:i2kotski N_BOUND ; !! [OLD: BOUND]
+PV/ksisttoyi+:ksisttoyi N_BOUND ; !! [OLD: BOUND]
+PV/káta'+:káta' N_BOUND ; !! [OLD: BOUND]
+PV/káák+:i2káák N_BOUND ; !! [OLD: BOUND]
+PV/káátsisto+:káátsisto N_BOUND ; !! [OLD: BOUND]
+PV/kínnak+:kínnak N_BOUND ; !! [OLD: BOUND]
+PV/mattsistá'+:%^SPmattsistá' N_BOUND ; !! [OLD: BOUND]
+PV/mátt+:%^SPmátt N_BOUND ; !! [OLD: BOUND]
+PV/máttsit+:%^SPmáttsit N_BOUND ; !! [OLD: BOUND]
+PV/maak+:maak N_BOUND ; !! [OLD: BOUND]
+PV/maam+:%^SPmaam N_BOUND ; !! [OLD: BOUND]
+PV/mak+:mak N_BOUND ; !! [OLD: BOUND]
+PV/mato+:mato N_BOUND ; !! [OLD: BOUND]
+PV/matsowá'p+:matsowá'p N_BOUND ; !! [OLD: BOUND]
+PV/mi'kotsi+:mi'kotsi N_BOUND ; !! [OLD: BOUND]
+PV/miiksist+:miiksist N_BOUND ; !! [OLD: BOUND]
+PV/miistap+:miistap N_BOUND ; !! [OLD: BOUND]
+PV/min+:min N_BOUND ; !! [OLD: BOUND]
+PV/missk+:missk N_BOUND ; !! [OLD: BOUND]
+PV/misst+:misst N_BOUND ; !! [OLD: BOUND]
+PV/mo'tóí+:mo'tóí N_BOUND ; !! [OLD: BOUND]
+PV/máak+:%^SPi2máak N_BOUND ; !! [OLD: BOUND]
+PV/máo'k+:%^SPmáo'k N_BOUND ; !! [OLD: BOUND]
+PV/na+:na N_BOUND ; !! [OLD: BOUND]
+PV/naat+:%^SPnaat N_BOUND ; !! [OLD: BOUND]
+PV/nai't+:nai't N_BOUND ; !! [OLD: BOUND]
+PV/niistsikáp+:niistsikáp N_BOUND ; !! [OLD: BOUND]
+PV/niit+:niit N_BOUND ; !! [OLD: BOUND]
+PV/niitsi+:niitsi N_BOUND ; !! [OLD: BOUND]
+PV/niitsskimaan+:niitsskimaan N_BOUND ; !! [OLD: BOUND]
+PV/niitá'p+:ni2itá'p N_BOUND ; !! [OLD: BOUND]
+PV/noohk+:%^SPnoohk N_BOUND ; !! [OLD: BOUND]
+PV/noohkátt+:%^SPnoohkátt N_BOUND ; !! [OLD: BOUND]
+PV/noohkátt+:noohkátt N_BOUND ; !! [OLD: BOUND]
+PV/níítaak+:ní2ítaak N_BOUND ; !! [OLD: BOUND]
+PV/o'kia'p+:o'kia'p N_BOUND ; !! [OLD: BOUND]
+PV/o'kio+:o'kio N_BOUND ; !! [OLD: BOUND]
+PV/o'tap+:o'tap N_BOUND ; !! [OLD: BOUND]
+PV/ohk+:ohk N_BOUND ; !! [OLD: BOUND]
+PV/ohkan+:ohkan N_BOUND ; !! [OLD: BOUND]
+PV/ohkana+:ohkana N_BOUND ; !! [OLD: BOUND]
+PV/ohkit+:ohkit N_BOUND ; !! [OLD: BOUND]
+PV/ohko+:ohko N_BOUND ; !! [OLD: BOUND]
+PV/ohkott+:ohkott N_BOUND ; !! [OLD: BOUND]
+PV/ohpii+:ohpii N_BOUND ; !! [OLD: BOUND]
+PV/ohpiistap+:ohpiistap N_BOUND ; !! [OLD: BOUND]
+PV/ohpo'kii+:ohpo'kii N_BOUND ; !! [OLD: BOUND]
+PV/ohpo'kii+:hpo'kii N_BOUND ; !! [OLD: BOUND]
+PV/ohpok+:ohpok N_BOUND ; !! [OLD: BOUND]
+PV/ohs+:ohs N_BOUND ; !! [OLD: BOUND]
+PV/oht+:oht N_BOUND ; !! [OLD: BOUND]
+PV/ohtatsiwa+:%^SPohtatsiwa N_BOUND ; !! [OLD: BOUND]
+PV/oka'p+:oka'p N_BOUND ; !! [OLD: BOUND]
+PV/oma+:oma N_BOUND ; !! [OLD: BOUND]
+PV/omaa+:omaa N_BOUND ; !! [OLD: BOUND]
+PV/omahka+:omahka N_BOUND ; !! [OLD: BOUND]
+PV/omanista+:omanista N_BOUND ; !! [OLD: BOUND]
+PV/omat+:omat N_BOUND ; !! [OLD: BOUND]
+PV/omi+:omi N_BOUND ; !! [OLD: BOUND]
+PV/omiiksist+:omiiksist N_BOUND ; !! [OLD: BOUND]
+PV/omo'tap+:omo'tap N_BOUND ; !! [OLD: BOUND]
+PV/omohp+:%^SPomohp N_BOUND ; !! [OLD: BOUND]
+PV/omoht+:%^SPomoht N_BOUND ; !! [OLD: BOUND]
+PV/omoht+:omoht N_BOUND ; !! [OLD: BOUND]
+PV/omá+:omá N_BOUND ; !! [OLD: BOUND]
+PV/on+:on N_BOUND ; !! [OLD: BOUND]
+PV/ona'+:ona' N_BOUND ; !! [OLD: BOUND]
+PV/onai't+:onai't N_BOUND ; !! [OLD: BOUND]
+PV/onaki+:onaki N_BOUND ; !! [OLD: BOUND]
+PV/oohk+:%^SPoohk N_BOUND ; !! [OLD: BOUND]
+PV/oohk+:oohk N_BOUND ; !! [OLD: BOUND]
+PV/oohkanistta+:oohkanistta N_BOUND ; !! [OLD: BOUND]
+PV/oohkatt+:oohkatt N_BOUND ; !! [OLD: BOUND]
+PV/opaksikssto+:opaksikssto N_BOUND ; !! [OLD: BOUND]
+PV/otam+:otam N_BOUND ; !! [OLD: BOUND]
+PV/oto+:oto N_BOUND ; !! [OLD: BOUND]
+PV/otomohk+:otomohk N_BOUND ; !! [OLD: BOUND]
+PV/piin+:piin N_BOUND ; !! [OLD: BOUND]
+PV/piitsiyoohk+:piitsiyoohk N_BOUND ; !! [OLD: BOUND]
+PV/pin+:pin N_BOUND ; !! [OLD: BOUND]
+PV/po'kí+:po'kí N_BOUND ; !! [OLD: BOUND]
+PV/poina+:poina N_BOUND ; !! [OLD: BOUND]
+PV/poohsap+:poohsap N_BOUND ; !! [OLD: BOUND]
+PV/poína+:i2poína N_BOUND ; !! [OLD: BOUND]
+PV/sa+:saw N_BOUND ; !! [OLD: BOUND]
+PV/saa+:saaw N_BOUND ; !! [OLD: BOUND]
+PV/saaki+:i2saaki N_BOUND ; !! [OLD: BOUND]
+PV/saapo'kit+:i2saapo'kit N_BOUND ; !! [OLD: BOUND]
+PV/saipa'+:saipa' N_BOUND ; !! [OLD: BOUND]
+PV/sipi+:i2sipi N_BOUND ; !! [OLD: BOUND]
+PV/sok+:i2sok N_BOUND ; !! [OLD: BOUND]
+PV/sook+:i2sook N_BOUND ; !! [OLD: BOUND]
+PV/sootam+:i2sootam N_BOUND ; !! [OLD: BOUND]
+PV/sotám+:sotám N_BOUND ; !! [OLD: BOUND]
+PV/soyi+:soyi N_BOUND ; !! [OLD: BOUND]
+PV/ssap+:i2ssap N_BOUND ; !! [OLD: BOUND]
+PV/sska'+:sska' N_BOUND ; !! [OLD: BOUND]
+PV/sska'+:sska' N_BOUND ; !! [OLD: BOUND]
+PV/sspi+:sspi N_BOUND ; !! [OLD: BOUND]
+PV/sstahpik+:sstahpik N_BOUND ; !! [OLD: BOUND]
+PV/sstok+:sstok N_BOUND ; !! [OLD: BOUND]
+PV/sstonnat+:sstonnat N_BOUND ; !! [OLD: BOUND]
+PV/sstsina'+:sstsina' N_BOUND ; !! [OLD: BOUND]
+PV/sstónnat+:sstónnat N_BOUND ; !! [OLD: BOUND]
+PV/ssáak+:i2ssáak N_BOUND ; !! [OLD: BOUND]
+PV/stam+:i2stam N_BOUND ; !! [OLD: BOUND]
+PV/sáótat+:sáótat N_BOUND ; !! [OLD: BOUND]
+PV/tatsiki+:i2tatsiki N_BOUND ; !! [OLD: BOUND]
+PV/waahki+:waahki N_BOUND ; !! [OLD: BOUND]
+PV/waahko+:waahko N_BOUND ; !! [OLD: BOUND]
+PV/waahto+:waahto N_BOUND ; !! [OLD: BOUND]
+PV/waahtsam+:waahtsam N_BOUND ; !! [OLD: BOUND]
+PV/waahtso+:waahtso N_BOUND ; !! [OLD: BOUND]
+PV/waako'tsi+:waako'tsi N_BOUND ; !! [OLD: BOUND]
+PV/waaksisto+:waaksisto N_BOUND ; !! [OLD: BOUND]
+PV/waanaoyit+:waanaoyit N_BOUND ; !! [OLD: BOUND]
+PV/waanook+:waanook N_BOUND ; !! [OLD: BOUND]
+PV/waapiiwaan+:waapiiwaan N_BOUND ; !! [OLD: BOUND]
+PV/wayák+:wayák N_BOUND ; !! [OLD: BOUND]
+PV/wayákiit+:wayákiit N_BOUND ; !! [OLD: BOUND]
+PV/wáyák+:wáyák N_BOUND ; !! [OLD: BOUND]
+PV/yaahs+:yaahs N_BOUND ; !! [OLD: BOUND]
+PV/yiistap+:yi2istap N_BOUND ; !! [OLD: BOUND]
+PV/yoisstsikina+:yoisstsikina N_BOUND ; !! [OLD: BOUND]
+PV/yook+:yook N_BOUND ; !! [OLD: BOUND]
+PV/yámoohk+:yámoohk N_BOUND ; !! [OLD: BOUND]
+PV/á'p+:á'p N_BOUND ; !! [OLD: BOUND]
+PV/á'+:á' N_BOUND ; !! [OLD: BOUND]
+PV/áka+:áka N_BOUND ; !! [OLD: BOUND]
+PV/ákstam+:ákstam N_BOUND ; !! [OLD: BOUND]
+PV/ákáá+:ákáá N_BOUND ; !! [OLD: BOUND]
+PV/ááhk+:ááhk N_BOUND ; !! [OLD: BOUND]
+PV/ááhkamá'p+:ááhkamá'p N_BOUND ; !! [OLD: BOUND]
+PV/ááhksikkama'p+:ááhksikkama'p N_BOUND ; !! [OLD: BOUND]
+PV/áák+:áák N_BOUND ; !! [OLD: BOUND]
+PV/áísooka+:áísooka N_BOUND ; !! [OLD: BOUND]
+PV/íka+:íka N_BOUND ; !! [OLD: BOUND]
+PV/ípssit+:ípssit N_BOUND ; !! [OLD: BOUND]
+PN/a's+:a's N_BOUND ; !! [OLD: BOUND]
+PN/aahs+:aahs N_BOUND ; !! [OLD: BOUND]
+PN/aaká+:aaká N_BOUND ; !! [OLD: BOUND]
+PN/aamsskááp+:aamsskááp N_BOUND ; !! [OLD: BOUND]
+PN/aapám+:aapám N_BOUND ; !! [OLD: BOUND]
+PN/aapát+:aapát N_BOUND ; !! [OLD: BOUND]
+PN/áápi+:áápi N_BOUND ; !! [OLD: BOUND]
+PN/aatow+:aatow N_BOUND ; !! [OLD: BOUND]
+PN/ahkiaap+:ahkiaap N_BOUND ; !! [OLD: BOUND]
+PN/aiist+:aiist N_BOUND ; !! [OLD: BOUND]
+PN/aká+:aká N_BOUND ; !! [OLD: BOUND]
+PN/akim+:akim N_BOUND ; !! [OLD: BOUND]
+PN/akkaw+:akkaw N_BOUND ; !! [OLD: BOUND]
+PN/anao'k+:anao'k N_BOUND ; !! [OLD: BOUND]
+PN/apak+:apak N_BOUND ; !! [OLD: BOUND]
+PN/apoyi+:apoyi N_BOUND ; !! [OLD: BOUND]
+PN/atso't+:atso't N_BOUND ; !! [OLD: BOUND]
+PN/áwatt+:áwatt N_BOUND ; !! [OLD: BOUND]
+PN/ayaam+:ayaam N_BOUND ; !! [OLD: BOUND]
+PN/ayaam+:iyaam N_BOUND ; !! [OLD: BOUND]
+PN/i'nák+:i'nák N_BOUND ; !! [OLD: BOUND]
+PN/i'táám+:i'táám N_BOUND ; !! [OLD: BOUND]
+PN/i'tsin+:i'tsin N_BOUND ; !! [OLD: BOUND]
+PN/i'tsk+:i'tsk N_BOUND ; !! [OLD: BOUND]
+PN/i'tsk+:i'tsk N_BOUND ; !! [OLD: BOUND]
+PN/ihtsis+:ihtsis N_BOUND ; !! [OLD: BOUND]
+PN/iinohk+:iinohk N_BOUND ; !! [OLD: BOUND]
+PN/iitaam+:iitaam N_BOUND ; !! [OLD: BOUND]
+PN/iitoom+:iitoom N_BOUND ; !! [OLD: BOUND]
+PN/ííyik+:ííyik N_BOUND ; !! [OLD: BOUND]
+PN/ikaw+:ikaw N_BOUND ; !! [OLD: BOUND]
+PN/ikaaw+:ikaaw N_BOUND ; !! [OLD: BOUND]
+PN/ikakk+:ikakk N_BOUND ; !! [OLD: BOUND]
+PN/ikako+:ikako N_BOUND ; !! [OLD: BOUND]
+PN/iki'ta+:i2ki'ta N_BOUND ; !! [OLD: BOUND]
+PN/ikim+:ikim N_BOUND ; !! [OLD: BOUND]
+PN/ikim+:akim N_BOUND ; !! [OLD: BOUND]
+PN/ikkahs+:ikkahs N_BOUND ; !! [OLD: BOUND]
+PN/ikkak+:ikkak N_BOUND ; !! [OLD: BOUND]
+PN/ikksk+:i2kksk N_BOUND ; !! [OLD: BOUND]
+PN/ikkst+:ikkst N_BOUND ; !! [OLD: BOUND]
+PN/ikotsk+:ikotsk N_BOUND ; !! [OLD: BOUND]
+PN/iksi's+:iksi's N_BOUND ; !! [OLD: BOUND]
+PN/iksiw+:iksiw N_BOUND ; !! [OLD: BOUND]
+PN/iksiiksk+:i2ksiiksk N_BOUND ; !! [OLD: BOUND]
+PN/iksikk+:iksikk N_BOUND ; !! [OLD: BOUND]
+PN/iksim+:iksim N_BOUND ; !! [OLD: BOUND]
+PN/iksimat+:iksimat N_BOUND ; !! [OLD: BOUND]
+PN/iksisap+:i2ksisap N_BOUND ; !! [OLD: BOUND]
+PN/iksissta'p+:i2ksissta'p N_BOUND ; !! [OLD: BOUND]
+PN/iksisto+:i2ksisto N_BOUND ; !! [OLD: BOUND]
+PN/iksow+:iksow N_BOUND ; !! [OLD: BOUND]
+PN/imi+:i2mi N_BOUND ; !! [OLD: BOUND]
+PN/immak+:immak N_BOUND ; !! [OLD: BOUND]
+PN/inap+:inap N_BOUND ; !! [OLD: BOUND]
+PN/inn+:i2nn N_BOUND ; !! [OLD: BOUND]
+PN/innaap+:innaap N_BOUND ; !! [OLD: BOUND]
+PN/innis+:innis N_BOUND ; !! [OLD: BOUND]
+PN/inno+:i2nno N_BOUND ; !! [OLD: BOUND]
+PN/inok+:inok N_BOUND ; !! [OLD: BOUND]
+PN/insstaw+:insstaw N_BOUND ; !! [OLD: BOUND]
+PN/ipahk+:ipahk N_BOUND ; !! [OLD: BOUND]
+PN/ipahp+:ipahp N_BOUND ; !! [OLD: BOUND]
+PN/ipahs+:i2pahs N_BOUND ; !! [OLD: BOUND]
+PN/ipahs+:apahs N_BOUND ; !! [OLD: BOUND]
+PN/ipaht+:ipaht N_BOUND ; !! [OLD: BOUND]
+PN/ipahtsi+:i2pahtsi N_BOUND ; !! [OLD: BOUND]
+PN/ipi'k+:ipi'k N_BOUND ; !! [OLD: BOUND]
+PN/ipiiw+:i2piiw N_BOUND ; !! [OLD: BOUND]
+PN/ipiihk+:i2piihk N_BOUND ; !! [OLD: BOUND]
+PN/ipisat+:ipisat N_BOUND ; !! [OLD: BOUND]
+PN/ipíttsik+:i2píttsik N_BOUND ; !! [OLD: BOUND]
+PN/ipow+:ipow N_BOUND ; !! [OLD: BOUND]
+PN/ipoohsap+:ipoohsap N_BOUND ; !! [OLD: BOUND]
+PN/ippat+:ippat N_BOUND ; !! [OLD: BOUND]
+PN/ippom+:ippom N_BOUND ; !! [OLD: BOUND]
+PN/ippot+:i2ppot N_BOUND ; !! [OLD: BOUND]
+PN/ipsst+:ipsst N_BOUND ; !! [OLD: BOUND]
+PN/isakoow+:isakoow N_BOUND ; !! [OLD: BOUND]
+PN/isam+:isam N_BOUND ; !! [OLD: BOUND]
+PN/isap+:isap N_BOUND ; !! [OLD: BOUND]
+PN/iso+:iso N_BOUND ; !! [OLD: BOUND]
+PN/iss+:iss N_BOUND ; !! [OLD: BOUND]
+PN/issk+:issk N_BOUND ; !! [OLD: BOUND]
+PN/isskihta'+:isskihta' N_BOUND ; !! [OLD: BOUND]
+PN/isspí+:isspí N_BOUND ; !! [OLD: BOUND]
+PN/isspik+:isspik N_BOUND ; !! [OLD: BOUND]
+PN/istaaht+:i2staaht N_BOUND ; !! [OLD: BOUND]
+PN/istot+:istot N_BOUND ; !! [OLD: BOUND]
+PN/isttani+:i2sttani N_BOUND ; !! [OLD: BOUND]
+PN/isttohk+:isttohk N_BOUND ; !! [OLD: BOUND]
+PN/isttsi+:isttsi N_BOUND ; !! [OLD: BOUND]
+PN/isttsik+:isttsik N_BOUND ; !! [OLD: BOUND]
+PN/isttsip+:i2sttsip N_BOUND ; !! [OLD: BOUND]
+PN/itapiksst+:itapiksst N_BOUND ; !! [OLD: BOUND]
+PN/itsiw+:itsiw N_BOUND ; !! [OLD: BOUND]
+PN/itsiiy+:itsiiy N_BOUND ; !! [OLD: BOUND]
+PN/itsik+:itsik N_BOUND ; !! [OLD: BOUND]
+PN/itsin+:itsin N_BOUND ; !! [OLD: BOUND]
+PN/iyoomok+:iyoomok N_BOUND ; !! [OLD: BOUND]
+PN/ki'taw+:ki'taw N_BOUND ; !! [OLD: BOUND]
+PN/ki'tsi+:ki'tsi N_BOUND ; !! [OLD: BOUND]
+PN/kiihtsip+:kiihtsip N_BOUND ; !! [OLD: BOUND]
+PN/komono+:hkomono N_BOUND ; !! [OLD: BOUND]
+PN/ksiw+:i2ksiw N_BOUND ; !! [OLD: BOUND]
+PN/ksikk+:ksikk N_BOUND ; !! [OLD: BOUND]
+PN/ksis+:ksis N_BOUND ; !! [OLD: BOUND]
+PN/ma'k+:ma'k N_BOUND ; !! [OLD: BOUND]
+PN/maan+:maan N_BOUND ; !! [OLD: BOUND]
+PN/maká+:maká N_BOUND ; !! [OLD: BOUND]
+PN/máóhk+:máóhk N_BOUND ; !! [OLD: BOUND]
+PN/matóóm+:matóóm N_BOUND ; !! [OLD: BOUND]
+PN/matsiw+:matsiw N_BOUND ; !! [OLD: BOUND]
+PN/matsiw+:itsiw N_BOUND ; !! [OLD: BOUND]
+PN/mattsi+:mattsi N_BOUND ; !! [OLD: BOUND]
+PN/mi'ki+:mi'ki N_BOUND ; !! [OLD: BOUND]
+PN/mii+:mii N_BOUND ; !! [OLD: BOUND]
+PN/miinohk+:miinohk N_BOUND ; !! [OLD: BOUND]
+PN/míístap+:míístap N_BOUND ; !! [OLD: BOUND]
+PN/mikksk+:mikksk N_BOUND ; !! [OLD: BOUND]
+PN/misam+:misam N_BOUND ; !! [OLD: BOUND]
+PN/mokamo't+:mokamo't N_BOUND ; !! [OLD: BOUND]
+PN/naam+:naam N_BOUND ; !! [OLD: BOUND]
+PN/náám+:náám N_BOUND ; !! [OLD: BOUND]
+PN/náám+:i2ám N_BOUND ; !! [OLD: BOUND]
+PN/naatow+:naatow N_BOUND ; !! [OLD: BOUND]
+PN/naatsa+:naatsa N_BOUND ; !! [OLD: BOUND]
+PN/naaw+:naaw N_BOUND ; !! [OLD: BOUND]
+PN/ni'tóóhk+:ni2'tóóhk N_BOUND ; !! [OLD: BOUND]
+PN/niit+:niit N_BOUND ; !! [OLD: BOUND]
+PN/nimm+:nimm N_BOUND ; !! [OLD: BOUND]
+PN/noohkíít+:noohkíít N_BOUND ; !! [OLD: BOUND]
+PN/o'k+:o'k N_BOUND ; !! [OLD: BOUND]
+PN/o'kstsik+:o'kstsik N_BOUND ; !! [OLD: BOUND]
+PN/o't+:o't N_BOUND ; !! [OLD: BOUND]
+PN/o'tak+:o'tak N_BOUND ; !! [OLD: BOUND]
+PN/o'tami+:o'tami N_BOUND ; !! [OLD: BOUND]
+PN/o'topi+:o'topi N_BOUND ; !! [OLD: BOUND]
+PN/o'totam+:o'totam N_BOUND ; !! [OLD: BOUND]
+PN/o'tsat+:o'tsat N_BOUND ; !! [OLD: BOUND]
+PN/o'tsitsk+:o'tsitsk N_BOUND ; !! [OLD: BOUND]
+PN/o'tssat+:o'tssat N_BOUND ; !! [OLD: BOUND]
+PN/ohkit+:ohkit N_BOUND ; !! [OLD: BOUND]
+PN/ohko+:ohko N_BOUND ; !! [OLD: BOUND]
+PN/ohkom+:ohkom N_BOUND ; !! [OLD: BOUND]
+PN/ohkon+:ohkon N_BOUND ; !! [OLD: BOUND]
+PN/ohpo+:ohpo N_BOUND ; !! [OLD: BOUND]
+PN/ohpok+:ohpok N_BOUND ; !! [OLD: BOUND]
+PN/ohsi+:ohsi N_BOUND ; !! [OLD: BOUND]
+PN/ohso'kap+:ohso'kap N_BOUND ; !! [OLD: BOUND]
+PN/ohsohkat+:ohsohkat N_BOUND ; !! [OLD: BOUND]
+PN/ohtow+:ohtow N_BOUND ; !! [OLD: BOUND]
+PN/ohtssap+:ohtssap N_BOUND ; !! [OLD: BOUND]
+PN/ok+:ok N_BOUND ; !! [OLD: BOUND]
+PN/okaki+:okaki N_BOUND ; !! [OLD: BOUND]
+PN/okamo't+:okamo't N_BOUND ; !! [OLD: BOUND]
+PN/ómahk+:ómahk N_BOUND ; !! [OLD: BOUND]
+PN/omat+:omat N_BOUND ; !! [OLD: BOUND]
+PN/omatap+:omatap N_BOUND ; !! [OLD: BOUND]
+PN/omia'nist+:omia'nist N_BOUND ; !! [OLD: BOUND]
+PN/omow+:omow N_BOUND ; !! [OLD: BOUND]
+PN/onnat+:onnat N_BOUND ; !! [OLD: BOUND]
+PN/oohsi+:oohsi N_BOUND ; !! [OLD: BOUND]
+PN/oomok+:oomok N_BOUND ; !! [OLD: BOUND]
+PN/ooto+:ooto N_BOUND ; !! [OLD: BOUND]
+PN/opam+:opam N_BOUND ; !! [OLD: BOUND]
+PN/opi+:opi N_BOUND ; !! [OLD: BOUND]
+PN/opott+:opott N_BOUND ; !! [OLD: BOUND]
+PN/otahko+:otahko N_BOUND ; !! [OLD: BOUND]
+PN/otam+:otam N_BOUND ; !! [OLD: BOUND]
+PN/otats+:otats N_BOUND ; !! [OLD: BOUND]
+PN/otoom+:otoom N_BOUND ; !! [OLD: BOUND]
+PN/otsik+:otsik N_BOUND ; !! [OLD: BOUND]
+PN/otsistap+:otsistap N_BOUND ; !! [OLD: BOUND]
+PN/ótssko+:ótssko N_BOUND ; !! [OLD: BOUND]
+PN/ottapit+:ottapit N_BOUND ; !! [OLD: BOUND]
+PN/pa'ksik+:pa'ksik N_BOUND ; !! [OLD: BOUND]
+PN/paahk+:i2paahk N_BOUND ; !! [OLD: BOUND]
+PN/paahksíst+:paahksíst N_BOUND ; !! [OLD: BOUND]
+PN/paaht+:paaht N_BOUND ; !! [OLD: BOUND]
+PN/paahtsi+:paahtsi N_BOUND ; !! [OLD: BOUND]
+PN/pi'k+:pi'k N_BOUND ; !! [OLD: BOUND]
+PN/pinááp+:pi2nááp N_BOUND ; !! [OLD: BOUND]
+PN/pisát+:i2pisát N_BOUND ; !! [OLD: BOUND]
+PN/pisst+:pisst N_BOUND ; !! [OLD: BOUND]
+PN/poohsap+:i2poohsap N_BOUND ; !! [OLD: BOUND]
+PN/sa+:sa N_BOUND ; !! [OLD: BOUND]
+PN/sa'kap+:sa'kap N_BOUND ; !! [OLD: BOUND]
+PN/saahk+:saahk N_BOUND ; !! [OLD: BOUND]
+PN/saat+:saat N_BOUND ; !! [OLD: BOUND]
+PN/saayippom+:saayippom N_BOUND ; !! [OLD: BOUND]
+PN/sahp+:sahp N_BOUND ; !! [OLD: BOUND]
+PN/saikima'+:i2saikima' N_BOUND ; !! [OLD: BOUND]
+PN/saiksistt+:saiksistt N_BOUND ; !! [OLD: BOUND]
+PN/sainnis+:sainnis N_BOUND ; !! [OLD: BOUND]
+PN/sainskaka'p+:sainskaka'p N_BOUND ; !! [OLD: BOUND]
+PN/saip+:saip N_BOUND ; !! [OLD: BOUND]
+PN/sakak+:sakak N_BOUND ; !! [OLD: BOUND]
+PN/sako+:sako N_BOUND ; !! [OLD: BOUND]
+PN/saoki+:saoki N_BOUND ; !! [OLD: BOUND]
+PN/sap+:sap N_BOUND ; !! [OLD: BOUND]
+PN/sapa'kot+:sapa'kot N_BOUND ; !! [OLD: BOUND]
+PN/sata+:sata N_BOUND ; !! [OLD: BOUND]
+PN/satt+:satt N_BOUND ; !! [OLD: BOUND]
+PN/sawommit+:sawommit N_BOUND ; !! [OLD: BOUND]
+PN/sawotsistap+:sawotsistap N_BOUND ; !! [OLD: BOUND]
+PN/sayippom+:sayippom N_BOUND ; !! [OLD: BOUND]
+PN/si'k+:si'k N_BOUND ; !! [OLD: BOUND]
+PN/sik+:sik N_BOUND ; !! [OLD: BOUND]
+PN/sikaapi+:sikaapi N_BOUND ; !! [OLD: BOUND]
+PN/sikim+:i2sikim N_BOUND ; !! [OLD: BOUND]
+PN/sikotahko+:sikotahko N_BOUND ; !! [OLD: BOUND]
+PN/sisákk+:sisákk N_BOUND ; !! [OLD: BOUND]
+PN/sisik+:sisik N_BOUND ; !! [OLD: BOUND]
+PN/sistsik+:i2sistsik N_BOUND ; !! [OLD: BOUND]
+PN/sitok+:sitok N_BOUND ; !! [OLD: BOUND]
+PN/sitsip+:i2sitsip N_BOUND ; !! [OLD: BOUND]
+PN/sow+:sow N_BOUND ; !! [OLD: BOUND]
+PN/sohk+:sohk N_BOUND ; !! [OLD: BOUND]
+PN/sok+:i2sok N_BOUND ; !! [OLD: BOUND]
+PN/sok+:sok N_BOUND ; !! [OLD: BOUND]
+PN/soohk+:soohk N_BOUND ; !! [OLD: BOUND]
+PN/sopow+:i2sopow N_BOUND ; !! [OLD: BOUND]
+PN/sopok+:i2sopok N_BOUND ; !! [OLD: BOUND]
+PN/sopoya'p+:i2sopoya'p N_BOUND ; !! [OLD: BOUND]
+PN/ssik+:i2ssik N_BOUND ; !! [OLD: BOUND]
+PN/ssk+:ssk N_BOUND ; !! [OLD: BOUND]
+PN/sski+:sski N_BOUND ; !! [OLD: BOUND]
+PN/sskihta+:i2sskihta N_BOUND ; !! [OLD: BOUND]
+PN/sskohto+:i2sskohto N_BOUND ; !! [OLD: BOUND]
+PN/sskonát+:i2sskonát N_BOUND ; !! [OLD: BOUND]
+PN/sso+:i2sso N_BOUND ; !! [OLD: BOUND]
+PN/ssp+:ssp N_BOUND ; !! [OLD: BOUND]
+PN/sspi+:sspi N_BOUND ; !! [OLD: BOUND]
+PN/sspik+:sspik N_BOUND ; !! [OLD: BOUND]
+PN/sspom+:sspom N_BOUND ; !! [OLD: BOUND]
+PN/sstsaap+:i2sstsaap N_BOUND ; !! [OLD: BOUND]
+PN/sstsim+:i2sstsim N_BOUND ; !! [OLD: BOUND]
+PN/wa'kot+:wa'kot N_BOUND ; !! [OLD: BOUND]
+PN/wa's+:wa's N_BOUND ; !! [OLD: BOUND]
+PN/wa'sok+:wa'sok N_BOUND ; !! [OLD: BOUND]
+PN/waahkiááp+:waahkiááp N_BOUND ; !! [OLD: BOUND]
+PN/waaist+:waaist N_BOUND ; !! [OLD: BOUND]
+PN/waaká+:waaká N_BOUND ; !! [OLD: BOUND]
+PN/waami't+:waami't N_BOUND ; !! [OLD: BOUND]
+PN/waamis+:waamis N_BOUND ; !! [OLD: BOUND]
+PN/waamohs+:waamohs N_BOUND ; !! [OLD: BOUND]
+PN/waamsskaap+:waamsskaap N_BOUND ; !! [OLD: BOUND]
+PN/waanao'k+:waanao'k N_BOUND ; !! [OLD: BOUND]
+PN/waanat+:waanat N_BOUND ; !! [OLD: BOUND]
+PN/waaniit+:waaniit N_BOUND ; !! [OLD: BOUND]
+PN/waapat+:waapat N_BOUND ; !! [OLD: BOUND]
+PN/waapatohs+:waapatohs N_BOUND ; !! [OLD: BOUND]
+PN/waapi+:waapi N_BOUND ; !! [OLD: BOUND]
+PN/waapo'k+:waapo'k N_BOUND ; !! [OLD: BOUND]
+PN/waatow+:waatow N_BOUND ; !! [OLD: BOUND]
+PN/waattsi+:waattsi N_BOUND ; !! [OLD: BOUND]
+PN/waawatt+:waawatt N_BOUND ; !! [OLD: BOUND]
+PN/waawow+:waawow N_BOUND ; !! [OLD: BOUND]
+PN/waist+:waist N_BOUND ; !! [OLD: BOUND]
+PN/wattsi+:wattsi N_BOUND ; !! [OLD: BOUND]
+PN/wayam+:wayam N_BOUND ; !! [OLD: BOUND]
+PN/yááhs+:yááhs N_BOUND ; !! [OLD: BOUND]
+PN/yaam+:yaam N_BOUND ; !! [OLD: BOUND]
+PN/yaam+:yaam N_BOUND ; !! [OLD: BOUND]
+PN/yaam+:yaam N_BOUND ; !! [OLD: BOUND]
+PN/yaam+:yaam N_BOUND ; !! [OLD: BOUND]
+PN/yiistap+:yiistap N_BOUND ; !! [OLD: BOUND]
+PN/yiss+:yiss N_BOUND ; !! [OLD: BOUND]
+PN/yissk+:yissk N_BOUND ; !! [OLD: BOUND]
+PN/yoohk+:yoohk N_BOUND ; !! [OLD: BOUND]
+PN/yoohkiit+:yoohkiit N_BOUND ; !! [OLD: BOUND]
+PN/yootsip+:yootsip N_BOUND ; !! [OLD: BOUND]
+
+LEXICON N_BOUND !! [OLD: BOUND]
+0:%< N_PV_COUNTER ; !! [OLD: PV_COUNTER]
+
+LEXICON N_PV_COUNTER !! [OLD: PV_COUNTER]
+@D.pvcount@@P.pvcount.1@ PRENOUNS ;
+@R.pvcount.1@@P.pvcount.2@ PRENOUNS ;
+@R.pvcount.2@@P.pvcount.3@ PRENOUNS ;
+@R.pvcount.3@@P.pvcount.4@ PRENOUNS ;
+@R.pvcount.4@@P.pvcount.5@ PRENOUNS ;
+@R.pvcount.5@@P.pvcount.6@ PRENOUNS ;
+
+!!!!! After this, we collect the stems !!!!!
+
+!!!!! And then we return for the suffixes
 
 LEXICON NA
-@R.pos.NOUN@+NA:@R.pos.NOUN@0  NA_0_IM ;
-@R.pos.VERBALIZE@+NA+Der/Verb+VAI:@R.pos.VERBALIZE@0 NOUN_VAI_SUFFIXES ;
-
-! LEXICON NA_SG
-! @P.number.SG@+NA:@P.number.SG@  NA_0_IM ;
-! @R.class.VERB@+VAI@R.class.VERB@:0 VAI_SUFFIXES ;
-
-! LEXICON NA_PL
-! @P.number.PL@+NA:@P.number.PL@  NA_0_IM ;
-! @R.class.VERB@+VAI@R.class.VERB@:0 VAI_SUFFIXES ;
+@P.pos.NA@@R.class.NOUN@+NA:@P.pos.NA@@R.class.NOUN@0  IM ;
+@R.class.VERB@+VAI:@R.class.VERB@0 N_VAI_SUFFIXES ; !! [OLD: VAI_SUFFIXES]
 
 LEXICON NA_IM
-@P.im.IM@@R.pos.NOUN@+NA:@P.im.IM@@R.pos.NOUN@  NA_0_IM ;
-@R.pos.VERBALIZE@+NA+Der/Verb+VAI:@R.pos.VERBALIZE@0 NOUN_VAI_SUFFIXES ;
-
-! LEXICON NA_SG_IM
-! @P.number.SG@@P.im.IM@+NA:@P.number.SG@@P.im.IM@  NA_0_IM ;
-! @R.class.VERB@+VAI:@R.class.VERB@0 VAI_SUFFIXES ;
-
-! LEXICON NA_PL_IM
-! @P.number.PL@@P.im.IM@+NA:@P.number.PL@@P.im.IM@  NA_0_IM ;
-! @R.class.VERB@+VAI:@R.class.VERB@0 VAI_SUFFIXES ;
+@P.im.IM@@P.pos.NA@@R.class.NOUN@+NA:@P.im.IM@@P.pos.NA@@R.class.NOUN@  IM ;
+@R.class.VERB@+VAI:@R.class.VERB@0 N_VAI_SUFFIXES ; !! [OLD: VAI_SUFFIXES]
 
 LEXICON NI
-@R.pos.NOUN@+NI:@R.pos.NOUN@0  NI_0_IM ;
-@R.pos.VERBALIZE@+NI+Der/Verb+VII:@R.pos.VERBALIZE@0 NOUN_VII_SUFFIXES ;
-
-! LEXICON NI_SG
-! @P.number.SG@+NI:@P.number.SG@  NI_POSS_NUM ;
-! @R.class.VERB@+NI@R.class.VERB@:0 VII_SUFFIXES ;
-
-! LEXICON NI_PL
-! @P.number.PL@+NI:@P.number.PL@  NI_POSS_NUM ;
-! @R.class.VERB@+VII@R.class.VERB@:0 VII_SUFFIXES ;
+@P.pos.NI@@R.class.NOUN@+NI:@P.pos.NI@@R.class.NOUN@0  IM ;
+@R.class.VERB@+VII:@R.class.VERB@0 N_VII_SUFFIXES ; !! [OLD: VII_SUFFIXES]
 
 LEXICON NI_IM
-@P.im.IM@@R.pos.NOUN@+NI:@P.im.IM@@R.pos.NOUN@0  NI_0_IM ;
-@R.pos.VERBALIZE@+NI+Der/Verb+VII:@R.pos.VERBALIZE@0 NOUN_VII_SUFFIXES ;
-
-! LEXICON NI_SG_IM
-! @P.number.SG@@P.im.IM@+NI:@P.number.SG@@P.im.IM@  NI_POSS_NUM ;
-! @R.class.VERB@+VII@R.class.VERB@:0 VII_SUFFIXES ;
-
-! LEXICON NI_PL_IM
-! @P.number.PL@@P.im.IM@+NI:@P.number.PL@@P.im.IM@  NI_POSS_NUM ;
-! @R.class.VERB@+VII@R.class.VERB@:0 VII_SUFFIXES ;
+@P.im.IM@@P.pos.NI@@R.class.NOUN@+NI:@P.im.IM@@P.pos.NI@@R.class.NOUN@0  IM ;
+@R.class.VERB@+VII:@R.class.VERB@0 N_VII_SUFFIXES ; !! [OLD: VII_SUFFIXES]
 
 LEXICON NAD
-+NAD:0  NA_0_IM ;
-
-! LEXICON NAD_SG
-! @P.number.SG@+NAD:@P.number.SG@  NA_0_IM ;
-
-! LEXICON NAD_PL
-! @P.number.PL@+NAD:@P.number.PL@  NA_0_IM ;
-
-!LEXICON NAD_IM
-!@P.im.IM@+NAD:@P.im.IM@  NA_0_IM ;
-
-! LEXICON NAD_SG_IM
-! @P.number.SG@@P.im.IM@+NAD:@P.number.SG@@P.im.IM@  NA_0_IM ;
-
-! LEXICON NAD_PL_IM
-! @P.number.PL@@P.im.IM@+NAD:@P.number.PL@@P.im.IM@  NA_0_IM ;
+@P.pos.NA@+NAD:@P.pos.NA@0 N_POSS_NUM ; !! [OLD: POSS_NUM]
 
 LEXICON NID
-+NID:0  NI_POSS_NUM ;
-
-! LEXICON NID_SG
-! @P.number.SG@+NID:@P.number.SG@  NI_POSS_NUM ;
-
-! LEXICON NID_PL
-! @P.number.PL@+NID:@P.number.PL@  NI_POSS_NUM ;
-
-!LEXICON NID_IM
-!@P.im.IM@+NID:@P.im.IM@  NI_POSS_NUM ;
-
-! LEXICON NID_SG_IM
-! @P.number.SG@@P.im.IM@+NID:@P.number.SG@@P.im.IM@  NI_POSS_NUM ;
-
-! LEXICON NID_PL_IM
-! @P.number.PL@@P.im.IM@+NID:@P.number.PL@@P.im.IM@  NI_POSS_NUM ;
+@P.pos.NI@+NID:@P.pos.NI@0 N_POSS_NUM ; !! [OLD: POSS_NUM]
 
 ! Below is the combinatorial PARADIGM for the possessive circumfixes
 
@@ -118,70 +644,166 @@ LEXICON NID
 ! stem+NUM
 ! stem+OBV
 
-LEXICON VERB_DER_NOM_SUFFIXES
-+Der/Nom:0                     NOUN_DER ;
-+Der/Nom2:%>n                  NOUN_DER ;
-+Der/Nom3:%>i2hsin             NOUN_DER ;
-+Der/Nom4:%>hp                 NOUN_DER ;
-+Der/Nom5:%>o'p                NOUN_DER ;
+LEXICON IM
+0 N_POSS_NUM ; !! [OLD: POSS_NUM]
+@D.person.NULL@:@D.person.NULL@%>im N_POSS_NUM ; !! [OLD: POSS_NUM]
+@D.person.NULL@@D.im.IM@ N_POSS_NUM ; !! [OLD: POSS_NUM]
+@R.person.NULL@ N_POSS_NUM ; !! [OLD: POSS_NUM]
 
-LEXICON NOUN_DER
-+NA:0 NA_0_IM ;
-+NI:0 NI_0_IM ;
-
-LEXICON NA_0_IM
-@D.person.NULL@@R.im.IM@:@D.person.NULL@@R.im.IM@%>im NA_POSS ;
-@D.person.NULL@@D.im.IM@                              NA_POSS ;
-@R.person.NULL@                                       NA_POSS ;
-
-LEXICON NI_0_IM
-@D.person.NULL@@R.im.IM@:@D.person.NULL@@R.im.IM@%>im NI_POSS_NUM ;
-@D.person.NULL@@D.im.IM@                              NI_POSS_NUM ;
-@R.person.NULL@                                       NI_POSS_NUM ;
-
-LEXICON NA_POSS
+LEXICON N_POSS_NUM !! [OLD: POSS_NUM]
 ! Singular possessors
-@U.person.NI@+Px1Sg:@U.person.NI@0   NA_NUMBER_OBV_SUFFIXES ;
-@U.person.KI@+Px2Sg:@U.person.KI@0   NA_NUMBER_OBV_SUFFIXES ;
-@U.person.OT@+Px3Sg:@U.person.OT@0   NA_NUMBER_OBV_SUFFIXES ;
-@U.person.NULL@:@U.person.NULL@      NA_NUMBER_OBV_SUFFIXES ;
+@R.person.NI@+Px1Sg:@R.person.NI@0 N_NOUN_SUFFIXES ; !! [OLD: NOUN_SUFFIXES]
+@R.person.KI@+Px2Sg:@R.person.KI@0 N_NOUN_SUFFIXES ; !! [OLD: NOUN_SUFFIXES]
+@R.person.OT@+Px3Sg:@R.person.OT@0 N_NOUN_SUFFIXES ; !! [OLD: NOUN_SUFFIXES]
+@R.person.NULL@:@R.person.NULL@0 N_NOUN_SUFFIXES ; !! [OLD: NOUN_SUFFIXES]
 ! Plural possessors
-@U.person.NI@+Px1Pl:@U.person.NI@%>innaan  NA_NUMBER_OBV_SUFFIXES ;
-@U.person.KI@+Px21Pl:@U.person.KI@%>innoon NA_NUMBER_OBV_SUFFIXES ;
-@U.person.KI@+Px2Pl:@U.person.KI@%>oaawa   NA_NUMBER_OBV_SUFFIXES ;
-@U.person.OT@+Px3Pl:@U.person.OT@%>oaawa   NA_NUMBER_OBV_SUFFIXES ;
+@R.person.NI@+Px1Pl:@R.person.NI@%>innaan N_NOUN_SUFFIXES ; !! [OLD: NOUN_SUFFIXES]
+@R.person.KI@+Px21Pl:@R.person.KI@%>innoon N_NOUN_SUFFIXES ; !! [OLD: NOUN_SUFFIXES]
+@R.person.KI@+Px2Pl:@R.person.KI@%>oaawa N_NOUN_SUFFIXES ; !! [OLD: NOUN_SUFFIXES]
+@R.person.OT@+Px3Pl:@R.person.OT@%>oaawa N_NOUN_SUFFIXES ; !! [OLD: NOUN_SUFFIXES]
 
-LEXICON NA_NUMBER_OBV_SUFFIXES
-! Singular
-@D.number.PL@ NA_NUMBER_SUFFIXES_SG ;
+LEXICON N_NOUN_SUFFIXES !! [OLD: NOUN_SUFFIXES]
+@R.pos.NA@ N_NA_SUFFIXES ; !! [OLD: NA_SUFFIXES]
+@R.pos.NI@ N_NI_SUFFIXES ; !! [OLD: NI_SUFFIXES]
+
+LEXICON N_NA_SUFFIXES !! [OLD: NA_SUFFIXES]
 ! Obviative
 @R.person.NULL@+Obv:@R.person.NULL@%>yi # ; ! Optional obviative with non-possessed form
-@D.person.NULL@@U.person.OT@+Obv:@D.person.NULL@@U.person.OT@%>yi # ; ! Obligatory obviative with 3rd person possessor
+@D.person.NULL@@R.person.OT@+Obv:@D.person.NULL@@R.person.OT@%>yi # ; ! Obligatory obviative with 3rd person possessor
 @D.person.NULL@@D.person.OT@+Obv:@D.person.NULL@@D.person.OT@%>yi # ; ! Optional obviative with non-3rd possessor
 ! Plural
-@D.number.SG@@D.person.OT@+Pl:@D.number.SG@@D.person.OT@%>iksi # ; ! Optional plural for non-3rd possessor and non-possessed
++Pl:%>iksi # ; ! Optional plural NO CONDITIONS (other than non-singular)
 ! Non-Referring
-@D.number.SG@@D.number.PL@+Non:@D.number.SG@@D.number.PL@%>i # ; ! Optional non-referring suffix, number unrestricted
++Non:%>i # ; ! Optional non-referring suffix, number unrestricted
+@D.person.OT@+Sg:@D.person.OT@%>wa # ; ! Optional singular for non-3rd person possessed, non-plural only
 
-LEXICON NA_NUMBER_SUFFIXES_SG
-@D.person.OT@@D.number.PL@+Sg:@D.person.OT@@D.number.PL@%>wa # ; ! Optional singular for non-3rd person possessed, non-plural only
-
-LEXICON NI_POSS_NUM
-! Singular possessors
-@U.person.NI@+Px1Sg:@U.person.NI@0 NI_NUMBER_SUFFIXES ;
-@U.person.KI@+Px2Sg:@U.person.KI@0 NI_NUMBER_SUFFIXES ;
-@U.person.OT@+Px3Sg:@U.person.OT@0   NI_NUMBER_SUFFIXES ;
-@U.person.NULL@:@U.person.NULL@                NI_NUMBER_SUFFIXES ;
-! Plural possessors
-@U.person.NI@+Px1Pl:@U.person.NI@%>innaan  NI_NUMBER_SUFFIXES ;
-@U.person.KI@+Px21Pl:@U.person.KI@%>innoon NI_NUMBER_SUFFIXES ;
-@U.person.KI@+Px2Pl:@U.person.KI@%>oaawa  NI_NUMBER_SUFFIXES ;
-@U.person.OT@+Px3Pl:@U.person.OT@%>oaawa   NI_NUMBER_SUFFIXES ;
-
-LEXICON NI_NUMBER_SUFFIXES
+LEXICON N_NI_SUFFIXES !! [OLD: NI_SUFFIXES]
 @D.number.PL@+Sg:@D.number.PL@%>yi # ; 
 @D.number.SG@+Pl:@D.number.SG@%>istsi # ;
 @D.number.SG@@D.number.PL@+Non:@D.number.SG@@D.number.PL@%>i # ;
 
-!!! END CODE !!!
+! Below is the set of verb suffixes that occur when a noun undergoes the verbalization process. (aakiiyiwa 'she is a woman').
+! They are only instransitive verbs. Some things to note. I have only included the person suffixes, not the derivational suffixes.
+! This verb paradigm does not include dependent nouns.
 
+LEXICON N_VAI_SUFFIXES !! [OLD: VAI_SUFFIXES]
+@P.mode.IND@+Ind:@P.mode.IND@ N_INDEP_VAI_SUFFIXES ; !! [OLD: INDEP_VAI_SUFFIXES]
+@P.mode.CON@+Cnj:@P.mode.CON@ N_CONJ_VAI_SUFFIXES ; !! [OLD: CONJ_VAI_SUFFIXES]
+@P.mode.SUB@+Sbj:@P.mode.SUB@ N_SUBJ_VAI_SUFFIXES ; !! [OLD: SUBJ_VAI_SUFFIXES]
+@P.mode.IRR@+Irr:@P.mode.IRR@ N_UNREAL_VAI_SUFFIXES ; !! [OLD: UNREAL_VAI_SUFFIXES]
+@P.mode.IMP@+Imp:@P.mode.IMP@ N_IMP_VAI_SUFFIXES ; !! [OLD: IMP_VAI_SUFFIXES]
+
+LEXICON N_INDEP_VAI_SUFFIXES !! [OLD: INDEP_VAI_SUFFIXES]
+! Third Person Interrogatives
+@R.person.NULL@+3Sg+INTERR:@R.person.NULL@%>waatsiksi # ;
+@R.person.NULL@+3Pl+INTERR:@R.person.NULL@%>waiksaawa # ;
+! Singular INDEPENDENT
+@R.person.NI@+1Sg:@R.person.NI@%>yi N_ANIM_INTERR ; !! [OLD: ANIM_INTERR]
+@R.person.KI@+2Sg:@R.person.KI@%>yi N_ANIM_INTERR ; !! [OLD: ANIM_INTERR]
+@R.person.NULL@+3Sg:@R.person.NULL@%>wa N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+4Sg:@R.person.NULL@%>yini N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural INDEPENDENT
+@R.person.NI@+1Pl:@R.person.NI@%>yihpinnaana N_ANIM_INTERR ; !! [OLD: ANIM_INTERR]
+@R.person.NULL@+21Pl:@R.person.NULL@%>yio'pa N_ANIM_INTERR ; !! [OLD: ANIM_INTERR]
+@R.person.KI@+2Pl:@R.person.KI@%>yihpoaawa N_ANIM_INTERR ; !! [OLD: ANIM_INTERR]
+@R.person.NULL@+3Pl:@R.person.NULL@%>yi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+4Pl:@R.person.NULL@%>yi N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+LEXICON N_CONJ_VAI_SUFFIXES !! [OLD: CONJ_VAI_SUFFIXES]
+! Singular CONJUNCTIVE
+@R.person.NI@+1Sg:@R.person.NI@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.KI@+2Sg:@R.person.KI@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.OT@+3Sg:@R.person.OT@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+4Sg:@R.person.NULL@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural CONJUNCTIVE
+@R.person.NI@+1Pl:@R.person.NI@%>yihsinnaana N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NI@+1Pl:@R.person.NI@%>yihsinnaan N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+21Pl:@R.person.NULL@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.KI@+2Pl:@R.person.KI@%>yihsoaayi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.OT@+3Pl:@R.person.OT@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+4Pl:@R.person.NULL@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+LEXICON N_SUBJ_VAI_SUFFIXES !! [OLD: SUBJ_VAI_SUFFIXES]
+! Singular SUBJUNCTIVE
+@R.person.NULL@+1Sg:@R.person.NULL@%>yiniki N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+2Sg:@R.person.NULL@%>yiniki N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+3Sg:@R.person.NULL@%>yisi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+4Sg:@R.person.NULL@%>yisi N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural SUBJUNCTIVE
+@R.person.NULL@+1Pl:@R.person.NULL@%>yinnaaniki N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+21Pl:@R.person.NULL@%>yinoainiki N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+2Pl:@R.person.NULL@%>yio'ki N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+3Pl:@R.person.NULL@%>yisi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+4Pl:@R.person.NULL@%>yisi N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+LEXICON N_UNREAL_VAI_SUFFIXES !! [OLD: UNREAL_VAI_SUFFIXES]
+! Singular UNREAL
+@R.person.NI@+1Sg:@R.person.NI@%>yihtopi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.KI@+2Sg:@R.person.KI@%>yihtopi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+3Sg:@R.person.NULL@%>yiwahtopi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+4Sg:@R.person.NULL@%>yiwahtopini N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural UNREAL
+@R.person.NI@+1Pl:@R.person.NI@%>yihpinnaanopi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+21Pl:@R.person.NULL@%>yihpoaawopi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.KI@+2Pl:@R.person.KI@%>yiwahtopiyi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+3Pl:@R.person.NULL@%>yiwahtopiyi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+4Pl:@R.person.NULL@%>yiwahtopiyini N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+LEXICON N_IMP_VAI_SUFFIXES !! [OLD: IMP_VAI_SUFFIXES]
+! Singular IMPERATIVE
++Sg:%>t N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural IMPERATIVE
++Pl:%>k N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+! BELOW ARE THE VII SUFFIXES
+
+LEXICON N_VII_SUFFIXES !! [OLD: VII_SUFFIXES]
+@R.mode.IND@+Ind:@R.mode.IND@ N_INDEP_VII_SUFFIXES ; !! [OLD: INDEP_VII_SUFFIXES]
+@R.mode.CON@+Cnj:@R.mode.CON@ N_CONJ_VII_SUFFIXES ; !! [OLD: CONJ_VII_SUFFIXES]
+@R.mode.SUB@+Sbj:@R.mode.SUB@ N_SUBJ_VII_SUFFIXES ; !! [OLD: SUBJ_VII_SUFFIXES]
+@R.mode.IRR@+Irr:@R.mode.IRR@ N_UNREAL_VII_SUFFIXES ; !! [OLD: UNREAL_VII_SUFFIXES]
+
+LEXICON N_INDEP_VII_SUFFIXES !! [OLD: INDEP_VII_SUFFIXES]
+! Inanimate Interrogatives
+@R.person.NULL@+%0Sg+INTERR:@R.person.NULL@%>waatsiksi # ;
+@R.person.NULL@+%0Pl+INTERR:@R.person.NULL@%>waistsaawa # ;
+! Singular INDEPENDENT
+@R.person.NULL@+%0Sg:@R.person.NULL@%>wa N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural INDEPENDENT
+@R.person.NULL@+%0Pl:@R.person.NULL@%>yi N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+LEXICON N_CONJ_VII_SUFFIXES !! [OLD: CONJ_VII_SUFFIXES]
+! Singular CONJUNCTIVE
+@R.person.OT@+%0Sg:@R.person.OT@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural CONJUNCTIVE
+@R.person.OT@+%0Pl:@R.person.OT@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+LEXICON N_SUBJ_VII_SUFFIXES !! [OLD: SUBJ_VII_SUFFIXES]
+! Singular SUBJUNCTIVE
+@R.person.NULL@+%0Sg:@R.person.NULL@%>yisi N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural SUBJUNCTIVE
+@R.person.NULL@+%0Pl:@R.person.NULL@%>yisi N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+LEXICON N_UNREAL_VII_SUFFIXES !! [OLD: UNREAL_VII_SUFFIXES]
+! Singular UNREAL
+@R.person.NULL@+%0Sg:@R.person.NULL@%>yiwahtopi N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural UNREAL  
+@R.person.NULL@+%0Pl:@R.person.NULL@%>yiwahtopiyi N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+LEXICON N_ANIM_INTERR !! [OLD: ANIM_INTERR]
+0 # ;
++INTERR:%>hpa # ;
+
+! The following lexicon contains the enclitic pronouns or attached pronouns from Frantz 2017 Chapter 9
+! Using the term D3Sg follows Frantz in distinguishing between the 3rd person pronoun used when there
+! is only one argument (Distinct third person singular), and just the regular 3rd person pronoun.
+! They are not marked as subject or object because they can be either.
+
+LEXICON N_ENCLITICS !! [OLD: ENCLITICS]
+0 # ;
++PRO+3/%0:%>aawa # ;
++PRO+3Pl:%>aiksi # ;
++PRO+D3Sg:%>áyi # ;
++PRO+%0Pl:%>aistsi # ;
+
+! End Code
