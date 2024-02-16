@@ -1,0 +1,32 @@
+!! Blackfoot demonstrative pronoun morphology !!
+
+LEXICON DEMONSTRATIVES
+am+Dem:am Dem_num_suffixes ;
+am+Dem+Dim:amsst Dem_num_suffixes ;
+amo+Dem:amo Dem_num_suffixes ;
+amo+Dem+Dim:amssto Dem_num_suffixes ;
+ann+Dem:ann Dem_num_suffixes ;
+ann+Dem+Dim:annst Dem_num_suffixes ;
+anno+Dem:anno Dem_num_suffixes ;
+anno+Dem+Dim:annssto Dem_num_suffixes ;
+om+Dem:om Dem_num_suffixes ;
+om+Dem+Dim:omsst Dem_num_suffixes ;
+
+LEXICON Dem_num_suffixes
++A+Sg:%>^DEMwa Dem_postinfl ;
++A+Obv:%>yi Dem_postinfl ;
++I+Sg:%>yi Dem_postinfl ;
++A+Pl:%>^DEMiksi Dem_postinfl ;
++I+Pl:%>^DEMistsi Dem_postinfl ;
+
+LEXICON Dem_postinfl
++Stat:%>ma Vblz ;
++Movg:%>ya Vblz ;
++Invs:%>hka Vblz ;
++MT:%>ka Vblz ;
+0 Vblz ;
+
+LEXICON Vblz
++Vblz:%>o'ka # ;
++Vblz:%>ayi # ;
+0 # ;
