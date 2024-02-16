@@ -56,8 +56,8 @@ define intervocalicN [ n -> y || Vowel %< _ Vowel ] ;
 
 ! Demonstrative trigger rules (-wa > 0 | o-_)
 
-define Demwa20Rule [ %^Dem w a -> 0 || o %> _ ] ;
-define Demtrigger20 [ %^Dem -> 0 ] ;
+define Demwa20Rule [ %^DEM w a -> 0 || o %> _ ] ;
+define Demtrigger20 [ %^DEM -> 0 ] ;
 
 !! Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of Toronto Press. Appendix B.
 
