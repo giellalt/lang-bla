@@ -295,29 +295,708 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 
 ---
 
-Adjective inflection
-The Siksika language adjectives compare.
 
-* * *
+[OLD: NOUN_PREFIXES]
 
-<small>This (part of) documentation was generated from [src/fst/morphology/affixes/adjectives.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/adjectives.lexc)</small>
+[OLD: PREFIXES]
 
----
+[OLD: PREFIXES]
+[OLD: PV_COUNTER1]
+[OLD: BOUND1]
+[OLD: BOUND1]
+[OLD: BOUND1]
+[OLD: BOUND1]
+[OLD: BOUND1]
+[OLD: BOUND1]
+[OLD: BOUND1]
+[OLD: BOUND1]
+[OLD: BOUND1]
+[OLD: BOUND1]
+[OLD: BOUND1]
+[OLD: BOUND1]
 
+[OLD: BOUND1]
+[OLD: PV_COUNTER1]
 
+[OLD: PV_COUNTER1]
+[OLD: PREFIXES]
+[OLD: PREFIXES]
+[OLD: PREFIXES]
+[OLD: PREFIXES]
+
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+New list of preverbs
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+[OLD: BOUND]
+
+[OLD: BOUND]
+[OLD: PV_COUNTER]
+
+[OLD: PV_COUNTER]
+
+[OLD: VAI_SUFFIXES]
+
+[OLD: VAI_SUFFIXES]
+
+[OLD: VII_SUFFIXES]
+
+[OLD: VII_SUFFIXES]
+
+[OLD: POSS_NUM]
+
+[OLD: POSS_NUM]
+
+[OLD: POSS_NUM]
+[OLD: POSS_NUM]
+[OLD: POSS_NUM]
+[OLD: POSS_NUM]
+
+[OLD: POSS_NUM]
+[OLD: NOUN_SUFFIXES]
+[OLD: NOUN_SUFFIXES]
+[OLD: NOUN_SUFFIXES]
+[OLD: NOUN_SUFFIXES]
+[OLD: NOUN_SUFFIXES]
+[OLD: NOUN_SUFFIXES]
+[OLD: NOUN_SUFFIXES]
+[OLD: NOUN_SUFFIXES]
+
+[OLD: NOUN_SUFFIXES]
+[OLD: NA_SUFFIXES]
+[OLD: NI_SUFFIXES]
+
+[OLD: NA_SUFFIXES]
+
+[OLD: NI_SUFFIXES]
+
+[OLD: VAI_SUFFIXES]
+[OLD: INDEP_VAI_SUFFIXES]
+[OLD: CONJ_VAI_SUFFIXES]
+[OLD: SUBJ_VAI_SUFFIXES]
+[OLD: UNREAL_VAI_SUFFIXES]
+[OLD: IMP_VAI_SUFFIXES]
+
+[OLD: INDEP_VAI_SUFFIXES]
+[OLD: ANIM_INTERR]
+[OLD: ANIM_INTERR]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ANIM_INTERR]
+[OLD: ANIM_INTERR]
+[OLD: ANIM_INTERR]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+
+[OLD: CONJ_VAI_SUFFIXES]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+
+[OLD: SUBJ_VAI_SUFFIXES]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+
+[OLD: UNREAL_VAI_SUFFIXES]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+
+[OLD: IMP_VAI_SUFFIXES]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+
+[OLD: VII_SUFFIXES]
+[OLD: INDEP_VII_SUFFIXES]
+[OLD: CONJ_VII_SUFFIXES]
+[OLD: SUBJ_VII_SUFFIXES]
+[OLD: UNREAL_VII_SUFFIXES]
+
+[OLD: INDEP_VII_SUFFIXES]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+
+[OLD: CONJ_VII_SUFFIXES]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+
+[OLD: SUBJ_VII_SUFFIXES]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+
+[OLD: UNREAL_VII_SUFFIXES]
+[OLD: ENCLITICS]
+[OLD: ENCLITICS]
+
+[OLD: ANIM_INTERR]
+
+[OLD: ENCLITICS]
 
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/noun_affixes.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/noun_affixes.lexc)</small>
-
----
-
-Noun inflection
-The Siksika language nouns inflect in cases.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/morphology/affixes/nouns.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/nouns.lexc)</small>
 
 ---
 
@@ -340,20 +1019,15 @@ nouns, but with a colon (':') as separator.
 
 ---
 
+Blackfoot Regular Verb Morphology
 
+This counter ensures that each type of prenoun can only appear once in the following order: Negation | 0, Tense | 0, Aspect | 0, then ikata' | 0.
+
+New list of preverbs
 
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/verb_affixes.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/verb_affixes.lexc)</small>
-
----
-
-Verb inflection
-The Siksika language verbs inflect in persons.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/morphology/affixes/verbs.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/verbs.lexc)</small>
 
 ---
 
@@ -380,7 +1054,7 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 * *á<sínaakiwa*
 * *áísínaakiwa*
 
-* *káta7<simiwa*
+* *káta'<simiwa*
 * *kátai'simiwa*
 
 * *áakoto<apinniiwa*
@@ -395,16 +1069,19 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 * *áak<i2piima*
 * *áaksipiima*
 
-* *á<i2o7kaa>wa*
+* *á<i2o'kaa>wa*
 * *áyo'kaawa*
 
-* *áyo7kaa>o7pa*
+* *áyo'kaa>o'pa*
 * *áyo'kao'pa*
 
-* *áyo7kaa>yi>aawa*
+* *pookáá>iksi*
+* *pookáíksi*
+
+* *áyo'kaa>yi>aawa*
 * *áyo'kaayaawa*
 
-* *áókska7si>o7pa*
+* *áókska'si>o'pa*
 * *áókska'so'pa*
 
 * *nit<i2oyi*
@@ -416,10 +1093,10 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 * *nit<i2oyi*
 * *nitsoyi*
 
-* *otokska7si>hsi*
+* *otokska'si>hsi*
 * *otokska'ssi*
 
-* *otá7po7taki>hsi*
+* *otá'po'taki>hsi*
 * *otá'po'takssi*
 
 * *pii<hsini*
@@ -431,10 +1108,10 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 * *waaníít*
 * *aaníít*
 
-* *w<óko7si*
+* *w<óko'si*
 * *óko'si*
 
-* *kikáta7<waaniihpa*
+* *kikáta'<waaniihpa*
 * *kikáta'waaniihpa*
 
 * *kitanistawawaaw>yináyi*
@@ -443,34 +1120,34 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 * *áíhpiyi>yináyi*
 * *áíhpiiyináyi*
 
-* *nitáókska7si>hpinnan*
+* *nitáókska'si>hpinnan*
 * *nitáókska'sspinnan*
 
-* *á7<omai7takiwa*
+* *á'<omai'takiwa*
 * *áó'mai'takiwa*
 
-* *káta7<sspitaawa*
+* *káta'<sspitaawa*
 * *kátai'sspitaawa*
 
-* *káta7<ookaawaatsi*
+* *káta'<ookaawaatsi*
 * *kátaookaawaatsi*
 
-* *káta7<ottakiwaatsi*
+* *káta'<ottakiwaatsi*
 * *kátaoottakiwaatsi*
 
-* *á7<isttohkohpiy7ssi*
+* *á'<isttohkohpiy'ssi*
 * *áísttohkohpiy'ssi*
 
-* *á7<o7tooyiniki*
+* *á'<o'tooyiniki*
 * *áó'tooyiniki*
 
-* *káta7<ohto7toowa*
+* *káta'<ohto'toowa*
 * *kátao'ohto'toowa*
 
 * *nit<ssksinoawa*
 * *nitssksinoawa*
 
-* *á<okska7siwa*
+* *á<okska'siwa*
 * *áókska'siwa*
 
 * *atsikí>istsi*
@@ -484,7 +1161,7 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 
 
 
-Blackfoot Regular Verb Morphology
+Root lexicon for Blackfoot phonology
 
 * * *
 
@@ -496,17 +1173,7 @@ Blackfoot Regular Verb Morphology
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/morphology/stems/noun_stems.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/noun_stems.lexc)</small>
-
----
-
-Nouns
-These words are also in rattlesnakes.lexc
-Morphology according to Wikipedia.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/morphology/stems/nouns.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/nouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/demonstratives.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/demonstratives.lexc)</small>
 
 ---
 
@@ -516,15 +1183,6 @@ Numerals in the Siksika language are numbers.
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/numerals.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/numerals.lexc)</small>
-
----
-
-Prefixes
-Prefixes in the Siksika language are bound to beginning of other words.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/morphology/stems/prefixes.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/prefixes.lexc)</small>
 
 ---
 
@@ -550,23 +1208,6 @@ Pronouns in the Siksika language are references to things.
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/pronouns.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/pronouns.lexc)</small>
-
----
-
-
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/morphology/stems/verb_stems.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/verb_stems.lexc)</small>
-
----
-
-Verbs
-Verbs in the Siksika language are actions.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/morphology/stems/verbs.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/verbs.lexc)</small>
 
 ---
 

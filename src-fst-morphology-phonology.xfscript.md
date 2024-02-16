@@ -21,7 +21,7 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 * *á<sínaakiwa*
 * *áísínaakiwa*
 
-* *káta7<simiwa*
+* *káta'<simiwa*
 * *kátai'simiwa*
 
 * *áakoto<apinniiwa*
@@ -36,16 +36,19 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 * *áak<i2piima*
 * *áaksipiima*
 
-* *á<i2o7kaa>wa*
+* *á<i2o'kaa>wa*
 * *áyo'kaawa*
 
-* *áyo7kaa>o7pa*
+* *áyo'kaa>o'pa*
 * *áyo'kao'pa*
 
-* *áyo7kaa>yi>aawa*
+* *pookáá>iksi*
+* *pookáíksi*
+
+* *áyo'kaa>yi>aawa*
 * *áyo'kaayaawa*
 
-* *áókska7si>o7pa*
+* *áókska'si>o'pa*
 * *áókska'so'pa*
 
 * *nit<i2oyi*
@@ -57,10 +60,10 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 * *nit<i2oyi*
 * *nitsoyi*
 
-* *otokska7si>hsi*
+* *otokska'si>hsi*
 * *otokska'ssi*
 
-* *otá7po7taki>hsi*
+* *otá'po'taki>hsi*
 * *otá'po'takssi*
 
 * *pii<hsini*
@@ -72,10 +75,10 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 * *waaníít*
 * *aaníít*
 
-* *w<óko7si*
+* *w<óko'si*
 * *óko'si*
 
-* *kikáta7<waaniihpa*
+* *kikáta'<waaniihpa*
 * *kikáta'waaniihpa*
 
 * *kitanistawawaaw>yináyi*
@@ -84,34 +87,34 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 * *áíhpiyi>yináyi*
 * *áíhpiiyináyi*
 
-* *nitáókska7si>hpinnan*
+* *nitáókska'si>hpinnan*
 * *nitáókska'sspinnan*
 
-* *á7<omai7takiwa*
+* *á'<omai'takiwa*
 * *áó'mai'takiwa*
 
-* *káta7<sspitaawa*
+* *káta'<sspitaawa*
 * *kátai'sspitaawa*
 
-* *káta7<ookaawaatsi*
+* *káta'<ookaawaatsi*
 * *kátaookaawaatsi*
 
-* *káta7<ottakiwaatsi*
+* *káta'<ottakiwaatsi*
 * *kátaoottakiwaatsi*
 
-* *á7<isttohkohpiy7ssi*
+* *á'<isttohkohpiy'ssi*
 * *áísttohkohpiy'ssi*
 
-* *á7<o7tooyiniki*
+* *á'<o'tooyiniki*
 * *áó'tooyiniki*
 
-* *káta7<ohto7toowa*
+* *káta'<ohto'toowa*
 * *kátao'ohto'toowa*
 
 * *nit<ssksinoawa*
 * *nitssksinoawa*
 
-* *á<okska7siwa*
+* *á<okska'siwa*
 * *áókska'siwa*
 
 * *atsikí>istsi*

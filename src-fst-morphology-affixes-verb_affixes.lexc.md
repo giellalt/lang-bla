@@ -1,4 +1,8 @@
+Blackfoot Regular Verb Morphology
 
+This counter ensures that each type of prenoun can only appear once in the following order: Negation | 0, Tense | 0, Aspect | 0, then ikata' | 0.
+
+New list of preverbs
 
 * * *
 

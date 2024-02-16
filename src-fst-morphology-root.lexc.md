@@ -1,6 +1,6 @@
 
 
-Blackfoot Regular Verb Morphology
+Root lexicon for Blackfoot phonology
 
 * * *
 
