@@ -120,6 +120,3 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/bla-phonology.xfscript](https://github.com/giellalt/lang-bla/blob/main/src/fst/bla-phonology.xfscript)</small>
-
----
-

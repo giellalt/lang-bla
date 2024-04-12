@@ -1,6 +1,10 @@
-# Siksika description 
+# Siksika language model documentation
 
-All documents in one file
+All doc-comment documentation in one large file.
+
+---
+
+# src-cg3-functions.cg3.md 
 
 
 
@@ -170,7 +174,14 @@ These were the set types.
 ## HNOUN MAPPING
 
 * * *
-<small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-bla/blob/main/src/cg3/functions.cg3)</small>Definitions
+
+<small>This (part of) documentation was generated from [src/cg3/functions.cg3](https://github.com/giellalt/lang-bla/blob/main/src/cg3/functions.cg3)</small>
+
+---
+
+# src-fst-bla-phonology.xfscript.md 
+
+Definitions
 
 Rules
 
@@ -294,6 +305,8 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 <small>This (part of) documentation was generated from [src/fst/bla-phonology.xfscript](https://github.com/giellalt/lang-bla/blob/main/src/fst/bla-phonology.xfscript)</small>
 
 ---
+
+# src-fst-morphology-affixes-noun_affixes.lexc.md 
 
 
 [OLD: NOUN_PREFIXES]
@@ -1000,6 +1013,8 @@ New list of preverbs
 
 ---
 
+# src-fst-morphology-affixes-propernouns.lexc.md 
+
 Proper noun inflection
 The Siksika language proper nouns inflect in the same cases as regular
 nouns, but with a colon (':') as separator.
@@ -1010,6 +1025,8 @@ nouns, but with a colon (':') as separator.
 
 ---
 
+# src-fst-morphology-affixes-symbols.lexc.md 
+
 
 # Symbol affixes
 
@@ -1018,6 +1035,8 @@ nouns, but with a colon (':') as separator.
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/symbols.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/symbols.lexc)</small>
 
 ---
+
+# src-fst-morphology-affixes-verb_affixes.lexc.md 
 
 Blackfoot Regular Verb Morphology
 
@@ -1030,6 +1049,8 @@ New list of preverbs
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/verb_affixes.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/verb_affixes.lexc)</small>
 
 ---
+
+# src-fst-morphology-phonology.xfscript.md 
 
 Definitions
 
@@ -1159,6 +1180,8 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 
 ---
 
+# src-fst-morphology-root.lexc.md 
+
 
 
 Root lexicon for Blackfoot phonology
@@ -1169,6 +1192,8 @@ Root lexicon for Blackfoot phonology
 
 ---
 
+# src-fst-morphology-stems-demonstratives.lexc.md 
+
 
 
 * * *
@@ -1176,6 +1201,8 @@ Root lexicon for Blackfoot phonology
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/demonstratives.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/demonstratives.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-numerals.lexc.md 
 
 Numerals
 Numerals in the Siksika language are numbers.
@@ -1185,6 +1212,8 @@ Numerals in the Siksika language are numbers.
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/numerals.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/numerals.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-prestems.lexc.md 
 
 This is the prestem lexicon. It is shared between the nouns and verbs, although regular nouns do not take the ordered prefix lexicon.
 
@@ -1202,6 +1231,8 @@ New list of preverbs
 
 ---
 
+# src-fst-morphology-stems-pronouns.lexc.md 
+
 Pronouns
 Pronouns in the Siksika language are references to things.
 
@@ -1210,6 +1241,8 @@ Pronouns in the Siksika language are references to things.
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/pronouns.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/pronouns.lexc)</small>
 
 ---
+
+# src-fst-phonetics-txt2ipa.xfscript.md 
 
 
 
@@ -1378,6 +1411,8 @@ retracted tongue root			_q
 
 ---
 
+# src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
+
 
 
 We describe here how abbreviations are in Siksika are read out, e.g.
@@ -1398,6 +1433,8 @@ For example:
 
 ---
 
+# src-fst-transcriptions-transcriptor-numbers-digit2text.lexc.md 
+
 
 
 % komma% :,      Root ;
@@ -1411,6 +1448,8 @@ For example:
 <small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-numbers-digit2text.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
 
 ---
+
+# tools-grammarcheckers-grammarchecker.cg3.md 
 
 
 [ L A N G U A G E ]  G R A M M A R   C H E C K E R
@@ -1709,7 +1748,14 @@ expression **WORD - premodifiers**.
 ### Grammarchecker sets
 
 * * *
-<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-bla/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small># Tokeniser for bla
+
+<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-bla/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small>
+
+---
+
+# tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
+
+# Tokeniser for bla
 
 Usage:
 ```
@@ -1771,6 +1817,8 @@ Finally we mark as a token any sequence making up a:
 <small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-disamb-gt-desc.pmscript](https://github.com/giellalt/lang-bla/blob/main/tools/tokenisers/tokeniser-disamb-gt-desc.pmscript)</small>
 
 ---
+
+# tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
 
 # Grammar checker tokenisation for bla
 
@@ -1835,6 +1883,8 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
+# tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
+
 # TTS tokenisation for smj
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
@@ -1896,6 +1946,3 @@ Needs hfst-tokenise to output things differently depending on the tag they get
 * * *
 
 <small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-tts-cggt-desc.pmscript](https://github.com/giellalt/lang-bla/blob/main/tools/tokenisers/tokeniser-tts-cggt-desc.pmscript)</small>
-
----
-
