@@ -1181,14 +1181,14 @@ NOUN_INDEP_PREFIXES ;
 NOUN_SHORT_PREFIXES ;
 
 LEXICON NOUN_INDEP_PREFIXES
-@P.person.NI@:@P.person.NI@nit%<    PRE_INDEP_FLAG ;
-@P.person.KI@:@P.person.KI@kit%<    PRE_INDEP_FLAG ;
-@P.person.OT@:@P.person.OT@ot%<     PRE_INDEP_FLAG ;
-@P.person.NULL@0                    PRE_INDEP_FLAG ;
+@P.person.NI@:@P.person.NI@nit%<    PREFIXES ;
+@P.person.KI@:@P.person.KI@kit%<    PREFIXES ;
+@P.person.OT@:@P.person.OT@ot%<     PREFIXES ;
+@P.person.NULL@0                    PREFIXES ;
 
-LEXICON PRE_INDEP_FLAG
-@P.class.NOUN@ PREFIXES ;
-@P.class.VERB@ PREFIXES ;
+!LEXICON PRE_INDEP_FLAG
+!@R.class.NOUN@ PREFIXES ;
+!@R.pos.VERB@ PREFIXES ;
 
 LEXICON NOUN_SHORT_PREFIXES
 @P.person.NI@:@P.person.NI@n%<    DEP_STEMS ;
@@ -7470,19 +7470,19 @@ nookóówayi:ookóówa     NID ;
 
 LEXICON NA
 @P.pos.NA@@R.class.NOUN@+NA:@P.pos.NA@@R.class.NOUN@0  IM ;
-@R.pos.VAI@+VAI:@R.pos.VAI@0 N_VAI_SUFFIXES  ; 
+@R.pos.VAI@+NA+Der/VAI+VAI:@R.pos.VAI@0 N_VAI_SUFFIXES  ; 
 
 LEXICON NA_IM
 @P.im.IM@@P.pos.NA@@R.class.NOUN@+NA:@P.im.IM@@P.pos.NA@@R.class.NOUN@  IM ;
-@R.pos.VAI@+VAI:@R.pos.VAI@0 N_VAI_SUFFIXES ;
+@R.pos.VAI@+NA+Der/VAI+VAI:@R.pos.VAI@0 N_VAI_SUFFIXES ;
 
 LEXICON NI
 @P.pos.NI@@R.class.NOUN@+NI:@P.pos.NI@@R.class.NOUN@0  IM ;
-@R.pos.VII@+VII:@R.pos.VII@0 N_VII_SUFFIXES ;
+@R.pos.VII@+NI+Der/VII+VII:@R.pos.VII@0 N_VII_SUFFIXES ;
 
 LEXICON NI_IM
 @P.im.IM@@P.pos.NI@@R.class.NOUN@+NI:@P.im.IM@@P.pos.NI@@R.class.NOUN@0  IM ;
-@R.pos.VII@+VII:@R.pos.VII@0 N_VII_SUFFIXES ;
+@R.pos.VII@+NI+Der/VII+VII:@R.pos.VII@0 N_VII_SUFFIXES ;
 
 LEXICON NAD
 @P.pos.NA@+NAD:@P.pos.NA@0 POSS_NUM ;
@@ -7563,9 +7563,9 @@ LEXICON UNREAL_VAI_SUFFIXES
 
 LEXICON IMP_VAI_SUFFIXES
 ! Singular IMPERATIVE
-+Sg:%>t	ENCLITICS ;
+@R.person.IMP@+Sg:@R.person.IMP@%>t	ENCLITICS ;
 ! Plural IMPERATIVE
-+Pl:%>k	ENCLITICS ;
+@R.person.IMP@+Pl:@R.person.IMP@%>k	ENCLITICS ;
 
 ! BELOW ARE THE VII SUFFIXES
 
@@ -8168,9 +8168,9 @@ LEXICON N_UNREAL_VAI_SUFFIXES !! [OLD: UNREAL_VAI_SUFFIXES]
 
 LEXICON N_IMP_VAI_SUFFIXES !! [OLD: IMP_VAI_SUFFIXES]
 ! Singular IMPERATIVE
-+Sg:%>t N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.IMP@+Sg:@R.person.IMP@%>t N_ENCLITICS ; !! [OLD: ENCLITICS]
 ! Plural IMPERATIVE
-+Pl:%>k N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.IMP@+Pl:@R.person.IMP@%>k N_ENCLITICS ; !! [OLD: ENCLITICS]
 
 ! BELOW ARE THE VII SUFFIXES
 
