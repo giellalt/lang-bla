@@ -15,7 +15,7 @@ PATTERN=$1
 L_FILE="in.txt"
 cut -d '!' -f1 src/fst/morphology/stems/noun_stems.lexc | egrep $PATTERN | cut -d ':' -f1>$L_FILE
 
-P_FILE="test/data/testnounparadigm.txt"
+P_FILE="test/data/testnounparadigmNA.txt"
 
 for lemma in $(cat $L_FILE);
 do
