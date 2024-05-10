@@ -1,0 +1,15 @@
++NA+Sg
++NA+Pl
++NA+Px1Sg+Sg
++NA+Px2Sg+Sg
++NA+Px3Sg+Sg
++NA+Px1Pl+Sg
++NA+Px2Pl+Sg
++NA+Px3Pl+Sg
++NA+Px1Sg+Pl
++NA+Px2Sg+Pl
++NA+Px3Sg+Pl
++NA+Px1Pl+Pl
++NA+Px2Pl+Pl
++NA+Px3Pl+Pl
++NA+Obv
