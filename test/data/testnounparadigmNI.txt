@@ -1,0 +1,15 @@
++NI+Sg
++NI+Pl
++NI+Px1Sg+Sg
++NI+Px2Sg+Sg
++NI+Px3Sg+Sg
++NI+Px1Pl+Sg
++NI+Px2Pl+Sg
++NI+Px3Pl+Sg
++NI+Px1Sg+Pl
++NI+Px2Sg+Pl
++NI+Px3Sg+Pl
++NI+Px1Pl+Pl
++NI+Px2Pl+Pl
++NI+Px3Pl+Pl
++NI+Obv
