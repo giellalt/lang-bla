@@ -1222,15 +1222,11 @@ LEXICON PV_COUNTER1
 @R.pvcountf.1@@R.count1.A@@P.pvcountf.2@@R.count1.A@ PREFIXES ;
 @R.pvcountf.2@@R.count1.T@@P.pvcountf.3@@R.count1.T@ PREFIXES ;
 @R.pvcountf.3@@R.count1.P@@P.pvcountf.4@@R.count1.P@ PREFIXES ;
-0 PRESTEMS ;
- 
-LEXICON PRESTEMS
-0 VERB_STEMS ;
-0 NOUN_STEMS ;
-@R.pos.VERB@ PREVERBS ;
-@R.class.NOUN@ PRENOUNS ;
+0 PREVERBS ;
 
 LEXICON PREVERBS
+0 VERB_STEMS ;
+0 NOUN_STEMS ;
 @P.assoc.A@PV/ohpok+:@P.assoc.A@%^SPohpok BOUND ;
 PV/saw+:saw BOUND ;
 @R.mode.CON@PV/áákssta'+:@R.mode.CON@%^SPáákssta'	BOUND ;
@@ -1508,8 +1504,6 @@ PV/áák+:áák BOUND ;
 PV/áísooka+:áísooka BOUND ;
 PV/íka+:íka BOUND ;
 PV/ípssit+:ípssit BOUND ;
-
-LEXICON PRENOUNS
 PN/a's+:a's	BOUND ;
 PN/aahs+:aahs	BOUND ;
 PN/aaká+:aaká	BOUND ;
@@ -7563,9 +7557,9 @@ LEXICON UNREAL_VAI_SUFFIXES
 
 LEXICON IMP_VAI_SUFFIXES
 ! Singular IMPERATIVE
-@R.person.IMP@+Sg:@R.person.IMP@%>t	ENCLITICS ;
+@R.person.IMP@+2Sg:@R.person.IMP@%>t	ENCLITICS ;
 ! Plural IMPERATIVE
-@R.person.IMP@+Pl:@R.person.IMP@%>k	ENCLITICS ;
+@R.person.IMP@+2Pl:@R.person.IMP@%>k	ENCLITICS ;
 
 ! BELOW ARE THE VII SUFFIXES
 
@@ -8168,9 +8162,9 @@ LEXICON N_UNREAL_VAI_SUFFIXES !! [OLD: UNREAL_VAI_SUFFIXES]
 
 LEXICON N_IMP_VAI_SUFFIXES !! [OLD: IMP_VAI_SUFFIXES]
 ! Singular IMPERATIVE
-@R.person.IMP@+Sg:@R.person.IMP@%>t N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.IMP@+2Sg:@R.person.IMP@%>t N_ENCLITICS ; !! [OLD: ENCLITICS]
 ! Plural IMPERATIVE
-@R.person.IMP@+Pl:@R.person.IMP@%>k N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.IMP@+2Pl:@R.person.IMP@%>k N_ENCLITICS ; !! [OLD: ENCLITICS]
 
 ! BELOW ARE THE VII SUFFIXES
 
