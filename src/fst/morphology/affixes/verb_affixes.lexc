@@ -719,9 +719,9 @@ LEXICON INDEP_VAI_SUFFIXES
 @R.person.NULL@+4Sg:@R.person.NULL@%>yini   	ENCLITICS ;
 ! Plural INDEPENDENT
 @R.person.NI@+1Pl:@R.person.NI@%>hpinnaana  ANIM_INTERR ;	
-@R.person.NI@+1Pl:@R.person.NI@%>hpinnaan  ANIM_INTERR ;	! Frantz 2017 p. 25 footnote 6
+! @R.person.NI@+1Pl:@R.person.NI@%>hpinnaan  ANIM_INTERR ;	! Frantz 2017 p. 25 footnote 6
 @R.person.NULL@+21Pl:@R.person.NULL@%>o'pa	 ANIM_INTERR ;	
-@R.person.NULL@+21Pl:@R.person.NULL@%>o'p	 ANIM_INTERR ;	! Frantz 2017 p. 25 footnote 6
+! @R.person.NULL@+21Pl:@R.person.NULL@%>o'p	 ANIM_INTERR ;	! Frantz 2017 p. 25 footnote 6
 @R.person.KI@+2Pl:@R.person.KI@%>hpoaawa	 ANIM_INTERR ;  	
 @R.person.NULL@+3Pl:@R.person.NULL@%>yi		ENCLITICS ;
 @R.person.NULL@+4Pl:@R.person.NULL@%>yi   	ENCLITICS ;

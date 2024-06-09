@@ -1,0 +1,146 @@
+[
+  {
+    "head": "inááttsi",
+    "linguistInfo": {
+      "inflectional_category": "VII",
+      "stem": "inááttsi",
+      "pos": "V",
+      "wordclass": "VII"
+     },
+    "paradigm": "VII",
+    "senses": [{ "definition": "appear as, look like; have the appearance", "sources": ["F&R"] }],
+    "slug": "inááttsi"
+  },
+  {
+    "head": "soka'pii",
+    "linguistInfo": {
+      "inflectional_category": "VII",
+      "stem": "soka'pii",
+      "pos": "V",
+      "wordclass": "VII"
+     },
+    "paradigm": "VII",
+    "senses": [{ "definition": "be good", "sources": ["F&R"] }],
+    "slug": "soka'pii"
+  },
+  {
+    "head": "a'po'taki",
+    "linguistInfo": {
+      "inflectional_category": "VAI",
+      "stem": "a'po'taki",
+      "pos": "V",
+      "wordclass": "VAI"
+     },
+    "paradigm": "VAI",
+    "senses": [{ "definition": "work, be operational, be in effect", "sources": ["F&R"] }],
+    "slug": "a'po'taki"
+  },
+  {
+    "head": "itapoo",
+    "linguistInfo": {
+      "inflectional_category": "VAI",
+      "stem": "itapoo",
+      "pos": "V",
+      "wordclass": "VAI"
+     },
+    "paradigm": "VAI",
+    "senses": [{ "definition": "go toward, go to a location", "sources": ["F&R"] }],
+    "slug": "itapoo"
+  },
+  {
+    "head": "okska'si",
+    "linguistInfo": {
+      "inflectional_category": "VAI",
+      "stem": "okska'si",
+      "pos": "V",
+      "wordclass": "VAI"
+     },
+    "paradigm": "VAI",
+    "senses": [{ "definition": "run", "sources": ["F&R"] }],
+    "slug": "okska'si"
+  },
+  {
+    "head": "waahkayi",
+    "linguistInfo": {
+      "inflectional_category": "VAI",
+      "stem": "waahkayi",
+      "pos": "V",
+      "wordclass": "VAI"
+     },
+    "paradigm": "VAI",
+    "senses": [{ "definition": "go home", "sources": ["F&R"] }],
+    "slug": "waahkayi"
+  },
+  {
+    "head": "ohkoissksini",
+    "linguistInfo": {
+      "inflectional_category": "VTI",
+      "stem": "ohkoissksini",
+      "pos": "V",
+      "wordclass": "VTI"
+     },
+    "paradigm": "VTI",
+    "senses": [{ "definition": "find out about", "sources": ["F&R"] }],
+    "slug": "ohkoissksini"
+  },
+  {
+    "head": "oowatoo",
+    "linguistInfo": {
+      "inflectional_category": "VTI",
+      "stem": "oowatoo",
+      "pos": "V",
+      "wordclass": "VTI"
+     },
+    "paradigm": "VTI",
+    "senses": [{ "definition": "eat", "sources": ["F&R"] }],
+    "slug": "oowatoo"
+  },
+  {
+    "head": "ssksini",
+    "linguistInfo": {
+      "inflectional_category": "VTI",
+      "stem": "ssksini",
+      "pos": "V",
+      "wordclass": "VTI"
+     },
+    "paradigm": "VTI",
+    "senses": [{ "definition": "know", "sources": ["F&R"] }],
+    "slug": "ssksini"
+  },
+  {
+    "head": "ikákomimm",
+    "linguistInfo": {
+      "inflectional_category": "VTA",
+      "stem": "ikákomimm",
+      "pos": "V",
+      "wordclass": "VTA"
+     },
+    "paradigm": "VTA",
+    "senses": [{ "definition": "love, be fond of", "sources": ["F&R"] }],
+    "slug": "ikákomimm"
+  },
+  {
+    "head": "ino",
+    "linguistInfo": {
+      "inflectional_category": "VTA",
+      "stem": "ino",
+      "pos": "V",
+      "wordclass": "VTA"
+     },
+    "paradigm": "VTA",
+    "senses": [{ "definition": "see; recognize", "sources": ["F&R"] }],
+    "slug": "ino"
+  },
+  {
+    "head": "imitááwa",
+    "linguistInfo": {
+      "inflectional_category": "NA",
+      "stem": "imitááwa",
+      "pos": "N",
+      "wordclass": "NA"
+     },
+    "paradigm": "NA",
+    "senses": [{ "definition": "dog", "sources": ["F&R"] }],
+    "slug": "imitááwa"
+  }
+]
