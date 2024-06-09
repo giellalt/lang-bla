@@ -1028,18 +1028,18 @@ PV/ípssit+
 @R.class.VTA@
 @P.assoc.A@
 @R.assoc.A@
-@P.class.NOUN@
-@P.class.VERB@
-@R.class.NOUN@
-@R.class.VERB@
-@P.pos.NA@
-@P.pos.NI@
-@P.pos.VAI@
-@P.pos.VII@
-@R.pos.NA@
-@R.pos.NI@
-@R.pos.VAI@
-@R.pos.VII@
+@P.pos.NOUN@
+@P.pos.VERB@
+@R.pos.NOUN@
+@R.pos.VERB@
+@P.class.NA@
+@P.class.NI@
+@P.class.VAI@
+@P.class.VII@
+@R.class.NA@
+@R.class.NI@
+@R.class.VAI@
+@R.class.VII@
 @P.pos.NOUN@
 @P.pos.VERB@
 @R.pos.NOUN@
@@ -1048,6 +1048,9 @@ PV/ípssit+
 @P.pos.VERBALIZE@
 @R.pos.NOMINALIZE@
 @R.pos.VERBALIZE@
+@D.neg.NEG@
+@D.mode.IMP@
+@P.neg.NEG@
 
 ! Constraining preverb recycling
 @D.pvcount@
@@ -1134,9 +1137,9 @@ n2
 
 !! from verb file
 
-LEXICON ROOT
+LEXICON Root
 @P.pos.VERB@ PREFIX_SETS ;
-@P.class.NOUN@ NOUN_PREFIXES ;
+@P.pos.NOUN@ NOUN_PREFIXES ;
 
 LEXICON PREFIX_SETS
 @P.class.VAI@	BASIC_PREFIXES ;
@@ -1152,27 +1155,27 @@ LEXICON BASIC_PREFIXES
 @P.mode.IMP@	BASIC_IMP_PREFIXES ;
 
 LEXICON BASIC_IND_PREFIXES
-@P.person.NI@:@P.person.NI@nit%< PREFIXES ;
-@P.person.KI@:@P.person.KI@kit%< PREFIXES ;
-@P.person.OT@:@P.person.OT@ot%< PREFIXES ;
-@P.person.NULL@:@P.person.NULL@0 PREFIXES ;
+@P.person.NI@:@P.person.NI@nit%< NEG_PREFIXES ;
+@P.person.KI@:@P.person.KI@kit%< NEG_PREFIXES ;
+@P.person.OT@:@P.person.OT@ot%< NEG_PREFIXES ;
+@P.person.NULL@0 NEG_PREFIXES ;
 
 LEXICON BASIC_CNJ_PREFIXES
-@P.person.NI@:@P.person.NI@nit%<    PREFIXES ;
-@P.person.KI@:@P.person.KI@kit%<    PREFIXES ;
-@P.person.OT@:@P.person.OT@ot%<     PREFIXES ;
-@P.person.NULL@:@P.person.NULL@0    PREFIXES ;
+@P.person.NI@:@P.person.NI@nit%<    NEG_PREFIXES ;
+@P.person.KI@:@P.person.KI@kit%<    NEG_PREFIXES ;
+@P.person.OT@:@P.person.OT@ot%<     NEG_PREFIXES ;
+@P.person.NULL@0    NEG_PREFIXES ;
 
 LEXICON BASIC_SBJ_PREFIXES
-@P.person.NULL@:@P.person.NULL@0	PREFIXES ;
+@P.person.NULL@0	NEG_PREFIXES ;
 
 LEXICON BASIC_IRR_PREFIXES
-@P.person.NI@:@P.person.NI@nit%<    PREFIXES ;
-@P.person.KI@:@P.person.KI@kit%<    PREFIXES ;
-@P.person.NULL@:@P.person.NULL@0    PREFIXES ;
+@P.person.NI@:@P.person.NI@nit%<    NEG_PREFIXES ;
+@P.person.KI@:@P.person.KI@kit%<    NEG_PREFIXES ;
+@P.person.NULL@0    NEG_PREFIXES ;
 
 LEXICON BASIC_IMP_PREFIXES
-@P.person.IMP@:@P.person.IMP@0    PREFIXES ;
+@P.person.IMP@0    NEG_PREFIXES ;
 
 !! from noun file
 
@@ -1181,48 +1184,61 @@ NOUN_INDEP_PREFIXES ;
 NOUN_SHORT_PREFIXES ;
 
 LEXICON NOUN_INDEP_PREFIXES
-@P.person.NI@:@P.person.NI@nit%<    PREFIXES ;
-@P.person.KI@:@P.person.KI@kit%<    PREFIXES ;
-@P.person.OT@:@P.person.OT@ot%<     PREFIXES ;
-@P.person.NULL@0                    PREFIXES ;
+@P.person.NI@:@P.person.NI@nit%<    NEG_PREFIXES ;
+@P.person.KI@:@P.person.KI@kit%<    NEG_PREFIXES ;
+@P.person.OT@:@P.person.OT@ot%<     NEG_PREFIXES ;
+@P.person.NULL@0                    NEG_PREFIXES ;
 
 !LEXICON PRE_INDEP_FLAG
-!@R.class.NOUN@ PREFIXES ;
-!@R.pos.VERB@ PREFIXES ;
+!@R.pos.NOUN@ PREVERBS ;
+!@R.pos.VERB@ PREVERBS ;
 
 LEXICON NOUN_SHORT_PREFIXES
 @P.person.NI@:@P.person.NI@n%<    DEP_STEMS ;
 @P.person.KI@:@P.person.KI@k%<    DEP_STEMS ;
 @P.person.OT@:@P.person.OT@w%<    DEP_STEMS ;
 
+LEXICON NEG_PREFIXES
+0 TENSE_PREFIXES ;
+@R.mode.IND@@P.neg.NEG@Neg+:@R.mode.IND@@P.neg.NEG@%^SPi2máát%< TENSE_PREFIXES ;
+@R.mode.IMP@@P.neg.NEG@Neg+:@R.mode.IMP@@P.neg.NEG@miin%< PREVERBS ;
+@R.mode.IMP@@P.neg.NEG@Neg+:@R.mode.IMP@@P.neg.NEG@piin%< PREVERBS ;
+@R.mode.IND@@P.neg.NEG@Neg+PV/máátaommita'p+:@R.mode.IND@@P.neg.NEG@%^SPi2máátaommita'p%< TENSE_PREFIXES ;
+
+LEXICON TENSE_PREFIXES
+0 ASPECT_PREFIXES ;
+@D.mode.IMP@Imm+:@D.mode.IMP@ayáak%< ASPECT_PREFIXES ;
+@D.mode.IMP@Dur+:@D.mode.IMP@á%< ASPECT_PREFIXES ;
+@D.mode.IMP@Fut+:@D.mode.IMP@yáak%< ASPECT_PREFIXES ;
+@D.mode.IMP@Past+:@D.mode.IMP@ii%< ASPECT_PREFIXES ;
+
+LEXICON ASPECT_PREFIXES
+0 IRR_PREFIX ;
+@D.mode.IMP@Perf+:@D.mode.IMP@akáa IRR_PREFIX ;
+@D.mode.IMP@Perf+:@D.mode.IMP@ikáa IRR_PREFIX ;
+@D.mode.IMP@Perf+:@D.mode.IMP@okáa IRR_PREFIX ; ! enumerating this one because it appears in these three forms
+
+LEXICON IRR_PREFIX
+0 PREVERBS ;
+@D.neg.NEG@Neg+PV/ikátá'+:@D.neg.NEG@i2kátá'%< PREVERBS ;
+
+
 !! from verb file
 
-LEXICON PREFIXES
-@P.count1.N@@P.count1.T@@P.count1.A@@P.count1.P@@P.count1.N@@P.count1.T@@P.count1.A@@P.count1.P@0 PV_COUNTER1 ;
-@R.mode.IND@@P.count1.N@Neg+:@R.mode.IND@@P.count1.N@%^SPi2máát BOUND1 ;
-@R.mode.IMP@@P.count1.N@Neg+:@R.mode.IMP@@P.count1.N@%^SPi2miin BOUND1 ;
-@R.mode.IMP@@P.count1.N@Neg+:@R.mode.IMP@@P.count1.N@%^SPi2piin BOUND1 ;
-@R.mode.IND@@P.count1.N@PV/máátaommita'p+:@R.mode.IND@@P.count1.N@%^SPmáátaommita'p BOUND1 ;
-@P.count1.P@PV/ikátá'+:@P.count1.P@i2kátá' BOUND1 ;
-@P.count1.T@Imm+:@P.count1.T@ayáak BOUND1 ;
-@P.count1.T@Dur+:@P.count1.T@á BOUND1 ;
-@P.count1.T@Fut+:@P.count1.T@yáak BOUND1 ;
-@P.count1.T@Past+:@P.count1.T@ii BOUND1 ;
-@P.count1.A@Perf+:@P.count1.A@akáa BOUND1 ;
-@P.count1.A@Perf+:@P.count1.A@ikáa BOUND1 ;
-@P.count1.A@Perf+:@P.count1.A@okáa BOUND1 ; ! enumerating this one because it appears in these three forms
+!LEXICON PREFIXES
+!@P.count1.N@@P.count1.T@@P.count1.A@@P.count1.P@@P.count1.N@@P.count1.T@@P.count1.A@@P.count1.P@0 PV_COUNTER1 ;
 
-LEXICON BOUND1
-0:%< PV_COUNTER1 ;
+!LEXICON BOUND1
+!0:%< PV_COUNTER1 ;
 
 !! This counter ensures that each type of prenoun/preverb can only appear once in the following order: Negation | 0, Tense | 0, Aspect | 0, then ikata' | 0.
 
-LEXICON PV_COUNTER1
-@D.pvcountf@@R.count1.N@@P.pvcountf.1@@R.count1.N@ PREFIXES ;
-@R.pvcountf.1@@R.count1.A@@P.pvcountf.2@@R.count1.A@ PREFIXES ;
-@R.pvcountf.2@@R.count1.T@@P.pvcountf.3@@R.count1.T@ PREFIXES ;
-@R.pvcountf.3@@R.count1.P@@P.pvcountf.4@@R.count1.P@ PREFIXES ;
-0 PREVERBS ;
+!LEXICON PV_COUNTER1
+!@D.pvcountf@@R.count1.N@@P.pvcountf.1@@R.count1.N@ PREFIXES ;
+!@R.pvcountf.1@@R.count1.A@@P.pvcountf.2@@R.count1.A@ PREFIXES ;
+!@R.pvcountf.2@@R.count1.T@@P.pvcountf.3@@R.count1.T@ PREFIXES ;
+!@R.pvcountf.3@@R.count1.P@@P.pvcountf.4@@R.count1.P@ PREFIXES ;
+!0 PREVERBS ;
 
 LEXICON PREVERBS
 0 VERB_STEMS ;
@@ -1788,7 +1804,7 @@ LEXICON PV_COUNTER
 @R.pvcount.3@@P.pvcount.4@ PREVERBS ;
 @R.pvcount.4@@P.pvcount.5@ PREVERBS ;
 @R.pvcount.5@@P.pvcount.6@ PREVERBS ;
-@R.count1.T@@R.count1.T@ PREVERBS ;
+!@R.count1.T@@R.count1.T@ PREVERBS ; ! no longer needed, tense moved to separate lexicon
 
 !!! Next come the Blackfoot verb stems. !!!
 !!! This is where we visit verb_stems.lexc
@@ -1803,10 +1819,10 @@ LEXICON VERB_STEMS
 @R.class.VII@	VII_STEMS ;
 @R.class.VTI@	VTI_STEMS ;
 @R.class.VTA@	VTA_STEMS ;
-@R.class.NOUN@	VAI_STEMS ;
-@R.class.NOUN@	VII_STEMS ;
-@R.class.NOUN@	VTI_STEMS ;
-@R.class.NOUN@	VTA_STEMS ;    
+@R.pos.NOUN@	VAI_STEMS ;
+@R.pos.NOUN@	VII_STEMS ;
+@R.pos.NOUN@	VTI_STEMS ;
+@R.pos.NOUN@	VTA_STEMS ;    
 !@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VAI_STEMS ;
 !@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VII_STEMS ;
 !@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTI_STEMS ;
@@ -5456,23 +5472,23 @@ yootsipistoto:yootsipistoto	VTA ;
 ! is assumed to be already present in the noun model. 
 
 LEXICON VAI
-@P.pos.NA@@R.class.NOUN@+VAI:@P.pos.NA@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
-@P.pos.NI@@R.class.NOUN@+VAI:@P.pos.NI@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.class.NA@@R.pos.NOUN@+VAI:@P.class.NA@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.class.NI@@R.pos.NOUN@+VAI:@P.class.NI@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
 @R.pos.VERB@  VAI_DERIVATION ;
 
 LEXICON VII
-@P.pos.NA@@R.class.NOUN@+VII:@P.pos.NA@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
-@P.pos.NI@@R.class.NOUN@+VII:@P.pos.NI@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.class.NA@@R.pos.NOUN@+VII:@P.class.NA@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.class.NI@@R.pos.NOUN@+VII:@P.class.NI@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
 @R.pos.VERB@  VII_DERIVATION ;
 
 LEXICON VTI
-@P.pos.NA@@R.class.NOUN@+VTI:@P.pos.NA@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
-@P.pos.NI@@R.class.NOUN@+VTI:@P.pos.NI@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.class.NA@@R.pos.NOUN@+VTI:@P.class.NA@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.class.NI@@R.pos.NOUN@+VTI:@P.class.NI@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
 @R.pos.VERB@  VTI_DERIVATION ;
 
 LEXICON VTA
-@P.pos.NA@@R.class.NOUN@+VTA:@P.pos.NA@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
-@P.pos.NI@@R.class.NOUN@+VTA:@P.pos.NI@@R.class.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.class.NA@@R.pos.NOUN@+VTA:@P.class.NA@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.class.NI@@R.pos.NOUN@+VTA:@P.class.NI@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
 @R.pos.VERB@  VTA_DERIVATION ;
 
 LEXICON VAI_DERIVATION
@@ -5513,10 +5529,10 @@ LEXICON VTA_DERIVATION
 ! Below are the INDEPENDENT noun stems and their allomorphic forms (only if the allomorph is irregular). 
 
 LEXICON NOUN_STEMS
-@P.pos.NA@ INDEP_NA_STEMS ;
-@P.pos.NI@ INDEP_NI_STEMS ;
-@P.pos.VAI@ INDEP_NA_STEMS ;
-@P.pos.VII@ INDEP_NI_STEMS ;
+@P.class.NA@ INDEP_NA_STEMS ;
+@P.class.NI@ INDEP_NI_STEMS ;
+@R.class.VAI@ INDEP_NA_STEMS ;
+@R.class.VII@ INDEP_NI_STEMS ;
 
 ! When working with the lexicon, be sure to know the following lexical information:
 ! 1. Does it take the /-im/ suffix when possessed? If so, use NA_IM or NI_IM
@@ -7402,8 +7418,8 @@ a'kahkóyi:a'kahkó	NI ;
 ! Below are the regular DEPENDENT noun stems
 
 LEXICON DEP_STEMS
-@P.pos.NA@ DEP_NA_STEMS ;
-@P.pos.NI@ DEP_NI_STEMS ;
+@P.class.NA@ DEP_NA_STEMS ;
+@P.class.NI@ DEP_NI_STEMS ;
 
 LEXICON DEP_NA_STEMS
 ! Test Stems
@@ -7463,26 +7479,26 @@ nookóówayi:ookóówan     NID ;
 nookóówayi:ookóówa     NID ;
 
 LEXICON NA
-@P.pos.NA@@R.class.NOUN@+NA:@P.pos.NA@@R.class.NOUN@0  IM ;
-@R.pos.VAI@+NA+Der/VAI+VAI:@R.pos.VAI@0 N_VAI_SUFFIXES  ; 
+@P.class.NA@@R.pos.NOUN@+NA:@P.class.NA@@R.pos.NOUN@0  IM ;
+@R.class.VAI@+NA+Der/VAI+VAI:@R.class.VAI@0 N_VAI_SUFFIXES  ; 
 
 LEXICON NA_IM
-@P.im.IM@@P.pos.NA@@R.class.NOUN@+NA:@P.im.IM@@P.pos.NA@@R.class.NOUN@  IM ;
-@R.pos.VAI@+NA+Der/VAI+VAI:@R.pos.VAI@0 N_VAI_SUFFIXES ;
+@P.im.IM@@P.pos.NA@@R.pos.NOUN@+NA:@P.im.IM@@P.class.NA@@R.pos.NOUN@  IM ;
+@R.class.VAI@+NA+Der/VAI+VAI:@R.class.VAI@0 N_VAI_SUFFIXES ;
 
 LEXICON NI
-@P.pos.NI@@R.class.NOUN@+NI:@P.pos.NI@@R.class.NOUN@0  IM ;
-@R.pos.VII@+NI+Der/VII+VII:@R.pos.VII@0 N_VII_SUFFIXES ;
+@P.class.NI@@R.pos.NOUN@+NI:@P.class.NI@@R.pos.NOUN@0  IM ;
+@R.class.VII@+NI+Der/VII+VII:@R.class.VII@0 N_VII_SUFFIXES ;
 
 LEXICON NI_IM
-@P.im.IM@@P.pos.NI@@R.class.NOUN@+NI:@P.im.IM@@P.pos.NI@@R.class.NOUN@0  IM ;
-@R.pos.VII@+NI+Der/VII+VII:@R.pos.VII@0 N_VII_SUFFIXES ;
+@P.im.IM@@P.class.NI@@R.pos.NOUN@+NI:@P.im.IM@@P.class.NI@@R.pos.NOUN@0  IM ;
+@R.class.VII@+NI+Der/VII+VII:@R.class.VII@0 N_VII_SUFFIXES ;
 
 LEXICON NAD
-@P.pos.NA@+NAD:@P.pos.NA@0 POSS_NUM ;
+@P.class.NA@+NAD:@P.class.NA@0 POSS_NUM ;
 
 LEXICON NID
-@P.pos.NI@+NID:@P.pos.NI@0 POSS_NUM ;
+@P.class.NI@+NID:@P.class.NI@0 POSS_NUM ;
 
 !! from verb file
 
@@ -7716,11 +7732,11 @@ LEXICON UNREAL_VTI_SUFFIXES
 
 LEXICON IMP_VTI_SUFFIXES
 ! Singular IMPERATIVE
-@R.person.IMP@+Sg+%0SgO:@R.person.IMP@%>ta	ENCLITICS ;
-@R.person.IMP@+Sg+%0PlO:@R.person.IMP@%>ti	ENCLITICS ;
+@R.person.IMP@+2Sg+%0SgO:@R.person.IMP@%>ta	ENCLITICS ;
+@R.person.IMP@+2Sg+%0PlO:@R.person.IMP@%>ti	ENCLITICS ;
 ! Plural IMPERATIVE
-@R.person.IMP@+Pl+%0SgO:@R.person.IMP@%>ka	ENCLITICS ;
-@R.person.IMP@+Pl+%0PlO:@R.person.IMP@%>ki	ENCLITICS ;
+@R.person.IMP@+2Pl+%0SgO:@R.person.IMP@%>ka	ENCLITICS ;
+@R.person.IMP@+2Pl+%0PlO:@R.person.IMP@%>ki	ENCLITICS ;
 
 ! BELOW ARE THE VTA VERBS
 
@@ -8044,8 +8060,8 @@ LEXICON VERB_DER_NOM_SUFFIXES
 +Der/Nom5:%>o'p                NOUN_SUFFIXES ;
 
 LEXICON NOUN_SUFFIXES
-@R.pos.NA@+NA:@R.pos.NA@0 POSS_NUM ;
-@R.pos.NI@+NI:@R.pos.NI@0 POSS_NUM ;
+@R.class.NA@+NA:@R.class.NA@0 POSS_NUM ;
+@R.class.NI@+NI:@R.class.NI@0 POSS_NUM ;
 
 LEXICON IM
 0 POSS_NUM ;
@@ -8067,8 +8083,8 @@ LEXICON POSS_NUM
 
 
 LEXICON NOUN_FINALS
-@R.pos.NA@ NA_SUFFIXES ;
-@R.pos.NI@ NI_SUFFIXES ;
+@R.class.NA@ NA_SUFFIXES ;
+@R.class.NI@ NI_SUFFIXES ;
 
 
 LEXICON NA_SUFFIXES
