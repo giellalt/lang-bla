@@ -1,0 +1,19 @@
+LEXICON NOUN_PREFIXES
+NOUN_INDEP_PREFIXES ;
+NOUN_SHORT_PREFIXES ;
+
+LEXICON NOUN_INDEP_PREFIXES
+@P.person.NI@:@P.person.NI@nit%<    NEG_PREFIXES ;
+@P.person.KI@:@P.person.KI@kit%<    NEG_PREFIXES ;
+@P.person.OT@:@P.person.OT@ot%<     NEG_PREFIXES ;
+@P.person.NULL@0                    NEG_PREFIXES ;
+
+!LEXICON PRE_INDEP_FLAG
+!@R.pos.NOUN@ PREVERBS ;
+!@R.pos.VERB@ PREVERBS ;
+
+LEXICON NOUN_SHORT_PREFIXES
+@P.person.NI@:@P.person.NI@n%<    DEP_STEMS ;
+@P.person.KI@:@P.person.KI@k%<    DEP_STEMS ;
+@P.person.OT@:@P.person.OT@w%<    DEP_STEMS ;
+

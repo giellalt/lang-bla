@@ -1,0 +1,60 @@
+LEXICON PREFIX_SETS
+@P.class.VAI@	BASIC_PREFIXES ;
+@P.class.VII@	BASIC_PREFIXES ;
+@P.class.VTI@	BASIC_PREFIXES ;
+@P.class.VTA@	BASIC_PREFIXES ;
+
+LEXICON BASIC_PREFIXES
+@P.mode.IND@	BASIC_IND_PREFIXES ;
+@P.mode.CON@	BASIC_CNJ_PREFIXES ;
+@P.mode.SUB@	BASIC_SBJ_PREFIXES ;
+@P.mode.IRR@	BASIC_IRR_PREFIXES ;
+@P.mode.IMP@	BASIC_IMP_PREFIXES ;
+
+LEXICON BASIC_IND_PREFIXES
+@P.person.NI@:@P.person.NI@nit%< NEG_PREFIXES ;
+@P.person.KI@:@P.person.KI@kit%< NEG_PREFIXES ;
+@P.person.OT@:@P.person.OT@ot%< NEG_PREFIXES ;
+@P.person.NULL@0 NEG_PREFIXES ;
+
+LEXICON BASIC_CNJ_PREFIXES
+@P.person.NI@:@P.person.NI@nit%<    NEG_PREFIXES ;
+@P.person.KI@:@P.person.KI@kit%<    NEG_PREFIXES ;
+@P.person.OT@:@P.person.OT@ot%<     NEG_PREFIXES ;
+@P.person.NULL@0    NEG_PREFIXES ;
+
+LEXICON BASIC_SBJ_PREFIXES
+@P.person.NULL@0	NEG_PREFIXES ;
+
+LEXICON BASIC_IRR_PREFIXES
+@P.person.NI@:@P.person.NI@nit%<    NEG_PREFIXES ;
+@P.person.KI@:@P.person.KI@kit%<    NEG_PREFIXES ;
+@P.person.NULL@0    NEG_PREFIXES ;
+
+LEXICON BASIC_IMP_PREFIXES
+@P.person.IMP@0    NEG_PREFIXES ;
+
+LEXICON NEG_PREFIXES
+0 TENSE_PREFIXES ;
+@R.mode.IND@@P.neg.NEG@Neg+:@R.mode.IND@@P.neg.NEG@%^SPi2máát%< TENSE_PREFIXES ;
+@R.mode.IMP@@P.neg.NEG@Neg+:@R.mode.IMP@@P.neg.NEG@miin%< PREVERBS ;
+@R.mode.IMP@@P.neg.NEG@Neg+:@R.mode.IMP@@P.neg.NEG@piin%< PREVERBS ;
+@R.mode.IND@@P.neg.NEG@Neg+PV/máátaommita'p+:@R.mode.IND@@P.neg.NEG@%^SPi2máátaommita'p%< TENSE_PREFIXES ;
+
+LEXICON TENSE_PREFIXES
+0 ASPECT_PREFIXES ;
+@D.mode.IMP@Imm+:@D.mode.IMP@ayáak%< ASPECT_PREFIXES ;
+@D.mode.IMP@Dur+:@D.mode.IMP@á%< ASPECT_PREFIXES ;
+@D.mode.IMP@Fut+:@D.mode.IMP@yáak%< ASPECT_PREFIXES ;
+@D.mode.IMP@Past+:@D.mode.IMP@ii%< ASPECT_PREFIXES ;
+
+LEXICON ASPECT_PREFIXES
+0 IRR_PREFIX ;
+@D.mode.IMP@Perf+:@D.mode.IMP@akáa IRR_PREFIX ;
+@D.mode.IMP@Perf+:@D.mode.IMP@ikáa IRR_PREFIX ;
+@D.mode.IMP@Perf+:@D.mode.IMP@okáa IRR_PREFIX ; ! enumerating this one because it appears in these three forms
+
+LEXICON IRR_PREFIX
+0 PREVERBS ;
+@D.neg.NEG@Neg+PV/ikátá'+:@D.neg.NEG@i2kátá'%< PREVERBS ;
+

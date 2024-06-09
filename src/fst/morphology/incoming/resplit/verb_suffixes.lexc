@@ -1,0 +1,732 @@
+!! Verb suffixation
+
+LEXICON VAI
+@P.class.NA@@R.pos.NOUN@+VAI:@P.class.NA@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.class.NI@@R.pos.NOUN@+VAI:@P.class.NI@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.VERB@  VAI_DERIVATION ;
+
+LEXICON VII
+@P.class.NA@@R.pos.NOUN@+VII:@P.class.NA@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.class.NI@@R.pos.NOUN@+VII:@P.class.NI@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.VERB@  VII_DERIVATION ;
+
+LEXICON VTI
+@P.class.NA@@R.pos.NOUN@+VTI:@P.class.NA@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.class.NI@@R.pos.NOUN@+VTI:@P.class.NI@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.VERB@  VTI_DERIVATION ;
+
+LEXICON VTA
+@P.class.NA@@R.pos.NOUN@+VTA:@P.class.NA@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@P.class.NI@@R.pos.NOUN@+VTA:@P.class.NI@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.VERB@  VTA_DERIVATION ;
+
+LEXICON VAI_DERIVATION
+@R.pos.VERB@+VAI:@R.pos.VERB@0                                           VAI_SUFFIXES ;
+@R.pos.VERB@+VAI+Der/Caus:@R.pos.VERB@%>áttsi                            VTA ;
+@R.pos.VERB@+VAI+Der/Caus2:@R.pos.VERB@%>pi                              VTA ; ! Rare, give low weight
+@R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo  VTA_SUFFIXES ;
+@R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>omo VTA_SUFFIXES ;
+@R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>o   VTA_SUFFIXES ;
+@R.pos.VERB@@R.accomp.A@+VAI+Accomp:@R.pos.VERB@@R.accomp.A@%>m	         VAI_SUFFIXES ; ! -> VTA?
+
+LEXICON VII_DERIVATION
+@R.pos.VERB@+VII:@R.pos.VERB@0		VII_SUFFIXES ;
+
+LEXICON VTI_DERIVATION
+@R.pos.VERB@+VTI:@R.pos.VERB@0                                           VTI_SUFFIXES ;
+@R.pos.VERB@@P.class.VTA@+VTI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo  VTA_SUFFIXES ;
+@R.pos.VERB@@P.class.VTA@+VTI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>omo VTA_SUFFIXES ;
+@R.pos.VERB@@P.class.VTA@+VTI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>o   VTA_SUFFIXES ;
+
+LEXICON VTA_DERIVATION
+@R.pos.VERB@+VTA:@R.pos.VERB@0                        VTA_SUFFIXES ;
+@R.pos.VERB@@P.class.VTA@+VTA+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo         VTA_SUFFIXES ;
+@R.pos.VERB@@P.class.VTA@+VTA+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>omo        VTA_SUFFIXES ;
+@R.pos.VERB@@P.class.VTA@+VTA+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>o          VTA_SUFFIXES ;
+@R.pos.VERB@@P.class.VAI@+VTA+Der/Rflx+VAI:@R.pos.VERB@@P.class.VAI@%>ohsi      VAI_SUFFIXES ;
+@R.pos.VERB@@P.class.VAI@+VTA+Der/Rcpr+VAI:@R.pos.VERB@@P.class.VAI@%>otsiiyi   VAI_SUFFIXES ;
+@R.pos.VERB@@P.class.VAI@+VTA+Der/Rcpr+VAI:@R.pos.VERB@@P.class.VAI@%>tsiiyi    VAI_SUFFIXES ;
+
+! BELOW ARE THE VAI SUFFIXES ;
+
+LEXICON VAI_SUFFIXES
+@R.mode.IND@+Ind:@R.mode.IND@ INDEP_VAI_SUFFIXES ;
+@R.mode.CON@+Cnj:@R.mode.CON@ CONJ_VAI_SUFFIXES ;
+@R.mode.SUB@+Sbj:@R.mode.SUB@ SUBJ_VAI_SUFFIXES ;
+@R.mode.IRR@+Irr:@R.mode.IRR@ UNREAL_VAI_SUFFIXES ;
+@R.mode.IMP@+Imp:@R.mode.IMP@ IMP_VAI_SUFFIXES ;
+
+LEXICON INDEP_VAI_SUFFIXES
+! Third Person Interrogatives
+@R.person.NULL@+3Sg+INTERR:@R.person.NULL@%>watsiksi ENCLITICS ;
+@R.person.NULL@+3Sg+INTERR:@R.person.NULL@%>watsiksiwa ENCLITICS ; ! Sometimes, we end up with a -wa suffix following this interrogative
+@R.person.NULL@+3Pl+INTERR:@R.person.NULL@%>waiksaawa ENCLITICS ;
+@R.person.NULL@+3Pl+INTERR:@R.person.NULL@%>waiksaawayi ENCLITICS ; ! Sometimes, we end up with a -yi suffix following this interrogative
+! Singular INDEPENDENT
+@R.person.NULL@:@R.person.NULL@0   	ENCLITICS ;
+@R.person.NI@+1Sg:@R.person.NI@0   	ANIM_INTERR ;	
+@R.person.KI@+2Sg:@R.person.KI@0   		ANIM_INTERR ;
+@R.person.NULL@+3Sg:@R.person.NULL@%>wa		ENCLITICS ;
+@R.person.NULL@+4Sg:@R.person.NULL@%>yini   	ENCLITICS ;
+! Plural INDEPENDENT
+@R.person.NI@+1Pl:@R.person.NI@%>hpinnaana  ANIM_INTERR ;	
+@R.person.NI@+1Pl:@R.person.NI@%>hpinnaan  ANIM_INTERR ;	! Frantz 2017 p. 25 footnote 6
+@R.person.NULL@+21Pl:@R.person.NULL@%>o'pa	 ANIM_INTERR ;	
+@R.person.NULL@+21Pl:@R.person.NULL@%>o'p	 ANIM_INTERR ;	! Frantz 2017 p. 25 footnote 6
+@R.person.KI@+2Pl:@R.person.KI@%>hpoaawa	 ANIM_INTERR ;  	
+@R.person.NULL@+3Pl:@R.person.NULL@%>yi		ENCLITICS ;
+@R.person.NULL@+4Pl:@R.person.NULL@%>yi   	ENCLITICS ;
+
+LEXICON CONJ_VAI_SUFFIXES
+! Singular CONJUNCTIVE
+@R.person.NI@+1Sg:@R.person.NI@%>hsi   	ENCLITICS ; 
+@R.person.KI@+2Sg:@R.person.KI@%>hsi  	ENCLITICS ;
+@R.person.OT@+3Sg:@R.person.OT@%>hsi 		ENCLITICS ;
+@R.person.NULL@+4Sg:@R.person.NULL@%>hsi   	ENCLITICS ;
+! Plural CONJUNCTIVE
+@R.person.NI@+1Pl:@R.person.NI@%>hsinnaana  ENCLITICS ;
+@R.person.NULL@+21Pl:@R.person.NULL@%>hsi 	 ENCLITICS ;
+@R.person.KI@+2Pl:@R.person.KI@%>hsoaayi	 ENCLITICS ;  
+@R.person.OT@+3Pl:@R.person.OT@%>hsi	ENCLITICS ;	
+@R.person.NULL@+4Pl:@R.person.NULL@%>hsi	ENCLITICS ;
+
+LEXICON SUBJ_VAI_SUFFIXES
+! Singular SUBJUNCTIVE
+@R.person.NULL@+1Sg:@R.person.NULL@%>iniki   	ENCLITICS ;
+@R.person.NULL@+2Sg:@R.person.NULL@%>iniki   	ENCLITICS ;
+@R.person.NULL@+3Sg:@R.person.NULL@%>si   	ENCLITICS ;
+@R.person.NULL@+4Sg:@R.person.NULL@%>si   	ENCLITICS ;
+! Plural SUBJUNCTIVE
+@R.person.NULL@+1Pl:@R.person.NULL@%>innaaniki  ENCLITICS ;
+@R.person.NULL@+21Pl:@R.person.NULL@%>inoainiki ENCLITICS ;	
+@R.person.NULL@+2Pl:@R.person.NULL@%>o'ki 		ENCLITICS ;
+@R.person.NULL@+3Pl:@R.person.NULL@%>si			ENCLITICS ;
+@R.person.NULL@+4Pl:@R.person.NULL@%>si			ENCLITICS ;
+
+LEXICON UNREAL_VAI_SUFFIXES
+! Singular UNREAL
+@R.person.NI@+1Sg:@R.person.NI@%>htopi   	ENCLITICS ;
+@R.person.KI@+2Sg:@R.person.KI@%>htopi   	ENCLITICS ;
+@R.person.NULL@+3Sg:@R.person.NULL@%>wahtopi	ENCLITICS ;
+@R.person.NULL@+4Sg:@R.person.NULL@%>wahtopini   ENCLITICS ;	
+! Plural UNREAL
+@R.person.NI@+1Pl:@R.person.NI@%>hpinnaanopi  ENCLITICS ;
+@R.person.NULL@+21Pl:@R.person.NULL@%>hpoaawopi 	ENCLITICS ;	
+@R.person.KI@+2Pl:@R.person.KI@%>wahtopiyi	ENCLITICS ;   
+@R.person.NULL@+3Pl:@R.person.NULL@%>wahtopiyi	ENCLITICS ;
+@R.person.NULL@+4Pl:@R.person.NULL@%>wahtopiyini    ENCLITICS ;
+
+LEXICON IMP_VAI_SUFFIXES
+! Singular IMPERATIVE
+@R.person.IMP@+2Sg:@R.person.IMP@%>t	ENCLITICS ;
+! Plural IMPERATIVE
+@R.person.IMP@+2Pl:@R.person.IMP@%>k	ENCLITICS ;
+
+! BELOW ARE THE VII SUFFIXES
+
+LEXICON VII_SUFFIXES
+@R.mode.IND@+Ind:@R.mode.IND@ INDEP_VII_SUFFIXES ;
+@R.mode.CON@+Cnj:@R.mode.CON@ CONJ_VII_SUFFIXES ;
+@R.mode.SUB@+Sbj:@R.mode.SUB@ SUBJ_VII_SUFFIXES ;
+@R.mode.IRR@+Irr:@R.mode.IRR@ UNREAL_VII_SUFFIXES ;
+
+LEXICON INDEP_VII_SUFFIXES
+! Inanimate Interrogatives
+@R.person.NULL@+%0Sg+INTERR:@R.person.NULL@%>waatsiksi ENCLITICS ;
+@R.person.NULL@+%0Pl+INTERR:@R.person.NULL@%>waistsaawa ENCLITICS ;
+@R.person.NULL@ ENCLITICS ;
+! Singular INDEPENDENT
+@R.person.NULL@+%0Sg:@R.person.NULL@%>wa		ENCLITICS ;
+! Plural INDEPENDENT
+@R.person.NULL@+%0Pl:@R.person.NULL@%>yi		ENCLITICS ;
+
+LEXICON CONJ_VII_SUFFIXES
+! Singular CONJUNCTIVE
+@R.person.OT@+%0Sg:@R.person.OT@%>hsi 		ENCLITICS ;
+! Plural CONJUNCTIVE
+@R.person.OT@+%0Pl:@R.person.OT@%>hsi	ENCLITICS ;	
+
+LEXICON SUBJ_VII_SUFFIXES
+! Singular SUBJUNCTIVE
+@R.person.NULL@+%0Sg:@R.person.NULL@%>si   	ENCLITICS ;
+! Plural SUBJUNCTIVE
+@R.person.NULL@+%0Pl:@R.person.NULL@%>si			ENCLITICS ;
+
+LEXICON UNREAL_VII_SUFFIXES
+! Singular UNREAL
+@R.person.NULL@+%0Sg:@R.person.NULL@%>wahtopi	ENCLITICS ;
+! Plural UNREAL  
+@R.person.NULL@+%0Pl:@R.person.NULL@%>wahtopiyi	ENCLITICS ;
+
+! BELOW ARE THE VTI SUFFIXES 
+
+LEXICON VTI_SUFFIXES
+@R.mode.IND@+Ind:@R.mode.IND@	INDEP_VTI_SUFFIXES ;
+@R.mode.CON@+Cnj:@R.mode.CON@	CONJ_VTI_SUFFIXES ;
+@R.mode.SUB@+Sbj:@R.mode.SUB@	SUBJ_VTI_SUFFIXES ;
+@R.mode.IRR@+Irr:@R.mode.IRR@	UNREAL_VTI_SUFFIXES ;
+@R.mode.IMP@+Imp:@R.mode.IMP@	IMP_VTI_SUFFIXES ;
+
+! Objects are included because Frantz says that -wa and -yi suffixes are only added to 1 and 2 forms in the independent.
+! Just a warning about interrogatives. According to Frantz, there seems to be a lot of variability as to how speakers form
+! questions. Some use the interrogrative endings seens here, others don't, and speakers may choose to use them or not.
+
+LEXICON INDEP_VTI_SUFFIXES
+! Inanimate interrogatives Singular Object
+@R.person.NI@+1Sg+%0SgO+INTERR:@R.person.NI@%>hpaatsiksi ENCLITICS ;
+@R.person.KI@+2Sg+%0SgO+INTERR:@R.person.KI@%>hpaatsiksi ENCLITICS ;
+@R.person.NULL@+3Sg+%0SgO+INTERR:@R.person.NULL@%>maatsiksi ENCLITICS ;
+@R.person.NULL@+4Sg+%0SgO+INTERR:@R.person.NULL@%>minaatsiksi ENCLITICS ; ! This is unattested
+@R.person.NI@+1Pl+%0SgO+INTERR:@R.person.NI@%>hpinnanaatsiksi ENCLITICS ;
+@R.person.KI@+2Pl+%0SgO+INTERR:@R.person.KI@%>hpoaawaatsiksi ENCLITICS ;
+@R.person.NULL@+21Pl+%0SgO+INTERR:@R.person.NULL@%>'paatsiksi ENCLITICS ;
+@R.person.NULL@+4Pl+%0SgO+INTERR:@R.person.NULL@%>miaatsiksi ENCLITICS ; ! This is unattested
+@R.person.NULL@+4Pl+%0SgO+INTERR:@R.person.NULL@%>miaatsiksi ENCLITICS ; ! This is unattested
+! Inanimate interrogatives Plural Object
+@R.person.NI@+1Sg+%0PlO+INTERR:@R.person.NI@%>hpaistsaawa ENCLITICS ;
+@R.person.KI@+2Sg+%0PlO+INTERR:@R.person.KI@%>hpaistsaawa ENCLITICS ;
+@R.person.NULL@+3Sg+%0PlO+INTERR:@R.person.NULL@%>maistsaawa ENCLITICS ;
+@R.person.NULL@+4Sg+%0PlO+INTERR:@R.person.NULL@%>minaistsaawa ENCLITICS ; ! This is unattested
+@R.person.NI@+1Pl+%0PlO+INTERR:@R.person.NI@%>hpinnanaistsaawa ENCLITICS ;
+@R.person.KI@+2Pl+%0PlO+INTERR:@R.person.KI@%>hpoaawaistsaawa ENCLITICS ;
+@R.person.NULL@+21Pl+%0PlO+INTERR:@R.person.NULL@%>'paistsaawa ENCLITICS ;
+@R.person.NULL@+4Pl+%0PlO+INTERR:@R.person.NULL@%>miaistsaawa ENCLITICS ; ! This is unattested
+@R.person.NULL@+4Pl+%0PlO+INTERR:@R.person.NULL@%>miaistsaawa ENCLITICS ; ! This is unattested
+! Singular INDEPENDENT
+@R.person.NI@+1Sg+%0SgO:@R.person.NI@%>hpa   		ENCLITICS ;	
+@R.person.KI@+2Sg+%0SgO:@R.person.KI@%>hpa   		ENCLITICS ;
+@R.person.NI@+1Sg+%0PlO:@R.person.NI@%>hpi   		ENCLITICS ;	
+@R.person.KI@+2Sg+%0PlO:@R.person.KI@%>hpi   		ENCLITICS ;
+@R.person.NULL@+3Sg+%0SgO:@R.person.NULL@%>ma		ENCLITICS ;
+@R.person.NULL@+4Sg+%0SgO:@R.person.NULL@%>mini   	ENCLITICS ;
+! Plural INDEPENDENT
+@R.person.NI@+1Pl+%0SgO:@R.person.NI@%>hpinnaana  ENCLITICS ;	
+@R.person.NULL@+21Pl+%0SgO:@R.person.NULL@%>'pa	 ENCLITICS ;
+@R.person.NI@+1Pl+%0PlO:@R.person.NI@%>hpinnaani  ENCLITICS ;	
+@R.person.NULL@+21Pl+%0PlO:@R.person.NULL@%>'pi	 ENCLITICS ;
+@R.person.KI@+2Pl+%0SgO:@R.person.KI@%>hpoaawa	 ENCLITICS ;
+@R.person.KI@+2Pl+%0PlO:@R.person.KI@%>hpoaayi	 ENCLITICS ; 
+@R.person.NULL@+3Pl+%0PlO:@R.person.NULL@%>mi		ENCLITICS ;
+@R.person.NULL@+4Pl+%0PlO:@R.person.NULL@%>mi   	ENCLITICS ;
+
+LEXICON CONJ_VTI_SUFFIXES
+! Singular CONJUNCTIVE
+@R.person.NI@+1Sg+%0SgO:@R.person.NI@%>hsi   	ENCLITICS ; 
+@R.person.KI@+2Sg+%0SgO:@R.person.KI@%>hsi  	ENCLITICS ;
+@R.person.OT@+3Sg+%0SgO:@R.person.OT@%>hsi 		ENCLITICS ;
+@R.person.NULL@+4Sg+%0SgO:@R.person.NULL@%>hsi   	ENCLITICS ;
+@R.person.NI@+1Sg+%0PlO:@R.person.NI@%>hsi   	ENCLITICS ; 
+@R.person.KI@+2Sg+%0PlO:@R.person.KI@%>hsi  	ENCLITICS ;
+@R.person.OT@+3Sg+%0PlO:@R.person.OT@%>hsi 		ENCLITICS ;
+@R.person.NULL@+4Sg+%0PlO:@R.person.NULL@%>hsi   	ENCLITICS ;
+! Plural CONJUNCTIVE
+@R.person.NI@+1Pl+%0SgO:@R.person.NI@%>hsinnaani  ENCLITICS ;
+@R.person.NULL@+21Pl+%0SgO:@R.person.NULL@%>hsi 	 ENCLITICS ;
+@R.person.KI@+2Pl+%0SgO:@R.person.KI@%>hsoaayi	 ENCLITICS ;  
+@R.person.OT@+3Pl+%0SgO:@R.person.OT@%>hsi	ENCLITICS ;	
+@R.person.NULL@+4Pl+%0SgO:@R.person.NULL@%>hsi	ENCLITICS ;
+@R.person.NI@+1Pl+%0PlO:@R.person.NI@%>hsinnaani  ENCLITICS ;
+@R.person.NULL@+21Pl+%0PlO:@R.person.NULL@%>hsi 	 ENCLITICS ;
+@R.person.KI@+2Pl+%0PlO:@R.person.KI@%>hsoaayi	 ENCLITICS ;  
+@R.person.OT@+3Pl+%0PlO:@R.person.OT@%>hsi	ENCLITICS ;	
+@R.person.NULL@+4Pl+%0PlO:@R.person.NULL@%>hsi	ENCLITICS ;
+
+LEXICON SUBJ_VTI_SUFFIXES
+! Singular SUBJUNCTIVE
+@R.person.NULL@+1Sg+%0SgO:@R.person.NULL@%>mmiiniki   	ENCLITICS ;
+@R.person.NULL@+2Sg+%0SgO:@R.person.NULL@%>mmiiniki   	ENCLITICS ;
+@R.person.NULL@+3Sg+%0SgO:@R.person.NULL@%>isi   	ENCLITICS ;
+@R.person.NULL@+4Sg+%0SgO:@R.person.NULL@%>isi   	ENCLITICS ;
+@R.person.NULL@+1Sg+%0PlO:@R.person.NULL@%>mmiiniki   	ENCLITICS ;
+@R.person.NULL@+2Sg+%0PlO:@R.person.NULL@%>mmiiniki   	ENCLITICS ;
+@R.person.NULL@+3Sg+%0PlO:@R.person.NULL@%>isi   	ENCLITICS ;
+@R.person.NULL@+4Sg+%0PlO:@R.person.NULL@%>isi   	ENCLITICS ;
+! Plural SUBJUNCTIVE
+@R.person.NULL@+1Pl+%0SgO:@R.person.NULL@%>mmiinnainiki  ENCLITICS ;
+@R.person.NULL@+21Pl+%0SgO:@R.person.NULL@%>mmiinoainiki ENCLITICS ;	
+@R.person.NULL@+2Pl+%0SgO:@R.person.NULL@%>i'ki 		ENCLITICS ;
+@R.person.NULL@+3Pl+%0SgO:@R.person.NULL@%>isi			ENCLITICS ;
+@R.person.NULL@+4Pl+%0SgO:@R.person.NULL@%>isi			ENCLITICS ;
+@R.person.NULL@+1Pl+%0PlO:@R.person.NULL@%>mmiinnainiki  ENCLITICS ;
+@R.person.NULL@+21Pl+%0PlO:@R.person.NULL@%>mmiinoainiki ENCLITICS ;	
+@R.person.NULL@+2Pl+%0PlO:@R.person.NULL@%>i'ki 		ENCLITICS ;
+@R.person.NULL@+3Pl+%0PlO:@R.person.NULL@%>isi			ENCLITICS ;
+@R.person.NULL@+4Pl+%0PlO:@R.person.NULL@%>isi			ENCLITICS ;
+
+LEXICON UNREAL_VTI_SUFFIXES
+! Singular UNREAL
+@R.person.NI@+1Sg+%0SgO:@R.person.NI@%>htopi   	ENCLITICS ;
+@R.person.KI@+2Sg+%0SgO:@R.person.KI@%>htopi   	ENCLITICS ;
+@R.person.NULL@+3Sg+%0SgO:@R.person.NULL@%>mahtopi	ENCLITICS ;
+@R.person.NULL@+4Sg+%0SgO:@R.person.NULL@%>mahtopiyini   ENCLITICS ;
+@R.person.NI@+1Sg+%0PlO:@R.person.NI@%>htopi   	ENCLITICS ;
+@R.person.KI@+2Sg+%0PlO:@R.person.KI@%>htopi   	ENCLITICS ;
+@R.person.NULL@+3Sg+%0PlO:@R.person.NULL@%>mahtopi	ENCLITICS ;
+@R.person.NULL@+4Sg+%0PlO:@R.person.NULL@%>mahtopiyini   ENCLITICS ;	
+! Plural UNREAL
+@R.person.NI@+1Pl+%0SgO:@R.person.NI@%>hpinnaanopi  ENCLITICS ;
+@R.person.NULL@+21Pl+%0SgO:@R.person.NULL@%>'pohtopi 	ENCLITICS ;	
+@R.person.KI@+2Pl+%0SgO:@R.person.KI@%>mahtopiyi	ENCLITICS ;   
+@R.person.NULL@+3Pl+%0SgO:@R.person.NULL@%>mahtopiyi	ENCLITICS ;
+@R.person.NULL@+4Pl+%0SgO:@R.person.NULL@%>mahtopiyini    ENCLITICS ;
+@R.person.NI@+1Pl+%0PlO:@R.person.NI@%>hpinnaanopi  ENCLITICS ;
+@R.person.NULL@+21Pl+%0PlO:@R.person.NULL@%>'pohtopi 	ENCLITICS ;	
+@R.person.KI@+2Pl+%0PlO:@R.person.KI@%>mahtopiyi	ENCLITICS ;   
+@R.person.NULL@+3Pl+%0PlO:@R.person.NULL@%>mahtopiyi	ENCLITICS ;
+@R.person.NULL@+4Pl+%0PlO:@R.person.NULL@%>mahtopiyini    ENCLITICS ;
+
+LEXICON IMP_VTI_SUFFIXES
+! Singular IMPERATIVE
+@R.person.IMP@+2Sg+%0SgO:@R.person.IMP@%>ta	ENCLITICS ;
+@R.person.IMP@+2Sg+%0PlO:@R.person.IMP@%>ti	ENCLITICS ;
+! Plural IMPERATIVE
+@R.person.IMP@+2Pl+%0SgO:@R.person.IMP@%>ka	ENCLITICS ;
+@R.person.IMP@+2Pl+%0PlO:@R.person.IMP@%>ki	ENCLITICS ;
+
+! BELOW ARE THE VTA VERBS
+
+LEXICON VTA_SUFFIXES
+@R.mode.IND@+Ind:@R.mode.IND@	INDEP_VTA_SUFFIXES ;
+@R.mode.CON@+Cnj:@R.mode.CON@	CONJ_VTA_SUFFIXES ;
+@R.mode.SUB@+Sbj:@R.mode.SUB@	SUBJ_VTA_SUFFIXES ;
+@R.mode.IMP@+Imp:@R.mode.IMP@	IMP_VTA_SUFFIXES ;
+
+! I will first list the DIRECT paradigms
+
+LEXICON INDEP_VTA_SUFFIXES
+! Interrogatives DIRECT Singular Object
+@R.person.NI@+1Sg+3SgO+INTERR:@R.person.NI@%>aawaatsiksi # ;
+@R.person.KI@+2Sg+3SgO+INTERR:@R.person.KI@%>aawaatsiksi # ;
+@R.person.NI@+1Sg+4SgO+INTERR:@R.person.NI@%>ayiniwaatsiksi # ;
+@R.person.KI@+2Sg+4SgO+INTERR:@R.person.KI@%>ayiniwaatsiksi # ;
+@R.person.NULL@+3Sg+4SgO+INTERR:@R.person.NULL@%>yiiwaatsiksi # ;
+@R.person.NI@+1Pl+3SgO+INTERR:@R.person.NI@%>annáánawaatsiksi # ;
+@R.person.KI@+2Pl+3SgO+INTERR:@R.person.KI@%>awááwaatsiksi # ;
+@R.person.NULL@+21Pl+3SgO+INTERR:@R.person.NULL@%>ááwa # ;
+@R.person.NI@+1Pl+4SgO+INTERR:@R.person.NI@%>annáániwa # ;
+@R.person.KI@+2Pl+4SgO+INTERR:@R.person.KI@%>awááyiniwa # ;
+@R.person.KI@+21Pl+4SgO+INTERR:@R.person.KI@%>ááwa # ;
+@R.person.NULL@+3Pl+4SgO+INTERR:@R.person.NULL@%>waiksaawa # ;
+! Interrogatives DIRECT Plural Object
+@R.person.NI@+1Sg+3PlO+INTERR:@R.person.NI@%>waiksaawa # ;
+@R.person.KI@+2Sg+3PlO+INTERR:@R.person.KI@%>waiksaawa # ;
+@R.person.NI@+1Sg+4PlO+INTERR:@R.person.NI@%>waiksaawa # ;
+@R.person.KI@+2Sg+4PlO+INTERR:@R.person.KI@%>waiksaawa # ;
+@R.person.NULL@+3Sg+4PlO+INTERR:@R.person.NULL@%>waiksaawa # ;
+@R.person.NULL@+3Sg+4PlO+INTERR:@R.person.NULL@%>waiksaawa # ;
+@R.person.KI@+1Pl+2PlO+INTERR:@R.person.KI@%>ohpinnáánawa # ;	
+@R.person.NI@+1Pl+3PlO+INTERR:@R.person.NI@%>annáániwa # ;	
+@R.person.NI@+1Pl+4PlO+INTERR:@R.person.NI@%>annáániwa # ;	
+@R.person.KI@+2Pl+3PlO+INTERR:@R.person.KI@%>awááyiwa # ;
+@R.person.KI@+2Pl+4PlO+INTERR:@R.person.KI@%>awááyiwa # ;
+@R.person.NULL@+21Pl+3PlO+INTERR:@R.person.NULL@%>ááyiwa # ;
+! Interrogatives INVERSE Singular Object
+@R.person.NI@+3Sg+1SgO+INTERR:@R.person.NI@%>okaatsiksi # ;
+@R.person.KI@+3Sg+2SgO+INTERR:@R.person.KI@%>okaatsiksi # ;
+@R.person.NI@+3Sg+1SgO+INTERR:@R.person.NI@%>okaatsiksi # ;
+@R.person.KI@+3Sg+2SgO+INTERR:@R.person.KI@%>okaatsiksi # ;
+@R.person.NULL@+4Sg+3SgO+INTERR:@R.person.NULL@%>okaatsiksi # ;
+@R.person.NULL@+4Sg+3SgO+INTERR:@R.person.NULL@%>okaatsiksi # ;
+@R.person.NI@+3Pl+1SgO+INTERR:@R.person.NI@%>okaiksaawa # ;
+@R.person.KI@+3Pl+2SgO+INTERR:@R.person.KI@%>okaiksaawa # ;
+@R.person.NI@+4Pl+1SgO+INTERR:@R.person.NI@%>okaiksaawa # ;
+@R.person.KI@+4Pl+2SgO+INTERR:@R.person.KI@%>okaiksaawa # ;
+@R.person.NULL@+4Sg+3PlO+INTERR:@R.person.NULL@%>okaiksaawa # ;
+@R.person.NULL@+4Pl+3PlO+INTERR:@R.person.NULL@%>okaiksaawa # ;
+! Interrogatives INVERSE Plural Object
+@R.person.KI@+2Sg+1PlO+INTERR:@R.person.KI@%>okihpinnaana # ;
+@R.person.NI@+3Sg+1PlO+INTERR:@R.person.NI@%>okinnáánawa # ;
+@R.person.KI@+3Sg+2PlO+INTERR:@R.person.KI@%>okoááwa # ;
+@R.person.KI@+3Sg+21PlO+INTERR:@R.person.KI@%>okááwa # ;
+@R.person.NI@+4Sg+1PlO+INTERR:@R.person.NI@%>okinnáániniwa # ;
+@R.person.KI@+4Sg+2PlO+INTERR:@R.person.KI@%>okoááyiniwa # ;
+@R.person.KI@+4Sg+3PlO+INTERR:@R.person.KI@%>okawááyiniwa # ;
+@R.person.KI@+4Sg+21PlO+INTERR:@R.person.KI@%>okiyiniwa # ;
+@R.person.NULL@+4Sg+3SgO+INTERR:@R.person.NULL@%>okaiksaawa # ;
+@R.person.NI@+3Pl+1PlO+INTERR:@R.person.NI@%>okinnáániwa # ;
+@R.person.KI@+3Pl+2PlO+INTERR:@R.person.KI@%>okoááyiwa # ;
+@R.person.KI@+3Pl+21PlO+INTERR:@R.person.KI@%>okiyiwa # ;
+@R.person.NI@+4Pl+1PlO+INTERR:@R.person.NI@%>okinnáániwa # ;
+@R.person.KI@+4Pl+2PlO+INTERR:@R.person.KI@%>okoááyiwa # ;
+@R.person.KI@+4Pl+3PlO+INTERR:@R.person.KI@%>okoááyiwa # ;
+@R.person.KI@+4Pl+21PlO+INTERR:@R.person.KI@%>okiyiwa # ;
+@R.person.NULL@+4Pl+3SgO+INTERR:@R.person.NULL@%>okaiksaawa # ;
+! Direct, Singular Subject and Object, INDEPENDENT
+@R.person.KI@+1Sg+2SgO:@R.person.KI@%>o   		ANIM_INTERR ;	
+@R.person.NI@+1Sg+3SgO:@R.person.NI@%>aawa   	ENCLITICS ;
+@R.person.NI@+1Sg+4SgO:@R.person.NI@%>aayini   		ENCLITICS ;
+@R.person.KI@+2Sg+3SgO:@R.person.KI@%>aawa   		ENCLITICS ;
+@R.person.KI@+2Sg+4SgO:@R.person.KI@%>aayini		ENCLITICS ;
+@R.person.KI@+2Sg+4PlO:@R.person.KI@%>aayini		ENCLITICS ;
+@R.person.NULL@+3Sg+4SgO:@R.person.NULL@%>yiiwa   	ENCLITICS ;
+@R.person.NULL@+4Sg+5Sg/PlO:@R.person.NULL@%>yiiyina   	ENCLITICS ;
+! Direct, Plural Subject, Singular Object, INDEPENDENT
+@R.person.KI@+1Pl+2SgO:@R.person.KI@%>ohpinnaana  		ANIM_INTERR ;	
+@R.person.NI@+1Pl+3SgO:@R.person.NI@%>annaana   	ENCLITICS ;
+@R.person.NI@+1Pl+4SgO:@R.person.NI@%>annaanini   		ENCLITICS ;	
+@R.person.KI@+2Pl+3SgO:@R.person.KI@%>awaawa   		ENCLITICS ;
+@R.person.KI@+2Pl+4SgO:@R.person.KI@%>awaayini		ENCLITICS ;
+@R.person.NULL@+21Pl+3SgO:@R.person.NULL@%>aawa   	ENCLITICS ;
+@R.person.NULL@+21Pl+4SgO:@R.person.NULL@%>aayini   	ENCLITICS ;
+@R.person.NULL@+3Pl+4SgO:@R.person.NULL@%>yiiyi   	ENCLITICS ;
+! Direct, Plural Subject and Object, INDEPENDENT
+@R.person.KI@+1Pl+2PlO:@R.person.KI@%>ohpinnaana  		ANIM_INTERR ;	
+@R.person.NI@+1Pl+3PlO:@R.person.NI@%>annaani  ENCLITICS ;	
+@R.person.NI@+1Pl+4PlO:@R.person.NI@%>annaani  ENCLITICS ;	
+@R.person.KI@+2Pl+3PlO:@R.person.KI@%>awaayi	 ENCLITICS ;
+@R.person.KI@+2Pl+4PlO:@R.person.KI@%>awaayi	 ENCLITICS ;
+@R.person.NULL@+21Pl+3PlO:@R.person.NULL@%>aayi  ENCLITICS ;
+@R.person.NULL@+21Pl+4PlO:@R.person.NULL@%>aayi  ENCLITICS ;
+@R.person.NULL@+3Pl+4PlO:@R.person.NULL@%>yiiyi   	ENCLITICS ;
+@R.person.NULL@+4Pl+5Sg/PlO:@R.person.NULL@%>yiiyi   	ENCLITICS ;
+! Direct, Plural Object, Singular Subject
+@R.person.KI@+1Sg+2PlO:@R.person.KI@%>ohpoaawa  		ANIM_INTERR ;	
+@R.person.NI@+1Sg+3PlO:@R.person.NI@%>aayi   	ENCLITICS ;
+@R.person.NI@+1Sg+4PlO:@R.person.NI@%>aayi   	ENCLITICS ;
+@R.person.KI@+2Sg+3PlO:@R.person.KI@%>aayi   		ENCLITICS ;
+@R.person.KI@+2Sg+4PlO:@R.person.KI@%>aayi   		ENCLITICS ;
+@R.person.NULL@+3Sg+4PlO:@R.person.NULL@%>yiiwa   	ENCLITICS ;
+@R.person.NULL@+4Sg+5Sg/PlO:@R.person.NULL@%>yiiyini   	ENCLITICS ;
+! Inverse, Singular Subject and Object, INDEPENDENT
+@R.person.KI@+2Sg+1SgO:@R.person.KI@%>oki   		ANIM_INTERR ;	
+@R.person.KI@+3Sg+2SgO:@R.person.KI@%>oka   	ENCLITICS ;
+@R.person.NI@+3Sg+1SgO:@R.person.NI@%>oka  		ENCLITICS ;	
+@R.person.OT@+4Sg+3SgO:@R.person.OT@%>oka   		ENCLITICS ;
+@R.person.KI@+4Sg+2SgO:@R.person.KI@%>okini   	ENCLITICS ;
+@R.person.NI@+4Sg+1SgO:@R.person.NI@%>okini   	ENCLITICS ;
+@R.person.OT@+4Sg+3SgO:@R.person.OT@%>oka   		ENCLITICS ;
+@R.person.OT@+5Sg/Pl+4SgO:@R.person.OT@%>okini   	ENCLITICS ;
+! Inverse, Plural Subject, Singular Object, INDEPENDENT
+@R.person.KI@+2Pl+1SgO:@R.person.KI@%>okihpoaawa  		ANIM_INTERR ;
+@R.person.NI@+3Pl+1SgO:@R.person.NI@%>oki   	ENCLITICS ;
+@R.person.KI@+3Pl+2SgO:@R.person.KI@%>oki   	ENCLITICS ;
+@R.person.NI@+4Pl+1SgO:@R.person.NI@%>oki   	ENCLITICS ;
+@R.person.KI@+4Pl+2SgO:@R.person.KI@%>oki   	ENCLITICS ;
+@R.person.OT@+4Pl+3SgO:@R.person.OT@%>oka   		ENCLITICS ;
+@R.person.NULL@+4Pl+5Sg/PlO:@R.person.NULL@%>yiiyini   		ENCLITICS ;
+! Inverse, Plural Subject and Object, INDEPENDENT
+@R.person.KI@+2Pl+1PlO:@R.person.KI@%>okihpinnaana  ANIM_INTERR ;
+@R.person.NULL@+3Pl+21PlO:@R.person.NULL@%>okiyi	 ENCLITICS ;
+@R.person.NI@+3Pl+1PlO:@R.person.NI@%>okinnaani  ENCLITICS ;
+@R.person.KI@+3Pl+2PlO:@R.person.KI@%>okoaayi  ENCLITICS ;
+@R.person.OT@+4Pl+3PlO:@R.person.OT@%>okoaayi  ENCLITICS ;
+@R.person.KI@+4Pl+2PlO:@R.person.KI@%>okoaayi  ENCLITICS ;
+@R.person.NULL@+4Pl+21PlO:@R.person.NULL@%>okiyi  ENCLITICS ;
+@R.person.NI@+4Pl+1PlO:@R.person.NI@%>okinnani  ENCLITICS ;
+@R.person.OT@+5Sg/Pl+4PlO:@R.person.OT@%>okoaayini  ENCLITICS ;
+! Inverse, Plural Object, Singular Subject, INDEPENDENT
+@R.person.KI@+2Sg+1PlO:@R.person.KI@%>okihpinnaana  ANIM_INTERR ; 
+@R.person.KI@+3Sg+2PlO:@R.person.KI@%>okoaawa   	ENCLITICS ;
+@R.person.NI@+3Sg+1PlO:@R.person.NI@%>okinnaani 		ENCLITICS ;	
+@R.person.NI@+3Sg+1PlO:@R.person.NI@%>okinnaan 		ENCLITICS ;	
+@R.person.OT@+4Sg+3PlO:@R.person.OT@%>okoaayi   	ENCLITICS ;
+@R.person.KI@+4Sg+2PlO:@R.person.KI@%>okini   	ENCLITICS ;
+@R.person.NULL@+4Sg+21PlO:@R.person.NULL@%>okiyini   	ANIM_INTERR ;
+@R.person.NI@+4Sg+1PlO:@R.person.NI@%>okini   	ANIM_INTERR ;
+! Unspecified INDEPENDENT
+@R.person.NI@+Unspec+1SgO:@R.person.NI@%>okoo   	ANIM_INTERR ;
+@R.person.NI@+Unspec+1PlO:@R.person.NI@%>otsspinnaana   	ANIM_INTERR ;
+@R.person.KI@+Unspec+2SgO:@R.person.KI@%>okoo   	ANIM_INTERR ;
+@R.person.KI@+Unspec+2PlO:@R.person.KI@%>otsspoaawa   	ANIM_INTERR ;
+@R.person.NULL@+Unspec+21PlO:@R.person.NULL@%>otssp  	ANIM_INTERR ;
+@R.person.NULL@+Unspec+3SgO:@R.person.NULL@%>aawa   	ENCLITICS ;
+@R.person.NULL@+Unspec+3PlO:@R.person.NULL@%>aayi   	ENCLITICS ;
+@R.person.NULL@+Unspec+4SgO:@R.person.NULL@%>aayini   	ENCLITICS ;
+@R.person.NULL@+Unspec+4PlO:@R.person.NULL@%>aayi   	ENCLITICS ;
+
+LEXICON CONJ_VTA_SUFFIXES
+! Direct, Singular Subject and Object, CONJUNCTIVE
+@R.person.KI@+1Sg+2SgO:@R.person.KI@%>ohsi   	ENCLITICS ;	
+@R.person.NI@+1Sg+3SgO:@R.person.NI@%>ahsi   	ENCLITICS ;
+@R.person.NI@+1Sg+4SgO:@R.person.NI@%>ahsi   	ENCLITICS ;
+@R.person.KI@+2Sg+3SgO:@R.person.KI@%>ahsi   		ENCLITICS ;
+@R.person.KI@+2Sg+4SgO:@R.person.KI@%>ahsini   		ENCLITICS ;
+@R.person.OT@+3Sg+4SgO:@R.person.OT@%>ahsi   		ENCLITICS ;
+! Direct, Plural Subject, Singular Object, CONJUNCTIVE
+@R.person.KI@+1Pl+2SgO:@R.person.KI@%>ohsinnaani   		ENCLITICS ;
+@R.person.NI@+1Pl+3SgO:@R.person.NI@%>ahsinnaani   		ENCLITICS ;
+@R.person.NI@+1Pl+4SgO:@R.person.NI@%>ahsinnaanini   		ENCLITICS ;
+@R.person.NULL@+21Pl+3SgO:@R.person.NULL@%>ahsi   		ENCLITICS ;
+@R.person.NULL@+21Pl+4SgO:@R.person.NULL@%>ahsini   		ENCLITICS ;
+@R.person.KI@+2Pl+3SgO:@R.person.KI@%>ahsoaayi   		ENCLITICS ;
+@R.person.KI@+2Pl+4SgO:@R.person.KI@%>ahsoaayini   		ENCLITICS ;
+@R.person.OT@+3Pl+4SgO:@R.person.OT@%>ahsi   		ENCLITICS ;
+! Direct, Plural Subject and Object, CONJUNCTIVE
+@R.person.KI@+1Pl+2PlO:@R.person.KI@%>ohsinnaani   		ENCLITICS ;
+@R.person.NI@+1Pl+3PlO:@R.person.NI@%>ahsinnaani   		ENCLITICS ;
+@R.person.NI@+1Pl+4PlO:@R.person.NI@%>ahsinnaani   		ENCLITICS ;
+@R.person.NULL@+21Pl+3PlO:@R.person.NULL@%>ahsi   		ENCLITICS ;
+@R.person.NULL@+21Pl+4PlO:@R.person.NULL@%>ahsi   		ENCLITICS ;
+@R.person.KI@+2Pl+3PlO:@R.person.KI@%>ahsoaayi   		ENCLITICS ;
+@R.person.KI@+2Pl+4PlO:@R.person.KI@%>ahsoaayi   		ENCLITICS ;
+@R.person.OT@+3Pl+4PlO:@R.person.OT@%>ahsi   		ENCLITICS ;
+! Direct, Singular Subject, Plural Object, CONJUNCTIVE
+@R.person.KI@+1Sg+2PlO:@R.person.KI@%>ohsoaayi   		ENCLITICS ;
+@R.person.NI@+1Sg+3PlO:@R.person.NI@%>ahsi   	ENCLITICS ;
+@R.person.NI@+1Sg+4PlO:@R.person.NI@%>ahsi   	ENCLITICS ;
+@R.person.KI@+2Sg+3PlO:@R.person.KI@%>ahsi   		ENCLITICS ;
+@R.person.KI@+2Sg+4PlO:@R.person.KI@%>ahsi   		ENCLITICS ;
+@R.person.OT@+3Sg+4PlO:@R.person.OT@%>ahsi   		ENCLITICS ;
+! Inverse, Singular Subject and Object, CONJUNCTIVE
+@R.person.KI@+2Sg+1SgO:@R.person.KI@%>okssi   	ENCLITICS ;	
+@R.person.KI@+3Sg+2SgO:@R.person.KI@%>yssi   	ENCLITICS ;
+@R.person.NI@+3Sg+1SgO:@R.person.NI@%>yssi   		ENCLITICS ;
+@R.person.OT@+4Sg+3SgO:@R.person.OT@%>yssi   		ENCLITICS ;
+! Inverse, Plural Subject and Singular Object, CONJUNCTIVE
+@R.person.KI@+2Pl+1SgO:@R.person.KI@%>okssoaayi   	ENCLITICS ;	
+@R.person.NI@+3Pl+1SgO:@R.person.NI@%>yssinnaani   		ENCLITICS ;
+@R.person.KI@+3Pl+2SgO:@R.person.KI@%>yssi   	ENCLITICS ;
+@R.person.OT@+4Pl+3SgO:@R.person.OT@%>yssi   		ENCLITICS ;
+! Inverse, Plural Subject and Object, CONJUNCTIVE
+@R.person.KI@+2Pl+1PlO:@R.person.KI@%>okssinnaani   	ENCLITICS ;	
+@R.person.KI@+3Pl+2PlO:@R.person.KI@%>yssoaayi   	ENCLITICS ;
+@R.person.NI@+3Pl+21PlO:@R.person.NI@%>okssi   		ENCLITICS ;
+@R.person.NI@+3Pl+1PlO:@R.person.NI@%>yssinnaani   		ENCLITICS ;
+@R.person.OT@+4Pl+3PlO:@R.person.OT@%>yssi   		ENCLITICS ;
+@R.person.OT@+4Pl+4PlO:@R.person.OT@%>yssi   		ENCLITICS ;
+! Inverse, Singular Subject and Plural Object, CONJUNCTIVE
+@R.person.KI@+2Sg+1PlO:@R.person.KI@%>okssinnaani   	ENCLITICS ;
+@R.person.NI@+3Sg+1PlO:@R.person.NI@%>yssinnaani   	ENCLITICS ;
+@R.person.KI@+3Sg+2PlO:@R.person.KI@%>yssoaayi   	ENCLITICS ;
+@R.person.OT@+3Sg+2PlO:@R.person.OT@%>aahsi   	ENCLITICS ;
+@R.person.OT@+4Sg+3PlO:@R.person.OT@%>yssi   	ENCLITICS ;
+@R.person.OT@+4Sg+4PlO:@R.person.OT@%>yssi   	ENCLITICS ;
+! Unspecified Subject, Conjunctive
+@R.person.NI@+Unspec+1SgO:@R.person.NI@%>okoohsi   	ENCLITICS ;	
+@R.person.NI@+Unspec+1PlO:@R.person.NI@%>otssinnaani   	ENCLITICS ;
+@R.person.KI@+Unspec+2SgO:@R.person.KI@%>okoohsi   	ENCLITICS ;
+@R.person.KI@+Unspec+2PlO:@R.person.KI@%>otssoaayi   	ENCLITICS ;
+@R.person.NULL@+Unspec+21PlO:@R.person.NULL@%>otssi   	ENCLITICS ;
+@R.person.NULL@+Unspec+3SgO:@R.person.NULL@%>aahsi   	ENCLITICS ;
+@R.person.NULL@+Unspec+3PlO:@R.person.NULL@%>aahsi   	ENCLITICS ;
+@R.person.NULL@+Unspec+4SgO:@R.person.NULL@%>aahsini   	ENCLITICS ;
+@R.person.NULL@+Unspec+4PlO:@R.person.NULL@%>aahsi   	ENCLITICS ;
+
+LEXICON SUBJ_VTA_SUFFIXES
+! Direct, Singular Subject and Object, SUBJUNCTIVE
+@R.person.NULL@+1Sg+2SgO:@R.person.NULL@%>iniki   	ENCLITICS ;	
+@R.person.NULL@+1Sg+3SgO:@R.person.NULL@%>aniki   	ENCLITICS ;
+@R.person.NULL@+2Sg+3SgO:@R.person.NULL@%>aniki   	ENCLITICS ;
+@R.person.NULL@+3Sg+4SgO:@R.person.NULL@%>asi   	ENCLITICS ;	
+! Direct, Plural Subject, Singular Object, SUBJUNCTIVE
+@R.person.NULL@+1Pl+2SgO:@R.person.NULL@%>innaaniki   	ENCLITICS ;
+@R.person.NULL@+1Pl+3SgO:@R.person.NULL@%>ainnaaniki   	ENCLITICS ;
+@R.person.NULL@+2Pl+3SgO:@R.person.NULL@%>ainoainiki   	ENCLITICS ;
+@R.person.NULL@+21Pl+3SgO:@R.person.NULL@%>ahki   	ENCLITICS ;
+@R.person.NULL@+3Pl+4SgO:@R.person.NULL@%>asi   	ENCLITICS ;	
+! Direct, Plural Subject and Object, SUBJUNCTIVE
+@R.person.NULL@+1Pl+2PlO:@R.person.NULL@%>innaaniki   	ENCLITICS ;
+@R.person.NULL@+1Pl+3PlO:@R.person.NULL@%>ainnaaniki   	ENCLITICS ;
+@R.person.NULL@+2Pl+3PlO:@R.person.NULL@%>ainainiki   	ENCLITICS ;
+@R.person.NULL@+21Pl+3PlO:@R.person.NULL@%>ahki   	ENCLITICS ;
+@R.person.NULL@+3Pl+4PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;	
+! Direct, Singular Subject, Plural Object, SUBJUNCTIVE
+@R.person.NULL@+1Sg+2PlO:@R.person.NULL@%>inoainiki   	ENCLITICS ;
+@R.person.NULL@+1Sg+3PlO:@R.person.NULL@%>ainiki   	ENCLITICS ;
+@R.person.NULL@+2Sg+3PlO:@R.person.NULL@%>ainiki   	ENCLITICS ;
+@R.person.NULL@+3Sg+4PlO:@R.person.NULL@%>asi 	ENCLITICS ;	
+! Inverse, Singular Subject and Object, SUBJUNCTIVE
+@R.person.NULL@+2Sg+1SgO:@R.person.NULL@%>okiiniki   	ENCLITICS ;	
+@R.person.NULL@+3Sg+1SgO:@R.person.NULL@%>otsiiniki   	ENCLITICS ;
+@R.person.NULL@+3Sg+2SgO:@R.person.NULL@%>otsiiniki   	ENCLITICS ;
+@R.person.NULL@+4Sg+3SgO:@R.person.NULL@%>otsiiniki   	ENCLITICS ;
+! Inverse, Plural Subject and Singular Object, SUBJUNCTIVE
+@R.person.NULL@+2Pl+1SgO:@R.person.NULL@%>okiinoainiki   	ENCLITICS ;
+@R.person.NULL@+3Pl+1SgO:@R.person.NULL@%>otsiiniki   	ENCLITICS ;
+@R.person.NULL@+3Pl+2SgO:@R.person.NULL@%>otsiiniki   	ENCLITICS ;
+@R.person.NULL@+4Pl+3SgO:@R.person.NULL@%>otsiiniki   	ENCLITICS ;
+! Inverse, Plural Subject and Object, SUBJUNCTIVE
+@R.person.NULL@+2Pl+1PlO:@R.person.NULL@%>okinnaaniki   	ENCLITICS ;	
+@R.person.NULL@+3Pl+2PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;
+@R.person.NULL@+3Pl+1PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;
+@R.person.NULL@+3Pl+1PlO:@R.person.NULL@%>otsiinnaaniki   	ENCLITICS ;
+@R.person.NULL@+3Pl+21PlO:@R.person.NULL@%>okisi   	ENCLITICS ;
+@R.person.NULL@+4Pl+3PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;
+! Inverse, Singular Subject and Plural Object, CONJUNCTIVE
+@R.person.NULL@+2Sg+1PlO:@R.person.NULL@%>okinnaaniki   	ENCLITICS ;
+@R.person.NULL@+3Sg+1PlO:@R.person.NULL@%>okinnaaniki   	ENCLITICS ;	
+@R.person.NULL@+3Sg+2PlO:@R.person.NULL@%>otsinoainiki  	ENCLITICS ;
+@R.person.NULL@+3Sg+21PlO:@R.person.NULL@%>okisi   	ENCLITICS ;
+@R.person.NULL@+4Sg+3PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;
+! Unspecified Subject, SUBJUNCTIVE
+@R.person.NULL@+Unspec+1SgO:@R.person.NULL@%>okoiniki   	ENCLITICS ;	
+@R.person.NULL@+Unspec+1PlO:@R.person.NULL@%>okoinnaaniki   	ENCLITICS ;
+@R.person.NULL@+Unspec+2SgO:@R.person.NULL@%>okoiniki   	ENCLITICS ;	
+@R.person.NULL@+Unspec+2PlO:@R.person.NULL@%>okoinoainiki		ENCLITICS ;
+@R.person.NULL@+Unspec+21PlO:@R.person.NULL@%>otsski   	ENCLITICS ;
+@R.person.NULL@+Unspec+3SgO:@R.person.NULL@%>aahki   	ENCLITICS ;
+@R.person.NULL@+Unspec+3PlO:@R.person.NULL@%>aahki   	ENCLITICS ;
+
+LEXICON IMP_VTA_SUFFIXES
+! Singular IMPERATIVE
+@R.person.IMP@+2Sg+1SgO:@R.person.IMP@%>okit         ENCLITICS ;
+@R.person.IMP@+2Sg+1PlO:@R.person.IMP@%>aokinnaana ENCLITICS ;
+@R.person.IMP@+2Sg+3SgO:@R.person.IMP@%>is        ENCLITICS ;
+@R.person.IMP@+2Sg+3PlO:@R.person.IMP@%>is        ENCLITICS ;
+! Plural IMPERATIVE
+@R.person.IMP@+2Pl+1SgO:@R.person.IMP@%>okik      ENCLITICS ;
+@R.person.IMP@+2Pl+1PlO:@R.person.IMP@%>aokinnaana ENCLITICS ;
+@R.person.IMP@+2Pl+3SgO:@R.person.IMP@%>ok        ENCLITICS ;
+@R.person.IMP@+2Pl+3PlO:@R.person.IMP@%>ok        ENCLITICS ;
+
+! The following lexicons contain the suffixes used to formulate questions. Otherwise called interrogatives.
+! For more information, see Frantz 2017 Chapter 21.
+
+LEXICON ANIM_INTERR
+0 # ;
++INTERR:%>hpa # ;
+
+! The following lexicon contains the enclitic pronouns or attached pronouns from Frantz 2017 Chapter 9
+! Using the term D3Sg follows Frantz in distinguishing between the 3rd person pronoun used when there
+! is only one argument (Distinct third person singular), and just the regular 3rd person pronoun.
+! They are not marked as subject or object because they can be either.
+! This lexicon goes to a bound lexicon which does not count the number of enclitics, but allows the model to add 1-2 
+! cliticized pronouns.
+
+LEXICON ENCLITICS
+0 # ;
++PRO+3/%0:%>yaawa ENCLITICS_BOUND ;
++PRO+3Pl:%>waiksi ENCLITICS_BOUND ;
++PRO+D3Sg:%>áyi ENCLITICS_BOUND ;
++PRO+%0Pl:%>waistsi ENCLITICS_BOUND ;
+
+LEXICON ENCLITICS_BOUND
+0 # ;
++PRO+3/%0:%>yaawa # ;
++PRO+3Pl:%>waiksi # ;
++PRO+D3Sg:%>áyi # ;
++PRO+%0Pl:%>waistsi # ;
+
+LEXICON VERB_DER_NOM_SUFFIXES
++Der/Nom:0                     NOUN_SUFFIXES ;
++Der/Nom2:%>n                  NOUN_SUFFIXES ;
++Der/Nom3:%>i2hsin             NOUN_SUFFIXES ;
++Der/Nom4:%>hp                 NOUN_SUFFIXES ;
++Der/Nom5:%>o'p                NOUN_SUFFIXES ;
+
+! Below is the set of verb suffixes that occur when a noun undergoes the verbalization process. (aakiiyiwa 'she is a woman').
+! They are only instransitive verbs. Some things to note. I have only included the person suffixes, not the derivational suffixes.
+! This verb paradigm does not include dependent nouns.
+
+LEXICON N_VAI_SUFFIXES !! [OLD: VAI_SUFFIXES]
+@P.mode.IND@+Ind:@P.mode.IND@ N_INDEP_VAI_SUFFIXES ; !! [OLD: INDEP_VAI_SUFFIXES]
+@P.mode.CON@+Cnj:@P.mode.CON@ N_CONJ_VAI_SUFFIXES ; !! [OLD: CONJ_VAI_SUFFIXES]
+@P.mode.SUB@+Sbj:@P.mode.SUB@ N_SUBJ_VAI_SUFFIXES ; !! [OLD: SUBJ_VAI_SUFFIXES]
+@P.mode.IRR@+Irr:@P.mode.IRR@ N_UNREAL_VAI_SUFFIXES ; !! [OLD: UNREAL_VAI_SUFFIXES]
+@P.mode.IMP@+Imp:@P.mode.IMP@ N_IMP_VAI_SUFFIXES ; !! [OLD: IMP_VAI_SUFFIXES]
+
+LEXICON N_INDEP_VAI_SUFFIXES !! [OLD: INDEP_VAI_SUFFIXES]
+! Third Person Interrogatives
+@R.person.NULL@+3Sg+INTERR:@R.person.NULL@%>waatsiksi # ;
+@R.person.NULL@+3Pl+INTERR:@R.person.NULL@%>waiksaawa # ;
+! Singular INDEPENDENT
+@R.person.NI@+1Sg:@R.person.NI@%>yi N_ANIM_INTERR ; !! [OLD: ANIM_INTERR]
+@R.person.KI@+2Sg:@R.person.KI@%>yi N_ANIM_INTERR ; !! [OLD: ANIM_INTERR]
+@R.person.NULL@+3Sg:@R.person.NULL@%>wa N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+4Sg:@R.person.NULL@%>yini N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural INDEPENDENT
+@R.person.NI@+1Pl:@R.person.NI@%>yihpinnaana N_ANIM_INTERR ; !! [OLD: ANIM_INTERR]
+@R.person.NULL@+21Pl:@R.person.NULL@%>yio'pa N_ANIM_INTERR ; !! [OLD: ANIM_INTERR]
+@R.person.KI@+2Pl:@R.person.KI@%>yihpoaawa N_ANIM_INTERR ; !! [OLD: ANIM_INTERR]
+@R.person.NULL@+3Pl:@R.person.NULL@%>yi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+4Pl:@R.person.NULL@%>yi N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+LEXICON N_CONJ_VAI_SUFFIXES !! [OLD: CONJ_VAI_SUFFIXES]
+! Singular CONJUNCTIVE
+@R.person.NI@+1Sg:@R.person.NI@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.KI@+2Sg:@R.person.KI@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.OT@+3Sg:@R.person.OT@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+4Sg:@R.person.NULL@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural CONJUNCTIVE
+@R.person.NI@+1Pl:@R.person.NI@%>yihsinnaana N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NI@+1Pl:@R.person.NI@%>yihsinnaan N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+21Pl:@R.person.NULL@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.KI@+2Pl:@R.person.KI@%>yihsoaayi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.OT@+3Pl:@R.person.OT@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+4Pl:@R.person.NULL@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+LEXICON N_SUBJ_VAI_SUFFIXES !! [OLD: SUBJ_VAI_SUFFIXES]
+! Singular SUBJUNCTIVE
+@R.person.NULL@+1Sg:@R.person.NULL@%>yiniki N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+2Sg:@R.person.NULL@%>yiniki N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+3Sg:@R.person.NULL@%>yisi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+4Sg:@R.person.NULL@%>yisi N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural SUBJUNCTIVE
+@R.person.NULL@+1Pl:@R.person.NULL@%>yinnaaniki N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+21Pl:@R.person.NULL@%>yinoainiki N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+2Pl:@R.person.NULL@%>yio'ki N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+3Pl:@R.person.NULL@%>yisi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+4Pl:@R.person.NULL@%>yisi N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+LEXICON N_UNREAL_VAI_SUFFIXES !! [OLD: UNREAL_VAI_SUFFIXES]
+! Singular UNREAL
+@R.person.NI@+1Sg:@R.person.NI@%>yihtopi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.KI@+2Sg:@R.person.KI@%>yihtopi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+3Sg:@R.person.NULL@%>yiwahtopi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+4Sg:@R.person.NULL@%>yiwahtopini N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural UNREAL
+@R.person.NI@+1Pl:@R.person.NI@%>yihpinnaanopi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+21Pl:@R.person.NULL@%>yihpoaawopi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.KI@+2Pl:@R.person.KI@%>yiwahtopiyi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+3Pl:@R.person.NULL@%>yiwahtopiyi N_ENCLITICS ; !! [OLD: ENCLITICS]
+@R.person.NULL@+4Pl:@R.person.NULL@%>yiwahtopiyini N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+LEXICON N_IMP_VAI_SUFFIXES !! [OLD: IMP_VAI_SUFFIXES]
+! Singular IMPERATIVE
+@R.person.IMP@+2Sg:@R.person.IMP@%>t N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural IMPERATIVE
+@R.person.IMP@+2Pl:@R.person.IMP@%>k N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+! BELOW ARE THE VII SUFFIXES
+
+LEXICON N_VII_SUFFIXES !! [OLD: VII_SUFFIXES]
+@R.mode.IND@+Ind:@R.mode.IND@ N_INDEP_VII_SUFFIXES ; !! [OLD: INDEP_VII_SUFFIXES]
+@R.mode.CON@+Cnj:@R.mode.CON@ N_CONJ_VII_SUFFIXES ; !! [OLD: CONJ_VII_SUFFIXES]
+@R.mode.SUB@+Sbj:@R.mode.SUB@ N_SUBJ_VII_SUFFIXES ; !! [OLD: SUBJ_VII_SUFFIXES]
+@R.mode.IRR@+Irr:@R.mode.IRR@ N_UNREAL_VII_SUFFIXES ; !! [OLD: UNREAL_VII_SUFFIXES]
+
+LEXICON N_INDEP_VII_SUFFIXES !! [OLD: INDEP_VII_SUFFIXES]
+! Inanimate Interrogatives
+@R.person.NULL@+%0Sg+INTERR:@R.person.NULL@%>waatsiksi # ;
+@R.person.NULL@+%0Pl+INTERR:@R.person.NULL@%>waistsaawa # ;
+! Singular INDEPENDENT
+@R.person.NULL@+%0Sg:@R.person.NULL@%>wa N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural INDEPENDENT
+@R.person.NULL@+%0Pl:@R.person.NULL@%>yi N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+LEXICON N_CONJ_VII_SUFFIXES !! [OLD: CONJ_VII_SUFFIXES]
+! Singular CONJUNCTIVE
+@R.person.OT@+%0Sg:@R.person.OT@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural CONJUNCTIVE
+@R.person.OT@+%0Pl:@R.person.OT@%>yihsi N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+LEXICON N_SUBJ_VII_SUFFIXES !! [OLD: SUBJ_VII_SUFFIXES]
+! Singular SUBJUNCTIVE
+@R.person.NULL@+%0Sg:@R.person.NULL@%>yisi N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural SUBJUNCTIVE
+@R.person.NULL@+%0Pl:@R.person.NULL@%>yisi N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+LEXICON N_UNREAL_VII_SUFFIXES !! [OLD: UNREAL_VII_SUFFIXES]
+! Singular UNREAL
+@R.person.NULL@+%0Sg:@R.person.NULL@%>yiwahtopi N_ENCLITICS ; !! [OLD: ENCLITICS]
+! Plural UNREAL  
+@R.person.NULL@+%0Pl:@R.person.NULL@%>yiwahtopiyi N_ENCLITICS ; !! [OLD: ENCLITICS]
+
+LEXICON N_ANIM_INTERR !! [OLD: ANIM_INTERR]
+0 # ;
++INTERR:%>hpa # ;
+
+! The following lexicon contains the enclitic pronouns or attached pronouns from Frantz 2017 Chapter 9
+! Using the term D3Sg follows Frantz in distinguishing between the 3rd person pronoun used when there
+! is only one argument (Distinct third person singular), and just the regular 3rd person pronoun.
+! They are not marked as subject or object because they can be either.
+
+LEXICON N_ENCLITICS !! [OLD: ENCLITICS]
+0 # ;
++PRO+3/%0:%>aawa # ;
++PRO+3Pl:%>aiksi # ;
++PRO+D3Sg:%>áyi # ;
++PRO+%0Pl:%>aistsi # ;
+
+!! END OF VERBINESS
+
