@@ -3,7 +3,7 @@ LEXICON NA
 @R.class.VAI@+NA+Der/VAI+VAI:@R.class.VAI@0 N_VAI_SUFFIXES  ; 
 
 LEXICON NA_IM
-@P.im.IM@@P.pos.NA@@R.pos.NOUN@+NA:@P.im.IM@@P.class.NA@@R.pos.NOUN@  IM ;
+@P.im.IM@@P.class.NA@@R.pos.NOUN@+NA:@P.im.IM@@P.class.NA@@R.pos.NOUN@  IM ;
 @R.class.VAI@+NA+Der/VAI+VAI:@R.class.VAI@0 N_VAI_SUFFIXES ;
 
 LEXICON NI

@@ -33,8 +33,6 @@ Imm+ ! For imminent future
 Prox+
 Past+
 Nonaff+
-+Pl
-+Sg
 +Imp
 +Ind
 +Cnj
@@ -46,7 +44,8 @@ Nonaff+
 +Der/Nom3
 +Der/Nom4
 +Der/Nom5
-+Der/Verb
++Der/VAI
++Der/VII
 +Der/Caus
 +Der/Caus2 
 +Der/Rcpr
@@ -82,11 +81,10 @@ Nonaff+
 +4SgO
 +4PlO
 +5Sg/PlO
-+PRO+3/%0Sg
-+PRO+3/%0
-+PRO+3Pl
-+PRO+D3Sg
-+PRO+%0Pl
++PRO
++3/%0Sg
++3/%0
++D3Sg
 +INTERR
 ! Prenoun tags
 PN/a's+
