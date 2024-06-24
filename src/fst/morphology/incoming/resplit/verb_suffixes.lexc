@@ -1,23 +1,23 @@
 !! Verb suffixation
 
 LEXICON VAI
-@P.class.NA@@R.pos.NOUN@+VAI:@P.class.NA@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
-@P.class.NI@@R.pos.NOUN@+VAI:@P.class.NI@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.NOUN@@P.class.NA@+VAI:@R.pos.NOUN@@P.class.NA@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.NOUN@@P.class.NI@+VAI:@R.pos.NOUN@@P.class.NI@    VERB_DER_NOM_SUFFIXES ;
 @R.pos.VERB@  VAI_DERIVATION ;
 
 LEXICON VII
-@P.class.NA@@R.pos.NOUN@+VII:@P.class.NA@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
-@P.class.NI@@R.pos.NOUN@+VII:@P.class.NI@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.NOUN@@P.class.NA@+VII:@R.pos.NOUN@@P.class.NA@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.NOUN@@P.class.NI@+VII:@R.pos.NOUN@@P.class.NI@    VERB_DER_NOM_SUFFIXES ;
 @R.pos.VERB@  VII_DERIVATION ;
 
 LEXICON VTI
-@P.class.NA@@R.pos.NOUN@+VTI:@P.class.NA@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
-@P.class.NI@@R.pos.NOUN@+VTI:@P.class.NI@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.NOUN@@P.class.NA@+VTI:@R.pos.NOUN@@P.class.NA@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.NOUN@@P.class.NI@+VTI:@R.pos.NOUN@@P.class.NI@    VERB_DER_NOM_SUFFIXES ;
 @R.pos.VERB@  VTI_DERIVATION ;
 
 LEXICON VTA
-@P.class.NA@@R.pos.NOUN@+VTA:@P.class.NA@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
-@P.class.NI@@R.pos.NOUN@+VTA:@P.class.NI@@R.pos.NOUN@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.NOUN@@P.class.NA@+VTA:@R.pos.NOUN@@P.class.NA@    VERB_DER_NOM_SUFFIXES ;
+@R.pos.NOUN@@P.class.NI@+VTA:@R.pos.NOUN@@P.class.NI@    VERB_DER_NOM_SUFFIXES ;
 @R.pos.VERB@  VTA_DERIVATION ;
 
 LEXICON VAI_DERIVATION

@@ -1,17 +1,17 @@
 LEXICON NA
-@P.class.NA@@R.pos.NOUN@+NA:@P.class.NA@@R.pos.NOUN@0  IM ;
+@R.pos.NOUN@@P.class.NA@+NA:@R.pos.NOUN@@P.class.NA@0  IM ;
 @R.class.VAI@+NA+Der/VAI+VAI:@R.class.VAI@0 N_VAI_SUFFIXES  ; 
 
 LEXICON NA_IM
-@P.im.IM@@P.class.NA@@R.pos.NOUN@+NA:@P.im.IM@@P.class.NA@@R.pos.NOUN@  IM ;
+@R.pos.NOUN@@P.im.IM@@P.class.NA@+NA:@R.pos.NOUN@@P.im.IM@@P.class.NA@  IM ;
 @R.class.VAI@+NA+Der/VAI+VAI:@R.class.VAI@0 N_VAI_SUFFIXES ;
 
 LEXICON NI
-@P.class.NI@@R.pos.NOUN@+NI:@P.class.NI@@R.pos.NOUN@0  IM ;
+@R.pos.NOUN@@P.class.NI@+NI:@R.pos.NOUN@@P.class.NI@0  IM ;
 @R.class.VII@+NI+Der/VII+VII:@R.class.VII@0 N_VII_SUFFIXES ;
 
 LEXICON NI_IM
-@P.im.IM@@P.class.NI@@R.pos.NOUN@+NI:@P.im.IM@@P.class.NI@@R.pos.NOUN@0  IM ;
+@R.pos.NOUN@@P.im.IM@@P.class.NI@+NI:@R.pos.NOUN@@P.im.IM@@P.class.NI@0  IM ;
 @R.class.VII@+NI+Der/VII+VII:@R.class.VII@0 N_VII_SUFFIXES ;
 
 LEXICON NAD
