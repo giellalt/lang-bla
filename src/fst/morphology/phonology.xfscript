@@ -28,13 +28,13 @@ define Gx [ w | y ] ;
 
 ! The following code is for the highest level of morpho-phonological initial allomorphy (specific to nouns)
 
-define shortPrefix [ n i t -> n , k i t -> k , o t -> w || .#. _ %< %^SP ] ;
+define shortPrefix [ n i t -> n , k i t -> k , o t -> w || .#. _ %< %^SP Vowel ,, n i t -> n i , k i t -> k i , o t -> o || .#. _ %< %^SP [ k | n | p | s | t | n2 ] ] ;
 define internasal [ a -> o || %< %^SP m _ [ m | n ] ] ;
 
 ! is it m | n ?
 define mattException [ n -> n i , k -> k i , w -> o || .#. _ %< m [ a | á ] t t ] ;
 define mdeletion [ m -> 0 || .#. [ n | k | w ] %< %^SP _ ] ;
-define iInsertion [ n -> n i , k -> k i , w -> o || _ %< %^SP [ k | n | p | s | t | n2 ] ] ;
+!define iInsertion [ n -> n i , k -> k i , w -> o || _ %< %^SP [ k | n | p | s | t | n2 ] ] ;
 define rmSP [ %^SP -> 0 ] ;
 define a2iRule [ a4 -> i2 || %< _ ] ;
 define ohPrefix [ 0 -> o || %< _ h ] ;
@@ -47,16 +47,21 @@ define strongp [ k -> 0 || [ k | p ] %< _ ] ;
 define weakm [ m -> 0 || [ n | k ] %< _ ] ;
 
 define oAlternation [ i2 (->) [ o | a ] || .#. _ [ o | a ] ] ;
-define ghosti2 [ i2 (->) 0 || .#. _ Consonant ] ;
+!define ghosti2 [ i2 (->) 0 || .#. _ Consonant ] ;
 define i2oRule [ i3 -> o , i3 y -> o2 , a3 -> o || %< _ ] ;
 define w2yRule [ w (->) y || _ %< Vowel ] ;
 define iDissimilation [ i -> o || _ y %< i ] ;
 define intervocalicN [ n -> y || Vowel %< _ Vowel ] ;
 
+define rcprRule [ o -> 0 || t %> %^Rcpr _ ] ;
+define rmRcpr [ %^Rcpr -> 0 ] ;
+define bnfRule [ o -> 0 || V %> %^Bnf _ ] ;
+define rmBnf [ %^Bnf -> 0 ] ;
 
 ! Demonstrative trigger rules (-wa > 0 | o-_)
 
 define Demwa20Rule [ %^DEM w a -> 0 || o %> _ ] ;
+define DemPli20Rule [ %^DEM i (->) 0 || o %> _ ] ;
 define Demtrigger20 [ %^DEM -> 0 ] ;
 
 !! Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of Toronto Press. Appendix B.
@@ -368,7 +373,6 @@ read regex [ shortPrefix
 .o. internasal
 .o. mattException
 .o. mdeletion
-.o. iInsertion
 .o. rmSP
 .o. a2iRule
 .o. ohPrefix
@@ -379,13 +383,17 @@ read regex [ shortPrefix
 .o. strongp
 .o. weakm
 .o. oAlternation
-.o. ghosti2
 .o. i2oRule
 .o. w2yRule
 .o. iDissimilation
 .o. intervocalicN
 .o. Demwa20Rule
+.o. DemPli20Rule
 .o. Demtrigger20
+.o. rcprRule
+.o. rmRcpr
+.o. bnfRule
+.o. rmBnf
 .o. sConnRuleB 
 .o. sConnRuleA 
 .o. CC2GemRule
