@@ -40,12 +40,12 @@ LEXICON VTI_DERIVATION
 
 LEXICON VTA_DERIVATION
 @R.pos.VERB@+VTA:@R.pos.VERB@0                        VTA_SUFFIXES ;
-@R.pos.VERB@@P.class.VTA@+VTA+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo         VTA_SUFFIXES ;
-@R.pos.VERB@@P.class.VTA@+VTA+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>omo        VTA_SUFFIXES ;
+!@R.pos.VERB@@P.class.VTA@+VTA+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo         VTA_SUFFIXES ;
+@R.pos.VERB@@P.class.VTA@+VTA+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>%^Bnfomo        VTA_SUFFIXES ;
 @R.pos.VERB@@P.class.VTA@+VTA+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>o          VTA_SUFFIXES ;
 @R.pos.VERB@@P.class.VAI@+VTA+Der/Rflx+VAI:@R.pos.VERB@@P.class.VAI@%>ohsi      VAI_SUFFIXES ;
-@R.pos.VERB@@P.class.VAI@+VTA+Der/Rcpr+VAI:@R.pos.VERB@@P.class.VAI@%>otsiiyi   VAI_SUFFIXES ;
-@R.pos.VERB@@P.class.VAI@+VTA+Der/Rcpr+VAI:@R.pos.VERB@@P.class.VAI@%>tsiiyi    VAI_SUFFIXES ;
+@R.pos.VERB@@P.class.VAI@+VTA+Der/Rcpr+VAI:@R.pos.VERB@@P.class.VAI@%>%^Rcprotsiiyi   VAI_SUFFIXES ;
+!@R.pos.VERB@@P.class.VAI@+VTA+Der/Rcpr+VAI:@R.pos.VERB@@P.class.VAI@%>tsiiyi    VAI_SUFFIXES ;
 
 ! BELOW ARE THE VAI SUFFIXES ;
 
@@ -357,7 +357,7 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NI@+1Sg+4SgO:@R.person.NI@%>aayini   		ENCLITICS ;
 @R.person.KI@+2Sg+3SgO:@R.person.KI@%>aawa   		ENCLITICS ;
 @R.person.KI@+2Sg+4SgO:@R.person.KI@%>aayini		ENCLITICS ;
-@R.person.KI@+2Sg+4PlO:@R.person.KI@%>aayini		ENCLITICS ;
+@R.person.KI@+2Sg+4PlO:@R.person.KI@%>aayi		ENCLITICS ;
 @R.person.NULL@+3Sg+4SgO:@R.person.NULL@%>yiiwa   	ENCLITICS ;
 @R.person.NULL@+4Sg+5Sg/PlO:@R.person.NULL@%>yiiyina   	ENCLITICS ;
 ! Direct, Plural Subject, Singular Object, INDEPENDENT
@@ -384,9 +384,9 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NI@+1Sg+3PlO:@R.person.NI@%>aayi   	ENCLITICS ;
 @R.person.NI@+1Sg+4PlO:@R.person.NI@%>aayi   	ENCLITICS ;
 @R.person.KI@+2Sg+3PlO:@R.person.KI@%>aayi   		ENCLITICS ;
-@R.person.KI@+2Sg+4PlO:@R.person.KI@%>aayi   		ENCLITICS ;
+
 @R.person.NULL@+3Sg+4PlO:@R.person.NULL@%>yiiwa   	ENCLITICS ;
-@R.person.NULL@+4Sg+5Sg/PlO:@R.person.NULL@%>yiiyini   	ENCLITICS ;
+@R.person.NULL@+4Sg+5Sg/PlO:@R.person.NULL@%>yiiyi   	ENCLITICS ;
 ! Inverse, Singular Subject and Object, INDEPENDENT
 @R.person.KI@+2Sg+1SgO:@R.person.KI@%>oki   		ANIM_INTERR ;	
 @R.person.KI@+3Sg+2SgO:@R.person.KI@%>oka   	ENCLITICS ;
@@ -403,7 +403,7 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NI@+4Pl+1SgO:@R.person.NI@%>oki   	ENCLITICS ;
 @R.person.KI@+4Pl+2SgO:@R.person.KI@%>oki   	ENCLITICS ;
 @R.person.OT@+4Pl+3SgO:@R.person.OT@%>oka   		ENCLITICS ;
-@R.person.NULL@+4Pl+5Sg/PlO:@R.person.NULL@%>yiiyini   		ENCLITICS ;
+@R.person.NULL@+4Pl+5Sg/PlO:@R.person.NULL@%>yiiyi   		ENCLITICS ;
 ! Inverse, Plural Subject and Object, INDEPENDENT
 @R.person.KI@+2Pl+1PlO:@R.person.KI@%>okihpinnaana  ANIM_INTERR ;
 @R.person.NULL@+3Pl+21PlO:@R.person.NULL@%>okiyi	 ENCLITICS ;
@@ -418,7 +418,7 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.KI@+2Sg+1PlO:@R.person.KI@%>okihpinnaana  ANIM_INTERR ; 
 @R.person.KI@+3Sg+2PlO:@R.person.KI@%>okoaawa   	ENCLITICS ;
 @R.person.NI@+3Sg+1PlO:@R.person.NI@%>okinnaani 		ENCLITICS ;	
-@R.person.NI@+3Sg+1PlO:@R.person.NI@%>okinnaan 		ENCLITICS ;	
+!@R.person.NI@+3Sg+1PlO:@R.person.NI@%>okinnaan 		ENCLITICS ;	KS removed re discussion with IG, suffix is meaningful
 @R.person.OT@+4Sg+3PlO:@R.person.OT@%>okoaayi   	ENCLITICS ;
 @R.person.KI@+4Sg+2PlO:@R.person.KI@%>okini   	ENCLITICS ;
 @R.person.NULL@+4Sg+21PlO:@R.person.NULL@%>okiyini   	ANIM_INTERR ;
@@ -488,7 +488,7 @@ LEXICON CONJ_VTA_SUFFIXES
 @R.person.KI@+2Sg+1PlO:@R.person.KI@%>okssinnaani   	ENCLITICS ;
 @R.person.NI@+3Sg+1PlO:@R.person.NI@%>yssinnaani   	ENCLITICS ;
 @R.person.KI@+3Sg+2PlO:@R.person.KI@%>yssoaayi   	ENCLITICS ;
-@R.person.OT@+3Sg+2PlO:@R.person.OT@%>aahsi   	ENCLITICS ;
+!@R.person.OT@+3Sg+2PlO:@R.person.OT@%>aahsi   	ENCLITICS ; ! KS removed, this is direct 3>4
 @R.person.OT@+4Sg+3PlO:@R.person.OT@%>yssi   	ENCLITICS ;
 @R.person.OT@+4Sg+4PlO:@R.person.OT@%>yssi   	ENCLITICS ;
 ! Unspecified Subject, Conjunctive
@@ -538,7 +538,7 @@ LEXICON SUBJ_VTA_SUFFIXES
 ! Inverse, Plural Subject and Object, SUBJUNCTIVE
 @R.person.NULL@+2Pl+1PlO:@R.person.NULL@%>okinnaaniki   	ENCLITICS ;	
 @R.person.NULL@+3Pl+2PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;
-@R.person.NULL@+3Pl+1PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;
+@R.person.NULL@+3Pl+2PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;
 @R.person.NULL@+3Pl+1PlO:@R.person.NULL@%>otsiinnaaniki   	ENCLITICS ;
 @R.person.NULL@+3Pl+21PlO:@R.person.NULL@%>okisi   	ENCLITICS ;
 @R.person.NULL@+4Pl+3PlO:@R.person.NULL@%>otsiinoainiki   	ENCLITICS ;
