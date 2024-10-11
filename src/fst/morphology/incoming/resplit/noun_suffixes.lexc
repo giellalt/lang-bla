@@ -65,8 +65,8 @@ LEXICON NI_SUFFIXES
 @D.number.SG@+Pl:@D.number.SG@%>istsi # ;
 @D.number.SG@@D.number.PL@+Non:@D.number.SG@@D.number.PL@%>i # ;
 
-LEXICON NI_SUFFIXES
-@D.number.SG@+Sg:@D.number.SG@%>yi # ; 
-@D.number.SG@+Pl:@D.number.SG@%>istsi # ;
-@D.number.SG@@D.number.PL@+Non:@D.number.SG@@D.number.PL@%>i # ;
+!LEXICON NI_SUFFIXES
+!@D.number.SG@+Sg:@D.number.SG@%>yi # ; 
+!@D.number.SG@+Pl:@D.number.SG@%>istsi # ;
+!@D.number.SG@@D.number.PL@+Non:@D.number.SG@@D.number.PL@%>i # ;
 

@@ -63,7 +63,7 @@ LEXICON INDEP_VAI_SUFFIXES
 @R.person.NULL@+3Pl+INTERR:@R.person.NULL@%>waiksaawa ENCLITICS ;
 @R.person.NULL@+3Pl+INTERR:@R.person.NULL@%>waiksaawayi ENCLITICS ; ! Sometimes, we end up with a -yi suffix following this interrogative
 ! Singular INDEPENDENT
-@R.person.NULL@:@R.person.NULL@0   	ENCLITICS ;
+!@R.person.NULL@:@R.person.NULL@0   	ENCLITICS ;
 @R.person.NI@+1Sg:@R.person.NI@0   	ANIM_INTERR ;	
 @R.person.KI@+2Sg:@R.person.KI@0   		ANIM_INTERR ;
 @R.person.NULL@+3Sg:@R.person.NULL@%>wa		ENCLITICS ;
