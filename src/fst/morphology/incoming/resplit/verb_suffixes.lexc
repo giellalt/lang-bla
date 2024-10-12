@@ -58,10 +58,10 @@ LEXICON VAI_SUFFIXES
 
 LEXICON INDEP_VAI_SUFFIXES
 ! Third Person Interrogatives
-@R.person.NULL@+3Sg+INTERR:@R.person.NULL@%>watsiksi ENCLITICS ;
-@R.person.NULL@+3Sg+INTERR:@R.person.NULL@%>watsiksiwa ENCLITICS ; ! Sometimes, we end up with a -wa suffix following this interrogative
-@R.person.NULL@+3Pl+INTERR:@R.person.NULL@%>waiksaawa ENCLITICS ;
-@R.person.NULL@+3Pl+INTERR:@R.person.NULL@%>waiksaawayi ENCLITICS ; ! Sometimes, we end up with a -yi suffix following this interrogative
+@R.person.NULL@+3Sg+Interr:@R.person.NULL@%>watsiksi ENCLITICS ;
+@R.person.NULL@+3Sg+Interr:@R.person.NULL@%>watsiksiwa ENCLITICS ; ! Sometimes, we end up with a -wa suffix following this interrogative
+@R.person.NULL@+3Pl+Interr:@R.person.NULL@%>waiksaawa ENCLITICS ;
+@R.person.NULL@+3Pl+Interr:@R.person.NULL@%>waiksaawayi ENCLITICS ; ! Sometimes, we end up with a -yi suffix following this interrogative
 ! Singular INDEPENDENT
 !@R.person.NULL@:@R.person.NULL@0   	ENCLITICS ;
 @R.person.NI@+1Sg:@R.person.NI@0   	ANIM_INTERR ;	
@@ -132,8 +132,8 @@ LEXICON VII_SUFFIXES
 
 LEXICON INDEP_VII_SUFFIXES
 ! Inanimate Interrogatives
-@R.person.NULL@+%0Sg+INTERR:@R.person.NULL@%>waatsiksi ENCLITICS ;
-@R.person.NULL@+%0Pl+INTERR:@R.person.NULL@%>waistsaawa ENCLITICS ;
+@R.person.NULL@+%0Sg+Interr:@R.person.NULL@%>waatsiksi ENCLITICS ;
+@R.person.NULL@+%0Pl+Interr:@R.person.NULL@%>waistsaawa ENCLITICS ;
 @R.person.NULL@ ENCLITICS ;
 ! Singular INDEPENDENT
 @R.person.NULL@+%0Sg:@R.person.NULL@%>wa		ENCLITICS ;
@@ -173,25 +173,25 @@ LEXICON VTI_SUFFIXES
 
 LEXICON INDEP_VTI_SUFFIXES
 ! Inanimate interrogatives Singular Object
-@R.person.NI@+1Sg+%0SgO+INTERR:@R.person.NI@%>hpaatsiksi ENCLITICS ;
-@R.person.KI@+2Sg+%0SgO+INTERR:@R.person.KI@%>hpaatsiksi ENCLITICS ;
-@R.person.NULL@+3Sg+%0SgO+INTERR:@R.person.NULL@%>maatsiksi ENCLITICS ;
-@R.person.NULL@+4Sg+%0SgO+INTERR:@R.person.NULL@%>minaatsiksi ENCLITICS ; ! This is unattested
-@R.person.NI@+1Pl+%0SgO+INTERR:@R.person.NI@%>hpinnanaatsiksi ENCLITICS ;
-@R.person.KI@+2Pl+%0SgO+INTERR:@R.person.KI@%>hpoaawaatsiksi ENCLITICS ;
-@R.person.NULL@+21Pl+%0SgO+INTERR:@R.person.NULL@%>'paatsiksi ENCLITICS ;
-@R.person.NULL@+4Pl+%0SgO+INTERR:@R.person.NULL@%>miaatsiksi ENCLITICS ; ! This is unattested
-@R.person.NULL@+4Pl+%0SgO+INTERR:@R.person.NULL@%>miaatsiksi ENCLITICS ; ! This is unattested
+@R.person.NI@+1Sg+%0SgO+Interr:@R.person.NI@%>hpaatsiksi ENCLITICS ;
+@R.person.KI@+2Sg+%0SgO+Interr:@R.person.KI@%>hpaatsiksi ENCLITICS ;
+@R.person.NULL@+3Sg+%0SgO+Interr:@R.person.NULL@%>maatsiksi ENCLITICS ;
+@R.person.NULL@+4Sg+%0SgO+Interr:@R.person.NULL@%>minaatsiksi ENCLITICS ; ! This is unattested
+@R.person.NI@+1Pl+%0SgO+Interr:@R.person.NI@%>hpinnanaatsiksi ENCLITICS ;
+@R.person.KI@+2Pl+%0SgO+Interr:@R.person.KI@%>hpoaawaatsiksi ENCLITICS ;
+@R.person.NULL@+21Pl+%0SgO+Interr:@R.person.NULL@%>'paatsiksi ENCLITICS ;
+@R.person.NULL@+4Pl+%0SgO+Interr:@R.person.NULL@%>miaatsiksi ENCLITICS ; ! This is unattested
+@R.person.NULL@+4Pl+%0SgO+Interr:@R.person.NULL@%>miaatsiksi ENCLITICS ; ! This is unattested
 ! Inanimate interrogatives Plural Object
-@R.person.NI@+1Sg+%0PlO+INTERR:@R.person.NI@%>hpaistsaawa ENCLITICS ;
-@R.person.KI@+2Sg+%0PlO+INTERR:@R.person.KI@%>hpaistsaawa ENCLITICS ;
-@R.person.NULL@+3Sg+%0PlO+INTERR:@R.person.NULL@%>maistsaawa ENCLITICS ;
-@R.person.NULL@+4Sg+%0PlO+INTERR:@R.person.NULL@%>minaistsaawa ENCLITICS ; ! This is unattested
-@R.person.NI@+1Pl+%0PlO+INTERR:@R.person.NI@%>hpinnanaistsaawa ENCLITICS ;
-@R.person.KI@+2Pl+%0PlO+INTERR:@R.person.KI@%>hpoaawaistsaawa ENCLITICS ;
-@R.person.NULL@+21Pl+%0PlO+INTERR:@R.person.NULL@%>'paistsaawa ENCLITICS ;
-@R.person.NULL@+4Pl+%0PlO+INTERR:@R.person.NULL@%>miaistsaawa ENCLITICS ; ! This is unattested
-@R.person.NULL@+4Pl+%0PlO+INTERR:@R.person.NULL@%>miaistsaawa ENCLITICS ; ! This is unattested
+@R.person.NI@+1Sg+%0PlO+Interr:@R.person.NI@%>hpaistsaawa ENCLITICS ;
+@R.person.KI@+2Sg+%0PlO+Interr:@R.person.KI@%>hpaistsaawa ENCLITICS ;
+@R.person.NULL@+3Sg+%0PlO+Interr:@R.person.NULL@%>maistsaawa ENCLITICS ;
+@R.person.NULL@+4Sg+%0PlO+Interr:@R.person.NULL@%>minaistsaawa ENCLITICS ; ! This is unattested
+@R.person.NI@+1Pl+%0PlO+Interr:@R.person.NI@%>hpinnanaistsaawa ENCLITICS ;
+@R.person.KI@+2Pl+%0PlO+Interr:@R.person.KI@%>hpoaawaistsaawa ENCLITICS ;
+@R.person.NULL@+21Pl+%0PlO+Interr:@R.person.NULL@%>'paistsaawa ENCLITICS ;
+@R.person.NULL@+4Pl+%0PlO+Interr:@R.person.NULL@%>miaistsaawa ENCLITICS ; ! This is unattested
+@R.person.NULL@+4Pl+%0PlO+Interr:@R.person.NULL@%>miaistsaawa ENCLITICS ; ! This is unattested
 ! Singular INDEPENDENT
 @R.person.NI@+1Sg+%0SgO:@R.person.NI@%>hpa   		ENCLITICS ;	
 @R.person.KI@+2Sg+%0SgO:@R.person.KI@%>hpa   		ENCLITICS ;
@@ -295,62 +295,62 @@ LEXICON VTA_SUFFIXES
 
 LEXICON INDEP_VTA_SUFFIXES
 ! Interrogatives DIRECT Singular Object
-@R.person.NI@+1Sg+3SgO+INTERR:@R.person.NI@%>aawaatsiksi # ;
-@R.person.KI@+2Sg+3SgO+INTERR:@R.person.KI@%>aawaatsiksi # ;
-@R.person.NI@+1Sg+4SgO+INTERR:@R.person.NI@%>ayiniwaatsiksi # ;
-@R.person.KI@+2Sg+4SgO+INTERR:@R.person.KI@%>ayiniwaatsiksi # ;
-@R.person.NULL@+3Sg+4SgO+INTERR:@R.person.NULL@%>yiiwaatsiksi # ;
-@R.person.NI@+1Pl+3SgO+INTERR:@R.person.NI@%>annáánawaatsiksi # ;
-@R.person.KI@+2Pl+3SgO+INTERR:@R.person.KI@%>awááwaatsiksi # ;
-@R.person.NULL@+21Pl+3SgO+INTERR:@R.person.NULL@%>ááwa # ;
-@R.person.NI@+1Pl+4SgO+INTERR:@R.person.NI@%>annáániwa # ;
-@R.person.KI@+2Pl+4SgO+INTERR:@R.person.KI@%>awááyiniwa # ;
-@R.person.KI@+21Pl+4SgO+INTERR:@R.person.KI@%>ááwa # ;
-@R.person.NULL@+3Pl+4SgO+INTERR:@R.person.NULL@%>waiksaawa # ;
+@R.person.NI@+1Sg+3SgO+Interr:@R.person.NI@%>aawaatsiksi # ;
+@R.person.KI@+2Sg+3SgO+Interr:@R.person.KI@%>aawaatsiksi # ;
+@R.person.NI@+1Sg+4SgO+Interr:@R.person.NI@%>ayiniwaatsiksi # ;
+@R.person.KI@+2Sg+4SgO+Interr:@R.person.KI@%>ayiniwaatsiksi # ;
+@R.person.NULL@+3Sg+4SgO+Interr:@R.person.NULL@%>yiiwaatsiksi # ;
+@R.person.NI@+1Pl+3SgO+Interr:@R.person.NI@%>annáánawaatsiksi # ;
+@R.person.KI@+2Pl+3SgO+Interr:@R.person.KI@%>awááwaatsiksi # ;
+@R.person.NULL@+21Pl+3SgO+Interr:@R.person.NULL@%>ááwa # ;
+@R.person.NI@+1Pl+4SgO+Interr:@R.person.NI@%>annáániwa # ;
+@R.person.KI@+2Pl+4SgO+Interr:@R.person.KI@%>awááyiniwa # ;
+@R.person.KI@+21Pl+4SgO+Interr:@R.person.KI@%>ááwa # ;
+@R.person.NULL@+3Pl+4SgO+Interr:@R.person.NULL@%>waiksaawa # ;
 ! Interrogatives DIRECT Plural Object
-@R.person.NI@+1Sg+3PlO+INTERR:@R.person.NI@%>waiksaawa # ;
-@R.person.KI@+2Sg+3PlO+INTERR:@R.person.KI@%>waiksaawa # ;
-@R.person.NI@+1Sg+4PlO+INTERR:@R.person.NI@%>waiksaawa # ;
-@R.person.KI@+2Sg+4PlO+INTERR:@R.person.KI@%>waiksaawa # ;
-@R.person.NULL@+3Sg+4PlO+INTERR:@R.person.NULL@%>waiksaawa # ;
-@R.person.NULL@+3Sg+4PlO+INTERR:@R.person.NULL@%>waiksaawa # ;
-@R.person.KI@+1Pl+2PlO+INTERR:@R.person.KI@%>ohpinnáánawa # ;	
-@R.person.NI@+1Pl+3PlO+INTERR:@R.person.NI@%>annáániwa # ;	
-@R.person.NI@+1Pl+4PlO+INTERR:@R.person.NI@%>annáániwa # ;	
-@R.person.KI@+2Pl+3PlO+INTERR:@R.person.KI@%>awááyiwa # ;
-@R.person.KI@+2Pl+4PlO+INTERR:@R.person.KI@%>awááyiwa # ;
-@R.person.NULL@+21Pl+3PlO+INTERR:@R.person.NULL@%>ááyiwa # ;
+@R.person.NI@+1Sg+3PlO+Interr:@R.person.NI@%>waiksaawa # ;
+@R.person.KI@+2Sg+3PlO+Interr:@R.person.KI@%>waiksaawa # ;
+@R.person.NI@+1Sg+4PlO+Interr:@R.person.NI@%>waiksaawa # ;
+@R.person.KI@+2Sg+4PlO+Interr:@R.person.KI@%>waiksaawa # ;
+@R.person.NULL@+3Sg+4PlO+Interr:@R.person.NULL@%>waiksaawa # ;
+@R.person.NULL@+3Sg+4PlO+Interr:@R.person.NULL@%>waiksaawa # ;
+@R.person.KI@+1Pl+2PlO+Interr:@R.person.KI@%>ohpinnáánawa # ;	
+@R.person.NI@+1Pl+3PlO+Interr:@R.person.NI@%>annáániwa # ;	
+@R.person.NI@+1Pl+4PlO+Interr:@R.person.NI@%>annáániwa # ;	
+@R.person.KI@+2Pl+3PlO+Interr:@R.person.KI@%>awááyiwa # ;
+@R.person.KI@+2Pl+4PlO+Interr:@R.person.KI@%>awááyiwa # ;
+@R.person.NULL@+21Pl+3PlO+Interr:@R.person.NULL@%>ááyiwa # ;
 ! Interrogatives INVERSE Singular Object
-@R.person.NI@+3Sg+1SgO+INTERR:@R.person.NI@%>okaatsiksi # ;
-@R.person.KI@+3Sg+2SgO+INTERR:@R.person.KI@%>okaatsiksi # ;
-@R.person.NI@+3Sg+1SgO+INTERR:@R.person.NI@%>okaatsiksi # ;
-@R.person.KI@+3Sg+2SgO+INTERR:@R.person.KI@%>okaatsiksi # ;
-@R.person.NULL@+4Sg+3SgO+INTERR:@R.person.NULL@%>okaatsiksi # ;
-@R.person.NULL@+4Sg+3SgO+INTERR:@R.person.NULL@%>okaatsiksi # ;
-@R.person.NI@+3Pl+1SgO+INTERR:@R.person.NI@%>okaiksaawa # ;
-@R.person.KI@+3Pl+2SgO+INTERR:@R.person.KI@%>okaiksaawa # ;
-@R.person.NI@+4Pl+1SgO+INTERR:@R.person.NI@%>okaiksaawa # ;
-@R.person.KI@+4Pl+2SgO+INTERR:@R.person.KI@%>okaiksaawa # ;
-@R.person.NULL@+4Sg+3PlO+INTERR:@R.person.NULL@%>okaiksaawa # ;
-@R.person.NULL@+4Pl+3PlO+INTERR:@R.person.NULL@%>okaiksaawa # ;
+@R.person.NI@+3Sg+1SgO+Interr:@R.person.NI@%>okaatsiksi # ;
+@R.person.KI@+3Sg+2SgO+Interr:@R.person.KI@%>okaatsiksi # ;
+@R.person.NI@+3Sg+1SgO+Interr:@R.person.NI@%>okaatsiksi # ;
+@R.person.KI@+3Sg+2SgO+Interr:@R.person.KI@%>okaatsiksi # ;
+@R.person.NULL@+4Sg+3SgO+Interr:@R.person.NULL@%>okaatsiksi # ;
+@R.person.NULL@+4Sg+3SgO+Interr:@R.person.NULL@%>okaatsiksi # ;
+@R.person.NI@+3Pl+1SgO+Interr:@R.person.NI@%>okaiksaawa # ;
+@R.person.KI@+3Pl+2SgO+Interr:@R.person.KI@%>okaiksaawa # ;
+@R.person.NI@+4Pl+1SgO+Interr:@R.person.NI@%>okaiksaawa # ;
+@R.person.KI@+4Pl+2SgO+Interr:@R.person.KI@%>okaiksaawa # ;
+@R.person.NULL@+4Sg+3PlO+Interr:@R.person.NULL@%>okaiksaawa # ;
+@R.person.NULL@+4Pl+3PlO+Interr:@R.person.NULL@%>okaiksaawa # ;
 ! Interrogatives INVERSE Plural Object
-@R.person.KI@+2Sg+1PlO+INTERR:@R.person.KI@%>okihpinnaana # ;
-@R.person.NI@+3Sg+1PlO+INTERR:@R.person.NI@%>okinnáánawa # ;
-@R.person.KI@+3Sg+2PlO+INTERR:@R.person.KI@%>okoááwa # ;
-@R.person.KI@+3Sg+21PlO+INTERR:@R.person.KI@%>okááwa # ;
-@R.person.NI@+4Sg+1PlO+INTERR:@R.person.NI@%>okinnáániniwa # ;
-@R.person.KI@+4Sg+2PlO+INTERR:@R.person.KI@%>okoááyiniwa # ;
-@R.person.KI@+4Sg+3PlO+INTERR:@R.person.KI@%>okawááyiniwa # ;
-@R.person.KI@+4Sg+21PlO+INTERR:@R.person.KI@%>okiyiniwa # ;
-@R.person.NULL@+4Sg+3SgO+INTERR:@R.person.NULL@%>okaiksaawa # ;
-@R.person.NI@+3Pl+1PlO+INTERR:@R.person.NI@%>okinnáániwa # ;
-@R.person.KI@+3Pl+2PlO+INTERR:@R.person.KI@%>okoááyiwa # ;
-@R.person.KI@+3Pl+21PlO+INTERR:@R.person.KI@%>okiyiwa # ;
-@R.person.NI@+4Pl+1PlO+INTERR:@R.person.NI@%>okinnáániwa # ;
-@R.person.KI@+4Pl+2PlO+INTERR:@R.person.KI@%>okoááyiwa # ;
-@R.person.KI@+4Pl+3PlO+INTERR:@R.person.KI@%>okoááyiwa # ;
-@R.person.KI@+4Pl+21PlO+INTERR:@R.person.KI@%>okiyiwa # ;
-@R.person.NULL@+4Pl+3SgO+INTERR:@R.person.NULL@%>okaiksaawa # ;
+@R.person.KI@+2Sg+1PlO+Interr:@R.person.KI@%>okihpinnaana # ;
+@R.person.NI@+3Sg+1PlO+Interr:@R.person.NI@%>okinnáánawa # ;
+@R.person.KI@+3Sg+2PlO+Interr:@R.person.KI@%>okoááwa # ;
+@R.person.KI@+3Sg+21PlO+Interr:@R.person.KI@%>okááwa # ;
+@R.person.NI@+4Sg+1PlO+Interr:@R.person.NI@%>okinnáániniwa # ;
+@R.person.KI@+4Sg+2PlO+Interr:@R.person.KI@%>okoááyiniwa # ;
+@R.person.KI@+4Sg+3PlO+Interr:@R.person.KI@%>okawááyiniwa # ;
+@R.person.KI@+4Sg+21PlO+Interr:@R.person.KI@%>okiyiniwa # ;
+@R.person.NULL@+4Sg+3SgO+Interr:@R.person.NULL@%>okaiksaawa # ;
+@R.person.NI@+3Pl+1PlO+Interr:@R.person.NI@%>okinnáániwa # ;
+@R.person.KI@+3Pl+2PlO+Interr:@R.person.KI@%>okoááyiwa # ;
+@R.person.KI@+3Pl+21PlO+Interr:@R.person.KI@%>okiyiwa # ;
+@R.person.NI@+4Pl+1PlO+Interr:@R.person.NI@%>okinnáániwa # ;
+@R.person.KI@+4Pl+2PlO+Interr:@R.person.KI@%>okoááyiwa # ;
+@R.person.KI@+4Pl+3PlO+Interr:@R.person.KI@%>okoááyiwa # ;
+@R.person.KI@+4Pl+21PlO+Interr:@R.person.KI@%>okiyiwa # ;
+@R.person.NULL@+4Pl+3SgO+Interr:@R.person.NULL@%>okaiksaawa # ;
 ! Direct, Singular Subject and Object, INDEPENDENT
 @R.person.KI@+1Sg+2SgO:@R.person.KI@%>o   		ANIM_INTERR ;	
 @R.person.NI@+1Sg+3SgO:@R.person.NI@%>aawa   	ENCLITICS ;
@@ -574,7 +574,7 @@ LEXICON IMP_VTA_SUFFIXES
 
 LEXICON ANIM_INTERR
 0 # ;
-+INTERR:%>hpa # ;
++Interr:%>hpa # ;
 
 ! The following lexicon contains the enclitic pronouns or attached pronouns from Frantz 2017 Chapter 9
 ! Using the term D3Sg follows Frantz in distinguishing between the 3rd person pronoun used when there
@@ -609,16 +609,16 @@ LEXICON VERB_DER_NOM_SUFFIXES
 ! This verb paradigm does not include dependent nouns.
 
 LEXICON N_VAI_SUFFIXES !! [OLD: VAI_SUFFIXES]
-@P.mode.IND@+Ind:@P.mode.IND@ N_INDEP_VAI_SUFFIXES ; !! [OLD: INDEP_VAI_SUFFIXES]
-@P.mode.CON@+Cnj:@P.mode.CON@ N_CONJ_VAI_SUFFIXES ; !! [OLD: CONJ_VAI_SUFFIXES]
-@P.mode.SUB@+Sbj:@P.mode.SUB@ N_SUBJ_VAI_SUFFIXES ; !! [OLD: SUBJ_VAI_SUFFIXES]
-@P.mode.IRR@+Irr:@P.mode.IRR@ N_UNREAL_VAI_SUFFIXES ; !! [OLD: UNREAL_VAI_SUFFIXES]
-@P.mode.IMP@+Imp:@P.mode.IMP@ N_IMP_VAI_SUFFIXES ; !! [OLD: IMP_VAI_SUFFIXES]
+@R.mode.IND@+Ind:@R.mode.IND@ N_INDEP_VAI_SUFFIXES ; !! [OLD: INDEP_VAI_SUFFIXES]
+@R.mode.CON@+Cnj:@R.mode.CON@ N_CONJ_VAI_SUFFIXES ; !! [OLD: CONJ_VAI_SUFFIXES]
+@R.mode.SUB@+Sbj:@R.mode.SUB@ N_SUBJ_VAI_SUFFIXES ; !! [OLD: SUBJ_VAI_SUFFIXES]
+@R.mode.IRR@+Irr:@R.mode.IRR@ N_UNREAL_VAI_SUFFIXES ; !! [OLD: UNREAL_VAI_SUFFIXES]
+@R.mode.IMP@+Imp:@R.mode.IMP@ N_IMP_VAI_SUFFIXES ; !! [OLD: IMP_VAI_SUFFIXES]
 
 LEXICON N_INDEP_VAI_SUFFIXES !! [OLD: INDEP_VAI_SUFFIXES]
 ! Third Person Interrogatives
-@R.person.NULL@+3Sg+INTERR:@R.person.NULL@%>waatsiksi # ;
-@R.person.NULL@+3Pl+INTERR:@R.person.NULL@%>waiksaawa # ;
+@R.person.NULL@+3Sg+Interr:@R.person.NULL@%>waatsiksi # ;
+@R.person.NULL@+3Pl+Interr:@R.person.NULL@%>waiksaawa # ;
 ! Singular INDEPENDENT
 @R.person.NI@+1Sg:@R.person.NI@%>yi N_ANIM_INTERR ; !! [OLD: ANIM_INTERR]
 @R.person.KI@+2Sg:@R.person.KI@%>yi N_ANIM_INTERR ; !! [OLD: ANIM_INTERR]
@@ -687,8 +687,8 @@ LEXICON N_VII_SUFFIXES !! [OLD: VII_SUFFIXES]
 
 LEXICON N_INDEP_VII_SUFFIXES !! [OLD: INDEP_VII_SUFFIXES]
 ! Inanimate Interrogatives
-@R.person.NULL@+%0Sg+INTERR:@R.person.NULL@%>waatsiksi # ;
-@R.person.NULL@+%0Pl+INTERR:@R.person.NULL@%>waistsaawa # ;
+@R.person.NULL@+%0Sg+Interr:@R.person.NULL@%>waatsiksi # ;
+@R.person.NULL@+%0Pl+Interr:@R.person.NULL@%>waistsaawa # ;
 ! Singular INDEPENDENT
 @R.person.NULL@+%0Sg:@R.person.NULL@%>wa N_ENCLITICS ; !! [OLD: ENCLITICS]
 ! Plural INDEPENDENT
@@ -714,7 +714,7 @@ LEXICON N_UNREAL_VII_SUFFIXES !! [OLD: UNREAL_VII_SUFFIXES]
 
 LEXICON N_ANIM_INTERR !! [OLD: ANIM_INTERR]
 0 # ;
-+INTERR:%>hpa # ;
++Interr:%>hpa # ;
 
 ! The following lexicon contains the enclitic pronouns or attached pronouns from Frantz 2017 Chapter 9
 ! Using the term D3Sg follows Frantz in distinguishing between the 3rd person pronoun used when there
