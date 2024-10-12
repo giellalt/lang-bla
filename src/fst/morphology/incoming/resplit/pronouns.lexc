@@ -1,0 +1,29 @@
+LEXICON PERS_PRON
+niistówa+Pron+Pers+1Sg:niistówa # ;
+niistówa+Pron+Pers+1Sg:niistó # ;
+niistówa+Pron+Pers+1Sg+Obv:niistóyi # ;
+kiistówa+Pron+Pers+2Sg:kiistówa # ;
+kiistówa+Pron+Pers+2Sg:kiistó # ;
+kiistówa+Pron+Pers+2Sg+Obv:kiistóyi # ;
+ostóyi+Pron+Pers+3Sg:ostóyi # ;
+niistónnaana+Pron+Pers+1Pl:niistónnaana # ;
+niistónnaana+Pron+Pers+1Pl:niistónnaan # ;
+niistónnaana+Pron+Pers+1Pl+Obv:niistónnaani # ;
+kiistónoona+Pron+Pers+21Pl:kiistónoona # ;
+kiistónoona+Pron+Pers+21Pl:kiistónoon # ;
+kiistónoona+Pron+Pers+21Pl+Obv:kiistónooni # ;
+kiistówaawa+Pron+Pers+2Pl:kiistówaawa # ;
+kiistówaawa+Pron+Pers+2Pl:kiistówaaw # ;
+kiistówaawa+Pron+Pers+2Pl+Obv:kiistówaawi # ;
+ostówaawayi+Pron+Pers+3Pl:ostówaawayi # ;
+
+LEXICON INTERR_PRON
+takáa+Pron+Interr+3Sg/Pl:takáa # ;
+tahkáa+Pron+Interr+3Sg/Pl:tahkáa # ;
+tsikáa+Pron+Interr+4Sg/Pl:tsikáa # ;
+tsá+Pron+Interr+3Sg/Pl:tsá # ;
+tsá+Pron+Interr+0Sg/Pl:tsá # ;
+ááhsa+Pron+Interr+0Sg/Pl:ááhsa # ;
+tsimá+Pron+Interr:tsimá # ;
+
+
