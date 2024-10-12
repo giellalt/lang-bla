@@ -84,8 +84,12 @@ Nonaff+
 +PRO
 +3/%0Sg
 +3/%0
++3Sg/Pl
 +D3Sg
-+INTERR
++Interr
++Pron
++Pers
++Ipc
 +Dem
 +Dim
 +A
@@ -96,7 +100,7 @@ Nonaff+
 +MT
 +Vblz
 %>
-^Dem
+
 
 ! Prenoun tags
 PN/a's+
@@ -1145,6 +1149,7 @@ n2
 %^Rcpr
 %^DEM
 %^Bnf
+%^DIS
 
 !! Blackfoot Nominal and Verbal Morphology
 
@@ -1154,3 +1159,6 @@ LEXICON Root
 @P.pos.VERB@ PREFIX_SETS ;
 @P.pos.NOUN@ NOUN_PREFIXES ;
 DEM_STEMS ;
+PART ;
+PERS_PRON ;
+INTERR_PRON ;
