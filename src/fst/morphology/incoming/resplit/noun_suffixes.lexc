@@ -25,7 +25,7 @@ LEXICON NOUN_SUFFIXES
 @R.class.NI@+NI:@R.class.NI@0 POSS_NUM ;
 
 LEXICON IM
-0 POSS_NUM ;
+!0 POSS_NUM ;
 @D.person.NULL@:@D.person.NULL@%>im POSS_NUM ;
 @D.person.NULL@@D.im.IM@ POSS_NUM ;
 @R.person.NULL@ POSS_NUM ;

@@ -3,8 +3,8 @@
 ! Below are the INDEPENDENT noun stems and their allomorphic forms (only if the allomorph is irregular). 
 
 LEXICON NOUN_STEMS
-@P.class.NA@ INDEP_NA_STEMS ;
-@P.class.NI@ INDEP_NI_STEMS ;
+@R.pos.NOUN@ INDEP_NA_STEMS ;
+@R.pos.NOUN@ INDEP_NI_STEMS ;
 @R.class.VAI@ INDEP_NA_STEMS ;
 @R.class.VII@ INDEP_NI_STEMS ;
 
@@ -1899,7 +1899,7 @@ LEXICON DEP_NA_STEMS
 ! Test Stems
 ! nohkówa:ohkó                NAD ;
 ! naaáhsa:maaáhs              NAD ;
-! nitána:itán                 NAD ;
+nitána:itán                 NAD ;
 ! niksíssta:iksísst           NAD ;
 ! Full list
 naaáhsa:maaáhs	NAD ;
