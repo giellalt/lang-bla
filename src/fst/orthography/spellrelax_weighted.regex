@@ -1,5 +1,6 @@
+# Blackfoot vowel accent variation (no weights)
 
-#Blackfoot vowel accent variation (no weights)
+define SpellRelaxWeighted [
 
 á á (->) a a,
 í í (->) i i,
@@ -17,7 +18,7 @@ a (->) á,
 i (->) í,
 o (->) ó,
 
-#Blackfoot vowel/glide length variation (low weight)
+# Blackfoot vowel/glide length variation (low weight)
 
 a a a (->) a a::0.25,
 a a (->) a a a::0.25,
@@ -54,21 +55,21 @@ o i (->) o o::0.25,
 o i (->) ó::0.25,
 o y i (->) o i::0.25,
 a y i (->) a i::0.25,
-a a y i (->) a i::0.25,
+a a y i (->) a i::0.25,,
 
-#Blackfoot vowel insertion/delection (moderately weighted)
+# Blackfoot vowel insertion/delection (moderately weighted)
 
-a (->) 0 || _ .#.::0.5,
-i (->) 0 || _ .#.::0.5,
-y i (->) i || .#. _::0.5,
-w a (->) 0 || .#. _::0.5,
-y i (->) 0 || .#. _::0.5,
-! i (->) 0 || .#. _::0.5,
-a (->) 0 || .#. _::0.5,
-! o (->) 0 || .#. _::0.5,
-! á (->) 0 || .#. _::0.5,
-! í (->) 0 || .#. _::0.5,
-! ó (->) 0 || .#. _::0.5,
+a (->) 0::0.5 || _ .#.,,
+i (->) 0::0.5 || _ .#.,,
+y i (->) i::0.5 || .#. _,,
+w a (->) 0::0.5 || .#. _,,
+y i (->) 0::0.5 || .#. _,,
+! i (->) 0::0.5 || .#. _,,
+a (->) 0::0.5 || .#. _,,
+! o (->) 0::0.5 || .#. _,,
+! á (->) 0::0.5 || .#. _,,
+! í (->) 0::0.5 || .#. _,,
+! ó (->) 0::0.5 || .#. _,,
 
 #Other consonant length variation/deletion (moderately weighted)
 
@@ -78,12 +79,12 @@ m m (->) m::0.5,
 m (->) m m::0.5,
 n (->) n n::0.5,
 n n (->) n::0.5,
-s s (->) s::0.5,
-n i (->) 0 || .#. _::0.5,
-k i (->) 0 || .#. _::0.5
-!o (->) 0 || .#. _ ::0.5,
-! i (->) 0 || _ .#.::0.5,
-! a (->) 0 || _ .#.::0.5,
-! o (->) 0 || _ .#.::0.5
+s s (->) s::0.5,,
+n i (->) 0::0.5 || .#. _,,
+k i (->) 0::0.5 || .#. _
+! o (->) 0::0.5 || .#. _,,
+! i (->) 0::0.5 || _ .#.,,
+! a (->) 0::0.5 || _ .#.,,
+! o (->) 0::0.5 || _ .#.
 
-;
+];
