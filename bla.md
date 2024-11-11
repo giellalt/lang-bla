@@ -1184,7 +1184,9 @@ Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of T
 
 
 
-Root lexicon for Blackfoot phonology
+Blackfoot Nominal and Verbal Morphology
+
+from verb file
 
 * * *
 
@@ -1228,17 +1230,6 @@ New list of preverbs
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/prestems.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/prestems.lexc)</small>
-
----
-
-# src-fst-morphology-stems-pronouns.lexc.md 
-
-Pronouns
-Pronouns in the Siksika language are references to things.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/morphology/stems/pronouns.lexc](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/pronouns.lexc)</small>
 
 ---
 

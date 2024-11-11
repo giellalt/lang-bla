@@ -1,6 +1,8 @@
 
 
-Root lexicon for Blackfoot phonology
+Blackfoot Nominal and Verbal Morphology
+
+from verb file
 
 * * *
 
