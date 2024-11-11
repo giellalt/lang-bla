@@ -11,12 +11,13 @@ SUBDIRS=. test
 # xfscript formats
 GT_ORTHOGRAPHIC_REGEX_SRCS=\
 		inituppercase.regex \
-		spellrelax.regex    \
+#		spellrelax.regex    \
 		spellrelax-mobile-keyboard.regex \
 		spellrelax-tags.regex
 
 GT_ORTHOGRAPHIC_XFSCRIPT_SRCS=\
 		allcaps.xfscript      \
+		spellrelax_weighted.xfscript    \
 		downcase-derived_proper-strings.xfscript \
 		spellrelax-with-tags.xfscript
 
