@@ -11,7 +11,6 @@ SUBDIRS=. test
 # xfscript formats
 GT_ORTHOGRAPHIC_REGEX_SRCS=\
 		inituppercase.regex \
-#		spellrelax.regex    \
 		spellrelax-mobile-keyboard.regex \
 		spellrelax-tags.regex
 
