@@ -3,10 +3,10 @@
 ! Below are the INDEPENDENT noun stems and their allomorphic forms (only if the allomorph is irregular). 
 
 LEXICON NOUN_STEMS
-@P.pos.NA@ INDEP_NA_STEMS ;
-@P.pos.NI@ INDEP_NI_STEMS ;
-@P.pos.VAI@ INDEP_NA_STEMS ;
-@P.pos.VII@ INDEP_NI_STEMS ;
+@R.pos.NOUN@ INDEP_NA_STEMS ;
+@R.pos.NOUN@ INDEP_NI_STEMS ;
+@R.class.VAI@ INDEP_NA_STEMS ;
+@R.class.VII@ INDEP_NI_STEMS ;
 
 ! When working with the lexicon, be sure to know the following lexical information:
 ! 1. Does it take the /-im/ suffix when possessed? If so, use NA_IM or NI_IM
@@ -30,8 +30,8 @@ LEXICON INDEP_NA_STEMS
 ! moksísa:%^SPmoksís NA ;    
 ! ísska:%^SPí3ssk NA ; ! Prefixed form is óóhka
 ! ísska:%^SPóóhka NA ; ! Prefixed form is óóhka
-! Below is the full list of NI nouns. They need to be edited according to the pattern of the example nouns above.
-! They were retrieved from the inanimate noun list in the browse section of the dictionary.
+! Below is the full list of NA nouns. They need to be edited according to the pattern of the example nouns above.
+! They were retrieved from the animate noun list in the browse section of the dictionary.
 ! Pairs		Part_of_Speech
 iistapipaitapiiyiwa:yiistapipaitapiiyi	NA ;
 tsíísiiwa:tsíísii	NA ;
@@ -277,7 +277,7 @@ omahkanao'kssiwa:omahkanao'kssi	NA ;
 omahkainaka'siwa:omahkainaka'si	NA ;
 omahkai'stoowa:omahkai'stoo	NA ;
 omahkaapaawa:omahkaapaa	NA ;
-omahkapiwa:omahkitapi	NA ;
+omahkitapiwa:omahkitapi	NA ;
 okoyiima:okoyiim	NA ;
 oapsspa:oapssp	NA ;
 o'táksisstoyiikoana:o'táksisstoyiikoan	NA ;
@@ -851,19 +851,19 @@ apahtó'kiiwa:apahtó'kii	NA ;
 apahsípokowa:apahsípoko	NA ;
 aohkiómahkohsiiksikapaanssiwa:aohkiómahkohsiiksikapaanssi	NA ;
 aohkiókiinimaawa:aohkiókiinimaa	NA ;
-áótahkááokayisa:áótahkááokayis NA_IM ;
-áómatskahtakiwa:áómatskahtaki NA ;
-áókstakiwa:áókstaki NA ;
-áóttakiwa:áóttaki NA ;
-áótotsóókiwa:áótotsóóki NA ;
-áótahkóínaamma:áótahkóínaamm NA ;
-áókspipokowa:áókspipoko NA ;
-áókooysskaawa:áókooysskaa NA ;
-ííkayaisaisttoowa:ííkayaisaisttoo NA ;
-áókakihtsimaisiiko'takiwa:áókakihtsimaisiiko'taki NA ;
-áókakihtsimaawa:áókakihtsimaa NA ;
-áókaki'tsiwa:áókaki'tsi NA ;
-áókaki'tsiwa:áókaki'tsi NA ;
+!áótahkááokayisa:áótahkááokayis NA_IM ;
+!áómatskahtakiwa:áómatskahtaki NA ;
+!áókstakiwa:áókstaki NA ;
+!áóttakiwa:áóttaki NA ;
+!áótotsóókiwa:áótotsóóki NA ;
+áótahkóínaamma:áótahkóínaamm	NA ;
+!áókspipokowa:áókspipoko NA ;
+!áókooysskaawa:áókooysskaa NA ;
+ííkayaisaisttoowa:ííkayaisaisttoo	NA ;
+!áókakihtsimaisiiko'takiwa:áókakihtsimaisiiko'taki NA ;
+!áókakihtsimaawa:áókakihtsimaa NA ;
+!áókaki'tsiwa:áókaki'tsi NA ;
+!áókaki'tsiwa:áókaki'tsi NA ;
 anááyiwa:anááyi	NA ;
 amokapistaa'tsisa:amokapistaa'tsis	NA ;
 akstsimá'tsisa:akstsimá'tsis	NA ;
@@ -989,7 +989,7 @@ sináákssini:sináákssin	NI ;
 sináákia'tsisi:%^SPi2sináákia'tsis	NI ;
 simssíni:%^SPi2simssín	NI ;
 siksikimííyi:siksikimííw	NI ;
-sikóóhkotokyi:sikóóhkotok	NI ;
+!sikóóhkotokyi:sikóóhkotok	NI ;
 sikotsipiiyisi:sikotsipiiyis	NI ;
 sikomahksiini:sikomahksiin	NI ;
 sikohtsaakiikahtssini:sikohtsaakiikahtssin	NI ;
@@ -1077,7 +1077,7 @@ pisatsaapiiniiwani:%^SPi2pisatsaapiiniiwan	NI ;
 pisatótsipíiyisi:%^SPpisatótsipíiyis	NI ;
 pináápssokimiyi:pináápssokimi	NI ;
 pikkiáákssinyi:pikkiáákssin	NI ;
-pikkiáákssinyi:pikkiáákssin	NI ;
+!pikkiáákssinyi:pikkiáákssin	NI ;
 pikkiáákio'ksisakoyi:pikkiáákio'ksisako	NI ;
 pikíípaisstsimssini:pikíípaisstsimssin	NI ;
 pikató'ssini:pikató'ssin	NI ;
@@ -1090,7 +1090,7 @@ pi'ksíkahtssini:%^SPi2pi'ksíkahtssin	NI ;
 pi'ksiistsimaani:pi'ksiistsimaan	NI ;
 pi'kááni:%^SPi2pi'káán	NI ;
 pi'káákssini:pi'káákssin	NI ;
-páni'kahtáísstaakssinyi:páni'kahtáísstaakssin	NI ;
+!páni'kahtáísstaakssinyi:páni'kahtáísstaakssin	NI ;
 páni'kahtáísstaakssinyi:páni'kahtáísstaakssin	NI ;
 pákkii'pi:%^SPi2pákkii'p	NI ;
 páyooyi:hpáyoo	NI_IM ;
@@ -1288,7 +1288,7 @@ naawoohtsiyi:naawoohtsi	NI ;
 mohkínsstsisiyi:mohkínsstsisi	NI ;
 moyísi:%^SPmoyís NI ;
 miistsáákaitapisskoyi:miistsáákaitapissko	NI ;
-miistsáákaitapisskoyi:miistsáákaitapissko	NI ;
+!miistsáákaitapisskoyi:miistsáákaitapissko	NI ;
 matsináwaisstaami:matsináwaisstaam	NI ;
 mamiiksistsikoyi:mamiiksistsiko	NI ;
 mótookisi:%^SPmótookis	NI ;
@@ -1354,7 +1354,7 @@ mííniaohkiiyi:mííniaohkii	NI ;
 mííni:míín	NI ;
 misisáóyisi:misisáóyis	NI ;
 misisayi:misisa	NI ;
-misisayi:misisa	NI ;
+!misisayi:misisa	NI ;
 misámaahkoyinnimaani:misámaahkoyinnimaan	NI ;
 miníyi:mi2ní	NI ;
 miitsíksikinsstsspi:%^SPomiitsíksikinsstssp	NI ;
@@ -1497,7 +1497,7 @@ ksími:kitsímm	NI ;
 íssoohtsiki:íssoohtsik	NI ;
 íikaitaissksinima'tstohkio'pi:íikaitaissksinima'tstohkio'p	NI ;
 isttsinaiksistsikoyi:isttsinaiksistsiko	NI ;
-isttsinaiksistsikoyi:isttsinaiksistsiko	NI ;
+!isttsinaiksistsikoyi:isttsinaiksistsiko	NI ;
 isspssáíssksimao'pi:isspssáísskitsimao'p	NI ;
 isskihtáii'tahtaayi:isskihtáii'tahtaa	NI ;
 issikatoyiiksistsikoyi:issikatoyiiksistsiko	NI ;
@@ -1892,14 +1892,14 @@ a'kahkóyi:a'kahkó	NI ;
 ! Below are the regular DEPENDENT noun stems
 
 LEXICON DEP_STEMS
-@P.pos.NA@ DEP_NA_STEMS ;
-@P.pos.NI@ DEP_NI_STEMS ;
+@P.class.NA@ DEP_NA_STEMS ;
+@P.class.NI@ DEP_NI_STEMS ;
 
 LEXICON DEP_NA_STEMS
 ! Test Stems
 ! nohkówa:ohkó                NAD ;
 ! naaáhsa:maaáhs              NAD ;
-! nitána:itán                 NAD ;
+nitána:itán                 NAD ;
 ! niksíssta:iksísst           NAD ;
 ! Full list
 naaáhsa:maaáhs	NAD ;
@@ -1947,8 +1947,8 @@ nóta'sa:óta's	NAD ;
 noyínnaawa:oyínnaa	NAD ;
 nisskáni'taama:sskáni'taam	NAD ;
 niyiihkowa:yiihkowa	NAD ;
+niistó:iistó NAD ;
 
 LEXICON DEP_NI_STEMS
 nookóówayi:ookóówan     NID ;
 nookóówayi:ookóówa     NID ;
-
