@@ -1,5 +1,7 @@
-Multichar_Symbols
+! Flags, tags, and special characters for regular Blackfoot noun and verb morphology 
 
+Multichar_Symbols
+! Noun tags
 +NI
 +NA
 +NAD
@@ -17,15 +19,6 @@ Multichar_Symbols
 +Px2Pl
 +Px3Pl
 +Px4Sg/Pl
-! Pronoun tags
-+Pron
-+Dem
-+Dim
-+Stat
-+Movg
-+Invs
-+MT
-+Vblz
 ! Verb tags
 +VAI
 +VII
@@ -40,8 +33,6 @@ Imm+ ! For imminent future
 Prox+
 Past+
 Nonaff+
-+Pl
-+Sg
 +Imp
 +Ind
 +Cnj
@@ -53,6 +44,8 @@ Nonaff+
 +Der/Nom3
 +Der/Nom4
 +Der/Nom5
++Der/VAI
++Der/VII
 +Der/Caus
 +Der/Caus2 
 +Der/Rcpr
@@ -91,8 +84,24 @@ Nonaff+
 +PRO
 +3/%0Sg
 +3/%0
++3Sg/Pl
 +D3Sg
-+INTERR
++Interr
++Pron
++Pers
++Ipc
++Dem
++Dim
++A
++I
++Stat
++Movg
++Invs
++MT
++Vblz
+%>
+
+
 ! Prenoun tags
 PN/a's+
 PN/aahs+
@@ -1031,31 +1040,31 @@ PV/ípssit+
 @R.class.VII@
 @R.class.VTI@
 @R.class.VTA@
-@P.pos.VAI@
-@P.pos.VII@
-@P.pos.VTI@
-@P.pos.VTA@
-@R.pos.VAI@
-@R.pos.VII@
-@R.pos.VTI@
-@R.pos.VTA@
 @P.assoc.A@
 @R.assoc.A@
-@P.class.NOUN@
-@P.class.VERB@
-@R.class.NOUN@
-@R.class.VERB@
-@P.pos.NA@
-@P.pos.NI@
-@R.pos.NA@
-@R.pos.NI@
 @P.pos.NOUN@
 @P.pos.VERB@
 @R.pos.NOUN@
 @R.pos.VERB@
-
-
-
+@P.class.NA@
+@P.class.NI@
+@P.class.VAI@
+@P.class.VII@
+@R.class.NA@
+@R.class.NI@
+@R.class.VAI@
+@R.class.VII@
+@P.pos.NOUN@
+@P.pos.VERB@
+@R.pos.NOUN@
+@R.pos.VERB@
+@P.pos.NOMINALIZE@
+@P.pos.VERBALIZE@
+@R.pos.NOMINALIZE@
+@R.pos.VERBALIZE@
+@D.neg.NEG@
+@D.mode.IMP@
+@P.neg.NEG@
 
 ! Constraining preverb recycling
 @D.pvcount@
@@ -1130,22 +1139,27 @@ i3
 a2
 a3
 a4
-á2 
-á3 
-á4
 o2
-ó2
 m2
 n2
 '
 %^SP
-%^DEM
 %<
 %>
+%^Rcpr
+%^DEM
+%^Bnf
+%^DIS
+%^INV
 
-!! Root lexicon for Blackfoot phonology
+!! Blackfoot Nominal and Verbal Morphology
+
+!! from verb file
 
 LEXICON Root
-N_NOUN_PREFIXES ;
-VERB_ROOT ;
-DEMONSTRATIVES ;
+@P.pos.VERB@ PREFIX_SETS ;
+@P.pos.NOUN@ NOUN_PREFIXES ;
+DEM_STEMS ;
+PART ;
+PERS_PRON ;
+INTERR_PRON ;
