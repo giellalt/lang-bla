@@ -47,7 +47,7 @@ define strongp [ k -> 0 || [ k | p ] %< _ ] ;
 define weakm [ m -> 0 || [ n | k ] %< _ ] ;
 
 define oAlternation [ i2 (->) [ o | a ] || .#. _ [ o | a ] ] ;
-!define ghosti2 [ i2 (->) 0 || .#. _ Consonant ] ;
+define ghosti2 [ "i2" -> 0 || .#. _ Consonant ] ;
 define i2oRule [ i3 -> o , i3 y -> o2 , a3 -> o || %< _ ] ;
 define w2yRule [ w (->) y || _ %< Vowel ] ;
 define iDissimilation [ i -> o || _ y %< i ] ;
@@ -63,6 +63,11 @@ define rmBnf [ %^Bnf -> 0 ] ;
 define Demwa20Rule [ %^DEM w a -> 0 || o %> _ ] ;
 define DemPli20Rule [ %^DEM i (->) 0 || o %> _ ] ;
 define Demtrigger20 [ %^DEM -> 0 ] ;
+
+! Inverse o rules
+define Invo20Rule [ %^INV o -> 0 || t %> _ ] ;
+define Invo2ooRule [ %^INV o -> oo || Ix %> _ ] ;
+define Invtrigger20 [ %^INV -> 0 ] ;
 
 !! Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of Toronto Press. Appendix B.
 
@@ -214,7 +219,7 @@ define iAbsorbRule [ Ix -> 0 || (Bx) _ Bx [ a | [a a] | o | [o o] ] ] ;
 
 define tAffricRule [ t -> t s || _ Bx [ i | i2 ] ] ;
 define i2deletion [ i2 -> 0  || s %< _ s s ,, i2 -> 0 || _ o ] ;
-define rmi2 [ i2 -> i ] ;
+!define rmi2 [ i2 -> i ] ;
 
 !!€ nit<it<itsiniki
 !!€ nitsitsitsiniki
@@ -390,6 +395,9 @@ read regex [ shortPrefix
 .o. Demwa20Rule
 .o. DemPli20Rule
 .o. Demtrigger20
+.o. Invo20Rule
+.o. Invo2ooRule
+.o. Invtrigger20
 .o. rcprRule
 .o. rmRcpr
 .o. bnfRule
@@ -427,9 +435,9 @@ read regex [ shortPrefix
 .o. iLossRule
 .o. tAffricRule 
 .o. i2deletion
-.o. Vowel2GlideRule
-.o. rmi2
 .o. iAbsorbRule 
+.o. Vowel2GlideRule
+.o. ghosti2
 .o. ihLossRule 
 .o. PresibRule
 .o. GlideReductRule 
@@ -443,8 +451,9 @@ read regex [ shortPrefix
 .o. VowelEpenRule
 .o. AccentRule 
 .o. deep2surfRule
-.o. i2NeutRule
 .o. sInsRule
+.o. sInsRule2
+.o. i2NeutRule
 ] ;
 
 !!!!! END !!!!!

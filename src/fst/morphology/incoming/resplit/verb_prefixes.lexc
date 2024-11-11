@@ -43,10 +43,11 @@ LEXICON NEG_PREFIXES
 
 LEXICON TENSE_PREFIXES
 0 ASPECT_PREFIXES ;
-@D.mode.IMP@Imm+:@D.mode.IMP@ayáak%< ASPECT_PREFIXES ;
-@D.mode.IMP@Dur+:@D.mode.IMP@á%< ASPECT_PREFIXES ;
-@D.mode.IMP@Fut+:@D.mode.IMP@yáak%< ASPECT_PREFIXES ;
-@D.mode.IMP@Past+:@D.mode.IMP@ii%< ASPECT_PREFIXES ;
+@R.pos.VERB@@D.mode.IMP@Imm+:@R.pos.VERB@@D.mode.IMP@ayáak%< ASPECT_PREFIXES ;
+@R.pos.VERB@@D.mode.IMP@Dur+:@R.pos.VERB@@D.mode.IMP@á%< ASPECT_PREFIXES ;
+@R.pos.VERB@@D.mode.IMP@Fut+:@R.pos.VERB@@D.mode.IMP@yáak%< ASPECT_PREFIXES ;
+@R.pos.VERB@@D.mode.IMP@Past+:@R.pos.VERB@@D.mode.IMP@ii%< ASPECT_PREFIXES ;
+@R.pos.VERB@@D.mode.IMP@Past+:@R.pos.VERB@@D.mode.IMP@na%< ASPECT_PREFIXES ; ! Siksika past
 
 LEXICON ASPECT_PREFIXES
 0 IRR_PREFIX ;
