@@ -38,7 +38,6 @@ GT_LEXC_SRCS_L1_L2=\
 			 affixes/noun_affixes.lexc \
 			 stems/verb_stems.lexc \
 			 affixes/verb_affixes.lexc \
-			 affixes/prevn.lexc \
                          stems/pronouns.lexc \
                          stems/demonstratives.lexc \
                          stems/particles.lexc
