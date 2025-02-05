@@ -22,29 +22,29 @@ LEXICON VTA
 
 LEXICON VAI_DERIVATION
 @R.pos.VERB@+VAI:@R.pos.VERB@0                                           VAI_SUFFIXES ;
-@R.pos.VERB@+VAI+Der/Caus:@R.pos.VERB@%>áttsi                            VTA ;
-@R.pos.VERB@+VAI+Der/Caus2:@R.pos.VERB@%>pi                              VTA ; ! Rare, give low weight
-@R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo  VTA_SUFFIXES ;
-@R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>omo VTA_SUFFIXES ;
-@R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>o   VTA_SUFFIXES ;
-@R.pos.VERB@@R.accomp.A@+VAI+Accomp:@R.pos.VERB@@R.accomp.A@%>m	         VAI_SUFFIXES ; ! -> VTA?
+@R.pos.VERB@+VAI+Der/Caus:@R.pos.VERB@%>áttsi                            VTA "weight: 10" ;
+@R.pos.VERB@+VAI+Der/Caus2:@R.pos.VERB@%>pi                              VTA "weight: 10" ; ! Rare, give low weight
+@R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo  VTA_SUFFIXES "weight: 10" ;
+@R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>omo VTA_SUFFIXES "weight: 10" ;
+@R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>o   VTA_SUFFIXES "weight: 10" ;
+@R.pos.VERB@@R.accomp.A@+VAI+Accomp:@R.pos.VERB@@R.accomp.A@%>m	         VAI_SUFFIXES "weight: 10" ; ! -> VTA?
 
 LEXICON VII_DERIVATION
 @R.pos.VERB@+VII:@R.pos.VERB@0		VII_SUFFIXES ;
 
 LEXICON VTI_DERIVATION
 @R.pos.VERB@+VTI:@R.pos.VERB@0                                           VTI_SUFFIXES ;
-@R.pos.VERB@@P.class.VTA@+VTI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo  VTA_SUFFIXES ;
-@R.pos.VERB@@P.class.VTA@+VTI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>omo VTA_SUFFIXES ;
-@R.pos.VERB@@P.class.VTA@+VTI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>o   VTA_SUFFIXES ;
+@R.pos.VERB@@P.class.VTA@+VTI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo  VTA_SUFFIXES "weight: 10" ;
+@R.pos.VERB@@P.class.VTA@+VTI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>omo VTA_SUFFIXES "weight: 10" ;
+@R.pos.VERB@@P.class.VTA@+VTI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>o   VTA_SUFFIXES "weight: 10" ;
 
 LEXICON VTA_DERIVATION
 @R.pos.VERB@+VTA:@R.pos.VERB@0                        VTA_SUFFIXES ;
-!@R.pos.VERB@@P.class.VTA@+VTA+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo         VTA_SUFFIXES ;
-@R.pos.VERB@@P.class.VTA@+VTA+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>%^Bnfomo        VTA_SUFFIXES ;
-@R.pos.VERB@@P.class.VTA@+VTA+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>o          VTA_SUFFIXES ;
-@R.pos.VERB@@P.class.VAI@+VTA+Der/Rflx+VAI:@R.pos.VERB@@P.class.VAI@%>ohsi      VAI_SUFFIXES ;
-@R.pos.VERB@@P.class.VAI@+VTA+Der/Rcpr+VAI:@R.pos.VERB@@P.class.VAI@%>%^Rcprotsiiyi   VAI_SUFFIXES ;
+!@R.pos.VERB@@P.class.VTA@+VTA+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo         VTA_SUFFIXES "weight: 10" ;
+@R.pos.VERB@@P.class.VTA@+VTA+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>%^Bnfomo        VTA_SUFFIXES "weight: 10" ;
+@R.pos.VERB@@P.class.VTA@+VTA+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>o          VTA_SUFFIXES "weight: 10" ;
+@R.pos.VERB@@P.class.VAI@+VTA+Der/Rflx+VAI:@R.pos.VERB@@P.class.VAI@%>ohsi      VAI_SUFFIXES "weight: 10" ;
+@R.pos.VERB@@P.class.VAI@+VTA+Der/Rcpr+VAI:@R.pos.VERB@@P.class.VAI@%>%^Rcprotsiiyi   VAI_SUFFIXES "weight: 10" ;
 !@R.pos.VERB@@P.class.VAI@+VTA+Der/Rcpr+VAI:@R.pos.VERB@@P.class.VAI@%>tsiiyi    VAI_SUFFIXES ;
 
 ! BELOW ARE THE VAI SUFFIXES ;
@@ -598,11 +598,11 @@ LEXICON ENCLITICS_BOUND
 +PRO+%0Pl:%>waistsi # ;
 
 LEXICON VERB_DER_NOM_SUFFIXES
-+Der/Nom:0                     NOUN_SUFFIXES ;
-+Der/Nom2:%>n                  NOUN_SUFFIXES ;
-+Der/Nom3:%>i2hsin             NOUN_SUFFIXES ;
-+Der/Nom4:%>hp                 NOUN_SUFFIXES ;
-+Der/Nom5:%>o'p                NOUN_SUFFIXES ;
++Der/Nom:0                     NOUN_SUFFIXES "weight: 10" ;
++Der/Nom2:%>n                  NOUN_SUFFIXES "weight: 10" ;
++Der/Nom3:%>i2hsin             NOUN_SUFFIXES "weight: 10" ;
++Der/Nom4:%>hp                 NOUN_SUFFIXES "weight: 10" ;
++Der/Nom5:%>o'p                NOUN_SUFFIXES "weight: 10" ;
 
 ! Below is the set of verb suffixes that occur when a noun undergoes the verbalization process. (aakiiyiwa 'she is a woman').
 ! They are only instransitive verbs. Some things to note. I have only included the person suffixes, not the derivational suffixes.

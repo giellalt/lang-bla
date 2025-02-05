@@ -1,18 +1,18 @@
 LEXICON NA
 @R.pos.NOUN@@P.class.NA@+NA:@R.pos.NOUN@@P.class.NA@0  IM ;
-@R.class.VAI@+NA+Der/VAI+VAI:@R.class.VAI@0 N_VAI_SUFFIXES  ; 
+@R.class.VAI@+NA+Der/VAI+VAI:@R.class.VAI@0 N_VAI_SUFFIXES  "weight: 10" ; 
 
 LEXICON NA_IM
 @R.pos.NOUN@@P.im.IM@@P.class.NA@+NA:@R.pos.NOUN@@P.im.IM@@P.class.NA@  IM ;
-@R.class.VAI@+NA+Der/VAI+VAI:@R.class.VAI@0 N_VAI_SUFFIXES ;
+@R.class.VAI@+NA+Der/VAI+VAI:@R.class.VAI@0 N_VAI_SUFFIXES "weight: 10" ;
 
 LEXICON NI
 @R.pos.NOUN@@P.class.NI@+NI:@R.pos.NOUN@@P.class.NI@0  IM ;
-@R.class.VII@+NI+Der/VII+VII:@R.class.VII@0 N_VII_SUFFIXES ;
+@R.class.VII@+NI+Der/VII+VII:@R.class.VII@0 N_VII_SUFFIXES "weight: 10" ;
 
 LEXICON NI_IM
 @R.pos.NOUN@@P.im.IM@@P.class.NI@+NI:@R.pos.NOUN@@P.im.IM@@P.class.NI@0  IM ;
-@R.class.VII@+NI+Der/VII+VII:@R.class.VII@0 N_VII_SUFFIXES ;
+@R.class.VII@+NI+Der/VII+VII:@R.class.VII@0 N_VII_SUFFIXES "weight: 10" ;
 
 LEXICON NAD
 @P.class.NA@+NAD:@P.class.NA@0 POSS_NUM ;

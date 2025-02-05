@@ -1,0 +1,98 @@
+LEXICON PREFIX_SETS
+@P.class.VAI@	BASIC_PREFIXES ;
+@P.class.VII@	BASIC_PREFIXES ;
+@P.class.VTI@	BASIC_PREFIXES ;
+@P.class.VTA@	BASIC_PREFIXES ;
+
+LEXICON BASIC_PREFIXES
+@P.mode.IND@	BASIC_IND_PREFIXES ;
+@P.mode.CON@	BASIC_CNJ_PREFIXES ;
+@P.mode.SUB@	BASIC_SBJ_PREFIXES ;
+@P.mode.IRR@	BASIC_IRR_PREFIXES ;
+@P.mode.IMP@	BASIC_IMP_PREFIXES ;
+
+LEXICON BASIC_IND_PREFIXES
+@P.person.NI@:@P.person.NI@nit%< POL_PREFIXES ;
+@P.person.KI@:@P.person.KI@kit%< POL_PREFIXES ;
+@P.person.OT@:@P.person.OT@ot%< POL_PREFIXES ;
+@P.person.NULL@0 POL_PREFIXES ;
+
+LEXICON BASIC_CNJ_PREFIXES
+@P.person.NI@:@P.person.NI@nit%<    POL_PREFIXES ;
+@P.person.KI@:@P.person.KI@kit%<    POL_PREFIXES ;
+@P.person.OT@:@P.person.OT@ot%<     POL_PREFIXES ;
+@P.person.NULL@0    POL_PREFIXES ;
+
+LEXICON BASIC_SBJ_PREFIXES
+@P.person.NULL@0	POL_PREFIXES ;
+
+LEXICON BASIC_IRR_PREFIXES
+@P.person.NI@:@P.person.NI@nit%<    POL_PREFIXES ;
+@P.person.KI@:@P.person.KI@kit%<    POL_PREFIXES ;
+@P.person.NULL@0    POL_PREFIXES ;
+
+LEXICON BASIC_IMP_PREFIXES
+@P.person.IMP@0    POL_PREFIXES ;
+
+
+LEXICON POL_PREFIXES ! polarity prefixes (i.e., negation and similar in first slot after person)
+0 TENSE_PREFIXES ;
+@R.mode.IND@@P.neg.NEG@PS/maat+:@R.mode.IND@@P.neg.NEG@%^SPi2maat%< TENSE_PREFIXES ;
+@R.mode.IMP@@P.neg.NEG@PS/miin+:@R.mode.IMP@@P.neg.NEG@miin%< PRESTEMS ;
+@R.mode.IMP@@P.neg.NEG@PS/piin+:@R.mode.IMP@@P.neg.NEG@piin%< PRESTEMS ;
+@R.mode.IND@@P.neg.NEG@PS/maataommita'p+:@R.mode.IND@@P.neg.NEG@%^SPi2maataommita'p%< TENSE_PREFIXES ; ! consider skipping tense
+@R.mode.IRR@@P.neg.NEG@PS/kata'+:@R.mode.IRR@@P.neg.NEG@%^SPi2kata'%< TENSE_PREFIXES ;
+@P.neg.NEG@PS/aahk+:@P.neg.NEG@aahk%< TENSE_PREFIXES ;
+@P.neg.NEG@PS/aahksaw+:@P.neg.NEG@aahksaw%< TENSE_PREFIXES ;
+@P.neg.NEG@PS/aahksta'+:@P.neg.NEG@aahksta'%< TENSE_PREFIXES ; ! possibly only cnj
+@P.neg.NEG@PS/aaksta'+:@P.neg.NEG@aaksta'%< TENSE_PREFIXES ; ! possibly only cnj
+
+LEXICON TENSE_PREFIXES
+0 PRESTEMS ;
+@R.pos.VERB@@D.mode.IMP@PS/ayaak+:@R.pos.VERB@@D.mode.IMP@ayaak%< PRESTEMS ; ! imm future
+@R.pos.VERB@@D.mode.IMP@PS/yaak+:@R.pos.VERB@@D.mode.IMP@yaak%< PRESTEMS ; ! future
+@R.pos.VERB@@D.mode.IMP@PS/ii+:@R.pos.VERB@@D.mode.IMP@ii%< PRESTEMS ; ! past
+@R.pos.VERB@@D.mode.IMP@PS/na+:@R.pos.VERB@@D.mode.IMP@na%< PRESTEMS ; ! Siksika past
+
+LEXICON PRESTEMS
+PVSET1 ;
+
+LEXICON PVSET1
+VERB_STEMS ;
+NOUN_STEMS ;
+PVGATE1 ;
+PS/a+:a PSBOUND1 ; ! durative
+PS/a'+:a' PSBOUND1 ; ! inchoative
+PS/ikaa+:^SPikaa PSBOUND1 ; ! perfective, need to model initial vs non initial forms
+
+LEXICON PSBOUND1
+0:%< PVGATE1 ;
+	
+LEXICON PVGATE1
+VERB_STEMS ;
+NOUN_STEMS ;
+PVSET2 ;
+	
+LEXICON PVSET2
+PS/ohko+:ohko PSBOUND2 ; ! "contrary, undesirable"; "have the wherewithal for"
+PS/omaa+:omaa PSBOUND2 ; ! "yet"; considerable allomorphy
+PS/iik+:i2ik PSBOUND2 ; ! "intensifier, very"
+PS/aahs+:aahs PSBOUND2 ; ! "always", could this be in an earlier slot? 
+PS/aapám+:aapám	PSBOUND2 ; ! "across water"
+PS/ahkiaap+:ahkiaap	PSBOUND2 ; ! "homeward"
+PS/aiist+:aiist	PSBOUND2 ; ! "to location"
+PS/akkaw+:akkaw	PSBOUND2 ; ! "voluminous", w ~ y variation check phonology
+PS/apoyi+:apoyi	PSBOUND2 ; ! "brown or any earth tone"
+PS/atso't+:atso't	PSBOUND2 ; ! "from all sides, from more than one direction"
+PS/i2'nak+:i'nak	PSBOUND2 ; ! "small"; breaking, no deletion (i'nakawaatsi)
+PS/i'tsin+:i'tsin	PSBOUND2 ; ! "everything"; no breaking, no deletion (i'tsinihkaa)
+PS/sstsina'+:sstsina' PSBOUND2 ; ! "need to, have to VERB before doing something else"; maybe initial i2?; s-connection instead of i2?
+	
+LEXICON PSBOUND2
+0:%< PVGATE2 ;
+
+LEXICON PVGATE2
+PVSET1 ;
+PVSET2 ;
+VERB_STEMS ;
+NOUN_STEMS ;

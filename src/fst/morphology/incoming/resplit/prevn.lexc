@@ -1,553 +1,967 @@
 LEXICON PREVERBS
 0 VERB_STEMS ;
 0 NOUN_STEMS ;
-@P.assoc.A@PV/ohpok+:@P.assoc.A@%^SPohpok BOUND ;
-PV/saw+:saw BOUND ;
-@R.mode.CON@PV/áákssta'+:@R.mode.CON@%^SPáákssta'	BOUND ;
+@P.assoc.A@PV/ohpok+:@P.assoc.A@%^SPohpok BOUND ; ! doubled (shouldn't be SP?)
+PV/ohpok+:ohpok BOUND ; ! grammar? or "small?"
+
+PV/saw+:saw BOUND ; ! conjunct negation move to prefixes
+!PV/sa+:saw BOUND ; ! neg; grammar
+!PV/saa+:saaw BOUND ; ! neg; grammar
+
+@R.mode.CON@PV/áákssta'+:@R.mode.CON@%^SPáákssta'	BOUND ; ! doubled also move to verb prefixes
 @R.mode.CON@PV/ááhkssta'+:@R.mode.CON@%^SPááhkssta' BOUND ;
+PV/ááhk+:%^SPááhk BOUND ; ! "might, non-factive"; grammar 
+PV/ááhk+:ááhk BOUND ; ! "might, non-factive"; grammar
+PV/ááhkamá'p+:%^SPááhkamá'p BOUND ; ! "might"; grammar
+PV/ááhkamá'p+:ááhkamá'p BOUND ; ! "might"; grammar
+PV/ááhksikkama'p+:ááhksikkama'p BOUND ; ! "might"
+PV/áák+:áák BOUND ; ! ! "might"; variant of aahk-; relaxer?
+
 !! @P.count1.T@Dur+:@P.count1.T@á BOUND ;
+
 !! New list of preverbs
-PV/a'kooht+:a'kooht BOUND ;
-PV/ááhkamá'p+:%^SPááhkamá'p BOUND ;
-PV/ááhk+:%^SPááhk BOUND ;
-PV/aahksikkam+:%^SPaahksikkam BOUND ;
-PV/aahs+:aahs BOUND ;
-PV/aaksta'+:aaksta' BOUND ;
-PV/aanist+:%^SPaanist BOUND ;
-PV/ai'tamáak+:ai'tamáak BOUND ;
-PV/aisskahs+:aisskahs BOUND ;
-PV/akisspí+:akisspí BOUND ;
-PV/akk+:akk BOUND ;
-PV/akoksska+:akoksska BOUND ;
-PV/áka+:%^SPa4ka BOUND ;
-PV/ama+:ama BOUND ;
-PV/amo'tap+:amo'tap BOUND ;
-PV/anaw+:anaw BOUND ;
-PV/anist+:anist BOUND ;
-PV/ano+:anow BOUND ;
-PV/anootap+:anootap BOUND ;
-PV/anow+:anow BOUND ;
-PV/ao'tamáak+:ao'tamáak BOUND ;
-PV/apa'p+:apa'p BOUND ;
-PV/aso+:aso BOUND ;
-PV/assaak+:assaak BOUND ;
-PV/att+:att BOUND ;
-PV/awa'+:awa' BOUND ;
-PV/hkana+:hkana BOUND ;
-PV/i'sskaan+:i2'sskaan BOUND ;
-PV/i'tsk+:i'tsk BOUND ;
-PV/ihta+:ihtaw BOUND ;
 !@P.count1.P@PV/ii+:@P.count1.P@ii BOUND ;
-PV/iihk+:iihk BOUND ;
-PV/iiht+:iiht BOUND ;
-PV/iihtsitok+:i3htsitok BOUND ;
-PV/iihtsitssitak+:iihtsitssitak BOUND ;
-PV/iik+:i2ik BOUND ;
-PV/iikska'+:iikska' BOUND ;
-PV/iima+:iima BOUND ;
-PV/iimaa+:i3maa BOUND ;
-PV/iimat+:iimat BOUND ;
-PV/iimá+:iimá BOUND ;
-PV/iin+:iin BOUND ;
-PV/iina+:iina BOUND ;
-PV/iinao'k+:iinao'k BOUND ;
-PV/iinatt+:iinatt BOUND ;
-PV/iini+:iini BOUND ;
-PV/iinik+:iinik BOUND ;
-PV/iitaisap+:iitaisap BOUND ;
-PV/iitsiksist+:iitsiksist BOUND ;
-PV/iitskimaan+:iitskimaan BOUND ;
-PV/iiyik+:iiyik BOUND ;
-PV/ika'+:ika' BOUND ;
-PV/ika'to+:i2ka'to BOUND ;
-PV/ikaap+:i2kaap BOUND ;
-PV/ikaiksist+:i2kaiksist BOUND ;
-PV/ikak+:ikak BOUND ;
-PV/ikamo't+:ikamo't BOUND ;
-PV/ikapo+:ikapo BOUND ;
-PV/ikayiss+:ikayiss BOUND ;
-PV/ikia'ya+:ikia'ya BOUND ;
-PV/ikihkiht+:ikihkiht BOUND ;
-PV/ikimm+:ikimm BOUND ;
-PV/ikimmat+:i2kimmat BOUND ;
-PV/ikipp+:i2kipp BOUND ;
-PV/ikippa'+:i2kippa' BOUND ;
-PV/ikkam+:i2kkam BOUND ;
-PV/ikkan+:ikkan BOUND ;
-PV/ikkia'+:ikkia' BOUND ;
-PV/ikkihkini+:ikkihkini BOUND ;
-PV/ikkina+:ikkina BOUND ;
-PV/iksissto+:i2ksissto BOUND ;
-PV/iksist+:iksist BOUND ;
-PV/iksksowa'+:iksksowa' BOUND ;
-PV/ikssto+:ikssto BOUND ;
-PV/ikstsina'+:ikstsina' BOUND ;
-PV/ikstsina'+:kstsina' BOUND ;
-PV/ikíppoa+:ikíppoa BOUND ;
-PV/imaat+:imaat BOUND ;
-PV/imak+:imak BOUND ;
-PV/immoyi+:immoyi BOUND ;
-PV/inai't+:inai't BOUND ;
-PV/inikk+:i2nikk BOUND ;
-PV/innaahkoot+:innaahkoot BOUND ;
-PV/ipahkitap+:ipahkitap BOUND ;
-PV/ipahtsik+:i2pahtsik BOUND ;
-PV/ipakska+:ipakska BOUND ;
-PV/ipana+:ipana BOUND ;
-PV/ipann+:i2pann BOUND ;
-PV/ipapa+:ipapa BOUND ;
-PV/ipiitsiiyóóhk+:%^SPi2piitsiiyóóhk BOUND ;
-PV/ipiitsiy+:%^SPi2piitsiy BOUND ;
-PV/ipo't+:i2po't BOUND ;
-PV/ipoina+:ipoina BOUND ;
-PV/ipp+:%^SPipp BOUND ;
-PV/ipp+:ipp BOUND ;
-PV/ippita+:ippita BOUND ;
-PV/ippoa+:ippoa BOUND ;
-PV/ippssa'kapp+:ippssa'kapp BOUND ;
-PV/ipsstsikatt+:i2psstsikatt BOUND ;
-PV/ipsstsík+:i2psstsík BOUND ;
-PV/ipákkssa+:i2pákkssa BOUND ;
-PV/isimi+:i2simi BOUND ;
-PV/isinap+:i2sinap BOUND ;
-PV/isitsip+:isitsip BOUND ;
-PV/isk+:isk BOUND ;
-PV/iss+:iss BOUND ;
-PV/isska'+:isska' BOUND ;
-PV/isstohkana+:isstohkana BOUND ;
-PV/ist+:ist BOUND ;
-PV/ista'+:ista' BOUND ;
-PV/istohk+:istohk BOUND ;
-PV/istohkana+:istohkana BOUND ;
-PV/istsa'+:i2stsa' BOUND ;
-PV/istto't+:i2stto't BOUND ;
-PV/isttsikohpo+:i2sttsikohpo BOUND ;
-PV/isttsitsa+:i2sttsitsa BOUND ;
-PV/isttssi+:i2sttssi BOUND ;
-PV/it+:it BOUND ;
-PV/itap+:itap BOUND ;
-PV/itam+:itam BOUND ;
-PV/ito't+:ito't BOUND ;
-PV/iton+:iton BOUND ;
-PV/itsisa+:itsisa BOUND ;
-PV/itsst+:itsst BOUND ;
-PV/itáak+:itáak BOUND ;
-PV/iámoohk+:iámoohk BOUND ;
-PV/kaat+:kaat BOUND ;
-PV/kakanott+:i2kakanott BOUND ;
-PV/kam+:kam BOUND ;
-PV/kan+:hkan BOUND ;
-PV/kipita+:kipita BOUND ;
-PV/kipita+:ippita BOUND ; ! enumerating this because the dictionary has two alternative forms
-PV/kipp+:ki2pp BOUND ; !
-PV/kotski+:i2kotski BOUND ;
-PV/ksisttoyi+:ksisttoyi BOUND ;
-PV/káta'+:káta' BOUND ;
-PV/káák+:i2káák BOUND ;
-PV/káátsisto+:káátsisto BOUND ;
-PV/kínnak+:kínnak BOUND ;
-PV/mattsistá'+:%^SPmattsistá' BOUND ; ! Allomorphy of matt- dealt with as an exception in the phonology
-PV/mátt+:%^SPmátt BOUND ;
-PV/máttsit+:%^SPmáttsit BOUND ;
-PV/maak+:maak BOUND ;
-PV/maam+:%^SPmaam BOUND ;
-PV/mak+:mak BOUND ;
-PV/mato+:mato BOUND ;
-PV/matsowá'p+:matsowá'p BOUND ;
-PV/mi'kotsi+:mi'kotsi BOUND ;
-PV/miiksist+:miiksist BOUND ;
-PV/miistap+:miistap BOUND ;
-PV/min+:min BOUND ;
-PV/missk+:missk BOUND ;
-PV/misst+:misst BOUND ;
-PV/mo'tóí+:mo'tóí BOUND ;
-PV/máak+:%^SPi2máak BOUND ;
-PV/máo'k+:%^SPmáo'k BOUND ;
+!PV/imaat+:imaat BOUND ; ! is this neg?
 !PV/na+:na BOUND ;
-PV/naat+:%^SPnaat BOUND ;
-PV/nai't+:nai't BOUND ;
-PV/niistsikáp+:niistsikáp BOUND ;
-PV/niit+:niit BOUND ;
-PV/niitsi+:niitsi BOUND ;
-PV/niitsskimaan+:niitsskimaan BOUND ;
-PV/niitá'p+:ni2itá'p BOUND ;
-PV/noohk+:%^SPnoohk BOUND ;
-PV/noohkátt+:%^SPnoohkátt BOUND ;
-PV/noohkátt+:noohkátt BOUND ; ! I am doing this because there are two acceptable variants listed in the dictionary
-PV/níítaak+:ní2ítaak BOUND ;
-PV/o'kia'p+:o'kia'p BOUND ;
-PV/o'kio+:o'kio BOUND ;
-PV/o'tap+:o'tap BOUND ;
-PV/ohk+:ohk BOUND ;
-PV/ohkan+:ohkan BOUND ;
-PV/ohkana+:ohkana BOUND ;
-PV/ohkit+:ohkit BOUND ;
-PV/ohko+:ohko BOUND ;
-PV/ohkott+:ohkott BOUND ;
-PV/ohpii+:ohpii BOUND ;
-PV/ohpiistap+:ohpiistap BOUND ;
-PV/ohpo'kii+:ohpo'kii BOUND ;
-PV/ohpo'kii+:hpo'kii BOUND ; ! The reason I'm copying this is that evidently, the oh- here can sometimes dissapear in initial position, but not always.
-PV/ohpok+:ohpok BOUND ;
-PV/ohs+:ohs BOUND ;
-PV/oht+:oht BOUND ;
-PV/ohtatsiwa+:%^SPohtatsiwa BOUND ;
-PV/oka'p+:oka'p BOUND ;
-PV/oma+:oma BOUND ;
-PV/omaa+:omaa BOUND ;
-PV/omahka+:omahka BOUND ;
-PV/omanista+:omanista BOUND ;
-PV/omat+:omat BOUND ;
-PV/omi+:omi BOUND ;
-PV/omiiksist+:omiiksist BOUND ;
-PV/omo'tap+:omo'tap BOUND ;
-PV/omohp+:%^SPomohp BOUND ;
-PV/omoht+:%^SPomoht BOUND ;
-PV/omoht+:omoht BOUND ;
-PV/omá+:omá BOUND ;
-PV/on+:on BOUND ;
-PV/ona'+:ona' BOUND ;
-PV/onai't+:onai't BOUND ;
-PV/onaki+:onaki BOUND ;
-PV/oohk+:%^SPoohk BOUND ;
-PV/oohk+:oohk BOUND ;
-PV/oohkanistta+:oohkanistta BOUND ;
-PV/oohkatt+:oohkatt BOUND ;
-PV/opaksikssto+:opaksikssto BOUND ;
-PV/otam+:otam BOUND ;
-PV/oto+:oto BOUND ;
-PV/otomohk+:otomohk BOUND ;
-PV/piin+:piin BOUND ;
-PV/piitsiyoohk+:piitsiyoohk BOUND ;
-PV/pin+:pin BOUND ;
-PV/po'kí+:po'kí BOUND ;
-PV/poina+:poina BOUND ;
-PV/poohsap+:poohsap BOUND ;
-PV/poína+:i2poína BOUND ;
-PV/sa+:saw BOUND ;
-PV/saa+:saaw BOUND ;
-PV/saaki+:i2saaki BOUND ;
-PV/saapo'kit+:i2saapo'kit BOUND ;
-PV/saipa'+:saipa' BOUND ;
-PV/sipi+:i2sipi BOUND ;
-PV/sok+:i2sok BOUND ;
-PV/sook+:i2sook BOUND ;
-PV/sootam+:i2sootam BOUND ;
-PV/sotám+:sotám BOUND ;
-PV/soyi+:soyi BOUND ;
-PV/ssap+:i2ssap BOUND ;
-PV/sska'+:sska' BOUND ;
-PV/sska'+:sska' BOUND ;
-PV/sspi+:sspi BOUND ;
-PV/sstahpik+:sstahpik BOUND ;
-PV/sstok+:sstok BOUND ;
-PV/sstonnat+:sstonnat BOUND ;
-PV/sstsina'+:sstsina' BOUND ;
-PV/sstónnat+:sstónnat BOUND ;
-PV/ssáak+:i2ssáak BOUND ;
-PV/stam+:i2stam BOUND ;
-PV/sáótat+:sáótat BOUND ;
-PV/tatsiki+:i2tatsiki BOUND ;
-PV/waahki+:waahki BOUND ;
-PV/waahko+:waahko BOUND ;
-PV/waahto+:waahto BOUND ;
-PV/waahtsam+:waahtsam BOUND ;
-PV/waahtso+:waahtso BOUND ;
-PV/waako'tsi+:waako'tsi BOUND ;
-PV/waaksisto+:waaksisto BOUND ;
-PV/waanaoyit+:waanaoyit BOUND ;
-PV/waanook+:waanook BOUND ;
-PV/waapiiwaan+:waapiiwaan BOUND ;
-PV/wayák+:wayák BOUND ;
-PV/wayákiit+:wayákiit BOUND ;
-PV/wáyák+:wáyák BOUND ;
-PV/yaahs+:yaahs BOUND ;
-PV/yiistap+:yi2istap BOUND ;
-PV/yoisstsikina+:yoisstsikina BOUND ;
-PV/yook+:yook BOUND ;
-PV/yámoohk+:yámoohk BOUND ;
-PV/á'p+:á'p BOUND ;
-PV/á'+:á' BOUND ;
-PV/áka+:áka BOUND ;
-PV/ákstam+:ákstam BOUND ;
-PV/ákáá+:ákáá BOUND ;
-PV/ááhk+:ááhk BOUND ;
-PV/ááhkamá'p+:ááhkamá'p BOUND ;
-PV/ááhksikkama'p+:ááhksikkama'p BOUND ;
-PV/áák+:áák BOUND ;
-PV/áísooka+:áísooka BOUND ;
-PV/íka+:íka BOUND ;
-PV/ípssit+:ípssit BOUND ;
-PN/a's+:a's	BOUND ;
-PN/aahs+:aahs	BOUND ;
-PN/aaká+:aaká	BOUND ;
-PN/aamsskááp+:aamsskááp	BOUND ;
-PN/aapám+:aapám	BOUND ;
-PN/aapát+:aapát	BOUND ;
-PN/áápi+:áápi	BOUND ;
-PN/aatow+:aatow	BOUND ;
-PN/ahkiaap+:ahkiaap	BOUND ;
-PN/aiist+:aiist	BOUND ;
-PN/aká+:aká	BOUND ;
-PN/akim+:akim	BOUND ;
-PN/akkaw+:akkaw	BOUND ;
-PN/anao'k+:anao'k	BOUND ;
-PN/apak+:apak	BOUND ;
-PN/apoyi+:apoyi	BOUND ;
-PN/atso't+:atso't	BOUND ;
-PN/áwatt+:áwatt	BOUND ;
-PN/ayaam+:ayaam	BOUND ;
-PN/ayaam+:iyaam	BOUND ; ! Initial variation of ayaam
-PN/i'nák+:i'nák	BOUND ;
-PN/i'táám+:i'táám	BOUND ;
-PN/i'tsin+:i'tsin	BOUND ;
-PN/i'tsk+:i'tsk	BOUND ;
-PN/i'tsk+:i'tsk	BOUND ;
-PN/ihtsis+:ihtsis	BOUND ;
-PN/iinohk+:iinohk	BOUND ;
-PN/iitaam+:iitaam	BOUND ;
-PN/iitoom+:iitoom	BOUND ;
-PN/ííyik+:ííyik	BOUND ;
-PN/ikaw+:ikaw	BOUND ;
-PN/ikaaw+:ikaaw	BOUND ;
-PN/ikakk+:ikakk	BOUND ;
-PN/ikako+:ikako	BOUND ;
-PN/iki'ta+:i2ki'ta	BOUND ;
-PN/ikim+:ikim	BOUND ;
-PN/ikim+:akim	BOUND ; ! Alternation of ikim-
-PN/ikkahs+:ikkahs	BOUND ;
-PN/ikkak+:ikkak	BOUND ;
-PN/ikksk+:i2kksk	BOUND ;
-PN/ikkst+:ikkst	BOUND ;
-PN/ikotsk+:ikotsk	BOUND ;
-PN/iksi's+:iksi's	BOUND ;
-PN/iksiw+:iksiw	BOUND ;
-PN/iksiiksk+:i2ksiiksk	BOUND ;
-PN/iksikk+:iksikk	BOUND ;
-PN/iksim+:iksim	BOUND ;
-PN/iksimat+:iksimat	BOUND ;
-PN/iksisap+:i2ksisap	BOUND ;
-PN/iksissta'p+:i2ksissta'p	BOUND ;
-PN/iksisto+:i2ksisto	BOUND ;
-PN/iksow+:iksow	BOUND ;
-PN/imi+:i2mi	BOUND ;
-PN/immak+:immak	BOUND ;
-PN/inap+:inap	BOUND ;
-PN/inn+:i2nn	BOUND ;
-PN/innaap+:innaap	BOUND ;
-PN/innis+:innis	BOUND ;
-PN/inno+:i2nno	BOUND ;
-PN/inok+:inok	BOUND ;
-PN/insstaw+:insstaw	BOUND ;
-PN/ipahk+:ipahk	BOUND ;
-PN/ipahp+:ipahp	BOUND ;
-PN/ipahs+:i2pahs	BOUND ;
-PN/ipahs+:apahs	BOUND ; ! Initial alternation of ipahs-
-PN/ipaht+:ipaht	BOUND ;
-PN/ipahtsi+:i2pahtsi	BOUND ;
-PN/ipi'k+:ipi'k	BOUND ;
-PN/ipiiw+:i2piiw	BOUND ;
-PN/ipiihk+:i2piihk	BOUND ;
-PN/ipisat+:ipisat	BOUND ;
-PN/ipíttsik+:i2píttsik	BOUND ;
-PN/ipow+:ipow	BOUND ;
-PN/ipoohsap+:ipoohsap	BOUND ;
-PN/ippat+:ippat	BOUND ;
-PN/ippom+:ippom	BOUND ;
-PN/ippot+:i2ppot	BOUND ;
-PN/ipsst+:ipsst	BOUND ;
-PN/isakoow+:isakoow	BOUND ;
-PN/isam+:isam	BOUND ;
-PN/isap+:isap	BOUND ;
-PN/iso+:iso	BOUND ;
-PN/iss+:iss	BOUND ;
-PN/issk+:issk	BOUND ;
-PN/isskihta'+:isskihta'	BOUND ;
-PN/isspí+:isspí	BOUND ;
-PN/isspik+:isspik	BOUND ;
-PN/istaaht+:i2staaht	BOUND ;
-PN/istot+:istot	BOUND ;
-PN/isttani+:i2sttani	BOUND ;
-PN/isttohk+:isttohk	BOUND ;
-PN/isttsi+:isttsi	BOUND ;
-PN/isttsik+:isttsik	BOUND ;
-PN/isttsip+:i2sttsip	BOUND ;
-PN/itapiksst+:itapiksst	BOUND ;
-PN/itsiw+:itsiw	BOUND ;
-PN/itsiiy+:itsiiy	BOUND ;
-PN/itsik+:itsik	BOUND ;
-PN/itsin+:itsin	BOUND ;
-PN/iyoomok+:iyoomok	BOUND ;
-PN/ki'taw+:ki'taw	BOUND ;
-PN/ki'tsi+:ki'tsi	BOUND ;
-PN/kiihtsip+:kiihtsip	BOUND ;
-PN/komono+:hkomono	BOUND ;
-PN/ksiw+:i2ksiw	BOUND ;
-PN/ksikk+:ksikk	BOUND ;
-PN/ksis+:ksis	BOUND ;
-PN/ma'k+:ma'k	BOUND ;
-PN/maan+:maan	BOUND ;
-PN/maká+:maká	BOUND ;
-PN/máóhk+:máóhk	BOUND ;
-PN/matóóm+:matóóm	BOUND ;
-PN/matsiw+:matsiw	BOUND ;
-PN/matsiw+:itsiw	BOUND ;
-PN/mattsi+:mattsi	BOUND ;
-PN/mi'ki+:mi'ki	BOUND ;
-PN/mii+:mii	BOUND ;
-PN/miinohk+:miinohk	BOUND ;
-PN/míístap+:míístap	BOUND ;
-PN/mikksk+:mikksk	BOUND ;
-PN/misam+:misam	BOUND ;
-PN/mokamo't+:mokamo't	BOUND ;
-PN/naam+:naam	BOUND ;
-PN/náám+:náám	BOUND ; ! Problem here Áaks>am>ito'too<wa.'(S)he will arrive here needlessly.' I am duplicating the stem because it's too weird.
-PN/náám+:i2ám	BOUND ;
-PN/naatow+:naatow	BOUND ;
-PN/naatsa+:naatsa	BOUND ;
-PN/naaw+:naaw	BOUND ;
-PN/ni'tóóhk+:ni2'tóóhk	BOUND ;
-PN/niit+:niit	BOUND ;
-PN/nimm+:nimm	BOUND ;
-PN/noohkíít+:noohkíít	BOUND ;
-PN/o'k+:o'k	BOUND ;
-PN/o'kstsik+:o'kstsik	BOUND ;
-PN/o't+:o't	BOUND ;
-PN/o'tak+:o'tak	BOUND ;
-PN/o'tami+:o'tami	BOUND ;
-PN/o'topi+:o'topi	BOUND ;
-PN/o'totam+:o'totam	BOUND ;
-PN/o'tsat+:o'tsat	BOUND ;
-PN/o'tsitsk+:o'tsitsk	BOUND ;
-PN/o'tssat+:o'tssat	BOUND ;
-PN/ohkit+:ohkit	BOUND ;
-PN/ohko+:ohko	BOUND ;
-PN/ohkom+:ohkom	BOUND ;
-PN/ohkon+:ohkon	BOUND ;
-PN/ohpo+:ohpo	BOUND ;
-PN/ohpok+:ohpok	BOUND ;
-PN/ohsi+:ohsi	BOUND ;
-PN/ohso'kap+:ohso'kap	BOUND ;
-PN/ohsohkat+:ohsohkat	BOUND ;
-PN/ohtow+:ohtow	BOUND ;
-PN/ohtssap+:ohtssap	BOUND ;
-PN/ok+:ok	BOUND ;
-PN/okaki+:okaki	BOUND ;
-PN/okamo't+:okamo't	BOUND ;
-PN/ómahk+:ómahk	BOUND ;
-PN/omat+:omat	BOUND ;
-PN/omatap+:omatap	BOUND ;
-PN/omia'nist+:omia'nist	BOUND ;
-PN/omow+:omow	BOUND ;
-PN/onnat+:onnat	BOUND ;
-PN/oohsi+:oohsi	BOUND ;
-PN/oomok+:oomok	BOUND ;
-PN/ooto+:ooto	BOUND ;
-PN/opam+:opam	BOUND ;
-PN/opi+:opi	BOUND ;
-PN/opott+:opott	BOUND ;
-PN/otahko+:otahko	BOUND ;
-PN/otam+:otam	BOUND ;
-PN/otats+:otats	BOUND ;
-PN/otoom+:otoom	BOUND ;
-PN/otsik+:otsik	BOUND ;
-PN/otsistap+:otsistap	BOUND ;
-PN/ótssko+:ótssko	BOUND ;
-PN/ottapit+:ottapit	BOUND ;
-PN/pa'ksik+:pa'ksik	BOUND ;
-PN/paahk+:i2paahk	BOUND ;
-PN/paahksíst+:paahksíst	BOUND ;
-PN/paaht+:paaht	BOUND ;
-PN/paahtsi+:paahtsi	BOUND ;
-PN/pi'k+:pi'k	BOUND ;
-PN/pinááp+:pi2nááp	BOUND ;
-PN/pisát+:i2pisát	BOUND ;
-PN/pisst+:pisst	BOUND ;
-PN/poohsap+:i2poohsap	BOUND ;
-PN/sa+:sa	BOUND ;
-PN/sa'kap+:sa'kap	BOUND ;
-PN/saahk+:saahk	BOUND ;
-PN/saat+:saat	BOUND ;
-PN/saayippom+:saayippom	BOUND ;
-PN/sahp+:sahp	BOUND ;
-PN/saikima'+:i2saikima'	BOUND ;
-PN/saiksistt+:saiksistt	BOUND ;
-PN/sainnis+:sainnis	BOUND ;
-PN/sainskaka'p+:sainskaka'p	BOUND ;
-PN/saip+:saip	BOUND ;
-PN/sakak+:sakak	BOUND ;
-PN/sako+:sako	BOUND ;
-PN/saoki+:saoki	BOUND ;
-PN/sap+:sap	BOUND ;
-PN/sapa'kot+:sapa'kot	BOUND ;
-PN/sata+:sata	BOUND ;
-PN/satt+:satt	BOUND ;
-PN/sawommit+:sawommit	BOUND ;
-PN/sawotsistap+:sawotsistap	BOUND ;
-PN/sayippom+:sayippom	BOUND ;
-PN/si'k+:si'k	BOUND ;
-PN/sik+:sik	BOUND ;
-PN/sikaapi+:sikaapi	BOUND ;
-PN/sikim+:i2sikim	BOUND ;
-PN/sikotahko+:sikotahko	BOUND ;
-PN/sisákk+:sisákk	BOUND ;
-PN/sisik+:sisik	BOUND ;
-PN/sistsik+:i2sistsik	BOUND ;
-PN/sitok+:sitok	BOUND ;
-PN/sitsip+:i2sitsip	BOUND ;
-PN/sow+:sow	BOUND ;
-PN/sohk+:sohk	BOUND ;
-PN/sok+:i2sok	BOUND ;
-PN/sok+:sok	BOUND ;
-PN/soohk+:soohk	BOUND ;
-PN/sopow+:i2sopow	BOUND ;
-PN/sopok+:i2sopok	BOUND ;
-PN/sopoya'p+:i2sopoya'p	BOUND ;
-PN/ssik+:i2ssik	BOUND ;
-PN/ssk+:ssk	BOUND ;
-PN/sski+:sski	BOUND ;
-PN/sskihta+:i2sskihta	BOUND ;
-PN/sskohto+:i2sskohto	BOUND ;
-PN/sskonát+:i2sskonát	BOUND ;
-PN/sso+:i2sso	BOUND ;
-PN/ssp+:ssp	BOUND ;
-PN/sspi+:sspi	BOUND ;
-PN/sspik+:sspik	BOUND ;
-PN/sspom+:sspom	BOUND ;
-PN/sstsaap+:i2sstsaap	BOUND ;
-PN/sstsim+:i2sstsim	BOUND ;
-PN/wa'kot+:wa'kot	BOUND ;
-PN/wa's+:wa's	BOUND ;
-PN/wa'sok+:wa'sok	BOUND ;
-PN/waahkiááp+:waahkiááp	BOUND ;
-PN/waaist+:waaist	BOUND ;
-PN/waaká+:waaká	BOUND ;
-PN/waami't+:waami't	BOUND ;
-PN/waamis+:waamis	BOUND ;
-PN/waamohs+:waamohs	BOUND ;
-PN/waamsskaap+:waamsskaap	BOUND ;
-PN/waanao'k+:waanao'k	BOUND ;
-PN/waanat+:waanat	BOUND ;
-PN/waaniit+:waaniit	BOUND ;
-PN/waapat+:waapat	BOUND ;
-PN/waapatohs+:waapatohs	BOUND ;
-PN/waapi+:waapi	BOUND ;
-PN/waapo'k+:waapo'k	BOUND ;
-PN/waatow+:waatow	BOUND ;
-PN/waattsi+:waattsi	BOUND ;
-PN/waawatt+:waawatt	BOUND ;
-PN/waawow+:waawow	BOUND ;
-PN/waist+:waist	BOUND ;
-PN/wattsi+:wattsi	BOUND ;
-PN/wayam+:wayam	BOUND ;
-PN/yááhs+:yááhs	BOUND ;
-PN/yaam+:yaam	BOUND ;
-PN/yiistap+:yiistap	BOUND ;
-PN/yiss+:yiss	BOUND ;
-PN/yissk+:yissk	BOUND ;
-PN/yoohk+:yoohk	BOUND ;
-PN/yoohkiit+:yoohkiit	BOUND ;
-PN/yootsip+:yootsip	BOUND ;
+
+PN/a's+:a's	BOUND ; ! "young"; variant of wa's-
+PN/wa's+:wa's	BOUND ; ! "young"; variant of a's- - can this be phonology e.g. initial glide deletion?
+
+PV/aahs+:aahs BOUND ; ! "always", could this be in an earlier slot? 
+
+PN/aahs+:aahs	BOUND ; ! "pleasing" ; variant of yaahs- (is this pv or pn?)
+PV/yaahs+:yaahs BOUND ; ! "pleasing"; variant of aahs- (is this pv or pn?)
+PN/yááhs+:yááhs	BOUND ; ! "pleasing"; what are the accents doing vs not?
+
+PN/aaká+:aaká	BOUND ; ! "many"; variant of waaká-
+PN/waaká+:waaká	BOUND ; ! "many"; variant of aaká-; this also looks like phonology
+PN/aká+:aká	BOUND ; ! "many"; variant of waaka-; short vowel like aamsskááp-
+
+PN/aamsskááp+:aamsskááp	BOUND ; ! "south"; variant of waamsskaap- 
+PN/waamsskaap+:waamsskaap	BOUND ; ! "south"; variant of aamsskááp- phonology, also surfaces with a not aa, accent differences?
+
+PN/aapám+:aapám	BOUND ; ! "across water"
+
+PN/aapát+:aapát	BOUND ; ! "behind, back"; initial variant of waapat
+PN/waapat+:waapat	BOUND ; ! "behind, to the rear"; variant of aapát-, accent variation
+
+PN/aatow+:aatow	BOUND ; ! "holy, sacred", initial variant of waato-; all have w ~ y variation, check phonology
+PN/waatow+:waatow	BOUND ; ! "blessed, holy" , non init variant of naato-
+PN/naatow+:naatow	BOUND ; ! "consecrated, holy, sacred" 
+
+PN/ahkiaap+:ahkiaap	BOUND ; ! "homeward"
+
+PN/aiist+:aiist	BOUND ; ! "to location"
+
+PN/akim+:akim	BOUND ; ! "place of honour", variant of ikim-
+PN/ikim+:akim	BOUND ; ! "place of honour", variant of akim- is this phonology
+! PN/ikim+:ikim	BOUND ; ! doubled
+
+PN/akkaw+:akkaw	BOUND ; ! "voluminous", w ~ y variation check phonology
+
+PN/anao'k+:anao'k	BOUND ; ! "half"
+PN/waanao'k+:waanao'k	BOUND ; ! "part, half, on one side", check phonology
+
+PN/apak+:apak	BOUND ; ! "wide and flat", sometimes opak- per examples, check variation
+
+PN/apoyi+:apoyi	BOUND ; ! "brown or any earth tone"
+
+PN/atso't+:atso't	BOUND ; ! "from all sides, from more than one direction"
+
+PN/ayaam+:ayaam	BOUND ; ! "wrong, different direction, misdirected", variant of iyaam-, can this be phonology
+PN/ayaam+:iyaam	BOUND ; ! "wrong, different direction, misdirected", Initial variation of ayaam 
+
+PN/i'nák+:i'nák	BOUND ; ! "small"
+
+PN/i'tsin+:i'tsin	BOUND ; ! "everything"
+
+PN/i'tsk+:i'tsk	BOUND ; ! "bare"
+PN/i'tsk+:i'tsk	BOUND ; ! "raw"; could these be combined into one homophonous PV?
+PV/i'tsk+:i'tsk BOUND ; ! "bare, raw"; both have verbal examples in dictionary
+
+PN/i'táám+:i'táám	BOUND ; ! "happy, pleasant, enjoyable"
+PN/iitaam+:iitaam	BOUND ; ! "happy, pleasant, enjoyable" speaker variant of i'táám- (relaxer?)
+
+PN/ihtsis+:ihtsis	BOUND ; ! "center" (but centre, town in online dictionary)"
+
+PN/iinohk+:iinohk	BOUND ; ! "last, at the very end"
+PN/miinohk+:miinohk	BOUND ; ! "at the edge, toward the end (of a sequence or queue)"; are these related?
+
+PN/iitoom+:iitoom	BOUND ; ! "former, first"
+PN/matóóm+:matóóm	BOUND ; ! "former, first" 
+PN/otoom+:otoom	BOUND ; ! "first"; non-initial variant of matoom-
+
+PN/ikaaw+:ikaaw	BOUND ; ! "on foot"
+
+PN/ikakk+:ikakk	BOUND ; ! "short in stature (dialect variant ikkak)"
+PN/ikkak+:ikkak	BOUND ; ! "short, low/ associated with childhood/youth"
+
+PN/ikako+:ikako	BOUND ; ! "void, nil"
+
+PN/ikaw+:ikaw	BOUND ; ! "open", w ~ y variation, check phonology
+
+PN/iki'ta+:i2ki'ta	BOUND ; ! "over, across" initial i variation
+PN/ki'taw+:ki'taw	BOUND ; ! "across"
+
+PN/ikkahs+:ikkahs	BOUND ; ! "humorous, funny, odd"
+
+PN/ikksk+:i2kksk	BOUND ; ! "motionless, in one place, still"
+PN/mikksk+:mikksk	BOUND ; ! "brittle, hard"
+
+PN/ikkst+:ikkst	BOUND ; ! "narrow, slim"
+
+PN/ikotsk+:ikotsk	BOUND ; ! "bitter"
+
+PN/iksi's+:iksi's	BOUND ; ! "out of sight behind an object, hidden"
+
+PN/iksiiksk+:i2ksiiksk	BOUND ; ! "to the side, aside"
+
+PN/iksikk+:iksikk	BOUND ; ! "white/clear/clean, tidy/carefully, cautiously"
+
+PN/iksim+:iksim	BOUND ; ! "secret, with hidden motive"
+
+PN/iksimat+:iksimat	BOUND ; ! "contentedly, appreciatively"
+
+PN/iksisap+:i2ksisap	BOUND ; ! "down"
+
+PN/iksissta'p+:i2ksissta'p	BOUND ; ! "confused, abnormal init change"
+
+PN/iksisto+:i2ksisto	BOUND ; ! "warm, hot" (dictionary has iksist-, online iksisto-)?
+PV/iksist+:iksist BOUND ; ! "finish, at the end"
+
+PN/iksiw+:iksiw	BOUND ; !  "low, at ground level" w ~ y variation
+PN/iksow+:iksow	BOUND ; ! "low" variant of iksiw- phonology, relaxation?
+PN/ksiw+:i2ksiw	BOUND ; ! "low, at ground level"; verbal examples; w ~ y variation
+
+PN/imi+:i2mi	BOUND ; ! "messy"
+
+PN/immak+:immak	BOUND ; ! "few, rare, less than normal"; verbal example
+
+PN/inap+:inap	BOUND ; ! "sense"; verbal example
+
+PN/inn+:i2nn	BOUND ; ! "down"; verbal example
+PN/innis+:innis	BOUND ; ! "down"
+
+PN/innaap+:innaap	BOUND ; ! "east"; variant of pinaap- 
+PN/pinááp+:pi2nááp	BOUND ; ! "east"; variant innaap-; note gemination? of n?; accent differences; verbal examples
+
+PN/inno+:i2nno	BOUND ; ! "long"; verbal examples
+
+PN/inok+:inok	BOUND ; ! "appealing"
+
+PN/insstaw+:insstaw	BOUND ; ! "neat, tidy"; w ~ y variation
+
+PN/ipahk+:ipahk	BOUND ; ! "bad", non-initial variant of paahk-
+PN/paahk+:i2paahk	BOUND ; ! "bad"; verbal examples
+
+PN/ipahp+:ipahp	BOUND ; ! "quiver, flutter, tremble, shiver"; verbal examples
+
+PN/ipahs+:apahs	BOUND ; ! "mushy, curdled, thickened"; Initial alternation of ipahs-
+PN/ipahs+:i2pahs	BOUND ; ! "mushy, curdled, thickened"; phonology?
+
+PN/ipaht+:ipaht	BOUND ; ! "enclosed"; non-initial variant of paaht-
+PN/paaht+:paaht	BOUND ; ! "inside"; verbal examples
+
+PN/ipahtsi+:i2pahtsi	BOUND ; ! "false, mistaken, erroneous, imitation"
+PN/paahtsi+:paahtsi	BOUND ; ! "false"; are these initial and non initial variants?
+
+PN/ipi'k+:ipi'k	BOUND ; ! "anomalous/unusual/supernatural"
+
+PN/ipiihk+:i2piihk	BOUND ; ! "in front of, converging along the path of s.o. or s.t. moving"
+
+PN/ipiiw+:i2piiw	BOUND ; ! "far, long distance, remote in space"; w ~ y variation; verbal examples
+
+PN/ipisat+:ipisat	BOUND ; ! "amazing, out of the ordinary"; non-initial variant of pisat-
+PN/pisát+:i2pisát	BOUND ; ! "unusual, amazing, fancy, out of the ordinary"; initial variant of ipisat-
+
+PN/ipoohsap+:ipoohsap	BOUND ; ! "toward speaker"; non-initial variant of poohsap-
+PN/poohsap+:i2poohsap	BOUND ; ! "toward speaker"
+PV/poohsap+:poohsap BOUND ; ! "toward speaker"
+
+PN/ipow+:ipow	BOUND ; ! "upright"; w ~ y variation
+
+PN/ippat+:ippat	BOUND ; ! "curious about, intrigued by, have a lively interest in"
+
+PN/ippom+:ippom	BOUND ; ! "adequate, correct, well"; negative required!; verbal examples
+
+PN/ippot+:i2ppot	BOUND ; ! "by the door"; verbal examples
+
+PN/ipsst+:ipsst	BOUND ; ! "inside"; non-initial variant of pisst-
+PN/pisst+:pisst	BOUND ; ! "inside"; initial variant of ipsst-
+PV/ípssit+:ípssit BOUND ; ! "inside"; in grammar as ípsst- typo?
+
+PN/ipíttsik+:i2píttsik	BOUND ; ! "to the side"
+
+PN/isakoow+:isakoow	BOUND ; ! "last"; w ~ y variation
+PN/sako+:sako	BOUND ; ! "last"; verbal examples
+
+PN/isam+:isam	BOUND ; ! "long"; variant of misam-
+PN/misam+:misam	BOUND ; ! "long time"; variant of isam-; verbal examples
+
+PN/isap+:isap	BOUND ; ! "within"; variant of sap-
+PN/sap+:sap	BOUND ; ! "in, within"; verbal examples
+
+PN/iso+:iso	BOUND ; ! "on a horizontal surface, upon"
+
+PN/iss+:iss	BOUND ; ! "in front"; initial variant of yiss-; another entry as "young"?
+PV/iss+:iss BOUND ; ! "in front"; nominal examples
+PN/yiss+:yiss	BOUND ; ! "in front, forward"; verbal examples
+
+PN/issk+:issk	BOUND ; ! "back, behind"; initial variant of ssk-
+PN/ssk+:ssk	BOUND ; ! "back"; verbal examples
+
+PN/isskihta'+:isskihta'	BOUND ; ! "east (of speaker), toward the open prairie, usually an uninhabited or sparsely populated area"
+
+PN/isspik+:isspik	BOUND ; ! "thick/heavy"
+PN/sspik+:sspik	BOUND ; ! "thick"; verbal examples
+
+PN/isspí+:isspí	BOUND ; ! "deeper in water"; no accent in dictionary
+PN/sspi+:sspi	BOUND ; ! "deeper"; variant of akisspí- "deeper water" which isn't in this list; verbal examples
+PV/sspi+:sspi BOUND ; ! "among, in the midst" 
+
+PN/istaaht+:i2staaht	BOUND ; ! "under"; verbal examples
+
+PN/istot+:istot	BOUND ; ! "similar"; verbal examples
+
+PN/isttani+:i2sttani	BOUND ; ! "down, below surface or top"; verbal examples
+
+PN/isttohk+:isttohk	BOUND ; ! "thin, flat"; verbal examples
+
+PN/isttsi+:isttsi	BOUND ; ! "teasingly, testily, antagonistically"; verbal examples
+
+PN/isttsik+:isttsik	BOUND ; ! "smooth, shiny, slippery"; verbal examples
+
+PN/isttsip+:i2sttsip	BOUND ; ! "side"; verbal examples
+
+PN/itapiksst+:itapiksst	BOUND ; ! "taper"
+
+PN/itsiiy+:itsiiy	BOUND ; ! "fragrant, sweet"
+
+PN/itsik+:itsik	BOUND ; ! "sickly, weak"
+
+PN/itsin+:itsin	BOUND ; ! "among"
+
+PN/itsiw+:itsiw	BOUND ; ! "high quality, pretty"; non-initial variant of matsiw-; w ~ y variation
+PN/matsiw+:itsiw	BOUND ; ! "high quality, pretty"; identical to above
+PN/matsiw+:matsiw	BOUND ; ! "high quality, pretty"
+
+PN/iyoomok+:iyoomok	BOUND ; ! "curved"
+PN/oomok+:oomok	BOUND ; ! "crooked, twisted, turn"
+
+PN/ki'tsi+:ki'tsi	BOUND ; ! "plateau, crown of a hill, top"; verbal examples
+
+PN/kiihtsip+:kiihtsip	BOUND ; ! "of more than one colour, spotted/striped"; verbal examples
+
+PN/komono+:hkomono	BOUND ; ! "violet, green"; verbal examples
+
+PN/ksikk+:ksikk	BOUND ; ! "white"; initial change
+
+PN/ksis+:ksis	BOUND ; ! "pointed, sharp"
+
+PN/ma'k+:ma'k	BOUND ; ! "why"; variant of máak-
+PV/máak+:%^SPi2máak BOUND ; ! "why" ! grammatical!!!!
+PV/máo'k+:%^SPmáo'k BOUND ; ! "why"
+
+PN/maan+:maan	BOUND ; ! "recently, new"; verbal examples
+
+PN/maká+:maká	BOUND ; ! "short, stunted" 
+
+PN/mattsi+:mattsi	BOUND ; ! "bad, crazy"
+PN/waattsi+:waattsi	BOUND ; ! "daring, crazy"
+PN/wattsi+:wattsi	BOUND ; ! "bad, crazy"
+
+PN/mi'ki+:mi'ki	BOUND ; ! "red"; verbal examples
+
+PN/mii+:mii	BOUND ; ! "hardy, hard" (related to iiyi VII?)
+
+PN/mokamo't+:mokamo't	BOUND ; ! "straight, honest"; initial variant of okamo't-
+PN/okamo't+:okamo't	BOUND ; ! "straight, honest, right"
+
+PN/máóhk+:máóhk	BOUND ; ! "red"
+
+PN/míístap+:míístap	BOUND ; ! "away from"; verbal examples
+PN/yiistap+:yiistap	BOUND ; ! "away"; non-initial variant of miistap-
+PV/miistap+:miistap BOUND ; ! "away from"
+PV/yiistap+:yi2istap BOUND ; ! "away"; non-initial variant of miistap-
+
+PN/naam+:naam	BOUND ; ! "alone"; initial variant of yaam-
+PN/yaam+:yaam	BOUND ; ! "alone"; several other meanings "empty handed"; "away, displacement, dislodgement", "twisted"
+
+PN/naatsa+:naatsa	BOUND ; ! "at the end of a sequence, last in succession"
+
+PN/naaw+:naaw	BOUND ; ! "left"
+
+PN/ni'tóóhk+:ni2'tóóhk	BOUND ; ! "visible"
+
+PN/niit+:niit	BOUND ; ! "original, genuine"; also "west"
+PV/niit+:niit BOUND ; ! "manner"; initial variant of aanist"
+PV/aanist+:%^SPaanist BOUND ; ! "manner" (should relative roots have a special slot?)
+PV/anist+:anist BOUND ; (unsure what this is can't find in dictionary)
+
+PN/nimm+:nimm	BOUND ; ! "west"
+
+PN/noohkíít+:noohkíít	BOUND ; ! "strange, unfamiliar"
+PN/yoohkiit+:yoohkiit	BOUND ; ! "different"
+
+PN/náám+:i2ám	BOUND ; ! "needless(ly), useless(ly)"; verbal examples
+PN/náám+:náám	BOUND ; ! "needless(ly), useless(ly)"; Problem here Áaks>am>ito'too<wa.'(S)he will arrive here needlessly.' I am duplicating the stem because it's too weird.
+
+PN/o'k+:o'k	BOUND ; ! "raw"
+
+PN/o'kstsik+:o'kstsik	BOUND ; ! "pink, raw"
+
+PN/o't+:o't	BOUND ; ! "near, by speaker's location" ; verbal examples
+
+PN/o'tak+:o'tak	BOUND ; ! "around" ; verbal examples
+
+PN/o'tami+:o'tami	BOUND ; ! "over the top of, above"
+
+PN/o'topi+:o'topi	BOUND ; ! "nearby"
+
+PN/o'totam+:o'totam	BOUND ; ! "superior"
+
+PN/o'tsat+:o'tsat	BOUND ; ! "close, near"; linker
+
+PN/o'tsitsk+:o'tsitsk	BOUND ; ! "excessive, even more"; verbal examples
+
+PN/o'tssat+:o'tssat	BOUND ; ! "nearby, close"
+
+PN/ohkit+:ohkit	BOUND ; ! "top, upon"
+
+PN/ohko+:ohko	BOUND ; ! "contrary, undesirable"; verbal examples
+PV/ohko+:ohko BOUND ; ! "have the wherewithall for"
+
+PN/ohkom+:ohkom	BOUND ; ! "round"
+
+PN/ohkon+:ohkon	BOUND ; ! "sad(ly)"; verbal examples
+
+PN/ohpo+:ohpo	BOUND ; ! "greasy, oily"
+
+PN/ohpok+:ohpok	BOUND ; ! "small"
+
+PN/ohsi+:ohsi	BOUND ; ! "by the wall"; non-initial variant of oohsi-
+PN/oohsi+:oohsi	BOUND ; ! "near the wall"
+
+PN/ohso'kap+:ohso'kap	BOUND ; ! "outer periphery of, around/on the outside of an enclosed area"; verbal examples
+
+PN/ohsohkat+:ohsohkat	BOUND ; ! "the rear periphery of a group"; verbal examples
+
+PN/ohtow+:ohtow	BOUND ; ! "close to, close in to"; w ~ y variation
+
+PN/ohtssap+:ohtssap	BOUND ; ! "along a course/route"
+
+PN/ok+:ok	BOUND ; ! "bad"; non-initial variant of mak-
+PV/mak+:mak BOUND ; ! "bad"
+
+PN/okaki+:okaki	BOUND ; ! "wise(ly)"
+
+PN/omat+:omat	BOUND ; ! "start/begin"; "almost"; verbal examples; initial o > a?
+PV/omat+:omat BOUND ; ! "start/begin"; "almost"; verbal examples
+PV/iimat+:iimat BOUND ; ! "start to"; "almost/similar to"
+
+PN/omatap+:omatap	BOUND ; ! "start, begin"
+
+PN/omia'nist+:omia'nist	BOUND ; ! "various, different, miscellaneous"; verbal examples
+
+PN/omow+:omow	BOUND ; ! "together"; w ~ y variation
+
+PN/onnat+:onnat	BOUND ; ! "few, less, low in number"
+
+PN/ooto+:ooto	BOUND ; ! "from a distance"; verbal examples
+
+PN/opam+:opam	BOUND ; ! "across from one side to the opposite side, over or through usually a body of water"; verbal examples; initial o > a?
+
+PN/opi+:opi	BOUND ; ! "cropped, drooping"
+
+PN/opott+:opott	BOUND ; ! "close, crowded"; verbal examples
+
+PN/otahko+:otahko	BOUND ; ! "orange, yellow"; dialect variant atahko-
+
+PN/otam+:otam	BOUND ; ! "important, significant, central"
+PV/otam+:otam BOUND ; ! "later"
+
+PN/otats+:otats	BOUND ; ! "upon, on, over"
+
+PN/otsik+:otsik	BOUND ; ! "to maximum capacity, full, damp"
+
+PN/otsistap+:otsistap	BOUND ; ! "understand, be aware" (this is a vrt not adt in dictionary?)
+
+PN/ottapit+:ottapit	BOUND ; ! "behind the house"; dialect variant o'tapit-
+
+PN/pa'ksik+:pa'ksik	BOUND ; ! "resembling froth, spittle, or a thick liquid, gooey"; verbal example?
+
+PN/paahksíst+:paahksíst	BOUND ; ! "sideways (in position)"
+
+PN/pi'k+:pi'k	BOUND ; ! "unreal, magic"
+
+PN/sa'kap+:sa'kap	BOUND ; ! "out from an area, e.g. river, forest, camp, etc."
+
+PN/sa+:sa	BOUND ; ! "out, away"; verbal examples
+
+PN/saahk+:saahk	BOUND ; ! "short, small, young"
+
+PN/saat+:saat	BOUND ; ! "across the mountains"
+
+PN/saayippom+:saayippom	BOUND ; ! "trouble, difficulty"; initial variant of sayippom-
+PN/sayippom+:sayippom	BOUND ; ! "trouble, difficulty, unacceptable"
+
+PN/sahp+:sahp	BOUND ; ! "soft, easy"
+
+PN/saikima'+:i2saikima'	BOUND ; ! "opposite"; verbal examples
+
+PN/saiksistt+:saiksistt	BOUND ; ! "clear to the vision or understanding, evident or in clear view"
+
+PN/sainnis+:sainnis	BOUND ; ! "down"; verbal examples
+
+PN/sainskaka'p+:sainskaka'p	BOUND ; ! "sloppy, untidy, dirty, messy, unkempt"; stative
+
+PN/saip+:saip	BOUND ; ! "out"; verbal examples
+
+PN/sakak+:sakak	BOUND ; ! "cherished"; verbal examples
+
+PN/saoki+:saoki	BOUND ; ! "flat, prairie"
+
+PN/sapa'kot+:sapa'kot	BOUND ; ! "layer, stack"
+
+PN/sata+:sata	BOUND ; ! "thin-skinned, overly sensitive, easily offended"; verbal examples
+
+PN/satt+:satt	BOUND ; ! "cracked, grooved, slit"
+
+PN/sawommit+:sawommit	BOUND ; ! "shifty, furtive, crooked, underhanded, sneaky, evasive"; verbal examples
+
+PN/sawotsistap+:sawotsistap	BOUND ; ! "confused, unclear" (saw+otsistap)
+
+PN/si'k+:si'k	BOUND ; ! "cover" (called a vrt)
+
+PN/sik+:sik	BOUND ; ! "black or dark"; verbal examples
+
+PN/sikaapi+:sikaapi	BOUND ; ! "grey" (lit dark white sik+aapi)
+
+PN/sikim+:i2sikim	BOUND ; ! "stingy, miserly"; verbal examples
+
+PN/sikotahko+:sikotahko	BOUND ; ! "brown"; verbal examples
+
+PN/sisik+:sisik	BOUND ; ! "granular, in pieces"
+
+PN/sistsik+:i2sistsik	BOUND ; ! "tired, exhausted"; verbal examples
+
+PN/sisákk+:sisákk	BOUND ; ! "spotted"
+
+PN/sitok+:sitok	BOUND ; ! "middle, center"
+
+PN/sitsip+:i2sitsip	BOUND ; ! "soft or rustling"; verbal examples
+
+PN/sohk+:sohk	BOUND ; ! "voluminous, loudly" (these have been combined in the online dictionary)
+PN/soohk+:soohk	BOUND ; ! "big, rotund"
+
+PN/sok+:i2sok	BOUND ; ! "good" (unsure if form and meaning are matched correctly)
+PN/sok+:sok	BOUND ; ! "above, over"
+PV/sok+:i2sok BOUND ; ! "good"; "above, over, elevated"
+
+PN/sopok+:i2sopok	BOUND ; ! "finished, completely, thoroughly"; verbal examples
+
+PN/sopow+:i2sopow	BOUND ; ! "clear, thorough, detailed, meticulous"; w ~ y variation; verbal examples
+
+PN/sopoya'p+:i2sopoya'p	BOUND ; ! "careful"; verbal examples
+
+PN/sow+:sow	BOUND ; ! "in the water"
+
+PN/ssik+:i2ssik	BOUND ; ! "injure, fracture, terminate"; verbal examples
+
+PN/sski+:sski	BOUND ; ! "dark"
+
+PN/sskihta+:i2sskihta	BOUND ; ! "across"; verbal examples
+
+PN/sskohto+:i2sskohto	BOUND ; ! "despite, spitefully"; verbal examples
+
+PN/sskonát+:i2sskonát	BOUND ; ! "potent, strong, industrious"; verbal examples
+
+PN/sso+:i2sso	BOUND ; ! "close to the edge of"; verbal examples
+
+PN/ssp+:ssp	BOUND ; ! "up, high"
+
+PN/sspom+:sspom	BOUND ; ! "on high"
+
+PN/sstsaap+:i2sstsaap	BOUND ; ! "bright"
+
+PN/sstsim+:i2sstsim	BOUND ; ! "reluctant"; verbal examples
+
+PN/wa'kot+:wa'kot	BOUND ; ! "operational malfunction, dislocation"; verbal examples
+
+PN/wa'sok+:wa'sok	BOUND ; ! "confusion"
+
+PN/waahkiááp+:waahkiááp	BOUND ; ! "back home"; verbal examples
+
+PN/waaist+:waaist	BOUND ; ! "near speaker"; dialect variant waiist-
+PN/waist+:waist	BOUND ; ! "near speaker"
+
+PN/waami't+:waami't	BOUND ; ! "west"
+
+PN/waamis+:waamis	BOUND ; ! "higher elevation, uphill"
+
+PN/waamohs+:waamohs	BOUND ; ! "contracted, bunched up"
+
+PN/waanat+:waanat	BOUND ; ! "pretty, cute, nice"
+
+PN/waaniit+:waaniit	BOUND ; ! "scatter"; verbal examples
+
+PN/waapatohs+:waapatohs	BOUND ; ! "north"
+
+PN/waapi+:waapi	BOUND ; ! "white, light"; non-initial variant of aapi-
+PN/áápi+:áápi	BOUND ; ! "white, light-coloured"
+
+PN/waapo'k+:waapo'k	BOUND ; ! "reverse, opposite, inverse"
+
+PN/waawatt+:waawatt	BOUND ; ! "on one's own initiative, independently"
+PN/áwatt+:áwatt	BOUND ; ! "on one's own initiative"
+
+PN/waawow+:waawow	BOUND ; ! "uneven, misaligned, opposite or wrong side"; w ~ y variation
+
+PN/wayam+:wayam	BOUND ; ! "offended, aggrieved" 
+
+
+
+
+PN/yissk+:yissk	BOUND ; ! "down low"
+
+PN/yoohk+:yoohk	BOUND ; ! "by the entrance"
+
+PN/yootsip+:yootsip	BOUND ; ! "dirty"
+
+PN/ííyik+:ííyik	BOUND ; ! "strong, hard, fervent"; verbal examples
+PV/iiyik+:iiyik BOUND ; ! "strong, hard, fervent"
+
+PN/ómahk+:ómahk	BOUND ; ! "big, old"
+
+PN/ótssko+:ótssko	BOUND ; ! "green, blue"
+
+
+PV/a'kooht+:a'kooht BOUND ; ! "at a distance"
+
+PV/aaksta'+:aaksta' BOUND ; ! "interrogative prefix future" grammatical, move
+
+PV/ai'tamáak+:ai'tamáak BOUND ; ! "almost complete"; dialect variant a'tamáak-
+
+PV/aisskahs+:aisskahs BOUND ; ! "always"
+
+PV/akisspí+:akisspí BOUND ; ! "deeper water"; dialect variant isspí-
+
+PV/akk+:akk BOUND ; ! "more"
+
+PV/akoksska+:akoksska BOUND ; ! "of paramount rank"; nominal examples
+
+PV/ama+:ama BOUND ; ! "pitiful, pathetic"; nominal examples
+PV/iima+:iima BOUND ; ! "pathetic"; variant of ama-
+
+PV/amo'tap+:amo'tap BOUND ; ! "all over"; variant of omo'tap-
+PV/omo'tap+:omo'tap BOUND ;! "all over"
+
+PV/anaw+:anaw BOUND ; ! "ever", w ~ y variation (dictionary has only neg example)
+PV/ano+:anow BOUND ; ! "ever", w ~ y variation (dictionary has only neg example)
+PV/anow+:anow BOUND ; ! (believe this is same as ano-)
+
+PV/anootap+:anootap BOUND ; ! "eye-shielding, visored"
+
+PV/ao'tamáak+:ao'tamáak BOUND ; ! "just about to, imminent" (does the inchoative herein block other aspect?)
+
+PV/apa'p+:apa'p BOUND ; ! "emphatic"
+
+PV/aso+:aso BOUND ; ! "within"
+
+PV/assaak+:assaak BOUND ; ! "stop and VERB for a moment"; only in affirmative imperatives?
+
+PV/awa'+:awa' BOUND ; ! "crossed"
+
+PV/hkana+:hkana BOUND ; ! (I have no idea what this is?) yes ohkan
+
+PV/i'sskaan+:i2'sskaan BOUND ; ! "dangerous or risky"
+
+PV/ihta+:ihtaw BOUND ; ! "fortuitious, lucky"; w ~ y variation
+
+PV/iihk+:iihk BOUND ; ! "opportune"; variant of ohk-
+PV/ohk+:ohk BOUND ; ! "opportune"
+
+PV/iiht+:iiht BOUND ; ! "source, means"; word-initial; rel root, check for other variants (if phonology choose one underlying?)
+PV/oht+:oht BOUND ; ! "source, means"; elsewhere; rel root
+PV/omoht+:%^SPomoht BOUND ; ! "source, means"; this variant follows person prefixes; rel root
+PV/omoht+:omoht BOUND ; ! "source, means"; rel root (is there evidence of this without SP?)
+
+PV/omohp+:%^SPomohp BOUND ; ! "associative"; immediately after person prefixes; rel root; comitative
+PV/iihp+:iihp BOUND ; ! "associative"; word-initially; rel root
+PV/ohp+:ohp BOUND ; ! "associative"; elsewhere; rel root
+
+PV/iihtsitok+:i3htsitok BOUND ; ! "through"
+
+PV/iihtsitssitak+:iihtsitssitak BOUND ; ! "through"
+
+PV/iik+:i2ik BOUND ; ! "intensifier, very" (could this have a slot?)
+
+PV/iikska'+:iikska' BOUND ; ! "exceptionally, extremely" (is this related to iik? should also be breaking?)
+
+PV/iimaa+:i3maa BOUND ; ! "yet, to the present time"; form in the dictionary
+PV/omaa+:omaa BOUND ; ! "yet"; non-initial variant of iimaa
+PV/iimá+:iimá BOUND ; ! "yet, to the present time"; form in the grammar
+PV/omá+:omá BOUND ; ! "yet", variant iimá-
+
+PV/iin+:iin BOUND ; ! "VERB when should be doing something else"
+PV/iinatt+:iinatt BOUND ; ! "continue VERBing when should be doing something else" (iin+matt?)
+
+PV/iina+:iina BOUND ; ! perfective, grammatical
+
+PV/iinao'k+:iinao'k BOUND ; ! "however"
+
+PV/iini+:iini BOUND ; ! "preoccupation with something, resulting in neglect of another activity"
+
+PV/iinik+:iinik BOUND ; ! "aggressively, abusively, tough"
+
+PV/iitaisap+:iitaisap BOUND ; ! "inside"; see itssap- (which doesn't occur in this list?)
+
+PV/iitsiksist+:iitsiksist BOUND ; ! "slow"
+
+PV/iitskimaan+:iitskimaan BOUND ; ! "aggressive, blunt, tactless"
+PV/niitsskimaan+:niitsskimaan BOUND ; ! "direct, brusque, blunt"
+
+PV/ika'+:ika' BOUND ; ! "for now, presently"
+
+PV/ika'to+:i2ka'to BOUND ; ! "assist, participate"
+
+PV/ikaap+:i2kaap BOUND ; ! "frequently"
+
+PV/ikaiksist+:i2kaiksist BOUND ; ! "ready"
+
+PV/ikak+:ikak BOUND ; ! "just, only, even"
+PV/káák+:i2káák BOUND ; ! "merely, just, of no great importance"
+
+PV/ikamo't+:ikamo't BOUND ; ! "normal"
+
+PV/ikapo+:ikapo BOUND ; ! "tuple, set of" (looks more like a suffix than a prefix? or must otherwise combine with a number?)
+
+PV/ikayiss+:ikayiss BOUND ; ! "ahead"
+
+PV/ikia'ya+:ikia'ya BOUND ; ! "finally" 
+PV/ikkia'+:ikkia' BOUND ; ! "finally"; (w~y should be at end here?)
+
+PV/ikihkiht+:ikihkiht BOUND ; ! "randomly, at irregular intervals, intermittently"
+
+PV/ikimm+:ikimm BOUND ; ! "compassion, pity"; nominal examples
+
+PV/ikimmat+:i2kimmat BOUND ; ! "poor, pitiable"; nominal examples
+
+PV/ikipp+:i2kipp BOUND ; ! "briefly"; initial change
+
+PV/ikippa'+:i2kippa' BOUND ; ! "feign, pretend"
+
+PV/ikkam+:i2kkam BOUND ; ! "fast, quickly"; also "if" (maybe different slots?)
+PV/kam+:kam BOUND ; ! "might"; initial variant of ikkam-
+PV/aahksikkam+:%^SPaahksikkam BOUND ; ! "might"; aahk+ikkam (modal slot?)
+
+PV/ikkan+:ikkan BOUND ; ! "glitter"
+
+PV/ikkihkini+:ikkihkini BOUND ; ! "sad, dull, depressing, boring, insipid"; nominal examples
+
+PV/ikkina+:ikkina BOUND ; ! "slow, soft"
+
+PV/iksissto+:i2ksissto BOUND ; ! "without apparent cause, for no reason"
+
+PV/iksisstow:iksisstow	BOUND ; ! "extravagant, waste, surplus"; w ~ y variation; newly added from dictionary
+
+PV/iksksowa'+:iksksowa' BOUND ; ! "by chance"
+
+PV/ikssto+:ikssto BOUND ; ! "abreast"
+
+PV/ikstsina'+:ikstsina' BOUND ; ! "necessity"
+PV/ikstsina'+:kstsina' BOUND ; ! assume this is same as above, can't find in dictionary?
+
+PV/ikíppoa+:ikíppoa BOUND ; ! "distasteful, displeasing"; dictionary has w ~ y for this
+PV/ippoa+:ippoa BOUND ; ! "displeasure", variant of ikippoaw~y; w~y per dictionary
+
+PV/imak+:imak BOUND ; ! "even if"
+
+PV/immoyi+:immoyi BOUND ; ! "hairy, furry"; nominal examples
+
+PV/inai't+:inai't BOUND ; ! "after the fact"
+
+PV/inikk+:i2nikk BOUND ; ! "angry, sulking"
+
+PV/innaahkoot+:innaahkoot BOUND ; ! "successive, from one to another"
+
+PV/ipahkitap+:ipahkitap BOUND ; ! "despair, forsaken"
+
+PV/ipahtsik+:i2pahtsik BOUND ; ! "barely"
+
+PV/ipakska+:ipakska BOUND ; ! "involving bronchial noise"
+
+PV/ipana+:ipana BOUND ; ! "early"
+
+PV/ipann+:i2pann BOUND ; ! "overnight"
+
+PV/ipapa+:ipapa BOUND ; ! "in a dream"; initial change
+
+PV/ipiitsiiyóóhk+:%^SPi2piitsiiyóóhk BOUND ; ! "as soon as, when"; (higher slot?)
+PV/piitsiyoohk+:piitsiyoohk BOUND ; ! "when, as soon as"
+
+PV/ipiitsiy+:%^SPi2piitsiy BOUND ; ! "begin, commence"
+
+PV/ipo't+:i2po't BOUND ; ! "reciprocal" (not in grammatical sense?)
+
+PV/ipoina+:ipoina BOUND ; ! "frenetically"; non-initial variant of poina-
+PV/poina+:poina BOUND ; ! "nuisance, frenetic, frenzied"
+PV/poína+:i2poína BOUND ; ! (assuming this is the same, not in dictionary; póína/Ipoina in grammar)
+
+PV/ipp+:%^SPipp BOUND ; ! variant of kipp- (not sure about SP evidence)
+PV/kipp+:ki2pp BOUND ; ! "might"; often in imperatives (example after tense, but could be modal?)
+PV/ipp+:ipp BOUND ; ! variant of kipp-
+
+PV/ippita+:ippita BOUND ; ! "aged, elderly, usually said of women"; non-initial variant of kipita-; gemination
+PV/kipita+:ippita BOUND ; ! enumerating this because the dictionary has two alternative forms (only need one or the other)
+PV/kipita+:kipita BOUND ; ! "aged, elderly, usually said of venerated women"; nominal examples
+
+PV/ippssa'kapp+:ippssa'kapp BOUND ; ! "for a while, for now"
+
+PV/ipsstsikatt+:i2psstsikatt BOUND ; ! "frequently, constantly"
+
+PV/ipsstsík+:i2psstsík BOUND ; ! "deceptive, barely, very little"
+
+PV/ipákkssa+:i2pákkssa BOUND ; ! "nothing, bare, nude, inexperienced"
+
+PV/isimi+:i2simi BOUND ; ! "secretly"
+
+PV/isinap+:i2sinap BOUND ; ! "lopsided, aslant, unbalanced"
+
+PV/isitsip+:isitsip BOUND ; ! "noisily"
+
+PV/isk+:isk BOUND ; ! "even though"; variant of misk-
+PV/missk+:missk BOUND ; ! "even so"; (are these the same?)
+
+PV/isska'+:isska' BOUND ; ! "extremely"; initial variant of sska'-
+PV/sska'+:sska' BOUND ; ! "greatly, extremely, very"
+!PV/sska'+:sska' BOUND ; ! doubled
+
+PV/isstohkana+:isstohkana BOUND ; ! "most, superlative"; cf ohkana-
+PV/istohkana+:istohkana BOUND ; ! "of all, superlative"
+
+PV/naat+:%^SPnaat BOUND ; ! "fortunately" (not given as a root for two?)
+PV/ist+:ist BOUND ; ! "two or double", variant of naat- OR "there/then", variant of it- in imperatives
+PV/it+:it BOUND ; ! "there, at a place; then, at a certain time", rel root
+
+PV/istohk+:istohk BOUND ; ! "two, both"
+
+PV/istsa'+:i2stsa' BOUND ; ! "last or final time"
+
+PV/istto't+:i2stto't BOUND ; ! "together"
+
+PV/isttsikohpo+:i2sttsikohpo BOUND ; ! "grimy"
+
+PV/isttsitsa+:i2sttsitsa BOUND ; ! "initially, at the very first/beginning but no longer"
+
+PV/isttssi+:i2sttssi BOUND ; ! "in the forest"
+
+PV/itam+:itam BOUND ; ! "only if"; rel root?
+
+PV/itap+:itap BOUND ; ! "toward, to"; rel root
+
+PV/ito't+:ito't BOUND ; ! "beside, alongside"
+
+PV/iton+:iton BOUND ; ! "soon"
+
+PV/itsisa+:itsisa BOUND ; ! "through, from the other side of"
+
+PV/itsst+:itsst BOUND ; ! "pressed against a surface"
+
+PV/itáak+:itáak BOUND ; ! "repeatedly, continuously"
+
+PV/iámoohk+:iámoohk BOUND ; ! "though expected"; see yamoohk-
+PV/yámoohk+:yámoohk BOUND ; ! "though expected, even (so)"
+
+PV/kaat+:kaat BOUND ; ! "result"
+
+PV/kakanott+:i2kakanott BOUND ; ! "sparse, meager"
+
+PV/kan+:hkan BOUND ; ! "all"; initial variant of ohkan-
+PV/ohkan+:ohkan BOUND ; ! "all"
+PV/ohkana+:ohkana BOUND ; ! "all"
+
+PV/kotski+:i2kotski BOUND ; ! "extreme"
+
+PV/ksisttoyi+:ksisttoyi BOUND ; ! "square"
+
+PV/káta'+:káta' BOUND ; ! "interrogative prefix, negative on nouns"; move to prefixes if not already
+
+PV/káátsisto+:káátsisto BOUND ; ! "abreast, in a straight line"
+
+PV/kínnak+:kínnak BOUND ; ! "experientially wise, sagacious"; nominal examples
+
+PV/maak+:maak BOUND ; ! "forthcoming, planned"
+
+PV/maam+:%^SPmaam BOUND ; ! "only, just"
+
+PV/mato+:mato BOUND ; ! "go to do"
+PV/oto+:oto BOUND ; ! "go to do"; non-initial variant of mato-
+
+PV/matsowá'p+:matsowá'p BOUND ; ! "handsome, beautiful, fine, good"; nominal examples; matsow+a'p
+
+PV/mattsistá'+:%^SPmattsistá' BOUND ; ! Allomorphy of matt- dealt with as an exception in the phonology
+PV/ista'+:ista' BOUND ; ! "again(?)" (maybe only occurs with matt-?)
+
+PV/att+:att BOUND ; ! "again"; non-initial variant of matt-
+PV/mátt+:%^SPmátt BOUND ; ! "again, additionally"; not sure there is evidence of SP (yes there is)
+
+PV/mi'kotsi+:mi'kotsi BOUND ; ! "red"
+
+PV/miiksist+:miiksist BOUND ; ! "as if, the same as"
+PV/omiiksist+:omiiksist BOUND ; ! "surrogate, just the same as, just as if"
+
+!PV/min+:min BOUND ; ! variant of miin-; move to grammar/leave for relaxer?]
+
+PV/misst+:misst BOUND ; ! "of unknown identity"
+
+PV/mo'tóí+:mo'tóí BOUND ; ! "all over"; nominal examples
+
+PV/máttsit+:%^SPmáttsit BOUND ; ! "and then", see matt- for SP 
+
+PV/nai't+:nai't BOUND ; ! "then"; initial variant of onai't-
+PV/onai't+:onai't BOUND ; ! "then, given certain circumstances"
+
+PV/niistsikáp+:niistsikáp BOUND ; ! "both, double"
+
+PV/niitsi+:niitsi BOUND ; ! "good, beautiful"; w ~ y per dictionary; nominal examples
+
+PV/niitá'p+:ni2itá'p BOUND ; ! "really, truly"
+
+PV/noohk+:%^SPnoohk BOUND ; ! "counter-expectation, please"; earlier slot?
+PV/oohk+:%^SPoohk BOUND ; ! "contrary to expectation"; unsure of evidence for SP
+PV/oohk+:oohk BOUND ; ! "contrary to expectation"
+
+PV/noohkátt+:%^SPnoohkátt BOUND ; ! "too, also"; not sure if SP or n > 0?
+PV/noohkátt+:noohkátt BOUND ; ! "too, also"; I am doing this because there are two acceptable variants listed in the dictionary
+PV/oohkatt+:oohkatt BOUND ; ! "also"; non-initial variant of noohkatt-
+
+PV/níítaak+:ní2ítaak BOUND ; ! "independent, on one's own, separate"
+
+PV/o'kia'p+:o'kia'p BOUND ; ! "other, different"
+
+PV/o'kio+:o'kio BOUND ; ! "all at once, everyone at the same time"; w ~ y per dictionary
+
+PV/o'tap+:o'tap BOUND ; ! "return from VERBing"
+
+PV/ohkit+:ohkit BOUND ; ! "top, upon"
+
+PV/ohkott+:ohkott BOUND ; ! "able"
+
+PV/ohpii+:ohpii BOUND ; ! "hurried"; w ~ y per dictionary
+
+PV/ohpiistap+:ohpiistap BOUND ; ! "immediately"
+
+PV/ohpo'kii+:hpo'kii BOUND ; ! "with" The reason I'm copying this is that evidently, the oh- here can sometimes dissapear in initial position, but not always.
+PV/ohpo'kii+:ohpo'kii BOUND ; ! "with"
+PV/po'kí+:po'kí BOUND ; ! "in company with"
+
+PV/ohs+:ohs BOUND ; ! "spaced apart"
+
+PV/ohtahtsiwa+:%^SPohtahtsiwa BOUND ; ! "in place of, in the stead of"; cannot find this in dictionary only in grammar, unsure of evidence for SP; adding h between a and t per grammar; rel root
+
+PV/oka'p+:oka'p BOUND ; ! "bad"; nominal examples
+
+PV/oma+:oma BOUND ; ! "intemperately, excessively, continuously"
+
+PV/omahka+:omahka BOUND ; ! "whole, collective whole"
+
+PV/omanista+:omanista BOUND ; ! "continue"
+
+PV/omi+:omi BOUND ; ! "still"
+
+PV/on+:on BOUND ; ! "immediate"
+
+PV/ona'+:ona' BOUND ; ! "but"
+
+PV/onaki+:onaki BOUND ; ! "sudden, immediate"
+
+PV/oohkanistta+:oohkanistta BOUND ; ! "usually, normally"
+
+PV/opaksikssto+:opaksikssto BOUND ; ! "abreast"
+
+PV/otomohk+:otomohk BOUND ; ! "the last, end point"
+
+!PV/piin+:piin BOUND ; ! neg
+!PV/pin+:pin BOUND ; ! relaxer or grammar?
+
+PV/saaki+:i2saaki BOUND ; ! "still"
+
+PV/saapo'kit+:i2saapo'kit BOUND ; ! "over the brim"
+
+PV/saipa'+:saipa' BOUND ; ! "outside of a certain boundary"
+
+PV/sipi+:i2sipi BOUND ; ! "night"
+
+PV/sook+:i2sook BOUND ; ! "unexpected, suddenly"; unsure about i2
+
+PV/sootam+:i2sootam BOUND ; ! "despite"
+
+PV/sotám+:sotám BOUND ; ! "genuinely, unqualifiedly, so, next"
+PV/stam+:i2stam BOUND ; ! "just, unqualifiedly"
+
+PV/soyi+:soyi BOUND ; ! "under water"
+
+PV/ssap+:i2ssap BOUND ; ! "afterward"
+
+PV/sstahpik+:sstahpik BOUND ; ! "by choice, because of own desire"; maybe initial i2?
+
+PV/sstok+:sstok BOUND ; ! "extensive, excessive, to a great degree"; maybe initial i2?
+
+PV/sstonnat+:sstonnat BOUND ; ! "extremely, dangerous, awesome"; maybe initial i2?
+PV/sstónnat+:sstónnat BOUND ; ! "extremely"; this version in grammar; maybe initial i2?
+
+PV/sstsina'+:sstsina' BOUND ; ! "need to, have to VERB before doing something else"; maybe initial i2?
+
+PV/ssáak+:i2ssáak BOUND ; ! "try"
+
+PV/sáótat+:sáótat BOUND ; ! "outer surface"
+
+PV/tatsiki+:i2tatsiki BOUND ; ! "middle"; initial variant of ihtatsiki- (which doesn't occur here or in online dictionary?)
+PV/ihtatsiki+:i2htatsiki BOUND ; ! "middle, centre, midst"; unsure if i2?
+
+PV/waahki+:waahki BOUND ; ! "home"
+
+PV/waahko+:waahko BOUND ; ! "in rapid succession"; w ~ y per dictionary?
+
+PV/waahto+:waahto BOUND ; ! "each"; w ~ y per dictionary?
+
+PV/waahtsam+:waahtsam BOUND ; ! "though young"
+
+PV/waahtso+:waahtso BOUND ; ! "in the place of, substitute"
+
+PV/waako'tsi+:waako'tsi BOUND ; ! "abundant, rich"; nominal example
+
+PV/waaksisto+:waaksisto BOUND ; ! "brave, determined"; nominal example
+
+PV/waanaoyit+:waanaoyit BOUND ; ! "at a point before a destination, en route"
+
+PV/waanook+:waanook BOUND ; ! "ruinously, destructively"
+
+PV/waapiiwaan+:waapiiwaan BOUND ; ! "kind, altruistic"
+
+PV/wayák+:wayák BOUND ; ! "both, two"; grammar version
+PV/wáyák+:wáyák BOUND ; ! "both, two"
+
+PV/wayákiit+:wayákiit BOUND ; ! "in two, each of two"
+
+PV/yoisstsikina+:yoisstsikina BOUND ; ! "lean, tough, sinewy, fibrous"
+
+PV/yook+:yook BOUND ; ! "characteristic, typical"
+
+PV/á'+:á' BOUND ; ! "inchoative"; grammar?
+
+PV/á'p+:á'p BOUND ; ! "about, around"
+
+PV/áka+:%^SPa4ka BOUND ; ! "old, belonging to a former time"; nominal examples
+PV/áka+:áka BOUND ; ! "old, belonging to a former time"; nominal examples
+PV/íka+:íka BOUND ; ! "past, ancient, old"; variant of aka-
+
+PV/ákstam+:ákstam BOUND ; ! "one should"; grammar?
+
+! PV/ákáá+:ákáá BOUND ; ! this is perfective, already in prefixes
+
+PV/áísooka+:áísooka BOUND ; ! "formerly"
 
 LEXICON BOUND
 0:%< PV_COUNTER "weight: 10" ; 

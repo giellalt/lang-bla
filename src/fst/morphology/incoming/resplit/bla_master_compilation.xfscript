@@ -1,15 +1,13 @@
-! read lexc lexicon.lexc
-! save stack lexicon.hfst
-load lexicon.hfst
+read lexc lexicon.lexc
+save stack lexicon.hfst
+#load lexicon.hfst
 define Morph
 
 
-! source ../phonology.xfscript
-! save stack phonology.hfst
-load phonology.hfst
+source ../../phonology.xfscript
+save stack phonology.hfst
+#load phonology.hfst
 define Phon
-
-source ../../../orthography/spellrelax_weighted.regex
 
 set flag-is-epsilon ON
 regex [ Morph .o. Phon ];
@@ -20,6 +18,9 @@ invert net
 save stack analyzer-gt-norm.hfst
 invert net
 define Norm
+
+source ../../../orthography/spellrelax_weighted.xfscript
+define X
 
 regex [ Norm .o. SpellRelaxWeighted ];
 twosided flag-diacritics
