@@ -78,7 +78,7 @@ PS/ohko+:ohko PSBOUND2 ; ! "contrary, undesirable"; "have the wherewithal for"
 PS/omaa+:omaa PSBOUND2 ; ! "yet"; considerable allomorphy
 PS/iik+:i2ik PSBOUND2 ; ! "intensifier, very"
 PS/aahs+:aahs PSBOUND2 ; ! "always", could this be in an earlier slot? 
-PS/aapám+:aapám	PSBOUND2 ; ! "across water"
+PS/aapam+:aapam	PSBOUND2 ; ! "across water"
 PS/ahkiaap+:ahkiaap	PSBOUND2 ; ! "homeward"
 PS/aiist+:aiist	PSBOUND2 ; ! "to location"
 PS/akkaw+:akkaw	PSBOUND2 ; ! "voluminous", w ~ y variation check phonology
@@ -87,7 +87,15 @@ PS/atso't+:atso't	PSBOUND2 ; ! "from all sides, from more than one direction"
 PS/i2'nak+:i'nak	PSBOUND2 ; ! "small"; breaking, no deletion (i'nakawaatsi)
 PS/i'tsin+:i'tsin	PSBOUND2 ; ! "everything"; no breaking, no deletion (i'tsinihkaa)
 PS/sstsina'+:sstsina' PSBOUND2 ; ! "need to, have to VERB before doing something else"; maybe initial i2?; s-connection instead of i2?
-	
+PS/aisskahs+:aisskahs PSBOUND2 ; ! "always"
+PS/noohkatt+:noohkatt PSBOUND2 ; ! "too, also";
+PS/itap+:itap PSBOUND2 ; ! "toward, to"; rel root
+PS/ssp+:ssp	PSBOUND2 ; ! "up, high"
+PS/iksisap+:i2ksisap	PSBOUND2 ; ! "down"
+PS/it+:it	PSBOUND2 ; ! "then, there"
+PS/matt+:^SPi2matt	PSBOUND2 ; ! "again"
+PS/ssk+:ssk	PSBOUND2 ; ! "back"
+
 LEXICON PSBOUND2
 0:%< PVGATE2 ;
 
