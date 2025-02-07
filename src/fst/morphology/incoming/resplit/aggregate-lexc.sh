@@ -7,7 +7,12 @@ gawk 'BEGIN { printf "!! Blackfoot morphotax -- aggregate of all LEXC files\n\n"
   for(i=1; i<=nf; i++)
      {
        while((getline line < files[i])!=0)
-          printf "%s\n", line >> "lexicon.lexc";
+          {
+            gsub("á","a", line);
+            gsub("í","a", line);
+            gsub("ó","a", line);
+            printf "%s\n", line >> "lexicon.lexc";
+          }
        printf "\n\n" >> "lexicon.lexc";
      }
 }'
