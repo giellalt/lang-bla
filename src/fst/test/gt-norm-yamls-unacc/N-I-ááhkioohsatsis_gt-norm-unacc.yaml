@@ -1,0 +1,43 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - aahkioohsa'tsisi - ok : # -m inanimate noun, boat AEW NA1
+     aahkioohsa'tsisi+NI+Sg: aahkioohsa'tsisi
+     aahkioohsa'tsisi+NI+Pl: aahkioohsa'tsiistsi
+     aahkioohsa'tsisi+NI+Non: aahkioohsa'tsisi
+
+     aahkioohsa'tsisi+NI+Px1Sg+Sg: nitaahkioohsa'tsimi
+     aahkioohsa'tsisi+NI+Px1Sg+Pl: nitaahkioohsa'tsimistsi
+     aahkioohsa'tsisi+NI+Px1Sg+Non: nitaahkioohsa'tsimi
+
+     aahkioohsa'tsisi+NI+Px1Pl+Sg: nitaahkioohsa'tsiminnaani
+     aahkioohsa'tsisi+NI+Px1Pl+Pl: nitaahkioohsa'tsiminnaanistsi
+     aahkioohsa'tsisi+NI+Px1Pl+Non: nitaahkioohsa'tsiminnaani
+
+     aahkioohsa'tsisi+NI+Px21Pl+Sg: kitaahkioohsa'tsiminnooni
+     aahkioohsa'tsisi+NI+Px21Pl+Pl: kitaahkioohsa'tsiminnoonistsi
+     aahkioohsa'tsisi+NI+Px21Pl+Non: kitaahkioohsa'tsiminnooni
+
+     aahkioohsa'tsisi+NI+Px2Sg+Sg: kitaahkioohsa'tsimi
+     aahkioohsa'tsisi+NI+Px2Sg+Pl: kitaahkioohsa'tsimistsi
+     aahkioohsa'tsisi+NI+Px2Sg+Non: kitaahkioohsa'tsimi
+
+     aahkioohsa'tsisi+NI+Px2Pl+Sg: kitaahkioohsa'tsimoaawayi
+     aahkioohsa'tsisi+NI+Px2Pl+Pl: kitaahkioohsa'tsimoaawaistsi
+     aahkioohsa'tsisi+NI+Px2Pl+Non: kitaahkioohsa'tsimoaawai
+
+     aahkioohsa'tsisi+NI+Px3Sg+Sg: otaahkioohsa'tsimi
+     aahkioohsa'tsisi+NI+Px3Sg+Pl: otaahkioohsa'tsimistsi
+     aahkioohsa'tsisi+NI+Px3Sg+Non: otaahkioohsa'tsimi
+
+     aahkioohsa'tsisi+NI+Px3Pl+Sg: otaahkioohsa'tsimoaawayi
+     aahkioohsa'tsisi+NI+Px3Pl+Pl: otaahkioohsa'tsimoaawaistsi
+     aahkioohsa'tsisi+NI+Px3Pl+Non: otaahkioohsa'tsimoaawai

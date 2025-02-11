@@ -1,0 +1,49 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - imitaawa - ok : # -m animate noun, dog AEW NA1
+     imitaawa+NA+Sg: imitaawa
+     imitaawa+NA+Pl: imitaiksi
+     imitaawa+NA+Obv: imitaayi
+     imitaawa+NA+Non: imitai
+     
+     imitaawa+NA+Px1Sg+Sg: nitomitaama
+     imitaawa+NA+Px1Sg+Pl: nitomitaamiksi
+     imitaawa+NA+Px1Sg+Obv: nitomitaami
+     imitaawa+NA+Px1Sg+Non: nitomitaami
+     
+     imitaawa+NA+Px1Pl+Sg: nitomitaaminnaana
+     imitaawa+NA+Px1Pl+Pl: nitomitaaminnaaniksi
+     imitaawa+NA+Px1Pl+Obv: nitomitaaminnaani
+     imitaawa+NA+Px1Pl+Non: nitomitaaminnaani
+
+     imitaawa+NA+Px21Pl+Sg: kitomitaaminnoona
+     imitaawa+NA+Px21Pl+Pl: kitomitaaminnooniksi
+     imitaawa+NA+Px21Pl+Obv: kitomitaaminnooni
+     imitaawa+NA+Px21Pl+Non: kitomitaaminnooni
+
+     imitaawa+NA+Px2Sg+Sg: kitomitaama
+     imitaawa+NA+Px2Sg+Pl: kitomitaamiksi
+     imitaawa+NA+Px2Sg+Obv: kitomitaami
+     imitaawa+NA+Px2Sg+Non: kitomitaami
+
+     imitaawa+NA+Px2Pl+Sg: kitomitaamoaawa
+     imitaawa+NA+Px2Pl+Pl: kitomitaamoaawaiksi
+     imitaawa+NA+Px2Pl+Obv: kitomitaamoaawayi
+     imitaawa+NA+Px2Pl+Non: kitomitaamoaawai
+
+     imitaawa+NA+Px3Sg+Obv: otomitaami
+     imitaawa+NA+Px3Sg+Pl: otomitaamiksi
+     imitaawa+NA+Px3Sg+Non: otomitaami
+
+     imitaawa+NA+Px3Pl+Obv: otomitaamoaawayi
+     imitaawa+NA+Px3Pl+Pl: otomitaamoaawaiksi
+     imitaawa+NA+Px3Pl+Non: otomitaamoaawai

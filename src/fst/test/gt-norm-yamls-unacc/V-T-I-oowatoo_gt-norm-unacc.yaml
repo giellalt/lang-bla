@@ -1,0 +1,118 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  +ero+:
+    Gen: ../../../src/generator-gt-norm.+fst
+    Morph: ../../../src/analyser-gt-norm.+fst
+    App: lookup
+
+Tests:
+  
+  Verb - oowatoo - ok : # -m inanimate transitive verb, eat AEW NA1
+     PS/a+oowatoo+VTI+Ind+1Sg+0SgO: nitaowatoohpa
+     PS/a+oowatoo+VTI+Ind+2Sg+0SgO: kitaowatoohpa
+     PS/a+oowatoo+VTI+Ind+3Sg+0SgO+PRO+D3Sg: aowatoomaayi
+     PS/a+oowatoo+VTI+Ind+1Pl+0SgO: nitaowatoohpinnaana
+     PS/a+oowatoo+VTI+Ind+21Pl+0SgO: aowatoo'pa
+     PS/a+oowatoo+VTI+Ind+2Pl+0SgO: kitaowatoohpoaawa
+     
+     PS/yaak+oowatoo+VTI+Ind+1Sg+0SgO: nitaaksowatoohpa
+     PS/yaak+oowatoo+VTI+Ind+2Pl+0SgO: kitaaksowatoohpa
+     PS/yaak+oowatoo+VTI+Ind+3Sg+0SgO+PRO+D3Sg: aaksowatoomaayi
+     PS/yaak+oowatoo+VTI+Ind+1Pl+0SgO: nitaaksowatoohpinnaana
+     PS/yaak+oowatoo+VTI+Ind+21Pl+0SgO: aaksowatoo'pa
+     PS/yaak+oowatoo+VTI+Ind+2Pl+0SgO: kitaaksowatoohpoaawa
+     
+     oowatoo+VTI+Ind+1Sg+0SgO: nitsowatoohpa
+     oowatoo+VTI+Ind+2Sg+0SgO: kitsowatoohpa
+     PS/ii+oowatoo+VTI+Ind+3Sg+0SgO+PRO+D3Sg: iiwatoomaayi
+     oowatoo+VTI+Ind+1Pl+0SgO: nitsowatoohpinnaana
+     PS/ii+oowatoo+VTI+Ind+21Pl+0SgO: iiwatoo'pa
+     oowatoo+VTI+Ind+2Pl+0SgO: kitsowatoohpoaawa
+     
+     PS/maat+PS/a+oowatoo+VTI+Ind+1Sg+0SgO: nimaataowatoohpa
+     PS/maat+PS/a+oowatoo+VTI+Ind+2Sg+0SgO: kimaataowatoohpa
+     PS/maat+PS/a+oowatoo+VTI+Ind+3Sg+0SgO+PRO+3Pl+PRO+D3Sg: maataowatoomaiksayi
+     PS/maat+PS/a+oowatoo+VTI+Ind+1Pl+0SgO: nimaataowatoohpinnaana
+     PS/maat+PS/a+oowatoo+VTI+Ind+21Pl+0SgO: maataowatoo'pa
+     PS/maat+PS/a+oowatoo+VTI+Ind+2Pl+0SgO: kimaataowatoohpoaawa
+     
+     PS/maat+PS/yaak+oowatoo+VTI+Ind+1Sg+0SgO: nimaataaksowatoohpa
+     PS/maat+PS/yaak+oowatoo+VTI+Ind+2Sg+0SgO: kimaataaksowatoohpa
+     PS/maat+PS/yaak+oowatoo+VTI+Ind+3Sg+0SgO: maataaksowatoomaatsayi
+     PS/maat+PS/yaak+oowatoo+VTI+Ind+1Pl+0SgO: nimaataaksowatoohpinnaana
+     PS/maat+PS/yaak+oowatoo+VTI+Ind+21Pl+0SgO: maataaksowatoo'pa
+     PS/maat+PS/yaak+oowatoo+VTI+Ind+2Pl+0SgO: kimaataaksowatoohpoaawa
+     
+     PS/maat+oowatoo+VTI+Ind+1Sg+0SgO: nimaatsowatoohpa
+     PS/maat+oowatoo+VTI+Ind+2Sg+0SgO: kimaatsowatoohpa
+     PS/maat+oowatoo+VTI+Ind+3Sg+0SgO: maatsowatoomaatsayi
+     PS/maat+oowatoo+VTI+Ind+1Pl+0SgO: nimaatsowatoohpinnaana
+     PS/maat+oowatoo+VTI+Ind+21Pl+0SgO: maatsowatoo'pa
+     PS/maat+oowatoo+VTI+Ind+2Pl+0SgO: kimaatsowatoohpoaawa
+     
+     PS/a+oowatoo+VTI+Cnj+1Sg+0SgO: nitaowatoohsi
+     PS/a+oowatoo+VTI+Cnj+2Sg+0SgO: kitaowatoohsi
+     PS/a+oowatoo+VTI+Cnj+3Sg+0SgO: otaowatoohsi
+     PS/a+oowatoo+VTI+Cnj+4Sg+0SgO: aowatoohsi
+     PS/a+oowatoo+VTI+Cnj+1Sg+0PlO: nitaowatoohsi
+     PS/a+oowatoo+VTI+Cnj+2Sg+0PlO: kitaowatoohsi
+     PS/a+oowatoo+VTI+Cnj+3Sg+0PlO: otaowatoohsi
+     PS/a+oowatoo+VTI+Cnj+4Sg+0PlO: aowatoohsi
+     
+     PS/a+oowatoo+VTI+Cnj+1Pl+0SgO: nitaowatoohsinnaani
+     PS/a+oowatoo+VTI+Cnj+21Pl+0SgO: aowatoohsi
+     PS/a+oowatoo+VTI+Cnj+2Pl+0SgO: kitaowatoohsoaayi
+     PS/a+oowatoo+VTI+Cnj+3Pl+0SgO: otaowatoohsi
+     PS/a+oowatoo+VTI+Cnj+4Pl+0SgO: aowatoohsi
+     PS/a+oowatoo+VTI+Cnj+1Pl+0PlO: nitaowatoohsinnaani
+     PS/a+oowatoo+VTI+Cnj+21Pl+0PlO: aowatoohsi
+     PS/a+oowatoo+VTI+Cnj+2Pl+0PlO: kitaowatoohsoaayi
+     PS/a+oowatoo+VTI+Cnj+3Pl+0PlO: otaowatoohsi
+     PS/a+oowatoo+VTI+Cnj+4Pl+0PlO: aowatoohsi
+     
+     PS/a+oowatoo+VTI+Sbj+1Sg+0SgO: aowatoommiiniki
+     PS/a+oowatoo+VTI+Sbj+2Sg+0SgO: aowatoommiiniki
+     PS/a+oowatoo+VTI+Sbj+3Sg+0SgO: aowatoisi
+     PS/a+oowatoo+VTI+Sbj+4Sg+0SgO: aowatoisi
+     PS/a+oowatoo+VTI+Sbj+1Sg+0PlO: aowatoommiiniki
+     PS/a+oowatoo+VTI+Sbj+2Sg+0PlO: aowatoommiiniki
+     PS/a+oowatoo+VTI+Sbj+3Sg+0PlO: aowatoisi
+     PS/a+oowatoo+VTI+Sbj+4Sg+0PlO: aowatoisi
+     
+     PS/a+oowatoo+VTI+Sbj+1Pl+0SgO: aowatoommiinnainiki
+     PS/a+oowatoo+VTI+Sbj+21Pl+0SgO: aowatoommiinoainiki
+     PS/a+oowatoo+VTI+Sbj+2Pl+0SgO: aowatoi'ki
+     PS/a+oowatoo+VTI+Sbj+3Pl+0SgO: aowatoisi
+     PS/a+oowatoo+VTI+Sbj+4Pl+0SgO: aowatoisi
+     PS/a+oowatoo+VTI+Sbj+1Pl+0PlO: aowatoommiinnainiki
+     PS/a+oowatoo+VTI+Sbj+21Pl+0PlO: aowatoommiinoainiki
+     PS/a+oowatoo+VTI+Sbj+2Pl+0PlO: aowatoi'ki
+     PS/a+oowatoo+VTI+Sbj+3Pl+0PlO: aowatoisi
+     PS/a+oowatoo+VTI+Sbj+4Pl+0PlO: aowatoisi
+     
+     PS/a+oowatoo+VTI+Irr+1Sg+0SgO: nitaowatoohtopi
+     PS/a+oowatoo+VTI+Irr+2Sg+0SgO: kitaowatoohtopi
+     PS/a+oowatoo+VTI+Irr+3Sg+0SgO: aowatoomahtopi
+     PS/a+oowatoo+VTI+Irr+4Sg+0SgO: aowatoomahtopiyini
+     PS/a+oowatoo+VTI+Irr+1Sg+0PlO: nitaowatoohtopi
+     PS/a+oowatoo+VTI+Irr+2Sg+0PlO: kitaowatoohtopi
+     PS/a+oowatoo+VTI+Irr+3Sg+0PlO: aowatoomahtopi
+     PS/a+oowatoo+VTI+Irr+4Sg+0PlO: aowatoomahtopiyini
+     
+     PS/a+oowatoo+VTI+Irr+1Pl+0SgO: nitaowatoohpinnaanopi
+     PS/a+oowatoo+VTI+Irr+21Pl+0SgO: aowatoo'pohtopi
+     PS/a+oowatoo+VTI+Irr+2Pl+0SgO: kitaowatoomahtopiyi
+     PS/a+oowatoo+VTI+Irr+3Pl+0SgO: aowatoomahtopiyi
+     PS/a+oowatoo+VTI+Irr+4Pl+0SgO: aowatoomahtopiyini
+     PS/a+oowatoo+VTI+Irr+1Pl+0PlO: nitaowatoohpinnaanopi
+     PS/a+oowatoo+VTI+Irr+21Pl+0PlO: aowatoo'pohtopi
+     PS/a+oowatoo+VTI+Irr+2Pl+0PlO: kitaowatoomahtopiyi
+     PS/a+oowatoo+VTI+Irr+3Pl+0PlO: aowatoomahtopiyi
+     PS/a+oowatoo+VTI+Irr+4Pl+0PlO: aowatoomahtopiyini
+     
+     PS/a+oowatoo+VTI+Imp+Sg+0SgO: aowatoota
+     PS/a+oowatoo+VTI+Imp+Pl+0SgO: aowatooka
+     PS/a+oowatoo+VTI+Imp+Sg+0PlO: aowatooti
+     PS/a+oowatoo+VTI+Imp+Pl+0PlO: aowatooki

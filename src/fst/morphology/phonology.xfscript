@@ -60,14 +60,14 @@ define rmBnf [ %^Bnf -> 0 ] ;
 
 ! Demonstrative trigger rules (-wa > 0 | o-_)
 
-define Demwa20Rule [ %^DEM w a -> 0 || o %> _ ] ;
-define DemPli20Rule [ %^DEM i (->) 0 || o %> _ ] ;
-define Demtrigger20 [ %^DEM -> 0 ] ;
+define Demwa20Rule [ %^Dem w a -> 0 || o %> _ ] ;
+define DemPli20Rule [ %^Dem i (->) 0 || o %> _ ] ;
+define Demtrigger20 [ %^Dem -> 0 ] ;
 
 ! Inverse o rules
-define Invo20Rule [ %^INV o -> 0 || t %> _ ] ;
-define Invo2ooRule [ %^INV o -> oo || Ix %> _ ] ;
-define Invtrigger20 [ %^INV -> 0 ] ;
+define Invo20Rule [ %^Inv o -> 0 || t %> _ ] ;
+define Invo2ooRule [ %^Inv o -> oo || Ix %> _ ] ;
+define Invtrigger20 [ %^Inv -> 0 ] ;
 
 !! Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of Toronto Press. Appendix B.
 

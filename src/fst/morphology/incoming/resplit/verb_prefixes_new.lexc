@@ -44,6 +44,7 @@ LEXICON POL_PREFIXES ! polarity prefixes (i.e., negation and similar in first sl
 @R.mode.IRR@@P.neg.NEG@PS/kata'+:@R.mode.IRR@@P.neg.NEG@%^SPi2kata'%< TENSE_PREFIXES ;
 @P.neg.NEG@PS/aahk+:@P.neg.NEG@aahk%< TENSE_PREFIXES ;
 @P.neg.NEG@PS/aahksaw+:@P.neg.NEG@aahksaw%< TENSE_PREFIXES ;
+@P.neg.NEG@PS/aahksikkam+:@P.neg.NEG@aahksikkam%< TENSE_PREFIXES ;
 @P.neg.NEG@PS/aahksta'+:@P.neg.NEG@aahksta'%< TENSE_PREFIXES ; ! possibly only cnj
 @P.neg.NEG@PS/aaksta'+:@P.neg.NEG@aaksta'%< TENSE_PREFIXES ; ! possibly only cnj
 
@@ -55,25 +56,25 @@ LEXICON TENSE_PREFIXES
 @R.pos.VERB@@D.mode.IMP@PS/na+:@R.pos.VERB@@D.mode.IMP@na%< PRESTEMS ; ! Siksika past
 
 LEXICON PRESTEMS
-PVSET1 ;
+PSSET1 ;
 
-LEXICON PVSET1
+LEXICON PSSET1
 VERB_STEMS ;
 NOUN_STEMS ;
-PVGATE1 ;
+PSGATE1 ;
 PS/a+:a PSBOUND1 ; ! durative
 PS/a'+:a' PSBOUND1 ; ! inchoative
 PS/ikaa+:^SPikaa PSBOUND1 ; ! perfective, need to model initial vs non initial forms
 
 LEXICON PSBOUND1
-0:%< PVGATE1 ;
+0:%< PSGATE1 ;
 	
-LEXICON PVGATE1
+LEXICON PSGATE1
 VERB_STEMS ;
 NOUN_STEMS ;
-PVSET2 ;
+PSSET2 ;
 	
-LEXICON PVSET2
+LEXICON PSSET2
 PS/ohko+:ohko PSBOUND2 ; ! "contrary, undesirable"; "have the wherewithal for"
 PS/omaa+:omaa PSBOUND2 ; ! "yet"; considerable allomorphy
 PS/iik+:i2ik PSBOUND2 ; ! "intensifier, very"
@@ -95,12 +96,56 @@ PS/iksisap+:i2ksisap	PSBOUND2 ; ! "down"
 PS/it+:it	PSBOUND2 ; ! "then, there"
 PS/matt+:^SPi2matt	PSBOUND2 ; ! "again"
 PS/ssk+:ssk	PSBOUND2 ; ! "back"
+PS/ohkan+:ohkan PSBOUND2 ; ! "all"
+PS/hkana+:ohkana PSBOUND2 ; ! "all" ! phonology!!
+PS/stam+:i2stam PSBOUND2 ; ! "just, unqualifiedly"
+PS/itam+:itam PSBOUND2 ; ! "only if"; rel root?
+PS/yaahs+:yaahs PSBOUND2 ; ! "pleasing"; variant of aahs- (is this pv or pn?)
+PS/otoom+:otoom	PSBOUND2 ; ! "first"; non-initial variant of matoom-
+PS/otam+:otam	PSBOUND2 ; ! "important, significant, central"
+PS/káák+:i2káák PSBOUND2 ; ! "merely, just, of no great importance"
+PS/anow+:anow PSBOUND2 ; ! (believe this is same as ano-)
+PS/sstsim+:i2sstsim	PSBOUND2 ; ! "reluctant"; verbal examples
+PS/oht+:oht PSBOUND2 ; ! "source, means"; elsewhere; rel root
+PS/ikipp+:i2kipp PSBOUND2 ; ! "briefly"; initial change
+PS/áka+:%^SPa4ka PSBOUND2 ; ! "old, belonging to a former time"; nominal examples
+PS/sistsik+:i2sistsik	PSBOUND2 ; ! "tired, exhausted"; verbal examples
+PS/yiistap+:yiistap	PSBOUND2 ; ! "away"; non-initial variant of miistap-
+PS/iitsiksist+:iitsiksist PSBOUND2 ; ! "slow"
+PS/isttani+:i2sttani	PSBOUND2 ; ! "down, below surface or top"; verbal examples
+PS/poohsap+:i2poohsap	PSBOUND2 ; ! "toward speaker"
+PS/ipiihk+:i2piihk	PSBOUND2 ; ! "in front of, converging along the path of s.o. or s.t. moving"
+PS/ikkam+:i2kkam PSBOUND2 ; ! "fast, quickly"; also "if" (maybe different slots?)
+PS/isam+:isam	PSBOUND2 ; ! "long"; variant of misam-
+PS/iksist+:iksist PSBOUND2 ; ! "finish, at the end"
+PS/ohsohkat+:ohsohkat	PSBOUND2 ; ! "the rear periphery of a group"; verbal examples
+PS/ohkott+:ohkott PSBOUND2 ; ! "able"
+PS/o't+:o't	PSBOUND2 ; ! "near, by speaker's location" ; verbal examples
+PS/sa+:sa	PSBOUND2 ; ! "out, away"; verbal examples
+PS/maak+:maak PSBOUND2 ; ! "forthcoming, planned"
+PS/niit+:niit	PSBOUND2 ; ! "original, genuine"; also "west"
+PS/ipiiw+:i2piiw	PSBOUND2 ; ! "far, long distance, remote in space"; w ~ y variation; verbal examples
+PS/isttsikohpo+:i2sttsikohpo PSBOUND2 ; ! "grimy"
+PS/sikotahko+:sikotahko	PSBOUND2 ; ! "brown"; verbal examples
+PS/sstsaap+:i2sstsaap	PSBOUND2 ; ! "bright"
+PS/ohsi+:ohsi	PSBOUND2 ; ! "by the wall"; non-initial variant of oohsi-
+PS/aanist+:%^SPaanist PSBOUND2 ; ! "manner" (should relative roots have a special slot?)
+PS/omia'nist+:omia'nist	PSBOUND2 ; ! "various, different, miscellaneous"; verbal examples
+PS/oomok+:oomok	PSBOUND2 ; ! "crooked, twisted, turn"
+PS/ohpo+:ohpo	PSBOUND2 ; ! "greasy, oily"
+PS/akoksska+:akoksska PSBOUND2 ; ! "of paramount rank"; nominal examples
+PS/piitsiyoohk+:i2piitsiyoohk PSBOUND2 ; ! "when, as soon as"
+PS/kaat+:kaat PSBOUND2 ; ! "result"
+PS/ama+:ama PSBOUND2 ; ! "pitiful, pathetic"; nominal examples
+PS/istsa'+:i2stsa' PSBOUND2 ; ! "last or final time"
+
+
 
 LEXICON PSBOUND2
-0:%< PVGATE2 ;
+0:%< PSGATE2 ;
 
-LEXICON PVGATE2
-PVSET1 ;
-PVSET2 ;
+LEXICON PSGATE2
+PSSET1 ;
+PSSET2 ;
 VERB_STEMS ;
 NOUN_STEMS ;

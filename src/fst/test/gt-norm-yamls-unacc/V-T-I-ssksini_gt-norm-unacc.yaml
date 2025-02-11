@@ -1,0 +1,21 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  +ero+:
+    Gen: ../../../src/generator-gt-norm.+fst
+    Morph: ../../../src/analyser-gt-norm.+fst
+    App: lookup
+
+Tests:
+  
+  Verb - ssksini - ok : # -m transitive inanimate verb, know AEW NA1
+     ssksini+VTI+Ind+1Sg+0SgO: nitsssksinihpa
+     PS/matt+PS/oht+ohkoissksini+VTI+Ind+21Pl+0SgO: mattohtohkoissksini'pa
+     ssksini+VTI+Ind+3Pl+0PlO+PRO+3/0: ssksinimiyaawa
+     ssksini+VTI+Ind+2Sg+0SgO: kitsssksinihpa
+     PS/ohkott+ssksini+VTI+Ind+2Sg+0SgO: kitohkottsssksinihpa
+     PS/maat+PS/oht+ssksini+VTI+Ind+1Sg+0SgO: nimaatohtsssksinihpa
+     PS/ii+ssksini+VTI+Ind+3Pl+0PlO: iissksinimi
+     PS/yaak+PS/anist+ssksini+VTI+Ind+21Pl+0SgO: aakanistsssksini'pa
+     PS/iiht+PS/a'+PS/o't+PS/ohko+ssksini+VTI+Ind+3Pl+0PlO+PRO+3/0: iihtao'tohkoissksinimiyaawa

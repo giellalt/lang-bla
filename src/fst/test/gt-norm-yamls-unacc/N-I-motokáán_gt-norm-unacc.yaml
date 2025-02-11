@@ -1,0 +1,43 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - mo'tokaani - ok : # -m inanimate noun, head AEW NA1
+     mo'tokaani+NI+Sg: mo'tokaani
+     mo'tokaani+NI+Pl: mo'tokaanistsi
+     mo'tokaani+NI+Non: mo'tokaani
+
+     mo'tokaani+NI+Px1Sg+Sg: no'tokaani
+     mo'tokaani+NI+Px1Sg+Pl: no'tokaanistsi
+     mo'tokaani+NI+Px1Sg+Non: no'tokaani
+
+     mo'tokaani+NI+Px1Pl+Sg: no'tokaannaani
+     mo'tokaani+NI+Px1Pl+Pl: no'tokaannaanistsi
+     mo'tokaani+NI+Px1Pl+Non: no'tokaannaani
+
+     mo'tokaani+NI+Px21Pl+Sg: ko'tokaannooni
+     mo'tokaani+NI+Px21Pl+Pl: ko'tokaannoonistsi
+     mo'tokaani+NI+Px21Pl+Non: ko'tokaannooni
+
+     mo'tokaani+NI+Px2Sg+Sg: ko'tokaani
+     mo'tokaani+NI+Px2Sg+Pl: ko'tokaanistsi
+     mo'tokaani+NI+Px2Sg+Non: ko'tokaani
+
+     mo'tokaani+NI+Px2Pl+Sg: ko'tokaanoaawayi
+     mo'tokaani+NI+Px2Pl+Pl: ko'tokaanoaawaistsi
+     mo'tokaani+NI+Px2Pl+Non: ko'tokaanoaawai
+
+     mo'tokaani+NI+Px3Sg+Sg: o'tokaani
+     mo'tokaani+NI+Px3Sg+Pl: o'tokaanistsi
+     mo'tokaani+NI+Px3Sg+Non: o'tokaani
+
+     mo'tokaani+NI+Px3Pl+Sg: o'tokaanoaawayi
+     mo'tokaani+NI+Px3Pl+Pl: o'tokaanoaawaistsi
+     mo'tokaani+NI+Px3Pl+Non: o'tokaanoaawai

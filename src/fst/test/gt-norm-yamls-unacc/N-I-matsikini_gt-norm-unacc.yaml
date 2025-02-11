@@ -1,0 +1,43 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - matsikini - ok : # -m inanimate noun, shoe AEW NA1
+     matsikini+NI+Sg: matsikini
+     matsikini+NI+Pl: matsikiistsi
+     matsikini+NI+Non: matsikini
+
+     matsikini+NI+Px1Sg+Sg: natsikini
+     matsikini+NI+Px1Sg+Pl: natsikiistsi
+     matsikini+NI+Px1Sg+Non: natsikini
+
+     matsikini+NI+Px1Pl+Sg: natsikinnaani
+     matsikini+NI+Px1Pl+Pl: natsikinnaanistsi
+     matsikini+NI+Px1Pl+Non: natsikinnaani
+
+     matsikini+NI+Px21Pl+Sg: katsikinnooni
+     matsikini+NI+Px21Pl+Pl: katsikinnoonistsi
+     matsikini+NI+Px21Pl+Non: katsikinnooni
+
+     matsikini+NI+Px2Sg+Sg: katsikini
+     matsikini+NI+Px2Sg+Pl: katsikiistsi
+     matsikini+NI+Px2Sg+Non: katsikini
+
+     matsikini+NI+Px2Pl+Sg: katsikinoaawayi
+     matsikini+NI+Px2Pl+Pl: katsikinoaawaistsi
+     matsikini+NI+Px2Pl+Non: katsikinoaawai
+
+     matsikini+NI+Px3Sg+Sg: atsikini
+     matsikini+NI+Px3Sg+Pl: atsikiistsi
+     matsikini+NI+Px3Sg+Non: atsikini
+
+     matsikini+NI+Px3Pl+Sg: atsikinoaawayi
+     matsikini+NI+Px3Pl+Pl: atsikinoaawaistsi
+     matsikini+NI+Px3Pl+Non: atsikinoaawai

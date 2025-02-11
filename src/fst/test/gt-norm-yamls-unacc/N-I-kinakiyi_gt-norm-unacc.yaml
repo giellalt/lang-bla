@@ -1,0 +1,43 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - kinakiyi - ok : # -m inanimate noun, liver AEW NA1
+     kinakini+NI+Sg: kinakini
+     kinakini+NI+Pl: kinakiistsi
+     kinakini+NI+Non: kinakini
+
+     kinakini+NI+Px1Sg+Sg: nohkinakini
+     kinakini+NI+Px1Sg+Pl: nohkinakiistsi
+     kinakini+NI+Px1Sg+Non: nohkinakini
+
+     kinakini+NI+Px1Pl+Sg: nohkinakinnaani
+     kinakini+NI+Px1Pl+Pl: nohkinakinnaanistsi
+     kinakini+NI+Px1Pl+Non: nohkinakinnaani
+
+     kinakini+NI+Px21Pl+Sg: kohkinakinnooni
+     kinakini+NI+Px21Pl+Pl: kohkinakinnoonistsi
+     kinakini+NI+Px21Pl+Non: kohkinakinnooni
+
+     kinakini+NI+Px2Sg+Sg: kohkinakini
+     kinakini+NI+Px2Sg+Pl: kohkinakiistsi
+     kinakini+NI+Px2Sg+Non: kohkinakini
+
+     kinakini+NI+Px2Pl+Sg: kohkinakinoaawayi
+     kinakini+NI+Px2Pl+Pl: kohkinakinoaawaistsi
+     kinakini+NI+Px2Pl+Non: kohkinakinoaawai
+
+     kinakini+NI+Px3Sg+Sg: ohkinakini
+     kinakini+NI+Px3Sg+Pl: ohkinakiistsi
+     kinakini+NI+Px3Sg+Non: ohkinakini
+
+     kinakini+NI+Px3Pl+Sg: ohkinakinoaawayi
+     kinakini+NI+Px3Pl+Pl: ohkinakinoaawaistsi
+     kinakini+NI+Px3Pl+Non: ohkinakinoaawai  

@@ -1,0 +1,199 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+   Verb - ikakomimm - ok : # -m animate transitive verb, love AEW NA1
+     ikakomimm+VTA+Ind+1Sg+2SgO: kitsikakomimmo
+     ikakomimm+VTA+Ind+1Sg+3SgO: nitsikakomimmawa
+     ikakomimm+VTA+Ind+1Sg+4SgO: nitsikakomimmayini
+     ikakomimm+VTA+Ind+2Sg+1SgO: kitsikakomimmoki
+     ikakomimm+VTA+Ind+2Sg+3SgO: kitsikakomimmawa
+     ikakomimm+VTA+Ind+2Sg+4SgO: kitsikakomimmayini
+     ikakomimm+VTA+Ind+3Sg+1SgO: nitsikakomimmoka
+     ikakomimm+VTA+Ind+3Sg+2SgO: kitsikakomimmoka
+     ikakomimm+VTA+Ind+3Sg+4SgO: ikakomimmiiwa
+     ikakomimm+VTA+Ind+4Sg+3SgO: otsikakomimmoka
+     ikakomimm+VTA+Ind+4Sg+2SgO: kitsikakomimmokini
+     ikakomimm+VTA+Ind+4Sg+1SgO: nitsikakomimmokini
+     ikakomimm+VTA+Ind+4Pl+5Sg/PlO: ikakomimmiiyiina
+     ikakomimm+VTA+Ind+5Sg/Pl+4SgO: otsikakomimmokini
+     
+     ikakomimm+VTA+Ind+1Pl+2PlO: kitsikakomimmohpinnaana
+     ikakomimm+VTA+Ind+1Pl+3PlO: nitsikakomimmannaani
+     ikakomimm+VTA+Ind+1Pl+4PlO: nitsikakomimmannaani
+     ikakomimm+VTA+Ind+21Pl+3PlO: ikakomimmayi
+     ikakomimm+VTA+Ind+21Pl+4PlO: ikakomimmayi
+     ikakomimm+VTA+Ind+2Pl+1PlO: kitsikakomimmokihpinnaana
+     ikakomimm+VTA+Ind+2Pl+3PlO: kitsikakomimmawaayi
+     ikakomimm+VTA+Ind+2Pl+4PlO: kitsikakomimmawaayi
+     ikakomimm+VTA+Ind+3Pl+1PlO: nitsikakomimmokinnaani
+     ikakomimm+VTA+Ind+3Pl+2PlO: kitsikakomimmokoaayi
+     ikakomimm+VTA+Ind+3Pl+4PlO: ikakomimmiiyi
+     ikakomimm+VTA+Ind+4Pl+1PlO: nitsikakomimmokinnani
+     ikakomimm+VTA+Ind+4Pl+2PlO: kitsikakomimmokoaayi
+     ikakomimm+VTA+Ind+4Pl+3PlO: otsikakomimmokoaayi
+     ikakomimm+VTA+Ind+4Pl+5Sg/PlO: ikakomimmiiyi
+     ikakomimm+VTA+Ind+5Sg/Pl+4PlO: otsikakomimmokoaayini
+     
+     ikakomimm+VTA+Ind+1Pl+2SgO: kitsikakomimmohpinnaana
+     ikakomimm+VTA+Ind+1Pl+3SgO: nitsikakomimmannaana
+     ikakomimm+VTA+Ind+1Pl+4SgO: nitsikakomimmannaanini
+     ikakomimm+VTA+Ind+21Pl+3SgO: ikakomimmawa
+     ikakomimm+VTA+Ind+21Pl+4SgO: ikakomimmayini
+     ikakomimm+VTA+Ind+2Pl+1SgO: kitsikakomimmokihpoaawa
+     ikakomimm+VTA+Ind+2Pl+3SgO: kitsikakomimmawaawa
+     ikakomimm+VTA+Ind+2Pl+4SgO: kitsikakomimmawaayini
+     ikakomimm+VTA+Ind+3Pl+1SgO: nitsikakomimmoki
+     ikakomimm+VTA+Ind+3Pl+2SgO: kitsikakomimmoki
+     ikakomimm+VTA+Ind+3Pl+4SgO: ikakomimmiiyi
+     ikakomimm+VTA+Ind+4Pl+1SgO: nitsikakomimmoki
+     ikakomimm+VTA+Ind+4Pl+2SgO: kitsikakomimmoki
+     ikakomimm+VTA+Ind+4Pl+3SgO: otsikakomimmoka
+
+     ikakomimm+VTA+Ind+1Sg+2PlO: kitsikakomimmohpoaawa     
+     ikakomimm+VTA+Ind+1Sg+3PlO: nitsikakomimmayi
+     ikakomimm+VTA+Ind+1Sg+4PlO: nitsikakomimmayi
+     ikakomimm+VTA+Ind+2Sg+1PlO: kitsikakomimmokihpinnaana    
+     ikakomimm+VTA+Ind+2Sg+3PlO: kitsikakomimmayi
+     ikakomimm+VTA+Ind+2Sg+4PlO: kitsikakomimmayi
+     ikakomimm+VTA+Ind+3Sg+1PlO: nitsikakomimmokinnaani
+     ikakomimm+VTA+Ind+3Sg+2PlO: kitsikakomimmokoaawa
+     ikakomimm+VTA+Ind+3Sg+4PlO: ikakomimmiiwa
+     ikakomimm+VTA+Ind+4Sg+1PlO: nitsikakomimmokini
+     ikakomimm+VTA+Ind+4Sg+2PlO: kitsikakomimmokini
+     ikakomimm+VTA+Ind+4Sg+3PlO: otsikakomimmokoaayi
+ 
+     ikakomimm+VTA+Ind+Unspec+1SgO: nitsikakomimmokoo
+     ikakomimm+VTA+Ind+Unspec+1PlO: nitsikakomimmotsspinnaana
+     ikakomimm+VTA+Ind+Unspec+2SgO: kitsikakomimmokoo
+     ikakomimm+VTA+Ind+Unspec+2PlO: kitsikakomimmotsspoaawa
+     ikakomimm+VTA+Ind+Unspec+21PlO: ikakomimmotssp
+     ikakomimm+VTA+Ind+Unspec+3SgO: ikakomimmawa
+     ikakomimm+VTA+Ind+Unspec+3PlO: ikakomimmayi
+     ikakomimm+VTA+Ind+Unspec+4SgO: ikakomimmayini
+     ikakomimm+VTA+Ind+Unspec+4PlO: ikakomimmayi
+
+     ikakomimm+VTA+Cnj+1Sg+2SgO: kitsikakomimmohsi
+     ikakomimm+VTA+Cnj+1Sg+3SgO: nitsikakomimmahsi
+     ikakomimm+VTA+Cnj+1Sg+4SgO: nitsikakomimmahsi
+     ikakomimm+VTA+Cnj+2Sg+1SgO: kitsikakomimmokssi
+     ikakomimm+VTA+Cnj+2Sg+3SgO: kitsikakomimmahsi
+     ikakomimm+VTA+Cnj+2Sg+4SgO: kitsikakomimmahsini
+     ikakomimm+VTA+Cnj+3Sg+1SgO: nitsikakomimmssi
+     ikakomimm+VTA+Cnj+3Sg+2SgO: kitsikakomimmssi
+     ikakomimm+VTA+Cnj+3Sg+4SgO: otsikakomimmahsi
+     ikakomimm+VTA+Cnj+4Sg+3SgO: otsikakomimmssi
+
+     ikakomimm+VTA+Cnj+1Sg+2PlO: kitsikakomimmohsoaayi
+     ikakomimm+VTA+Cnj+1Sg+3PlO: nitsikakomimmahsi
+     ikakomimm+VTA+Cnj+1Sg+4PlO: nitsikakomimmahsi
+     ikakomimm+VTA+Cnj+2Sg+1PlO: kitsikakomimmokssinnaani
+     ikakomimm+VTA+Cnj+2Sg+3PlO: kitsikakomimmahsi
+     ikakomimm+VTA+Cnj+2Sg+4PlO: kitsikakomimmahsi
+     ikakomimm+VTA+Cnj+3Sg+1PlO: nitsikakomimmssinnaani
+     ikakomimm+VTA+Cnj+3Sg+2PlO: kitsikakomimmssoaayi
+     ikakomimm+VTA+Cnj+3Sg+4PlO: otsikakomimmahsi
+     ikakomimm+VTA+Cnj+4Sg+3PlO: otsikakomimmssi
+     ikakomimm+VTA+Cnj+4Sg+4PlO: otsikakomimmssi
+
+     ikakomimm+VTA+Cnj+1Pl+2PlO: kitsikakomimmohsinnaani
+     ikakomimm+VTA+Cnj+1Pl+3PlO: nitsikakomimmahsinnaani
+     ikakomimm+VTA+Cnj+1Pl+4PlO: nitsikakomimmahsinnaani
+     ikakomimm+VTA+Cnj+21Pl+3PlO: ikakomimmahsi
+     ikakomimm+VTA+Cnj+21Pl+4PlO: ikakomimmahsi
+     ikakomimm+VTA+Cnj+2Pl+1PlO: kitsikakomimmokssinnaani
+     ikakomimm+VTA+Cnj+2Pl+3PlO: kitsikakomimmahsoaayi
+     ikakomimm+VTA+Cnj+2Pl+4PlO: kitsikakomimmahsoaayi
+     ikakomimm+VTA+Cnj+3Pl+1PlO: nitsikakomimmssinnaani
+     ikakomimm+VTA+Cnj+3Pl+21PlO: nitsikakomimmokssi
+     ikakomimm+VTA+Cnj+3Pl+2PlO: kitsikakomimmssoaayi
+     ikakomimm+VTA+Cnj+3Pl+4PlO: otsikakomimmahsi
+     ikakomimm+VTA+Cnj+4Pl+4PlO: otsikakomimmssi
+     ikakomimm+VTA+Cnj+4Pl+3PlO: otsikakomimmssi
+
+     ikakomimm+VTA+Cnj+1Pl+2SgO: kitsikakomimmohsinnaani
+     ikakomimm+VTA+Cnj+1Pl+3SgO: nitsikakomimmahsinnaani
+     ikakomimm+VTA+Cnj+1Pl+4SgO: nitsikakomimmahsinnaanini
+     ikakomimm+VTA+Cnj+21Pl+3SgO: ikakomimmahsi
+     ikakomimm+VTA+Cnj+21Pl+4SgO: ikakomimmahsini
+     ikakomimm+VTA+Cnj+2Pl+1SgO: kitsikakomimmokssoaayi
+     ikakomimm+VTA+Cnj+2Pl+3SgO: kitsikakomimmahsoaayi
+     ikakomimm+VTA+Cnj+2Pl+4SgO: kitsikakomimmahsoaayini
+     ikakomimm+VTA+Cnj+3Pl+1SgO: nitsikakomimmssinnaani
+     ikakomimm+VTA+Cnj+3Pl+2SgO: kitsikakomimmssi
+     ikakomimm+VTA+Cnj+3Pl+4SgO: otsikakomimmahsi
+     ikakomimm+VTA+Cnj+4Pl+3SgO: otsikakomimmssi
+
+     ikakomimm+VTA+Cnj+Unspec+1SgO: nitsikakomimmokoohsi
+     ikakomimm+VTA+Cnj+Unspec+1PlO: nitsikakomimmotssinnaani
+     ikakomimm+VTA+Cnj+Unspec+2SgO: kitsikakomimmokoohsi
+     ikakomimm+VTA+Cnj+Unspec+2PlO: kitsikakomimmotssoaayi
+     ikakomimm+VTA+Cnj+Unspec+21PlO: ikakomimmotssi
+     ikakomimm+VTA+Cnj+Unspec+3SgO: ikakomimmahsi
+     ikakomimm+VTA+Cnj+Unspec+3PlO: ikakomimmahsi
+     ikakomimm+VTA+Cnj+Unspec+4SgO: ikakomimmahsini
+
+     ikakomimm+VTA+Sbj+1Sg+2SgO: ikakomimminiki
+     ikakomimm+VTA+Sbj+1Sg+3SgO: ikakomimmaniki
+     ikakomimm+VTA+Sbj+2Sg+1SgO: ikakomimmokiiniki
+     ikakomimm+VTA+Sbj+2Sg+3SgO: ikakomimmaniki
+     ikakomimm+VTA+Sbj+3Sg+1SgO: ikakomimmotsiiniki
+     ikakomimm+VTA+Sbj+3Sg+2SgO: ikakomimmotsiiniki
+     ikakomimm+VTA+Sbj+3Sg+4SgO: ikakomimmasi
+     ikakomimm+VTA+Sbj+4Sg+3SgO: ikakomimmotsiiniki
+
+     ikakomimm+VTA+Sbj+1Sg+2PlO: ikakomimminoainiki
+     ikakomimm+VTA+Sbj+1Sg+3PlO: ikakomimmainiki
+     ikakomimm+VTA+Sbj+2Sg+1PlO: ikakomimmokinnaaniki
+     ikakomimm+VTA+Sbj+2Sg+3PlO: ikakomimmainiki
+     ikakomimm+VTA+Sbj+3Sg+1PlO: ikakomimmokinnaaniki
+     ikakomimm+VTA+Sbj+3Sg+21PlO: ikakomimmokisi
+     ikakomimm+VTA+Sbj+3Sg+2PlO: ikakomimmotsinoainiki
+     ikakomimm+VTA+Sbj+3Sg+4PlO: ikakomimmasi
+     ikakomimm+VTA+Sbj+4Sg+3PlO: ikakomimmotsiinoainiki
+
+     ikakomimm+VTA+Sbj+1Pl+2PlO: ikakomimminnaaniki
+     ikakomimm+VTA+Sbj+1Pl+3PlO: ikakomimmainnaaniki
+     ikakomimm+VTA+Sbj+2Pl+1PlO: ikakomimmokinnaaniki
+     ikakomimm+VTA+Sbj+2Pl+3PlO: ikakomimmainainiki
+     ikakomimm+VTA+Sbj+3Pl+21PlO: ikakomimmokisi
+     ikakomimm+VTA+Sbj+3Pl+2PlO: ikakomimmotsiinoainiki
+     ikakomimm+VTA+Sbj+3Pl+4PlO: ikakomimmotsiinoainiki
+     ikakomimm+VTA+Sbj+4Pl+3PlO: ikakomimmotsiinoainiki
+
+     ikakomimm+VTA+Sbj+1Pl+2SgO: ikakomimminnaaniki
+     ikakomimm+VTA+Sbj+1Pl+3SgO: ikakomimmainnaaniki
+     ikakomimm+VTA+Sbj+21Pl+3SgO: ikakomimmahki
+     ikakomimm+VTA+Sbj+2Pl+1SgO: ikakomimmokiinoainiki
+     ikakomimm+VTA+Sbj+2Pl+3SgO: ikakomimmainoainiki
+     ikakomimm+VTA+Sbj+3Pl+1SgO: ikakomimmotsiiniki
+     ikakomimm+VTA+Sbj+3Pl+2SgO: ikakomimmotsiiniki
+     ikakomimm+VTA+Sbj+3Pl+4SgO: ikakomimmasi
+     ikakomimm+VTA+Sbj+4Pl+3SgO: ikakomimmotsiiniki
+
+     ikakomimm+VTA+Sbj+Unspec+1SgO: ikakomimmokoiniki
+     ikakomimm+VTA+Sbj+Unspec+1PlO: ikakomimmokoinnaaniki
+     ikakomimm+VTA+Sbj+Unspec+2SgO: ikakomimmokoiniki
+     ikakomimm+VTA+Sbj+Unspec+2PlO: ikakomimmokoinoainiki
+     ikakomimm+VTA+Sbj+Unspec+21PlO: ikakomimmotsski
+     ikakomimm+VTA+Sbj+Unspec+3SgO: ikakomimmahki
+     ikakomimm+VTA+Sbj+Unspec+3PlO: ikakomimmahki
+
+     ikakomimm+VTA+Imp+2Sg+1SgO: ikakomimmokit
+     ikakomimm+VTA+Imp+2Sg+1PlO: ikakomimmaokinnaana
+     ikakomimm+VTA+Imp+2Sg+3SgO: ikakomimmis
+     ikakomimm+VTA+Imp+2Sg+3PlO: ikakomimmis
+     ikakomimm+VTA+Imp+2Pl+1SgO: ikakomimmokik
+     ikakomimm+VTA+Imp+2Pl+1PlO: ikakomimmaokinnaana
+     ikakomimm+VTA+Imp+2Pl+3SgO: ikakomimmok
+     ikakomimm+VTA+Imp+2Pl+3PlO: ikakomimmok
+
+     ikakomimm+VTA+Der/Rcpr+VAI+Ind+1Pl: [ nitsikakomimmotsiiyihpinnaana , nitsikakomimmotsiiyihpinnaan ]
+     

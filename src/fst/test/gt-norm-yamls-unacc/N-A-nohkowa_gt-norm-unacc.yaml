@@ -1,0 +1,44 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - nohkowa - ok : # -m animate noun, my son AEW NA1
+     nohkowa+NAD+Px1Sg+Sg: nohkowa
+     nohkowa+NAD+Px1Sg+Pl: nohkoiksi
+     nohkowa+NAD+Px1Sg+Obv: nohkoyi
+     nohkowa+NAD+Px1Sg+Non: nohkoi
+     
+     nohkowa+NAD+Px1Pl+Sg: nohkoinnaana
+     nohkowa+NAD+Px1Pl+Pl: nohkoinnaaniksi
+     nohkowa+NAD+Px1Pl+Obv: nohkoinnaani
+     nohkowa+NAD+Px1Pl+Non: nohkoinnaani
+
+     nohkowa+NAD+Px21Pl+Sg: kohkoinnoona
+     nohkowa+NAD+Px21Pl+Pl: kohkoinnooniksi
+     nohkowa+NAD+Px21Pl+Obv: kohkoinnooni
+     nohkowa+NAD+Px21Pl+Non: kohkoinnooni
+
+     nohkowa+NAD+Px2Sg+Sg: kohkowa
+     nohkowa+NAD+Px2Sg+Pl: kohkoiksi
+     nohkowa+NAD+Px2Sg+Obv: kohkoyi
+     nohkowa+NAD+Px2Sg+Non: kohkoi
+
+     nohkowa+NAD+Px2Pl+Sg: kohkowaawa
+     nohkowa+NAD+Px2Pl+Pl: kohkowaawaiksi
+     nohkowa+NAD+Px2Pl+Obv: kohkowaawayi
+     nohkowa+NAD+Px2Pl+Non: kohkowaawai
+
+     nohkowa+NAD+Px3Sg+Obv: ohkoyi
+     nohkowa+NAD+Px3Sg+Non: ohkoi
+
+     nohkowa+NAD+Px3Pl+Obv: ohkowaawayi
+     nohkowa+NAD+Px3Pl+Non: ohkowaawai
+
+    

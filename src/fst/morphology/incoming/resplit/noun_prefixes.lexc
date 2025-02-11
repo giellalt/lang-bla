@@ -3,14 +3,14 @@ NOUN_INDEP_PREFIXES ;
 NOUN_SHORT_PREFIXES ;
 
 LEXICON NOUN_INDEP_PREFIXES
-@P.person.NI@:@P.person.NI@nit%<    NEG_PREFIXES ;
-@P.person.KI@:@P.person.KI@kit%<    NEG_PREFIXES ;
-@P.person.OT@:@P.person.OT@ot%<     NEG_PREFIXES ;
-@P.person.NULL@0                    NEG_PREFIXES ;
+@P.person.NI@:@P.person.NI@nit%<    POL_PREFIXES ;
+@P.person.KI@:@P.person.KI@kit%<    POL_PREFIXES ;
+@P.person.OT@:@P.person.OT@ot%<     POL_PREFIXES ;
+@P.person.NULL@0                    POL_PREFIXES ;
 
 !LEXICON PRE_INDEP_FLAG
-!@R.pos.NOUN@ PREVERBS ;
-!@R.pos.VERB@ PREVERBS ;
+!@R.pos.NOUN@ PRESTEMS ;
+!@R.pos.VERB@ PRESTEMS ;
 
 LEXICON NOUN_SHORT_PREFIXES
 @P.person.NI@:@P.person.NI@n%<    DEP_STEMS ;

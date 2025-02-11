@@ -1,0 +1,19 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - various - ok : # with different preverbs
+     PS/matt+PS/it+itapssi+VAI+Ind+1Pl: [nimattsitsitapssspinnaana, nimattsitsitapssspinnaan]
+     PS/maat+PS/a+itapssi+VAI+Ind+3Pl: maataitapssiyi
+     PS/apoyi+PS/a+itapssi+VAI+Ind+1Pl: [nitapoyaitapssspinnaan, nitapoyaitapssspinnaana]
+     PS/maat+PS/ssk+itapssi+VAI+Ind+3Sg: maatssskitapssiwa
+     PS/noohkatt+PS/itap+waami+VAI+Ind+3Sg: noohkattsitapaamiwa
+     PS/noohkatt+PS/itap+PS/ssp+waami+VAI+Ind+3Sg: noohkattsitapssspaamiwa
+     PS/it+PS/ssk+PS/iksisap+waami+VAI+Ind+3Pl: itsssksiksisapaamiyi

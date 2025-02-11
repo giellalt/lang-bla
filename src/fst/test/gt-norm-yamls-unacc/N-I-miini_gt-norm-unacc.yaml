@@ -1,0 +1,43 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - miini - ok : # -m inanimate noun, berry AEW NA1
+     miini+NI+Sg: miini
+     miini+NI+Pl: miinistsi
+     miini+NI+Non: miini
+
+     miini+NI+Px1Sg+Sg: nitsiini
+     miini+NI+Px1Sg+Pl: nitsiinistsi
+     miini+NI+Px1Sg+Non: nitsiini
+
+     miini+NI+Px1Pl+Sg: nitsiinnaani
+     miini+NI+Px1Pl+Pl: nitsiinnaanistsi
+     miini+NI+Px1Pl+Non: nitsiinnaani
+
+     miini+NI+Px21Pl+Sg: kitsiinnooni
+     miini+NI+Px21Pl+Pl: kitsiinnoonistsi
+     miini+NI+Px21Pl+Non: kitsiinnooni
+
+     miini+NI+Px2Sg+Sg: kitsiini
+     miini+NI+Px2Sg+Pl: kitsiinistsi
+     miini+NI+Px2Sg+Non: kitsiini
+
+     miini+NI+Px2Pl+Sg: kitsiinoaawayi
+     miini+NI+Px2Pl+Pl: kitsiinoaawaistsi
+     miini+NI+Px2Pl+Non: kitsiinoaawai
+
+     miini+NI+Px3Sg+Sg: otsiini
+     miini+NI+Px3Sg+Pl: otsiinistsi
+     miini+NI+Px3Sg+Non: otsiini
+
+     miini+NI+Px3Pl+Sg: otsiinoaawayi
+     miini+NI+Px3Pl+Pl: otsiinoaawaistsi
+     miini+NI+Px3Pl+Non: otsiinoaawai

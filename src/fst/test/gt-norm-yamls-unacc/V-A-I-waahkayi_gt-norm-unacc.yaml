@@ -1,0 +1,26 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  +ero+:
+    Gen: ../../../src/generator-gt-norm.+fst
+    Morph: ../../../src/analyser-gt-norm.+fst
+    App: lookup
+
+Tests:
+  
+  Verb - waahkayi - ok : # -m animate intransitive verb, go home AEW NA1
+     PS/maat+PS/yaak+waahkayi+VAI+Ind+3Sg+Interr: maataakaahkayiwatsiksi
+     PS/a+PS/o't+waahkayi+VAI+Sbj+1Sg: ao'taahkayiniki
+     PS/maat+PS/yaak+PS/ohkott+waahkayi+VAI+Ind+1Sg+Interr: nimaataakohkottaahkayihpa
+     PS/ayaak+waahkayi+VAI+Cnj+3Pl: otayaakaahkayssi
+     PS/yaak+PS/oht+waahkayi+VAI+Ind+1Sg: nitaakohtaahkayi
+     PS/yaak+waahkayi+VAI+Ind+2Sg: kitaakaahkayi
+     PS/ayaak+waahkayi+VAI+Ind+PRO+3/0: ayaakaahkayiyaawa
+     PS/maak+PS/sa+waahkayi+VAI+Ind+3Sg+Interr: maakssawaahkayiwatsiksi
+     PS/aahk+waahkayi+VAI+Cnj+3Sg: otaahkaahkayssi
+     PS/aahk+waahkayi+VAI+Cnj+21Pl: aahkaahkayssi
+     PS/yaak+PS/sa+waahkayi+VAI+Ind+3Sg+Interr: aakssawaahkayiwatsiksi
+     PS/yaak+PS/itam+PS/it+waahkayi+VAI+Ind+3Sg: aakitamitaahkayiwa
+     PS/yaak+waahkayi+VAI+Ind+3Sg: aakaahkayiwa
+     PS/aahk+waahkayi+VAI+Cnj+1Sg: naahkaahkayssi

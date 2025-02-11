@@ -1,0 +1,37 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  +ero+:
+    Gen: ../../../src/generator-gt-norm.+fst
+    Morph: ../../../src/analyser-gt-norm.+fst
+    App: lookup
+
+Tests:
+  
+  Verb - itapoo - ok : # -m animate intransitive verb, go AEW NA2
+     PS/yaak+itapoo+VAI+Ind+1Sg: nitaakitapoo
+     PS/yaak+itapoo+VAI+Ind+1Pl: [nitaakitapoohpinnaan, nitaakitapoohpinnaana]
+     PS/yaak+itapoo+VAI+Ind+2Sg+Interr: kitaakitapoohpa
+     PS/yaak+PS/it+itapoo+VAI+Ind+3Sg: aakitsitapoowa
+     PS/yaak+itapoo+VAI+Ind+3Sg: aakitapoowa
+     PS/yaak+itapoo+VAI+Ind+21Pl: aakitapaoo'pa
+     PS/a+itapoo+VAI+Ind+2Sg+Interr: kitaitapoohpa
+     itapoo+VAI+Ind+3Sg: itapoowa
+     itapoo+VAI+Ind+21Pl: itapaoo'pa
+     PS/ii+itapoo+VAI+Ind+3Sg: iitapoowa
+     PS/a+PS/sstsim+itapoo+VAI+Ind+3Sg: aisstsimitapoowa
+     PS/yaak+PS/otoom+itapoo+VAI+Ind+3Sg: aakotoomitapoowa
+     PS/maat+PS/kaak+itapoo+VAI+Ind+3Sg: maatsikakitapoowa
+     PS/yaak+PS/otam+itapoo+VAI+Ind+3Sg: aakotamitapoowa
+     PS/aahksikkam+PS/a'p+itapoo+VAI+Ind+3Sg: aahksikkama'pitapoowa
+     PS/aahk+PS/oht+itapoo+VAI+Ind+2Sg: kitaakohtsitapoo
+     PS/aahk+itapoo+VAI+Ind+2Sg: kitaakitapoo
+     PS/yaak+PS/ikipp+itapoo+VAI+Ind+3Sg: aaksikippitapoowa
+     itapoo+VAI+Ind+2Sg+Interr: kitsitapoohpa
+     PS/aahk+itapoo+VAI+Ind+2Sg+Interr: kitaakitapoohpa
+     PS/stam+itapoo+VAI+Imp+2Sg: stamitapoot
+     PS/matt+PS/it+itapoo+VAI+Ind+1Pl: nimattsitsitapoohpinnaana
+     PS/maat+PS/anow+PS/a+itapoo+VAI+Ind+2Sg+Interr: maatanowaitapoohpa
+     PS/itam+/it+PS/a+itapoo+VAI+Ind+3Sg: itamitaitapoowa
+     PS/a+PS/ssk+PS/aahs+itapoo+VAI+Ind+3Sg: aisskahsaitapoowa

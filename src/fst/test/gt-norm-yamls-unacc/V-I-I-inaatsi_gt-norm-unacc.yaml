@@ -1,0 +1,26 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  +ero+:
+    Gen: ../../../src/generator-gt-norm.+fst
+    Morph: ../../../src/analyser-gt-norm.+fst
+    App: lookup
+
+Tests:
+  
+  Verb - inaatsi - ok : # -m inanimate intransitive verb, appear AEW NA1
+     PS/niit+inaattsi+VII+Ind+0Sg: niitsinaattsiwa
+     PS/iik+PS/oomok+inaattsi+VII+Ind+0Sg: iikoomoksinaattsiwa
+     PS/iik+PS/ohpo+inaattsi+VII+Ind+0Sg: iikohpoinaattsiwa
+     PS/ii+PS/hkana+PS/omia'nist+inaattsi+VII+Ind+0Pl: iihkanaomia'nistsinaattsiyi
+     PS/yaak+PS/isttsikohpo+inaattsi+VII+Ind+0Sg: aaksisttsikohpoinaattsiwa
+     PS/yaak+PS/ipiiw+inaattsi+VII+Ind+0Sg: aaksipiiyinaattsiwa
+     PS/iik+PS/aanist+inaattsi+VII+Ind+0Sg: iikaanistsinaattsiwa
+     PS/sikotahko+inaattsi+VII+Ind+0Sg: sikotahkoinaattsiwa
+     PS/ii+PS/sstsaap+inaattsi+VII+Ind+0Sg: iisstsaapinaattsiwa
+     PS/ii+PS/ohsi+inaattsi+VII+Ind+0Sg: issiinaattsiwa
+     PS/ipiiw+inaattsi+VII+Ind+0Sg: ipiiyinaattsiwa
+     PS/a+PS/apoyi+inaattsi+VII+Ind+0Sg: aapoyiinaattsiwa
+     PS/yaak+PS/aanist+inaattsi+VII+Ind+0Sg: aakaanistsinaattsiwa
+     PS/yaak+PS/apoyi+inaattsi+VII+Ind+0Sg: aakapoyiinaattsiwa

@@ -1,0 +1,49 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - isska - ok : # -m animate noun, pail AEW NA1
+     isska+NA+Sg: isska
+     isska+NA+Pl: isskiksi
+     isska+NA+Obv: isski
+     isska+NA+Non: isski
+     
+     isska+NA+Px1Sg+Sg: noohkiwa
+     isska+NA+Px1Sg+Pl: noohkiiksi
+     isska+NA+Px1Sg+Obv: noohkiyi
+     isska+NA+Px1Sg+Non: noohkii
+     
+     isska+NA+Px1Pl+Sg: noohkinnaana
+     isska+NA+Px1Pl+Pl: noohkinnaaniksi
+     isska+NA+Px1Pl+Obv: noohkinnaani
+     isska+NA+Px1Pl+Non: noohkinnaani
+
+     isska+NA+Px21Pl+Sg: koohkinnoona
+     isska+NA+Px21Pl+Pl: koohkinnooniksi
+     isska+NA+Px21Pl+Obv: koohkinnooni
+     isska+NA+Px21Pl+Non: koohkinnooni
+
+     isska+NA+Px2Sg+Sg: koohkiwa
+     isska+NA+Px2Sg+Pl: koohkiiksi
+     isska+NA+Px2Sg+Obv: koohkiyi
+     isska+NA+Px2Sg+Non: koohkii
+
+     isska+NA+Px2Pl+Sg: koohkiwaawa
+     isska+NA+Px2Pl+Pl: koohkiwaawaiksi
+     isska+NA+Px2Pl+Obv: koohkiwaawayi
+     isska+NA+Px2Pl+Non: koohkiwaawai
+
+     isska+NA+Px3Sg+Obv: oohkiyi
+     isska+NA+Px3Sg+Pl: oohkiiksi
+     isska+NA+Px3Sg+Non: oohkii
+
+     isska+NA+Px3Pl+Obv: oohkiwaawayi
+     isska+NA+Px3Pl+Pl: oohkiwaawaiksi
+     isska+NA+Px3Pl+Non: oohkiwaawai

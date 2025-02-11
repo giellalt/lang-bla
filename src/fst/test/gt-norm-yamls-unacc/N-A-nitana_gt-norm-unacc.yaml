@@ -1,0 +1,46 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - nitana - ok : # -m animate noun, my daughter AEW NA1
+     nitana+NAD+Px1Sg+Sg: nitana
+     nitana+NAD+Px1Sg+Pl: nitaniksi
+     nitana+NAD+Px1Sg+Obv: nitani
+     nitana+NAD+Px1Sg+Non: nitani
+     
+     nitana+NAD+Px1Pl+Sg: nitannaana
+     nitana+NAD+Px1Pl+Pl: nitannaaniksi
+     nitana+NAD+Px1Pl+Obv: nitannaani
+     nitana+NAD+Px1Pl+Non: nitannaani
+
+     nitana+NAD+Px21Pl+Sg: kitannoona
+     nitana+NAD+Px21Pl+Pl: kitannooniksi
+     nitana+NAD+Px21Pl+Obv: kitannooni
+     nitana+NAD+Px21Pl+Non: kitannooni
+
+     nitana+NAD+Px2Sg+Sg: kitana
+     nitana+NAD+Px2Sg+Pl: kitaniksi
+     nitana+NAD+Px2Sg+Obv: kitani
+     nitana+NAD+Px2Sg+Non: kitani
+
+     nitana+NAD+Px2Pl+Sg: kitanoaawa
+     nitana+NAD+Px2Pl+Pl: kitanoaawaiksi
+     nitana+NAD+Px2Pl+Obv: kitanoaawayi
+     nitana+NAD+Px2Pl+Non: kitanoaawai
+
+     nitana+NAD+Px3Sg+Pl: otaniksi
+     nitana+NAD+Px3Sg+Obv: otani
+     nitana+NAD+Px3Sg+Non: otani
+
+     nitana+NAD+Px3Pl+Pl: otanoaawaiksi
+     nitana+NAD+Px3Pl+Obv: otanoaawayi
+     nitana+NAD+Px3Pl+Non: otanoaawai
+
+    

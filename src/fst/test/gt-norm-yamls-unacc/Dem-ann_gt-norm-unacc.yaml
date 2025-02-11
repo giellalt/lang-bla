@@ -1,0 +1,72 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Demonstrative - ann - ok :
+     ann+Dem+A+Sg: anna
+     ann+Dem+I+Sg: anni
+     ann+Dem+A+Obv: anni
+     ann+Dem+A+Pl: anniksi
+     ann+Dem+I+Pl: annistsi
+     
+     ann+Dem+A+Sg+Stat: annama
+     ann+Dem+I+Sg+Stat: annima
+     ann+Dem+A+Obv+Stat: annima
+     ann+Dem+A+Pl+Stat: anniksima
+     ann+Dem+I+Pl+Stat: annistsima
+     
+     ann+Dem+A+Sg+Movg: annaya
+     ann+Dem+I+Sg+Movg: anniya
+     ann+Dem+A+Obv+Movg: anniya
+     ann+Dem+A+Pl+Movg: anniksiya
+     ann+Dem+I+Pl+Movg: annistsiya
+     
+     ann+Dem+A+Sg+Invs: annahka
+     ann+Dem+I+Sg+Invs: annihka
+     ann+Dem+A+Obv+Invs: annihka
+     ann+Dem+A+Pl+Invs: anniksska
+     ann+Dem+I+Pl+Invs: annistsska
+     
+     ann+Dem+A+Sg+MT: annaka
+     ann+Dem+I+Sg+MT: annika
+     ann+Dem+A+Obv+MT: annika
+     ann+Dem+A+Pl+MT: anniksika
+     ann+Dem+I+Pl+MT: annistsika
+     
+     ann+Dem+A+Sg+Vblz:  [annao'ka,    annaayi]
+     ann+Dem+I+Sg+Vblz:  [anno'ka,     annayi]
+     ann+Dem+A+Obv+Vblz: [anno'ka,     annayi]
+     ann+Dem+A+Pl+Vblz:  [annikso'ka,  anniksayi]
+     ann+Dem+I+Pl+Vblz:  [annistso'ka, annistsayi]
+     
+     ann+Dem+A+Sg+Stat+Vblz:  [annamao'ka,     annamaayi]
+     ann+Dem+I+Sg+Stat+Vblz:  [annimao'ka,     annimaayi]
+     ann+Dem+A+Obv+Stat+Vblz: [annimao'ka,     annimaayi]
+     ann+Dem+A+Pl+Stat+Vblz:  [anniksimao'ka,  anniksimaayi]
+     ann+Dem+I+Pl+Stat+Vblz:  [annistsimao'ka, annistsimaayi]
+     
+     ann+Dem+A+Sg+Movg+Vblz:  [annayao'ka,     annayaayi]
+     ann+Dem+I+Sg+Movg+Vblz:  [anniyao'ka,     anniyaayi]
+     ann+Dem+A+Obv+Movg+Vblz: [anniyao'ka,     anniyaayi]
+     ann+Dem+A+Pl+Movg+Vblz:  [anniksiyao'ka,  anniksiyaayi]
+     ann+Dem+I+Pl+Movg+Vblz:  [annistsiyao'ka, annistsiyaayi]
+     
+     ann+Dem+A+Sg+Invs+Vblz:  [annahkao'ka,    annahkaayi]
+     ann+Dem+I+Sg+Invs+Vblz:  [annihkao'ka,    annihkaayi]
+     ann+Dem+A+Obv+Invs+Vblz: [annihkao'ka,    annihkaayi]
+     ann+Dem+A+Pl+Invs+Vblz:  [anniksskao'ka,  anniksskaayi]
+     ann+Dem+I+Pl+Invs+Vblz:  [annistsskao'ka, annistsskaayi]
+     
+     ann+Dem+A+Sg+MT+Vblz:  [annakao'ka,     annakaayi]
+     ann+Dem+I+Sg+MT+Vblz:  [annikao'ka,     annikaayi]
+     ann+Dem+A+Obv+MT+Vblz: [annikao'ka,     annikaayi]
+     ann+Dem+A+Pl+MT+Vblz:  [anniksikao'ka,  anniksikaayi]
+     ann+Dem+I+Pl+MT+Vblz:  [annistsikao'ka, annistsikaayi]
+     

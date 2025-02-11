@@ -1,0 +1,43 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - sinaakia'tsisi - ok : # -m inanimate noun, book AEW NA1
+     sinaakia'tsisi+NI+Sg: sinaakia'tsisi
+     sinaakia'tsisi+NI+Pl: sinaakia'tsiistsi
+     sinaakia'tsisi+NI+Non: sinaakia'tsisi
+
+     sinaakia'tsisi+NI+Px1Sg+Sg: nisinaakia'tsisi
+     sinaakia'tsisi+NI+Px1Sg+Pl: nisinaakia'tsiistsi
+     sinaakia'tsisi+NI+Px1Sg+Non: nisinaakia'tsisi
+
+     sinaakia'tsisi+NI+Px1Pl+Sg: nisinaakia'tsinnaani
+     sinaakia'tsisi+NI+Px1Pl+Pl: nisinaakia'tsinnaanistsi
+     sinaakia'tsisi+NI+Px1Pl+Non: nisinaakia'tsinnaani
+
+     sinaakia'tsisi+NI+Px21Pl+Sg: kisinaakia'tsinnooni
+     sinaakia'tsisi+NI+Px21Pl+Pl: kisinaakia'tsinnoonistsi
+     sinaakia'tsisi+NI+Px21Pl+Non: kisinaakia'tsinnooni
+
+     sinaakia'tsisi+NI+Px2Sg+Sg: kisinaakia'tsisi
+     sinaakia'tsisi+NI+Px2Sg+Pl: kisinaakia'tsiistsi
+     sinaakia'tsisi+NI+Px2Sg+Non: kisinaakia'tsisi
+
+     sinaakia'tsisi+NI+Px2Pl+Sg: kisinaakia'tsisoaawayi
+     sinaakia'tsisi+NI+Px2Pl+Pl: kisinaakia'tsisoaawaistsi
+     sinaakia'tsisi+NI+Px2Pl+Non: kisinaakia'tsisoaawai
+
+     sinaakia'tsisi+NI+Px3Sg+Sg: osinaakia'tsisi
+     sinaakia'tsisi+NI+Px3Sg+Pl: osinaakia'tsiistsi
+     sinaakia'tsisi+NI+Px3Sg+Non: osinaakia'tsisi
+
+     sinaakia'tsisi+NI+Px3Pl+Sg: osinaakia'tsisoaawayi
+     sinaakia'tsisi+NI+Px3Pl+Pl: osinaakia'tsisoaawaistsi
+     sinaakia'tsisi+NI+Px3Pl+Non: osinaakia'tsisoaawai

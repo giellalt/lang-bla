@@ -1,0 +1,38 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  +ero+:
+    Gen: ../../../src/generator-gt-norm.+fst
+    Morph: ../../../src/analyser-gt-norm.+fst
+    App: lookup
+
+Tests:
+  
+  Verb - ino - ok : # -m animate transitive verb, see AEW NA1
+     PS/hkana+ino+VTA+Ind+2Pl+1PlO: kitohkanainookihpinnaana
+     PS/ii+ino+VTA+Ind+3Sg+1SgO: nitsiinooka
+     PS/a+PS/matt+ino+VTA+Ind+1Sg+2SgO: kitamattsinoo
+     PS/a+ino+VTA+Ind+2Sg+1SgO: kitainooki
+     PS/ii+ino+VTA+Ind+3Sg+4PlO: iinoyiiwa
+     PS/akoksska+ino+VTA+Ind+Unspec+3SgO: akoksskainoaawa
+     PS/piitsiyoohk+ino+VTA+Ind+3Sg+4PlO: piitsiyoohksinoyiiwa
+     PS/yaak+PS/kaat+PS/aahs+ino+VTA+Ind+Unspec+3SgO: aakatahsinoaawa
+     PS/a+ino+VTA+Ind+2Sg+3SgO: kitainoaawa
+     PS/a+ino+VTA+Ind+3Sg+4PlO: ainoyiiwa
+     PS/iik+PS/ama+ino+VTA+Ind+3Sg+4PlO+PRO+3Pl: iikamainoyiiwaiksi
+     ino+VTA+Ind+3Sg+1SgO: nitsinooka
+     ino+VTA+Ind+1Sg+2SgO: kitsinoo
+     PS/ii+PS/istsa'+ino+VTA+Ind+1Sg+3SgO: nitsiistsai'noaawa
+     PS/kata'+ino+VTA+Ind+3Pl+2SgO+Interr: kikatai'nookaiksaawa
+     PS/yaak+ino+VTA+Ind+2Sg+3SgO: kitaaksinoaawa
+     PS/ikkam+PS/a'p+ino+VTA+Sbj+1Sg+3PlO: ikkama'pinoainiki
+     PS/a+ino+VTA+Der/Rflx+VAI+Ind+1Pl: nitainoohsspinnaana
+     ino+VTA+Ind+2Sg+3SgO: kitsinoaawa
+     PS/yaak+ino+VTA+Ind+Unspec+3SgO: aaksinoaawa
+     PS/a+ino+VTA+Ind+1Sg+2SgO: kitainoo
+     PS/a+ino+VTA+Ind+1Sg+3SgO: nitainoaawa
+     ino+VTA+Ind+1Pl+2PlO: kitsinoohpinnaana
+     PS/hkana+ino+VTA+Ind+1Sg+2PlO: kitohkanainoohpoaawa
+     PS/hkana+ino+VTA+Ind+2Pl+3SgO: kitohkanainoawaawa
+     PS/a+ino+VTA+Ind+1Pl+3SgO: nitainoannaana

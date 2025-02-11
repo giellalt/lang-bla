@@ -1,0 +1,51 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - aakiiwa - ok : # -m animate noun, woman AEW NA1
+     aakiiwa+NA+Sg: aakiiwa
+     aakiiwa+NA+Pl: aakiiksi
+     aakiiwa+NA+Obv: aakiiyi
+     aakiiwa+NA+Non: aakii
+     
+     aakiiwa+NA+Px1Sg+Sg: nitaakiiwa
+     aakiiwa+NA+Px1Sg+Pl: nitaakiiksi
+     aakiiwa+NA+Px1Sg+Obv: nitaakiiyi
+     aakiiwa+NA+Px1Sg+Non: nitaakii
+     
+     aakiiwa+NA+Px1Pl+Sg: nitaakiinnaana
+     aakiiwa+NA+Px1Pl+Pl: nitaakiinnaaniksi
+     aakiiwa+NA+Px1Pl+Obv: nitaakiinnaani
+     aakiiwa+NA+Px1Pl+Non: nitaakiinnaani
+
+     aakiiwa+NA+Px21Pl+Sg: kitaakiinnoona
+     aakiiwa+NA+Px21Pl+Pl: kitaakiinnooniksi
+     aakiiwa+NA+Px21Pl+Obv: kitaakiinnooni
+     aakiiwa+NA+Px21Pl+Non: kitaakiinnooni
+
+     aakiiwa+NA+Px2Sg+Sg: kitaakiiwa
+     aakiiwa+NA+Px2Sg+Pl: kitaakiiksi
+     aakiiwa+NA+Px2Sg+Obv: kitaakiiyi
+     aakiiwa+NA+Px2Sg+Non: kitaakii
+
+     aakiiwa+NA+Px2Pl+Sg: kitaakiiwaawa
+     aakiiwa+NA+Px2Pl+Pl: kitaakiiwaawaiksi
+     aakiiwa+NA+Px2Pl+Obv: kitaakiiwaawayi
+     aakiiwa+NA+Px2Pl+Non: kitaakiiwaawai
+
+     aakiiwa+NA+Px3Sg+Obv: otaakiiyi
+     aakiiwa+NA+Px3Sg+Pl: otaakiiksi
+     aakiiwa+NA+Px3Sg+Obv: otaakiiyi
+     aakiiwa+NA+Px3Sg+Non: otaakii
+
+     aakiiwa+NA+Px3Pl+Obv: otaakiiwaayi
+     aakiiwa+NA+Px3Pl+Pl: otaakiiwaawaiksi
+     aakiiwa+NA+Px3Pl+Obv: otaakiiwaawayi
+     aakiiwa+NA+Px3Pl+Non: otaakiiwaawai

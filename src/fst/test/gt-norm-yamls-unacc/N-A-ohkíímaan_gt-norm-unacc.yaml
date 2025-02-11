@@ -1,0 +1,49 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - ohkiimaana - ok : # -m animate noun, dog AEW NA1
+     ohkiimaana+NA+Sg: ohkiimaana
+     ohkiimaana+NA+Pl: ohkiimaaniksi
+     ohkiimaana+NA+Obv: ohkiimaani
+     ohkiimaana+NA+Non: ohkiimaani
+     
+     ohkiimaana+NA+Px1Sg+Sg: nitohkiimaana
+     ohkiimaana+NA+Px1Sg+Pl: nitohkiimaaniksi
+     ohkiimaana+NA+Px1Sg+Obv: nitohkiimaani
+     ohkiimaana+NA+Px1Sg+Non: nitohkiimaani
+     
+     ohkiimaana+NA+Px1Pl+Sg: nitohkiimaannaana
+     ohkiimaana+NA+Px1Pl+Pl: nitohkiimaannaaniksi
+     ohkiimaana+NA+Px1Pl+Obv: nitohkiimaannaani
+     ohkiimaana+NA+Px1Pl+Non: nitohkiimaannaani
+
+     ohkiimaana+NA+Px21Pl+Sg: kitohkiimaannoona
+     ohkiimaana+NA+Px21Pl+Pl: kitohkiimaannooniksi
+     ohkiimaana+NA+Px21Pl+Obv: kitohkiimaannooni
+     ohkiimaana+NA+Px21Pl+Non: kitohkiimaannooni
+
+     ohkiimaana+NA+Px2Sg+Sg: kitohkiimaana
+     ohkiimaana+NA+Px2Sg+Pl: kitohkiimaaniksi
+     ohkiimaana+NA+Px2Sg+Obv: kitohkiimaani
+     ohkiimaana+NA+Px2Sg+Non: kitohkiimaani
+
+     ohkiimaana+NA+Px2Pl+Sg: kitohkiimaanoaawa
+     ohkiimaana+NA+Px2Pl+Pl: kitohkiimaanoaawaiksi
+     ohkiimaana+NA+Px2Pl+Obv: kitohkiimaanoaawayi
+     ohkiimaana+NA+Px2Pl+Non: kitohkiimaanoaawai
+
+     ohkiimaana+NA+Px3Sg+Pl: otohkiimaaniksi
+     ohkiimaana+NA+Px3Sg+Obv: otohkiimaani
+     ohkiimaana+NA+Px3Sg+Non: otohkiimaani
+
+     ohkiimaana+NA+Px3Pl+Pl: otohkiimaanoaawaiksi
+     ohkiimaana+NA+Px3Pl+Obv: otohkiimaanoaawayi
+     ohkiimaana+NA+Px3Pl+Non: otohkiimaanoaawai

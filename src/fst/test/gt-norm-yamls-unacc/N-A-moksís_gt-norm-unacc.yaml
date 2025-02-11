@@ -1,0 +1,49 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - moksisa - ok : # -m animate noun, dog AEW NA1
+     moksisa+NA+Sg: moksisa
+     moksisa+NA+Pl: moksiiksi
+     moksisa+NA+Obv: moksisi
+     moksisa+NA+Non: moksisi
+     
+     moksisa+NA+Px1Sg+Sg: noksisa
+     moksisa+NA+Px1Sg+Pl: noksiiksi
+     moksisa+NA+Px1Sg+Obv: noksisi
+     moksisa+NA+Px1Sg+Non: noksisi
+     
+     moksisa+NA+Px1Pl+Sg: noksiinnaana
+     moksisa+NA+Px1Pl+Pl: noksiinnaaniksi
+     moksisa+NA+Px1Pl+Obv: noksiinnaani
+     moksisa+NA+Px1Pl+Non: noksiinnaani
+
+     moksisa+NA+Px21Pl+Sg: koksiinnoona
+     moksisa+NA+Px21Pl+Pl: koksiinnooniksi
+     moksisa+NA+Px21Pl+Obv: koksiinnooni
+     moksisa+NA+Px21Pl+Non: koksiinnooni
+
+     moksisa+NA+Px2Sg+Sg: koksisa
+     moksisa+NA+Px2Sg+Pl: koksiiksi
+     moksisa+NA+Px2Sg+Obv: koksisi
+     moksisa+NA+Px2Sg+Non: koksisi
+
+     moksisa+NA+Px2Pl+Sg: koksisoaawa
+     moksisa+NA+Px2Pl+Pl: koksisoaawaiksi
+     moksisa+NA+Px2Pl+Obv: koksisoaawayi
+     moksisa+NA+Px2Pl+Non: koksisoaawai
+
+     moksisa+NA+Px3Sg+Pl: oksiiksi
+     moksisa+NA+Px3Sg+Obv: oksisi
+     moksisa+NA+Px3Sg+Non: oksisi
+
+     moksisa+NA+Px3Pl+Pl: oksisoaawaiksi
+     moksisa+NA+Px3Pl+Obv: oksisoaawayi
+     moksisa+NA+Px3Pl+Non: oksisoaawai

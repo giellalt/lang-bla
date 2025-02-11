@@ -11,11 +11,11 @@ om+Dem:om DEM_NUM_SUFFIXES ;
 om+Dem+Dim:omsst DEM_NUM_SUFFIXES ;
 
 LEXICON DEM_NUM_SUFFIXES
-+A+Sg:%>%^DEMwa DEM_POSTINFL ;
++A+Sg:%>%^Demwa DEM_POSTINFL ;
 +A+Obv:%>yi DEM_POSTINFL ;
 +I+Sg:%>yi DEM_POSTINFL ;
-+A+Pl:%>%^DEMiksi DEM_POSTINFL ;
-+I+Pl:%>%^DEMistsi DEM_POSTINFL ;
++A+Pl:%>%^Demiksi DEM_POSTINFL ;
++I+Pl:%>%^Demistsi DEM_POSTINFL ;
 
 LEXICON DEM_POSTINFL
 +Stat:%>ma VBLZ ;

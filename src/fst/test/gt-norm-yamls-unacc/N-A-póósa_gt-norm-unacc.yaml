@@ -1,0 +1,49 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - poosa - ok : # -m animate noun, dog AEW NA1
+     poosa+NA+Sg: poosa
+     poosa+NA+Pl: poosiksi
+     poosa+NA+Obv: poosi
+     poosa+NA+Non: poosi
+     
+     poosa+NA+Px1Sg+Sg: nitohpoosima
+     poosa+NA+Px1Sg+Pl: nitohpoosimiksi
+     poosa+NA+Px1Sg+Obv: nitohpoosimi
+     poosa+NA+Px1Sg+Non: nitohpoosimi
+     
+     poosa+NA+Px1Pl+Sg: nitohpoosiminnaana
+     poosa+NA+Px1Pl+Pl: nitohpoosiminnaaniksi
+     poosa+NA+Px1Pl+Obv: nitohpoosiminnaani
+     poosa+NA+Px1Pl+Non: nitohpoosiminnaani
+
+     poosa+NA+Px21Pl+Sg: kitohpoosiminnoona
+     poosa+NA+Px21Pl+Pl: kitohpoosiminnooniksi
+     poosa+NA+Px21Pl+Obv: kitohpoosiminnooni
+     poosa+NA+Px21Pl+Non: kitohpoosiminnooni
+
+     poosa+NA+Px2Sg+Sg: kitohpoosima
+     poosa+NA+Px2Sg+Pl: kitohpoosimiksi
+     poosa+NA+Px2Sg+Obv: kitohpoosimi
+     poosa+NA+Px2Sg+Non: kitohpoosimi
+
+     poosa+NA+Px2Pl+Sg: kitohpoosimoaawa
+     poosa+NA+Px2Pl+Pl: kitohpoosimoaawaiksi
+     poosa+NA+Px2Pl+Obv: kitohpoosimoaawayi
+     poosa+NA+Px2Pl+Non: kitohpoosimoaawai
+
+     poosa+NA+Px3Sg+Pl: otohpoosimiksi
+     poosa+NA+Px3Sg+Obv: otohpoosimi
+     poosa+NA+Px3Sg+Non: otohpoosimi
+
+     poosa+NA+Px3Pl+Pl: otohpoosimoaawaiksi
+     poosa+NA+Px3Pl+Obv: otohpoosimoaawayi
+     poosa+NA+Px3Pl+Non: otohpoosimoaawai
