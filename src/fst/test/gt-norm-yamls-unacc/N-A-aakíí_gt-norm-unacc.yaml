@@ -15,37 +15,37 @@ Tests:
      aakiiwa+NA+Obv: aakiiyi
      aakiiwa+NA+Non: aakii
      
-     aakiiwa+NA+Px1Sg+Sg: nitaakiiwa
-     aakiiwa+NA+Px1Sg+Pl: nitaakiiksi
-     aakiiwa+NA+Px1Sg+Obv: nitaakiiyi
-     aakiiwa+NA+Px1Sg+Non: nitaakii
+     aakiiwa+NA+Px1Sg+Sg: [ nitaakiiwa, nitaakiima ]
+     aakiiwa+NA+Px1Sg+Pl: [ nitaakiiksi, nitaakiimiksi ]
+     aakiiwa+NA+Px1Sg+Obv: [ nitaakiiyi, nitaakiimi ]
+     aakiiwa+NA+Px1Sg+Non: [ nitaakii, nitaakiimi ]
      
-     aakiiwa+NA+Px1Pl+Sg: nitaakiinnaana
-     aakiiwa+NA+Px1Pl+Pl: nitaakiinnaaniksi
-     aakiiwa+NA+Px1Pl+Obv: nitaakiinnaani
-     aakiiwa+NA+Px1Pl+Non: nitaakiinnaani
+     aakiiwa+NA+Px1Pl+Sg: [ nitaakiinnaana, nitaakiiminnaana ]
+     aakiiwa+NA+Px1Pl+Pl: [ nitaakiinnaaniksi, nitaakiiminnaaniksi ]
+     aakiiwa+NA+Px1Pl+Obv: [ nitaakiinnaani, nitaakiiminnaani ]
+     aakiiwa+NA+Px1Pl+Non: [ nitaakiinnaani, nitaakiiminnaani ]
 
-     aakiiwa+NA+Px21Pl+Sg: kitaakiinnoona
-     aakiiwa+NA+Px21Pl+Pl: kitaakiinnooniksi
-     aakiiwa+NA+Px21Pl+Obv: kitaakiinnooni
-     aakiiwa+NA+Px21Pl+Non: kitaakiinnooni
+     aakiiwa+NA+Px21Pl+Sg: [ kitaakiinnoona, kitaakiiminnoona ]
+     aakiiwa+NA+Px21Pl+Pl: [ kitaakiinnooniksi, kitaakiiminnooniksi ]
+     aakiiwa+NA+Px21Pl+Obv: [ kitaakiinnooni, kitaakiiminnooni ]
+     aakiiwa+NA+Px21Pl+Non: [ kitaakiinnooni, kitaakiiminnooni ]
 
-     aakiiwa+NA+Px2Sg+Sg: kitaakiiwa
-     aakiiwa+NA+Px2Sg+Pl: kitaakiiksi
-     aakiiwa+NA+Px2Sg+Obv: kitaakiiyi
-     aakiiwa+NA+Px2Sg+Non: kitaakii
+     aakiiwa+NA+Px2Sg+Sg: [ kitaakiiwa, kitaakiima ]
+     aakiiwa+NA+Px2Sg+Pl: [ kitaakiiksi, kitaakiimiksi ]
+     aakiiwa+NA+Px2Sg+Obv: [ kitaakiiyi, kitaakiimi ]
+     aakiiwa+NA+Px2Sg+Non: [ kitaakii, kitaakiimi ]
 
-     aakiiwa+NA+Px2Pl+Sg: kitaakiiwaawa
-     aakiiwa+NA+Px2Pl+Pl: kitaakiiwaawaiksi
-     aakiiwa+NA+Px2Pl+Obv: kitaakiiwaawayi
-     aakiiwa+NA+Px2Pl+Non: kitaakiiwaawai
+     aakiiwa+NA+Px2Pl+Sg: [ kitaakiiwaawa, kitaakiimoaawa ]
+     aakiiwa+NA+Px2Pl+Pl: [ kitaakiiwaawaiksi, kitaakiimoaawaiksi ]
+     aakiiwa+NA+Px2Pl+Obv: [ kitaakiiwaawayi, kitaakiimoaawayi ]
+     aakiiwa+NA+Px2Pl+Non: [ kitaakiiwaawai, kitaakiimoaawai ]
 
-     aakiiwa+NA+Px3Sg+Obv: otaakiiyi
-     aakiiwa+NA+Px3Sg+Pl: otaakiiksi
-     aakiiwa+NA+Px3Sg+Obv: otaakiiyi
-     aakiiwa+NA+Px3Sg+Non: otaakii
+     aakiiwa+NA+Px3Sg+Obv: [ otaakiiyi, otaakiimi ]
+     aakiiwa+NA+Px3Sg+Pl: [ otaakiiksi, otaakiimiksi ]
+     aakiiwa+NA+Px3Sg+Obv: [ otaakiiyi, otaakiimi ]
+     aakiiwa+NA+Px3Sg+Non: [ otaakii, otaakiimi ]
 
-     aakiiwa+NA+Px3Pl+Obv: otaakiiwaayi
-     aakiiwa+NA+Px3Pl+Pl: otaakiiwaawaiksi
-     aakiiwa+NA+Px3Pl+Obv: otaakiiwaawayi
-     aakiiwa+NA+Px3Pl+Non: otaakiiwaawai
+     aakiiwa+NA+Px3Pl+Obv: [ otaakiiwaayi, otaakiimoaayi ]
+     aakiiwa+NA+Px3Pl+Pl: [ otaakiiwaawaiksi, otaakiimoaawaiksi ]
+     aakiiwa+NA+Px3Pl+Obv: [ otaakiiwaawayi, otaakiimoaawayi ]
+     aakiiwa+NA+Px3Pl+Non: [ otaakiiwaawai, otaakiimoaawai ]

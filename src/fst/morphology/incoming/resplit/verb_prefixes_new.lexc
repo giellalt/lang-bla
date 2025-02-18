@@ -138,8 +138,9 @@ PS/piitsiyoohk+:i2piitsiyoohk PSBOUND2 ; ! "when, as soon as"
 PS/kaat+:kaat PSBOUND2 ; ! "result"
 PS/ama+:ama PSBOUND2 ; ! "pitiful, pathetic"; nominal examples
 PS/istsa'+:i2stsa' PSBOUND2 ; ! "last or final time"
-
-
+PS/ksikk+ksikk PSBOUND2 ; ! "white"
+PS/ohpok+:ohpok	PSBOUND2 ; ! "small"
+PS/omahk+:omahk PSBOUND2 ; ! "big"
 
 LEXICON PSBOUND2
 0:%< PSGATE2 ;

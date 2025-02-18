@@ -585,14 +585,14 @@ LEXICON ANIM_INTERR
 
 LEXICON ENCLITICS
 0 # ;
-+PRO+3/%0:%>yaawa ENCLITICS_BOUND ;
++PRO+3/%0:%>aawa ENCLITICS_BOUND ;
 +PRO+3Pl:%>waiksi ENCLITICS_BOUND ;
 +PRO+D3Sg:%>áyi ENCLITICS_BOUND ;
 +PRO+%0Pl:%>waistsi ENCLITICS_BOUND ;
 
 LEXICON ENCLITICS_BOUND
 0 # ;
-+PRO+3/%0:%>yaawa # ;
++PRO+3/%0:%>aawa # ;
 +PRO+3Pl:%>waiksi # ;
 +PRO+D3Sg:%>áyi # ;
 +PRO+%0Pl:%>waistsi # ;

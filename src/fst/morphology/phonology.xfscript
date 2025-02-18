@@ -28,7 +28,7 @@ define Gx [ w | y ] ;
 
 ! The following code is for the highest level of morpho-phonological initial allomorphy (specific to nouns)
 
-define shortPrefix [ n i t -> n , k i t -> k , o t -> w || .#. _ %< %^SP Vowel ,, n i t -> n i , k i t -> k i , o t -> o || .#. _ %< %^SP [ k | n | p | s | t | n2 ] ] ;
+define shortPrefix [ n i t -> n , k i t -> k , o t -> w || .#. _ %< %^SP [ Vowel | m ] ,, n i t -> n i , k i t -> k i , o t -> o || .#. _ %< %^SP [ k | n | p | s | t | n2 | h ] ] ;
 define internasal [ a -> o || %< %^SP m _ [ m | n ] ] ;
 
 ! is it m | n ?
@@ -49,7 +49,7 @@ define weakm [ m -> 0 || [ n | k ] %< _ ] ;
 define oAlternation [ i2 (->) [ o | a ] || .#. _ [ o | a ] ] ;
 define ghosti2 [ "i2" -> 0 || .#. _ Consonant ] ;
 define i2oRule [ i3 -> o , i3 y -> o2 , a3 -> o || %< _ ] ;
-define w2yRule [ w (->) y || _ %< Vowel ] ;
+define w2yRule [ w (->) y || _ %< Vowel ] ; ! we think this is the w~y prestem variation
 define iDissimilation [ i -> o || _ y %< i ] ;
 define intervocalicN [ n -> y || Vowel %< _ Vowel ] ;
 
@@ -75,6 +75,7 @@ define Invtrigger20 [ %^Inv -> 0 ] ;
 #check glottal stop
 
 define Ck2kkRule [ Cshort -> k || _ %> k ] ;
+define Ck2kkRule [ Cshort -> k || _ %> k ] ;
 
 define Cp2ppRule [ Cshort -> p || _ %> p ] ;
 
@@ -92,7 +93,7 @@ define CC2GemRule [ Ck2kkRule .o. Cp2ppRule .o. Ct2ttRule .o. Cs2ssRule .o. Cm2m
 
 define mmRule [ a -> 0 || Clong %> _ a ] ;
 define imRule [ i -> 0 || [ Vlong | i | í ] %> _ m %> ] ;
-define finalNrule [ i -> 0 || n %> _ n ,, i -> 0 || _ %> i n ] ;
+define finalNrule [ i -> 0 || n %> _ n ,, i -> 0 || _ %> i n ] ; ! this is applying twice in aakii yaml - why would this be in the rule list twice? ordering change accident?
 define finalNdiss [ n -> 0 || k [ i | í ] _ %> [ i k s i | i s t s i ] ,, n -> 0 || o [ á | a ]  _ %> [ i k s i | i s t s i ] ] ;
 define fixN [ n+ -> 0 || _ (Bx) n n ] ;
 ! define n20Rule [ n -> 0 || Vshort _ %> Vowel ,, o [ a | á ] _ %> Vowel ] ;
@@ -101,9 +102,10 @@ define oaawaRule [ w a -> 0 || Vlong w a (Bx) _ ] ;
 define pastPrefix [ Vowel (o) -> 0 || [ .#. | %< ] i i %< _ ] ;
 define pastPrefixSik [ Vowel -> 0 || [ .#. | %< ] n a %< _ ] ;
 define Dipthongization [ 0 (->) [ a | á ] || _ [ o o | ó ó ] %> [ o ' p a | h s i | o ' k i | o ' t o p i ] ] ;
-define moveDur [ á %< a ' p -> %< a ' p á ,, á %< á ' p -> %< a ' p á ] ;
+! define moveDur [ á %< a ' p -> %< a ' p á ,, á %< á ' p -> %< a ' p á ] ; ! accents causing problems that's why it no longer works
+define moveDur [ a %< a ' p -> %< a ' p a ] ; ! removed accents
 define delNi [ n i (i) -> 0 || n i (i) %< _ ] ;
-define initVV2V [ [ a a | á á ] (->) a || %< _ ] ;
+define initVV2V [ [ a a | á á ] (->) a || %< _ ] ; ! where does this come from? could this be relaxation?
 
 !!€ nitáni2t>k>wa
 !!€ nitánikka 
@@ -422,7 +424,6 @@ read regex [ shortPrefix
 .o. wi2oRuleB1 
 .o. wi2oRuleB2 
 .o. imRule
-.o. finalNrule
 .o. fixN
 .o. sisRule
 .o. oaawaRule

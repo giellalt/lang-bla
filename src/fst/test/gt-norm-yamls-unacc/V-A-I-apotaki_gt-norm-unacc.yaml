@@ -17,7 +17,7 @@ Tests:
      PS/a+a'po'taki+VAI+Ind+21Pl: a'pao'takio'pa
      PS/a+a'po'taki+VAI+Ind+1Pl: nita'pao'takihpinnaana
      PS/a+a'po'taki+VAI+Ind+2Pl: kitohkana'pao'takihpoaawa
-     PS/a+a'po'taki+VAI+Ind+PRO+3/0: a'pao'takiyaawa
+     PS/a+a'po'taki+VAI+Ind+3Pl+PRO+3/0: a'pao'takiyaawa
      
      PS/yaak+a'po'taki+VAI+Ind+1Sg: nitaaka'po'taki
      PS/yaak+a'po'taki+VAI+Ind+2Sg: kitaaka'po'taki
@@ -26,7 +26,7 @@ Tests:
      PS/yaak+a'po'taki+VAI+Ind+21Pl: aaka'po'takio'pa
      PS/yaak+a'po'taki+VAI+Ind+1Pl: nitaaka'po'takihpinnaana
      PS/yaak+PS/ohkan+a'po'taki+VAI+Ind+2Pl: kitaakohkana'po'takihpoaawa
-     PS/yaak+a'po'taki+VAI+Ind+PRO+3/0: aaka'po'takiyaawa
+     PS/yaak+a'po'taki+VAI+Ind+3Pl+PRO+3/0: aaka'po'takiyaawa
  
      a'po'taki+VAI+Ind+1Sg: nita'po'taki
      a'po'taki+VAI+Ind+2Sg: kita'po'taki
@@ -35,7 +35,7 @@ Tests:
      a'po'taki+VAI+Ind+21Pl: a'po'takio'pa
      a'po'taki+VAI+Ind+1Pl: nita'po'takihpinnaana
      a'po'taki+VAI+Ind+2Pl: kita'po'takihpoaawa
-     a'po'taki+VAI+Ind+PRO+3/0: a'po'takiyaawa
+     a'po'taki+VAI+Ind+3Pl+PRO+3/0: a'po'takiyaawa
      
      PS/maat+PS/a+a'po'taki+VAI+Ind+1Sg+Interr: nimaata'pao'takihpa
      PS/maat+PS/a+a'po'taki+VAI+Ind+2Sg+Interr: kimaata'pao'takihpa
@@ -94,4 +94,4 @@ Tests:
      PS/a+a'po'taki+VAI+Ind+21Pl: a'pao'takio'pa
      PS/a+a'po'taki+VAI+Ind+2Pl: nita'pao'takihpinnaana
      PS/ohkan+PS/a+a'po'taki+VAI+Ind+2Pl: kitohkana'pao'takihpoaawa
-     PS/a+a'po'taki+VAI+Ind+PRO+3/0: a'pao'takiyaawa
+     PS/a+a'po'taki+VAI+Ind+3Pl+PRO+3/0: a'pao'takiyaawa

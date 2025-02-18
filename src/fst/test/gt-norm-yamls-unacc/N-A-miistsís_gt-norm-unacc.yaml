@@ -15,35 +15,37 @@ Tests:
      miistsisa+NA+Obv: miistsisi
      miistsisa+NA+Non: miistsisi
      
-     miistsisa+NA+Px1Sg+Sg: nitsiistsima
-     miistsisa+NA+Px1Sg+Pl: nitsiistsimiksi
-     miistsisa+NA+Px1Sg+Obv: nitsiistsimi
-     miistsisa+NA+Px1Sg+Non: nitsiistsimi
+     miistsisa+NA+Px1Sg+Sg: [ nitsiistsiima, nitsiistsisa ]
+     miistsisa+NA+Px1Sg+Pl: [ nitsiistsiimiiksi, nitsiistsiiksi ]
+     miistsisa+NA+Px1Sg+Obv: [ nitsiistsiimi, nitsiistsisi ]
+     miistsisa+NA+Px1Sg+Non: [ nitsiistsiimi, nitsiistsisi ]
      
-     miistsisa+NA+Px1Pl+Sg: nitsiistsiminnaana
-     miistsisa+NA+Px1Pl+Pl: nitsiistsiminnaaniksi
-     miistsisa+NA+Px1Pl+Obv: nitsiistsiminnaani
-     miistsisa+NA+Px1Pl+Non: nitsiistsiminnaani
+     miistsisa+NA+Px1Pl+Sg: [ nitsiistsiiminnaana, nitsiistsiinnaana ]
+     miistsisa+NA+Px1Pl+Pl: [ nitsiistsiiminnaaniksi, nitsiistsiinnaaniksi ]
+     miistsisa+NA+Px1Pl+Obv: [ nitsiistsiiminnaani, nitsiistsiinnaani ]
+     miistsisa+NA+Px1Pl+Non: [ nitsiistsiiminnaani, nitsiistsiinnaani ]
 
-     miistsisa+NA+Px21Pl+Sg: kitsiistsiminnoona
-     miistsisa+NA+Px21Pl+Pl: kitsiistsiminnooniksi
-     miistsisa+NA+Px21Pl+Obv: kitsiistsiminnooni
-     miistsisa+NA+Px21Pl+Non: kitsiistsiminnooni
+     miistsisa+NA+Px21Pl+Sg: [ kitsiistsiiminnoona, kitsiistsiinnoona ]
+     miistsisa+NA+Px21Pl+Pl: [ kitsiistsiiminnooniksi, kitsiistsiinnooniksi ]
+     miistsisa+NA+Px21Pl+Obv: [ kitsiistsiiminnooni, kitsiistsiinnooni ]
+     miistsisa+NA+Px21Pl+Non: [ kitsiistsiiminnooni, kitsiistsiinnooni ]
 
-     miistsisa+NA+Px2Sg+Sg: kitsiistsima
-     miistsisa+NA+Px2Sg+Pl: kitsiistsimiksi
-     miistsisa+NA+Px2Sg+Obv: kitsiistsimi
-     miistsisa+NA+Px2Sg+Non: kitsiistsimi
+     miistsisa+NA+Px2Sg+Sg: [ kitsiistsiima, kitsiistsisa ]
+     miistsisa+NA+Px2Sg+Pl: [ kitsiistsiimiksi, kitsiistsiiksi ]
+     miistsisa+NA+Px2Sg+Obv: [ kitsiistsiimi, kitsiistsisi ]
+     miistsisa+NA+Px2Sg+Non: [ kitsiistsiimi, kitsiistsisi ]
 
-     miistsisa+NA+Px2Pl+Sg: kitsiistsimoaawa
-     miistsisa+NA+Px2Pl+Pl: kitsiistsimoaawaiksi
-     miistsisa+NA+Px2Pl+Obv: kitsiistsimoaawayi
-     miistsisa+NA+Px2Pl+Non: kitsiistsimoaawai
+     miistsisa+NA+Px2Pl+Sg: [ kitsiistsiimoaawa, kitsiistsisoaawa ]
+     miistsisa+NA+Px2Pl+Pl: [ kitsiistsiimoaawaiksi, kitsiistsisoaawaiksi ]
+     miistsisa+NA+Px2Pl+Obv: [ kitsiistsiimoaawayi, kitsiistsisoaawayi ]
+     miistsisa+NA+Px2Pl+Non: [ kitsiistsiimoaawai, kitsiistsisoaawai ]
 
-     miistsisa+NA+Px3Sg+Pl: otsiistsimiksi
-     miistsisa+NA+Px3Sg+Obv: otsiistsimi
-     miistsisa+NA+Px3Sg+Non: otsiistsimi
+     miistsisa+NA+Px3Sg+Pl: [ otsiistsiimiksi, otsiistsiiksi ]
+     miistsisa+NA+Px3Sg+Obv: [ otsiistsiimi, otsiistsisi ]
+     miistsisa+NA+Px3Sg+Non: [ otsiistsiimi, otsiistsisi ]
 
-     miistsisa+NA+Px3Pl+Pl: otsiistsimoaawaiksi
-     miistsisa+NA+Px3Pl+Obv: otsiistsimoaawayi
-     miistsisa+NA+Px3Pl+Non: otsiistsimoaawai
+     miistsisa+NA+Px3Pl+Pl: [ otsiistsiimoaawaiksi, otsiistsisoaawaiksi ]
+     miistsisa+NA+Px3Pl+Obv: [ otsiistsiimoaawayi, otsiistsisoaawayi ]
+     miistsisa+NA+Px3Pl+Non: [ otsiistsiimoaawai, otsiistsisoaawai ]
+
+     PS/omahk+miistsisa+NA+Sg: omahksiistsisa

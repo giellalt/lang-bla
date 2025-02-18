@@ -9,7 +9,7 @@ Config:
 
 Tests:
   
-  Noun - moksisa - ok : # -m animate noun, dog AEW NA1
+  Noun - moksisa - ok : # -m animate noun, awl AEW NA1
      moksisa+NA+Sg: moksisa
      moksisa+NA+Pl: moksiiksi
      moksisa+NA+Obv: moksisi
