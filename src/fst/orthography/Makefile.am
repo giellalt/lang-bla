@@ -12,6 +12,7 @@ SUBDIRS=. test
 GT_ORTHOGRAPHIC_REGEX_SRCS=\
 		inituppercase.regex \
 		spellrelax-mobile-keyboard.regex \
+		spellrelax.regex \
 		spellrelax-tags.regex
 
 GT_ORTHOGRAPHIC_XFSCRIPT_SRCS=\
