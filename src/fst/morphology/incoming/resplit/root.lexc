@@ -1142,22 +1142,28 @@ a4
 o2
 m2
 n2
+s2
 '
 %^SP
 %<
 %>
-%^Rcpr
-%^Dem
-%^Bnf
-%^Dis
-%^Inv
+%^RCPR
+%^DEM
+%^BNF
+%^DIS
+%^INV
+%^AIM
+%^DIPH
+%^VLV
+%^IMP
+%^PRO
 
 !! Blackfoot Nominal and Verbal Morphology
 
 !! from verb file
 
 LEXICON Root
-@P.pos.VERB@ PREFIX_SETS ;
+@P.pos.VERB@ VERB_PREFIXES ;
 @P.pos.NOUN@ NOUN_PREFIXES ;
 DEM_STEMS ;
 PART ;

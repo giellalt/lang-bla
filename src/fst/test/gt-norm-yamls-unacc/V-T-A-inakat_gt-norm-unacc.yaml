@@ -1,0 +1,127 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+   Verb - inakat - ok : # -m animate transitive verb, bring to town AEW NA1
+     inakat+VTA+Ind+1Sg+2SgO: kitsinakato
+     inakat+VTA+Ind+1Sg+3SgO: nitsinakatawa
+     inakat+VTA+Ind+1Sg+4SgO: nitsinakatayini
+     inakat+VTA+Ind+2Sg+1SgO: kitsinakakki
+     inakat+VTA+Ind+2Sg+3SgO: kitsinakatawa
+     inakat+VTA+Ind+2Sg+4SgO: kitsinakatayini
+     inakat+VTA+Ind+3Sg+1SgO: nitsinakakka
+     inakat+VTA+Ind+3Sg+2SgO: kitsinakakka
+     inakat+VTA+Ind+3Sg+4SgO: inakatsiiwa
+     inakat+VTA+Ind+4Sg+3SgO: otsinakakka
+     inakat+VTA+Ind+4Sg+2SgO: kitsinakakkini
+     inakat+VTA+Ind+4Sg+1SgO: nitsinakakkini
+     inakat+VTA+Ind+4Pl+5Sg/PlO: inakatsiiyi
+     inakat+VTA+Ind+5Sg/Pl+4SgO: otsinakakkini
+     
+     inakat+VTA+Ind+1Pl+2PlO: kitsinakatohpinnaana
+     inakat+VTA+Ind+1Pl+3PlO: nitsinakatannaani
+     inakat+VTA+Ind+1Pl+4PlO: nitsinakatannaani
+     inakat+VTA+Ind+21Pl+3PlO: inakatayi
+     inakat+VTA+Ind+21Pl+4PlO: inakatayi
+     inakat+VTA+Ind+2Pl+1PlO: kitsinakakkihpinnaana
+     inakat+VTA+Ind+2Pl+3PlO: kitsinakatawaayi
+     inakat+VTA+Ind+2Pl+4PlO: kitsinakatawaayi
+     inakat+VTA+Ind+3Pl+1PlO: nitsinakakkinnaani
+     inakat+VTA+Ind+3Pl+2PlO: kitsinakakkoaayi
+     inakat+VTA+Ind+3Pl+4PlO: inakatsiiyi
+     inakat+VTA+Ind+4Pl+1PlO: nitsinakakkinnaani
+     inakat+VTA+Ind+4Pl+2PlO: kitsinakakkoaayi
+     inakat+VTA+Ind+4Pl+3PlO: otsinakakkoaayi
+     inakat+VTA+Ind+4Pl+5Sg/PlO: inakatsiiyi
+     inakat+VTA+Ind+5Sg/Pl+4PlO: otsinakakkoaayini
+ 
+     inakat+VTA+Ind+Unspec+1SgO: nitsinakakkoo
+     inakat+VTA+Ind+Unspec+1PlO: nitsinakattsspinnaana
+     inakat+VTA+Ind+Unspec+2SgO: kitsinakakkoo
+     inakat+VTA+Ind+Unspec+2PlO: kitsinakattsspoaawa
+     inakat+VTA+Ind+Unspec+21PlO: inakattssp
+     inakat+VTA+Ind+Unspec+3SgO: inakatawa
+     inakat+VTA+Ind+Unspec+3PlO: inakatayi
+     inakat+VTA+Ind+Unspec+4SgO: inakatayini
+     inakat+VTA+Ind+Unspec+4PlO: inakatayi
+
+     inakat+VTA+Cnj+1Sg+2SgO: kitsinakatohsi
+     inakat+VTA+Cnj+1Sg+3SgO: nitsinakatahsi
+     inakat+VTA+Cnj+1Sg+4SgO: nitsinakatahsini
+     inakat+VTA+Cnj+2Sg+1SgO: kitsinakakkssi
+     inakat+VTA+Cnj+2Sg+3SgO: kitsinakatahsi
+     inakat+VTA+Cnj+2Sg+4SgO: kitsinakatahsini
+     inakat+VTA+Cnj+3Sg+1SgO: nitsinakatssi
+     inakat+VTA+Cnj+3Sg+2SgO: kitsinakatssi
+     inakat+VTA+Cnj+3Sg+4SgO: otsinakatahsi
+     inakat+VTA+Cnj+4Sg+3SgO: otsinakatssi
+
+     inakat+VTA+Cnj+1Pl+2PlO: kitsinakatohsinnaani
+     inakat+VTA+Cnj+1Pl+3PlO: nitsinakatahsinnaani
+     inakat+VTA+Cnj+1Pl+4PlO: nitsinakatahsinnaani
+     inakat+VTA+Cnj+21Pl+3PlO: inakatahsi
+     inakat+VTA+Cnj+21Pl+4PlO: inakatahsi
+     inakat+VTA+Cnj+2Pl+1PlO: kitsinakakkssinnaani
+     inakat+VTA+Cnj+2Pl+3PlO: kitsinakatahsoaayi
+     inakat+VTA+Cnj+2Pl+4PlO: kitsinakatahsoaayi
+     inakat+VTA+Cnj+3Pl+1PlO: nitsinakatssinnaani
+     inakat+VTA+Cnj+3Pl+21PlO: nitsinakakkssi
+     inakat+VTA+Cnj+3Pl+2PlO: kitsinakatssoaayi
+     inakat+VTA+Cnj+3Pl+4PlO: otsinakatahsi
+     inakat+VTA+Cnj+4Pl+4PlO: otsinakatssi
+     inakat+VTA+Cnj+4Pl+3PlO: otsinakatssi
+
+     inakat+VTA+Cnj+Unspec+1SgO: nitsinakakkoohsi
+     inakat+VTA+Cnj+Unspec+1PlO: nitsinakattssinnaani
+     inakat+VTA+Cnj+Unspec+2SgO: kitsinakakkoohsi
+     inakat+VTA+Cnj+Unspec+2PlO: kitsinakattssoaayi
+     inakat+VTA+Cnj+Unspec+21PlO: inakattssi
+     inakat+VTA+Cnj+Unspec+3SgO: inakatahsi
+     inakat+VTA+Cnj+Unspec+3PlO: inakatahsi
+     inakat+VTA+Cnj+Unspec+4SgO: inakatahsini
+
+     inakat+VTA+Sbj+1Sg+2SgO: inakatsiniki
+     inakat+VTA+Sbj+1Sg+3SgO: inakatainiki
+     inakat+VTA+Sbj+2Sg+1SgO: inakakkiiniki
+     inakat+VTA+Sbj+2Sg+3SgO: inakatainiki
+     inakat+VTA+Sbj+3Sg+1SgO: inakattsiiniki
+     inakat+VTA+Sbj+3Sg+2SgO: inakattsiiniki
+     inakat+VTA+Sbj+3Sg+4SgO: inakatasi
+     inakat+VTA+Sbj+4Sg+3SgO: inakattsiiniki
+
+     inakat+VTA+Sbj+1Sg+2PlO: inakatsinoainiki
+     inakat+VTA+Sbj+1Sg+3PlO: inakatainiki
+     inakat+VTA+Sbj+2Sg+1PlO: inakakkinnaaniki
+     inakat+VTA+Sbj+2Sg+3PlO: inakatainiki
+     inakat+VTA+Sbj+3Sg+1PlO: inakattsiinnaaniki
+     inakat+VTA+Sbj+3Sg+21PlO: inakakkisi
+     inakat+VTA+Sbj+3Sg+2PlO: inakattsiinoainiki
+     inakat+VTA+Sbj+3Sg+4PlO: inakatasi
+     inakat+VTA+Sbj+4Sg+3PlO: inakattsiinoainiki
+
+     inakat+VTA+Sbj+Unspec+1SgO: inakakkoiniki
+     inakat+VTA+Sbj+Unspec+1PlO: inakakkoinnaaniki
+     inakat+VTA+Sbj+Unspec+2SgO: inakakkoiniki
+     inakat+VTA+Sbj+Unspec+2PlO: inakakkoinoainiki
+     inakat+VTA+Sbj+Unspec+21PlO: inakattsski
+     inakat+VTA+Sbj+Unspec+3SgO: inakatahki
+     inakat+VTA+Sbj+Unspec+3PlO: inakatahki
+
+     inakat+VTA+Imp+2Sg+1SgO: inakakkit
+     inakat+VTA+Imp+2Sg+1PlO: inakakkinnaana
+     inakat+VTA+Imp+2Sg+3SgO: inakatsis
+     inakat+VTA+Imp+2Sg+3PlO: inakatsis
+     inakat+VTA+Imp+2Pl+1SgO: inakakkik
+     inakat+VTA+Imp+2Pl+1PlO: inakakkinnaana
+     inakat+VTA+Imp+2Pl+3SgO: inakatok
+     inakat+VTA+Imp+2Pl+3PlO: inakatok
+
+     inakat+VTA+Der/Rcpr+VAI+Ind+1Pl: [ nitsinakattsiiyihpinnaana , nitsinakattsiiyihpinnaan ]
+     

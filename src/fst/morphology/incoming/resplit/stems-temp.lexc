@@ -1,0 +1,209 @@
+LEXICON VERB_STEMS
+! LEXICON PREFIXES
+@R.class.VAI@	VAI_STEMS ;
+@R.class.VII@	VII_STEMS ;
+@R.class.VTI@	VTI_STEMS ;
+@R.class.VTA@	VTA_STEMS ;
+@R.pos.NOUN@	VAI_STEMS ;
+@R.pos.NOUN@	VII_STEMS ;
+@R.pos.NOUN@	VTI_STEMS ;
+@R.pos.NOUN@	VTA_STEMS ;    
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VAI_STEMS ;
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VII_STEMS ;
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTI_STEMS ;
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTA_STEMS ;
+
+LEXICON NOUN_STEMS
+@R.pos.NOUN@ NA_STEMS ;
+@R.pos.NOUN@ NI_STEMS ;
+@R.class.VAI@ NA_STEMS ;
+@R.class.VII@ NI_STEMS ;
+
+LEXICON INIT_VAI_STEMS
+a'po'taki:a'po'taki VAI ;
+itapoo:itapoo%^DIPH VAI ;
+okska'si:okska'si VAI ;
+waahkayi:waahkayi VAI ;
+
+LEXICON PERS_VAI_STEMS
+a'po'taki:a'po'taki VAI ;
+itapoo:itapoo%^DIPH VAI ;
+okska'si:okska'si VAI ;
+waahkayi:ahkayi VAI ;
+
+LEXICON VAI_STEMS
+a'po'taki:a'po'taki VAI ;
+itapoo:itapoo%^DIPH VAI ;
+okska'si:okska'si VAI ;
+waahkayi:ahkayi VAI ;
+
+LEXICON INIT_VII_STEMS
+soka'pii:soka'pii VII ;
+ikkitsinaattsi:ikkitsinaattsi	VII ;
+maanikinako:maanikinako	VII ;
+
+LEXICON PERS_VII_STEMS
+soka'pii:soka'pii VII ;
+ikkitsinaattsi:i2kkitsinaattsi	VII ;
+maanikinako:anikinako	VII ;
+
+LEXICON VII_STEMS
+soka'pii:soka'pii VII ;
+ikkitsinaattsi:i2kkitsinaattsi	VII ;
+maanikinako:anikinako	VII ;
+
+LEXICON INIT_VTA_STEMS
+ai'stamatsi:ai'stamatsi VTA ;
+ihtsiipi:ihtsiipi VTA ;
+ikakomimm:ikakomimm VTA ;
+inakat:inakat VTA ;
+ino:ino VTA ;
+ipohkisstoyi:poohkisstoyi VTA ;
+
+LEXICON PERS_VTA_STEMS
+ai'stamatsi:ai'stamatsi VTA ;
+ihtsiipi:ihtsiipi VTA ;
+ikakomimm:ikakomimm VTA ;
+inakat:inakat VTA ;
+ino:ino VTA ;
+ipohkisstoyi:ipohkisstoyi VTA ;
+
+LEXICON VTA_STEMS
+ai'stamatsi:ai'stamatsi VTA ;
+ihtsiipi:ihtsiipi VTA ;
+ikakomimm:i2kakomimm VTA ;
+inakat:i2nakat VTA ;
+ino:i2no VTA ;
+ipohkisstoyi:i2pohkisstoyi VTA ;
+
+LEXICON INIT_VTI_STEMS
+oowatoo:oowatoo VTI ;
+ssksini:issksini VTI ;
+
+LEXICON PERS_VTI_STEMS
+oowatoo:i2owatoo VTI ;
+ssksini:ssksini VTI ;
+
+LEXICON VTI_STEMS
+oowatoo:i2owatoo VTI ;
+ssksini:ssksini VTI ;
+
+LEXICON INIT_NA_STEMS
+aakiiwa:aakii NA ;
+imitaawa:imitaa NA_IM ;
+isttoana:isttoan2 NA ;
+miistsisa:miistsis2 NA ;
+moksisa:moksis2 NA ;
+ninaawa:ninaa%^AIM NA ;
+poosa:poos NA_IM ;
+isska:issk NA ;
+
+LEXICON PERS_NA_STEMS
+aakiiwa:aakii NA ;
+imitaawa:omitaa NA_IM ;
+isttoana:%^SPottoan2 NA ;
+miistsisa:i2istsis2 NA ;
+moksisa:%^SPoksis2 NA ;
+ninaawa:inaa%^AIM NA ;
+poosa:ohpoos NA_IM ;
+isska:%^SPoohk NA ;
+
+LEXICON NA_STEMS
+aakiiwa:aakii NA ;
+imitaawa:omitaa NA_IM ;
+isttoana:i2sttoan2 NA ;
+miistsisa:i2istsis2 NA ;
+moksisa:oksis2 NA ;
+ninaawa:i2naa%^AIM NA ;
+poosa:ohpoos NA_IM ;
+isska:ohk NA ;
+
+LEXICON INIT_NI_STEMS
+aaapani:aaapan2 NI ;
+kinakini:kinakin2 NI ;
+mo'tokaani:mo'tokaan NI ;
+sinaakia'tsisi:sinaakia'tsis2 NI ;
+atsikini:atsikin2 NI ;
+aahkioohsa'tsisi:aahkioohsa'tsis2	NI ;
+miini:miin	NI ;
+
+LEXICON PERS_NI_STEMS
+aaapani:i2aapan2 NI ;
+kinakini:%^SPohkinakin2 NI ;
+mo'tokaani:%^SPo'tokaan NI ;
+sinaakia'tsisi:%^SPisinaakia'tsis2 NI ;
+atsikini:%^SPatsikin2 NI ;
+aahkioohsa'tsisi:aahkioohsa'tsis2	NI ;
+miini:i2in	NI ;
+
+LEXICON NI_STEMS
+aaapani:i2aapan2 NI ;
+kinakini:ohkinakin2 NI ;
+mo'tokaani:o'tokaan NI ;
+sinaakia'tsisi:sinaakia'tsis2 NI ;
+atsikini:itsikin2 NI ;
+aahkioohsa'tsisi:yaahkioohtsa'tsis2	NI ;
+miini:i2in	NI ;
+
+LEXICON DEP_STEMS
+@P.class.NA@ DEP_NA_STEMS ;
+@P.class.NI@ DEP_NI_STEMS ;
+
+LEXICON DEP_NA_STEMS
+! Test Stems
+! nohkówa:ohkó                NAD ;
+! naaáhsa:maaáhs              NAD ;
+!nitána:itán                 NAD ;
+! niksíssta:iksísst           NAD ;
+! Full list
+naaáhsa:%^SPaaáhs	NAD ;
+nitaakiaaahsa:aakiaaahs	NAD ;
+nitáákiima:áákiim	NAD ;
+nitáwahkahtaana:áwahkahtaan	NAD ;
+ni'sa:%^SPi's	NAD ;
+nitsi'sohkiimaana:i'sohkiimaan	NAD ;
+nitsiihkawawa:iihkawa	NAD ;
+niihsissa:%^SPiihsiss	NAD ;
+nikííhtsimaana:%^SPikííhtsimaan	NAD ;
+niksimmotsiima:%^SPiksimmotsiim	NAD ;
+niksíssta:%^SPiksísst	NAD ;
+nikso'kowa:%^SPikso'kowa	NAD ;
+nimssa:%^SPimss	NAD ;
+nitsinaaáhsa:inaaáhs	NAD ;
+ninaapiima:%^SPinaapiim	NAD ;
+ninna:%^SPinn	NAD ;
+nínssta:%^SPínsst	NAD ;
+nippitaama:%^SPippitaam	NAD ;
+nisahkínaima:%^SPisahkínaim	NAD ;
+nisahkómaapiima:%^SPisahkómaapiim	NAD ;
+nissa:%^SPiss	NAD ;
+nisskána:%^SPisskán	NAD ;
+nitsissohkiimaana:issohkiimaan	NAD ;
+nissohkowa:%^SPissohko	NAD ;
+níssoko'sa:%^SPíssoko's	NAD ;
+nissotana:%^SPissotan	NAD ;
+nisstamowa:%^SPisstamo	NAD ;
+nisstamoohkowa:%^SPisstamoohko	NAD ;
+nitana:%^SPitan	NAD ;
+niniitsistowahsina:%^SPiniitsistowahsin	NAD ;
+nohkówa:%^SPohkó	NAD ;
+nohpapiiyihpa:o%^SPhpapiiyihp	NAD ;
+nohpatooma:%^SPohpatoom	NAD ;
+noko'sa:%^SPoko's	NAD ;
+nokoksissta:%^SPokoksisst	NAD ;
+nokonna:%^SPokonn	NAD ;
+nomahkinaima:%^SPomahkinaim	NAD ;
+nooma:%^SPoom	NAD ;
+nootoohkiimaana:ootoohkiimaan	NAD ;
+nitohkiimaana:ohkiimaan	NAD ;
+nootoyooma:%^SPootoyoom	NAD ;
+noppitaama:%^SPoppitaam	NAD ;
+nóta'sa:%^SPóta's	NAD ;
+noyínnaawa:%^SPoyínnaa	NAD ;
+nisskáni'taama:%^SPsskáni'taam	NAD ;
+niyiihkowa:%^SPiyiihkowa	NAD ;
+niistó:%^SPiistó NAD ;
+
+LEXICON DEP_NI_STEMS
+nookóówayi:%^SPookóówan     NID ;
+nookóówayi:%^SPookóówa     NID ;

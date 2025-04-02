@@ -1,3 +1,1866 @@
+!! Blackfoot morphotax -- aggregate of all LEXC files
+
+! Flags, tags, and special characters for regular Blackfoot noun and verb morphology 
+
+Multichar_Symbols
+! Noun tags
++NI
++NA
++NAD
++NID
++Adj
++Pl
++Sg
++Obv
++Non ! used to mark the non-referring suffix
++Px1Sg
++Px2Sg
++Px3Sg
++Px1Pl
++Px21Pl
++Px2Pl
++Px3Pl
++Px4Sg/Pl
+! Verb tags
++VAI
++VII
++VTI
++VTA
+Adv+
+Neg+
+Perf+
+Dur+
+Fut+
+Imm+ ! For imminent future
+Prox+
+Past+
+Nonaff+
++Imp
++Ind
++Cnj
++Sbj
++Irr
++Pre
++Der/Nom
++Der/Nom2
++Der/Nom3
++Der/Nom4
++Der/Nom5
++Der/VAI
++Der/VII
++Der/Caus
++Der/Caus2 
++Der/Rcpr
++Der/Rflx
++Der/Bnf
++Accomp
+! Subject/Actor tags
++Unspec ! +X
++%0Sg
++%0Pl
++%0Sg/Pl
++1Sg
++2Sg
++3Sg
++1Pl
++21Pl
++2Pl
++3Pl
++4Sg
++4Pl
++5Sg/Pl
+! Object/Goal tags
++%0SgO
++%0PlO
++%0Sg/PlO
++1SgO
++2SgO
++3SgO
++1PlO
++21PlO
++2PlO
++3PlO
++4SgO
++4PlO
++5Sg/PlO
++PRO
++3/%0Sg
++3/%0
++3Sg/Pl
++D3Sg
++Interr
++Pron
++Pers
++Ipc
++Dem
++Dim
++A
++I
++Stat
++Movg
++Invs
++MT
++Vblz
+%>
+
+
+! Prenoun tags
+PS/a's+
+PS/aahs+
+PS/aaka+
+PS/aamsskaap+
+PS/aapam+
+PS/aapat+
+PS/aapi+
+PS/aatow+
+PS/ahkiaap+
+PS/aiist+
+PS/aka+
+PS/akim+
+PS/akkaw+
+PS/anao'k+
+PS/apak+
+PS/apoyi+
+PS/atso't+
+PS/awatt+
+PS/ayaam+
+PS/i'nak+
+PS/i'taam+
+PS/i'taam+
+PS/i'tsin+
+PS/i'tsk+
+PS/i'tsk+
+PS/ihtsis+
+PS/iinohk+
+PS/iitaam+
+PS/iitaam+
+PS/iitoom+
+PS/iiyik+
+PS/ikaw+
+PS/ikaw+
+PS/ikaaw+
+PS/ikakk+
+PS/ikako+
+PS/iki'ta+
+PS/ikim+
+PS/ikkahs+
+PS/ikkak+
+PS/ikksk+
+PS/ikkst+
+PS/ikotsk+
+PS/iksi's+
+PS/iksiw+
+PS/iksiiksk+
+PS/iksikk+
+PS/iksim+
+PS/iksimat+
+PS/iksisap+
+PS/iksissta'p+
+PS/iksisto+
+PS/iksow+
+PS/imi+
+PS/immak+
+PS/inap+
+PS/inn+
+PS/innaap+
+PS/innis+
+PS/inno+
+PS/inok+
+PS/insstaw+
+PS/ipahk+
+PS/ipahp+
+PS/ipahs+
+PS/ipaht+
+PS/ipahtsi+
+PS/ipi'k+
+PS/ipiiw+
+PS/ipiihk+
+PS/ipisat+
+PS/ipittsik+
+PS/ipow+
+PS/ipoohsap+
+PS/ippat+
+PS/ippom+
+PS/ippot+
+PS/ipsst+
+PS/isakoow+
+PS/isam+
+PS/isap+
+PS/iso+
+PS/iss+
+PS/issk+
+PS/isskihta'+
+PS/isspi+
+PS/isspik+
+PS/istaaht+
+PS/istot+
+PS/isttani+
+PS/isttohk+
+PS/isttsi+
+PS/isttsik+
+PS/isttsip+
+PS/itapiksst+
+PS/itsiw+
+PS/itsiiy+
+PS/itsik+
+PS/itsin+
+PS/iyoomok+
+PS/ki'taw+
+PS/ki'tsi+
+PS/kiihtsip+
+PS/komono+
+PS/ksiw+
+PS/ksikk+
+PS/ksis+
+PS/ma'k+
+PS/maan+
+PS/maka+
+PS/maohk+
+PS/matoom+
+PS/matsiw+
+PS/mattsi+
+PS/mi'ki+
+PS/mii+
+PS/miinohk+
+PS/miistap+
+PS/mikksk+
+PS/misam+
+PS/mokamo't+
+PS/naam+
+PS/naam+
+PS/naatow+
+PS/naatsa+
+PS/naaw+
+PS/ni'toohk+
+PS/niit+
+PS/nimm+
+PS/noohkiit+
+PS/o'k+
+PS/o'kstsik+
+PS/o't+
+PS/o'tak+
+PS/o'tami+
+PS/o'topi+
+PS/o'totam+
+PS/o'tsat+
+PS/o'tsitsk+
+PS/o'tssat+
+PS/ohkit+
+PS/ohko+
+PS/ohkom+
+PS/ohkon+
+PS/ohpo+
+PS/ohpok+
+PS/ohsi+
+PS/ohso'kap+
+PS/ohsohkat+
+PS/ohtow+
+PS/ohtssap+
+PS/ok+
+PS/okaki+
+PS/okamo't+
+PS/omahk+
+PS/omat+
+PS/omatap+
+PS/omia'nist+
+PS/omow+
+PS/onnat+
+PS/oohsi+
+PS/oomok+
+PS/ooto+
+PS/opam+
+PS/opi+
+PS/opott+
+PS/otahko+
+PS/otam+
+PS/otats+
+PS/otoom+
+PS/otsik+
+PS/otsistap+
+PS/otssko+
+PS/ottapit+
+PS/pa'ksik+
+PS/paahk+
+PS/paahksist+
+PS/paaht+
+PS/paahtsi+
+PS/pi'k+
+PS/pinaap+
+PS/pisat+
+PS/pisst+
+PS/poohsap+
+PS/sa+
+PS/sa'kap+
+PS/saahk+
+PS/saat+
+PS/saayippom+
+PS/sahp+
+PS/saikima'+
+PS/saiksistt+
+PS/sainnis+
+PS/sainskaka'p+
+PS/saip+
+PS/sakak+
+PS/sako+
+PS/saoki+
+PS/sap+
+PS/sapa'kot+
+PS/sata+
+PS/satt+
+PS/sawommit+
+PS/sawotsistap+
+PS/sayippom+
+PS/si'k+
+PS/sik+
+PS/sikaapi+
+PS/sikim+
+PS/sikotahko+
+PS/sisakk+
+PS/sisik+
+PS/sistsik+
+PS/sitok+
+PS/sitsip+
+PS/sow+
+PS/sohk+
+PS/sok+
+PS/sok+
+PS/soohk+
+PS/sopow+
+PS/sopok+
+PS/sopoya'p+
+PS/ssik+
+PS/ssk+
+PS/sski+
+PS/sskihta+
+PS/sskohto+
+PS/sskonat+
+PS/sso+
+PS/ssp+
+PS/sspi+
+PS/sspik+
+PS/sspom+
+PS/sstsaap+
+PS/sstsim+
+PS/wa'kot+
+PS/wa's+
+PS/wa'sok+
+PS/waahkiaap+
+PS/waaist+
+PS/waaka+
+PS/waami't+
+PS/waamis+
+PS/waamohs+
+PS/waamsskaap+
+PS/waanao'k+
+PS/waanat+
+PS/waaniit+
+PS/waapat+
+PS/waapatohs+
+PS/waapi+
+PS/waapo'k+
+PS/waatow+
+PS/waattsi+
+PS/waawatt+
+PS/waawow+
+PS/waist+
+PS/wattsi+
+PS/wayam+
+PS/yaahs+
+PS/yaam+
+PS/yaam+
+PS/yaam+
+PS/yaam+
+PS/yiistap+
+PS/yiss+
+PS/yissk+
+PS/yoohk+
+PS/yoohkiit+
+PS/yootsip+
+! Preverb tags
+PS/ohpok+
+PS/saw+
+PS/aakssta'+
+PS/aahkssta'+
+PS/kata'+
+PS/wayak+
+PS/yaak+
+PS/ayaak+
+PS/ayaakak+
+PS/akaa+
+PS/omohp+
+PS/omoht+
+PS/ohtatsiwa+
+PS/itap+
+PS/poohsap+
+PS/ipoohsap+
+PS/it+
+PS/ist+
+PS/ipssit+
+PS/ohkit+
+PS/miistap+
+PS/yiistap+
+PS/saaki+
+PS/oma+
+PS/iima+
+PS/a'+
+PS/a+
+PS/aahk+
+PS/iiht+
+PS/oht+
+PS/omoht+
+PS/a'+
+PS/a'+
+PS/ikkam+
+PS/oohk+
+PS/ipp+
+PS/iik+
+PS/sska'+
+PS/sstonnat+
+PS/ikkam+
+PS/iitsiksist+
+PS/ii+
+PS/na+
+PS/hkana+
+PS/ikkina+
+PS/iiyik+
+PS/ipoina+
+PS/poina+
+PS/sok+
+PS/niit+
+PS/anist+
+PS/ohs+
+PS/yaahs+
+PS/iksistt+
+PS/mato+
+PS/oto+
+PS/ohkott+
+PS/ssaak+
+PS/ohko+
+PS/a+
+PS/a+
+PS/a'+
+PS/a'kooh+
+PS/a'p+
+PS/aahk+
+PS/aahkama'p+
+PS/aahksikkam+
+PS/aahksikkama'p+
+PS/aahs+
+PS/aak+
+PS/aaksta'+
+PS/aanist+
+PS/ai'tamaak+
+PS/aisooka+
+PS/aisskahs+
+PS/aka+
+PS/akaa+
+PS/akisspi+
+PS/akk+
+PS/akoksska+
+PS/akstam+
+PS/ama+
+PS/amo'tap+
+PS/ana+
+PS/anaw+
+PS/ano+
+PS/anow+
+PS/anow+
+PS/anootap+
+PS/ao'tamaak+
+PS/apa'p+
+PS/aso+
+PS/assaak+
+PS/att+
+PS/awa'+
+PS/ayaak+
+PS/ayak+
+PS/i'ssk+
+PS/i'tsk+
+PS/iamoohk+
+PS/ihta+
+PS/iihk+
+PS/iihtsitok+
+PS/iihtsitssitak+
+PS/iik+
+PS/iikska'+
+PS/iima+
+PS/iimaa+
+PS/iimat+
+PS/iin+
+PS/iina+
+PS/iinao'k+
+PS/iinatt+
+PS/iini+
+PS/iinik+
+PS/iitaisap+
+PS/iitsiksist+
+PS/iitskimaan+
+PS/iiyik+
+PS/ika+
+PS/ika'+
+PS/ika'to+
+PS/ikaap+
+PS/ikaiksist+
+PS/ikak+
+PS/ikamo't+
+PS/ikapo+
+PS/ikayiss+
+PS/ikia'ya+
+PS/ikihkiht+
+PS/ikimm+
+PS/ikimmat+
+PS/ikipp+
+PS/ikippa'+
+PS/ikippoa+
+PS/ikkam+
+PS/ikkam+
+PS/ikkan+
+PS/ikkia'+
+PS/ikkihkini+
+PS/ikkina+
+PS/iksissto+
+PS/iksissto+
+PS/iksist+
+PS/iksksowa'+
+PS/ikssto+
+PS/ikstsina'+
+PS/imaat+
+PS/imak+
+PS/immoyi+
+PS/inai't+
+PS/inikk+
+PS/innaahkoot+
+PS/ipahkitap+
+PS/ipahtsik+
+PS/ipakkssa+
+PS/ipakska+
+PS/ipana+
+PS/ipann+
+PS/ipapa+
+PS/ipiitsiiyoohk+
+PS/ipiitsiw+
+PS/ipo't+
+PS/ipoina+
+PS/ipp+
+PS/ippita+
+PS/ippoa+
+PS/ippssa'kapp+
+PS/ipsstsik+
+PS/ipsstsikatt+
+PS/isimi+
+PS/isinap+
+PS/isitsip+
+PS/isk+
+PS/iss+
+PS/isska'+
+PS/isstohkana+
+PS/ista'+
+PS/istohk+
+PS/istohkana+
+PS/istsa'+
+PS/istto't+
+PS/isttsikohpo+
+PS/isttsitsa+
+PS/isttssi+
+PS/itaak+
+PS/ito't+
+PS/iton+
+PS/itsisa+
+PS/itsk+
+PS/itsst+
+PS/kaak+
+PS/kaat+
+PS/kaatsisto+
+PS/kaatsisto+
+PS/kakanott+
+PS/kam+
+PS/kan+
+PS/kata'+
+PS/kinnak+
+PS/kipita+
+PS/kipp+
+PS/kotski+
+PS/ksisttoyi+
+PS/maak+
+PS/maak+
+PS/maam+
+PS/maat+
+PS/maat+
+PS/maataommita'p+
+PS/mak+
+PS/mao'k+
+PS/mato+
+PS/matsowa'p+
+PS/matt+
+PS/matt+
+PS/mattsista'+
+PS/mattsit+
+PS/mi'kotsi+
+PS/miiksist+
+PS/miin+
+PS/min+
+PS/missk+
+PS/misst+
+PS/mo'toi+
+PS/naat+
+PS/nai't+
+PS/niistsikap+
+PS/niit+
+PS/niit+
+PS/niita'p+
+PS/niitaak+
+PS/niitsi+
+PS/niitsskimaan+
+PS/noohk+
+PS/noohkatt+
+PS/o'kia'p+
+PS/o'kio+
+PS/o'tap+
+PS/o'to+
+PS/ohk+
+PS/ohkan+
+PS/ohkana+
+PS/ohko+
+PS/ohkott+
+PS/ohpii+
+PS/ohpiistap+
+PS/ohpo'kii+
+PS/ohpok+
+PS/oka'p+
+PS/oma+
+PS/omaa+
+PS/omahka+
+PS/omanista+
+PS/omat+
+PS/omi+
+PS/omiiksis+
+PS/omo'tap+
+PS/on+
+PS/ona'+
+PS/onai't+
+PS/onaki+
+PS/oohk+
+PS/oohkanistta+
+PS/oohkatt+
+PS/opaksikssto+
+PS/otam+
+PS/oto+
+PS/otomohk+
+PS/piin	+
+PS/piitsiyoohk+
+PS/pin+
+PS/po'ki+
+PS/poina+
+PS/sa+
+PS/sa+
+PS/saa+
+PS/saaki+
+PS/saapo'kit+
+PS/saipa'+
+PS/saotat+
+PS/sipi+
+PS/sook+
+PS/sootam+
+PS/sotam+
+PS/soyi+
+PS/ssaak+
+PS/ssap+
+PS/sska'+
+PS/sspi+
+PS/sstahpik+
+PS/sstok+
+PS/sstonnat+
+PS/sstsina'+
+PS/stam+
+PS/tatsiki+
+PS/waahki+
+PS/waahko+
+PS/waahto+
+PS/waahtsam+
+PS/waahtso+
+PS/waako'tsi+
+PS/waaksisto+
+PS/waanaoyit+
+PS/waanook+
+PS/waapiiwaan+
+PS/wayak+
+PS/wayakiit+
+PS/yaak+
+PS/yamoohk+
+PS/yoisstsikina+
+PS/yook+
+
+! New list of preverb tags
+PS/a'kooht+
+PS/a+
+PS/aahksikkam+
+PS/aahkama'p+
+PS/aahk+
+PS/aahs+
+PS/aaksta'+
+PS/aanist+
+PS/ai'tamaak+
+PS/aisskahs+
+PS/akaa+
+PS/akisspi+
+PS/akk+
+PS/akoksska+
+PS/aka+
+PS/ama+
+PS/amo'tap+
+PS/ana+
+PS/anaw+
+PS/anist+
+PS/ano+
+PS/anootap+
+PS/anow+
+PS/ao'tamaak+
+PS/apa'p+
+PS/aso+
+PS/assaak+
+PS/att+
+PS/awa'+
+PS/ayaak+
+PS/ayak+
+PS/ayaak+
+PS/hkana+
+PS/i'sskaan+
+PS/i'tsk+
+PS/ikkam+
+PS/ikkina+
+PS/iksistt+
+PS/ipoina+
+PS/ipoohsap+
+PS/ihta+
+PS/ii+
+PS/iihk+
+PS/iiht+
+PS/iihtsitok+
+PS/iihtsitssitak+
+PS/iik+
+PS/iikska'+
+PS/iima+
+PS/iimaa+
+PS/iimat+
+PS/iima+
+PS/iin+
+PS/iina+
+PS/iinao'k+
+PS/iinatt+
+PS/iini+
+PS/iinik+
+PS/iitaisap+
+PS/iitsiksist+
+PS/iitskimaan+
+PS/iiyik+
+PS/ika'+
+PS/ika'to+
+PS/ikaap+
+PS/ikaiksist+
+PS/ikak+
+PS/ikamo't+
+PS/ikapo+
+PS/ikata'+
+PS/ikayiss+
+PS/ikia'ya+
+PS/ikihkiht+
+PS/ikimm+
+PS/ikimmat+
+PS/ikipp+
+PS/ikippa'+
+PS/ikkam+
+PS/ikkan+
+PS/ikkia'+
+PS/ikkihkini+
+PS/ikkina+
+PS/iksissto+
+PS/iksist+
+PS/iksksowa'+
+PS/ikssto+
+PS/ikstsina'+
+PS/ikippoa+
+PS/imaat+
+PS/imak+
+PS/immoyi+
+PS/inai't+
+PS/inikk+
+PS/innaahkoot+
+PS/ipahkitap+
+PS/ipahtsik+
+PS/ipakska+
+PS/ipana+
+PS/ipann+
+PS/ipapa+
+PS/ipiitsiiyoohk+
+PS/ipiitsiy+
+PS/ipo't+
+PS/ipoina+
+PS/ipp+
+PS/ipp+
+PS/ippita+
+PS/ippoa+
+PS/ippssa'kapp+
+PS/ipsstsikatt+
+PS/ipsstsik+
+PS/ipakkssa+
+PS/isimi+
+PS/isinap+
+PS/isitsip+
+PS/isk+
+PS/iss+
+PS/isska'+
+PS/isstohkana+
+PS/ist+
+PS/ista'+
+PS/istohk+
+PS/istohkana+
+PS/istsa'+
+PS/istto't+
+PS/isttsikohpo+
+PS/isttsitsa+
+PS/isttssi+
+PS/it+
+PS/itap+
+PS/ito't+
+PS/iton+
+PS/itsisa+
+PS/itsst+
+PS/itaak+
+PS/iamoohk+
+PS/kaat+
+PS/kakanott+
+PS/kam+
+PS/kan+
+PS/kipita+
+PS/kipp+
+PS/kotski+
+PS/ksisttoyi+
+PS/kata'+
+PS/kaak+
+PS/kaatsisto+
+PS/kinnak+
+PS/maat+
+PS/matt+
+PS/mattsista'+
+PS/matt+
+PS/mattsit+
+PS/maat+
+PS/maataommita'p+
+PS/maak+
+PS/maam+
+PS/mak+
+PS/mato+
+PS/matsowa'p+
+PS/mi'kotsi+
+PS/miiksist+
+PS/miin+
+PS/miistap+
+PS/min+
+PS/missk+
+PS/misst+
+PS/mo'toi+
+PS/maak+
+PS/mao'k+
+PS/na+
+PS/naat+
+PS/nai't+
+PS/niistsikap+
+PS/niit+
+PS/niitsi+
+PS/niitsskimaan+
+PS/niita'p+
+PS/noohk+
+PS/noohkatt+
+PS/niitaak+
+PS/o'kia'p+
+PS/o'kio+
+PS/o'tap+
+PS/ohk+
+PS/ohkan+
+PS/ohkana+
+PS/ohkit+
+PS/ohko+
+PS/ohkott+
+PS/ohpii+
+PS/ohpiistap+
+PS/ohpo'kii+
+PS/ohpok+
+PS/ohs+
+PS/oht+
+PS/ohtatsiwa+
+PS/oka'p+
+PS/oma+
+PS/omaa+
+PS/omahka+
+PS/omanista+
+PS/omat+
+PS/omi+
+PS/omiiksist+
+PS/omo'tap+
+PS/omohp+
+PS/omoht+
+PS/omoht+
+PS/oma+
+PS/on+
+PS/ona'+
+PS/onai't+
+PS/onaki+
+PS/oohk+
+PS/oohk+
+PS/oohkanistta+
+PS/oohkatt+
+PS/opaksikssto+
+PS/otam+
+PS/oto+
+PS/otomohk+
+PS/piin+
+PS/piitsiyoohk+
+PS/pin+
+PS/po'ki+
+PS/poina+
+PS/poohsap+
+PS/poina+
+PS/sa+
+PS/saa+
+PS/saaki+
+PS/saapo'kit+
+PS/saipa'+
+PS/saw+
+PS/sipi+
+PS/sok+
+PS/sook+
+PS/sootam+
+PS/sotam+
+PS/soyi+
+PS/ssap+
+PS/sska'+
+PS/sska'+
+PS/sspi+
+PS/sstahpik+
+PS/sstok+
+PS/sstonnat+
+PS/sstsina'+
+PS/sstonnat+
+PS/ssaak+
+PS/stam+
+PS/saotat+
+PS/tatsiki+
+PS/waahki+
+PS/waahko+
+PS/waahto+
+PS/waahtsam+
+PS/waahtso+
+PS/waako'tsi+
+PS/waaksisto+
+PS/waanaoyit+
+PS/waanook+
+PS/waapiiwaan+
+PS/wayak+
+PS/wayakiit+
+PS/wayak+
+PS/yaahs+
+PS/yiistap+
+PS/yoisstsikina+
+PS/yook+
+PS/yaak+
+PS/yamoohk+
+PS/a'p+
+PS/a+
+PS/a'+
+PS/aka+
+PS/akstam+
+PS/akaa+
+PS/aahk+
+PS/aahkama'p+
+PS/aahksikkama'p+
+PS/aak+
+PS/aisooka+
+PS/ika+
+PS/ipssit+
+
+! Flag diacritics to be used
+@U.person.NI@
+@U.person.KI@
+@U.person.OT@
+@U.person.NULL@
+@U.stem.PRE@
+@U.stem.NON@
+@U.stem.DEP@
+@U.stem.SHORT@
+@P.person.NI@
+@P.person.KI@
+@P.person.OT@
+@P.person.NULL@
+@R.person.NULL@
+@R.person.OT@
+@D.person.NULL@
+@D.person.OT@
+@P.im.IM@
+@R.im.IM@
+@D.im.IM@
+@P.number.SG@
+@P.number.PL@
+@D.number.SG@
+@D.number.PL@
+@P.noun.PRE@
+@P.noun.NON@
+@R.noun.PRE@
+@R.noun.NON@
+! Verb flags
+@R.accomp.A@
+@R.person.NI@
+@R.person.KI@
+@R.person.KII@
+@R.person.OT@
+@R.person.YI@
+@R.person.IMP@
+@R.person.NULL@
+@P.person.NI@
+@P.person.KI@
+@P.person.KII@
+@P.person.OT@
+@P.person.YI@
+@P.person.IMP@
+@P.person.NULL@
+@R.mode.IND@
+@R.mode.CON@
+@R.mode.SUB@
+@R.mode.IRR@
+@R.mode.IMP@
+@P.mode.IND@
+@P.mode.CON@
+@P.mode.SUB@
+@P.mode.IRR@
+@P.mode.IMP@
+@D.person.NULL@
+@D.person.OT@
+@P.class.VAI@
+@P.class.VII@
+@P.class.VTI@
+@P.class.VTA@
+@R.class.VAI@
+@R.class.VII@
+@R.class.VTI@
+@R.class.VTA@
+@P.assoc.A@
+@R.assoc.A@
+@P.pos.NOUN@
+@P.pos.VERB@
+@R.pos.NOUN@
+@R.pos.VERB@
+@P.class.NA@
+@P.class.NI@
+@P.class.VAI@
+@P.class.VII@
+@R.class.NA@
+@R.class.NI@
+@R.class.VAI@
+@R.class.VII@
+@P.pos.NOUN@
+@P.pos.VERB@
+@R.pos.NOUN@
+@R.pos.VERB@
+@P.pos.NOMINALIZE@
+@P.pos.VERBALIZE@
+@R.pos.NOMINALIZE@
+@R.pos.VERBALIZE@
+@D.neg.NEG@
+@D.mode.IMP@
+@P.neg.NEG@
+
+! Constraining preverb recycling
+@D.pvcount@
+@P.pvcount.1@
+@P.pvcount.2@
+@P.pvcount.3@
+@P.pvcount.4@
+@P.pvcount.5@
+@R.pvcount.1@
+@R.pvcount.2@
+@R.pvcount.3@
+@R.pvcount.4@
+@R.pvcount.5@
+@D.pvcountf@
+@P.pvcountf.1@
+@P.pvcountf.2@
+@P.pvcountf.3@
+@R.pvcountf.1@
+@R.pvcountf.2@
+@R.pvcountf.3@
+! Constraining preverb recycling
+@D.pvcount@
+@P.pvcount.1@
+@P.pvcount.2@
+@P.pvcount.3@
+@P.pvcount.4@
+@P.pvcount.5@
+@P.pvcount.6@
+@P.pvcount.7@
+@P.pvcount.8@
+@R.pvcount.1@
+@R.pvcount.2@
+@R.pvcount.3@
+@R.pvcount.4@
+@R.pvcount.5@
+@R.pvcount.6@
+@R.pvcount.7@
+@D.pvcountf@
+@P.pvcountf.1@
+@P.pvcountf.2@
+@P.pvcountf.3@
+@P.pvcountf.4@
+@R.pvcountf.1@
+@R.pvcountf.2@
+@R.pvcountf.3@
+@D.pvcount@
+@P.pvcount.1@
+@P.pvcount.2@
+@P.pvcount.3@
+@R.pvcount.1@
+@R.pvcount.2@
+@R.pvcount.3@
+@D.encount@
+@P.encount.1@
+@P.encount.2@
+@R.encount.1@
+@R.encount.2@
+@P.count1.P@
+@P.count1.N@
+@P.count1.T@
+@P.count1.A@
+@R.count1.P@
+@R.count1.N@
+@R.count1.T@
+@R.count1.A@
+
+! Special_characters
+i2
+i3
+i2
+i3
+a2
+a3
+a4
+o2
+m2
+n2
+s2
+'
+%^SP
+%<
+%>
+%^RCPR
+%^DEM
+%^BNF
+%^DIS
+%^INV
+%^AIM
+%^DIPH
+%^VLV
+%^IMP
+%^PRO
+
+!! Blackfoot Nominal and Verbal Morphology
+
+!! from verb file
+
+LEXICON Root
+@P.pos.VERB@ VERB_PREFIXES ;
+@P.pos.NOUN@ NOUN_PREFIXES ;
+DEM_STEMS ;
+PART ;
+PERS_PRON ;
+INTERR_PRON ;
+
+
+LEXICON VERB_STEMS
+! LEXICON PREFIXES
+@R.class.VAI@	VAI_STEMS ;
+@R.class.VII@	VII_STEMS ;
+@R.class.VTI@	VTI_STEMS ;
+@R.class.VTA@	VTA_STEMS ;
+@R.pos.NOUN@	VAI_STEMS ;
+@R.pos.NOUN@	VII_STEMS ;
+@R.pos.NOUN@	VTI_STEMS ;
+@R.pos.NOUN@	VTA_STEMS ;    
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VAI_STEMS ;
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VII_STEMS ;
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTI_STEMS ;
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTA_STEMS ;
+
+LEXICON NOUN_STEMS
+@R.pos.NOUN@ NA_STEMS ;
+@R.pos.NOUN@ NI_STEMS ;
+@R.class.VAI@ NA_STEMS ;
+@R.class.VII@ NI_STEMS ;
+
+LEXICON INIT_VAI_STEMS
+a'po'taki:a'po'taki VAI ;
+itapoo:itapoo%^DIPH VAI ;
+okska'si:okska'si VAI ;
+waahkayi:waahkayi VAI ;
+
+LEXICON PERS_VAI_STEMS
+a'po'taki:a'po'taki VAI ;
+itapoo:itapoo%^DIPH VAI ;
+okska'si:okska'si VAI ;
+waahkayi:ahkayi VAI ;
+
+LEXICON VAI_STEMS
+a'po'taki:a'po'taki VAI ;
+itapoo:itapoo%^DIPH VAI ;
+okska'si:okska'si VAI ;
+waahkayi:ahkayi VAI ;
+
+LEXICON INIT_VII_STEMS
+soka'pii:soka'pii VII ;
+ikkitsinaattsi:ikkitsinaattsi	VII ;
+maanikinako:maanikinako	VII ;
+
+LEXICON PERS_VII_STEMS
+soka'pii:soka'pii VII ;
+ikkitsinaattsi:i2kkitsinaattsi	VII ;
+maanikinako:anikinako	VII ;
+
+LEXICON VII_STEMS
+soka'pii:soka'pii VII ;
+ikkitsinaattsi:i2kkitsinaattsi	VII ;
+maanikinako:anikinako	VII ;
+
+LEXICON INIT_VTA_STEMS
+ai'stamatsi:ai'stamatsi VTA ;
+ihtsiipi:ihtsiipi VTA ;
+ikakomimm:ikakomimm VTA ;
+inakat:inakat VTA ;
+ino:ino VTA ;
+ipohkisstoyi:poohkisstoyi VTA ;
+
+LEXICON PERS_VTA_STEMS
+ai'stamatsi:ai'stamatsi VTA ;
+ihtsiipi:ihtsiipi VTA ;
+ikakomimm:ikakomimm VTA ;
+inakat:inakat VTA ;
+ino:ino VTA ;
+ipohkisstoyi:ipohkisstoyi VTA ;
+
+LEXICON VTA_STEMS
+ai'stamatsi:ai'stamatsi VTA ;
+ihtsiipi:ihtsiipi VTA ;
+ikakomimm:i2kakomimm VTA ;
+inakat:i2nakat VTA ;
+ino:i2no VTA ;
+ipohkisstoyi:i2pohkisstoyi VTA ;
+
+LEXICON INIT_VTI_STEMS
+oowatoo:oowatoo VTI ;
+ssksini:issksini VTI ;
+
+LEXICON PERS_VTI_STEMS
+oowatoo:i2owatoo VTI ;
+ssksini:ssksini VTI ;
+
+LEXICON VTI_STEMS
+oowatoo:i2owatoo VTI ;
+ssksini:ssksini VTI ;
+
+LEXICON INIT_NA_STEMS
+aakiiwa:aakii NA ;
+imitaawa:imitaa NA_IM ;
+isttoana:isttoan2 NA ;
+miistsisa:miistsis2 NA ;
+moksisa:moksis2 NA ;
+ninaawa:ninaa%^AIM NA ;
+poosa:poos NA_IM ;
+isska:issk NA ;
+
+LEXICON PERS_NA_STEMS
+aakiiwa:aakii NA ;
+imitaawa:omitaa NA_IM ;
+isttoana:%^SPottoan2 NA ;
+miistsisa:i2istsis2 NA ;
+moksisa:%^SPoksis2 NA ;
+ninaawa:inaa%^AIM NA ;
+poosa:ohpoos NA_IM ;
+isska:%^SPoohk NA ;
+
+LEXICON NA_STEMS
+aakiiwa:aakii NA ;
+imitaawa:omitaa NA_IM ;
+isttoana:i2sttoan2 NA ;
+miistsisa:i2istsis2 NA ;
+moksisa:oksis2 NA ;
+ninaawa:i2naa%^AIM NA ;
+poosa:ohpoos NA_IM ;
+isska:ohk NA ;
+
+LEXICON INIT_NI_STEMS
+aaapani:aaapan2 NI ;
+kinakini:kinakin2 NI ;
+mo'tokaani:mo'tokaan NI ;
+sinaakia'tsisi:sinaakia'tsis2 NI ;
+atsikini:atsikin2 NI ;
+aahkioohsa'tsisi:aahkioohsa'tsis2	NI ;
+miini:miin	NI ;
+
+LEXICON PERS_NI_STEMS
+aaapani:i2aapan2 NI ;
+kinakini:%^SPohkinakin2 NI ;
+mo'tokaani:%^SPo'tokaan NI ;
+sinaakia'tsisi:%^SPisinaakia'tsis2 NI ;
+atsikini:%^SPatsikin2 NI ;
+aahkioohsa'tsisi:aahkioohsa'tsis2	NI ;
+miini:i2in	NI ;
+
+LEXICON NI_STEMS
+aaapani:i2aapan2 NI ;
+kinakini:ohkinakin2 NI ;
+mo'tokaani:o'tokaan NI ;
+sinaakia'tsisi:sinaakia'tsis2 NI ;
+atsikini:itsikin2 NI ;
+aahkioohsa'tsisi:yaahkioohtsa'tsis2	NI ;
+miini:i2in	NI ;
+
+LEXICON DEP_STEMS
+@P.class.NA@ DEP_NA_STEMS ;
+@P.class.NI@ DEP_NI_STEMS ;
+
+LEXICON DEP_NA_STEMS
+! Test Stems
+! nohkowa:ohko                NAD ;
+! naaahsa:maaahs              NAD ;
+!nitana:itan                 NAD ;
+! niksissta:iksisst           NAD ;
+! Full list
+naaahsa:%^SPaaahs	NAD ;
+nitaakiaaahsa:aakiaaahs	NAD ;
+nitaakiima:aakiim	NAD ;
+nitawahkahtaana:awahkahtaan	NAD ;
+ni'sa:%^SPi's	NAD ;
+nitsi'sohkiimaana:i'sohkiimaan	NAD ;
+nitsiihkawawa:iihkawa	NAD ;
+niihsissa:%^SPiihsiss	NAD ;
+nikiihtsimaana:%^SPikiihtsimaan	NAD ;
+niksimmotsiima:%^SPiksimmotsiim	NAD ;
+niksissta:%^SPiksisst	NAD ;
+nikso'kowa:%^SPikso'kowa	NAD ;
+nimssa:%^SPimss	NAD ;
+nitsinaaahsa:inaaahs	NAD ;
+ninaapiima:%^SPinaapiim	NAD ;
+ninna:%^SPinn	NAD ;
+ninssta:%^SPinsst	NAD ;
+nippitaama:%^SPippitaam	NAD ;
+nisahkinaima:%^SPisahkinaim	NAD ;
+nisahkomaapiima:%^SPisahkomaapiim	NAD ;
+nissa:%^SPiss	NAD ;
+nisskana:%^SPisskan	NAD ;
+nitsissohkiimaana:issohkiimaan	NAD ;
+nissohkowa:%^SPissohko	NAD ;
+nissoko'sa:%^SPissoko's	NAD ;
+nissotana:%^SPissotan	NAD ;
+nisstamowa:%^SPisstamo	NAD ;
+nisstamoohkowa:%^SPisstamoohko	NAD ;
+nitana:%^SPitan	NAD ;
+niniitsistowahsina:%^SPiniitsistowahsin	NAD ;
+nohkowa:%^SPohko	NAD ;
+nohpapiiyihpa:o%^SPhpapiiyihp	NAD ;
+nohpatooma:%^SPohpatoom	NAD ;
+noko'sa:%^SPoko's	NAD ;
+nokoksissta:%^SPokoksisst	NAD ;
+nokonna:%^SPokonn	NAD ;
+nomahkinaima:%^SPomahkinaim	NAD ;
+nooma:%^SPoom	NAD ;
+nootoohkiimaana:ootoohkiimaan	NAD ;
+nitohkiimaana:ohkiimaan	NAD ;
+nootoyooma:%^SPootoyoom	NAD ;
+noppitaama:%^SPoppitaam	NAD ;
+nota'sa:%^SPota's	NAD ;
+noyinnaawa:%^SPoyinnaa	NAD ;
+nisskani'taama:%^SPsskani'taam	NAD ;
+niyiihkowa:%^SPiyiihkowa	NAD ;
+niisto:%^SPiisto NAD ;
+
+LEXICON DEP_NI_STEMS
+nookoowayi:%^SPookoowan     NID ;
+nookoowayi:%^SPookoowa     NID ;
+
+
+LEXICON NA
+@R.pos.NOUN@@P.class.NA@+NA:@R.pos.NOUN@@P.class.NA@0  IM ;
+@R.class.VAI@+NA+Der/VAI+VAI:@R.class.VAI@0 N_VAI_SUFFIXES  "weight: 10" ; 
+
+LEXICON NA_IM
+@R.pos.NOUN@@P.im.IM@@P.class.NA@+NA:@R.pos.NOUN@@P.im.IM@@P.class.NA@  IM ;
+@R.class.VAI@+NA+Der/VAI+VAI:@R.class.VAI@0 N_VAI_SUFFIXES "weight: 10" ;
+
+LEXICON NI
+@R.pos.NOUN@@P.class.NI@+NI:@R.pos.NOUN@@P.class.NI@0  IM ;
+@R.class.VII@+NI+Der/VII+VII:@R.class.VII@0 N_VII_SUFFIXES "weight: 10" ;
+
+LEXICON NI_IM
+@R.pos.NOUN@@P.im.IM@@P.class.NI@+NI:@R.pos.NOUN@@P.im.IM@@P.class.NI@0  IM ;
+@R.class.VII@+NI+Der/VII+VII:@R.class.VII@0 N_VII_SUFFIXES "weight: 10" ;
+
+LEXICON NAD
+@P.class.NA@+NAD:@P.class.NA@0 POSS_NUM ;
+
+LEXICON NID
+@P.class.NI@+NID:@P.class.NI@0 POSS_NUM ;
+
+LEXICON NOUN_SUFFIXES
+@R.class.NA@+NA:@R.class.NA@0 POSS_NUM ;
+@R.class.NI@+NI:@R.class.NI@0 POSS_NUM ;
+
+LEXICON IM
+!0 POSS_NUM ;
+@D.person.NULL@:@D.person.NULL@%>im POSS_NUM ;
+@D.person.NULL@@D.im.IM@ POSS_NUM ;
+@R.person.NULL@ POSS_NUM ;
+
+LEXICON POSS_NUM
+! Singular possessors
+@R.person.NI@+Px1Sg:@R.person.NI@0   NOUN_FINALS ;
+@R.person.KI@+Px2Sg:@R.person.KI@0   NOUN_FINALS ;
+@R.person.OT@+Px3Sg:@R.person.OT@0   NOUN_FINALS ;
+@R.person.NULL@:@R.person.NULL@0      NOUN_FINALS ;
+! Plural possessors
+@R.person.NI@+Px1Pl:@R.person.NI@%>innaan  NOUN_FINALS ;
+@R.person.KI@+Px21Pl:@R.person.KI@%>innoon NOUN_FINALS ;
+@R.person.KI@+Px2Pl:@R.person.KI@%>oaawa   NOUN_FINALS ;
+@R.person.OT@+Px3Pl:@R.person.OT@%>oaawa   NOUN_FINALS ;
+
+
+LEXICON NOUN_FINALS
+@R.class.NA@ NA_SUFFIXES ;
+@R.class.NI@ NI_SUFFIXES ;
+
+
+LEXICON NA_SUFFIXES
+! Obviative
+@R.person.NULL@+Obv:@R.person.NULL@%>yi # ; ! Optional obviative with non-possessed form
+@D.person.NULL@@R.person.OT@+Obv:@D.person.NULL@@R.person.OT@%>yi # ; ! Obligatory obviative with 3rd person possessor
+@D.person.NULL@@D.person.OT@+Obv:@D.person.NULL@@D.person.OT@%>yi # ; ! Optional obviative with non-3rd possessor
+! Plural
++Pl:%>iksi # ; ! Optional plural NO CONDITIONS (other than non-singular)
+! Non-Referring
++Non:%>i # ; ! Optional non-referring suffix, number unrestricted
+@D.person.OT@+Sg:@D.person.OT@%>wa # ; ! Optional singular for non-3rd person possessed, non-plural only
+
+
+LEXICON NI_SUFFIXES
+@D.number.PL@+Sg:@D.number.PL@%>yi # ; 
+@D.number.SG@+Pl:@D.number.SG@%>istsi # ;
+@D.number.SG@@D.number.PL@+Non:@D.number.SG@@D.number.PL@%>i # ;
+
+!LEXICON NI_SUFFIXES
+!@D.number.SG@+Sg:@D.number.SG@%>yi # ; 
+!@D.number.SG@+Pl:@D.number.SG@%>istsi # ;
+!@D.number.SG@@D.number.PL@+Non:@D.number.SG@@D.number.PL@%>i # ;
+
+
+
+LEXICON VERB_PREFIXES
+@P.class.VAI@	BASIC_PREFIXES ;
+@P.class.VII@	BASIC_PREFIXES ;
+@P.class.VTI@	BASIC_PREFIXES ;
+@P.class.VTA@	BASIC_PREFIXES ;
+
+LEXICON BASIC_PREFIXES
+@P.mode.IND@	BASIC_IND_PREFIXES ;
+@P.mode.CON@	BASIC_CNJ_PREFIXES ;
+@P.mode.SUB@	BASIC_SBJ_PREFIXES ;
+@P.mode.IRR@	BASIC_IRR_PREFIXES ;
+@P.mode.IMP@	BASIC_IMP_PREFIXES ;
+
+LEXICON BASIC_IND_PREFIXES
+@P.person.NI@:@P.person.NI@nit%< PERS ;
+@P.person.KI@:@P.person.KI@kit%< PERS ;
+@P.person.OT@:@P.person.OT@ot%< PERS ;
+@P.person.NULL@0 INIT ;
+
+LEXICON BASIC_CNJ_PREFIXES
+@P.person.NI@:@P.person.NI@nit%<    PERS ;
+@P.person.KI@:@P.person.KI@kit%<    PERS ;
+@P.person.OT@:@P.person.OT@ot%<     PERS ;
+@P.person.NULL@0    INIT ;
+
+LEXICON BASIC_SBJ_PREFIXES
+@P.person.NULL@0	INIT ;
+
+LEXICON BASIC_IRR_PREFIXES
+@P.person.NI@:@P.person.NI@nit%<    PERS ;
+@P.person.KI@:@P.person.KI@kit%<    PERS ;
+@P.person.NULL@0    INIT ;
+
+LEXICON BASIC_IMP_PREFIXES
+@P.person.IMP@0    INIT ;
+
+LEXICON NOUN_PREFIXES
+NOUN_INDEP_PREFIXES ;
+NOUN_DEP_PREFIXES ;
+
+LEXICON NOUN_INDEP_PREFIXES
+@P.person.NI@:@P.person.NI@nit%<    PERS ;
+@P.person.KI@:@P.person.KI@kit%<    PERS ;
+@P.person.OT@:@P.person.OT@ot%<     PERS ;
+@P.person.NULL@0                    INIT ;
+
+!LEXICON PRE_INDEP_FLAG
+!@R.pos.NOUN@ PRESTEMS ;
+!@R.pos.VERB@ PRESTEMS ;
+
+LEXICON NOUN_DEP_PREFIXES
+@P.person.NI@:@P.person.NI@nit%<    DEP_STEMS ;
+@P.person.KI@:@P.person.KI@kit%<    DEP_STEMS ;
+@P.person.OT@:@P.person.OT@ot%<    DEP_STEMS ;
+
+LEXICON INIT
+INIT_PRESTEMS ;
+INIT_VERB_STEMS ;
+INIT_NOUN_STEMS ;
+
+LEXICON PERS
+PERS_PRESTEMS ;
+PERS_VERB_STEMS ;
+PERS_NOUN_STEMS ;
+
+LEXICON INIT_PRESTEMS
+! polarity prefixes (i.e., negation and similar in initial/first slot after person)
+@R.mode.IND@@P.neg.NEG@PS/maat+:@R.mode.IND@@P.neg.NEG@maat%< TENSE_PREFIXES ;
+@R.mode.IMP@@P.neg.NEG@PS/miin+:@R.mode.IMP@@P.neg.NEG@miin%< PRESTEMS ;
+@R.mode.IMP@@P.neg.NEG@PS/piin+:@R.mode.IMP@@P.neg.NEG@piin%< PRESTEMS ;
+@R.mode.IND@@P.neg.NEG@PS/maataommita'p+:@R.mode.IND@@P.neg.NEG@maataommita'p%< TENSE_PREFIXES ; ! consider skipping tense
+@P.neg.NEG@PS/kata'+:@P.neg.NEG@kata'%< TENSE_PREFIXES ;
+@P.neg.NEG@PS/aahk+:@P.neg.NEG@aahk%< TENSE_PREFIXES ;
+@P.neg.NEG@PS/aahksaw+:@P.neg.NEG@aahksaw%< TENSE_PREFIXES ;
+@P.neg.NEG@PS/aahksikkam+:@P.neg.NEG@aahksikkam%< TENSE_PREFIXES ;
+@P.neg.NEG@PS/aahksta'+:@P.neg.NEG@aahksta'%< TENSE_PREFIXES ; ! possibly only cnj
+@P.neg.NEG@PS/aaksta'+:@P.neg.NEG@aaksta'%< TENSE_PREFIXES ; ! possibly only cnj
+
+!tense
+@R.pos.VERB@@D.mode.IMP@PS/ayaak+:@R.pos.VERB@@D.mode.IMP@ayaak%< PRESTEMS ; ! imm future
+@R.pos.VERB@@D.mode.IMP@PS/yaak+:@R.pos.VERB@@D.mode.IMP@aak%< PRESTEMS ; ! future
+@R.pos.VERB@@D.mode.IMP@PS/ii+:@R.pos.VERB@@D.mode.IMP@ii%< PRESTEMS ; ! past
+@R.pos.VERB@@D.mode.IMP@PS/na+:@R.pos.VERB@@D.mode.IMP@na%< PRESTEMS ; ! Siksika past
+
+!"aspect-like" prestems
+PS/a+:a	PSBOUND1 ;
+PS/a'+:a'	PSBOUND1 ;
+PS/akaa+:akaa	PSBOUND1 ;
+
+!general prestems
+PS/aahs+:yaahs	PSBOUND2 ;
+PS/aanist+:niit	PSBOUND2 ;
+PS/aapam+:aapam	PSBOUND2 ;
+PS/ahkiaap+:ahkiaap	PSBOUND2 ;
+PS/aiist+:aiist	PSBOUND2 ;
+PS/aisskahs+:aisskahs	PSBOUND2 ;
+PS/aka+:aka	PSBOUND2 ;
+PS/akkaw+:akkaG	PSBOUND2 ;
+PS/akoksska+:akoksska	PSBOUND2 ;
+PS/ama+:ama	PSBOUND2 ;
+PS/anow+:anoG	PSBOUND2 ;
+PS/a'p+:a'p	PSBOUND2 ;
+PS/apoyi+:apoyi	PSBOUND2 ;
+PS/atso't+:atso't	PSBOUND2 ;
+PS/iik+:iik	PSBOUND2 ;
+PS/iitsiksist+:iitsiksist	PSBOUND2 ;
+PS/ikipp+:kipp	PSBOUND2 ;
+PS/ikkam+:ikkam	PSBOUND2 ;
+PS/ikkam+:kam	PSBOUND2 ;
+PS/iksisap+:iksisap	PSBOUND2 ;
+PS/iksist+:ksist	PSBOUND2 ;
+PS/i'nak+:i'nak	PSBOUND2 ;
+PS/ipiihk+:piihk	PSBOUND2 ;
+PS/ipiiw+:piiG	PSBOUND2 ;
+PS/istsa'+:istsa'	PSBOUND2 ;
+PS/istsa'+:stsa'	PSBOUND2 ;
+PS/isttani+:isttani	PSBOUND2 ;
+PS/isttsikohpo+:isttsikohpo	PSBOUND2 ;
+PS/it+:it	PSBOUND2 ;
+PS/itam+:itam	PSBOUND2 ;
+PS/itap+:itap	PSBOUND2 ;
+PS/i'tsin+:i'tsin	PSBOUND2 ;
+PS/kaak+:kaak	PSBOUND2 ;
+PS/kaat+:kaat	PSBOUND2 ;
+PS/ksikk+:ksikk	PSBOUND2 ;
+PS/maak+:maak	PSBOUND2 ;
+PS/maohk+:maohk	PSBOUND2 ;
+PS/matoom+:matoom	PSBOUND2 ;
+PS/matt+:matt	PSBOUND2 ;
+PS/miistap+:miistap	PSBOUND2 ;
+PS/mi'k+:mi'k	PSBOUND2 ;
+PS/misam+:misam	PSBOUND2 ;
+PS/niit+:niit	PSBOUND2 ;
+PS/noohkatt+:noohkatt	PSBOUND2 ;
+PS/ohkana+:ohkana	PSBOUND2 ;
+PS/ohkan+:ohkan	PSBOUND2 ;
+PS/ohko+:ohko	PSBOUND2 ;
+PS/ohkott+:ohkott	PSBOUND2 ;
+PS/ohpo+:ohpo	PSBOUND2 ;
+PS/ohpok+:pok	PSBOUND2 ;
+PS/ohpok+:ohpok	PSBOUND2 ;
+PS/ohsohkat+:ohsohkat	PSBOUND2 ;
+PS/oht+:iiht	PSBOUND2 ;
+PS/omaa+:iimaa	PSBOUND2 ;
+PS/omahk+:omahk	PSBOUND2 ;
+PS/omia'nist+:omia'nist	PSBOUND2 ;
+PS/oohsi+:oohsi	PSBOUND2 ;
+PS/oomok+:oomok	PSBOUND2 ;
+PS/o't+:o't	PSBOUND2 ;
+PS/otam+:otam	PSBOUND2 ;
+PS/piitsiyoohk+:piitsiyoohk	PSBOUND2 ;
+PS/poohsap+:poohsap	PSBOUND2 ;
+PS/sa+:sa	PSBOUND2 ;
+PS/sik+:sik	PSBOUND2 ;
+PS/sikotahko+:sikotahko	PSBOUND2 ;
+PS/sistsik+:sistsik	PSBOUND2 ;
+PS/sotam+:sotam	PSBOUND2 ;
+PS/ssk+:issk	PSBOUND2 ;
+PS/ssp+:issp	PSBOUND2 ;
+PS/sstsaap+:isstsaap	PSBOUND2 ;
+PS/sstsim+:isstsim	PSBOUND2 ;
+PS/sstsina'+:isstsina'	PSBOUND2 ;
+PS/stam+:stam	PSBOUND2 ;
+PS/yaahs+:yaahs	PSBOUND2 ;
+
+LEXICON INIT_VERB_STEMS
+@R.class.VAI@	INIT_VAI_STEMS ;
+@R.class.VII@	INIT_VII_STEMS ;
+@R.class.VTI@	INIT_VTI_STEMS ;
+@R.class.VTA@	INIT_VTA_STEMS ;
+@R.pos.NOUN@	INIT_VAI_STEMS ;
+@R.pos.NOUN@	INIT_VII_STEMS ;
+@R.pos.NOUN@	INIT_VTI_STEMS ;
+@R.pos.NOUN@	INIT_VTA_STEMS ;
+
+LEXICON INIT_NOUN_STEMS
+@R.pos.NOUN@ INIT_NA_STEMS ;
+@R.pos.NOUN@ INIT_NI_STEMS ;
+@R.class.VAI@ INIT_NA_STEMS ;
+@R.class.VII@ INIT_NI_STEMS ;
+
+LEXICON PERS_PRESTEMS
+! polarity prefixes (i.e., negation and similar in initial/first slot after person)
+@R.mode.IND@@P.neg.NEG@PS/maat+:@R.mode.IND@@P.neg.NEG@%^SPimaat%< TENSE_PREFIXES ;
+@R.mode.IND@@P.neg.NEG@PS/maataommita'p+:@R.mode.IND@@P.neg.NEG@%^SPimaataommita'p%< TENSE_PREFIXES ; ! consider skipping tense
+@P.neg.NEG@PS/kata'+:@P.neg.NEG@%^SPikata'%< TENSE_PREFIXES ;
+@P.neg.NEG@PS/aahk+:@P.neg.NEG@%^SPaahk%< TENSE_PREFIXES ;
+@P.neg.NEG@PS/aahksaw+:@P.neg.NEG@%^SPaahksaw%< TENSE_PREFIXES ;
+@P.neg.NEG@PS/aahksikkam+:@P.neg.NEG@%^SPaahksikkam%< TENSE_PREFIXES ;
+@P.neg.NEG@PS/aahksta'+:@P.neg.NEG@%^SPaahksta'%< TENSE_PREFIXES ; ! possibly only cnj
+@P.neg.NEG@PS/aaksta'+:@P.neg.NEG@%^SPaaksta'%< TENSE_PREFIXES ; ! possibly only cnj
+
+!tense
+@R.pos.VERB@@D.mode.IMP@PS/ayaak+:@R.pos.VERB@@D.mode.IMP@ayaak%< PRESTEMS ; ! imm future
+@R.pos.VERB@@D.mode.IMP@PS/yaak+:@R.pos.VERB@@D.mode.IMP@aak%< PRESTEMS ; ! future
+@R.pos.VERB@@D.mode.IMP@PS/ii+:@R.pos.VERB@@D.mode.IMP@ii%< PRESTEMS ; ! past
+@R.pos.VERB@@D.mode.IMP@PS/na+:@R.pos.VERB@@D.mode.IMP@na%< PRESTEMS ; ! Siksika past
+
+!"aspect-like" prestems
+PS/a+:a	PSBOUND1 ;
+PS/a'+:a'	PSBOUND1 ;
+PS/akaa+:akaa	PSBOUND1 ;
+
+!general prestems
+PS/aahs+:yahs	PSBOUND2 ;
+PS/aanist+:%^SPaanist	PSBOUND2 ;
+PS/aapam+:opam	PSBOUND2 ;
+PS/ahkiaap+:ahkiaap	PSBOUND2 ;
+PS/aiist+:aist	PSBOUND2 ;
+PS/aisskahs+:aisskahs	PSBOUND2 ;
+PS/aka+:%^SPika	PSBOUND2 ;
+PS/akkaw+:akkaG	PSBOUND2 ;
+PS/akoksska+:akoksska	PSBOUND2 ;
+PS/ama+:ama	PSBOUND2 ;
+PS/anow+:anoG	PSBOUND2 ;
+PS/a'p+:a'p	PSBOUND2 ;
+PS/apoyi+:apoyi	PSBOUND2 ;
+PS/atso't+:atso't	PSBOUND2 ;
+PS/iik+:iik	PSBOUND2 ;
+PS/iitsiksist+:iitsiksist	PSBOUND2 ;
+PS/ikipp+:ikipp	PSBOUND2 ;
+PS/ikkam+:ikkam	PSBOUND2 ;
+PS/iksisap+:iksisap	PSBOUND2 ;
+PS/iksist+:iksist	PSBOUND2 ;
+PS/i'nak+:i'nak	PSBOUND2 ;
+PS/ipiihk+:ipiihk	PSBOUND2 ;
+PS/ipiiw+:ipiiG	PSBOUND2 ;
+PS/istsa'+:istsa'	PSBOUND2 ;
+PS/isttani+:isttani	PSBOUND2 ;
+PS/isttsikohpo+:isttsikohpo	PSBOUND2 ;
+PS/it+:it	PSBOUND2 ;
+PS/itam+:itam	PSBOUND2 ;
+PS/itap+:itap	PSBOUND2 ;
+PS/i'tsin+:i'tsin	PSBOUND2 ;
+PS/kaak+:%^SPi2kaak	PSBOUND2 ;
+PS/kaat+:kaat	PSBOUND2 ;
+PS/ksikk+:ksikk	PSBOUND2 ;
+PS/maak+:maak	PSBOUND2 ;
+PS/maohk+:omaohk	PSBOUND2 ;
+PS/matoom+:otoom	PSBOUND2 ;
+PS/matt+:%^SPimatt	PSBOUND2 ;
+PS/miistap+:yiistap	PSBOUND2 ;
+PS/mi'k+:i'k	PSBOUND2 ;
+PS/misam+:isam	PSBOUND2 ;
+PS/niit+:%^SPiniit	PSBOUND2 ;
+PS/niit+:iit	PSBOUND2 ;
+PS/noohkatt+:noohkatt	PSBOUND2 ;
+PS/ohkana+:ohkana	PSBOUND2 ;
+PS/ohkan+:ohkan	PSBOUND2 ;
+PS/ohko+:ohko	PSBOUND2 ;
+PS/ohkott+:ohkott	PSBOUND2 ;
+PS/ohpo+:ohpo	PSBOUND2 ;
+PS/ohpok+:ohpok	PSBOUND2 ;
+PS/ohsohkat+:ohsohkat	PSBOUND2 ;
+PS/oht+:%^SPomoht	PSBOUND2 ;
+PS/omaa+:omaa	PSBOUND2 ;
+PS/omahk+:omahk	PSBOUND2 ;
+PS/omia'nist+:omia'nist	PSBOUND2 ;
+PS/oohsi+:ohsi	PSBOUND2 ;
+PS/oomok+:oomok	PSBOUND2 ;
+PS/o't+:o't	PSBOUND2 ;
+PS/otam+:otam	PSBOUND2 ;
+PS/piitsiyoohk+:piitsiyoohk	PSBOUND2 ;
+PS/poohsap+:ipoohsap	PSBOUND2 ;
+PS/sa+:sa	PSBOUND2 ;
+PS/sik+:sik	PSBOUND2 ;
+PS/sikotahko+:sikotahko	PSBOUND2 ;
+PS/sistsik+:sistsik	PSBOUND2 ;
+PS/sotam+:sotam	PSBOUND2 ;
+PS/ssk+:ssk	PSBOUND2 ;
+PS/ssp+:ssp	PSBOUND2 ;
+PS/sstsaap+:sstsaap	PSBOUND2 ;
+PS/sstsim+:sstsim	PSBOUND2 ;
+PS/sstsina'+:sstsina'	PSBOUND2 ;
+PS/stam+:stam	PSBOUND2 ;
+PS/yaahs+:yaahs	PSBOUND2 ;
+
+LEXICON PERS_VERB_STEMS
+@R.class.VAI@	PERS_VAI_STEMS ;
+@R.class.VII@	PERS_VII_STEMS ;
+@R.class.VTI@	PERS_VTI_STEMS ;
+@R.class.VTA@	PERS_VTA_STEMS ;
+@R.pos.NOUN@	PERS_VAI_STEMS ;
+@R.pos.NOUN@	PERS_VII_STEMS ;
+@R.pos.NOUN@	PERS_VTI_STEMS ;
+@R.pos.NOUN@	PERS_VTA_STEMS ;
+
+LEXICON PERS_NOUN_STEMS
+
+@R.pos.NOUN@ PERS_NA_STEMS ;
+@R.pos.NOUN@ PERS_NI_STEMS ;
+@R.class.VAI@ PERS_NA_STEMS ;
+@R.class.VII@ PERS_NI_STEMS ;
+
+LEXICON TENSE_PREFIXES !elsewhere tense (e.g. after negation)
+0 PRESTEMS ;
+@R.pos.VERB@@D.mode.IMP@PS/ayaak+:@R.pos.VERB@@D.mode.IMP@ayaak%< PRESTEMS ; ! imm future
+@R.pos.VERB@@D.mode.IMP@PS/yaak+:@R.pos.VERB@@D.mode.IMP@yaak%< PRESTEMS ; ! future
+@R.pos.VERB@@D.mode.IMP@PS/ii+:@R.pos.VERB@@D.mode.IMP@ii%< PRESTEMS ; ! past
+@R.pos.VERB@@D.mode.IMP@PS/na+:@R.pos.VERB@@D.mode.IMP@na%< PRESTEMS ; ! Siksika past
+
+LEXICON PRESTEMS
+PSSET1 ;
+
+LEXICON PSSET1 !elsewhere aspect
+VERB_STEMS ;
+NOUN_STEMS ;
+PSGATE1 ;
+PS/a+:a PSBOUND1 ; ! durative
+PS/a'+:a' PSBOUND1 ; ! inchoative
+PS/ikaa+:^SPikaa PSBOUND1 ; ! perfective, need to model initial vs non initial forms
+
+LEXICON PSBOUND1
+0:%< PSGATE1 ;
+	
+LEXICON PSGATE1
+VERB_STEMS ;
+NOUN_STEMS ;
+PSSET2 ;
+	
+LEXICON PSSET2 !elsewhere general prestems
+PS/aahs+:yahs	PSBOUND2 ;
+PS/aanist+:anist	PSBOUND2 ;
+PS/aapam+:opam	PSBOUND2 ;
+PS/ahkiaap+:ahkiaap	PSBOUND2 ;
+PS/aiist+:aist	PSBOUND2 ;
+PS/aisskahs+:aisskahs	PSBOUND2 ;
+PS/aka+:i2ka	PSBOUND2 ;
+PS/akkaw+:akkaG	PSBOUND2 ;
+PS/akoksska+:akoksska	PSBOUND2 ;
+PS/ama+:ama	PSBOUND2 ;
+PS/anow+:anoG	PSBOUND2 ;
+PS/a'p+:a'p	PSBOUND2 ;
+PS/apoyi+:apoyi	PSBOUND2 ;
+PS/atso't+:atso't	PSBOUND2 ;
+PS/iik+:i2ik	PSBOUND2 ;
+PS/iitsiksist+:iitsiksist	PSBOUND2 ;
+PS/ikipp+:i2kipp	PSBOUND2 ;
+PS/ikkam+:i2kkam	PSBOUND2 ;
+PS/iksisap+:i2ksisap	PSBOUND2 ;
+PS/iksist+:i2ksist	PSBOUND2 ;
+PS/i'nak+:i2'nak	PSBOUND2 ;
+PS/ipiihk+:i2piihk	PSBOUND2 ;
+PS/ipiiw+:i2piiG	PSBOUND2 ;
+PS/istsa'+:i2stsa'	PSBOUND2 ;
+PS/isttani+:i2sttani	PSBOUND2 ;
+PS/isttsikohpo+:i2sttsikohpo	PSBOUND2 ;
+PS/it+:it	PSBOUND2 ;
+PS/itam+:itam	PSBOUND2 ;
+PS/itap+:itap	PSBOUND2 ;
+PS/i'tsin+:i'tsin	PSBOUND2 ;
+PS/kaak+:i2kak	PSBOUND2 ;
+PS/kaat+:kaat	PSBOUND2 ;
+PS/ksikk+:i2ksikk	PSBOUND2 ;
+PS/maak+:maak	PSBOUND2 ;
+PS/maohk+:omaohk	PSBOUND2 ;
+PS/matoom+:otoom	PSBOUND2 ;
+PS/matt+:matt	PSBOUND2 ;
+PS/miistap+:yiistap	PSBOUND2 ;
+PS/mi'k+:i2'k	PSBOUND2 ;
+PS/misam+:isam	PSBOUND2 ;
+PS/niit+:i2it	PSBOUND2 ;
+PS/noohkatt+:oohkatt	PSBOUND2 ;
+PS/ohkana+:ohkana	PSBOUND2 ;
+PS/ohkan+:ohkan	PSBOUND2 ;
+PS/ohko+:ohko	PSBOUND2 ;
+PS/ohkott+:ohkott	PSBOUND2 ;
+PS/ohpo+:ohpo	PSBOUND2 ;
+PS/ohpok+:ohpok	PSBOUND2 ;
+PS/ohsohkat+:ohsohkat	PSBOUND2 ;
+PS/oht+:oht	PSBOUND2 ;
+PS/omaa+:omaa	PSBOUND2 ;
+PS/omahk+:omahk	PSBOUND2 ;
+PS/omia'nist+:omia'nist	PSBOUND2 ;
+PS/oohsi+:ohsi	PSBOUND2 ;
+PS/oomok+:oomok	PSBOUND2 ;
+PS/o't+:o't	PSBOUND2 ;
+PS/otam+:otam	PSBOUND2 ;
+PS/piitsiyoohk+:i2piitsiyoohk	PSBOUND2 ;
+PS/poohsap+:i2poohsap	PSBOUND2 ;
+PS/sa+:sa	PSBOUND2 ;
+PS/sik+:sik	PSBOUND2 ;
+PS/sikotahko+:sikotahko	PSBOUND2 ;
+PS/sistsik+:i2sistsik	PSBOUND2 ;
+PS/sotam+:sotam	PSBOUND2 ;
+PS/ssk+:ssk	PSBOUND2 ;
+PS/ssp+:ssp	PSBOUND2 ;
+PS/sstsaap+:sstsaap	PSBOUND2 ;
+PS/sstsim+:sstsim	PSBOUND2 ;
+PS/sstsina'+:sstsina'	PSBOUND2 ;
+PS/stam+:stam	PSBOUND2 ;
+PS/yaahs+:yaahs	PSBOUND2 ;
+
+LEXICON PSBOUND2
+0:%< PSGATE2 ;
+
+LEXICON PSGATE2
+PSSET1 ;
+PSSET2 ;
+VERB_STEMS ;
+NOUN_STEMS ;
+
+
 !! Verb suffixation
 
 LEXICON VAI
@@ -22,7 +1885,7 @@ LEXICON VTA
 
 LEXICON VAI_DERIVATION
 @R.pos.VERB@+VAI:@R.pos.VERB@0                                           VAI_SUFFIXES ;
-@R.pos.VERB@+VAI+Der/Caus:@R.pos.VERB@%>áttsi                            VTA "weight: 10" ;
+@R.pos.VERB@+VAI+Der/Caus:@R.pos.VERB@%>attsi                            VTA "weight: 10" ;
 @R.pos.VERB@+VAI+Der/Caus2:@R.pos.VERB@%>pi                              VTA "weight: 10" ; ! Rare, give low weight
 @R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo  VTA_SUFFIXES "weight: 10" ;
 @R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>omo VTA_SUFFIXES "weight: 10" ;
@@ -300,12 +2163,12 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NI@+1Sg+4SgO+Interr:@R.person.NI@%>ayiniwaatsiksi # ;
 @R.person.KI@+2Sg+4SgO+Interr:@R.person.KI@%>ayiniwaatsiksi # ;
 @R.person.NULL@+3Sg+4SgO+Interr:@R.person.NULL@%>yiiwaatsiksi # ;
-@R.person.NI@+1Pl+3SgO+Interr:@R.person.NI@%>annáánawaatsiksi # ;
-@R.person.KI@+2Pl+3SgO+Interr:@R.person.KI@%>awááwaatsiksi # ;
-@R.person.NULL@+21Pl+3SgO+Interr:@R.person.NULL@%>ááwa # ;
-@R.person.NI@+1Pl+4SgO+Interr:@R.person.NI@%>annáániwa # ;
-@R.person.KI@+2Pl+4SgO+Interr:@R.person.KI@%>awááyiniwa # ;
-@R.person.KI@+21Pl+4SgO+Interr:@R.person.KI@%>ááwa # ;
+@R.person.NI@+1Pl+3SgO+Interr:@R.person.NI@%>annaanawaatsiksi # ;
+@R.person.KI@+2Pl+3SgO+Interr:@R.person.KI@%>awaawaatsiksi # ;
+@R.person.NULL@+21Pl+3SgO+Interr:@R.person.NULL@%>aawa # ;
+@R.person.NI@+1Pl+4SgO+Interr:@R.person.NI@%>annaaniwa # ;
+@R.person.KI@+2Pl+4SgO+Interr:@R.person.KI@%>awaayiniwa # ;
+@R.person.KI@+21Pl+4SgO+Interr:@R.person.KI@%>aawa # ;
 @R.person.NULL@+3Pl+4SgO+Interr:@R.person.NULL@%>waiksaawa # ;
 ! Interrogatives DIRECT Plural Object
 @R.person.NI@+1Sg+3PlO+Interr:@R.person.NI@%>waiksaawa # ;
@@ -314,12 +2177,12 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.KI@+2Sg+4PlO+Interr:@R.person.KI@%>waiksaawa # ;
 @R.person.NULL@+3Sg+4PlO+Interr:@R.person.NULL@%>waiksaawa # ;
 @R.person.NULL@+3Sg+4PlO+Interr:@R.person.NULL@%>waiksaawa # ;
-@R.person.KI@+1Pl+2PlO+Interr:@R.person.KI@%>ohpinnáánawa # ;	
-@R.person.NI@+1Pl+3PlO+Interr:@R.person.NI@%>annáániwa # ;	
-@R.person.NI@+1Pl+4PlO+Interr:@R.person.NI@%>annáániwa # ;	
-@R.person.KI@+2Pl+3PlO+Interr:@R.person.KI@%>awááyiwa # ;
-@R.person.KI@+2Pl+4PlO+Interr:@R.person.KI@%>awááyiwa # ;
-@R.person.NULL@+21Pl+3PlO+Interr:@R.person.NULL@%>ááyiwa # ;
+@R.person.KI@+1Pl+2PlO+Interr:@R.person.KI@%>ohpinnaanawa # ;	
+@R.person.NI@+1Pl+3PlO+Interr:@R.person.NI@%>annaaniwa # ;	
+@R.person.NI@+1Pl+4PlO+Interr:@R.person.NI@%>annaaniwa # ;	
+@R.person.KI@+2Pl+3PlO+Interr:@R.person.KI@%>awaayiwa # ;
+@R.person.KI@+2Pl+4PlO+Interr:@R.person.KI@%>awaayiwa # ;
+@R.person.NULL@+21Pl+3PlO+Interr:@R.person.NULL@%>aayiwa # ;
 ! Interrogatives INVERSE Singular Object
 @R.person.NI@+3Sg+1SgO+Interr:@R.person.NI@%>%^INVokaatsiksi # ;
 @R.person.KI@+3Sg+2SgO+Interr:@R.person.KI@%>%^INVokaatsiksi # ;
@@ -335,20 +2198,20 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NULL@+4Pl+3PlO+Interr:@R.person.NULL@%>%^INVokaiksaawa # ;
 ! Interrogatives INVERSE Plural Object
 @R.person.KI@+2Sg+1PlO+Interr:@R.person.KI@%>%^INVokihpinnaana # ;
-@R.person.NI@+3Sg+1PlO+Interr:@R.person.NI@%>%^INVokinnáánawa # ;
-@R.person.KI@+3Sg+2PlO+Interr:@R.person.KI@%>%^INVokoááwa # ;
-@R.person.KI@+3Sg+21PlO+Interr:@R.person.KI@%>%^INVokááwa # ;
-@R.person.NI@+4Sg+1PlO+Interr:@R.person.NI@%>%^INVokinnáániniwa # ;
-@R.person.KI@+4Sg+2PlO+Interr:@R.person.KI@%>%^INVokoááyiniwa # ;
-@R.person.KI@+4Sg+3PlO+Interr:@R.person.KI@%>%^INVokawááyiniwa # ;
+@R.person.NI@+3Sg+1PlO+Interr:@R.person.NI@%>%^INVokinnaanawa # ;
+@R.person.KI@+3Sg+2PlO+Interr:@R.person.KI@%>%^INVokoaawa # ;
+@R.person.KI@+3Sg+21PlO+Interr:@R.person.KI@%>%^INVokaawa # ;
+@R.person.NI@+4Sg+1PlO+Interr:@R.person.NI@%>%^INVokinnaaniniwa # ;
+@R.person.KI@+4Sg+2PlO+Interr:@R.person.KI@%>%^INVokoaayiniwa # ;
+@R.person.KI@+4Sg+3PlO+Interr:@R.person.KI@%>%^INVokawaayiniwa # ;
 @R.person.KI@+4Sg+21PlO+Interr:@R.person.KI@%>%^INVokiyiniwa # ;
 @R.person.NULL@+4Sg+3SgO+Interr:@R.person.NULL@%>%^INVokaiksaawa # ;
-@R.person.NI@+3Pl+1PlO+Interr:@R.person.NI@%>%^INVokinnáániwa # ;
-@R.person.KI@+3Pl+2PlO+Interr:@R.person.KI@%>%^INVokoááyiwa # ;
+@R.person.NI@+3Pl+1PlO+Interr:@R.person.NI@%>%^INVokinnaaniwa # ;
+@R.person.KI@+3Pl+2PlO+Interr:@R.person.KI@%>%^INVokoaayiwa # ;
 @R.person.KI@+3Pl+21PlO+Interr:@R.person.KI@%>%^INVokiyiwa # ;
-@R.person.NI@+4Pl+1PlO+Interr:@R.person.NI@%>%^INVokinnáániwa # ;
-@R.person.KI@+4Pl+2PlO+Interr:@R.person.KI@%>%^INVokoááyiwa # ;
-@R.person.KI@+4Pl+3PlO+Interr:@R.person.KI@%>%^INVokoááyiwa # ;
+@R.person.NI@+4Pl+1PlO+Interr:@R.person.NI@%>%^INVokinnaaniwa # ;
+@R.person.KI@+4Pl+2PlO+Interr:@R.person.KI@%>%^INVokoaayiwa # ;
+@R.person.KI@+4Pl+3PlO+Interr:@R.person.KI@%>%^INVokoaayiwa # ;
 @R.person.KI@+4Pl+21PlO+Interr:@R.person.KI@%>%^INVokiyiwa # ;
 @R.person.NULL@+4Pl+3SgO+Interr:@R.person.NULL@%>%^INVokaiksaawa # ;
 
@@ -611,14 +2474,14 @@ LEXICON ENCLITICS
 0 # ;
 +PRO+3/%0:%>aawa ENCLITICS_BOUND ;
 +PRO+3Pl:%>%^PROaiksi ENCLITICS_BOUND ;
-+PRO+D3Sg:%>%^PROáyi ENCLITICS_BOUND ;
++PRO+D3Sg:%>%^PROayi ENCLITICS_BOUND ;
 +PRO+%0Pl:%>%^PROaistsi ENCLITICS_BOUND ;
 
 LEXICON ENCLITICS_BOUND
 0 # ;
 +PRO+3/%0:%>aawa # ;
 +PRO+3Pl:%>aiksi # ;
-+PRO+D3Sg:%>áyi # ;
++PRO+D3Sg:%>ayi # ;
 +PRO+%0Pl:%>aistsi # ;
 
 LEXICON VERB_DER_NOM_SUFFIXES
@@ -749,8 +2612,131 @@ LEXICON N_ENCLITICS !! [OLD: ENCLITICS]
 0 # ;
 +PRO+3/%0:%>aawa # ;
 +PRO+3Pl:%>%^PROaiksi # ;
-+PRO+D3Sg:%>%^PROáyi # ;
++PRO+D3Sg:%>%^PROayi # ;
 +PRO+%0Pl:%>%^PROaistsi # ;
 
 !! END OF VERBINESS
+
+
+
+LEXICON PART
+aa+Ipc:aa # ;
+amaahtsiksi+Ipc:amaahtsiksi # ;
+annaatsiksi+Ipc:annaatsiksi # ;
+anni+Ipc:anni # ;
+annia+Ipc:annia # ;
+anniayi+Ipc:anniayi # ;
+anniihk+Ipc:anniihk # ;
+annohk+Ipc:annohk # ;
+assa+Ipc:assa # ;
+ayaoo+Ipc:ayaoo # ;
+ha'+Ipc:ha' # ;
+ha'ayaa+Ipc:ha'ayaa # ;
+hannia+Ipc:hannia # ;
+kako+Ipc:kako # ;
+kamotaana+Ipc:kamotaana # ;
+kayiiwa+Ipc:kayiiwa # ;
+ki+Ipc:ki # ;
+ki+Ipc:ki # ;
+kiaayaawa+Ipc:kiaayaawa # ;
+kiai'+Ipc:kiai' # ;
+kianniayi+Ipc:kianniayi # ;
+kiiwa+Ipc:kiiwa # ;
+kiiwahtao'+Ipc:kiiwahtao' # ;
+kika+Ipc:kika # ;
+kookonaa+Ipc:kookonaa # ;
+kookowaa+Ipc:kookowaa # ;
+na'+Ipc:na' # ;
+na'a+Ipc:na'a # ;
+naanaan+Ipc:naanaan # ;
+napi+Ipc:napi # ;
+niowaa+Ipc:niowaa # ;
+niowaakiaaki+Ipc:niowaakiaaki # ;
+nisaa+Ipc:nisaa # ;
+nissko+Ipc:nissko # ;
+oki+Ipc:oki # ;
+oki+Ipc:oki # ;
+oohsiniinamma+Ipc:oohsiniinamma # ;
+poka+Ipc:poka # ;
+pokaa+Ipc:pokaa # ;
+saa+Ipc:saa # ;
+saahkayi+Ipc:saahkayi # ;
+tama'sahkaa+Ipc:tama'sahkaa # ;
+tsa+Ipc:tsa # ;
+tsaa+Ipc:tsaa # ;
+tsaahtai'kayi+Ipc:tsaahtai'kayi # ;
+tsahtao'+Ipc:tsahtao' # ;
+tsiki+Ipc:tsiki # ;
+tsiksika+Ipc:tsiksika # ;
+tsima+Ipc:tsima # ;
+tska+Ipc:tska # ;
+tsss+Ipc:tsss # ;
+waiiyai+Ipc:waiiyai # ;
+yaoo+Ipc:yaoo # ;
+
+
+
+
+LEXICON PERS_PRON
+niistowa+Pron+Pers+1Sg:niistowa # ;
+niistowa+Pron+Pers+1Sg:niisto # ;
+niistowa+Pron+Pers+1Sg+Obv:niistoyi # ;
+kiistowa+Pron+Pers+2Sg:kiistowa # ;
+kiistowa+Pron+Pers+2Sg:kiisto # ;
+kiistowa+Pron+Pers+2Sg+Obv:kiistoyi # ;
+ostoyi+Pron+Pers+3Sg:ostoyi # ;
+niistonnaana+Pron+Pers+1Pl:niistonnaana # ;
+niistonnaana+Pron+Pers+1Pl:niistonnaan # ;
+niistonnaana+Pron+Pers+1Pl+Obv:niistonnaani # ;
+kiistonoona+Pron+Pers+21Pl:kiistonoona # ;
+kiistonoona+Pron+Pers+21Pl:kiistonoon # ;
+kiistonoona+Pron+Pers+21Pl+Obv:kiistonooni # ;
+kiistowaawa+Pron+Pers+2Pl:kiistowaawa # ;
+kiistowaawa+Pron+Pers+2Pl:kiistowaaw # ;
+kiistowaawa+Pron+Pers+2Pl+Obv:kiistowaawi # ;
+ostowaawayi+Pron+Pers+3Pl:ostowaawayi # ;
+
+LEXICON INTERR_PRON
+takaa+Pron+Interr+3Sg/Pl:takaa # ;
+tahkaa+Pron+Interr+3Sg/Pl:tahkaa # ;
+tsikaa+Pron+Interr+4Sg/Pl:tsikaa # ;
+tsa+Pron+Interr+3Sg/Pl:tsa # ;
+tsa+Pron+Interr+0Sg/Pl:tsa # ;
+aahsa+Pron+Interr+0Sg/Pl:aahsa # ;
+tsima+Pron+Interr:tsima # ;
+
+
+
+
+LEXICON DEM_STEMS
+am+Dem:am DEM_NUM_SUFFIXES ;
+am+Dem+Dim:amsst DEM_NUM_SUFFIXES ;
+amo+Dem:amo DEM_NUM_SUFFIXES ;
+amo+Dem+Dim:amssto DEM_NUM_SUFFIXES ;
+ann+Dem:ann DEM_NUM_SUFFIXES ;
+ann+Dem+Dim:annst DEM_NUM_SUFFIXES ;
+anno+Dem:anno DEM_NUM_SUFFIXES ;
+anno+Dem+Dim:annssto DEM_NUM_SUFFIXES ;
+om+Dem:om DEM_NUM_SUFFIXES ;
+om+Dem+Dim:omsst DEM_NUM_SUFFIXES ;
+
+LEXICON DEM_NUM_SUFFIXES
++A+Sg:%>%^DEMwa DEM_POSTINFL ;
++A+Obv:%>yi DEM_POSTINFL ;
++I+Sg:%>yi DEM_POSTINFL ;
++A+Pl:%>%^DEMiksi DEM_POSTINFL ;
++I+Pl:%>%^DEMistsi DEM_POSTINFL ;
+
+LEXICON DEM_POSTINFL
++Stat:%>ma VBLZ ;
++Movg:%>ya VBLZ ;
++Invs:%>hka VBLZ ;
++MT:%>ka VBLZ ;
+0 VBLZ ;
+
+LEXICON VBLZ
++Vblz:%>o'ka # ;
++Vblz:%>ayi # ;
+0 # ;
+
 

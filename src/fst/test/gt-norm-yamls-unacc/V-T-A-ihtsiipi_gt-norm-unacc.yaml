@@ -1,0 +1,127 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+   Verb - ihtsiipi - ok : # -m animate transitive verb, bring to town AEW NA1
+     ihtsiipi+VTA+Ind+1Sg+2SgO: kitsstsiipioo
+     ihtsiipi+VTA+Ind+1Sg+3SgO: nitsstsiipiaawa
+     ihtsiipi+VTA+Ind+1Sg+4SgO: nitsstsiipiaayini
+     ihtsiipi+VTA+Ind+2Sg+1SgO: kitsstsiipiooki
+     ihtsiipi+VTA+Ind+2Sg+3SgO: kitsstsiipiaawa
+     ihtsiipi+VTA+Ind+2Sg+4SgO: kitsstsiipiaayini
+     ihtsiipi+VTA+Ind+3Sg+1SgO: nitsstsiipiooka
+     ihtsiipi+VTA+Ind+3Sg+2SgO: kitsstsiipiooka
+     ihtsiipi+VTA+Ind+3Sg+4SgO: ihtsiipiyiiwa
+     ihtsiipi+VTA+Ind+4Sg+3SgO: otsstsiipiooka
+     ihtsiipi+VTA+Ind+4Sg+2SgO: kitsstsiipiookini
+     ihtsiipi+VTA+Ind+4Sg+1SgO: nitsstsiipiookini
+     ihtsiipi+VTA+Ind+4Pl+5Sg/PlO: ihtsiipiyiiyi
+     ihtsiipi+VTA+Ind+5Sg/Pl+4SgO: otsstsiipiookini
+     
+     ihtsiipi+VTA+Ind+1Pl+2PlO: kitsstsiipioohpinnaana
+     ihtsiipi+VTA+Ind+1Pl+3PlO: nitsstsiipiaannaani
+     ihtsiipi+VTA+Ind+1Pl+4PlO: nitsstsiipiaannaani
+     ihtsiipi+VTA+Ind+21Pl+3PlO: ihtsiipiaayi
+     ihtsiipi+VTA+Ind+21Pl+4PlO: ihtsiipiaayi
+     ihtsiipi+VTA+Ind+2Pl+1PlO: kitsstsiipiookihpinnaana
+     ihtsiipi+VTA+Ind+2Pl+3PlO: kitsstsiipiaawaayi
+     ihtsiipi+VTA+Ind+2Pl+4PlO: kitsstsiipiaawaayi
+     ihtsiipi+VTA+Ind+3Pl+1PlO: nitsstsiipiookinnaani
+     ihtsiipi+VTA+Ind+3Pl+2PlO: kitsstsiipiookoaayi
+     ihtsiipi+VTA+Ind+3Pl+4PlO: ihtsiipiyiiyi
+     ihtsiipi+VTA+Ind+4Pl+1PlO: nitsstsiipiookinnaani
+     ihtsiipi+VTA+Ind+4Pl+2PlO: kitsstsiipiookoaayi
+     ihtsiipi+VTA+Ind+4Pl+3PlO: otsstsiipiookoaayi
+     ihtsiipi+VTA+Ind+4Pl+5Sg/PlO: ihtsiipiyiiyi
+     ihtsiipi+VTA+Ind+5Sg/Pl+4PlO: otsstsiipiookoaayini
+ 
+     ihtsiipi+VTA+Ind+Unspec+1SgO: nitsstsiipiookoo
+     ihtsiipi+VTA+Ind+Unspec+1PlO: nitsstsiipiootsspinnaana
+     ihtsiipi+VTA+Ind+Unspec+2SgO: kitsstsiipiookoo
+     ihtsiipi+VTA+Ind+Unspec+2PlO: kitsstsiipiootsspoaawa
+     ihtsiipi+VTA+Ind+Unspec+21PlO: ihtsiipiootssp
+     ihtsiipi+VTA+Ind+Unspec+3SgO: ihtsiipiaawa
+     ihtsiipi+VTA+Ind+Unspec+3PlO: ihtsiipiaayi
+     ihtsiipi+VTA+Ind+Unspec+4SgO: ihtsiipiaayini
+     ihtsiipi+VTA+Ind+Unspec+4PlO: ihtsiipiaayi
+
+     ihtsiipi+VTA+Cnj+1Sg+2SgO: kitsstsiipioohsi
+     ihtsiipi+VTA+Cnj+1Sg+3SgO: nitsstsiipiaahsi
+     ihtsiipi+VTA+Cnj+1Sg+4SgO: nitsstsiipiaahsini
+     ihtsiipi+VTA+Cnj+2Sg+1SgO: kitsstsiipiookssi
+     ihtsiipi+VTA+Cnj+2Sg+3SgO: kitsstsiipiaahsi
+     ihtsiipi+VTA+Cnj+2Sg+4SgO: kitsstsiipiaahsini
+     ihtsiipi+VTA+Cnj+3Sg+1SgO: nitsstsiipiyssi
+     ihtsiipi+VTA+Cnj+3Sg+2SgO: kitsstsiipiyssi
+     ihtsiipi+VTA+Cnj+3Sg+4SgO: otsstsiipiaahsi
+     ihtsiipi+VTA+Cnj+4Sg+3SgO: otsstsiipiyssi
+
+     ihtsiipi+VTA+Cnj+1Pl+2PlO: kitsstsiipioohsinnaani
+     ihtsiipi+VTA+Cnj+1Pl+3PlO: nitsstsiipiaahsinnaani
+     ihtsiipi+VTA+Cnj+1Pl+4PlO: nitsstsiipiaahsinnaani
+     ihtsiipi+VTA+Cnj+21Pl+3PlO: ihtsiipiaahsi
+     ihtsiipi+VTA+Cnj+21Pl+4PlO: ihtsiipiaahsi
+     ihtsiipi+VTA+Cnj+2Pl+1PlO: kitsstsiipiookssinnaani
+     ihtsiipi+VTA+Cnj+2Pl+3PlO: kitsstsiipiaahsoaayi
+     ihtsiipi+VTA+Cnj+2Pl+4PlO: kitsstsiipiaahsoaayi
+     ihtsiipi+VTA+Cnj+3Pl+1PlO: nitsstsiipiyssinnaani
+     ihtsiipi+VTA+Cnj+3Pl+21PlO: nitsstsiipiookssi
+     ihtsiipi+VTA+Cnj+3Pl+2PlO: kitsstsiipiyssoaayi
+     ihtsiipi+VTA+Cnj+3Pl+4PlO: otsstsiipiaahsi
+     ihtsiipi+VTA+Cnj+4Pl+4PlO: otsstsiipiyssi
+     ihtsiipi+VTA+Cnj+4Pl+3PlO: otsstsiipiyssi
+
+     ihtsiipi+VTA+Cnj+Unspec+1SgO: nitsstsiipiookoohsi
+     ihtsiipi+VTA+Cnj+Unspec+1PlO: nitsstsiipiootssinnaani
+     ihtsiipi+VTA+Cnj+Unspec+2SgO: kitsstsiipiookoohsi
+     ihtsiipi+VTA+Cnj+Unspec+2PlO: kitsstsiipiootssoaayi
+     ihtsiipi+VTA+Cnj+Unspec+21PlO: ihtsiipiootssi
+     ihtsiipi+VTA+Cnj+Unspec+3SgO: ihtsiipiaahsi
+     ihtsiipi+VTA+Cnj+Unspec+3PlO: ihtsiipiaahsi
+     ihtsiipi+VTA+Cnj+Unspec+4SgO: ihtsiipiaahsini
+
+     ihtsiipi+VTA+Sbj+1Sg+2SgO: ihtsiipiiniki
+     ihtsiipi+VTA+Sbj+1Sg+3SgO: ihtsiipiaainiki
+     ihtsiipi+VTA+Sbj+2Sg+1SgO: ihtsiipiookiiniki
+     ihtsiipi+VTA+Sbj+2Sg+3SgO: ihtsiipiaainiki
+     ihtsiipi+VTA+Sbj+3Sg+1SgO: ihtsiipiootsiiniki
+     ihtsiipi+VTA+Sbj+3Sg+2SgO: ihtsiipiootsiiniki
+     ihtsiipi+VTA+Sbj+3Sg+4SgO: ihtsiipiaasi
+     ihtsiipi+VTA+Sbj+4Sg+3SgO: ihtsiipiootsiiniki
+
+     ihtsiipi+VTA+Sbj+1Sg+2PlO: ihtsiipiinoainiki
+     ihtsiipi+VTA+Sbj+1Sg+3PlO: ihtsiipiaainiki
+     ihtsiipi+VTA+Sbj+2Sg+1PlO: ihtsiipiookinnaaniki
+     ihtsiipi+VTA+Sbj+2Sg+3PlO: ihtsiipiaainiki
+     ihtsiipi+VTA+Sbj+3Sg+1PlO: ihtsiipiootsiinnaaniki
+     ihtsiipi+VTA+Sbj+3Sg+21PlO: ihtsiipiookisi
+     ihtsiipi+VTA+Sbj+3Sg+2PlO: ihtsiipiootsiinoainiki
+     ihtsiipi+VTA+Sbj+3Sg+4PlO: ihtsiipiaasi
+     ihtsiipi+VTA+Sbj+4Sg+3PlO: ihtsiipiootsiinoainiki
+
+     ihtsiipi+VTA+Sbj+Unspec+1SgO: ihtsiipiookoiniki
+     ihtsiipi+VTA+Sbj+Unspec+1PlO: ihtsiipiookoinnaaniki
+     ihtsiipi+VTA+Sbj+Unspec+2SgO: ihtsiipiookoiniki
+     ihtsiipi+VTA+Sbj+Unspec+2PlO: ihtsiipiookoinoainiki
+     ihtsiipi+VTA+Sbj+Unspec+21PlO: ihtsiipiootsski
+     ihtsiipi+VTA+Sbj+Unspec+3SgO: ihtsiipiaahki
+     ihtsiipi+VTA+Sbj+Unspec+3PlO: ihtsiipiaahki
+
+     ihtsiipi+VTA+Imp+2Sg+1SgO: ihtsiipiookit
+     ihtsiipi+VTA+Imp+2Sg+1PlO: ihtsiipiookinnaana
+     ihtsiipi+VTA+Imp+2Sg+3SgO: ihtsiipiis
+     ihtsiipi+VTA+Imp+2Sg+3PlO: ihtsiipiis
+     ihtsiipi+VTA+Imp+2Pl+1SgO: ihtsiipiookik
+     ihtsiipi+VTA+Imp+2Pl+1PlO: ihtsiipiookinnaana
+     ihtsiipi+VTA+Imp+2Pl+3SgO: ihtsiipiik
+     ihtsiipi+VTA+Imp+2Pl+3PlO: ihtsiipiik
+
+     ihtsiipi+VTA+Der/Rcpr+VAI+Ind+1Pl: [ nitsstsiipiootsiiyihpinnaana , nitsstsiipiootsiiyihpinnaan ]
+     

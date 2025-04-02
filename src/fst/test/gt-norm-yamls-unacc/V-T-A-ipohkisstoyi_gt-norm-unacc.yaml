@@ -1,0 +1,127 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+   Verb - ipohkisstoyi - ok : # -m animate transitive verb, bring to town AEW NA1
+     ipohkisstoyi+VTA+Ind+1Sg+2SgO: kitsipohkisstoyoo
+     ipohkisstoyi+VTA+Ind+1Sg+3SgO: nitsipohkisstoyaawa
+     ipohkisstoyi+VTA+Ind+1Sg+4SgO: nitsipohkisstoyaayini
+     ipohkisstoyi+VTA+Ind+2Sg+1SgO: kitsipohkisstoyooki
+     ipohkisstoyi+VTA+Ind+2Sg+3SgO: kitsipohkisstoyaawa
+     ipohkisstoyi+VTA+Ind+2Sg+4SgO: kitsipohkisstoyaayini
+     ipohkisstoyi+VTA+Ind+3Sg+1SgO: nitsipohkisstoyooka
+     ipohkisstoyi+VTA+Ind+3Sg+2SgO: kitsipohkisstoyooka
+     ipohkisstoyi+VTA+Ind+3Sg+4SgO: poohkisstoyiyiiwa
+     ipohkisstoyi+VTA+Ind+4Sg+3SgO: otsipohkisstoyooka
+     ipohkisstoyi+VTA+Ind+4Sg+2SgO: kitsipohkisstoyookini
+     ipohkisstoyi+VTA+Ind+4Sg+1SgO: nitsipohkisstoyookini
+     ipohkisstoyi+VTA+Ind+4Pl+5Sg/PlO: poohkisstoyiyiiyi
+     ipohkisstoyi+VTA+Ind+5Sg/Pl+4SgO: otsipohkisstoyookini
+     
+     ipohkisstoyi+VTA+Ind+1Pl+2PlO: kitsipohkisstoyoohpinnaana
+     ipohkisstoyi+VTA+Ind+1Pl+3PlO: nitsipohkisstoyaannaani
+     ipohkisstoyi+VTA+Ind+1Pl+4PlO: nitsipohkisstoyaannaani
+     ipohkisstoyi+VTA+Ind+21Pl+3PlO: poohkisstoyaayi
+     ipohkisstoyi+VTA+Ind+21Pl+4PlO: poohkisstoyaayi
+     ipohkisstoyi+VTA+Ind+2Pl+1PlO: kitsipohkisstoyookihpinnaana
+     ipohkisstoyi+VTA+Ind+2Pl+3PlO: kitsipohkisstoyaawaayi
+     ipohkisstoyi+VTA+Ind+2Pl+4PlO: kitsipohkisstoyaawaayi
+     ipohkisstoyi+VTA+Ind+3Pl+1PlO: nitsipohkisstoyookinnaani
+     ipohkisstoyi+VTA+Ind+3Pl+2PlO: kitsipohkisstoyookoaayi
+     ipohkisstoyi+VTA+Ind+3Pl+4PlO: poohkisstoyiyiiyi
+     ipohkisstoyi+VTA+Ind+4Pl+1PlO: nitsipohkisstoyookinnaani
+     ipohkisstoyi+VTA+Ind+4Pl+2PlO: kitsipohkisstoyookoaayi
+     ipohkisstoyi+VTA+Ind+4Pl+3PlO: otsipohkisstoyookoaayi
+     ipohkisstoyi+VTA+Ind+4Pl+5Sg/PlO: poohkisstoyiyiiyi
+     ipohkisstoyi+VTA+Ind+5Sg/Pl+4PlO: otsipohkisstoyookoaayini
+ 
+     ipohkisstoyi+VTA+Ind+Unspec+1SgO: nitsipohkisstoyookoo
+     ipohkisstoyi+VTA+Ind+Unspec+1PlO: nitsipohkisstoyootsspinnaana
+     ipohkisstoyi+VTA+Ind+Unspec+2SgO: kitsipohkisstoyookoo
+     ipohkisstoyi+VTA+Ind+Unspec+2PlO: kitsipohkisstoyootsspoaawa
+     ipohkisstoyi+VTA+Ind+Unspec+21PlO: poohkisstoyootssp
+     ipohkisstoyi+VTA+Ind+Unspec+3SgO: poohkisstoyaawa
+     ipohkisstoyi+VTA+Ind+Unspec+3PlO: poohkisstoyaayi
+     ipohkisstoyi+VTA+Ind+Unspec+4SgO: poohkisstoyaayini
+     ipohkisstoyi+VTA+Ind+Unspec+4PlO: poohkisstoyaayi
+
+     ipohkisstoyi+VTA+Cnj+1Sg+2SgO: kitsipohkisstoyoohsi
+     ipohkisstoyi+VTA+Cnj+1Sg+3SgO: nitsipohkisstoyaahsi
+     ipohkisstoyi+VTA+Cnj+1Sg+4SgO: nitsipohkisstoyaahsini
+     ipohkisstoyi+VTA+Cnj+2Sg+1SgO: kitsipohkisstoyookssi
+     ipohkisstoyi+VTA+Cnj+2Sg+3SgO: kitsipohkisstoyaahsi
+     ipohkisstoyi+VTA+Cnj+2Sg+4SgO: kitsipohkisstoyaahsini
+     ipohkisstoyi+VTA+Cnj+3Sg+1SgO: nitsipohkisstoyiyssi
+     ipohkisstoyi+VTA+Cnj+3Sg+2SgO: kitsipohkisstoyiyssi
+     ipohkisstoyi+VTA+Cnj+3Sg+4SgO: otsipohkisstoyaahsi
+     ipohkisstoyi+VTA+Cnj+4Sg+3SgO: otsipohkisstoyiyssi
+
+     ipohkisstoyi+VTA+Cnj+1Pl+2PlO: kitsipohkisstoyoohsinnaani
+     ipohkisstoyi+VTA+Cnj+1Pl+3PlO: nitsipohkisstoyaahsinnaani
+     ipohkisstoyi+VTA+Cnj+1Pl+4PlO: nitsipohkisstoyaahsinnaani
+     ipohkisstoyi+VTA+Cnj+21Pl+3PlO: poohkisstoyaahsi
+     ipohkisstoyi+VTA+Cnj+21Pl+4PlO: poohkisstoyaahsi
+     ipohkisstoyi+VTA+Cnj+2Pl+1PlO: kitsipohkisstoyookssinnaani
+     ipohkisstoyi+VTA+Cnj+2Pl+3PlO: kitsipohkisstoyaahsoaayi
+     ipohkisstoyi+VTA+Cnj+2Pl+4PlO: kitsipohkisstoyaahsoaayi
+     ipohkisstoyi+VTA+Cnj+3Pl+1PlO: nitsipohkisstoyiyssinnaani
+     ipohkisstoyi+VTA+Cnj+3Pl+21PlO: nitsipohkisstoyookssi
+     ipohkisstoyi+VTA+Cnj+3Pl+2PlO: kitsipohkisstoyiyssoaayi
+     ipohkisstoyi+VTA+Cnj+3Pl+4PlO: otsipohkisstoyaahsi
+     ipohkisstoyi+VTA+Cnj+4Pl+4PlO: otsipohkisstoyiyssi
+     ipohkisstoyi+VTA+Cnj+4Pl+3PlO: otsipohkisstoyiyssi
+
+     ipohkisstoyi+VTA+Cnj+Unspec+1SgO: nitsipohkisstoyookoohsi
+     ipohkisstoyi+VTA+Cnj+Unspec+1PlO: nitsipohkisstoyootssinnaani
+     ipohkisstoyi+VTA+Cnj+Unspec+2SgO: kitsipohkisstoyookoohsi
+     ipohkisstoyi+VTA+Cnj+Unspec+2PlO: kitsipohkisstoyootssoaayi
+     ipohkisstoyi+VTA+Cnj+Unspec+21PlO: poohkisstoyootssi
+     ipohkisstoyi+VTA+Cnj+Unspec+3SgO: poohkisstoyaahsi
+     ipohkisstoyi+VTA+Cnj+Unspec+3PlO: poohkisstoyaahsi
+     ipohkisstoyi+VTA+Cnj+Unspec+4SgO: poohkisstoyaahsini
+
+     ipohkisstoyi+VTA+Sbj+1Sg+2SgO: poohkisstoyiiniki
+     ipohkisstoyi+VTA+Sbj+1Sg+3SgO: poohkisstoyaainiki
+     ipohkisstoyi+VTA+Sbj+2Sg+1SgO: poohkisstoyookiiniki
+     ipohkisstoyi+VTA+Sbj+2Sg+3SgO: poohkisstoyaainiki
+     ipohkisstoyi+VTA+Sbj+3Sg+1SgO: poohkisstoyootsiiniki
+     ipohkisstoyi+VTA+Sbj+3Sg+2SgO: poohkisstoyootsiiniki
+     ipohkisstoyi+VTA+Sbj+3Sg+4SgO: poohkisstoyaasi
+     ipohkisstoyi+VTA+Sbj+4Sg+3SgO: poohkisstoyootsiiniki
+
+     ipohkisstoyi+VTA+Sbj+1Sg+2PlO: poohkisstoyiinoainiki
+     ipohkisstoyi+VTA+Sbj+1Sg+3PlO: poohkisstoyaainiki
+     ipohkisstoyi+VTA+Sbj+2Sg+1PlO: poohkisstoyookinnaaniki
+     ipohkisstoyi+VTA+Sbj+2Sg+3PlO: poohkisstoyaainiki
+     ipohkisstoyi+VTA+Sbj+3Sg+1PlO: poohkisstoyootsiinnaaniki
+     ipohkisstoyi+VTA+Sbj+3Sg+21PlO: poohkisstoyookisi
+     ipohkisstoyi+VTA+Sbj+3Sg+2PlO: poohkisstoyootsiinoainiki
+     ipohkisstoyi+VTA+Sbj+3Sg+4PlO: poohkisstoyaasi
+     ipohkisstoyi+VTA+Sbj+4Sg+3PlO: poohkisstoyootsiinoainiki
+
+     ipohkisstoyi+VTA+Sbj+Unspec+1SgO: poohkisstoyookoiniki
+     ipohkisstoyi+VTA+Sbj+Unspec+1PlO: poohkisstoyookoinnaaniki
+     ipohkisstoyi+VTA+Sbj+Unspec+2SgO: poohkisstoyookoiniki
+     ipohkisstoyi+VTA+Sbj+Unspec+2PlO: poohkisstoyookoinoainiki
+     ipohkisstoyi+VTA+Sbj+Unspec+21PlO: poohkisstoyootsski
+     ipohkisstoyi+VTA+Sbj+Unspec+3SgO: poohkisstoyaahki
+     ipohkisstoyi+VTA+Sbj+Unspec+3PlO: poohkisstoyaahki
+
+     ipohkisstoyi+VTA+Imp+2Sg+1SgO: poohkisstoyookit
+     ipohkisstoyi+VTA+Imp+2Sg+1PlO: poohkisstoyookinnaana
+     ipohkisstoyi+VTA+Imp+2Sg+3SgO: poohkisstoyiis
+     ipohkisstoyi+VTA+Imp+2Sg+3PlO: poohkisstoyiis
+     ipohkisstoyi+VTA+Imp+2Pl+1SgO: poohkisstoyookik
+     ipohkisstoyi+VTA+Imp+2Pl+1PlO: poohkisstoyookinnaana
+     ipohkisstoyi+VTA+Imp+2Pl+3SgO: poohkisstoyiik
+     ipohkisstoyi+VTA+Imp+2Pl+3PlO: poohkisstoyiik
+
+     ipohkisstoyi+VTA+Der/Rcpr+VAI+Ind+1Pl: [ nitsipohkisstoyootsiiyihpinnaana , nitsipohkisstoyootsiiyihpinnaan ]
+     

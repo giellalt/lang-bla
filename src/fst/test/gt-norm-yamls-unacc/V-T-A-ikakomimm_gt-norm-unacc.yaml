@@ -22,7 +22,7 @@ Tests:
      ikakomimm+VTA+Ind+4Sg+3SgO: otsikakomimmoka
      ikakomimm+VTA+Ind+4Sg+2SgO: kitsikakomimmokini
      ikakomimm+VTA+Ind+4Sg+1SgO: nitsikakomimmokini
-     ikakomimm+VTA+Ind+4Pl+5Sg/PlO: ikakomimmiiyiina
+     ikakomimm+VTA+Ind+4Pl+5Sg/PlO: ikakomimmiiyii
      ikakomimm+VTA+Ind+5Sg/Pl+4SgO: otsikakomimmokini
      
      ikakomimm+VTA+Ind+1Pl+2PlO: kitsikakomimmohpinnaana
@@ -36,7 +36,7 @@ Tests:
      ikakomimm+VTA+Ind+3Pl+1PlO: nitsikakomimmokinnaani
      ikakomimm+VTA+Ind+3Pl+2PlO: kitsikakomimmokoaayi
      ikakomimm+VTA+Ind+3Pl+4PlO: ikakomimmiiyi
-     ikakomimm+VTA+Ind+4Pl+1PlO: nitsikakomimmokinnani
+     ikakomimm+VTA+Ind+4Pl+1PlO: nitsikakomimmokinnaani
      ikakomimm+VTA+Ind+4Pl+2PlO: kitsikakomimmokoaayi
      ikakomimm+VTA+Ind+4Pl+3PlO: otsikakomimmokoaayi
      ikakomimm+VTA+Ind+4Pl+5Sg/PlO: ikakomimmiiyi
@@ -63,11 +63,11 @@ Tests:
      ikakomimm+VTA+Ind+2Sg+1PlO: kitsikakomimmokihpinnaana    
      ikakomimm+VTA+Ind+2Sg+3PlO: kitsikakomimmayi
      ikakomimm+VTA+Ind+2Sg+4PlO: kitsikakomimmayi
-     ikakomimm+VTA+Ind+3Sg+1PlO: nitsikakomimmokinnaani
+     ikakomimm+VTA+Ind+3Sg+1PlO: nitsikakomimmokinnaana
      ikakomimm+VTA+Ind+3Sg+2PlO: kitsikakomimmokoaawa
      ikakomimm+VTA+Ind+3Sg+4PlO: ikakomimmiiwa
-     ikakomimm+VTA+Ind+4Sg+1PlO: nitsikakomimmokini
-     ikakomimm+VTA+Ind+4Sg+2PlO: kitsikakomimmokini
+     ikakomimm+VTA+Ind+4Sg+1PlO: nitsikakomimmokinnaanini
+     ikakomimm+VTA+Ind+4Sg+2PlO: kitsikakomimmokoaayini
      ikakomimm+VTA+Ind+4Sg+3PlO: otsikakomimmokoaayi
  
      ikakomimm+VTA+Ind+Unspec+1SgO: nitsikakomimmokoo
@@ -82,7 +82,7 @@ Tests:
 
      ikakomimm+VTA+Cnj+1Sg+2SgO: kitsikakomimmohsi
      ikakomimm+VTA+Cnj+1Sg+3SgO: nitsikakomimmahsi
-     ikakomimm+VTA+Cnj+1Sg+4SgO: nitsikakomimmahsi
+     ikakomimm+VTA+Cnj+1Sg+4SgO: nitsikakomimmahsini
      ikakomimm+VTA+Cnj+2Sg+1SgO: kitsikakomimmokssi
      ikakomimm+VTA+Cnj+2Sg+3SgO: kitsikakomimmahsi
      ikakomimm+VTA+Cnj+2Sg+4SgO: kitsikakomimmahsini
@@ -141,9 +141,9 @@ Tests:
      ikakomimm+VTA+Cnj+Unspec+4SgO: ikakomimmahsini
 
      ikakomimm+VTA+Sbj+1Sg+2SgO: ikakomimminiki
-     ikakomimm+VTA+Sbj+1Sg+3SgO: ikakomimmaniki
+     ikakomimm+VTA+Sbj+1Sg+3SgO: ikakomimmainiki
      ikakomimm+VTA+Sbj+2Sg+1SgO: ikakomimmokiiniki
-     ikakomimm+VTA+Sbj+2Sg+3SgO: ikakomimmaniki
+     ikakomimm+VTA+Sbj+2Sg+3SgO: ikakomimmainiki
      ikakomimm+VTA+Sbj+3Sg+1SgO: ikakomimmotsiiniki
      ikakomimm+VTA+Sbj+3Sg+2SgO: ikakomimmotsiiniki
      ikakomimm+VTA+Sbj+3Sg+4SgO: ikakomimmasi
@@ -153,9 +153,9 @@ Tests:
      ikakomimm+VTA+Sbj+1Sg+3PlO: ikakomimmainiki
      ikakomimm+VTA+Sbj+2Sg+1PlO: ikakomimmokinnaaniki
      ikakomimm+VTA+Sbj+2Sg+3PlO: ikakomimmainiki
-     ikakomimm+VTA+Sbj+3Sg+1PlO: ikakomimmokinnaaniki
+     ikakomimm+VTA+Sbj+3Sg+1PlO: ikakomimmotsiinnaaniki
      ikakomimm+VTA+Sbj+3Sg+21PlO: ikakomimmokisi
-     ikakomimm+VTA+Sbj+3Sg+2PlO: ikakomimmotsinoainiki
+     ikakomimm+VTA+Sbj+3Sg+2PlO: ikakomimmotsiinoainiki
      ikakomimm+VTA+Sbj+3Sg+4PlO: ikakomimmasi
      ikakomimm+VTA+Sbj+4Sg+3PlO: ikakomimmotsiinoainiki
 
@@ -165,7 +165,7 @@ Tests:
      ikakomimm+VTA+Sbj+2Pl+3PlO: ikakomimmainainiki
      ikakomimm+VTA+Sbj+3Pl+21PlO: ikakomimmokisi
      ikakomimm+VTA+Sbj+3Pl+2PlO: ikakomimmotsiinoainiki
-     ikakomimm+VTA+Sbj+3Pl+4PlO: ikakomimmotsiinoainiki
+     ikakomimm+VTA+Sbj+3Pl+4PlO: ikakomimmasi
      ikakomimm+VTA+Sbj+4Pl+3PlO: ikakomimmotsiinoainiki
 
      ikakomimm+VTA+Sbj+1Pl+2SgO: ikakomimminnaaniki
@@ -187,11 +187,11 @@ Tests:
      ikakomimm+VTA+Sbj+Unspec+3PlO: ikakomimmahki
 
      ikakomimm+VTA+Imp+2Sg+1SgO: ikakomimmokit
-     ikakomimm+VTA+Imp+2Sg+1PlO: ikakomimmaokinnaana
+     ikakomimm+VTA+Imp+2Sg+1PlO: ikakomimmokinnaana
      ikakomimm+VTA+Imp+2Sg+3SgO: ikakomimmis
      ikakomimm+VTA+Imp+2Sg+3PlO: ikakomimmis
      ikakomimm+VTA+Imp+2Pl+1SgO: ikakomimmokik
-     ikakomimm+VTA+Imp+2Pl+1PlO: ikakomimmaokinnaana
+     ikakomimm+VTA+Imp+2Pl+1PlO: ikakomimmokinnaana
      ikakomimm+VTA+Imp+2Pl+3SgO: ikakomimmok
      ikakomimm+VTA+Imp+2Pl+3PlO: ikakomimmok
 

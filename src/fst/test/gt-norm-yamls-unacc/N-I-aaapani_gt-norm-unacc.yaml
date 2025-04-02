@@ -11,33 +11,35 @@ Tests:
   
   Noun - aaapani - ok : # -m inanimate noun, blood AEW NA1
      aaapani+NI+Sg: aaapani
-     aaapani+NI+Pl: aaapanistsi
-     aaapani+NI+Non: aaapani
+     aaapani+NI+Pl: aaapaistsi
+     aaapani+NI+Non: aaapai
 
-     aaapani+NI+Px1Sg+Sg: nitsaapani
-     aaapani+NI+Px1Sg+Pl: nitsaapanistsi
-     aaapani+NI+Px1Sg+Non: nitsaapani
+     aaapani+NI+Px1Sg+Sg: [ nitsaapani, nitsaapaimi ]
+     aaapani+NI+Px1Sg+Pl: [ nitsaapaistsi, nitsaapaimistsi ]
+     aaapani+NI+Px1Sg+Non: [ nitsaapai, nitsaapaimi ]
 
-     aaapani+NI+Px1Pl+Sg: nitsaapannaani
-     aaapani+NI+Px1Pl+Pl: nitsaapannaanistsi
-     aaapani+NI+Px1Pl+Non: nitsaapannaani
+     aaapani+NI+Px1Pl+Sg: [ nitsaapannaani, nitsaapaiminnaani ]
+     aaapani+NI+Px1Pl+Pl: [ nitsaapannaanistsi, nitsaapaiminnaanistsi ]
+     aaapani+NI+Px1Pl+Non: [ nitsaapannaani, nitsaapaiminnaani ]
 
-     aaapani+NI+Px21Pl+Sg: kitsaapannooni
-     aaapani+NI+Px21Pl+Pl: kitsaapannoonistsi
-     aaapani+NI+Px21Pl+Non: kitsaapannooni
+     aaapani+NI+Px21Pl+Sg: [ kitsaapannooni, kitsaapaiminnooni ]
+     aaapani+NI+Px21Pl+Pl: [ kitsaapannoonistsi, kitsaapaiminnoonistsi ]
+     aaapani+NI+Px21Pl+Non: [ kitsaapannooni, kitsaapaiminnooni ]
 
-     aaapani+NI+Px2Sg+Sg: kitsaapani
-     aaapani+NI+Px2Sg+Pl: kitsaapanistsi
-     aaapani+NI+Px2Sg+Non: kitsaapani
+     aaapani+NI+Px2Sg+Sg: [ kitsaapani, kitsaapaimi ]
+     aaapani+NI+Px2Sg+Pl: [ kitsaapaistsi, kitsaapaimistsi ]
+     aaapani+NI+Px2Sg+Non: [ kitsaapai, kitsaapaimi ]
 
-     aaapani+NI+Px2Pl+Sg: kitsaapanoaawayi
-     aaapani+NI+Px2Pl+Pl: kitsaapanoaawaistsi
-     aaapani+NI+Px2Pl+Non: kitsaapanoaawai
+     aaapani+NI+Px2Pl+Sg: [ kitsaapawaawayi, kitsaapaimoaawayi ]
+     aaapani+NI+Px2Pl+Pl: [ kitsaapawaawaistsi, kitsaapaimoaawaistsi ]
+     aaapani+NI+Px2Pl+Non: [ kitsaapawaawai, kitsaapaimoaawai ]
 
-     aaapani+NI+Px3Sg+Sg: otsaapani
-     aaapani+NI+Px3Sg+Pl: otsaapanistsi
-     aaapani+NI+Px3Sg+Non: otsaapani
+     aaapani+NI+Px3Sg+Sg: [ otsaapani, otsaapaimi ]
+     aaapani+NI+Px3Sg+Pl: [ otsaapaistsi, otsaapaimistsi ]
+     aaapani+NI+Px3Sg+Non: [ otsaapai, otsaapaimi ]
 
-     aaapani+NI+Px3Pl+Sg: otsaapanoaawayi
-     aaapani+NI+Px3Pl+Pl: otsaapanoaawaistsi
-     aaapani+NI+Px3Pl+Non: otsaapanoaawai
+     aaapani+NI+Px3Pl+Sg: [ otsaapawaawayi, otsaapaimoaawayi ]
+     aaapani+NI+Px3Pl+Pl: [ otsaapawaawaistsi, otsaapaimoaawaistsi ]
+     aaapani+NI+Px3Pl+Non: [ otsaapawaawai, otsaapaimoaawai ]
+     
+     PS/mi'k+aaapani+NI+Sg: mi'ksaapani

@@ -51,7 +51,7 @@ PN/naatow+:naatow	BOUND ; ! "consecrated, holy, sacred"
 
 PN/ahkiaap+:ahkiaap	BOUND ; ! "homeward"
 
-PN/aiist+:aiist	BOUND ; ! "to location"
+
 
 PN/akim+:akim	BOUND ; ! "place of honour", variant of ikim-
 PN/ikim+:akim	BOUND ; ! "place of honour", variant of akim- is this phonology
@@ -117,6 +117,7 @@ PN/iksi's+:iksi's	BOUND ; ! "out of sight behind an object, hidden"
 PN/iksiiksk+:i2ksiiksk	BOUND ; ! "to the side, aside"
 
 PN/iksikk+:iksikk	BOUND ; ! "white/clear/clean, tidy/carefully, cautiously"
+PN/ksikk+:ksikk	BOUND ; ! "white"; initial change
 
 PN/iksim+:iksim	BOUND ; ! "secret, with hidden motive"
 
@@ -254,7 +255,7 @@ PN/kiihtsip+:kiihtsip	BOUND ; ! "of more than one colour, spotted/striped"; verb
 
 PN/komono+:hkomono	BOUND ; ! "violet, green"; verbal examples
 
-PN/ksikk+:ksikk	BOUND ; ! "white"; initial change
+
 
 PN/ksis+:ksis	BOUND ; ! "pointed, sharp"
 
@@ -296,7 +297,7 @@ PN/ni'tóóhk+:ni2'tóóhk	BOUND ; ! "visible"
 PN/niit+:niit	BOUND ; ! "original, genuine"; also "west"
 PV/niit+:niit BOUND ; ! "manner"; initial variant of aanist"
 PV/aanist+:%^SPaanist BOUND ; ! "manner" (should relative roots have a special slot?)
-PV/anist+:anist BOUND ; (unsure what this is can't find in dictionary)
+PV/anist+:anist BOUND ; ! (unsure what this is can't find in dictionary)
 
 PN/nimm+:nimm	BOUND ; ! "west"
 
@@ -494,6 +495,7 @@ PN/waahkiááp+:waahkiááp	BOUND ; ! "back home"; verbal examples
 
 PN/waaist+:waaist	BOUND ; ! "near speaker"; dialect variant waiist-
 PN/waist+:waist	BOUND ; ! "near speaker"
+PN/aiist+:aiist	BOUND ; ! "to location"
 
 PN/waami't+:waami't	BOUND ; ! "west"
 

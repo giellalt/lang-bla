@@ -15,15 +15,15 @@ Tests:
      nitana+NAD+Px1Sg+Obv: nitani
      nitana+NAD+Px1Sg+Non: nitani
      
-     nitana+NAD+Px1Pl+Sg: nitannaana
-     nitana+NAD+Px1Pl+Pl: nitannaaniksi
-     nitana+NAD+Px1Pl+Obv: nitannaani
-     nitana+NAD+Px1Pl+Non: nitannaani
+     nitana+NAD+Px1Pl+Sg: nitaninnaana
+     nitana+NAD+Px1Pl+Pl: nitaninnaaniksi
+     nitana+NAD+Px1Pl+Obv: nitaninnaani
+     nitana+NAD+Px1Pl+Non: nitaninnaani
 
-     nitana+NAD+Px21Pl+Sg: kitannoona
-     nitana+NAD+Px21Pl+Pl: kitannooniksi
-     nitana+NAD+Px21Pl+Obv: kitannooni
-     nitana+NAD+Px21Pl+Non: kitannooni
+     nitana+NAD+Px21Pl+Sg: kitaninnoona
+     nitana+NAD+Px21Pl+Pl: kitaninnooniksi
+     nitana+NAD+Px21Pl+Obv: kitaninnooni
+     nitana+NAD+Px21Pl+Non: kitaninnooni
 
      nitana+NAD+Px2Sg+Sg: kitana
      nitana+NAD+Px2Sg+Pl: kitaniksi

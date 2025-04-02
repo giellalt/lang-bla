@@ -13,37 +13,39 @@ Tests:
      moksisa+NA+Sg: moksisa
      moksisa+NA+Pl: moksiiksi
      moksisa+NA+Obv: moksisi
-     moksisa+NA+Non: moksisi
+     moksisa+NA+Non: moksii
      
-     moksisa+NA+Px1Sg+Sg: noksisa
-     moksisa+NA+Px1Sg+Pl: noksiiksi
-     moksisa+NA+Px1Sg+Obv: noksisi
-     moksisa+NA+Px1Sg+Non: noksisi
+     moksisa+NA+Px1Sg+Sg: [ noksisa, noksiima ]
+     moksisa+NA+Px1Sg+Pl: [ noksiiksi, noksiimiksi ]
+     moksisa+NA+Px1Sg+Obv: [ noksisi, noksiimi ]
+     moksisa+NA+Px1Sg+Non: [ noksii, noksiimi ]
      
-     moksisa+NA+Px1Pl+Sg: noksiinnaana
-     moksisa+NA+Px1Pl+Pl: noksiinnaaniksi
-     moksisa+NA+Px1Pl+Obv: noksiinnaani
-     moksisa+NA+Px1Pl+Non: noksiinnaani
+     moksisa+NA+Px1Pl+Sg: [ noksinnaana, noksiiminnaana ]
+     moksisa+NA+Px1Pl+Pl: [ noksinnaaniksi, noksiiminnaaniksi ]
+     moksisa+NA+Px1Pl+Obv: [ noksinnaani, noksiiminnaani ]
+     moksisa+NA+Px1Pl+Non: [ noksinnaani, noksiiminnaani ]
 
-     moksisa+NA+Px21Pl+Sg: koksiinnoona
-     moksisa+NA+Px21Pl+Pl: koksiinnooniksi
-     moksisa+NA+Px21Pl+Obv: koksiinnooni
-     moksisa+NA+Px21Pl+Non: koksiinnooni
+     moksisa+NA+Px21Pl+Sg: [ koksinnoona, koksiiminnoona ]
+     moksisa+NA+Px21Pl+Pl: [ koksinnooniksi, koksiiminnooniksi ]
+     moksisa+NA+Px21Pl+Obv: [ koksinnooni, koksiiminnooni ]
+     moksisa+NA+Px21Pl+Non: [ koksinnooni, koksiiminnooni ]
 
-     moksisa+NA+Px2Sg+Sg: koksisa
-     moksisa+NA+Px2Sg+Pl: koksiiksi
-     moksisa+NA+Px2Sg+Obv: koksisi
-     moksisa+NA+Px2Sg+Non: koksisi
+     moksisa+NA+Px2Sg+Sg: [ koksisa, koksiima ]
+     moksisa+NA+Px2Sg+Pl: [ koksiiksi, koksiimiksi ]
+     moksisa+NA+Px2Sg+Obv: [ koksisi, koksiimi ]
+     moksisa+NA+Px2Sg+Non: [ koksii, koksiimi ]
 
-     moksisa+NA+Px2Pl+Sg: koksisoaawa
-     moksisa+NA+Px2Pl+Pl: koksisoaawaiksi
-     moksisa+NA+Px2Pl+Obv: koksisoaawayi
-     moksisa+NA+Px2Pl+Non: koksisoaawai
+     moksisa+NA+Px2Pl+Sg: [ koksoaawa, koksiimoaawa ]
+     moksisa+NA+Px2Pl+Pl: [ koksoaawaiksi, koksiimoaawaiksi ]
+     moksisa+NA+Px2Pl+Obv: [ koksoaawayi, koksiimoaawayi ]
+     moksisa+NA+Px2Pl+Non: [ koksoaawai, koksiimoaawai ]
 
-     moksisa+NA+Px3Sg+Pl: oksiiksi
-     moksisa+NA+Px3Sg+Obv: oksisi
-     moksisa+NA+Px3Sg+Non: oksisi
+     moksisa+NA+Px3Sg+Pl: [ oksiiksi, oksiimiksi ]
+     moksisa+NA+Px3Sg+Obv: [ oksisi, oksiimi ]
+     moksisa+NA+Px3Sg+Non: [ oksii, oksiimi ]
 
-     moksisa+NA+Px3Pl+Pl: oksisoaawaiksi
-     moksisa+NA+Px3Pl+Obv: oksisoaawayi
-     moksisa+NA+Px3Pl+Non: oksisoaawai
+     moksisa+NA+Px3Pl+Pl: [ oksoaawaiksi, oksiimoaawaiksi ]
+     moksisa+NA+Px3Pl+Obv: [ oksoaawayi, oksiimoaawayi ]
+     moksisa+NA+Px3Pl+Non: [ oksoaawai, oksiimoaawai ]
+     
+     PS/omahk+moksisa+NA+Pl: omahkoksiiksi 

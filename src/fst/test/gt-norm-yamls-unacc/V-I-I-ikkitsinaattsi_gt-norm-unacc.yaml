@@ -1,0 +1,26 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  +ero+:
+    Gen: ../../../src/generator-gt-norm.+fst
+    Morph: ../../../src/analyser-gt-norm.+fst
+    App: lookup
+
+Tests:
+  
+  Verb - ikkitsinaattsi - ok : # -m inanimate intransitive verb, appear AEW NA1
+     PS/niit+ikkitsinaattsi+VII+Ind+0Sg: niitsikkitsinaattsiwa
+     PS/iik+PS/oomok+ikkitsinaattsi+VII+Ind+0Sg: iikoomoksikkitsinaattsiwa
+     PS/iik+PS/ohpo+ikkitsinaattsi+VII+Ind+0Sg: iikohpoikkitsinaattsiwa
+     PS/ii+PS/ohkana+PS/omia'nist+ikkitsinaattsi+VII+Ind+0Pl: iihkanaomia'nistsikkitsinaattsiyi
+     PS/yaak+PS/isttsikohpo+ikkitsinaattsi+VII+Ind+0Sg: aaksisttsikohpoikkitsinaattsiwa
+     PS/yaak+PS/ipiiw+ikkitsinaattsi+VII+Ind+0Sg: aaksipiiyikkitsinaattsiwa
+     PS/iik+PS/aanist+ikkitsinaattsi+VII+Ind+0Sg: iikanistsikkitsinaattsiwa
+     PS/sikotahko+ikkitsinaattsi+VII+Ind+0Sg: sikotahkoikkitsinaattsiwa
+     PS/ii+PS/sstsaap+ikkitsinaattsi+VII+Ind+0Sg: iisstsaapikkitsinaattsiwa
+     PS/ii+PS/oohsi+ikkitsinaattsi+VII+Ind+0Sg: issiikkitsinaattsiwa
+     PS/ipiiw+ikkitsinaattsi+VII+Ind+0Sg: piiyikkitsinaattsiwa
+     PS/a+PS/apoyi+ikkitsinaattsi+VII+Ind+0Sg: aapoyiikkitsinaattsiwa
+     PS/yaak+PS/aanist+ikkitsinaattsi+VII+Ind+0Sg: aakanistsikkitsinaattsiwa
+     PS/yaak+PS/apoyi+ikkitsinaattsi+VII+Ind+0Sg: aakapoyiikkitsinaattsiwa

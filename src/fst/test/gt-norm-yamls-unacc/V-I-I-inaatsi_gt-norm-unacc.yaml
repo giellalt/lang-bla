@@ -9,7 +9,7 @@ Config:
 
 Tests:
   
-  Verb - inaatsi - ok : # -m inanimate intransitive verb, appear AEW NA1
+  Verb - inaattsi - ok : # -m inanimate intransitive verb, appear AEW NA1
      PS/niit+inaattsi+VII+Ind+0Sg: niitsinaattsiwa
      PS/iik+PS/oomok+inaattsi+VII+Ind+0Sg: iikoomoksinaattsiwa
      PS/iik+PS/ohpo+inaattsi+VII+Ind+0Sg: iikohpoinaattsiwa

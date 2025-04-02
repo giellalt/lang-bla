@@ -51,11 +51,11 @@ LEXICON TENSE_PREFIXES
 
 LEXICON ASPECT_PREFIXES
 0 IRR_PREFIX ;
-@D.mode.IMP@Perf+:@D.mode.IMP@akáa IRR_PREFIX ;
+@D.mode.IMP@Perf+:@D.mode.IMP@akáa IRR_PREFIX ; ! maybe deal with elsewhere?
 @D.mode.IMP@Perf+:@D.mode.IMP@ikáa IRR_PREFIX ;
 @D.mode.IMP@Perf+:@D.mode.IMP@okáa IRR_PREFIX ; ! enumerating this one because it appears in these three forms
 
-LEXICON IRR_PREFIX
+LEXICON IRR_PREFIX !
 0 PREVERBS ;
-@D.neg.NEG@Neg+PV/ikátá'+:@D.neg.NEG@i2kátá'%< PREVERBS ;
+@D.neg.NEG@Neg+PV/ikátá'+:@D.neg.NEG@i2kátá'%< PREVERBS ; !  SP per grammar?
 

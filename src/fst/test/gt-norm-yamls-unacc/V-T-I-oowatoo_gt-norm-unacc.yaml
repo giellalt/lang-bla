@@ -12,21 +12,21 @@ Tests:
   Verb - oowatoo - ok : # -m inanimate transitive verb, eat AEW NA1
      PS/a+oowatoo+VTI+Ind+1Sg+0SgO: nitaowatoohpa
      PS/a+oowatoo+VTI+Ind+2Sg+0SgO: kitaowatoohpa
-     PS/a+oowatoo+VTI+Ind+3Sg+0SgO+PRO+D3Sg: aowatoomaayi
+     PS/a+oowatoo+VTI+Ind+3Sg+0SgO+PRO+D3Sg: aowatoomayi
      PS/a+oowatoo+VTI+Ind+1Pl+0SgO: nitaowatoohpinnaana
      PS/a+oowatoo+VTI+Ind+21Pl+0SgO: aowatoo'pa
      PS/a+oowatoo+VTI+Ind+2Pl+0SgO: kitaowatoohpoaawa
      
      PS/yaak+oowatoo+VTI+Ind+1Sg+0SgO: nitaaksowatoohpa
      PS/yaak+oowatoo+VTI+Ind+2Pl+0SgO: kitaaksowatoohpa
-     PS/yaak+oowatoo+VTI+Ind+3Sg+0SgO+PRO+D3Sg: aaksowatoomaayi
+     PS/yaak+oowatoo+VTI+Ind+3Sg+0SgO+PRO+D3Sg: aaksowatoomayi
      PS/yaak+oowatoo+VTI+Ind+1Pl+0SgO: nitaaksowatoohpinnaana
      PS/yaak+oowatoo+VTI+Ind+21Pl+0SgO: aaksowatoo'pa
      PS/yaak+oowatoo+VTI+Ind+2Pl+0SgO: kitaaksowatoohpoaawa
      
      oowatoo+VTI+Ind+1Sg+0SgO: nitsowatoohpa
      oowatoo+VTI+Ind+2Sg+0SgO: kitsowatoohpa
-     PS/ii+oowatoo+VTI+Ind+3Sg+0SgO+PRO+D3Sg: iiwatoomaayi
+     PS/ii+oowatoo+VTI+Ind+3Sg+0SgO+PRO+D3Sg: iiwatoomayi
      oowatoo+VTI+Ind+1Pl+0SgO: nitsowatoohpinnaana
      PS/ii+oowatoo+VTI+Ind+21Pl+0SgO: iiwatoo'pa
      oowatoo+VTI+Ind+2Pl+0SgO: kitsowatoohpoaawa
@@ -112,7 +112,7 @@ Tests:
      PS/a+oowatoo+VTI+Irr+3Pl+0PlO: aowatoomahtopiyi
      PS/a+oowatoo+VTI+Irr+4Pl+0PlO: aowatoomahtopiyini
      
-     PS/a+oowatoo+VTI+Imp+Sg+0SgO: aowatoota
-     PS/a+oowatoo+VTI+Imp+Pl+0SgO: aowatooka
-     PS/a+oowatoo+VTI+Imp+Sg+0PlO: aowatooti
-     PS/a+oowatoo+VTI+Imp+Pl+0PlO: aowatooki
+     PS/a+oowatoo+VTI+Imp+2Sg+0SgO: aowatoota
+     PS/a+oowatoo+VTI+Imp+2Pl+0SgO: aowatooka
+     PS/a+oowatoo+VTI+Imp+2Sg+0PlO: aowatootsi
+     PS/a+oowatoo+VTI+Imp+2Pl+0PlO: aowatooki

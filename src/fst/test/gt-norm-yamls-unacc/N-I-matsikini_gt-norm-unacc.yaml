@@ -10,34 +10,36 @@ Config:
 Tests:
   
   Noun - matsikini - ok : # -m inanimate noun, shoe AEW NA1
-     matsikini+NI+Sg: matsikini
-     matsikini+NI+Pl: matsikiistsi
-     matsikini+NI+Non: matsikini
+     atsikini+NI+Sg: atsikini
+     atsikini+NI+Pl: atsikiistsi
+     atsikini+NI+Non: atsikii
 
-     matsikini+NI+Px1Sg+Sg: natsikini
-     matsikini+NI+Px1Sg+Pl: natsikiistsi
-     matsikini+NI+Px1Sg+Non: natsikini
+     atsikini+NI+Px1Sg+Sg: [ natsikini, natsikiimi ]
+     atsikini+NI+Px1Sg+Pl: [ natsikiistsi, natsikiimistsi ]
+     atsikini+NI+Px1Sg+Non: [ natsikii, natsikiimi ]
 
-     matsikini+NI+Px1Pl+Sg: natsikinnaani
-     matsikini+NI+Px1Pl+Pl: natsikinnaanistsi
-     matsikini+NI+Px1Pl+Non: natsikinnaani
+     atsikini+NI+Px1Pl+Sg: [ natsikinnaani, natsikiiminnaani ]
+     atsikini+NI+Px1Pl+Pl: [ natsikinnaanistsi, natsikiiminnaanistsi ]
+     atsikini+NI+Px1Pl+Non: [ natsikinnaani, natsikiiminnaani ]
 
-     matsikini+NI+Px21Pl+Sg: katsikinnooni
-     matsikini+NI+Px21Pl+Pl: katsikinnoonistsi
-     matsikini+NI+Px21Pl+Non: katsikinnooni
+     atsikini+NI+Px21Pl+Sg: [ katsikinnooni, katsikiiminnooni ]
+     atsikini+NI+Px21Pl+Pl: [ katsikinnoonistsi, katsikiiminnoonistsi ]
+     atsikini+NI+Px21Pl+Non: [ katsikinnooni, katsikiiminnooni ]
 
-     matsikini+NI+Px2Sg+Sg: katsikini
-     matsikini+NI+Px2Sg+Pl: katsikiistsi
-     matsikini+NI+Px2Sg+Non: katsikini
+     atsikini+NI+Px2Sg+Sg: [ katsikini, katsikiimi ]
+     atsikini+NI+Px2Sg+Pl: [ katsikiistsi, katsikiimistsi ]
+     atsikini+NI+Px2Sg+Non: [ katsikii, katsikiimi ]
 
-     matsikini+NI+Px2Pl+Sg: katsikinoaawayi
-     matsikini+NI+Px2Pl+Pl: katsikinoaawaistsi
-     matsikini+NI+Px2Pl+Non: katsikinoaawai
+     atsikini+NI+Px2Pl+Sg: [ katsikiwaawayi, katsikiimoaawayi ]
+     atsikini+NI+Px2Pl+Pl: [ katsikiwaawaistsi, katsikiimoaawaistsi ]
+     atsikini+NI+Px2Pl+Non: [ katsikiwaawai, katsikiimoaawai ]
 
-     matsikini+NI+Px3Sg+Sg: atsikini
-     matsikini+NI+Px3Sg+Pl: atsikiistsi
-     matsikini+NI+Px3Sg+Non: atsikini
+     atsikini+NI+Px3Sg+Sg: [ atsikini, atsikiimi ]
+     atsikini+NI+Px3Sg+Pl: [ atsikiistsi, atsikiimistsi ]
+     atsikini+NI+Px3Sg+Non: [ atsikii, atsikiimi ]
 
-     matsikini+NI+Px3Pl+Sg: atsikinoaawayi
-     matsikini+NI+Px3Pl+Pl: atsikinoaawaistsi
-     matsikini+NI+Px3Pl+Non: atsikinoaawai
+     atsikini+NI+Px3Pl+Sg: [ atsikiwaawayi, atsikiimoaawayi ]
+     atsikini+NI+Px3Pl+Pl: [ atsikiwaawaistsi, atsikiimoaawaistsi ]
+     atsikini+NI+Px3Pl+Non: [ atsikiwaawai, atsikiimoaawai ]
+     
+     PS/i'nak+atsikini+NI+Sg: i'nakitsikini

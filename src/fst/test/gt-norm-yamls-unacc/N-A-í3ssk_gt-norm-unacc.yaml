@@ -15,35 +15,37 @@ Tests:
      isska+NA+Obv: isski
      isska+NA+Non: isski
      
-     isska+NA+Px1Sg+Sg: noohkiwa
-     isska+NA+Px1Sg+Pl: noohkiiksi
-     isska+NA+Px1Sg+Obv: noohkiyi
-     isska+NA+Px1Sg+Non: noohkii
+     isska+NA+Px1Sg+Sg: [ noohka, noohkima ]
+     isska+NA+Px1Sg+Pl: [ noohkiksi, noohkimiksi ]
+     isska+NA+Px1Sg+Obv: [ noohki, noohkimi ]
+     isska+NA+Px1Sg+Non: [ noohki, noohkimi ]
      
-     isska+NA+Px1Pl+Sg: noohkinnaana
-     isska+NA+Px1Pl+Pl: noohkinnaaniksi
-     isska+NA+Px1Pl+Obv: noohkinnaani
-     isska+NA+Px1Pl+Non: noohkinnaani
+     isska+NA+Px1Pl+Sg: [ noohkinnaana, noohkiminnaana ]
+     isska+NA+Px1Pl+Pl: [ noohkinnaaniksi, noohkiminnaaniksi ]
+     isska+NA+Px1Pl+Obv: [ noohkinnaani, noohkiminnaani ]
+     isska+NA+Px1Pl+Non: [ noohkinnaani, noohkiminnaani ]
 
-     isska+NA+Px21Pl+Sg: koohkinnoona
-     isska+NA+Px21Pl+Pl: koohkinnooniksi
-     isska+NA+Px21Pl+Obv: koohkinnooni
-     isska+NA+Px21Pl+Non: koohkinnooni
+     isska+NA+Px21Pl+Sg: [ koohkinnoona, koohkiminnoona ]
+     isska+NA+Px21Pl+Pl: [ koohkinnooniksi, koohkiminnooniksi ]
+     isska+NA+Px21Pl+Obv: [ koohkinnooni, koohkiminnooni ]
+     isska+NA+Px21Pl+Non: [ koohkinnooni, koohkiminnooni ]
 
-     isska+NA+Px2Sg+Sg: koohkiwa
-     isska+NA+Px2Sg+Pl: koohkiiksi
-     isska+NA+Px2Sg+Obv: koohkiyi
-     isska+NA+Px2Sg+Non: koohkii
+     isska+NA+Px2Sg+Sg: [ koohka, koohkima ]
+     isska+NA+Px2Sg+Pl: [ koohkiksi, koohkimiksi ]
+     isska+NA+Px2Sg+Obv: [ koohki, koohkimi ]
+     isska+NA+Px2Sg+Non: [ koohki, koohkimi ]
 
-     isska+NA+Px2Pl+Sg: koohkiwaawa
-     isska+NA+Px2Pl+Pl: koohkiwaawaiksi
-     isska+NA+Px2Pl+Obv: koohkiwaawayi
-     isska+NA+Px2Pl+Non: koohkiwaawai
+     isska+NA+Px2Pl+Sg: [ koohkoaawa, koohkimoaawa ]
+     isska+NA+Px2Pl+Pl: [ koohkoaawaiksi, koohkimoaawaiksi ]
+     isska+NA+Px2Pl+Obv: [ koohkoaawayi, koohkimoaawayi ]
+     isska+NA+Px2Pl+Non: [ koohkoaawai, koohkimoaawai ]
 
-     isska+NA+Px3Sg+Obv: oohkiyi
-     isska+NA+Px3Sg+Pl: oohkiiksi
-     isska+NA+Px3Sg+Non: oohkii
+     isska+NA+Px3Sg+Obv: [ oohki, oohkimi ]
+     isska+NA+Px3Sg+Pl: [ oohkiksi, oohkimiksi ]
+     isska+NA+Px3Sg+Non: [ oohki, oohkimi ]
 
-     isska+NA+Px3Pl+Obv: oohkiwaawayi
-     isska+NA+Px3Pl+Pl: oohkiwaawaiksi
-     isska+NA+Px3Pl+Non: oohkiwaawai
+     isska+NA+Px3Pl+Obv: [ oohkoaawayi, oohkimoaawayi ]
+     isska+NA+Px3Pl+Pl: [ oohkoaawaiksi, oohkimoaawaiksi ]
+     isska+NA+Px3Pl+Non: [ oohkoaawai, oohkimoaawai ]
+     
+     PS/omahk+isska+NA+Sg: omahkohka

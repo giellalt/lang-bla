@@ -14,17 +14,17 @@ Tests:
      PS/a+a'po'taki+VAI+Ind+2Sg: kita'pao'taki
      PS/a+a'po'taki+VAI+Ind+3Sg: a'pao'takiwa
      PS/a+a'po'taki+VAI+Ind+4Sg: a'pao'takiyini
-     PS/a+a'po'taki+VAI+Ind+21Pl: a'pao'takio'pa
-     PS/a+a'po'taki+VAI+Ind+1Pl: nita'pao'takihpinnaana
-     PS/a+a'po'taki+VAI+Ind+2Pl: kitohkana'pao'takihpoaawa
+     PS/a+a'po'taki+VAI+Ind+21Pl: [ a'pao'takio'pa, a'pao'takio'p ]
+     PS/a+a'po'taki+VAI+Ind+1Pl: [ nita'pao'takihpinnaana, nita'pao'takihpinnaan ]
+     PS/ohkan+PS/a+a'po'taki+VAI+Ind+2Pl: kitohkana'pao'takihpoaawa
      PS/a+a'po'taki+VAI+Ind+3Pl+PRO+3/0: a'pao'takiyaawa
      
      PS/yaak+a'po'taki+VAI+Ind+1Sg: nitaaka'po'taki
      PS/yaak+a'po'taki+VAI+Ind+2Sg: kitaaka'po'taki
      PS/yaak+a'po'taki+VAI+Ind+3Sg: aaka'po'takiwa
      PS/yaak+a'po'taki+VAI+Ind+4Sg: aaka'po'takiyini
-     PS/yaak+a'po'taki+VAI+Ind+21Pl: aaka'po'takio'pa
-     PS/yaak+a'po'taki+VAI+Ind+1Pl: nitaaka'po'takihpinnaana
+     PS/yaak+a'po'taki+VAI+Ind+21Pl: [ aaka'po'takio'pa, aaka'po'takio'p ]
+     PS/yaak+a'po'taki+VAI+Ind+1Pl: [ nitaaka'po'takihpinnaana, nitaaka'po'takihpinnaan ]
      PS/yaak+PS/ohkan+a'po'taki+VAI+Ind+2Pl: kitaakohkana'po'takihpoaawa
      PS/yaak+a'po'taki+VAI+Ind+3Pl+PRO+3/0: aaka'po'takiyaawa
  
@@ -32,35 +32,35 @@ Tests:
      a'po'taki+VAI+Ind+2Sg: kita'po'taki
      a'po'taki+VAI+Ind+3Sg: a'po'takiwa
      a'po'taki+VAI+Ind+4Sg: a'po'takiyini
-     a'po'taki+VAI+Ind+21Pl: a'po'takio'pa
-     a'po'taki+VAI+Ind+1Pl: nita'po'takihpinnaana
+     a'po'taki+VAI+Ind+21Pl: [ a'po'takio'pa, a'po'takio'p ]
+     a'po'taki+VAI+Ind+1Pl: [ nita'po'takihpinnaana, nita'po'takihpinnaan ]
      a'po'taki+VAI+Ind+2Pl: kita'po'takihpoaawa
      a'po'taki+VAI+Ind+3Pl+PRO+3/0: a'po'takiyaawa
      
      PS/maat+PS/a+a'po'taki+VAI+Ind+1Sg+Interr: nimaata'pao'takihpa
      PS/maat+PS/a+a'po'taki+VAI+Ind+2Sg+Interr: kimaata'pao'takihpa
      PS/maat+PS/a+a'po'taki+VAI+Ind+3Sg: maata'pao'takiwa
-     PS/maat+PS/a+a'po'taki+VAI+Ind+1Pl: nimaata'pao'takihpinnaana
+     PS/maat+PS/a+a'po'taki+VAI+Ind+1Pl: [ nimaata'pao'takihpinnaana, nimaata'pao'takihpinnaan ]
      PS/maat+PS/a+a'po'taki+VAI+Ind+3Pl+Interr: maata'pao'takiwaiksaawayi
      
      PS/maat+PS/yaak+a'po'taki+VAI+Ind+1Sg+Interr: nimaataaka'po'takihpa
      PS/maat+PS/yaak+a'po'taki+VAI+Ind+2Sg+Interr: kimaataaka'po'takihpa
      PS/maat+PS/yaak+a'po'taki+VAI+Ind+3Sg: maataaka'po'takiwa
-     PS/maat+PS/yaak+a'po'taki+VAI+Ind+21Pl: maataaka'po'takio'pa
+     PS/maat+PS/yaak+a'po'taki+VAI+Ind+21Pl: [ maataaka'po'takio'pa, maataaka'po'takio'p ]
      PS/maat+PS/yaak+a'po'taki+VAI+Ind+2Pl: kimaataaka'po'takihpoaawa
      PS/maat+PS/yaak+a'po'taki+VAI+Ind+3Pl+Interr: maataaka'po'takiwaiksaawayi
      
      PS/maat+a'po'taki+VAI+Ind+1Sg+Interr: nimaata'po'takihpa
      PS/maat+a'po'taki+VAI+Ind+2Sg+Interr: kimaata'po'takihpa
      PS/maat+a'po'taki+VAI+Ind+3Sg+Interr: maata'po'takiwatsiksiwa
-     PS/maat+a'po'taki+VAI+Ind+1Pl: nimaata'po'takihpinnaana
+     PS/maat+a'po'taki+VAI+Ind+1Pl: [ nimaata'po'takihpinnaana, nimaata'po'takihpinnaan ]
      PS/maat+a'po'taki+VAI+Ind+3Pl+Interr: maata'po'takiwaiksaawayi
     
      PS/a+a'po'taki+VAI+Cnj+1Sg: nita'pao'takssi
      PS/a+a'po'taki+VAI+Cnj+2Sg: kita'pao'takssi
      PS/a+a'po'taki+VAI+Cnj+3Sg: ota'pao'takssi
      PS/a+a'po'taki+VAI+Cnj+4Sg: a'pao'takssi
-     PS/a+a'po'taki+VAI+Cnj+1Pl: nita'pao'takssinnaana
+     PS/a+a'po'taki+VAI+Cnj+1Pl: [ nita'pao'takssinnaana, nita'pao'takssinnaana ]
      PS/a+a'po'taki+VAI+Cnj+21Pl: a'pao'takssi
      PS/a+a'po'taki+VAI+Cnj+2Pl: kita'pao'takssoaayi
      PS/a+a'po'taki+VAI+Cnj+3Pl: ota'pao'takssi
@@ -88,10 +88,4 @@ Tests:
   
      PS/a+a'po'taki+VAI+Imp+2Sg: a'pao'takit
      PS/a+a'po'taki+VAI+Imp+2Pl: a'pao'takik
-     PS/a+a'po'taki+VAI+Ind+2Sg: kita'pao'taki
-     PS/a+a'po'taki+VAI+Ind+3Sg: a'pao'takiwa
-     PS/a+a'po'taki+VAI+Ind+4Sg: a'pao'takiyini
-     PS/a+a'po'taki+VAI+Ind+21Pl: a'pao'takio'pa
-     PS/a+a'po'taki+VAI+Ind+2Pl: nita'pao'takihpinnaana
-     PS/ohkan+PS/a+a'po'taki+VAI+Ind+2Pl: kitohkana'pao'takihpoaawa
-     PS/a+a'po'taki+VAI+Ind+3Pl+PRO+3/0: a'pao'takiyaawa
+    

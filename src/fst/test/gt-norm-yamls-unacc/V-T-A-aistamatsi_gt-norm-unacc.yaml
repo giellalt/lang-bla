@@ -1,0 +1,127 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+
+   Verb - ai'stamatsi - ok : # -m animate transitive verb, explain/demonstrate to AEW NA1
+     ai'stamatsi+VTA+Ind+1Sg+2SgO: kitai'stamatsoo
+     ai'stamatsi+VTA+Ind+1Sg+3SgO: nitai'stamatsaawa
+     ai'stamatsi+VTA+Ind+1Sg+4SgO: nitai'stamatsaayini
+     ai'stamatsi+VTA+Ind+2Sg+1SgO: kitai'stamatsooki
+     ai'stamatsi+VTA+Ind+2Sg+3SgO: kitai'stamatsaawa
+     ai'stamatsi+VTA+Ind+2Sg+4SgO: kitai'stamatsaayini
+     ai'stamatsi+VTA+Ind+3Sg+1SgO: nitai'stamatsooka
+     ai'stamatsi+VTA+Ind+3Sg+2SgO: kitai'stamatsooka
+     ai'stamatsi+VTA+Ind+3Sg+4SgO: ai'stamatsiyiiwa
+     ai'stamatsi+VTA+Ind+4Sg+3SgO: otai'stamatsooka
+     ai'stamatsi+VTA+Ind+4Sg+2SgO: kitai'stamatsookini
+     ai'stamatsi+VTA+Ind+4Sg+1SgO: nitai'stamatsookini
+     ai'stamatsi+VTA+Ind+4Pl+5Sg/PlO: ai'stamatsiyiiyi
+     ai'stamatsi+VTA+Ind+5Sg/Pl+4SgO: otai'stamatsookini
+     
+     ai'stamatsi+VTA+Ind+1Pl+2PlO: kitai'stamatsoohpinnaana
+     ai'stamatsi+VTA+Ind+1Pl+3PlO: nitai'stamatsaannaani
+     ai'stamatsi+VTA+Ind+1Pl+4PlO: nitai'stamatsaannaani
+     ai'stamatsi+VTA+Ind+21Pl+3PlO: ai'stamatsaayi
+     ai'stamatsi+VTA+Ind+21Pl+4PlO: ai'stamatsaayi
+     ai'stamatsi+VTA+Ind+2Pl+1PlO: kitai'stamatsookihpinnaana
+     ai'stamatsi+VTA+Ind+2Pl+3PlO: kitai'stamatsaawaayi
+     ai'stamatsi+VTA+Ind+2Pl+4PlO: kitai'stamatsaawaayi
+     ai'stamatsi+VTA+Ind+3Pl+1PlO: nitai'stamatsookinnaani
+     ai'stamatsi+VTA+Ind+3Pl+2PlO: kitai'stamatsookoaayi
+     ai'stamatsi+VTA+Ind+3Pl+4PlO: ai'stamatsiyiiyi
+     ai'stamatsi+VTA+Ind+4Pl+1PlO: nitai'stamatsookinnaani
+     ai'stamatsi+VTA+Ind+4Pl+2PlO: kitai'stamatsookoaayi
+     ai'stamatsi+VTA+Ind+4Pl+3PlO: otai'stamatsookoaayi
+     ai'stamatsi+VTA+Ind+4Pl+5Sg/PlO: ai'stamatsiyiiyi
+     ai'stamatsi+VTA+Ind+5Sg/Pl+4PlO: otai'stamatsookoaayini
+ 
+     ai'stamatsi+VTA+Ind+Unspec+1SgO: nitai'stamatsookoo
+     ai'stamatsi+VTA+Ind+Unspec+1PlO: nitai'stamatsootsspinnaana
+     ai'stamatsi+VTA+Ind+Unspec+2SgO: kitai'stamatsookoo
+     ai'stamatsi+VTA+Ind+Unspec+2PlO: kitai'stamatsootsspoaawa
+     ai'stamatsi+VTA+Ind+Unspec+21PlO: ai'stamatsootssp
+     ai'stamatsi+VTA+Ind+Unspec+3SgO: ai'stamatsaawa
+     ai'stamatsi+VTA+Ind+Unspec+3PlO: ai'stamatsaayi
+     ai'stamatsi+VTA+Ind+Unspec+4SgO: ai'stamatsaayini
+     ai'stamatsi+VTA+Ind+Unspec+4PlO: ai'stamatsaayi
+
+     ai'stamatsi+VTA+Cnj+1Sg+2SgO: kitai'stamatsoohsi
+     ai'stamatsi+VTA+Cnj+1Sg+3SgO: nitai'stamatsaahsi
+     ai'stamatsi+VTA+Cnj+1Sg+4SgO: nitai'stamatsaahsini
+     ai'stamatsi+VTA+Cnj+2Sg+1SgO: kitai'stamatsookssi
+     ai'stamatsi+VTA+Cnj+2Sg+3SgO: kitai'stamatsaahsi
+     ai'stamatsi+VTA+Cnj+2Sg+4SgO: kitai'stamatsaahsini
+     ai'stamatsi+VTA+Cnj+3Sg+1SgO: nitai'stamatsiyssi
+     ai'stamatsi+VTA+Cnj+3Sg+2SgO: kitai'stamatsiyssi
+     ai'stamatsi+VTA+Cnj+3Sg+4SgO: otai'stamatsaahsi
+     ai'stamatsi+VTA+Cnj+4Sg+3SgO: otai'stamatsiyssi
+
+     ai'stamatsi+VTA+Cnj+1Pl+2PlO: kitai'stamatsoohsinnaani
+     ai'stamatsi+VTA+Cnj+1Pl+3PlO: nitai'stamatsaahsinnaani
+     ai'stamatsi+VTA+Cnj+1Pl+4PlO: nitai'stamatsaahsinnaani
+     ai'stamatsi+VTA+Cnj+21Pl+3PlO: ai'stamatsaahsi
+     ai'stamatsi+VTA+Cnj+21Pl+4PlO: ai'stamatsaahsi
+     ai'stamatsi+VTA+Cnj+2Pl+1PlO: kitai'stamatsookssinnaani
+     ai'stamatsi+VTA+Cnj+2Pl+3PlO: kitai'stamatsaahsoaayi
+     ai'stamatsi+VTA+Cnj+2Pl+4PlO: kitai'stamatsaahsoaayi
+     ai'stamatsi+VTA+Cnj+3Pl+1PlO: nitai'stamatsiyssinnaani
+     ai'stamatsi+VTA+Cnj+3Pl+21PlO: nitai'stamatsookssi
+     ai'stamatsi+VTA+Cnj+3Pl+2PlO: kitai'stamatsiyssoaayi
+     ai'stamatsi+VTA+Cnj+3Pl+4PlO: otai'stamatsaahsi
+     ai'stamatsi+VTA+Cnj+4Pl+4PlO: otai'stamatsiyssi
+     ai'stamatsi+VTA+Cnj+4Pl+3PlO: otai'stamatsiyssi
+
+     ai'stamatsi+VTA+Cnj+Unspec+1SgO: nitai'stamatsookoohsi
+     ai'stamatsi+VTA+Cnj+Unspec+1PlO: nitai'stamatsootssinnaani
+     ai'stamatsi+VTA+Cnj+Unspec+2SgO: kitai'stamatsookoohsi
+     ai'stamatsi+VTA+Cnj+Unspec+2PlO: kitai'stamatsootssoaayi
+     ai'stamatsi+VTA+Cnj+Unspec+21PlO: ai'stamatsootssi
+     ai'stamatsi+VTA+Cnj+Unspec+3SgO: ai'stamatsaahsi
+     ai'stamatsi+VTA+Cnj+Unspec+3PlO: ai'stamatsaahsi
+     ai'stamatsi+VTA+Cnj+Unspec+4SgO: ai'stamatsaahsini
+
+     ai'stamatsi+VTA+Sbj+1Sg+2SgO: ai'stamatsiiniki
+     ai'stamatsi+VTA+Sbj+1Sg+3SgO: ai'stamatsaainiki
+     ai'stamatsi+VTA+Sbj+2Sg+1SgO: ai'stamatsookiiniki
+     ai'stamatsi+VTA+Sbj+2Sg+3SgO: ai'stamatsaainiki
+     ai'stamatsi+VTA+Sbj+3Sg+1SgO: ai'stamatsootsiiniki
+     ai'stamatsi+VTA+Sbj+3Sg+2SgO: ai'stamatsootsiiniki
+     ai'stamatsi+VTA+Sbj+3Sg+4SgO: ai'stamatsaasi
+     ai'stamatsi+VTA+Sbj+4Sg+3SgO: ai'stamatsootsiiniki
+
+     ai'stamatsi+VTA+Sbj+1Sg+2PlO: ai'stamatsiinoainiki
+     ai'stamatsi+VTA+Sbj+1Sg+3PlO: ai'stamatsaainiki
+     ai'stamatsi+VTA+Sbj+2Sg+1PlO: ai'stamatsookinnaaniki
+     ai'stamatsi+VTA+Sbj+2Sg+3PlO: ai'stamatsaainiki
+     ai'stamatsi+VTA+Sbj+3Sg+1PlO: ai'stamatsootsiinnaaniki
+     ai'stamatsi+VTA+Sbj+3Sg+21PlO: ai'stamatsookisi
+     ai'stamatsi+VTA+Sbj+3Sg+2PlO: ai'stamatsootsiinoainiki
+     ai'stamatsi+VTA+Sbj+3Sg+4PlO: ai'stamatsaasi
+     ai'stamatsi+VTA+Sbj+4Sg+3PlO: ai'stamatsootsiinoainiki
+
+     ai'stamatsi+VTA+Sbj+Unspec+1SgO: ai'stamatsookoiniki
+     ai'stamatsi+VTA+Sbj+Unspec+1PlO: ai'stamatsookoinnaaniki
+     ai'stamatsi+VTA+Sbj+Unspec+2SgO: ai'stamatsookoiniki
+     ai'stamatsi+VTA+Sbj+Unspec+2PlO: ai'stamatsookoinoainiki
+     ai'stamatsi+VTA+Sbj+Unspec+21PlO: ai'stamatsootsski
+     ai'stamatsi+VTA+Sbj+Unspec+3SgO: ai'stamatsaahki
+     ai'stamatsi+VTA+Sbj+Unspec+3PlO: ai'stamatsaahki
+
+     ai'stamatsi+VTA+Imp+2Sg+1SgO: ai'stamatsookit
+     ai'stamatsi+VTA+Imp+2Sg+1PlO: ai'stamatsookinnaana
+     ai'stamatsi+VTA+Imp+2Sg+3SgO: ai'stamatsiis
+     ai'stamatsi+VTA+Imp+2Sg+3PlO: ai'stamatsiis
+     ai'stamatsi+VTA+Imp+2Pl+1SgO: ai'stamatsookik
+     ai'stamatsi+VTA+Imp+2Pl+1PlO: ai'stamatsookinnaana
+     ai'stamatsi+VTA+Imp+2Pl+3SgO: ai'stamatsiik
+     ai'stamatsi+VTA+Imp+2Pl+3PlO: ai'stamatsiik
+
+     ai'stamatsi+VTA+Der/Rcpr+VAI+Ind+1Pl: [ nitai'stamatsootsiiyihpinnaana , nitai'stamatsootsiiyihpinnaan ]
+     

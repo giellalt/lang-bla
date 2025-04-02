@@ -13,39 +13,39 @@ Tests:
      isttoana+NA+Sg: isttoana
      isttoana+NA+Pl: isttoaiksi
      isttoana+NA+Obv: isttoani
-     isttoana+NA+Non: isttoani
+     isttoana+NA+Non: isttoai
      
-     isttoana+NA+Px1Sg+Sg: nottoana
-     isttoana+NA+Px1Sg+Pl: nottoaiksi
-     isttoana+NA+Px1Sg+Obv: nottoani
-     isttoana+NA+Px1Sg+Non: nottoani
+     isttoana+NA+Px1Sg+Sg: [ nottoana, nottoama ]
+     isttoana+NA+Px1Sg+Pl: [ nottoaiksi, nottoamiksi ]
+     isttoana+NA+Px1Sg+Obv: [ nottoani, nottoami ]
+     isttoana+NA+Px1Sg+Non: [ nottoai, nottoami ]
 
-     isttoana+NA+Px1Pl+Sg: nottoannaana
-     isttoana+NA+Px1Pl+Pl: nottoannaaniksi
-     isttoana+NA+Px1Pl+Obv: nottoannaani
-     isttoana+NA+Px1Pl+Non: nottoannaani
+     isttoana+NA+Px1Pl+Sg: [ nottoannaana, nottoaminnaana ]
+     isttoana+NA+Px1Pl+Pl: [ nottoannaaniksi, nottoaminnaaniksi ]
+     isttoana+NA+Px1Pl+Obv: [ nottoannaani, nottoaminnaani ]
+     isttoana+NA+Px1Pl+Non: [ nottoannaani, nottoaminnaani ]
 
-     isttoana+NA+Px21Pl+Sg: kottoannoona
-     isttoana+NA+Px21Pl+Pl: kottoannooniksi
-     isttoana+NA+Px21Pl+Obv: kottoannooni
-     isttoana+NA+Px21Pl+Non: kottoannooni
+     isttoana+NA+Px21Pl+Sg: [ kottoannoona, kottoaminnoona ]
+     isttoana+NA+Px21Pl+Pl: [ kottoannooniksi, kottoaminnooniksi ]
+     isttoana+NA+Px21Pl+Obv: [ kottoannooni, kottoaminnooni ]
+     isttoana+NA+Px21Pl+Non: [ kottoannooni, kottoaminnooni ]
 
-     isttoana+NA+Px2Sg+Sg: kottoana
-     isttoana+NA+Px2Sg+Pl: kottoaiksi
-     isttoana+NA+Px2Sg+Obv: kottoani
-     isttoana+NA+Px2Sg+Non: kottoani
+     isttoana+NA+Px2Sg+Sg: [ kottoana, kottoama ]
+     isttoana+NA+Px2Sg+Pl: [ kottoaiksi, kottoamiksi ]
+     isttoana+NA+Px2Sg+Obv: [ kottoani, kottoami ]
+     isttoana+NA+Px2Sg+Non: [ kottoai, kottoami ]
 
-     isttoana+NA+Px2Pl+Sg: kottoanoaawa
-     isttoana+NA+Px2Pl+Pl: kottoanoaawaiksi
-     isttoana+NA+Px2Pl+Obv: kottoanoaawayi
-     isttoana+NA+Px2Pl+Non: kottoanoaawai
+     isttoana+NA+Px2Pl+Sg: [ kottoawaawa, kottoamoaawa ]
+     isttoana+NA+Px2Pl+Pl: [ kottoawaawaiksi, kottoamoaawaiksi ]
+     isttoana+NA+Px2Pl+Obv: [ kottoawaawayi, kottoamoaawayi ]
+     isttoana+NA+Px2Pl+Non: [ kottoawaawai, kottoamoaawai ]
 
-     isttoana+NA+Px3Sg+Pl: ottoaiksi
-     isttoana+NA+Px3Sg+Obv: ottoani
-     isttoana+NA+Px3Sg+Non: ottoani
+     isttoana+NA+Px3Sg+Pl: [ ottoaiksi, ottoamiksi ]
+     isttoana+NA+Px3Sg+Obv: [ ottoani, ottoami ]
+     isttoana+NA+Px3Sg+Non: [ ottoai, ottoami ]
 
-     isttoana+NA+Px3Pl+Pl: ottoanoaawaiksi
-     isttoana+NA+Px3Pl+Obv: ottoanoaawayi
-     isttoana+NA+Px3Pl+Non: ottoanoaawai
+     isttoana+NA+Px3Pl+Pl: [ ottoawaawaiksi, ottoamoaawaiksi ]
+     isttoana+NA+Px3Pl+Obv: [ ottoawaawayi, ottoamoaawayi ]
+     isttoana+NA+Px3Pl+Non: [ ottoawaawai, ottoamoaawai ]
 
-     PS/pok+isttoana+NA+Pl: poksisttoaiksi
+     PS/ohpok+isttoana+NA+Pl: [ poksisttoaiksi, ohpoksisttoaiksi ]

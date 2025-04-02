@@ -12,32 +12,32 @@ Tests:
   Noun - kinakiyi - ok : # -m inanimate noun, liver AEW NA1
      kinakini+NI+Sg: kinakini
      kinakini+NI+Pl: kinakiistsi
-     kinakini+NI+Non: kinakini
+     kinakini+NI+Non: kinakii
 
-     kinakini+NI+Px1Sg+Sg: nohkinakini
-     kinakini+NI+Px1Sg+Pl: nohkinakiistsi
-     kinakini+NI+Px1Sg+Non: nohkinakini
+     kinakini+NI+Px1Sg+Sg: [ nohkinakini, nohkinakiimi ]
+     kinakini+NI+Px1Sg+Pl: [ nohkinakiistsi, nohkinakiimistsi ]
+     kinakini+NI+Px1Sg+Non: [ nohkinakii, nohkinakiimi ]
 
-     kinakini+NI+Px1Pl+Sg: nohkinakinnaani
-     kinakini+NI+Px1Pl+Pl: nohkinakinnaanistsi
-     kinakini+NI+Px1Pl+Non: nohkinakinnaani
+     kinakini+NI+Px1Pl+Sg: [ nohkinakinnaani, nohkinakiiminnaani ]
+     kinakini+NI+Px1Pl+Pl: [ nohkinakinnaanistsi, nohkinakiiminnaanistsi ]
+     kinakini+NI+Px1Pl+Non: [ nohkinakinnaani, nohkinakiiminnaani ]
 
-     kinakini+NI+Px21Pl+Sg: kohkinakinnooni
-     kinakini+NI+Px21Pl+Pl: kohkinakinnoonistsi
-     kinakini+NI+Px21Pl+Non: kohkinakinnooni
+     kinakini+NI+Px21Pl+Sg: [ kohkinakinnooni, kohkinakiiminnooni ]
+     kinakini+NI+Px21Pl+Pl: [ kohkinakinnoonistsi, kohkinakiiminnoonistsi ]
+     kinakini+NI+Px21Pl+Non: [ kohkinakinnooni, kohkinakiiminnooni ]
 
-     kinakini+NI+Px2Sg+Sg: kohkinakini
-     kinakini+NI+Px2Sg+Pl: kohkinakiistsi
-     kinakini+NI+Px2Sg+Non: kohkinakini
+     kinakini+NI+Px2Sg+Sg: [ kohkinakini, kohkinakiimi ]
+     kinakini+NI+Px2Sg+Pl: [ kohkinakiistsi, kohkinakiimistsi ]
+     kinakini+NI+Px2Sg+Non: [ kohkinakii, kohkinakiimi ]
 
-     kinakini+NI+Px2Pl+Sg: kohkinakinoaawayi
-     kinakini+NI+Px2Pl+Pl: kohkinakinoaawaistsi
-     kinakini+NI+Px2Pl+Non: kohkinakinoaawai
+     kinakini+NI+Px2Pl+Sg: [ kohkinakiwaawayi, kohkinakiimoaawayi ]
+     kinakini+NI+Px2Pl+Pl: [ kohkinakiwaawaistsi, kohkinakiimoaawaistsi ]
+     kinakini+NI+Px2Pl+Non: [ kohkinakiwaawai, kohkinakiimoaawai ]
 
-     kinakini+NI+Px3Sg+Sg: ohkinakini
-     kinakini+NI+Px3Sg+Pl: ohkinakiistsi
-     kinakini+NI+Px3Sg+Non: ohkinakini
+     kinakini+NI+Px3Sg+Sg: [ ohkinakini, ohkinakiimi ]
+     kinakini+NI+Px3Sg+Pl: [ ohkinakiistsi, ohkinakiimistsi ]
+     kinakini+NI+Px3Sg+Non: [ ohkinakii, ohkinakiimi ]
 
-     kinakini+NI+Px3Pl+Sg: ohkinakinoaawayi
-     kinakini+NI+Px3Pl+Pl: ohkinakinoaawaistsi
-     kinakini+NI+Px3Pl+Non: ohkinakinoaawai  
+     kinakini+NI+Px3Pl+Sg: [ ohkinakiwaawayi, ohkinakiimoaawayi ]
+     kinakini+NI+Px3Pl+Pl: [ ohkinakiwaawaistsi, ohkinakiimoaawaistsi ]
+     kinakini+NI+Px3Pl+Non: [ ohkinakiwaawai, ohkinakiimoaawai ]

@@ -1,0 +1,27 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  +ero+:
+    Gen: ../../../src/generator-gt-norm.+fst
+    Morph: ../../../src/analyser-gt-norm.+fst
+    App: lookup
+
+Tests:
+  
+  Verb - maanikinako - ok : # -m inanimate intransitive verb, appear AEW NA1
+     PS/niit+maanikinako+VII+Ind+0Sg: niitanikinakowa
+     maanikinako+VII+Ind+0Pl: maanikinakoyi
+     PS/iik+PS/oomok+maanikinako+VII+Ind+0Sg: iikoomokanikinakowa
+     PS/iik+PS/ohpo+maanikinako+VII+Ind+0Sg: iikohpaanikinakowa
+     PS/ii+PS/ohkana+PS/omia'nist+maanikinako+VII+Ind+0Pl: iihkanaomia'nistanikinakoyi
+     PS/yaak+PS/isttsikohpo+maanikinako+VII+Ind+0Sg: aaksisttsikohpaanikinakowa
+     PS/yaak+PS/ipiiw+maanikinako+VII+Ind+0Sg: aaksipiiwanikinakowa
+     PS/iik+PS/aanist+maanikinako+VII+Ind+0Sg: iikanistanikinakowa
+     PS/sikotahko+maanikinako+VII+Ind+0Sg: sikotahkaanikinakowa
+     PS/ii+PS/sstsaap+maanikinako+VII+Ind+0Sg: iisstsaapanikinakowa
+     PS/ii+PS/oohsi+maanikinako+VII+Ind+0Sg: issanikinakowa
+     PS/ipiiw+maanikinako+VII+Ind+0Sg: piiwanikinakowa
+     PS/a+PS/apoyi+maanikinako+VII+Ind+0Sg: aapoyanikinakowa
+     PS/yaak+PS/aanist+maanikinako+VII+Ind+0Sg: aakanistanikinakowa
+     PS/yaak+PS/apoyi+maanikinako+VII+Ind+0Sg: aakapoyanikinakowa
