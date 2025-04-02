@@ -8,7 +8,7 @@
 
 This page documents the work on the [Siksika language model](https://github.com/giellalt/lang-bla). 
 
-Nothing has been done to it yet, it just contains dummy files.
+The fst contains some 6500 stems and a grammatical component.
 
 # Project documentation
 
