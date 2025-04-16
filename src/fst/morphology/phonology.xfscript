@@ -26,38 +26,56 @@ define Gx [ w | y ] ;
 
 !! Rules
 
+! removing accent marks
+define rmAccent [ á -> a , í -> i , ó -> o ] ;
+
 ! The following code is for the highest level of morpho-phonological initial allomorphy (specific to nouns)
 
 !define shortPrefix [ n i t -> n , k i t -> k , o t -> w || .#. _ %< %^SP [ Vowel | m ] ,, n i t -> n i , k i t -> k i , o t -> o || .#. _ %< %^SP [ k | n | p | s | t | n2 | h ] ] ;
 define shortPrefix [ n i t -> n , k i t -> k || .#. _ %< %^SP ,, o t -> m || .#. _ %< %^SP a ,, o t -> w || .#. _ %< %^SP [ Consonant | Ix | o ] ] ;
-define internasal [ a -> o || %< %^SP m _ [ m | n ] ] ; ! is it m | n ? 
+!define internasal [ a -> o || %< %^SP m _ [ m | n ] ] ; ! is it m | n ?
+
+!!€ nit<^SPitan>wa
+!!€ nitana
+
+!!€ ot<^SPaahk<wahkayi>hsi
+!!€ maahkahkayssi
+
+!!€ kit<omitaa>im>wa
+!!€ kitomitaama
 
 !We can probably get rid of most of these now with the initial/noninitial stem sets
-define mattException [ n -> n i , k -> k i , w -> o || .#. _ %< m [ a | á ] t t ] ;
+!define mattException [ n -> n i , k -> k i , w -> o || .#. _ %< m [ a | á ] t t ] ;
 !define mdeletion [ m -> 0 || .#. [ n | k | w ] %< %^SP _ ] ; ! removing for naaahs, I think other issues will be solved with stem sets
 !define iInsertion [ n -> n i , k -> k i , w -> o || _ %< %^SP [ k | n | p | s | t | n2 ] ] ;
 define rmSP [ %^SP -> 0 ] ;
-define a2iRule [ a4 -> i2 || %< _ ] ;
-define ohPrefix [ 0 -> o || %< _ h ] ;
-define hdeletion [ h -> 0 || .#. _ ] ;
+!define a2iRule [ a4 -> i2 || %< _ ] ;
+!define ohPrefix [ 0 -> o || %< _ h ] ;
+!define hdeletion [ h -> 0 || .#. _ ] ;
 
-define strongt [ [ m | n ] -> 0 || t %< _ ] ;
-define weakt [ t -> 0 || _ %< [ p | k ] ] ;
-define strongk [ p -> 0 || [ k | p ] %< _ ] ;
-define strongp [ k -> 0 || [ k | p ] %< _ ] ;
+!define strongt [ [ m | n ] -> 0 || t %< _ ] ;
+!define weakt [ t -> 0 || _ %< [ p | k ] ] ;
+!define strongk [ p -> 0 || [ k | p ] %< _ ] ;
+!define strongp [ k -> 0 || [ k | p ] %< _ ] ;
 define weakm [ m -> 0 || Consonant %< _ ] ; ! repurposing rule for matt, which surfaces as att after consonants in examples; currently only prestem/stem to start with m in elsewhere list, may apply to others as lists expand
 
-define oAlternation [ i2 (->) [ o | a ] || .#. _ [ o | a ] ] ;
-define ghosti2 [ "i2" -> 0 || .#. _ Consonant ] ;
-define i2oRule [ i3 -> o , i3 y -> o2 , a3 -> o || %< _ ] ;
+!define oAlternation [ i2 (->) [ o | a ] || .#. _ [ o | a ] ] ;
+!define ghosti2 [ "i2" -> 0 || .#. _ Consonant ] ;
+!define i2oRule [ i3 -> o , i3 y -> o2 , a3 -> o || %< _ ] ;
 !define w2yRule [ w (->) y || _ %< Vowel ] ; ! we think this is the w~y prestem variation, now dealt with using wyVarRule
-define iDissimilation [ i -> o || _ y %< i ] ;
-define intervocalicN [ n -> y || Vowel %< _ Vowel ] ;
+!define iDissimilation [ i -> o || _ y %< i ] ;
+!define intervocalicN [ n -> y || Vowel %< _ Vowel ] ;
 
 define rcprRule [ o -> 0 || t %> %^RCPR _ ,, o -> o o || Ix %> %^RCPR _ ] ; ! also behaves like a VTA suffix VLV p. 117)
 define rmRcpr [ %^RCPR -> 0 ] ;
 define bnfRule [ o -> 0 || V %> %^BNF _ ] ;
 define rmBnf [ %^BNF -> 0 ] ;
+
+!!€ nit<ikakomimm>^RCPRotsiiyi>hpinnaan
+!!€ nitsikakomimmotsiiyihpinnaan
+
+!!€ nit<inakat>^RCPRotsiiyi>hpinnaan
+!!€ nitsinakattsiiyihpinnaan
 
 ! Demonstrative trigger rules (-wa > 0 | o-_)
 
@@ -65,10 +83,21 @@ define Demwa20Rule [ w a -> 0 || o %> %^DEM _ ] ;
 define DemPli20Rule [ i (->) 0 || o %> %^DEM _ ] ;
 define Demtrigger20 [ %^DEM -> 0 ] ;
 
+!!€ 
+!!€ 
+
 ! Inverse o rules
 define Invo20Rule [ o -> 0 || t %>  %^INV_ ] ;
 define Invo2ooRule [ o -> o o || Ix %> %^INV _ ] ;
 define Invtrigger20 [ %^INV -> 0 ] ;
+
+!!€ 
+!!€ 
+
+! 3MM VAIs
+
+define 3MMsuffixRule [ m m -> 0 || _ %^3MM [ .#. | %> [ Vowel | [ Consonant - [Gx] ] ] ] ] ;
+define 3MMtrigger20 [ %^3MM -> 0 ] ;
 
 !VLVs in VTA suffix rules
 define VLVsuffixRule [ o -> o o || Ix %> %^VLV _ ,, a -> a a || Ix %> %^VLV _ ] ;
@@ -94,21 +123,21 @@ define PROtrigger20 [ %^PRO -> 0 ] ;
 
 define Ck2kkRule [ Cshort -> k || _ %> k ] ;
 
-define Cp2ppRule [ Cshort -> p || _ %> p ] ;
+!define Cp2ppRule [ Cshort -> p || _ %> p ] ;
 
-define Ct2ttRule [ Cshort -> t || _ %> t ] ;
+!define Ct2ttRule [ Cshort -> t || _ %> t ] ;
 
-define Cs2ssRule [ Cshort -> s || _ %> s ] ;
+!define Cs2ssRule [ Cshort -> s || _ %> s ] ;
 
-define Cm2mmRule [ Cshort -> m || _ %> m ] ;
+!define Cm2mmRule [ Cshort -> m || _ %> m ] ;
 
-define Cn2nnRule [ Cshort -> n || _ %> n ] ;
+!define Cn2nnRule [ Cshort -> n || _ %> n ] ;
 
-define CC2GemRule [ Ck2kkRule .o. Cp2ppRule .o. Ct2ttRule .o. Cs2ssRule .o. Cm2mmRule .o. Cn2nnRule ] ;
+!define CC2GemRule [ Ck2kkRule .o. Cp2ppRule .o. Ct2ttRule .o. Cs2ssRule .o. Cm2mmRule .o. Cn2nnRule ] ;
 
 ! The following is the morpho-phonology of the inflectional suffix boundary
 
-define mmRule [ a -> 0 || Clong %> _ a ] ;
+!define mmRule [ a -> 0 || Clong %> _ a ] ;
 
 !p. 79, im has some variability. perhaps need to create general rules, and mark specific stems with triggers?
 
@@ -129,13 +158,14 @@ define pluralPossSuffixRule [ i -> 0 || [ i | a | w | y ] %> _ [ n n a a n | n n
 
 ! rule to make at least aaapan and naapiikoan work; after breaking and palatalisation 
 
-define iaa2aaRule [ [ i | i2 ] -> 0 || _ [ a a ]] ;
+define iaa2aaRule [ [ i | i2 ] -> 0 || _ [ a a ] ] ;
+define i2deletion [ i2 -> 0 || _ o ] ; 
 
 
 
-define fixN [ n+ -> 0 || _ (Bx) n n ] ;
+!define fixN [ n+ -> 0 || _ (Bx) n n ] ;
 ! define n20Rule [ n -> 0 || Vshort _ %> Vowel ,, o [ a | á ] _ %> Vowel ] ;
-define sisRule [ s -> 0 || s [ i | í ] _ Bx i Consonant ] ;
+! define sisRule [ s -> 0 || s [ i | í ] _ Bx i Consonant ] ;
 define oaawaRule [ w a -> 0 || Vlong w a (Bx) _ ] ;
 define pastPrefix [ Vowel (o) -> 0 || [ .#. | %< ] i i %< _ ] ;
 define pastPrefixSik [ Vowel -> 0 || [ .#. | %< ] n a %< _ ] ;
@@ -153,7 +183,7 @@ define DIPHtrigger20 [ %^DIPH -> 0 ] ;
 
 ! define moveDur [ á %< a ' p -> %< a ' p á ,, á %< á ' p -> %< a ' p á ] ; ! accents causing problems that's why it no longer works
 define moveDur [ a %< a ' p -> %< a ' p a ] ; ! removed accents
-define delNi [ n i (i) -> 0 || n i (i) %< _ ] ;
+!define delNi [ n i (i) -> 0 || n i (i) %< _ ] ;
 !define initVV2V [ [ a a | á á ] (->) a || %< _ ] ; ! remove for now, seems to be a stem-specific thing
 
 !!€ nitáni2t>k>wa
@@ -162,7 +192,7 @@ define delNi [ n i (i) -> 0 || n i (i) %< _ ] ;
 ! 2. s-Insertion 0 > s / I _ t 
 
 define sInsRule2 [ i2 t -> i2 s t ] ;
-define sInsRule [ [..] -> s || t _ i | i2 | í ] ;
+!define sInsRule [ [..] -> s || t _ i | i2 | í ] ; t affrication
 !define BreakSRule [ [..] -> s || k _ i2 ] ; ! done elsewhere
 
 !!€ nitáni2t>awa
@@ -269,7 +299,6 @@ define iAbsorbRule [ Ix -> 0 || s (Bx) _ Bx [ a | [a a] | o | [o o] ] ] ;
 ! 19. t-Affrication t > ts / _ i
 
 define tAffricRule [ t -> t s || _ Bx [ i | i2 ] ] ;
-define i2deletion [ i2 -> 0  || s %< _ s s ,, i2 -> 0 || _ o ] ;
 !define rmi2 [ i2 -> i ] ;
 
 !!€ nit<it<itsiniki
@@ -353,7 +382,14 @@ define GlotMetaRule [ ' %< a -> %< a ' || Vowel (Bx) _ (Bx) Consonant ,,
 ' %< o -> %< o ' || Vowel (Bx) _ (Bx) Consonant ,, 
 ' %< [o o] -> %< [o o] ' || Vowel (Bx) _ (Bx) Consonant ,, 
 ' %< [a a] -> %< [a a] ' || Vowel (Bx) _ (Bx) Consonant ,, 
-' %< [i i] -> %< [i i] ' || Vowel (Bx) _ (Bx) Consonant ] ;
+' %< [i i] -> %< [i i] ' || Vowel (Bx) _ (Bx) Consonant ,,
+' %< a -> %> a ' || Vowel (Bx) _ (Bx) Consonant ,, 
+' %< i -> %> i ' || Vowel (Bx) _ (Bx) Consonant ,, 
+' %< i2 -> %> i2 ' || Vowel (Bx) _ (Bx) Consonant ,, 
+' %< o -> %> o ' || Vowel (Bx) _ (Bx) Consonant ,, 
+' %< [o o] -> %> [o o] ' || Vowel (Bx) _ (Bx) Consonant ,, 
+' %< [a a] -> %> [a a] ' || Vowel (Bx) _ (Bx) Consonant ,, 
+' %< [i i] -> %> [i i] ' || Vowel (Bx) _ (Bx) Consonant ] ;
 
 !!€ á'<omai'takiwa 
 !!€ áó'mai'takiwa
@@ -433,23 +469,11 @@ define deep2surfRule [ Bx -> 0 ,, n2 -> n ,, a2 -> a ,, o2 -> o ,, a3 -> a ,, a4
 
 ! define DelNasal [ m -> 0 || _ Consonant ] ;
 
-read regex [ shortPrefix
-.o. internasal
-.o. mattException
+read regex [ rmAccent
+.o. shortPrefix
 .o. rmSP
-.o. a2iRule
-.o. ohPrefix
-.o. hdeletion
-.o. strongt
-.o. weakt
-.o. strongk
-.o. strongp
 .o. weakm
-.o. oAlternation
-.o. i2oRule
 .o. wyVarRule
-.o. iDissimilation
-.o. intervocalicN
 .o. Demwa20Rule
 .o. DemPli20Rule
 .o. Demtrigger20
@@ -460,6 +484,8 @@ read regex [ shortPrefix
 .o. a20ProRule
 .o. i20ProRule
 .o. Invtrigger20
+.o. 3MMsuffixRule
+.o. 3MMtrigger20
 .o. VLVtrigger20
 .o. IMPtrigger20
 .o. PROtrigger20
@@ -469,26 +495,20 @@ read regex [ shortPrefix
 .o. rmBnf
 .o. sConnRuleB 
 .o. sConnRuleA 
-.o. CC2GemRule
-.o. mmRule
+.o. Ck2kkRule
 .o. imRule
 .o. AIMtrigger20
 .o. nonpermCRule
 .o. pluralPossSuffixRule
-.o. fixN
-.o. sisRule
 .o. oaawaRule
 .o. pastPrefix
 .o. h2ssRule 
 .o. oReplaceRule
-.o. delNi
 .o. wi2oRuleA1 
 .o. wi2oRuleA2 
 .o. wi2oRuleB1 
 .o. wi2oRuleB2 
 .o. imRule
-.o. fixN
-.o. sisRule
 .o. oaawaRule
 .o. pastPrefix
 .o. pastPrefixSik
@@ -496,17 +516,17 @@ read regex [ shortPrefix
 .o. DIPHtrigger20
 .o. moveDur
 .o. k2ksRule
-.o. iAbsorbRule 
-.o. Vowel2GlideRule
-.o. VV2VRule 
 .o. iLossRule
-.o. tAffricRule 
-.o. i2deletion
-.o. iaa2aaRule
 .o. ihLossRule 
 .o. PresibRule
 .o. GlideReductRule 
 .o. GlideLossRule
+.o. tAffricRule 
+.o. iAbsorbRule 
+.o. Vowel2GlideRule
+.o. VV2VRule 
+.o. iaa2aaRule
+.o. i2deletion
 .o. iyiReductRule 
 .o. PostsibRule 
 .o. GlotMetaRule 
@@ -517,7 +537,6 @@ read regex [ shortPrefix
 .o. sss2ssRule
 .o. AccentRule 
 .o. deep2surfRule
-.o. sInsRule
 .o. sInsRule2
 .o. i2NeutRule
 ] ;
