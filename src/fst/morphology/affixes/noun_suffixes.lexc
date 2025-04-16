@@ -1,0 +1,72 @@
+LEXICON NA
+@R.pos.NOUN@@P.class.NA@+NA:@R.pos.NOUN@@P.class.NA@0  IM ;
+@R.class.VAI@+NA+Der/VAI+VAI:@R.class.VAI@0 N_VAI_SUFFIXES  "weight: 10" ; 
+
+LEXICON NA_IM
+@R.pos.NOUN@@P.im.IM@@P.class.NA@+NA:@R.pos.NOUN@@P.im.IM@@P.class.NA@  IM ;
+@R.class.VAI@+NA+Der/VAI+VAI:@R.class.VAI@0 N_VAI_SUFFIXES "weight: 10" ;
+
+LEXICON NI
+@R.pos.NOUN@@P.class.NI@+NI:@R.pos.NOUN@@P.class.NI@0  IM ;
+@R.class.VII@+NI+Der/VII+VII:@R.class.VII@0 N_VII_SUFFIXES "weight: 10" ;
+
+LEXICON NI_IM
+@R.pos.NOUN@@P.im.IM@@P.class.NI@+NI:@R.pos.NOUN@@P.im.IM@@P.class.NI@0  IM ;
+@R.class.VII@+NI+Der/VII+VII:@R.class.VII@0 N_VII_SUFFIXES "weight: 10" ;
+
+LEXICON NAD
+@P.class.NA@+NAD:@P.class.NA@0 POSS_NUM ;
+
+LEXICON NID
+@P.class.NI@+NID:@P.class.NI@0 POSS_NUM ;
+
+LEXICON NOUN_SUFFIXES
+@R.class.NA@+NA:@R.class.NA@0 POSS_NUM ;
+@R.class.NI@+NI:@R.class.NI@0 POSS_NUM ;
+
+LEXICON IM
+!0 POSS_NUM ;
+@D.person.NULL@:@D.person.NULL@%>im POSS_NUM ;
+@D.person.NULL@@D.im.IM@ POSS_NUM ;
+@R.person.NULL@ POSS_NUM ;
+
+LEXICON POSS_NUM
+! Singular possessors
+@R.person.NI@+Px1Sg:@R.person.NI@0   NOUN_FINALS ;
+@R.person.KI@+Px2Sg:@R.person.KI@0   NOUN_FINALS ;
+@R.person.OT@+Px3Sg:@R.person.OT@0   NOUN_FINALS ;
+@R.person.NULL@:@R.person.NULL@0      NOUN_FINALS ;
+! Plural possessors
+@R.person.NI@+Px1Pl:@R.person.NI@%>innaan  NOUN_FINALS ;
+@R.person.KI@+Px21Pl:@R.person.KI@%>innoon NOUN_FINALS ;
+@R.person.KI@+Px2Pl:@R.person.KI@%>oaawa   NOUN_FINALS ;
+@R.person.OT@+Px3Pl:@R.person.OT@%>oaawa   NOUN_FINALS ;
+
+
+LEXICON NOUN_FINALS
+@R.class.NA@ NA_SUFFIXES ;
+@R.class.NI@ NI_SUFFIXES ;
+
+
+LEXICON NA_SUFFIXES
+! Obviative
+@R.person.NULL@+Obv:@R.person.NULL@%>yi # ; ! Optional obviative with non-possessed form
+@D.person.NULL@@R.person.OT@+Obv:@D.person.NULL@@R.person.OT@%>yi # ; ! Obligatory obviative with 3rd person possessor
+@D.person.NULL@@D.person.OT@+Obv:@D.person.NULL@@D.person.OT@%>yi # ; ! Optional obviative with non-3rd possessor
+! Plural
++Pl:%>iksi # ; ! Optional plural NO CONDITIONS (other than non-singular)
+! Non-Referring
++Non:%>i # ; ! Optional non-referring suffix, number unrestricted
+@D.person.OT@+Sg:@D.person.OT@%>wa # ; ! Optional singular for non-3rd person possessed, non-plural only
+
+
+LEXICON NI_SUFFIXES
+@D.number.PL@+Sg:@D.number.PL@%>yi # ; 
+@D.number.SG@+Pl:@D.number.SG@%>istsi # ;
+@D.number.SG@@D.number.PL@+Non:@D.number.SG@@D.number.PL@%>i # ;
+
+!LEXICON NI_SUFFIXES
+!@D.number.SG@+Sg:@D.number.SG@%>yi # ; 
+!@D.number.SG@+Pl:@D.number.SG@%>istsi # ;
+!@D.number.SG@@D.number.PL@+Non:@D.number.SG@@D.number.PL@%>i # ;
+
