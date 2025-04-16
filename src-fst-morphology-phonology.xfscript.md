@@ -2,6 +2,27 @@ Definitions
 
 Rules
 
+* *nit<^SPitan>wa*
+* *nitana*
+
+* *ot<^SPaahk<wahkayi>hsi*
+* *maahkahkayssi*
+
+* *kit<omitaa>im>wa*
+* *kitomitaama*
+
+* *nit<ikakomimm>^RCPRotsiiyi>hpinnaan*
+* *nitsikakomimmotsiiyihpinnaan*
+
+* *nit<inakat>^RCPRotsiiyi>hpinnaan*
+* *nitsinakattsiiyihpinnaan*
+
+* ???
+* ???
+
+* ???
+* ???
+
 Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of Toronto Press. Appendix B.
 
 1. Gemination C1 > C2 / _ + C2
