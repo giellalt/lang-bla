@@ -29,13 +29,13 @@ LEXICON PERS_VAI_STEMS
 a'po'taki:a'po'taki VAI ;
 itapoo:itapoo%^DIPH VAI ;
 okska'si:okska'si VAI ;
-waahkayi:ahkayi VAI ;
+waahkayi:wahkayi VAI ;
 
 LEXICON VAI_STEMS
 a'po'taki:a'po'taki VAI ;
 itapoo:itapoo%^DIPH VAI ;
 okska'si:okska'si VAI ;
-waahkayi:ahkayi VAI ;
+waahkayi:wahkayi VAI ;
 
 LEXICON INIT_VII_STEMS
 soka'pii:soka'pii VII ;

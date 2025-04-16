@@ -58,8 +58,8 @@ LEXICON VAI_SUFFIXES
 
 LEXICON INDEP_VAI_SUFFIXES
 ! Third Person Interrogatives
-@R.person.NULL@+3Sg+Interr:@R.person.NULL@%>watsiksi ENCLITICS ;
-@R.person.NULL@+3Sg+Interr:@R.person.NULL@%>watsiksiwa ENCLITICS ; ! Sometimes, we end up with a -wa suffix following this interrogative
+@R.person.NULL@+3Sg+Interr:@R.person.NULL@%>waatsiksi ENCLITICS ;
+@R.person.NULL@+3Sg+Interr:@R.person.NULL@%>waatsiksiwa ENCLITICS ; ! Sometimes, we end up with a -wa suffix following this interrogative
 @R.person.NULL@+3Pl+Interr:@R.person.NULL@%>waiksaawa ENCLITICS ;
 @R.person.NULL@+3Pl+Interr:@R.person.NULL@%>waiksaawayi ENCLITICS ; ! Sometimes, we end up with a -yi suffix following this interrogative
 ! Singular INDEPENDENT
@@ -278,7 +278,7 @@ LEXICON UNREAL_VTI_SUFFIXES
 LEXICON IMP_VTI_SUFFIXES
 ! Singular IMPERATIVE
 @R.person.IMP@+2Sg+%0SgO:@R.person.IMP@%>ta	ENCLITICS ;
-@R.person.IMP@+2Sg+%0PlO:@R.person.IMP@%>ti	ENCLITICS ;
+@R.person.IMP@+2Sg+%0PlO:@R.person.IMP@%>tsi	ENCLITICS ;
 ! Plural IMPERATIVE
 @R.person.IMP@+2Pl+%0SgO:@R.person.IMP@%>ka	ENCLITICS ;
 @R.person.IMP@+2Pl+%0PlO:@R.person.IMP@%>ki	ENCLITICS ;

@@ -1159,6 +1159,7 @@ s2
 %^VLV
 %^IMP
 %^PRO
+%^3MM
 
 !! Blackfoot Nominal and Verbal Morphology
 
@@ -1173,95 +1174,11 @@ PERS_PRON ;
 INTERR_PRON ;
 
 
-LEXICON VERB_STEMS
-! LEXICON PREFIXES
-@R.class.VAI@	VAI_STEMS ;
-@R.class.VII@	VII_STEMS ;
-@R.class.VTI@	VTI_STEMS ;
-@R.class.VTA@	VTA_STEMS ;
-@R.pos.NOUN@	VAI_STEMS ;
-@R.pos.NOUN@	VII_STEMS ;
-@R.pos.NOUN@	VTI_STEMS ;
-@R.pos.NOUN@	VTA_STEMS ;    
-!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VAI_STEMS ;
-!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VII_STEMS ;
-!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTI_STEMS ;
-!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTA_STEMS ;
-
 LEXICON NOUN_STEMS
 @R.pos.NOUN@ NA_STEMS ;
 @R.pos.NOUN@ NI_STEMS ;
 @R.class.VAI@ NA_STEMS ;
 @R.class.VII@ NI_STEMS ;
-
-LEXICON INIT_VAI_STEMS
-a'po'taki:a'po'taki VAI ;
-itapoo:itapoo%^DIPH VAI ;
-okska'si:okska'si VAI ;
-waahkayi:waahkayi VAI ;
-
-LEXICON PERS_VAI_STEMS
-a'po'taki:a'po'taki VAI ;
-itapoo:itapoo%^DIPH VAI ;
-okska'si:okska'si VAI ;
-waahkayi:ahkayi VAI ;
-
-LEXICON VAI_STEMS
-a'po'taki:a'po'taki VAI ;
-itapoo:itapoo%^DIPH VAI ;
-okska'si:okska'si VAI ;
-waahkayi:ahkayi VAI ;
-
-LEXICON INIT_VII_STEMS
-soka'pii:soka'pii VII ;
-ikkitsinaattsi:ikkitsinaattsi	VII ;
-maanikinako:maanikinako	VII ;
-
-LEXICON PERS_VII_STEMS
-soka'pii:soka'pii VII ;
-ikkitsinaattsi:i2kkitsinaattsi	VII ;
-maanikinako:anikinako	VII ;
-
-LEXICON VII_STEMS
-soka'pii:soka'pii VII ;
-ikkitsinaattsi:i2kkitsinaattsi	VII ;
-maanikinako:anikinako	VII ;
-
-LEXICON INIT_VTA_STEMS
-ai'stamatsi:ai'stamatsi VTA ;
-ihtsiipi:ihtsiipi VTA ;
-ikakomimm:ikakomimm VTA ;
-inakat:inakat VTA ;
-ino:ino VTA ;
-ipohkisstoyi:poohkisstoyi VTA ;
-
-LEXICON PERS_VTA_STEMS
-ai'stamatsi:ai'stamatsi VTA ;
-ihtsiipi:ihtsiipi VTA ;
-ikakomimm:ikakomimm VTA ;
-inakat:inakat VTA ;
-ino:ino VTA ;
-ipohkisstoyi:ipohkisstoyi VTA ;
-
-LEXICON VTA_STEMS
-ai'stamatsi:ai'stamatsi VTA ;
-ihtsiipi:ihtsiipi VTA ;
-ikakomimm:i2kakomimm VTA ;
-inakat:i2nakat VTA ;
-ino:i2no VTA ;
-ipohkisstoyi:i2pohkisstoyi VTA ;
-
-LEXICON INIT_VTI_STEMS
-oowatoo:oowatoo VTI ;
-ssksini:issksini VTI ;
-
-LEXICON PERS_VTI_STEMS
-oowatoo:i2owatoo VTI ;
-ssksini:ssksini VTI ;
-
-LEXICON VTI_STEMS
-oowatoo:i2owatoo VTI ;
-ssksini:ssksini VTI ;
 
 LEXICON INIT_NA_STEMS
 aakiiwa:aakii NA ;
@@ -1326,42 +1243,42 @@ LEXICON DEP_STEMS
 
 LEXICON DEP_NA_STEMS
 ! Test Stems
-! nohkowa:ohko                NAD ;
-! naaahsa:maaahs              NAD ;
-!nitana:itan                 NAD ;
-! niksissta:iksisst           NAD ;
+! nohkówa:ohkó                NAD ;
+! naaáhsa:maaáhs              NAD ;
+!nitána:itán                 NAD ;
+! niksíssta:iksísst           NAD ;
 ! Full list
-naaahsa:%^SPaaahs	NAD ;
+naaáhsa:%^SPaaáhs	NAD ;
 nitaakiaaahsa:aakiaaahs	NAD ;
-nitaakiima:aakiim	NAD ;
-nitawahkahtaana:awahkahtaan	NAD ;
+nitáákiima:áákiim	NAD ;
+nitáwahkahtaana:áwahkahtaan	NAD ;
 ni'sa:%^SPi's	NAD ;
 nitsi'sohkiimaana:i'sohkiimaan	NAD ;
 nitsiihkawawa:iihkawa	NAD ;
 niihsissa:%^SPiihsiss	NAD ;
-nikiihtsimaana:%^SPikiihtsimaan	NAD ;
+nikííhtsimaana:%^SPikííhtsimaan	NAD ;
 niksimmotsiima:%^SPiksimmotsiim	NAD ;
-niksissta:%^SPiksisst	NAD ;
+niksíssta:%^SPiksísst	NAD ;
 nikso'kowa:%^SPikso'kowa	NAD ;
 nimssa:%^SPimss	NAD ;
-nitsinaaahsa:inaaahs	NAD ;
+nitsinaaáhsa:inaaáhs	NAD ;
 ninaapiima:%^SPinaapiim	NAD ;
 ninna:%^SPinn	NAD ;
-ninssta:%^SPinsst	NAD ;
+nínssta:%^SPínsst	NAD ;
 nippitaama:%^SPippitaam	NAD ;
-nisahkinaima:%^SPisahkinaim	NAD ;
-nisahkomaapiima:%^SPisahkomaapiim	NAD ;
+nisahkínaima:%^SPisahkínaim	NAD ;
+nisahkómaapiima:%^SPisahkómaapiim	NAD ;
 nissa:%^SPiss	NAD ;
-nisskana:%^SPisskan	NAD ;
+nisskána:%^SPisskán	NAD ;
 nitsissohkiimaana:issohkiimaan	NAD ;
 nissohkowa:%^SPissohko	NAD ;
-nissoko'sa:%^SPissoko's	NAD ;
+níssoko'sa:%^SPíssoko's	NAD ;
 nissotana:%^SPissotan	NAD ;
 nisstamowa:%^SPisstamo	NAD ;
 nisstamoohkowa:%^SPisstamoohko	NAD ;
 nitana:%^SPitan	NAD ;
 niniitsistowahsina:%^SPiniitsistowahsin	NAD ;
-nohkowa:%^SPohko	NAD ;
+nohkówa:%^SPohkó	NAD ;
 nohpapiiyihpa:o%^SPhpapiiyihp	NAD ;
 nohpatooma:%^SPohpatoom	NAD ;
 noko'sa:%^SPoko's	NAD ;
@@ -1373,15 +1290,103 @@ nootoohkiimaana:ootoohkiimaan	NAD ;
 nitohkiimaana:ohkiimaan	NAD ;
 nootoyooma:%^SPootoyoom	NAD ;
 noppitaama:%^SPoppitaam	NAD ;
-nota'sa:%^SPota's	NAD ;
-noyinnaawa:%^SPoyinnaa	NAD ;
-nisskani'taama:%^SPsskani'taam	NAD ;
+nóta'sa:%^SPóta's	NAD ;
+noyínnaawa:%^SPoyínnaa	NAD ;
+nisskáni'taama:%^SPsskáni'taam	NAD ;
 niyiihkowa:%^SPiyiihkowa	NAD ;
-niisto:%^SPiisto NAD ;
+niistó:%^SPiistó NAD ;
 
 LEXICON DEP_NI_STEMS
-nookoowayi:%^SPookoowan     NID ;
-nookoowayi:%^SPookoowa     NID ;
+nookóówayi:%^SPookóówan     NID ;
+nookóówayi:%^SPookóówa     NID ;
+
+
+LEXICON VERB_STEMS
+! LEXICON PREFIXES
+@R.class.VAI@	VAI_STEMS ;
+@R.class.VII@	VII_STEMS ;
+@R.class.VTI@	VTI_STEMS ;
+@R.class.VTA@	VTA_STEMS ;
+@R.pos.NOUN@	VAI_STEMS ;
+@R.pos.NOUN@	VII_STEMS ;
+@R.pos.NOUN@	VTI_STEMS ;
+@R.pos.NOUN@	VTA_STEMS ;    
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VAI_STEMS ;
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VII_STEMS ;
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTI_STEMS ;
+!@R.pos.NOMINALIZE@:@R.pos.NOMINALIZE@ VTA_STEMS ;
+
+LEXICON INIT_VAI_STEMS
+a'po'taki:a'po'taki VAI ;
+itapoo:itapoo%^DIPH VAI ;
+okska'si:okska'si VAI ;
+waahkayi:waahkayi VAI ;
+waahkayi:waahkayimm%^3MM VAI ;
+
+LEXICON PERS_VAI_STEMS
+a'po'taki:a'po'taki VAI ;
+itapoo:itapoo%^DIPH VAI ;
+okska'si:okska'si VAI ;
+waahkayi:wahkayi VAI ;
+waahkayi:wahkayimm%^3MM VAI ;
+
+LEXICON VAI_STEMS
+a'po'taki:a'po'taki VAI ;
+itapoo:itapoo%^DIPH VAI ;
+okska'si:okska'si VAI ;
+waahkayi:wahkayi VAI ;
+waahkayi:wahkayimm%^3MM VAI ;
+
+LEXICON INIT_VII_STEMS
+soka'pii:soka'pii VII ;
+ikkitsinaattsi:ikkitsinaattsi	VII ;
+maanikinako:maanikinako	VII ;
+
+LEXICON PERS_VII_STEMS
+soka'pii:soka'pii VII ;
+ikkitsinaattsi:i2kkitsinaattsi	VII ;
+maanikinako:anikinako	VII ;
+
+LEXICON VII_STEMS
+soka'pii:soka'pii VII ;
+ikkitsinaattsi:i2kkitsinaattsi	VII ;
+maanikinako:anikinako	VII ;
+
+LEXICON INIT_VTA_STEMS
+ai'stamatsi:ai'stamatsi VTA ;
+ihtsiipi:ihtsiipi VTA ;
+ikakomimm:ikakomimm VTA ;
+inakat:inakat VTA ;
+ino:ino VTA ;
+ipohkisstoyi:poohkisstoyi VTA ;
+
+LEXICON PERS_VTA_STEMS
+ai'stamatsi:ai'stamatsi VTA ;
+ihtsiipi:ihtsiipi VTA ;
+ikakomimm:ikakomimm VTA ;
+inakat:inakat VTA ;
+ino:ino VTA ;
+ipohkisstoyi:ipohkisstoyi VTA ;
+
+LEXICON VTA_STEMS
+ai'stamatsi:ai'stamatsi VTA ;
+ihtsiipi:ihtsiipi VTA ;
+ikakomimm:i2kakomimm VTA ;
+inakat:i2nakat VTA ;
+ino:i2no VTA ;
+ipohkisstoyi:i2pohkisstoyi VTA ;
+
+LEXICON INIT_VTI_STEMS
+oowatoo:oowatoo VTI ;
+ssksini:issksini VTI ;
+
+LEXICON PERS_VTI_STEMS
+oowatoo:i2owatoo VTI ;
+ssksini:ssksini VTI ;
+
+LEXICON VTI_STEMS
+oowatoo:i2owatoo VTI ;
+ssksini:ssksini VTI ;
 
 
 LEXICON NA
@@ -1885,7 +1890,7 @@ LEXICON VTA
 
 LEXICON VAI_DERIVATION
 @R.pos.VERB@+VAI:@R.pos.VERB@0                                           VAI_SUFFIXES ;
-@R.pos.VERB@+VAI+Der/Caus:@R.pos.VERB@%>attsi                            VTA "weight: 10" ;
+@R.pos.VERB@+VAI+Der/Caus:@R.pos.VERB@%>áttsi                            VTA "weight: 10" ;
 @R.pos.VERB@+VAI+Der/Caus2:@R.pos.VERB@%>pi                              VTA "weight: 10" ; ! Rare, give low weight
 @R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>mo  VTA_SUFFIXES "weight: 10" ;
 @R.pos.VERB@@P.class.VTA@+VAI+Der/Bnf+VTA:@R.pos.VERB@@P.class.VTA@%>omo VTA_SUFFIXES "weight: 10" ;
@@ -1921,8 +1926,8 @@ LEXICON VAI_SUFFIXES
 
 LEXICON INDEP_VAI_SUFFIXES
 ! Third Person Interrogatives
-@R.person.NULL@+3Sg+Interr:@R.person.NULL@%>watsiksi ENCLITICS ;
-@R.person.NULL@+3Sg+Interr:@R.person.NULL@%>watsiksiwa ENCLITICS ; ! Sometimes, we end up with a -wa suffix following this interrogative
+@R.person.NULL@+3Sg+Interr:@R.person.NULL@%>waatsiksi ENCLITICS ;
+@R.person.NULL@+3Sg+Interr:@R.person.NULL@%>waatsiksiwa ENCLITICS ; ! Sometimes, we end up with a -wa suffix following this interrogative
 @R.person.NULL@+3Pl+Interr:@R.person.NULL@%>waiksaawa ENCLITICS ;
 @R.person.NULL@+3Pl+Interr:@R.person.NULL@%>waiksaawayi ENCLITICS ; ! Sometimes, we end up with a -yi suffix following this interrogative
 ! Singular INDEPENDENT
@@ -2141,7 +2146,7 @@ LEXICON UNREAL_VTI_SUFFIXES
 LEXICON IMP_VTI_SUFFIXES
 ! Singular IMPERATIVE
 @R.person.IMP@+2Sg+%0SgO:@R.person.IMP@%>ta	ENCLITICS ;
-@R.person.IMP@+2Sg+%0PlO:@R.person.IMP@%>ti	ENCLITICS ;
+@R.person.IMP@+2Sg+%0PlO:@R.person.IMP@%>tsi	ENCLITICS ;
 ! Plural IMPERATIVE
 @R.person.IMP@+2Pl+%0SgO:@R.person.IMP@%>ka	ENCLITICS ;
 @R.person.IMP@+2Pl+%0PlO:@R.person.IMP@%>ki	ENCLITICS ;
@@ -2163,12 +2168,12 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NI@+1Sg+4SgO+Interr:@R.person.NI@%>ayiniwaatsiksi # ;
 @R.person.KI@+2Sg+4SgO+Interr:@R.person.KI@%>ayiniwaatsiksi # ;
 @R.person.NULL@+3Sg+4SgO+Interr:@R.person.NULL@%>yiiwaatsiksi # ;
-@R.person.NI@+1Pl+3SgO+Interr:@R.person.NI@%>annaanawaatsiksi # ;
-@R.person.KI@+2Pl+3SgO+Interr:@R.person.KI@%>awaawaatsiksi # ;
-@R.person.NULL@+21Pl+3SgO+Interr:@R.person.NULL@%>aawa # ;
-@R.person.NI@+1Pl+4SgO+Interr:@R.person.NI@%>annaaniwa # ;
-@R.person.KI@+2Pl+4SgO+Interr:@R.person.KI@%>awaayiniwa # ;
-@R.person.KI@+21Pl+4SgO+Interr:@R.person.KI@%>aawa # ;
+@R.person.NI@+1Pl+3SgO+Interr:@R.person.NI@%>annáánawaatsiksi # ;
+@R.person.KI@+2Pl+3SgO+Interr:@R.person.KI@%>awááwaatsiksi # ;
+@R.person.NULL@+21Pl+3SgO+Interr:@R.person.NULL@%>ááwa # ;
+@R.person.NI@+1Pl+4SgO+Interr:@R.person.NI@%>annáániwa # ;
+@R.person.KI@+2Pl+4SgO+Interr:@R.person.KI@%>awááyiniwa # ;
+@R.person.KI@+21Pl+4SgO+Interr:@R.person.KI@%>ááwa # ;
 @R.person.NULL@+3Pl+4SgO+Interr:@R.person.NULL@%>waiksaawa # ;
 ! Interrogatives DIRECT Plural Object
 @R.person.NI@+1Sg+3PlO+Interr:@R.person.NI@%>waiksaawa # ;
@@ -2177,12 +2182,12 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.KI@+2Sg+4PlO+Interr:@R.person.KI@%>waiksaawa # ;
 @R.person.NULL@+3Sg+4PlO+Interr:@R.person.NULL@%>waiksaawa # ;
 @R.person.NULL@+3Sg+4PlO+Interr:@R.person.NULL@%>waiksaawa # ;
-@R.person.KI@+1Pl+2PlO+Interr:@R.person.KI@%>ohpinnaanawa # ;	
-@R.person.NI@+1Pl+3PlO+Interr:@R.person.NI@%>annaaniwa # ;	
-@R.person.NI@+1Pl+4PlO+Interr:@R.person.NI@%>annaaniwa # ;	
-@R.person.KI@+2Pl+3PlO+Interr:@R.person.KI@%>awaayiwa # ;
-@R.person.KI@+2Pl+4PlO+Interr:@R.person.KI@%>awaayiwa # ;
-@R.person.NULL@+21Pl+3PlO+Interr:@R.person.NULL@%>aayiwa # ;
+@R.person.KI@+1Pl+2PlO+Interr:@R.person.KI@%>ohpinnáánawa # ;	
+@R.person.NI@+1Pl+3PlO+Interr:@R.person.NI@%>annáániwa # ;	
+@R.person.NI@+1Pl+4PlO+Interr:@R.person.NI@%>annáániwa # ;	
+@R.person.KI@+2Pl+3PlO+Interr:@R.person.KI@%>awááyiwa # ;
+@R.person.KI@+2Pl+4PlO+Interr:@R.person.KI@%>awááyiwa # ;
+@R.person.NULL@+21Pl+3PlO+Interr:@R.person.NULL@%>ááyiwa # ;
 ! Interrogatives INVERSE Singular Object
 @R.person.NI@+3Sg+1SgO+Interr:@R.person.NI@%>%^INVokaatsiksi # ;
 @R.person.KI@+3Sg+2SgO+Interr:@R.person.KI@%>%^INVokaatsiksi # ;
@@ -2198,20 +2203,20 @@ LEXICON INDEP_VTA_SUFFIXES
 @R.person.NULL@+4Pl+3PlO+Interr:@R.person.NULL@%>%^INVokaiksaawa # ;
 ! Interrogatives INVERSE Plural Object
 @R.person.KI@+2Sg+1PlO+Interr:@R.person.KI@%>%^INVokihpinnaana # ;
-@R.person.NI@+3Sg+1PlO+Interr:@R.person.NI@%>%^INVokinnaanawa # ;
-@R.person.KI@+3Sg+2PlO+Interr:@R.person.KI@%>%^INVokoaawa # ;
-@R.person.KI@+3Sg+21PlO+Interr:@R.person.KI@%>%^INVokaawa # ;
-@R.person.NI@+4Sg+1PlO+Interr:@R.person.NI@%>%^INVokinnaaniniwa # ;
-@R.person.KI@+4Sg+2PlO+Interr:@R.person.KI@%>%^INVokoaayiniwa # ;
-@R.person.KI@+4Sg+3PlO+Interr:@R.person.KI@%>%^INVokawaayiniwa # ;
+@R.person.NI@+3Sg+1PlO+Interr:@R.person.NI@%>%^INVokinnáánawa # ;
+@R.person.KI@+3Sg+2PlO+Interr:@R.person.KI@%>%^INVokoááwa # ;
+@R.person.KI@+3Sg+21PlO+Interr:@R.person.KI@%>%^INVokááwa # ;
+@R.person.NI@+4Sg+1PlO+Interr:@R.person.NI@%>%^INVokinnáániniwa # ;
+@R.person.KI@+4Sg+2PlO+Interr:@R.person.KI@%>%^INVokoááyiniwa # ;
+@R.person.KI@+4Sg+3PlO+Interr:@R.person.KI@%>%^INVokawááyiniwa # ;
 @R.person.KI@+4Sg+21PlO+Interr:@R.person.KI@%>%^INVokiyiniwa # ;
 @R.person.NULL@+4Sg+3SgO+Interr:@R.person.NULL@%>%^INVokaiksaawa # ;
-@R.person.NI@+3Pl+1PlO+Interr:@R.person.NI@%>%^INVokinnaaniwa # ;
-@R.person.KI@+3Pl+2PlO+Interr:@R.person.KI@%>%^INVokoaayiwa # ;
+@R.person.NI@+3Pl+1PlO+Interr:@R.person.NI@%>%^INVokinnáániwa # ;
+@R.person.KI@+3Pl+2PlO+Interr:@R.person.KI@%>%^INVokoááyiwa # ;
 @R.person.KI@+3Pl+21PlO+Interr:@R.person.KI@%>%^INVokiyiwa # ;
-@R.person.NI@+4Pl+1PlO+Interr:@R.person.NI@%>%^INVokinnaaniwa # ;
-@R.person.KI@+4Pl+2PlO+Interr:@R.person.KI@%>%^INVokoaayiwa # ;
-@R.person.KI@+4Pl+3PlO+Interr:@R.person.KI@%>%^INVokoaayiwa # ;
+@R.person.NI@+4Pl+1PlO+Interr:@R.person.NI@%>%^INVokinnáániwa # ;
+@R.person.KI@+4Pl+2PlO+Interr:@R.person.KI@%>%^INVokoááyiwa # ;
+@R.person.KI@+4Pl+3PlO+Interr:@R.person.KI@%>%^INVokoááyiwa # ;
 @R.person.KI@+4Pl+21PlO+Interr:@R.person.KI@%>%^INVokiyiwa # ;
 @R.person.NULL@+4Pl+3SgO+Interr:@R.person.NULL@%>%^INVokaiksaawa # ;
 
@@ -2474,14 +2479,14 @@ LEXICON ENCLITICS
 0 # ;
 +PRO+3/%0:%>aawa ENCLITICS_BOUND ;
 +PRO+3Pl:%>%^PROaiksi ENCLITICS_BOUND ;
-+PRO+D3Sg:%>%^PROayi ENCLITICS_BOUND ;
++PRO+D3Sg:%>%^PROáyi ENCLITICS_BOUND ;
 +PRO+%0Pl:%>%^PROaistsi ENCLITICS_BOUND ;
 
 LEXICON ENCLITICS_BOUND
 0 # ;
 +PRO+3/%0:%>aawa # ;
 +PRO+3Pl:%>aiksi # ;
-+PRO+D3Sg:%>ayi # ;
++PRO+D3Sg:%>áyi # ;
 +PRO+%0Pl:%>aistsi # ;
 
 LEXICON VERB_DER_NOM_SUFFIXES
@@ -2612,7 +2617,7 @@ LEXICON N_ENCLITICS !! [OLD: ENCLITICS]
 0 # ;
 +PRO+3/%0:%>aawa # ;
 +PRO+3Pl:%>%^PROaiksi # ;
-+PRO+D3Sg:%>%^PROayi # ;
++PRO+D3Sg:%>%^PROáyi # ;
 +PRO+%0Pl:%>%^PROaistsi # ;
 
 !! END OF VERBINESS
@@ -2620,90 +2625,90 @@ LEXICON N_ENCLITICS !! [OLD: ENCLITICS]
 
 
 LEXICON PART
-aa+Ipc:aa # ;
-amaahtsiksi+Ipc:amaahtsiksi # ;
-annaatsiksi+Ipc:annaatsiksi # ;
-anni+Ipc:anni # ;
-annia+Ipc:annia # ;
-anniayi+Ipc:anniayi # ;
-anniihk+Ipc:anniihk # ;
+áa+Ipc:áa # ;
+ámaahtsiksi+Ipc:ámaahtsiksi # ;
+annáatsiksi+Ipc:annáatsiksi # ;
+ánni+Ipc:ánni # ;
+ánnia+Ipc:ánnia # ;
+ánniayi+Ipc:ánniayi # ;
+annííhk+Ipc:annííhk # ;
 annohk+Ipc:annohk # ;
-assa+Ipc:assa # ;
+ássa+Ipc:ássa # ;
 ayaoo+Ipc:ayaoo # ;
 ha'+Ipc:ha' # ;
-ha'ayaa+Ipc:ha'ayaa # ;
-hannia+Ipc:hannia # ;
-kako+Ipc:kako # ;
-kamotaana+Ipc:kamotaana # ;
-kayiiwa+Ipc:kayiiwa # ;
+há'ayaa+Ipc:há'ayaa # ;
+hánnia+Ipc:hánnia # ;
+kakó+Ipc:kakó # ;
+kamotáána+Ipc:kamotáána # ;
+kayííwa+Ipc:kayííwa # ;
 ki+Ipc:ki # ;
-ki+Ipc:ki # ;
-kiaayaawa+Ipc:kiaayaawa # ;
-kiai'+Ipc:kiai' # ;
-kianniayi+Ipc:kianniayi # ;
-kiiwa+Ipc:kiiwa # ;
+kí+Ipc:kí # ;
+kiááyaawa+Ipc:kiááyaawa # ;
+kiáí'+Ipc:kiáí' # ;
+kiánniayi+Ipc:kiánniayi # ;
+kííwa+Ipc:kííwa # ;
 kiiwahtao'+Ipc:kiiwahtao' # ;
-kika+Ipc:kika # ;
-kookonaa+Ipc:kookonaa # ;
-kookowaa+Ipc:kookowaa # ;
+kíka+Ipc:kíka # ;
+kóókonaa+Ipc:kóókonaa # ;
+kóókowaa+Ipc:kóókowaa # ;
 na'+Ipc:na' # ;
-na'a+Ipc:na'a # ;
-naanaan+Ipc:naanaan # ;
-napi+Ipc:napi # ;
-niowaa+Ipc:niowaa # ;
-niowaakiaaki+Ipc:niowaakiaaki # ;
-nisaa+Ipc:nisaa # ;
-nissko+Ipc:nissko # ;
-oki+Ipc:oki # ;
-oki+Ipc:oki # ;
+na'á+Ipc:na'á # ;
+náánaan+Ipc:náánaan # ;
+napí+Ipc:napí # ;
+niówaa+Ipc:niówaa # ;
+níowaakiaaki+Ipc:níowaakiaaki # ;
+nisáá+Ipc:nisáá # ;
+níssko+Ipc:níssko # ;
+okí+Ipc:okí # ;
+óki+Ipc:óki # ;
 oohsiniinamma+Ipc:oohsiniinamma # ;
-poka+Ipc:poka # ;
-pokaa+Ipc:pokaa # ;
+poká+Ipc:poká # ;
+pokáá+Ipc:pokáá # ;
 saa+Ipc:saa # ;
-saahkayi+Ipc:saahkayi # ;
-tama'sahkaa+Ipc:tama'sahkaa # ;
+sááhkáyi+Ipc:sááhkáyi # ;
+tamá'sahkaa+Ipc:tamá'sahkaa # ;
 tsa+Ipc:tsa # ;
-tsaa+Ipc:tsaa # ;
-tsaahtai'kayi+Ipc:tsaahtai'kayi # ;
+tsáá+Ipc:tsáá # ;
+tsááhtai'kayi+Ipc:tsááhtai'kayi # ;
 tsahtao'+Ipc:tsahtao' # ;
-tsiki+Ipc:tsiki # ;
-tsiksika+Ipc:tsiksika # ;
-tsima+Ipc:tsima # ;
-tska+Ipc:tska # ;
+tsíki+Ipc:tsíki # ;
+tsiksiká+Ipc:tsiksiká # ;
+tsimá+Ipc:tsimá # ;
+tská+Ipc:tská # ;
 tsss+Ipc:tsss # ;
 waiiyai+Ipc:waiiyai # ;
-yaoo+Ipc:yaoo # ;
+yáóo+Ipc:yáóo # ;
 
 
 
 
 LEXICON PERS_PRON
-niistowa+Pron+Pers+1Sg:niistowa # ;
-niistowa+Pron+Pers+1Sg:niisto # ;
-niistowa+Pron+Pers+1Sg+Obv:niistoyi # ;
-kiistowa+Pron+Pers+2Sg:kiistowa # ;
-kiistowa+Pron+Pers+2Sg:kiisto # ;
-kiistowa+Pron+Pers+2Sg+Obv:kiistoyi # ;
-ostoyi+Pron+Pers+3Sg:ostoyi # ;
-niistonnaana+Pron+Pers+1Pl:niistonnaana # ;
-niistonnaana+Pron+Pers+1Pl:niistonnaan # ;
-niistonnaana+Pron+Pers+1Pl+Obv:niistonnaani # ;
-kiistonoona+Pron+Pers+21Pl:kiistonoona # ;
-kiistonoona+Pron+Pers+21Pl:kiistonoon # ;
-kiistonoona+Pron+Pers+21Pl+Obv:kiistonooni # ;
-kiistowaawa+Pron+Pers+2Pl:kiistowaawa # ;
-kiistowaawa+Pron+Pers+2Pl:kiistowaaw # ;
-kiistowaawa+Pron+Pers+2Pl+Obv:kiistowaawi # ;
-ostowaawayi+Pron+Pers+3Pl:ostowaawayi # ;
+niistówa+Pron+Pers+1Sg:niistówa # ;
+niistówa+Pron+Pers+1Sg:niistó # ;
+niistówa+Pron+Pers+1Sg+Obv:niistóyi # ;
+kiistówa+Pron+Pers+2Sg:kiistówa # ;
+kiistówa+Pron+Pers+2Sg:kiistó # ;
+kiistówa+Pron+Pers+2Sg+Obv:kiistóyi # ;
+ostóyi+Pron+Pers+3Sg:ostóyi # ;
+niistónnaana+Pron+Pers+1Pl:niistónnaana # ;
+niistónnaana+Pron+Pers+1Pl:niistónnaan # ;
+niistónnaana+Pron+Pers+1Pl+Obv:niistónnaani # ;
+kiistónoona+Pron+Pers+21Pl:kiistónoona # ;
+kiistónoona+Pron+Pers+21Pl:kiistónoon # ;
+kiistónoona+Pron+Pers+21Pl+Obv:kiistónooni # ;
+kiistówaawa+Pron+Pers+2Pl:kiistówaawa # ;
+kiistówaawa+Pron+Pers+2Pl:kiistówaaw # ;
+kiistówaawa+Pron+Pers+2Pl+Obv:kiistówaawi # ;
+ostówaawayi+Pron+Pers+3Pl:ostówaawayi # ;
 
 LEXICON INTERR_PRON
-takaa+Pron+Interr+3Sg/Pl:takaa # ;
-tahkaa+Pron+Interr+3Sg/Pl:tahkaa # ;
-tsikaa+Pron+Interr+4Sg/Pl:tsikaa # ;
-tsa+Pron+Interr+3Sg/Pl:tsa # ;
-tsa+Pron+Interr+0Sg/Pl:tsa # ;
-aahsa+Pron+Interr+0Sg/Pl:aahsa # ;
-tsima+Pron+Interr:tsima # ;
+takáa+Pron+Interr+3Sg/Pl:takáa # ;
+tahkáa+Pron+Interr+3Sg/Pl:tahkáa # ;
+tsikáa+Pron+Interr+4Sg/Pl:tsikáa # ;
+tsá+Pron+Interr+3Sg/Pl:tsá # ;
+tsá+Pron+Interr+0Sg/Pl:tsá # ;
+ááhsa+Pron+Interr+0Sg/Pl:ááhsa # ;
+tsimá+Pron+Interr:tsimá # ;
 
 
 
