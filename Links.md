@@ -9,6 +9,7 @@
                 * [propernouns.lexc](src-fst-morphology-affixes-propernouns.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/propernouns.lexc))
                 * [symbols.lexc](src-fst-morphology-affixes-symbols.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/symbols.lexc))
                 * [verb_affixes.lexc](src-fst-morphology-affixes-verb_affixes.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/verb_affixes.lexc))
+                * [verb_suffixes.lexc](src-fst-morphology-affixes-verb_suffixes.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/verb_suffixes.lexc))
             * [phonology.xfscript](src-fst-morphology-phonology.xfscript.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/phonology.xfscript))
             * [root.lexc](src-fst-morphology-root.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/root.lexc))
             * `stems/`
