@@ -37,8 +37,8 @@ LEXICON POSS_NUM
 @R.person.OT@+Px3Sg:@R.person.OT@0   NOUN_FINALS ;
 @R.person.NULL@:@R.person.NULL@0      NOUN_FINALS ;
 ! Plural possessors
-@R.person.NI@+Px1Pl:@R.person.NI@%>innaan  NOUN_FINALS ;
-@R.person.KI@+Px21Pl:@R.person.KI@%>innoon NOUN_FINALS ;
+@R.person.NI@+Px1Pl:@R.person.NI@%>%^POSSinnaan  NOUN_FINALS ;
+@R.person.KI@+Px21Pl:@R.person.KI@%>%^POSSinnoon NOUN_FINALS ;
 @R.person.KI@+Px2Pl:@R.person.KI@%>oaawa   NOUN_FINALS ;
 @R.person.OT@+Px3Pl:@R.person.OT@%>oaawa   NOUN_FINALS ;
 

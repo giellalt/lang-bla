@@ -15,7 +15,7 @@ LEXICON VERB_STEMS
 
 LEXICON INIT_VAI_STEMS
 a'po'taki:a'po'taki VAI ;
-itapoo:itapoo%^DIPH VAI ;
+itapoo:%^IMPitapoo%^DIPH VAI ;
 okska'si:okska'si VAI ;
 waahkayi:waahkayi VAI ;
 waahkayi:waahkayimm%^3MM VAI ;

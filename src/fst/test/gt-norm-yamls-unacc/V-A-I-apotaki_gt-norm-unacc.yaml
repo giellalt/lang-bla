@@ -52,7 +52,7 @@ Tests:
      
      PS/maat+a'po'taki+VAI+Ind+1Sg+Interr: nimaata'po'takihpa
      PS/maat+a'po'taki+VAI+Ind+2Sg+Interr: kimaata'po'takihpa
-     PS/maat+a'po'taki+VAI+Ind+3Sg+Interr: maata'po'takiwatsiksiwa
+     PS/maat+a'po'taki+VAI+Ind+3Sg+Interr: maata'po'takiwaatsiksiwa
      PS/maat+a'po'taki+VAI+Ind+1Pl: [ nimaata'po'takihpinnaana, nimaata'po'takihpinnaan ]
      PS/maat+a'po'taki+VAI+Ind+3Pl+Interr: maata'po'takiwaiksaawayi
     
@@ -66,12 +66,12 @@ Tests:
      PS/a+a'po'taki+VAI+Cnj+3Pl: ota'pao'takssi
      PS/a+a'po'taki+VAI+Cnj+4Pl: a'pao'takssi
    
-     PS/a+a'po'taki+VAI+Sbj+1Sg: a'pao'takiniki
-     PS/a+a'po'taki+VAI+Sbj+2Sg: a'pao'takiniki
+     PS/a+a'po'taki+VAI+Sbj+1Sg: a'pao'takiiniki
+     PS/a+a'po'taki+VAI+Sbj+2Sg: a'pao'takiiniki
      PS/a+a'po'taki+VAI+Sbj+3Sg: a'pao'takisi
      PS/a+a'po'taki+VAI+Sbj+4Sg: a'pao'takisi
-     PS/a+a'po'taki+VAI+Sbj+1Pl: a'pao'takinnaaniki
-     PS/a+a'po'taki+VAI+Sbj+21Pl: a'pao'takinoainiki
+     PS/a+a'po'taki+VAI+Sbj+1Pl: a'pao'takiinnaaniki
+     PS/a+a'po'taki+VAI+Sbj+21Pl: a'pao'takiinoainiki
      PS/a+a'po'taki+VAI+Sbj+2Pl: a'pao'takio'ki
      PS/a+a'po'taki+VAI+Sbj+3Pl: a'pao'takisi
      PS/a+a'po'taki+VAI+Sbj+4Pl: a'pao'takisi

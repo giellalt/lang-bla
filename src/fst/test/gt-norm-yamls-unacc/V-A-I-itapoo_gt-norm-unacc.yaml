@@ -28,6 +28,7 @@ Tests:
      PS/aahk+PS/oht+itapoo+VAI+Ind+2Sg: kaahkohtsitapoo
      PS/aahk+itapoo+VAI+Ind+2Sg: kaahkitapoo
      PS/yaak+PS/ikipp+itapoo+VAI+Ind+3Sg: aaksikippitapoowa
+     PS/IC+PS/ikipp+itapoo+VAI+Ind+3Sg: kayippitapoowa
      itapoo+VAI+Ind+2Sg+Interr: kitsitapoohpa
      PS/aahk+itapoo+VAI+Ind+2Sg+Interr: kaahkitapoohpa
      PS/stam+itapoo+VAI+Imp+2Sg: stamitapoot
@@ -35,3 +36,4 @@ Tests:
      PS/maat+PS/anow+PS/a+itapoo+VAI+Ind+2Sg+Interr: kimaatanowaitapoohpa
      PS/itam+PS/it+PS/a+itapoo+VAI+Ind+3Sg: itamitaitapoowa
      PS/a+PS/ssk+PS/yaahs+itapoo+VAI+Ind+3Sg: aisskaahsitapoowa
+     itapoo+VAI+Imp+2Sg: [ istapoot, stapoot ]

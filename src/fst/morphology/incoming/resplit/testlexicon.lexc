@@ -1160,6 +1160,8 @@ s2
 %^IMP
 %^PRO
 %^3MM
+%^IC
+%^POSS
 
 !! Blackfoot Nominal and Verbal Morphology
 
@@ -1318,7 +1320,7 @@ LEXICON VERB_STEMS
 
 LEXICON INIT_VAI_STEMS
 a'po'taki:a'po'taki VAI ;
-itapoo:itapoo%^DIPH VAI ;
+itapoo:%^IMPitapoo%^DIPH VAI ;
 okska'si:okska'si VAI ;
 waahkayi:waahkayi VAI ;
 waahkayi:waahkayimm%^3MM VAI ;
@@ -1428,8 +1430,8 @@ LEXICON POSS_NUM
 @R.person.OT@+Px3Sg:@R.person.OT@0   NOUN_FINALS ;
 @R.person.NULL@:@R.person.NULL@0      NOUN_FINALS ;
 ! Plural possessors
-@R.person.NI@+Px1Pl:@R.person.NI@%>innaan  NOUN_FINALS ;
-@R.person.KI@+Px21Pl:@R.person.KI@%>innoon NOUN_FINALS ;
+@R.person.NI@+Px1Pl:@R.person.NI@%>%^POSSinnaan  NOUN_FINALS ;
+@R.person.KI@+Px21Pl:@R.person.KI@%>%^POSSinnoon NOUN_FINALS ;
 @R.person.KI@+Px2Pl:@R.person.KI@%>oaawa   NOUN_FINALS ;
 @R.person.OT@+Px3Pl:@R.person.OT@%>oaawa   NOUN_FINALS ;
 
@@ -1497,7 +1499,7 @@ LEXICON BASIC_IRR_PREFIXES
 @P.person.NULL@0    INIT ;
 
 LEXICON BASIC_IMP_PREFIXES
-@P.person.IMP@0    INIT ;
+@P.person.IMP@:@P.person.IMP@%^IMP    INIT ;
 
 LEXICON NOUN_PREFIXES
 NOUN_INDEP_PREFIXES ;
@@ -1546,6 +1548,7 @@ LEXICON INIT_PRESTEMS
 @R.pos.VERB@@D.mode.IMP@PS/yaak+:@R.pos.VERB@@D.mode.IMP@aak%< PRESTEMS ; ! future
 @R.pos.VERB@@D.mode.IMP@PS/ii+:@R.pos.VERB@@D.mode.IMP@ii%< PRESTEMS ; ! past
 @R.pos.VERB@@D.mode.IMP@PS/na+:@R.pos.VERB@@D.mode.IMP@na%< PRESTEMS ; ! Siksika past
+@R.pos.VERB@@D.mode.IMP@PS/IC+:@R.pos.VERB@@D.mode.IMP@%^IC PRESTEMS ;
 
 !"aspect-like" prestems
 PS/a+:a	PSBOUND1 ;
@@ -1569,7 +1572,7 @@ PS/apoyi+:apoyi	PSBOUND2 ;
 PS/atso't+:atso't	PSBOUND2 ;
 PS/iik+:iik	PSBOUND2 ;
 PS/iitsiksist+:iitsiksist	PSBOUND2 ;
-PS/ikipp+:kipp	PSBOUND2 ;
+PS/ikipp+:%^ICkipp	PSBOUND2 ;
 PS/ikkam+:ikkam	PSBOUND2 ;
 PS/ikkam+:kam	PSBOUND2 ;
 PS/iksisap+:iksisap	PSBOUND2 ;
@@ -1659,7 +1662,6 @@ LEXICON PERS_PRESTEMS
 @R.pos.VERB@@D.mode.IMP@PS/ayaak+:@R.pos.VERB@@D.mode.IMP@ayaak%< PRESTEMS ; ! imm future
 @R.pos.VERB@@D.mode.IMP@PS/yaak+:@R.pos.VERB@@D.mode.IMP@aak%< PRESTEMS ; ! future
 @R.pos.VERB@@D.mode.IMP@PS/ii+:@R.pos.VERB@@D.mode.IMP@ii%< PRESTEMS ; ! past
-@R.pos.VERB@@D.mode.IMP@PS/na+:@R.pos.VERB@@D.mode.IMP@na%< PRESTEMS ; ! Siksika past
 
 !"aspect-like" prestems
 PS/a+:a	PSBOUND1 ;
@@ -1683,7 +1685,7 @@ PS/apoyi+:apoyi	PSBOUND2 ;
 PS/atso't+:atso't	PSBOUND2 ;
 PS/iik+:iik	PSBOUND2 ;
 PS/iitsiksist+:iitsiksist	PSBOUND2 ;
-PS/ikipp+:ikipp	PSBOUND2 ;
+PS/ikipp+:%^ICikipp	PSBOUND2 ;
 PS/ikkam+:ikkam	PSBOUND2 ;
 PS/iksisap+:iksisap	PSBOUND2 ;
 PS/iksist+:iksist	PSBOUND2 ;
@@ -1762,7 +1764,6 @@ LEXICON TENSE_PREFIXES !elsewhere tense (e.g. after negation)
 @R.pos.VERB@@D.mode.IMP@PS/ayaak+:@R.pos.VERB@@D.mode.IMP@ayaak%< PRESTEMS ; ! imm future
 @R.pos.VERB@@D.mode.IMP@PS/yaak+:@R.pos.VERB@@D.mode.IMP@yaak%< PRESTEMS ; ! future
 @R.pos.VERB@@D.mode.IMP@PS/ii+:@R.pos.VERB@@D.mode.IMP@ii%< PRESTEMS ; ! past
-@R.pos.VERB@@D.mode.IMP@PS/na+:@R.pos.VERB@@D.mode.IMP@na%< PRESTEMS ; ! Siksika past
 
 LEXICON PRESTEMS
 PSSET1 ;
@@ -1800,7 +1801,7 @@ PS/apoyi+:apoyi	PSBOUND2 ;
 PS/atso't+:atso't	PSBOUND2 ;
 PS/iik+:i2ik	PSBOUND2 ;
 PS/iitsiksist+:iitsiksist	PSBOUND2 ;
-PS/ikipp+:i2kipp	PSBOUND2 ;
+PS/ikipp+:%^ICi2kipp	PSBOUND2 ;
 PS/ikkam+:i2kkam	PSBOUND2 ;
 PS/iksisap+:i2ksisap	PSBOUND2 ;
 PS/iksist+:i2ksist	PSBOUND2 ;

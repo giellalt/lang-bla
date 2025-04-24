@@ -77,22 +77,31 @@ define rmBnf [ %^BNF -> 0 ] ;
 !!€ nit<inakat>^RCPRotsiiyi>hpinnaan
 !!€ nitsinakattsiiyihpinnaan
 
+!!€ nit<ipohkisstoyi>^RCPRotsiiyi>hpinnaana
+!!€ nitsipohkisstoyootsiiyihpinnaana
+
 ! Demonstrative trigger rules (-wa > 0 | o-_)
 
 define Demwa20Rule [ w a -> 0 || o %> %^DEM _ ] ;
 define DemPli20Rule [ i (->) 0 || o %> %^DEM _ ] ;
 define Demtrigger20 [ %^DEM -> 0 ] ;
 
-!!€ 
-!!€ 
+!!€ anno>^DEMwa
+!!€ anno
+
+!!€ anno>^DEMiksi
+!!€ annoiksi, annoksi
 
 ! Inverse o rules
 define Invo20Rule [ o -> 0 || t %>  %^INV_ ] ;
 define Invo2ooRule [ o -> o o || Ix %> %^INV _ ] ;
 define Invtrigger20 [ %^INV -> 0 ] ;
 
-!!€ 
-!!€ 
+!!€ nit<inakat>^INVokssi
+!!€ nitsinakakkssi
+
+!!€ kit<ipohkisstoyi>^INVoka
+!!€ kitsipohkisstoyooka
 
 ! 3MM VAIs
 
@@ -103,11 +112,33 @@ define 3MMtrigger20 [ %^3MM -> 0 ] ;
 define VLVsuffixRule [ o -> o o || Ix %> %^VLV _ ,, a -> a a || Ix %> %^VLV _ ] ;
 define VLVtrigger20 [ %^VLV -> 0 ] ;
 
+!!€ kit<ipohkisstoyi>^VLVawa
+!!€ kitsipohkisstoyaawa
+
+!!€ nit<inakat>^VLVawa
+!!€ nitsinakatawa
+
 !VTA 3O imperative suffixes lengthen preceding vowels (p.126)
 
 define IMPsuffixRule1 [ [ i | o ] -> 0 || Vowel %> %^IMP _ ] ;
 define IMPsuffixRule2 [ i -> i i || Consonant _ %> %^IMP ,, a -> a a || Consonant _ %> %^IMP ,, a -> a a || Consonant _ %> %^IMP ] ;
 define IMPsuffixRule [ IMPsuffixRule1 .o. IMPsuffixRule2 ] ;
+
+!!€ ^IMPpoohkisstoyi>^IMPok
+!!€ poohkisstoyiik
+
+!!€ ^IMPinakat>^IMPok
+!!€ inakatok
+
+! for certain stems that begin with it, this becomes (i)st initially
+define IMPit2istRule [ i t -> (i) s t || %^IMP %^IMP _ ] ; 
+
+!!€ ^IMP^IMPitapoo^DIPH>t
+!!€ istapoot, stapoot
+
+!!€ ^IMPa'po'taki>k
+!!€ a'potakik
+
 define IMPtrigger20 [ %^IMP -> 0 ] ;
 
 !PRO suffix rules (p. 52)
@@ -115,6 +146,25 @@ define IMPtrigger20 [ %^IMP -> 0 ] ;
 define a20ProRule [ a -> 0 || _ %> %^PRO a ] ;
 define i20ProRule [ i -> 0 || [ m | n ] _ %> %^PRO a ] ;
 define PROtrigger20 [ %^PRO -> 0 ] ;
+
+!!€ 
+!!€ 
+
+!!€ 
+!!€ 
+
+! IC past, imperative (sV, ICV > sayV, CayV)
+define ICpastRule [ s -> s a y || %^IC %^IC _ Vowel ,, 
+i2 p -> p a y || %^IC %^IC _ Vowel ,, 
+i2 t -> t a y || %^IC %^IC _ Vowel ,, 
+i2 k (s) -> k a y || %^IC %^IC _ Vowel ,, 
+i2 s -> s a y || %^IC %^IC _ Vowel ] ;
+define ICimpRule [ s -> s a y || %^IMP %^IC _ Vowel ,, 
+i2 p -> p a y || %^IMP %^IC _ Vowel ,, 
+i2 t -> t a y || %^IMP %^IC _ Vowel ,, 
+i2 k (s) -> k a y || %^IMP %^IC _ Vowel ,, 
+i2 s -> s a y || %^IMP %^IC _ Vowel ] ;
+define ICtrigger20 [ %^IC -> 0 ] ;
 
 !! Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of Toronto Press. Appendix B.
 
@@ -154,7 +204,7 @@ define nonpermCRule [ [ n2 | s2 | m2 ] -> 0 || _ %> Vowel ] ;
 
 ! innaan, innoon i lost after i, a, w, y, after non-permanent consonant is deleted (p. 81, awahsin example in dictionary) looks like this also shouldn't lengthen i after s2 --- miistsis, moksis yaml change
 
-define pluralPossSuffixRule [ i -> 0 || [ i | a | w | y ] %> _ [ n n a a n | n n o o n ] ] ;
+define pluralPossSuffixRule [ i -> 0 || [ i | a | w | y ] %> %^POSS _ [ n n a a n | n n o o n ] ] ;
 
 ! rule to make at least aaapan and naapiikoan work; after breaking and palatalisation 
 
@@ -481,6 +531,9 @@ read regex [ rmAccent
 .o. Invo2ooRule
 .o. VLVsuffixRule
 .o. IMPsuffixRule
+.o. IMPit2istRule
+.o. ICpastRule
+.o. ICimpRule
 .o. a20ProRule
 .o. i20ProRule
 .o. Invtrigger20
@@ -489,6 +542,7 @@ read regex [ rmAccent
 .o. VLVtrigger20
 .o. IMPtrigger20
 .o. PROtrigger20
+.o. ICtrigger20
 .o. rcprRule
 .o. rmRcpr
 .o. bnfRule
