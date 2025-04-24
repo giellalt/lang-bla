@@ -1165,6 +1165,39 @@ Rules
 * *nit<inakat>^RCPRotsiiyi>hpinnaan*
 * *nitsinakattsiiyihpinnaan*
 
+* *nit<ipohkisstoyi>^RCPRotsiiyi>hpinnaana*
+* *nitsipohkisstoyootsiiyihpinnaana*
+
+* *anno>^DEMwa*
+* *anno*
+
+* *anno>^DEMiksi*
+* *annoiksi,* `annoksi`
+
+* *nit<inakat>^INVokssi*
+* *nitsinakakkssi*
+
+* *kit<ipohkisstoyi>^INVoka*
+* *kitsipohkisstoyooka*
+
+* *kit<ipohkisstoyi>^VLVawa*
+* *kitsipohkisstoyaawa*
+
+* *nit<inakat>^VLVawa*
+* *nitsinakatawa*
+
+* *^IMPpoohkisstoyi>^IMPok*
+* *poohkisstoyiik*
+
+* *^IMPinakat>^IMPok*
+* *inakatok*
+
+* *^IMP^IMPitapoo^DIPH>t*
+* *istapoot,* `stapoot`
+
+* *^IMPa'po'taki>k*
+* *a'potakik*
+
 * ???
 * ???
 
