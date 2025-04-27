@@ -1,8 +1,5 @@
 read lexc testlexicon.lexc
-save stack testlexicon.hfst
-#load lexicon.hfst
 define Morph
-
 
 source ../../phonology.xfscript
 save stack testphonology.hfst
@@ -14,7 +11,9 @@ define rmAccentInv
 
 regex [ rmAccentInv .o. Morph ] ;
 save stack testlexicon.hfst
+#load lexicon.hfst
 
+clear stack
 
 set flag-is-epsilon ON
 regex [ rmAccentInv .o. Morph .o. Phon ];

@@ -10,17 +10,18 @@ Config:
 Tests:
   
   Verb - waahkayi - ok : # -m animate intransitive verb, go home AEW NA1
-     PS/maat+PS/yaak+waahkayi+VAI+Ind+3Sg+Interr: maataakahkayiwatsiksi
-     PS/a+PS/o't+waahkayi+VAI+Sbj+1Sg: ao'tahkayiniki
+     PS/maat+PS/yaak+waahkayi+VAI+Ind+3Sg+Interr: [ maataakahkayiwaatsiksi, maataakahkayimmaatsiksi, maataakahkayiwaatsiksiwa, maataakahkayimmaatsiksiwa ]
+     PS/a+PS/o't+waahkayi+VAI+Sbj+1Sg: ao'tahkayiiniki
      PS/maat+PS/yaak+PS/ohkott+waahkayi+VAI+Ind+1Sg+Interr: nimaataakohkottahkayihpa
      PS/ayaak+waahkayi+VAI+Cnj+3Pl: otayaakahkayssi
      PS/yaak+PS/oht+waahkayi+VAI+Ind+1Sg: nitaakohtahkayi
      PS/yaak+waahkayi+VAI+Ind+2Sg: kitaakahkayi
-     PS/ayaak+waahkayi+VAI+Ind+3Pl+PRO+3/0: ayaakahkayiyaawa
-     PS/maak+PS/sa+waahkayi+VAI+Ind+3Sg+Interr: maakssawahkayiwatsiksi
-     PS/aahk+waahkayi+VAI+Cnj+3Sg: otaahkahkayssi
+     PS/ayaak+waahkayi+VAI+Ind+3Pl+PRO+3/0Pl: [ ayaakahkayiyaawa, ayaakahkayimmiaawa ]
+     PS/yaak+waahkayi+VAI+Ind+3Sg+PRO+D3Sg: [ aakahkayiwayi, aakahkayimmayi ]
+     PS/maak+PS/sa+waahkayi+VAI+Ind+3Sg+Interr: [ maakssawahkayiwaatsiksi, maakssawahkayimmaatsiksi, maakssawahkayiwaatsiksiwa, maakssawahkayimmaatsiksiwa ]
+     PS/aahk+waahkayi+VAI+Cnj+3Sg: maahkahkayssi
      PS/aahk+waahkayi+VAI+Cnj+21Pl: aahkahkayssi
-     PS/yaak+PS/sa+waahkayi+VAI+Ind+3Sg+Interr: aakssawahkayiwatsiksi
-     PS/yaak+PS/itam+PS/it+waahkayi+VAI+Ind+3Sg: aakitamitahkayiwa
-     PS/yaak+waahkayi+VAI+Ind+3Sg: aakahkayiwa
+     PS/yaak+PS/sa+waahkayi+VAI+Ind+3Sg+Interr: [ aakssawahkayiwaatsiksi, aakssawahkayimmaatsiksi, aakssawahkayiwaatsiksiwa, aakssawahkayimmaatsiksiwa ]
+     PS/yaak+PS/itam+PS/it+waahkayi+VAI+Ind+3Sg: [ aakitamitahkayiwa, aakitamitahkayimma ]
+     PS/yaak+waahkayi+VAI+Ind+3Sg: [ aakahkayiwa, aakahkayimma ]
      PS/aahk+waahkayi+VAI+Cnj+1Sg: naahkahkayssi

@@ -34,12 +34,12 @@ Tests:
      atsikini+NI+Px2Pl+Pl: [ katsikiwaawaistsi, katsikiimoaawaistsi ]
      atsikini+NI+Px2Pl+Non: [ katsikiwaawai, katsikiimoaawai ]
 
-     atsikini+NI+Px3Sg+Sg: [ atsikini, atsikiimi ]
-     atsikini+NI+Px3Sg+Pl: [ atsikiistsi, atsikiimistsi ]
-     atsikini+NI+Px3Sg+Non: [ atsikii, atsikiimi ]
+     atsikini+NI+Px3Sg+Sg: [ matsikini, matsikiimi ]
+     atsikini+NI+Px3Sg+Pl: [ matsikiistsi, matsikiimistsi ]
+     atsikini+NI+Px3Sg+Non: [ matsikii, matsikiimi ]
 
-     atsikini+NI+Px3Pl+Sg: [ atsikiwaawayi, atsikiimoaawayi ]
-     atsikini+NI+Px3Pl+Pl: [ atsikiwaawaistsi, atsikiimoaawaistsi ]
-     atsikini+NI+Px3Pl+Non: [ atsikiwaawai, atsikiimoaawai ]
+     atsikini+NI+Px3Pl+Sg: [ matsikiwaawayi, matsikiimoaawayi ]
+     atsikini+NI+Px3Pl+Pl: [ matsikiwaawaistsi, matsikiimoaawaistsi ]
+     atsikini+NI+Px3Pl+Non: [ matsikiwaawai, matsikiimoaawai ]
      
      PS/i'nak+atsikini+NI+Sg: i'nakitsikini

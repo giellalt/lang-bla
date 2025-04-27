@@ -29,8 +29,8 @@ Tests:
      om+Dem+Dim+I+Pl+Movg: omsstsistsiya
      
      om+Dem+Dim+A+Sg+Invs: omsstahka
-     om+Dem+Dim+I+Sg+Invs: omsstsihka
-     om+Dem+Dim+A+Obv+Invs: omsstsihka
+     om+Dem+Dim+I+Sg+Invs: omsstsska
+     om+Dem+Dim+A+Obv+Invs: omsstsska
      om+Dem+Dim+A+Pl+Invs: omsstsiksska
      om+Dem+Dim+I+Pl+Invs: omsstsistsska
      
@@ -41,8 +41,8 @@ Tests:
      om+Dem+Dim+I+Pl+MT: omsstsistsika
      
      om+Dem+Dim+A+Sg+Vblz:  [omsstao'ka,    omsstaayi]
-     om+Dem+Dim+I+Sg+Vblz:  [omssto'ka,     omsstayi]
-     om+Dem+Dim+A+Obv+Vblz: [omssto'ka,     omsstayi]
+     om+Dem+Dim+I+Sg+Vblz:  [omsstso'ka,     omsstsayi]
+     om+Dem+Dim+A+Obv+Vblz: [omsstso'ka,     omsstsayi]
      om+Dem+Dim+A+Pl+Vblz:  [omsstsikso'ka,  omsstsiksayi]
      om+Dem+Dim+I+Pl+Vblz:  [omsstsistso'ka, omsstsistsayi]
      
@@ -59,8 +59,8 @@ Tests:
      om+Dem+Dim+I+Pl+Movg+Vblz:  [omsstsistsiyao'ka, omsstsistsiyaayi]
      
      om+Dem+Dim+A+Sg+Invs+Vblz:  [omsstahkao'ka,    omsstahkaayi]
-     om+Dem+Dim+I+Sg+Invs+Vblz:  [omsstsihkao'ka,    omsstsihkaayi]
-     om+Dem+Dim+A+Obv+Invs+Vblz: [omsstsihkao'ka,    omsstsihkaayi]
+     om+Dem+Dim+I+Sg+Invs+Vblz:  [omsstsskao'ka,    omsstsskaayi]
+     om+Dem+Dim+A+Obv+Invs+Vblz: [omsstsskao'ka,    omsstsskaayi]
      om+Dem+Dim+A+Pl+Invs+Vblz:  [omsstsiksskao'ka,  omsstsiksskaayi]
      om+Dem+Dim+I+Pl+Invs+Vblz:  [omsstsistsskao'ka, omsstsistsskaayi]
      

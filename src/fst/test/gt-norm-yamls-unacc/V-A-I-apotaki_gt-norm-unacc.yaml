@@ -17,7 +17,7 @@ Tests:
      PS/a+a'po'taki+VAI+Ind+21Pl: [ a'pao'takio'pa, a'pao'takio'p ]
      PS/a+a'po'taki+VAI+Ind+1Pl: [ nita'pao'takihpinnaana, nita'pao'takihpinnaan ]
      PS/ohkan+PS/a+a'po'taki+VAI+Ind+2Pl: kitohkana'pao'takihpoaawa
-     PS/a+a'po'taki+VAI+Ind+3Pl+PRO+3/0: a'pao'takiyaawa
+     PS/a+a'po'taki+VAI+Ind+3Pl+PRO+3/0Pl: a'pao'takiyaawa
      
      PS/yaak+a'po'taki+VAI+Ind+1Sg: nitaaka'po'taki
      PS/yaak+a'po'taki+VAI+Ind+2Sg: kitaaka'po'taki
@@ -26,7 +26,7 @@ Tests:
      PS/yaak+a'po'taki+VAI+Ind+21Pl: [ aaka'po'takio'pa, aaka'po'takio'p ]
      PS/yaak+a'po'taki+VAI+Ind+1Pl: [ nitaaka'po'takihpinnaana, nitaaka'po'takihpinnaan ]
      PS/yaak+PS/ohkan+a'po'taki+VAI+Ind+2Pl: kitaakohkana'po'takihpoaawa
-     PS/yaak+a'po'taki+VAI+Ind+3Pl+PRO+3/0: aaka'po'takiyaawa
+     PS/yaak+a'po'taki+VAI+Ind+3Pl+PRO+3/0Pl: aaka'po'takiyaawa
  
      a'po'taki+VAI+Ind+1Sg: nita'po'taki
      a'po'taki+VAI+Ind+2Sg: kita'po'taki
@@ -35,26 +35,26 @@ Tests:
      a'po'taki+VAI+Ind+21Pl: [ a'po'takio'pa, a'po'takio'p ]
      a'po'taki+VAI+Ind+1Pl: [ nita'po'takihpinnaana, nita'po'takihpinnaan ]
      a'po'taki+VAI+Ind+2Pl: kita'po'takihpoaawa
-     a'po'taki+VAI+Ind+3Pl+PRO+3/0: a'po'takiyaawa
+     a'po'taki+VAI+Ind+3Pl+PRO+3/0Pl: a'po'takiyaawa
      
      PS/maat+PS/a+a'po'taki+VAI+Ind+1Sg+Interr: nimaata'pao'takihpa
      PS/maat+PS/a+a'po'taki+VAI+Ind+2Sg+Interr: kimaata'pao'takihpa
      PS/maat+PS/a+a'po'taki+VAI+Ind+3Sg: maata'pao'takiwa
      PS/maat+PS/a+a'po'taki+VAI+Ind+1Pl: [ nimaata'pao'takihpinnaana, nimaata'pao'takihpinnaan ]
-     PS/maat+PS/a+a'po'taki+VAI+Ind+3Pl+Interr: maata'pao'takiwaiksaawayi
+     PS/maat+PS/a+a'po'taki+VAI+Ind+3Pl+Interr: [ maata'pao'takiwaiksaawayi, maata'pao'takiwaiksaawa ]
      
      PS/maat+PS/yaak+a'po'taki+VAI+Ind+1Sg+Interr: nimaataaka'po'takihpa
      PS/maat+PS/yaak+a'po'taki+VAI+Ind+2Sg+Interr: kimaataaka'po'takihpa
      PS/maat+PS/yaak+a'po'taki+VAI+Ind+3Sg: maataaka'po'takiwa
      PS/maat+PS/yaak+a'po'taki+VAI+Ind+21Pl: [ maataaka'po'takio'pa, maataaka'po'takio'p ]
      PS/maat+PS/yaak+a'po'taki+VAI+Ind+2Pl: kimaataaka'po'takihpoaawa
-     PS/maat+PS/yaak+a'po'taki+VAI+Ind+3Pl+Interr: maataaka'po'takiwaiksaawayi
+     PS/maat+PS/yaak+a'po'taki+VAI+Ind+3Pl+Interr: [ maataaka'po'takiwaiksaawayi, maataaka'po'takiwaiksaawa ]
      
      PS/maat+a'po'taki+VAI+Ind+1Sg+Interr: nimaata'po'takihpa
      PS/maat+a'po'taki+VAI+Ind+2Sg+Interr: kimaata'po'takihpa
-     PS/maat+a'po'taki+VAI+Ind+3Sg+Interr: maata'po'takiwaatsiksiwa
+     PS/maat+a'po'taki+VAI+Ind+3Sg+Interr: [ maata'po'takiwaatsiksiwa, maata'po'takiwaatsiksi ]
      PS/maat+a'po'taki+VAI+Ind+1Pl: [ nimaata'po'takihpinnaana, nimaata'po'takihpinnaan ]
-     PS/maat+a'po'taki+VAI+Ind+3Pl+Interr: maata'po'takiwaiksaawayi
+     PS/maat+a'po'taki+VAI+Ind+3Pl+Interr: [ maata'po'takiwaiksaawayi, maata'po'takiwaiksaawa ]
     
      PS/a+a'po'taki+VAI+Cnj+1Sg: nita'pao'takssi
      PS/a+a'po'taki+VAI+Cnj+2Sg: kita'pao'takssi

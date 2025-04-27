@@ -108,6 +108,13 @@ define Invtrigger20 [ %^INV -> 0 ] ;
 define 3MMsuffixRule [ m m -> 0 || _ %^3MM [ .#. | %> [ Vowel | [ Consonant - [Gx] ] ] ] ] ;
 define 3MMtrigger20 [ %^3MM -> 0 ] ;
 
+!!€ nit<aak<oht<wahkayimm^3MM
+!!€ nitaakohtahkayi
+
+!!€ ayaak<wahkayimm^3MM>yi>aawa
+!!€ ayaakahkayimmiaawa
+
+
 !VLVs in VTA suffix rules
 define VLVsuffixRule [ o -> o o || Ix %> %^VLV _ ,, a -> a a || Ix %> %^VLV _ ] ;
 define VLVtrigger20 [ %^VLV -> 0 ] ;
@@ -147,18 +154,16 @@ define a20ProRule [ a -> 0 || _ %> %^PRO a ] ;
 define i20ProRule [ i -> 0 || [ m | n ] _ %> %^PRO a ] ;
 define PROtrigger20 [ %^PRO -> 0 ] ;
 
-!!€ 
-!!€ 
-
-!!€ 
-!!€ 
+!!€ aak<wahkayi>wa>^PROáyi
+!!€ aakahkayiwayi
 
 ! IC past, imperative (sV, ICV > sayV, CayV)
-define ICpastRule [ s -> s a y || %^IC %^IC _ Vowel ,, 
-i2 p -> p a y || %^IC %^IC _ Vowel ,, 
-i2 t -> t a y || %^IC %^IC _ Vowel ,, 
-i2 k (s) -> k a y || %^IC %^IC _ Vowel ,, 
-i2 s -> s a y || %^IC %^IC _ Vowel ] ;
+define ICpastRule [ s (->) %^IC s a y || %^IC %< %^IC _ Vowel ,, 
+i2 p (->) %^IC p a y || %^IC %< %^IC _ Vowel ,, 
+i2 t (->) %^IC t a y || %^IC %< %^IC _ Vowel ,, 
+i2 k (s) (->) %^IC k a y || %^IC %< %^IC _ Vowel ,, 
+i2 s (->) %^IC s a y || %^IC %< %^IC _ Vowel ] ;
+define ICpastii20 [ i i -> 0 || _ %^IC %< %^IC %^IC ] ;
 define ICimpRule [ s -> s a y || %^IMP %^IC _ Vowel ,, 
 i2 p -> p a y || %^IMP %^IC _ Vowel ,, 
 i2 t -> t a y || %^IMP %^IC _ Vowel ,, 
@@ -200,11 +205,13 @@ define AIMtrigger20 [ %^AIM -> 0 ] ;
 !define finalNdiss [ n -> 0 || k [ i | í ] _ %> [ i k s i | i s t s i ] ,, n -> 0 || o [ á | a ]  _ %> [ i k s i | i s t s i ] ] ; ! managing this now with nonpermC rule
 
 ! non-permanent stem-final n, m, s -- now n2, m2, s2 Frantz p. 12, 13, 87-88 (any suffix beginning in a vowel - plural, non-particular, innaan, innoon, need to find out about im)
-define nonpermCRule [ [ n2 | s2 | m2 ] -> 0 || _ %> Vowel ] ;
+define nonpermCRule [ [ n2 | s2 | m2 ] -> 0 || _ %> (%^POSS) Vowel ] ;
 
 ! innaan, innoon i lost after i, a, w, y, after non-permanent consonant is deleted (p. 81, awahsin example in dictionary) looks like this also shouldn't lengthen i after s2 --- miistsis, moksis yaml change
 
 define pluralPossSuffixRule [ i -> 0 || [ i | a | w | y ] %> %^POSS _ [ n n a a n | n n o o n ] ] ;
+
+define POSStrigger20 [ %^POSS -> 0 ] ;
 
 ! rule to make at least aaapan and naapiikoan work; after breaking and palatalisation 
 
@@ -534,6 +541,7 @@ read regex [ rmAccent
 .o. IMPit2istRule
 .o. ICpastRule
 .o. ICimpRule
+.o. ICpastii20
 .o. a20ProRule
 .o. i20ProRule
 .o. Invtrigger20
@@ -554,6 +562,7 @@ read regex [ rmAccent
 .o. AIMtrigger20
 .o. nonpermCRule
 .o. pluralPossSuffixRule
+.o. POSStrigger20
 .o. oaawaRule
 .o. pastPrefix
 .o. h2ssRule 

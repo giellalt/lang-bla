@@ -79,9 +79,9 @@ LEXICON INIT_PRESTEMS
 !tense
 @R.pos.VERB@@D.mode.IMP@PS/ayaak+:@R.pos.VERB@@D.mode.IMP@ayaak%< PRESTEMS ; ! imm future
 @R.pos.VERB@@D.mode.IMP@PS/yaak+:@R.pos.VERB@@D.mode.IMP@aak%< PRESTEMS ; ! future
-@R.pos.VERB@@D.mode.IMP@PS/ii+:@R.pos.VERB@@D.mode.IMP@ii%< PRESTEMS ; ! past
+@R.pos.VERB@@D.mode.IMP@PS/ii+:@R.pos.VERB@@D.mode.IMP@ii%^IC%< PRESTEMS ; ! past
 @R.pos.VERB@@D.mode.IMP@PS/na+:@R.pos.VERB@@D.mode.IMP@na%< PRESTEMS ; ! Siksika past
-@R.pos.VERB@@D.mode.IMP@PS/IC+:@R.pos.VERB@@D.mode.IMP@%^IC PRESTEMS ;
+!@R.pos.VERB@@D.mode.IMP@PS/IC+:@R.pos.VERB@@D.mode.IMP@%^IC PRESTEMS ;
 
 !"aspect-like" prestems
 PS/a+:a	PSBOUND1 ;

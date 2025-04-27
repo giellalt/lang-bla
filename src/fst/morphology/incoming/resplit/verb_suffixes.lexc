@@ -609,17 +609,17 @@ LEXICON ANIM_INTERR
 
 LEXICON ENCLITICS
 0 # ;
-+PRO+3/%0:%>aawa ENCLITICS_BOUND ;
-+PRO+3Pl:%>%^PROaiksi ENCLITICS_BOUND ;
++PRO+3/%0Pl:%>aawa ENCLITICS_BOUND ;
++PRO+D3Pl:%>%^PROaiksi ENCLITICS_BOUND ;
 +PRO+D3Sg:%>%^PROáyi ENCLITICS_BOUND ;
-+PRO+%0Pl:%>%^PROaistsi ENCLITICS_BOUND ;
++PRO+D%0Pl:%>%^PROaistsi ENCLITICS_BOUND ;
 
 LEXICON ENCLITICS_BOUND
 0 # ;
-+PRO+3/%0:%>aawa # ;
-+PRO+3Pl:%>aiksi # ;
++PRO+3/%0Pl:%>aawa # ;
++PRO+D3Pl:%>aiksi # ;
 +PRO+D3Sg:%>áyi # ;
-+PRO+%0Pl:%>aistsi # ;
++PRO+D%0Pl:%>aistsi # ;
 
 LEXICON VERB_DER_NOM_SUFFIXES
 +Der/Nom:0                     NOUN_SUFFIXES "weight: 10" ;
@@ -747,10 +747,10 @@ LEXICON N_ANIM_INTERR !! [OLD: ANIM_INTERR]
 
 LEXICON N_ENCLITICS !! [OLD: ENCLITICS]
 0 # ;
-+PRO+3/%0:%>aawa # ;
-+PRO+3Pl:%>%^PROaiksi # ;
++PRO+3/%0Pl:%>aawa # ;
++PRO+D3Pl:%>%^PROaiksi # ;
 +PRO+D3Sg:%>%^PROáyi # ;
-+PRO+%0Pl:%>%^PROaistsi # ;
++PRO+D%0Pl:%>%^PROaistsi # ;
 
 !! END OF VERBINESS
 
