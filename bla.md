@@ -1180,6 +1180,12 @@ Rules
 * *kit<ipohkisstoyi>^INVoka*
 * *kitsipohkisstoyooka*
 
+* *nit<aak<oht<wahkayimm^3MM*
+* *nitaakohtahkayi*
+
+* *ayaak<wahkayimm^3MM>yi>aawa*
+* *ayaakahkayimmiaawa*
+
 * *kit<ipohkisstoyi>^VLVawa*
 * *kitsipohkisstoyaawa*
 
@@ -1198,11 +1204,8 @@ Rules
 * *^IMPa'po'taki>k*
 * *a'potakik*
 
-* ???
-* ???
-
-* ???
-* ???
+* *aak<wahkayi>wa>^PROáyi*
+* *aakahkayiwayi*
 
 Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of Toronto Press. Appendix B.
 
