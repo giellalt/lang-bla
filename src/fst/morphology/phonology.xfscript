@@ -14,7 +14,7 @@ define Vowel [ Vshort | Vlong ] ;
 
 define Vacc [ á | [á a] | í | [í i] | ó | [ó o] | [á í] | [á ó] | [ó í] | [ á á ] | [ó ó] ];
 
-define Cshort [ k | m | n | p | s | t | w | y | ' | h | n2 | m2 | s2 ] ;
+define Cshort [ k | m | n | p | s | t | w | y | y2 | ' | h | n2 | m2 | s2 ] ;
 
 #define Cx [ ts | ks | h | k | m | n | p | s | t | w | y | pp | tt | kk | ss | mm | nn ] ;
 
@@ -22,14 +22,19 @@ define Clong [ [p p] | [t t] | [k k] | [s s] | [m m] | [n n] | [k s] | [t s] ] ;
 
 define Consonant [ Cshort | Clong ] ;
   
-define Gx [ w | y ] ;
+define Gx [ w | y | y2 ] ;
 
 !! Rules
 
 ! removing accent marks
 define rmAccent [ á -> a , í -> i , ó -> o ] ;
 
-! The following code is for the highest level of morpho-phonological initial allomorphy (specific to nouns)
+! The following code is for the highest level of morpho-phonological initial allomorphy 
+
+!yamoohk > iamoohk after maat > maatsamoohk; created y2 just for this; not enough evidence to know if this is i2 (e.g. would also break k) ; palatalization and i absorption should take care of rest
+
+define y2iRule [ y2 -> i || t %< _ ] ;
+define y22yRule [ y2 -> y ] ;
 
 !define shortPrefix [ n i t -> n , k i t -> k , o t -> w || .#. _ %< %^SP [ Vowel | m ] ,, n i t -> n i , k i t -> k i , o t -> o || .#. _ %< %^SP [ k | n | p | s | t | n2 | h ] ] ;
 define shortPrefix [ n i t -> n , k i t -> k || .#. _ %< %^SP ,, o t -> m || .#. _ %< %^SP a ,, o t -> w || .#. _ %< %^SP [ Consonant | Ix | o ] ] ;
@@ -57,7 +62,7 @@ define rmSP [ %^SP -> 0 ] ;
 !define weakt [ t -> 0 || _ %< [ p | k ] ] ;
 !define strongk [ p -> 0 || [ k | p ] %< _ ] ;
 !define strongp [ k -> 0 || [ k | p ] %< _ ] ;
-define weakm [ m -> 0 || Consonant %< _ ] ; ! repurposing rule for matt, which surfaces as att after consonants in examples; currently only prestem/stem to start with m in elsewhere list, may apply to others as lists expand
+define weakm [ m -> 0 || Consonant %< _ ] ; ! repurposing rule for matt, which surfaces as att after consonants in examples; currently only prestem/stem to start with m in elsewhere list, may apply to others as lists expand (also mattsista')
 
 !define oAlternation [ i2 (->) [ o | a ] || .#. _ [ o | a ] ] ;
 !define ghosti2 [ "i2" -> 0 || .#. _ Consonant ] ;
@@ -159,16 +164,20 @@ define PROtrigger20 [ %^PRO -> 0 ] ;
 
 ! IC past, imperative (sV, ICV > sayV, CayV)
 define ICpastRule [ s (->) %^IC s a y || %^IC %< %^IC _ Vowel ,, 
-i2 p (->) %^IC p a y || %^IC %< %^IC _ Vowel ,, 
-i2 t (->) %^IC t a y || %^IC %< %^IC _ Vowel ,, 
-i2 k (s) (->) %^IC k a y || %^IC %< %^IC _ Vowel ,, 
-i2 s (->) %^IC s a y || %^IC %< %^IC _ Vowel ] ;
-define ICpastii20 [ i i -> 0 || _ %^IC %< %^IC %^IC ] ;
+i2 s (->) %^IC s a y || i i %< %^IC _ Vowel ,, 
+i2 p (->) %^IC p a y || i i %< %^IC _ Vowel ,, 
+i2 t (->) %^IC t a y || i i %< %^IC _ Vowel ,, 
+i2 k (s) (->) %^IC k a y || i i %< %^IC _ Vowel ] ;
+define ICpastii20 [ i i -> 0 || _ %< %^IC %^IC ] ;
+
 define ICimpRule [ s -> s a y || %^IMP %^IC _ Vowel ,, 
+i2 s -> s a y || %^IMP %^IC _ Vowel ,, 
+p -> p a y || %^IMP %^IC _ Vowel ,, 
 i2 p -> p a y || %^IMP %^IC _ Vowel ,, 
+t -> t a y || %^IMP %^IC _ Vowel ,, 
 i2 t -> t a y || %^IMP %^IC _ Vowel ,, 
-i2 k (s) -> k a y || %^IMP %^IC _ Vowel ,, 
-i2 s -> s a y || %^IMP %^IC _ Vowel ] ;
+k (s) -> k a y || %^IMP %^IC _ Vowel ,,
+i2 k (s) -> k a y || %^IMP %^IC _ Vowel ] ;
 define ICtrigger20 [ %^IC -> 0 ] ;
 
 !! Drawn from Frantz, D. G. (1991). Blackfoot Grammar, 2nd Edition. University of Toronto Press. Appendix B.
@@ -213,7 +222,7 @@ define pluralPossSuffixRule [ i -> 0 || [ i | a | w | y ] %> %^POSS _ [ n n a a 
 
 define POSStrigger20 [ %^POSS -> 0 ] ;
 
-! rule to make at least aaapan and naapiikoan work; after breaking and palatalisation 
+! rule to make at least aaapan and naapiikoan work; after breaking and palatalisation (also naam ~ i2am - aa ~ a VLV?) 
 
 define iaa2aaRule [ [ i | i2 ] -> 0 || _ [ a a ] ] ;
 define i2deletion [ i2 -> 0 || _ o ] ; 
@@ -527,6 +536,8 @@ define deep2surfRule [ Bx -> 0 ,, n2 -> n ,, a2 -> a ,, o2 -> o ,, a3 -> a ,, a4
 ! define DelNasal [ m -> 0 || _ Consonant ] ;
 
 read regex [ rmAccent
+.o. define y2iRule
+.o. y22yRule
 .o. shortPrefix
 .o. rmSP
 .o. weakm
