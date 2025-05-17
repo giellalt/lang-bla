@@ -536,7 +536,7 @@ define deep2surfRule [ Bx -> 0 ,, n2 -> n ,, a2 -> a ,, o2 -> o ,, a3 -> a ,, a4
 ! define DelNasal [ m -> 0 || _ Consonant ] ;
 
 read regex [ rmAccent
-.o. define y2iRule
+.o. y2iRule
 .o. y22yRule
 .o. shortPrefix
 .o. rmSP
