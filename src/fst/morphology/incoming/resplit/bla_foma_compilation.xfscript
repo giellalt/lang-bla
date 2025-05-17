@@ -20,7 +20,7 @@ save stack generator-gt-norm.fsm
 #define Norm
 
 #source ../../../orthography/spellrelax_weighted.xfscript
-#define X
+#define SpellRelaxWeighted
 
 #regex [ Norm .o. SpellRelaxWeighted ];
 #twosided flag-diacritics

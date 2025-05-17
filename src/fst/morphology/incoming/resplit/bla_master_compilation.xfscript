@@ -20,7 +20,7 @@ invert net
 define Norm
 
 source ../../../orthography/spellrelax_weighted.xfscript
-define X
+define SpellRelaxWeighted
 
 regex [ Norm .o. SpellRelaxWeighted ];
 twosided flag-diacritics
