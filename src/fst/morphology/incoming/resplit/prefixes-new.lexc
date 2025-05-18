@@ -310,7 +310,7 @@ PS/a'+:a' PSBOUND1 ; ! inchoative
 PS/ikaa+:^SPikaa PSBOUND1 ; ! perfective, need to model initial vs non initial forms
 
 LEXICON PSBOUND1
-0:%< PSGATE1 ;
+0:%< PSGATE1 "weight: 10" ;
 	
 LEXICON PSGATE1
 VERB_STEMS ;
@@ -391,7 +391,7 @@ PS/stam+:stam	PSBOUND2 ;
 PS/yaahs+:yaahs	PSBOUND2 ;
 
 LEXICON PSBOUND2
-0:%< PSGATE2 ;
+0:%< PSGATE2 "weight: 10" ;
 
 LEXICON PSGATE2
 PSSET1 ;
