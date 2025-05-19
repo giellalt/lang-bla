@@ -26,3 +26,4 @@ regex [ Norm .o. SpellRelaxWeighted ];
 twosided flag-diacritics
 invert net
 save stack analyzer-gt-desc.hfst
+invert net
