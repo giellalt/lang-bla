@@ -164,11 +164,11 @@ define PROtrigger20 [ %^PRO -> 0 ] ;
 
 ! IC past, imperative (sV, ICV > sayV, CayV)
 define ICpastRule [ s (->) %^IC s a y || %^IC %< %^IC _ Vowel ,, 
-i2 s (->) %^IC s a y || i i %< %^IC _ Vowel ,, 
-i2 p (->) %^IC p a y || i i %< %^IC _ Vowel ,, 
-i2 t (->) %^IC t a y || i i %< %^IC _ Vowel ,, 
-i2 k (s) (->) %^IC k a y || i i %< %^IC _ Vowel ] ;
-define ICpastii20 [ i i -> 0 || _ %< %^IC %^IC ] ;
+i2 s (->) %^IC s a y || %^IC %< %^IC _ Vowel ,, 
+i2 p (->) %^IC p a y || %^IC %< %^IC _ Vowel ,, 
+i2 t (->) %^IC t a y || %^IC %< %^IC _ Vowel ,, 
+i2 k (s) (->) %^IC k a y || %^IC %< %^IC _ Vowel ] ;
+define ICpastii20 [ i i -> 0 || _ %^IC %< %^IC %^IC ] ;
 
 define ICimpRule [ s -> s a y || %^IMP %^IC _ Vowel ,, 
 i2 s -> s a y || %^IMP %^IC _ Vowel ,, 
@@ -214,7 +214,7 @@ define AIMtrigger20 [ %^AIM -> 0 ] ;
 !define finalNdiss [ n -> 0 || k [ i | í ] _ %> [ i k s i | i s t s i ] ,, n -> 0 || o [ á | a ]  _ %> [ i k s i | i s t s i ] ] ; ! managing this now with nonpermC rule
 
 ! non-permanent stem-final n, m, s -- now n2, m2, s2 Frantz p. 12, 13, 87-88 (any suffix beginning in a vowel - plural, non-particular, innaan, innoon, need to find out about im)
-define nonpermCRule [ [ n2 | s2 | m2 ] -> 0 || _ %> (%^POSS) Vowel ] ;
+define nonpermCRule [ [ n2 | s2 | m2 | m2 m2 ] -> 0 || _ %> (%^POSS) Vowel ] ;
 
 ! innaan, innoon i lost after i, a, w, y, after non-permanent consonant is deleted (p. 81, awahsin example in dictionary) looks like this also shouldn't lengthen i after s2 --- miistsis, moksis yaml change
 
