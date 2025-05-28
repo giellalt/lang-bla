@@ -1,32 +1,30 @@
-!! Blackfoot demonstrative pronoun morphology !!
+LEXICON DEM_STEMS
+am+Dem:am DEM_NUM_SUFFIXES ;
+am+Dem+Dim:amsst DEM_NUM_SUFFIXES ;
+amo+Dem:amo DEM_NUM_SUFFIXES ;
+amo+Dem+Dim:amssto DEM_NUM_SUFFIXES ;
+ann+Dem:ann DEM_NUM_SUFFIXES ;
+ann+Dem+Dim:annst DEM_NUM_SUFFIXES ;
+anno+Dem:anno DEM_NUM_SUFFIXES ;
+anno+Dem+Dim:annssto DEM_NUM_SUFFIXES ;
+om+Dem:om DEM_NUM_SUFFIXES ;
+om+Dem+Dim:omsst DEM_NUM_SUFFIXES ;
 
-LEXICON DEMONSTRATIVES
-am+Dem:am Dem_num_suffixes ;
-am+Dem+Dim:amsst Dem_num_suffixes ;
-amo+Dem:amo Dem_num_suffixes ;
-amo+Dem+Dim:amssto Dem_num_suffixes ;
-ann+Dem:ann Dem_num_suffixes ;
-ann+Dem+Dim:annst Dem_num_suffixes ;
-anno+Dem:anno Dem_num_suffixes ;
-anno+Dem+Dim:annssto Dem_num_suffixes ;
-om+Dem:om Dem_num_suffixes ;
-om+Dem+Dim:omsst Dem_num_suffixes ;
+LEXICON DEM_NUM_SUFFIXES
++A+Sg:%>%^DEMwa DEM_POSTINFL ;
++A+Obv:%>yi DEM_POSTINFL ;
++I+Sg:%>yi DEM_POSTINFL ;
++A+Pl:%>%^DEMiksi DEM_POSTINFL ;
++I+Pl:%>%^DEMistsi DEM_POSTINFL ;
 
-LEXICON Dem_num_suffixes
-+A+Sg:%>^DEMwa Dem_postinfl ;
-+A+Obv:%>yi Dem_postinfl ;
-+I+Sg:%>yi Dem_postinfl ;
-+A+Pl:%>^DEMiksi Dem_postinfl ;
-+I+Pl:%>^DEMistsi Dem_postinfl ;
+LEXICON DEM_POSTINFL
++Stat:%>ma VBLZ ;
++Movg:%>ya VBLZ ;
++Invs:%>hka VBLZ ;
++MT:%>ka VBLZ ;
+0 VBLZ ;
 
-LEXICON Dem_postinfl
-+Stat:%>ma Vblz ;
-+Movg:%>ya Vblz ;
-+Invs:%>hka Vblz ;
-+MT:%>ka Vblz ;
-0 Vblz ;
-
-LEXICON Vblz
+LEXICON VBLZ
 +Vblz:%>o'ka # ;
 +Vblz:%>ayi # ;
 0 # ;
