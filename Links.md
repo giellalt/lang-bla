@@ -5,15 +5,12 @@
         * [bla-phonology.xfscript](src-fst-bla-phonology.xfscript.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/bla-phonology.xfscript))
         * `morphology/`
             * `affixes/`
-                * [noun_affixes.lexc](src-fst-morphology-affixes-noun_affixes.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/noun_affixes.lexc))
                 * [propernouns.lexc](src-fst-morphology-affixes-propernouns.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/propernouns.lexc))
                 * [symbols.lexc](src-fst-morphology-affixes-symbols.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/symbols.lexc))
-                * [verb_affixes.lexc](src-fst-morphology-affixes-verb_affixes.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/verb_affixes.lexc))
                 * [verb_suffixes.lexc](src-fst-morphology-affixes-verb_suffixes.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/affixes/verb_suffixes.lexc))
             * [phonology.xfscript](src-fst-morphology-phonology.xfscript.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/phonology.xfscript))
             * [root.lexc](src-fst-morphology-root.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/root.lexc))
             * `stems/`
-                * [demonstratives.lexc](src-fst-morphology-stems-demonstratives.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/demonstratives.lexc))
                 * [numerals.lexc](src-fst-morphology-stems-numerals.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/numerals.lexc))
                 * [prestems.lexc](src-fst-morphology-stems-prestems.lexc.html) ([src](https://github.com/giellalt/lang-bla/blob/main/src/fst/morphology/stems/prestems.lexc))
         * `phonetics/`
