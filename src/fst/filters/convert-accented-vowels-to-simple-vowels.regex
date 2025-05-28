@@ -1,4 +1,6 @@
 # This regular expression "regulalizes" the accented vowels <á,í,ó> marking pitch accent
 # to regular vowels <a,i,o>, since their workings with affixation is not currently fully known.
 
-a <- á , i <- í , o <- ó , A <- Á , I <- Í , O <- Ó ;
+# a <- á , i <- í , o <- ó , A <- Á , I <- Í , O <- Ó ;
+
+á -> a , í -> i , ó -> o , Á -> A , Í -> I , Ó -> O ;
