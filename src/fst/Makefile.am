@@ -68,6 +68,17 @@ endif # CAN_FOMA
 #################################################
 #### Add language-specific build rules here: ####
 
+# Remove Pitch Accent marks on both sides of the FST:
+.generated/analyser-raw-gt-desc.%: .generated/analyser-raw-gt-desc.tmp.% \
+				filters/convert-accented-vowels-to-simple-vowels.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/convert-accented-vowels-to-simple-vowels.$*\".i \
+			.o. @\"$<\" \
+			.o. @\"filters/convert-accented-vowels-to-simple-vowels.$*\" \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
 ##################################################################
