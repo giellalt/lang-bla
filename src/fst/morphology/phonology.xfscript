@@ -237,7 +237,7 @@ define pastPrefix [ Vowel (o) -> 0 || [ .#. | %< ] i i %< _ ] ;
 define pastPrefixSik [ Vowel -> 0 || [ .#. | %< ] n a %< _ ] ;
 ! define Dipthongization [ 0 (->) [ a ] || _ [ o o | ó ó ] %> [ o ' p a | h s i | o ' k i | o ' t o p i ] ] ; ! removed accent for inserted a; changing to work with trigger
 
-define Dipthongization [ o o -> a o || _ %^DIPH %> [ o ' p (a) | h s i | o ' k i | o ' t o p i ] ,, i i -> a o || _ %^DIPH %> [ o ' p (a) | h s i | o ' k i | o ' t o p i ] ,, i -> a o || Consonant _ %^DIPH %> [ o ' p (a) | h s i | o ' k i | o ' t o p i ] ] ; ! identify these by searching ~ in dictionary backend
+define Dipthongization [ o o -> a o || _ %^DIPH %> [ o ' p (a) | h s i | o ' k i | o ' t o p i ] ,, i ( i ) -> a o || _ %^DIPH %> [ o ' p (a) | h s i | o ' k i | o ' t o p i ] ,, i -> a o || Consonant _ %^DIPH %> [ o ' p (a) | h s i | o ' k i | o ' t o p i ] ] ; ! identify these by searching ~ in dictionary backend
 
 !can also use the DIPH trigger for the oo(w/y) variation (behaves like wyVarRule1 but with suffixes)
 
