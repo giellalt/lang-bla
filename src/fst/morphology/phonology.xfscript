@@ -321,7 +321,7 @@ define k2ksRule [ k -> k s || [ Vowel | Consonant ] _ (Bx) [ i2 | o2 ] ] ;
 
 ! 9. Desyllabification i > y, o > w / V + _ V ! ordering before 10 for kitaakiiwaawa, after 12 for o'tsoaawa
 
-define i2yRule [ i -> y || Vowel Bx _ [ o | a ] ] ;
+define i2yRule [ [ i | i2 ] -> y || Vowel Bx _ [ o | a ] ] ;
 define o2wRule [ o -> w || Vowel Bx _ [ i | a ] ] ;
 define Vowel2GlideRule [ i2yRule .o. o2wRule ] ;
 
