@@ -100,7 +100,7 @@ AC_MSG_RESULT([$GIELLA_CORE])
 ###############################################################
 ### This is the version of the Giella Core that we require. ###
 ### UPDATE AS NEEDED.
-_giella_core_min_version=1.2.2
+_giella_core_min_version=1.2.4
 
 # GIELLA_CORE/GTCORE env. variable, required by the infrastructure to find scripts:
 AC_ARG_VAR([GIELLA_CORE], [directory for the Giella infra core scripts and other required resources])
@@ -675,6 +675,18 @@ AC_MSG_RESULT([$gtgramtool_version_ok])
 AS_IF([test "x$enable_grammarchecker" != "xno"], 
     AS_IF([test "x${gtgramtool_version_ok}" != xno],,
           [gt_MSG_ERROR([$gtgramtool_too_old_message])]))
+################ gtlextools for lexcy checking ################
+AC_PATH_PROG([GTLEMMATEST], [gtlemmatest], [false])
+AC_PATH_PROG([GTSPELLTEST], [gtspelltest], [false])
+AC_PATH_PROG([GTPARADIGMTEST], [gtparadigmtest], [false])
+AC_MSG_CHECKING([if gtlextools is usable])
+AS_IF([test x$GTLEMMATEST = xfalse],
+      [gt_MSG_WARN([gtlextools is needed for many tests
+        on debian/ubuntu: sudo apt update; sudo apt install pipx; pipx ensurepath
+        on macbrew: brew install pipx; pipx ensurepath
+        then: pipx install git+https://github.com/divvun/giellaltlextools
+      ])],
+      AC_MSG_RESULT([yes]))
 
 
 # Enable all spellers - default is 'no'
