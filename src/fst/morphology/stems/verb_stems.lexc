@@ -17,6 +17,7 @@ LEXICON INIT_VAI_STEMS
 a'po'taki:a'po'taki VAI ;
 itapoo:%^IMPitapoo%^DIPH VAI ;
 okska'si:okska'si VAI ;
+ooyi:ooyi	VAI ;
 waahkayi:waahkayi VAI ;
 waahkayi:waahkayimm%^3MM VAI ;
 
@@ -24,6 +25,7 @@ LEXICON PERS_VAI_STEMS
 a'po'taki:a'po'taki VAI ;
 itapoo:itapoo%^DIPH VAI ;
 okska'si:okska'si VAI ;
+ooyi:i2oyi	VAI ;
 waahkayi:wahkayi VAI ;
 waahkayi:wahkayimm%^3MM VAI ;
 
@@ -31,6 +33,7 @@ LEXICON VAI_STEMS
 a'po'taki:a'po'taki VAI ;
 itapoo:itapoo%^DIPH VAI ;
 okska'si:okska'si VAI ;
+ooyi:i2oyi	VAI ;
 waahkayi:wahkayi VAI ;
 waahkayi:wahkayimm%^3MM VAI ;
 
