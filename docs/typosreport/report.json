@@ -48,55 +48,3743 @@
     "completion-marker": null
   },
   "summary": {
-    "total_words": 1,
-    "first_position": 0,
-    "top_five": 0,
-    "any_position": 0,
-    "no_suggestions": 1,
-    "only_wrong": 0,
+    "total_words": 63,
+    "first_position": 40,
+    "top_five": 43,
+    "any_position": 43,
+    "no_suggestions": 4,
+    "only_wrong": 8,
     "false_accept": 0,
-    "true_positive": 1,
-    "false_negative": 0,
+    "true_positive": 55,
+    "false_negative": 8,
     "true_negative": 0,
     "slowest_lookup": {
       "secs": 0,
-      "subsec_nanos": 3420000
+      "subsec_nanos": 30942792
     },
     "fastest_lookup": {
       "secs": 0,
-      "subsec_nanos": 3420000
+      "subsec_nanos": 9334
     },
     "average_time": {
       "secs": 0,
-      "subsec_nanos": 3420000
+      "subsec_nanos": 9141117
     },
     "average_time_95pc": {
       "secs": 0,
-      "subsec_nanos": 3420000
+      "subsec_nanos": 8307026
     },
-    "average_position_of_correct": 0.0,
-    "average_suggestions_for_correct": 0.0
+    "average_position_of_correct": 1.0697675,
+    "average_suggestions_for_correct": 5.72093
   },
   "results": [
     {
-      "input": "åvtohke",
-      "expected": "åvtehke",
+      "input": "niksissta",
+      "expected": "niksíssta",
       "distance": 1,
       "suggestions": [],
       "position": null,
       "time": {
         "secs": 0,
-        "subsec_nanos": 3420000
+        "subsec_nanos": 92792
+      },
+      "false_accept": true
+    },
+    {
+      "input": "ninssta",
+      "expected": "nínssta",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2812625
+      },
+      "false_accept": true
+    },
+    {
+      "input": "nisahkinaima",
+      "expected": "nisahkínaima",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2293917
+      },
+      "false_accept": true
+    },
+    {
+      "input": "nisahkomaapiima",
+      "expected": "nisahkómaapiima",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2853542
+      },
+      "false_accept": true
+    },
+    {
+      "input": "nissoko'sa",
+      "expected": "níssoko'sa",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 48917
+      },
+      "false_accept": true
+    },
+    {
+      "input": "nohkowa",
+      "expected": "nohkówa",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2819125
+      },
+      "false_accept": true
+    },
+    {
+      "input": "notasa",
+      "expected": "nóta'sa",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "nota'sa",
+          "weight": 15.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nitana",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kota'sa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nota'si",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 7479500
+      },
+      "false_accept": false
+    },
+    {
+      "input": "noyinnaawa",
+      "expected": "noyínnaawa",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 2442875
+      },
+      "false_accept": true
+    },
+    {
+      "input": "niisto",
+      "expected": "niistó",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 9334
+      },
+      "false_accept": true
+    },
+    {
+      "input": "akiwa",
+      "expected": "aakiiwa",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "aakiiwa",
+          "weight": 12.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kiiwa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nakiiwa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "aiina",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amika",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amima",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amiya",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kika",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 30942792
+      },
+      "false_accept": false
+    },
+    {
+      "input": "imitawa",
+      "expected": "imitaawa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "imitaawa",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iimitaawa",
+          "weight": 12.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "imitaak",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "imitaat",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "imitai",
+          "weight": 40.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 5731500
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mistsisa",
+      "expected": "miistsisa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "miistsisa",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iistsisa",
+          "weight": 20.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "aiistsisa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "miistsisi",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "miistsist",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "naistsisa",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amistsika",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amistsima",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amistsiya",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iistsisi",
+          "weight": 40.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 22084792
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ninawa",
+      "expected": "ninaawa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ninaawa",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nainaawa",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nanaawa",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ainaawa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iinaawa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ainoawa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ainowa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iinoawa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "inoawa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "inowa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 10957375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "posa",
+      "expected": "poosa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "poosa",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "poka",
+          "weight": 15.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "pokaa",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "poosi",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "poost",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "assa",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "tsa",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "oma",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 7066875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "akiwa",
+      "expected": "aakiiwa",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "aakiiwa",
+          "weight": 12.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kiiwa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nakiiwa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "aiina",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amika",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amima",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amiya",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kika",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 5486500
+      },
+      "false_accept": false
+    },
+    {
+      "input": "imitawa",
+      "expected": "imitaawa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "imitaawa",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iimitaawa",
+          "weight": 12.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "imitaak",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "imitaat",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "imitai",
+          "weight": 40.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 15005709
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mistsisa",
+      "expected": "miistsisa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "miistsisa",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iistsisa",
+          "weight": 20.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "aiistsisa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "miistsisi",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "miistsist",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "naistsisa",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amistsika",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amistsima",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amistsiya",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iistsisi",
+          "weight": 40.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 9943125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ninawa",
+      "expected": "ninaawa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ninaawa",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nainaawa",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nanaawa",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ainaawa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iinaawa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ainoawa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ainowa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iinoawa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "inoawa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "inowa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 12895959
+      },
+      "false_accept": false
+    },
+    {
+      "input": "posa",
+      "expected": "poosa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "poosa",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "poka",
+          "weight": 15.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "pokaa",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "poosi",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "poost",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "assa",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "tsa",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "oma",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 8393125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "akiwa",
+      "expected": "aakiiwa",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "aakiiwa",
+          "weight": 12.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kiiwa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nakiiwa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "aiina",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amika",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amima",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amiya",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kika",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 6396000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "imitawa",
+      "expected": "imitaawa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "imitaawa",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iimitaawa",
+          "weight": 12.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "imitaak",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "imitaat",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "imitai",
+          "weight": 40.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 7099125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mistsisa",
+      "expected": "miistsisa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "miistsisa",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iistsisa",
+          "weight": 20.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "aiistsisa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "miistsisi",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "miistsist",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "naistsisa",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amistsika",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amistsima",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amistsiya",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iistsisi",
+          "weight": 40.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 16018541
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ninawa",
+      "expected": "ninaawa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ninaawa",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nainaawa",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nanaawa",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ainaawa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iinaawa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ainoawa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ainowa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iinoawa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "inoawa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "inowa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 5988375
+      },
+      "false_accept": false
+    },
+    {
+      "input": "posa",
+      "expected": "poosa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "poosa",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "poka",
+          "weight": 15.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "pokaa",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "poosi",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "poost",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "assa",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "tsa",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "oma",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 6133333
+      },
+      "false_accept": false
+    },
+    {
+      "input": "apani",
+      "expected": "aaapani",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "iapani",
+          "weight": 20.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "aaapani",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "aiini",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "anni",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iipani",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "otani",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iapana",
+          "weight": 40.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 13292167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mo'tokani",
+      "expected": "mo'tokaani",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "mo'tokaani",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ao'tokaani",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ko'tokaani",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "mo'tokaana",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "no'tokaani",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "o'tokaani",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 7150875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sinakia'tsisi",
+      "expected": "sinaakia'tsisi",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "sinaakia'tsisi",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "osinaakia'tsisi",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "sinaakia'tsisa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "sinaakia'tsii",
+          "weight": 31.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 20.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 4936125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ahkiohsa'tsisi",
+      "expected": "aahkioohsa'tsisi",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "aahkioohsa'tsisi",
+          "weight": 12.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 7976708
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mini",
+      "expected": "miini",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "miini",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iini",
+          "weight": 20.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "aiini",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "miina",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "anni",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ainai",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ainoi",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "inoi",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kinni",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iina",
+          "weight": 40.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 4235125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "apani",
+      "expected": "aaapani",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "iapani",
+          "weight": 20.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "aaapani",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "aiini",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "anni",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iipani",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "otani",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iapana",
+          "weight": 40.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 12828792
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mo'tokani",
+      "expected": "mo'tokaani",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "mo'tokaani",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ao'tokaani",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ko'tokaani",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "mo'tokaana",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "no'tokaani",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "o'tokaani",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 8269292
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sinakia'tsisi",
+      "expected": "sinaakia'tsisi",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "sinaakia'tsisi",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "osinaakia'tsisi",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "sinaakia'tsisa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "sinaakia'tsii",
+          "weight": 31.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 20.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 10252334
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ahkiohsa'tsisi",
+      "expected": "aahkioohsa'tsisi",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "aahkioohsa'tsisi",
+          "weight": 12.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 6420959
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mini",
+      "expected": "miini",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "miini",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iini",
+          "weight": 20.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "aiini",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "miina",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "anni",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ainai",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ainoi",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "inoi",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kinni",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iina",
+          "weight": 40.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 4214417
+      },
+      "false_accept": false
+    },
+    {
+      "input": "apani",
+      "expected": "aaapani",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "iapani",
+          "weight": 20.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "aaapani",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "aiini",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "anni",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iipani",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "otani",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iapana",
+          "weight": 40.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 5526334
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mo'tokani",
+      "expected": "mo'tokaani",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "mo'tokaani",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ao'tokaani",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ko'tokaani",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "mo'tokaana",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "no'tokaani",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "o'tokaani",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 17238417
+      },
+      "false_accept": false
+    },
+    {
+      "input": "sinakia'tsisi",
+      "expected": "sinaakia'tsisi",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "sinaakia'tsisi",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "osinaakia'tsisi",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "sinaakia'tsisa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "sinaakia'tsii",
+          "weight": 31.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 20.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 8978833
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ahkiohsa'tsisi",
+      "expected": "aahkioohsa'tsisi",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "aahkioohsa'tsisi",
+          "weight": 12.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 5522833
+      },
+      "false_accept": false
+    },
+    {
+      "input": "mini",
+      "expected": "miini",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "miini",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iini",
+          "weight": 20.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "aiini",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "miina",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "anni",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ainai",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ainoi",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "inoi",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kinni",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iina",
+          "weight": 40.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 4346583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "naáhsa",
+      "expected": "naaáhsa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "naaahsa",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nahka",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "naohka",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "aahsa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 11475208
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nitáákima",
+      "expected": "nitáákiima",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 22166834
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nitáwahkahtana",
+      "expected": "nitáwahkahtaana",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "nitawahkahtaana",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 10916667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nitsi'sohkimana",
+      "expected": "nitsi'sohkiimaana",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "nitsi'sohkiimaana",
+          "weight": 12.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 12310291
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nitsihkawawa",
+      "expected": "nitsiihkawawa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "nitsiihkawawa",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kitsiihkawawa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 22679042
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nikííhtsimana",
+      "expected": "nikííhtsimaana",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 7472000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "niksimmotsima",
+      "expected": "niksimmotsiima",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "niksimmotsiima",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kiksimmotsiima",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "niksimmotsiimi",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 13421000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nitsinaáhsa",
+      "expected": "nitsinaaáhsa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "nitsinaaahsa",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 12390208
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ninapima",
+      "expected": "ninaapiima",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "ninaapiima",
+          "weight": 12.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ninaima",
+          "weight": 15.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kinaima",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ninaimi",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 14920417
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nippitama",
+      "expected": "nippitaama",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "nippitaama",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "noppitaama",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kippitaama",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nippitaami",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 8627916
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nisahkómapima",
+      "expected": "nisahkómaapiima",
+      "distance": 2,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 9452583
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nitsissohkimana",
+      "expected": "nitsissohkiimaana",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "nitsissohkiimaana",
+          "weight": 12.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 15762250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nisstamohkowa",
+      "expected": "nisstamoohkowa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "nisstamoohkowa",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kisstamoohkowa",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 6535917
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nitákkawa",
+      "expected": "nitákkaawa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "nitakkaawa",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 5149167
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ninitsistowahsina",
+      "expected": "niniitsistowahsina",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "niniitsistowahsina",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kiniitsistowahsina",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "niniitsistowahsini",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 6204458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nohpatoma",
+      "expected": "nohpatooma",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "nohpatooma",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kohpatooma",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nohpatoomi",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 7276166
+      },
+      "false_accept": false
+    },
+    {
+      "input": "noma",
+      "expected": "nooma",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "nooma",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "oma",
+          "weight": 20.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kooma",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "noomi",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ama",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "amoma",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "na'a",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "annoma",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "inona",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "inowa",
+          "weight": 35.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 20426250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nitohkimana",
+      "expected": "nitohkiimaana",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "nitohkiimaana",
+          "weight": 12.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 23847000
+      },
+      "false_accept": false
+    },
+    {
+      "input": "notoyoma",
+      "expected": "nootoyooma",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "nootoyooma",
+          "weight": 12.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 6752458
+      },
+      "false_accept": false
+    },
+    {
+      "input": "noppitama",
+      "expected": "noppitaama",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "noppitaama",
+          "weight": 6.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 1.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nippitaama",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "koppitaama",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "noppitaami",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 5895125
+      },
+      "false_accept": false
+    },
+    {
+      "input": "noyínnawa",
+      "expected": "noyínnaawa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "noyinnaawa",
+          "weight": 21.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 5302667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "niyihkowa",
+      "expected": "niyiihkowa",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "niyiihkowai",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 5256917
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nistó",
+      "expected": "niistó",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "niisto",
+          "weight": 26.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "nisaa",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nissa",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nissi",
+          "weight": 30.0,
+          "weight_details": {
+            "lexicon_weight": 0.0,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 5606500
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nokóówayi",
+      "expected": "nookóówayi",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 3857833
       },
       "false_accept": false
     }
   ],
   "start_timestamp": {
-    "secs": 1775803691,
-    "subsec_nanos": 914977000
+    "secs": 1776434031,
+    "subsec_nanos": 978529000
   },
   "total_time": {
     "secs": 0,
-    "subsec_nanos": 3576792
+    "subsec_nanos": 49109917
   }
 }
