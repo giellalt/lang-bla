@@ -1,7 +1,19 @@
-! Flags, tags, and special characters for regular Blackfoot noun and verb morphology 
+!! Flags, tags, and special characters for regular Blackfoot noun and verb morphology 
 
 Multichar_Symbols
-! Noun tags
+
+!! Undeclared tags
+
++3/%0Pl
++D%0Pl
++D3Pl
++N
++Nom
++Prop
++Symbol
+
+
+!! ## Noun tags
 +NI
 +NA
 +NAD
@@ -19,7 +31,8 @@ Multichar_Symbols
 +Px2Pl
 +Px3Pl
 +Px4Sg/Pl
-! Verb tags
+
+!! ## Verb tags
 +VAI
 +VII
 +VTI
